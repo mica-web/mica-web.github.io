@@ -1,0 +1,32 @@
+//
+// SCALE
+//
+
+$base-font-size: 1em;
+$scale: 1.25;
+$line-height: $scale;
+$leading: $scale * $base-font-size * $line-height;
+// this uses MAJOR THIRD type scale, or exponents of 1.25
+
+html {
+  font-size: $base-font-size;
+}
+
+h1, h2, h3, h4, h5, h6, p, li {
+  line-height: $leading;
+  margin: 0;
+}
+
+p {
+  + p {
+    margin-bottom: $leading / 2;
+  }
+}
+
+.heading {
+  font-family: $font-serif;
+  font-size: 1.4 * $leading;
+  &.xl {
+    font-size: 2.2 * $leading;
+  }
+}

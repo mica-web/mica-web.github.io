@@ -1,0 +1,19 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  background: whitesmoke;
+  color: $color-offblack;
+  font-family: $font-sans;
+  margin: 0;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
