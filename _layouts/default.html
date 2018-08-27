@@ -2,4 +2,12 @@
 layout: base
 ---
 
-{{ content }}
+{% include header.html %}
+
+{% include nav.html %}
+
+<main class="wrapper">
+  {{ content }}
+</main>
+
+{% include footer.html %}
