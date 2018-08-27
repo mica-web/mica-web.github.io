@@ -3,8 +3,9 @@
   text-align: right;
   a {
     color: $color-grey;
-    &:hover, &:focus {
-      color: $color-text-link!important;
+    &:hover,
+    &:focus {
+      color: $color-text-link !important;
     }
     &:visited {
       color: $color-grey;

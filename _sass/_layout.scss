@@ -1,6 +1,6 @@
 .wrapper {
   padding: 0.6em;
-  @media (min-width:800px) {
+  @media (min-width: 800px) {
     padding: 1em;
   }
 }
@@ -11,9 +11,8 @@
     margin-left: auto;
     max-width: 52ch;
   }
-
   .site-nav ul {
-    @supports (display:flex) {
+    @supports (display: flex) {
       display: flex;
       justify-content: space-around;
     }
@@ -28,11 +27,13 @@
       grid-template-columns: 25% 1fr;
       grid-template-rows: auto;
     }
-    .site-header, .site-footer {
+    .site-header,
+    .site-footer {
       grid-column: 1/3;
     }
   }
 }
+
 @media (min-width:740px) {
   @supports (display: grid) {
     .site-wrapper {
@@ -40,8 +41,11 @@
     }
   }
 }
+
 @media (min-width:960px) {
-  main { max-width: 110ch; }
+  main {
+    max-width: 110ch;
+  }
   @supports (display: grid) {
     .row-wrapper {
       display: grid;

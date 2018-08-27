@@ -2,7 +2,9 @@ html {
   box-sizing: border-box;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
@@ -13,14 +15,16 @@ body {
   margin: 0;
 }
 
-ul, ol {
+ul,
+ol {
   margin-top: 0;
   margin-bottom: 0;
 }
 
 a {
   color: rgba($color-text-link, 0.8);
-  &:hover, &:active {
+  &:hover,
+  &:active {
     color: $color-text-link;
   }
   &:visited {
