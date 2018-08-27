@@ -1,6 +1,8 @@
 .site-nav {
+  background-color: rgba($color-grey, 0.2);
   text-transform: uppercase;
 }
+
 .submenu {
   display: none;
   .submenu-parent.is-active & {
