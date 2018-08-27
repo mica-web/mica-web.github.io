@@ -1,0 +1,13 @@
+.nav-top-link {
+  font-size: 0.75em;
+  text-align: right;
+  a {
+    color: $color-grey;
+    &:hover, &:focus {
+      color: $color-text-link!important;
+    }
+    &:visited {
+      color: $color-grey;
+    }
+  }
+}
