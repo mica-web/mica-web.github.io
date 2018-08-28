@@ -9,6 +9,9 @@ Front End Web Development (GD 431)
 Syllabus
 --------
 
+_coming soon_
+
+
 Schedule
 --------
 
@@ -35,48 +38,37 @@ Schedule
 
 ### Week 1
 
-Nice to meetcha! 👋
-
-1.  Introductions
-1.  Syllabus and course overview
-1.  The internet + web browsers
-1.  Activities
-    1.  [Student survey](https://goo.gl/forms/ZR3ctAr5tJh0kFPq2)
-    1.  What we know now
-1.  Sign-up-a-palooza
-    - Download these:
-        - [Visual Studio (text editor)](https://visualstudio.microsoft.com/)
-        - [Google Chrome (browser)](https://www.google.com/chrome/)
-    - Create an account here:
-        - [Slack](https://mica-web.slack.com/)
-        - [CodePen](http://codepen.io/)
-        - [GitHub](https://github.com/)
-
-#### Homework
-
-Please bring your resume/CV in two formats:
-  - printed out in its current format
-  - digital in a text-only format (TextEdit in Mac, Notepad in PC)
+{% include gd-431/w01.md %}
 
 {% include top-link.html %}
 
 ### Week 2
 
+{% include gd-431/w02.md %}
+
 {% include top-link.html %}
 
 ### Week 3
+
+{% include gd-431/w03.md %}
 
 {% include top-link.html %}
 
 ### Week 4
 
+{% include gd-431/w04.md %}
+
 {% include top-link.html %}
 
 ### Week 5
 
+{% include gd-431/w05.md %}
+
 {% include top-link.html %}
 
 ### Week 6
+
+{% include gd-431/w06.md %}
 
 {% include top-link.html %}
 
@@ -88,21 +80,31 @@ Fall break. **No class.**
 
 ### Week 8
 
+{% include gd-431/w08.md %}
+
 {% include top-link.html %}
 
 ### Week 9
+
+{% include gd-431/w09.md %}
 
 {% include top-link.html %}
 
 ### Week 10
 
+{% include gd-431/w10.md %}
+
 {% include top-link.html %}
 
 ### Week 11
 
+{% include gd-431/w11.md %}
+
 {% include top-link.html %}
 
 ### Week 12
+
+{% include gd-431/w12.md %}
 
 {% include top-link.html %}
 
@@ -114,8 +116,12 @@ Thanksgiving break. **No class.**
 
 ### Week 14
 
+{% include gd-431/w14.md %}
+
 {% include top-link.html %}
 
 ### Week 15
+
+{% include gd-431/w15.md %}
 
 {% include top-link.html %}
