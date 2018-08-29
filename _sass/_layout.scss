@@ -21,6 +21,14 @@ section {
     @supports (display: flex) {
       display: flex;
       justify-content: space-around;
+
+      li {
+        flex: 1 0 auto;
+
+        &.submenu-parent {
+          flex-grow: 2;
+        }
+      }
     }
   }
 }

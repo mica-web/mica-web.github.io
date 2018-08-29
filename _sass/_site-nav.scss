@@ -1,12 +1,35 @@
 .site-nav {
-  background-color: rgba($color-grey, 0.2);
+  background-color: $color-greyli;
   text-transform: uppercase;
+
+  @media (min-width: 560px) {
+    >ul>li {
+      margin-bottom: 1em;
+    }
+
+    .submenu li {
+      margin-bottom: 0.5em;
+    }
+  }
+}
+
+.submenu-parent.is-active>a {
+  &::after {
+    content: " \00BB";
+  }
 }
 
 .submenu {
   display: none;
+
   .submenu-parent.is-active & {
-    display: block;
-    margin-left: 0.5em;
+    @media (max-width: 559px) {
+      display: flex;
+    }
+
+    @media (min-width: 560px) {
+      display: block;
+      margin-left: 0.5em;
+    }
   }
 }
