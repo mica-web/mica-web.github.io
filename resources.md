@@ -15,10 +15,13 @@ An ever-growing list of links that will help you better understand front end web
 - [Class Slack](https://mica-web.slack.com/)
 
 ## HTML
+### For when you want to know what an element is
 - [HTML MDN web docs](https://developer.mozilla.org/en-US/docs/Web/HTML)
 
 ## CSS
+### For when you want to know what a property does
 - [CSS MDN web docs](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
+- [visual guide to CSS](https://cssreference.io/)
 
 ## JS
 - [JS MDN web docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference)
