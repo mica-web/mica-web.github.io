@@ -6,11 +6,18 @@ course: gd-431
 Front End Web Development (GD 431)
 ==================================
 
+{::options parse_block_html="true" /}
+<section>
+
 Syllabus
 --------
 
 _coming soon_
 
+</section>
+
+{::options parse_block_html="true" /}
+<section>
 
 Schedule
 --------
@@ -125,3 +132,5 @@ Thanksgiving break. **No class.**
 {% include gd-431/w15.md %}
 
 {% include top-link.html %}
+
+</section>
