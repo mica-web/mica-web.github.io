@@ -17,7 +17,7 @@ This class will be a hands-on exploration of the important skills, tools and con
 Syllabus
 --------
 
-_coming soon_
+[GD 431 Syllabus](Syllabus_FrontEndWebDevelopment.pdf) (PDF)
 
 </section>
 
