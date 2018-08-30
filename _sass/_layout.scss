@@ -16,21 +16,6 @@ section {
     margin-left: auto;
     max-width: 52ch;
   }
-
-  .site-nav>ul {
-    @supports (display: flex) {
-      display: flex;
-      justify-content: space-around;
-
-      li {
-        flex: 1 0 auto;
-
-        &.submenu-parent {
-          flex-grow: 2;
-        }
-      }
-    }
-  }
 }
 
 @media (min-width:560px) {

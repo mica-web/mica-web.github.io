@@ -2,6 +2,21 @@
   background-color: $color-greyli;
   text-transform: uppercase;
 
+  @media (max-width: 559px) {
+    >ul {
+      position: relative;
+
+      @supports (display: flex) {
+        display: flex;
+        justify-content: space-around;
+
+        >li {
+          flex: 1 0 auto;
+        }
+      }
+    }
+  }
+
   @media (min-width: 560px) {
     >ul>li {
       margin-bottom: 1em;
@@ -13,18 +28,48 @@
   }
 }
 
-.submenu-parent.is-active>a {
-  &::after {
-    content: " \00BB";
+.submenu-parent.is-active {
+  >a {
+    &::after {
+      content: "\a0\00BB";
+      visibility: hidden;
+    }
+  }
+
+  &.is-active {
+    min-height: 50px;
+
+    >a {
+      &::after {
+        visibility: visible;
+      }
+    }
   }
 }
 
 .submenu {
   display: none;
+  text-transform: initial;
+
+  @media (max-width: 559px) {
+    >li {
+      margin-right: 1em;
+
+      >a {
+        &::before {
+          content: "\00BB\a0";
+        }
+      }
+    }
+  }
 
   .submenu-parent.is-active & {
     @media (max-width: 559px) {
       display: flex;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
     }
 
     @media (min-width: 560px) {
