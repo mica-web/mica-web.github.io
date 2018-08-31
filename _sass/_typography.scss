@@ -24,7 +24,10 @@ li {
 }
 
 p {
-  +p {
+
+  +p,
+  ul+&,
+  ol+& {
     margin-top: $leading / 2;
   }
 }
