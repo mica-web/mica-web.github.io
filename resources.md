@@ -14,11 +14,14 @@ An ever-growing list of links that will help you better understand front end web
 - View [this site's GitHub repo](https://github.com/mica-web/mica-web.github.io)
 - [Class Slack](https://mica-web.slack.com/)
 
-## HTML
+
+## HTML + CSS
+### For when you just want a refresher
+- [Internetting is hard](https://internetingishard.com/)
+
 ### For when you want to know what an element is
 - [HTML MDN web docs](https://developer.mozilla.org/en-US/docs/Web/HTML)
 
-## CSS
 ### For when you want to know what a property does
 - [CSS MDN web docs](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
 - [visual guide to CSS](https://cssreference.io/)
