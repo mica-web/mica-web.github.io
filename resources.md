@@ -8,7 +8,7 @@ Resources
 An ever-growing list of links that will help you better understand front end web development.
 
 {::options parse_block_html="true" /}
-<section class="resources-wrapper">
+<section class="content-wrapper resources-wrapper">
 
 ## Class resources
 - View [this site's GitHub repo](https://github.com/mica-web/mica-web.github.io)

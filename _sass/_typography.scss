@@ -42,3 +42,16 @@ p {
     }
   }
 }
+
+.content-wrapper {
+
+  ol,
+  ul,
+  p {
+
+    +h3,
+    +h4 {
+      margin-top: 1em;
+    }
+  }
+}

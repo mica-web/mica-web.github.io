@@ -17,12 +17,12 @@ This class will be a hands-on exploration of the important skills, tools and con
 Syllabus
 --------
 
-[GD 431 Syllabus](Syllabus_FrontEndWebDevelopment.pdf) (PDF)
+[GD 431 Syllabus](files/Syllabus_FrontEndWebDevelopment.pdf){:target="_blank"} (PDF, 92kb)
 
 </section>
 
 {::options parse_block_html="true" /}
-<section>
+<section class="content-wrapper">
 
 Assignments
 -----------
@@ -42,7 +42,7 @@ Assignments
 </section>
 
 {::options parse_block_html="true" /}
-<section>
+<section class="content-wrapper">
 
 Schedule
 --------
