@@ -28,6 +28,11 @@ An ever-growing list of links that will help you better understand front end web
 
 ## JS
 - [JS MDN web docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference)
+- [Plain JS functions + helpers](https://plainjs.com/javascript/)
+
+## Places to keep up with front-end web dev
+- [CSS-Tricks](https://css-tricks.com/)
+- [Smashing Magazine](https://www.smashingmagazine.com/)
 </section>
 
 {::options parse_block_html="true /}
