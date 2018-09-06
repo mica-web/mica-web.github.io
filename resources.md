@@ -19,6 +19,9 @@ An ever-growing list of links that will help you better understand front end web
 ### For when you just want a refresher
 - [Internetting is hard](https://internetingishard.com/)
 
+### For when you're asking, do I need to use a `div`?
+- [HTML5 Flowchart](http://html5doctor.com/resources/#flowchart)
+
 ### For when you want to know what an element is
 - [HTML MDN web docs](https://developer.mozilla.org/en-US/docs/Web/HTML)
 
