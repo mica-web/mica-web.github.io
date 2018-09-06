@@ -28,7 +28,7 @@ Assignments
 -----------
 
 ### When Developing
-- Write your code in Visual Studio (or another text editor with plugins to lint and format your code)
+- Write your code in Visual Studio Code (or another text editor with plugins to lint and format your code)
 - View and do initial testing in Chrome
 - Do not rely on a CSS framework (e.g., Bootstrap, Foundation); you should  be writing your own styles and systems, not relying on someone else's
 
