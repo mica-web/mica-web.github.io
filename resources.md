@@ -25,6 +25,9 @@ An ever-growing list of links that will help you better understand front end web
 ### For when you want to know what an element is
 - [HTML MDN web docs](https://developer.mozilla.org/en-US/docs/Web/HTML)
 
+### For when you want to write HTML _very_ efficiently
+- [Emmet cheatsheet](https://docs.emmet.io/cheat-sheet/)
+
 ### For when you want to know what a property does
 - [CSS MDN web docs](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
 - [visual guide to CSS](https://cssreference.io/)
