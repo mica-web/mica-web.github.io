@@ -17,7 +17,8 @@ An ever-growing list of links that will help you better understand front end web
 
 ## HTML + CSS
 ### For when you just want a refresher
-- [Internetting is hard](https://internetingishard.com/)
+- [Interneting is hard](https://internetingishard.com/)
+- [Understanding semantic HTML](https://internetingishard.com/html-and-css/semantic-html/)
 
 ### For when you're asking, do I need to use a `div`?
 - [HTML5 Flowchart](http://html5doctor.com/resources/#flowchart)
