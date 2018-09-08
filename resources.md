@@ -28,9 +28,12 @@ An ever-growing list of links that will help you better understand front end web
 ### For when you want to write HTML _very_ efficiently
 - [Emmet cheatsheet](https://docs.emmet.io/cheat-sheet/)
 
-### For when you want to know what a property does
+### For when you want to know what a CSS property does
 - [CSS MDN web docs](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
 - [visual guide to CSS](https://cssreference.io/)
+
+### Learn more about `alt` text
+- [Alt-texts: The Ultimate Guide](https://axesslab.com/alt-texts/)
 
 ## JS
 - [JS MDN web docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference)
