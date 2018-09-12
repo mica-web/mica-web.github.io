@@ -106,7 +106,7 @@ Schedule
 
 ### Week 7
 
-Fall break. **No class.**
+{% include gd-431/w07.md %}
 
 {% include top-link.html %}
 
