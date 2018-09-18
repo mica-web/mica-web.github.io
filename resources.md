@@ -43,6 +43,18 @@ An ever-growing list of links that will help you better understand front end web
 ## Places to keep up with front-end web dev
 - [CSS-Tricks](https://css-tricks.com/)
 - [Smashing Magazine](https://www.smashingmagazine.com/)
+
+## Email newsletters
+- [A List Apart](https://alistapart.com/email-signup/)
+- [Animation at Work](http://webanimationweekly.com/)
+- [CSS Layout News](http://csslayout.news/)
+- [Frontend Focus](https://frontendfoc.us/)
+- [Hacking UI](http://hackingui.com/sign-up/)
+- [Hey Designer](https://heydesigner.com/)
+- [Sidebar](https://sidebar.io/)
+- [Smashing Newsletter](https://www.smashingmagazine.com/the-smashing-newsletter/)
+- [UX Collective Newsletter](https://newsletter.uxdesign.cc/)
+
 </section>
 
 {::options parse_block_html="true /}
