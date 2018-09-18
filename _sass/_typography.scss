@@ -60,3 +60,13 @@ p {
     }
   }
 }
+
+.checklist {
+  ul {
+    list-style: none;
+  }
+
+  input[type=checkbox] {
+    margin-right: 1em;
+  }
+}
