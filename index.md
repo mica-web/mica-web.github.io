@@ -38,6 +38,7 @@ Assignments
   - Mac user? Test on Edge by signing up for Browserstack [here](https://developer.microsoft.com/en-us/microsoft-edge/tools/remote/); to test locally, you'll need the BrowserStack extension for Chrome
   - Windows user? _working on a solution_
 
+Details about the [grading rubric]({{ site.baseurl }}{% link gd-431/rubric.md %}) are also available.
 
 </section>
 
