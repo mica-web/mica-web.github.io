@@ -4,7 +4,7 @@ course: gd-431
 ---
 
 Rubric
-========================
+======
 
 Assignments are judged to be:
 
