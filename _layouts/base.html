@@ -9,6 +9,11 @@
     {{content}}
 
   </div>
+
+  {% if page.toggle %}
+  <script src="{{ site.baseurl }}/js/contentToggle.js" async defer></script>
+  {% endif %}
+
 </body>
 
 </html>
