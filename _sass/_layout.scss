@@ -6,7 +6,7 @@
   }
 }
 
-section {
+section:not(.accordion-wrapper) {
   margin-top: $leading;
 }
 
