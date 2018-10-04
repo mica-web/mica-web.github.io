@@ -1,10 +1,10 @@
 ---
-title: Site List
+title: UX Evaluation Options
 course: gd-431
 ---
 
-Site List
-==========
+Potential Sites to Evaluate
+===========================
 
 {::options parse_block_html="true" /}
 <div class="content-wrapper">
