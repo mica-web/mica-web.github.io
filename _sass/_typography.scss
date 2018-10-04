@@ -49,6 +49,10 @@ p {
   ul,
   p {
 
+    +h2 {
+      margin-top: 1.25em;
+    }
+
     +h3,
     +h4 {
       margin-top: 1em;
