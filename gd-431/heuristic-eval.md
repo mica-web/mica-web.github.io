@@ -73,6 +73,7 @@ Credibility
 
 Overall
 -------
+- Include notes on [dev tools audit](https://developers.google.com/web/tools/lighthouse/) here
 - Is the site responsive?
   - If yes, what could be improved?
 - Are there common characteristics and wording in the site's navigation, prompts and layout?
