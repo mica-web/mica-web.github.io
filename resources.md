@@ -40,6 +40,11 @@ An ever-growing list of links that will help you better understand front end web
 - [JS MDN web docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference)
 - [Plain JS functions + helpers](https://plainjs.com/javascript/)
 
+## Inclusive Design
+- [Contrast Evaluator](https://contrast-ratio.com/)
+- [Contrast Finder](http://contrast-finder.tanaguru.com/)
+- [HTML Outliner](https://gsnedders.html5.org/outliner/) -- use this to see an outline based on your markup
+
 ## Places to keep up with front-end web dev
 - [CSS-Tricks](https://css-tricks.com/)
 - [Smashing Magazine](https://www.smashingmagazine.com/)
