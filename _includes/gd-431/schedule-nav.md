@@ -16,5 +16,6 @@
     <li><a href="#week-13">13</a></li>
     <li><a href="#week-14">14</a></li>
     <li><a href="#week-15">15</a></li>
+    <li><a href="#week-16">16</a></li>
   </ol>
 </nav>

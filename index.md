@@ -124,4 +124,9 @@ Thanksgiving break. **No class.**
 
 {% include top-link.html %}
 
+### Week 16
+
+{% include gd-431/w16.md %}
+
+{% include top-link.html %}
 </section>
