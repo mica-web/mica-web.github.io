@@ -1,5 +1,14 @@
 <nav class="wrapper site-nav">
   <ul class="list-reset">
+    <li class="submenu-parent{% if page.course == 'gd-220' %} is-active{% endif %}">
+      <a href="{{ site.baseurl }}/gd-220/">GD 220</a>
+      <ul class="list-reset submenu">
+        <li><a href="{{ site.baseurl }}/gd-220/#syllabus">Syllabus</a></li>
+        <li><a href='{{ site.baseurl }}/gd-220/#assignments'>Assignments</a></li>
+        <li><a href='{{ site.baseurl }}{% link gd-220/rubric.md %}'>Rubric</a></li>
+        <li><a href="{{ site.baseurl }}/gd-220/#schedule">Schedule</a></li>
+      </ul>
+    </li>
     <li class="submenu-parent{% if page.course == 'gd-431' %} is-active{% endif %}">
       <a href="{{ site.baseurl }}/gd-431/">GD 431</a>
       <ul class="list-reset submenu">
