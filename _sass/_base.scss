@@ -11,7 +11,7 @@ html {
 body {
   // background: $color-offwhite;
   // color: $color-text-body;
-  // font-family: $font-sans;
+  @include font-body;
   margin: 0;
 }
 

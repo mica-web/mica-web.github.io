@@ -1,3 +1,9 @@
 .site-header {
-  a {}
+  .heading--background {
+    @include font-grotesk('Heavy');
+  }
+
+  .heading--foreground {
+    @include font-mono;
+  }
 }
