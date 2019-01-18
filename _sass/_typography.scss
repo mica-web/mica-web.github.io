@@ -33,44 +33,9 @@ p {
 }
 
 .heading {
-  font-family: $font-serif;
   font-size: 1.4 * $leading;
-
-  @media (min-width: 760px) {
-    &.xl {
-      font-size: 2.2 * $leading;
-    }
-  }
 }
 
-.content-wrapper {
+.content-wrapper {}
 
-  ol,
-  ul,
-  p {
-
-    +h2 {
-      margin-top: 1.25em;
-    }
-
-    +h3,
-    +h4 {
-      margin-top: 1em;
-    }
-
-    +ol,
-    +ul {
-      margin-top: 0.5em;
-    }
-  }
-}
-
-.checklist {
-  ul {
-    list-style: none;
-  }
-
-  input[type=checkbox] {
-    margin-right: 1em;
-  }
-}
+.checklist {}

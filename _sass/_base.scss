@@ -9,9 +9,9 @@ html {
 }
 
 body {
-  background: $color-offwhite;
-  color: $color-text-body;
-  font-family: $font-sans;
+  // background: $color-offwhite;
+  // color: $color-text-body;
+  // font-family: $font-sans;
   margin: 0;
 }
 
@@ -22,14 +22,16 @@ ol {
 }
 
 a {
-  color: rgba($color-text-link, 0.8);
-  &:hover,
-  &:active {
-    color: $color-text-link;
-  }
-  &:visited {
-    color: $color-text-link-visited;
-  }
+  // color: rgba($color-text-link, 0.8);
+
+  // &:hover,
+  // &:active {
+  //   color: $color-text-link;
+  // }
+
+  // &:visited {
+  //   color: $color-text-link-visited;
+  // }
 }
 
 img {
