@@ -1,6 +1,6 @@
 <nav class="sched-nav">
   <p class="caption">Navigate by week</p>
-  <ol class="list-reset">
+  <ol class="u-list-reset">
     <li><a href="#week-1">1</a></li>
     <li><a href="#week-2">2</a></li>
     <li><a href="#week-3">3</a></li>
