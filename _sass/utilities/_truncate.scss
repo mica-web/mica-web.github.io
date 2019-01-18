@@ -1,0 +1,8 @@
+// Truncates a block of text with ellipses
+.u-truncate {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 100%;
+}

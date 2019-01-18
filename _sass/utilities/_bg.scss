@@ -1,0 +1,9 @@
+// Controls the background-size of an element with a background image
+// See MDN to learn the difference between these values:  https://developer.mozilla.org/en-US/docs/Web/CSS/background-size#Values
+.u-bg-contain {
+  background-size: contain;
+}
+
+.u-bg-cover {
+  background-size: cover;
+}
