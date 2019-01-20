@@ -54,7 +54,7 @@ p {
     margin-bottom: 1em;
     padding-bottom: 2px;
 
-    @media screen and (min-width: 375px) {
+    @media (min-width: 375px) {
       background-size: 75% 100%;
     }
   }
