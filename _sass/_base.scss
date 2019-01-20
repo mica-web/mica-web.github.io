@@ -9,8 +9,8 @@ html {
 }
 
 body {
-  // background: $color-offwhite;
-  // color: $color-text-body;
+  background-color: $color-grey;
+  color: $color-text-body;
   @include font-body;
   margin: 0;
 }
@@ -19,19 +19,6 @@ ul,
 ol {
   margin-top: 0;
   margin-bottom: 0;
-}
-
-a {
-  // color: rgba($color-text-link, 0.8);
-
-  // &:hover,
-  // &:active {
-  //   color: $color-text-link;
-  // }
-
-  // &:visited {
-  //   color: $color-text-link-visited;
-  // }
 }
 
 img {
