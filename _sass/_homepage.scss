@@ -1,0 +1,17 @@
+.homepage-grid {
+  >p:first-of-type {
+    @include font-grotesk('Semibold');
+    font-size: 120%;
+  }
+
+  figure {
+    margin: 24px 0;
+  }
+
+  figcaption {
+    background-color: rgba($color-yellow, 0.55);
+    @include font-mono;
+    font-size: 14px;
+    padding: 6px 4px;
+  }
+}

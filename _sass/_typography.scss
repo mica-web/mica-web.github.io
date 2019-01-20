@@ -20,7 +20,6 @@ h6 {
   font-weight: normal;
 }
 
-
 h1,
 h2,
 h3,
@@ -44,6 +43,21 @@ p {
 
 .heading {
   font-size: 1.4 * $leading;
+
+  &--underline {
+    background-image: linear-gradient(transparent calc(100% - 2px), $color-yellow 2px);
+    background-position: left 100%;
+    background-repeat: no-repeat;
+    background-size: 90% 100%;
+    @include font-mono;
+    font-size: 18px;
+    margin-bottom: 1em;
+    padding-bottom: 2px;
+
+    @media screen and (min-width: 375px) {
+      background-size: 75% 100%;
+    }
+  }
 }
 
 a {
