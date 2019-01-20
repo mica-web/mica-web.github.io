@@ -6,9 +6,17 @@ layout: base
 
 <div class="content-wrapper {% if page.homepage%}homepage-wrapper{% endif %}">
 
+  {% if page.homepage%}
+
   {% include nav.html %}
 
-  <main class="">
+  {% else %}
+
+  {% include breadcrumb.html %}
+
+  {% endif %}
+
+  <main>
     {{ content }}
   </main>
 

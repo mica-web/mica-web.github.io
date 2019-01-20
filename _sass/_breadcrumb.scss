@@ -1,0 +1,39 @@
+.breadcrumb-wrapper {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  margin-left: 0.5rem;
+
+  &::before {
+    content: '\005C\005C ';
+    display: inline-block;
+    font-size: 0.65rem;
+    vertical-align: middle;
+  }
+}
+
+.breadcrumb {
+  @include font-mono;
+  font-size: 0.75rem;
+  text-transform: lowercase;
+  vertical-align: middle;
+
+  >a {
+    border-bottom: 2px solid transparent;
+    color: $color-text-link;
+    text-decoration: none;
+
+    &:hover {
+      border-bottom-color: $color-mint;
+    }
+  }
+
+  +.breadcrumb {
+    &::before {
+      content: '>';
+      display: inline-block;
+      font-size: 0.65rem;
+      margin-right: 0.35rem;
+      margin-left: 0.25rem;
+    }
+  }
+}
