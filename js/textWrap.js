@@ -13,13 +13,12 @@ function textWrap() {
       p2 = figure.offsetTop,
       colW = text.offsetWidth,
       figW = figure.offsetWidth,
-      figH = figure.offsetHeight,
       h = p2 - p1,
       w = figW - colW;
 
     if (colW < figW) {
       spacer1.setAttribute("style", "height:" + h + "px");
-      spacer2.setAttribute("style", "height:" + figH + "px; width:" + w + "px");
+      spacer2.setAttribute("style", "height: calc(100% - " + h + "px); width:" + w + "px");
     } else {
       // the figure fits inside the column, no extra fuss!
       spacer1.removeAttribute("style");
