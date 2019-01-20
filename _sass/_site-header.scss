@@ -2,8 +2,23 @@
   background-color: $color-mint;
   position: relative;
   height: calc(42px + 2vw);
-  // height: calc(48px + 4vw);
   width: 100%;
+
+  @media screen and (min-width: 460px) {
+    height: calc(46px + 2vw);
+  }
+
+  @media screen and (min-width: 510px) {
+    height: calc(48px + 2vw);
+  }
+
+  @media screen and (min-width: 780px) {
+    height: calc(42px + 4vw);
+  }
+
+  @media screen and (min-width:1024px) {
+    height: 88px;
+  }
 
   .heading--background,
   .heading--foreground {
@@ -16,20 +31,111 @@
     color: $color-offwhite;
     @include font-grotesk('Heavy');
     font-size: calc(44px + 8vw);
-    // font-size: calc(48px + 8vw);
     letter-spacing: -2px;
     top: -5px;
     right: 0;
     bottom: 0;
     left: -8px;
     text-transform: uppercase;
+
+    @media screen and (min-width: 360px) {
+      font-size: calc(48px + 8vw);
+      top: -10px;
+      left: -7px;
+    }
+
+    @media screen and (min-width: 680px) {
+      top: -12px;
+    }
+
+    @media screen and (min-width: 720px) {
+      top: -14px;
+      left: -10px;
+    }
+
+    @media screen and (min-width: 780px) {
+      top: -12px;
+    }
+
+    @media screen and (min-width:1024px) {
+      font-size: 140px;
+      top: -16px;
+    }
   }
 
   .heading--foreground {
     color: $color-offblack;
     @include font-mono;
-    font-size: 1.65rem;
+    font-size: 1.8rem;
     bottom: -7px;
-    left: 31vw;
+    left: calc(100px + 7vw);
+
+    @media screen and (min-width: 360px) {
+      font-size: 1.95rem;
+      left: calc(100px + 10vw);
+    }
+
+    @media screen and (min-width: 390px) {
+      font-size: 1.9rem;
+      bottom: -6px;
+      left: calc(100px + 11vw);
+    }
+
+    @media screen and (min-width: 460px) {
+      font-size: 2.1rem;
+      bottom: -7px;
+    }
+
+
+    @media screen and (min-width: 520px) {
+      left: calc(96px + 12vw);
+    }
+
+    @media screen and (min-width: 560px) {
+      left: calc(100px + 12vw);
+    }
+
+    @media screen and (min-width: 600px) {
+      font-size: 1.95rem;
+      left: calc(100px + 12.5vw);
+    }
+
+    @media screen and (min-width: 660px) {
+      left: calc(100px + 13vw);
+    }
+
+    @media screen and (min-width: 720px) {
+      font-size: 2.1rem;
+      left: calc(100px + 12.5vw);
+    }
+
+    @media screen and (min-width: 760px) {
+      left: calc(100px + 13vw);
+    }
+
+    @media screen and (min-width: 780px) {
+      font-size: 2.8rem;
+      bottom: -10px;
+      left: calc(100px + 12vw);
+    }
+
+    @media screen and (min-width: 820px) {
+      left: calc(100px + 12.5vw);
+    }
+
+    @media screen and (min-width: 900px) {
+      left: calc(100px + 13vw);
+    }
+
+    @media screen and (min-width: 980px) {
+      left: calc(100px + 13.3vw);
+    }
+
+    @media screen and (min-width:1024px) {
+      font-size: 3rem;
+      bottom: -10px;
+      left: 257px;
+    }
+
   }
 }
