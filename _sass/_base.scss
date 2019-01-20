@@ -21,6 +21,33 @@ ol {
   margin-bottom: 0;
 }
 
+ul {
+  main & {
+    list-style-type: none;
+    padding-left: 0;
+
+    >li {
+      margin-left: 2rem;
+      position: relative;
+
+      &::before {
+        content: '\2014';
+        margin-left: -1.7rem;
+        position: absolute;
+      }
+
+      li {
+        margin-left: 1.5rem;
+
+        &::before {
+          content: '\2013';
+          margin-left: -1.25rem;
+        }
+      }
+    }
+  }
+}
+
 img {
   height: auto;
   max-width: 100%;
