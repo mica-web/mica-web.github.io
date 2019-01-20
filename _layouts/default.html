@@ -4,10 +4,14 @@ layout: base
 
 {% include header.html %}
 
-{% include nav.html %}
+<div class="content-wrapper">
 
-<main class="wrapper">
-  {{ content }}
-</main>
+  {% include nav.html %}
 
-{% include footer.html %}
+  <main class="">
+    {{ content }}
+  </main>
+
+  {% include footer.html %}
+
+</div>
