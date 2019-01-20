@@ -1,6 +1,6 @@
 <header id="top" class="site-header">
   <h2 class="heading">
-    <a href="{{ site.baseurl }}/" class="u-block">
+    <a href="{{ site.baseurl }}/" class="u-block" {% if page.homepage %}{% else %}title="Return to homepage" {% endif %}>
       <span class="heading--background">Learning</span>
       <span class="heading--foreground">Web Design</span>
     </a>
