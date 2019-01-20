@@ -26,6 +26,10 @@ defaults:
 sass:
     sass_dir: _sass
 
+collections_dir: schedule
+collections:
+    - gd431
+
 
 # Build settings
 markdown: kramdown
