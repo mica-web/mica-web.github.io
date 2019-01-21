@@ -71,6 +71,7 @@ Credibility
   - How can they be improved?
 - Is it easy to find the contact information for the company?
 
+
 Overall
 -------
 - Include notes on [dev tools audit](https://developers.google.com/web/tools/lighthouse/) here
