@@ -24,7 +24,7 @@ Syllabus
 --------
 
 <span class="highlighter">
-[GD 220 Syllabus](){:target="_blank"} (PDF, 92kb)
+[GD 220 Syllabus](files/Syllabus_GraphicDesign2.pdf){:target="_blank"} (PDF, 121kb)
 </span>
 
 {% include gd-220/rubric.md %}
