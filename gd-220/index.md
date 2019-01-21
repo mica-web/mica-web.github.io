@@ -2,131 +2,50 @@
 title: Graphic Design 2 (GD 220)
 course: gd-220
 toggle: true
+type: course
 ---
-
-Graphic Design 2 (GD 220)
-==================================
-
-{% include gd-220/description.md %}
 
 {::options parse_block_html="true" /}
 <section>
 
+Graphic Design 2
+================
+
+{: .u-text-right .jump-link }
+[jump to schedule](#week01){: .highlighter }
+
+{% include gd-220/description.md %}
+
+</section>
+
+<aside>
+
 Syllabus
 --------
 
-<!-- [GD 220 Syllabus](files/Syllabus_FrontEndWebDevelopment.pdf){:target="_blank"} (PDF, 92kb) -->
+<span class="highlighter">
+[GD 220 Syllabus](){:target="_blank"} (PDF, 92kb)
+</span>
 
-</section>
+{% include gd-220/rubric.md %}
 
-{::options parse_block_html="true" /}
-<section class="content-wrapper">
+{: .button-wrapper }
+<a href="{{ site.baseurl }}{% link resources.md %}" class="button--bordered">
+<span class="button__borders"></span>
+Resources</a>
 
-{% include gd-220/assignments.md %}
+</aside>
 
-</section>
+<ol class="u-list-reset schedule-list">
+{% for gd220 in site.gd220 %}
+{% assign weeknum = gd220.path | replace:'_gd220/w','' | replace:'.md', '' %}
 
-{::options parse_block_html="true" /}
-<section class="content-wrapper">
+  <li class="accordion-wrapper" id="week{{ weeknum }}">
+    <h2 class="accordion-title{% if gd220.empty %} has-no-content js-content-toggle-ignore{% else %} js-trigger-content-toggle{% endif %}">
+      {{ gd220.topic }}
+    </h2>
+    {{ gd220.content | markdownify }}
+  </li>
 
-Schedule
---------
-
-{% include gd-220/schedule-nav.md %}
-
-### Week 1
-
-{% include gd-220/w01.md %}
-
-{% include top-link.html %}
-
-### Week 2
-
-{% include gd-220/w02.md %}
-
-{% include top-link.html %}
-
-### Week 3
-
-{% include gd-220/w03.md %}
-
-{% include top-link.html %}
-
-### Week 4
-
-{% include gd-220/w04.md %}
-
-{% include top-link.html %}
-
-### Week 5
-
-{% include gd-220/w05.md %}
-
-{% include top-link.html %}
-
-### Week 6
-
-{% include gd-220/w06.md %}
-
-{% include top-link.html %}
-
-### Week 7
-
-{% include gd-220/w07.md %}
-
-{% include top-link.html %}
-
-### Week 8
-
-{% include gd-220/w08.md %}
-
-{% include top-link.html %}
-
-### Week 9
-
-{% include gd-220/w09.md %}
-
-{% include top-link.html %}
-
-### Week 10
-
-{% include gd-220/w10.md %}
-
-{% include top-link.html %}
-
-### Week 11
-
-{% include gd-220/w11.md %}
-
-{% include top-link.html %}
-
-### Week 12
-
-{% include gd-220/w12.md %}
-
-{% include top-link.html %}
-
-### Week 13
-
-{% include gd-220/w13.md %}
-
-{% include top-link.html %}
-
-### Week 14
-
-{% include gd-220/w14.md %}
-
-{% include top-link.html %}
-
-### Week 15
-
-{% include gd-220/w15.md %}
-
-{% include top-link.html %}
-
-### Week 16
-
-{% include gd-220/w16.md %}
-
-{% include top-link.html %}
-</section>
+{% endfor %}
+</ol>

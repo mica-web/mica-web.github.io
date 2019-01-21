@@ -28,8 +28,8 @@ sass:
 
 collections_dir: schedule
 collections:
+    - gd220
     - gd431
-
 
 # Build settings
 markdown: kramdown
