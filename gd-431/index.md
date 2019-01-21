@@ -20,7 +20,7 @@ Syllabus
 
 <ol class="u-list-reset schedule-list">
 {% for gd431 in site.gd431 %}
-  <li class="accordion-wrapper">
+  <li class="accordion-wrapper" id="#{{ gd431.path | replace:'_gd431/w','week' | replace:'.md', '' }}">
     <h2 class="accordion-title{% if gd431.empty %} has-no-content js-content-toggle-ignore{% else %} js-trigger-content-toggle{% endif %}">
       {{ gd431.topic }}
     </h2>
