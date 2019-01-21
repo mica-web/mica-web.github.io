@@ -1,0 +1,9 @@
+.jump-link {
+  position: absolute;
+  top: calc(10px + 1rem); // to match breadcrumb
+  right: 16px;
+
+  a {
+    font-size: 0.75rem;
+  }
+}
