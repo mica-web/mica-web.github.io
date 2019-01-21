@@ -1,10 +1,8 @@
 <footer class="site-footer">
   <div class="rule"></div>
-  <p>&copy; Copyright 2018&ndash;
-    <span id="js-current-year">
-      <script>
-        document.getElementById('js-current-year').appendChild(document.createTextNode(new Date().getFullYear()))
-      </script>
-    </span> Ang&eacute;lique Weger
-  </p>
+  <p>&copy; Copyright 2018&ndash;<span id="js-current-year"></span> Ang&eacute;lique Weger</p>
 </footer>
+
+<script>
+  document.getElementById('js-current-year').appendChild(document.createTextNode(new Date().getFullYear()))
+</script>
