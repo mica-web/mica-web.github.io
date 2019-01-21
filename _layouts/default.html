@@ -4,9 +4,9 @@ layout: base
 
 {% include header.html %}
 
-<div class="content-wrapper {% if page.homepage%}homepage-wrapper{% endif %}">
+<div class="content-wrapper {% if page.type %}{{ page.type }}-wrapper{% endif %}">
 
-  {% if page.homepage%}
+  {% if page.type == "homepage" %}
 
   {% include nav.html %}
 
