@@ -14,11 +14,6 @@ $color-text-body: $color-slate;
 $color-text-link: $color-offblack;
 $color-text-link-visited: $color-text-body;
 
-// alt?
-// https://coolors.co/a2f1c1-2c4251-d16666-b6c649-ffffff
-// https://coolors.co/a2f1c1-2c4251-38023b-a288e3-cefdff
-// https://coolors.co/a2f1c1-2c4251-e1f2fe-a288e3-b2b1cf
-
 // FONTS
 @mixin font-grotesk($weight:'Regular') {
   font-family: NeueAlteGrotesk-#{$weight};

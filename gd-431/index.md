@@ -18,6 +18,7 @@ Syllabus
 
 {% include gd-431/rubric.md %}
 
+{: .button-wrapper }
 <a href="{{ site.baseurl }}{% link resources.md %}" class="button--bordered">
 <span class="button__borders"></span>
 Resources</a>
@@ -29,9 +30,7 @@ Resources</a>
     <h2 class="accordion-title{% if gd431.empty %} has-no-content js-content-toggle-ignore{% else %} js-trigger-content-toggle{% endif %}">
       {{ gd431.topic }}
     </h2>
-    <section>
-      {{ gd431.content | markdownify }}
-    </section>
+    {{ gd431.content | markdownify }}
   </li>
 {% endfor %}
 </ol>
