@@ -10,14 +10,8 @@
   .accordion-title {
     background-color: $color-slate;
 
-    button {
-      color: white;
-      @include font-grotesk('Bold');
-      font-size: 1.25rem;
-      padding: 8px 32px 8px 16px;
-      position: relative;
-      width: 100%;
-
+    button,
+    &.has-no-content {
       &::before {
         color: $color-mint;
         content: counters(weeks, ".", decimal-leading-zero) " ""|";
@@ -25,6 +19,15 @@
         @include font-mono;
         font-size: 1.2rem;
       }
+    }
+
+    button {
+      color: white;
+      @include font-grotesk('Bold');
+      font-size: 1.25rem;
+      padding: 8px 36px 8px 16px;
+      position: relative;
+      width: 100%;
 
       svg {
         border: 2px solid white;
@@ -48,6 +51,13 @@
           animation: fadeOut 200ms 1 forwards;
         }
       }
+    }
+
+    &.has-no-content {
+      background-color: $color-offwhite;
+      @include font-grotesk('Medium');
+      padding: 8px 16px 8px;
+      position: relative;
     }
   }
 
