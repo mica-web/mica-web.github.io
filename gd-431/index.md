@@ -2,6 +2,7 @@
 title: Front End Web Development (GD 431)
 course: gd-431
 toggle: true
+type: course
 ---
 
 {::options parse_block_html="true" /}
@@ -17,7 +18,7 @@ Front End Web Development
 
 </section>
 
-<section>
+<aside>
 
 Syllabus
 --------
@@ -33,7 +34,7 @@ Syllabus
 <span class="button__borders"></span>
 Resources</a>
 
-</section>
+</aside>
 
 <ol class="u-list-reset schedule-list">
 {% for gd431 in site.gd431 %}
