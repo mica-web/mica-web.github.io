@@ -71,8 +71,15 @@
     display: inline-block;
     @include font-mono;
     font-size: 0.9rem;
-    margin-top: 16px;
     margin-bottom: 8px;
+
+    &:first-of-type {
+      margin-top: 0;
+    }
+
+    &:not(:first-of-type) {
+      margin-top: 16px;
+    }
 
     &::before {
       content: '[';
@@ -86,7 +93,15 @@
   }
 
   .accordion-content {
+    @extend .u-clearfix;
+    margin-top: 18px;
     margin-bottom: 32px;
+
+    @media (min-width: 620px) {
+      .aside-wrapper {
+        float: right;
+      }
+    }
   }
 
 }
