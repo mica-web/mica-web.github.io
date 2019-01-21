@@ -18,12 +18,12 @@ Syllabus
 
 {% include gd-431/assignments.md %}
 
-<ol>
+<ol class="u-list-reset schedule-list">
 {% for gd431 in site.gd431 %}
   <li class="accordion-wrapper">
-    <div class="accordion-title js-trigger-content-toggle">
+    <h2 class="accordion-title js-trigger-content-toggle">
       {{ gd431.topic }}
-    </div>
+    </h2>
     <section>
       {{ gd431.content | markdownify }}
     </section>
