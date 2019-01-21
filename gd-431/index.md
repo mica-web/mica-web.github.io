@@ -4,6 +4,9 @@ course: gd-431
 toggle: true
 ---
 
+{::options parse_block_html="true" /}
+<section>
+
 Front End Web Development
 =========================
 
@@ -11,6 +14,10 @@ Front End Web Development
 [jump to schedule](#week01){: .highlighter }
 
 {% include gd-431/description.md %}
+
+</section>
+
+<section>
 
 Syllabus
 --------
@@ -26,14 +33,18 @@ Syllabus
 <span class="button__borders"></span>
 Resources</a>
 
+</section>
+
 <ol class="u-list-reset schedule-list">
 {% for gd431 in site.gd431 %}
 {% assign weeknum = gd431.path | replace:'_gd431/w','' | replace:'.md', '' %}
+
   <li class="accordion-wrapper" id="week{{ weeknum }}">
     <h2 class="accordion-title{% if gd431.empty %} has-no-content js-content-toggle-ignore{% else %} js-trigger-content-toggle{% endif %}">
       {{ gd431.topic }}
     </h2>
     {{ gd431.content | markdownify }}
   </li>
+
 {% endfor %}
 </ol>
