@@ -44,28 +44,52 @@
     left: -8px;
     text-transform: uppercase;
 
+    @supports (-ms-ime-align: auto) {
+      top: -13px;
+    }
+
     @media (min-width: 360px) {
       font-size: calc(48px + 8vw);
       top: -10px;
       left: -7px;
+
+      @supports (-ms-ime-align: auto) {
+        top: -18px;
+      }
     }
 
     @media (min-width: 680px) {
       top: -12px;
+
+      @supports (-ms-ime-align: auto) {
+        top: -20px;
+      }
     }
 
     @media (min-width: 720px) {
       top: -14px;
       left: -10px;
+
+      @supports (-ms-ime-align: auto) {
+        top: -22px;
+      }
     }
 
     @media (min-width: 780px) {
       top: -12px;
+
+      @supports (-ms-ime-align: auto) {
+        top: -20px;
+      }
     }
 
     @media (min-width:1024px) {
       font-size: 140px;
       top: -16px;
+
+      @supports (-ms-ime-align: auto) {
+        top: -24px;
+      }
     }
   }
 
