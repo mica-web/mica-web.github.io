@@ -25,7 +25,7 @@
 
     display: flex;
     @include font-grotesk('Black');
-    font-size: 28px;
+    font-size: 24px;
     justify-content: center;
     line-height: 3;
     padding-right: $leading / 2;
@@ -82,6 +82,7 @@
 
     &--block {
       height: 120px;
+      font-size: 28px;
       width: 120px;
 
       @media (min-width: 1024px) {
@@ -152,7 +153,7 @@
   }
 
   &-wrapper {
-    margin-top: 2em;
-    margin-bottom: 3em;
+    margin: 2em auto 3em;
+    max-width: 180px;
   }
 }
