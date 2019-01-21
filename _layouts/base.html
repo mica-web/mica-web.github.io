@@ -10,10 +10,14 @@
 
   </div>
 
+  {% if page.type == "homepage" %}
+  <script src="{{ site.baseurl }}/js/textWrap.js" async defer></script>
+  {% endif %}
   {% if page.toggle %}
   <script src="{{ site.baseurl }}/js/contentToggle.js" async defer></script>
   {% endif %}
 
 </body>
+{% include credits.html %}
 
 </html>

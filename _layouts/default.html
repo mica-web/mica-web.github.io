@@ -4,10 +4,22 @@ layout: base
 
 {% include header.html %}
 
-{% include nav.html %}
+<div class="content-wrapper {% if page.type %}{{ page.type }}-wrapper{% endif %}">
 
-<main class="wrapper">
-  {{ content }}
-</main>
+  {% if page.type == "homepage" %}
 
-{% include footer.html %}
+  {% include nav.html %}
+
+  {% else %}
+
+  {% include breadcrumb.html %}
+
+  {% endif %}
+
+  <main>
+    {{ content }}
+  </main>
+
+  {% include footer.html %}
+
+</div>

@@ -1,0 +1,32 @@
+.site-footer {
+  margin-top: 64px;
+
+  .rule {
+    // highlight, then dash
+    background-image: linear-gradient($color-yellow, transparent 2px), linear-gradient(to right, $color-text-body 50%, transparent 50%);
+    background-position: left 100%, left top;
+    background-repeat: no-repeat, repeat-x;
+    background-size: 120% 100%, 20px 3px;
+    height: 3px;
+    width: 90%;
+
+    @media (min-width: 520px) {
+      width: 75%;
+    }
+
+    @media (min-width: 780px) {
+      width: 65%;
+    }
+
+    @media (min-width: 860px) {
+      width: 55%;
+      max-width: 400px;
+    }
+  }
+
+  p {
+    @include font-mono;
+    font-size: 12px;
+    padding: 32px 0 24px;
+  }
+}

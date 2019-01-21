@@ -1,7 +1,7 @@
 // Based on Heydon Pickering's Inclusive Components
 // https://inclusive-components.design/collapsible-sections/
 
-(function() {
+(function () {
   // Get all the headings
   const headings = document.getElementsByClassName('js-trigger-content-toggle')
 
@@ -9,7 +9,7 @@
     // Give each heading a toggle button child
     // with the SVG plus/minus icon
     heading.innerHTML = `
-      <button aria-expanded="false">
+      <button class="u-button-reset" aria-expanded="false">
         ${heading.textContent}
         <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
           <rect class="vert" height="8" width="2" y="1" x="4"/>

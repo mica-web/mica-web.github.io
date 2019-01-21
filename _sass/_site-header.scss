@@ -1,9 +1,171 @@
 .site-header {
-  background-color: $color-indigo;
-  border-bottom: 4px solid $color-marine;
-  color: $color-offwhite;
+  background-color: $color-mint;
+  position: relative;
+  height: calc(42px + 2vw);
+  width: 100%;
 
+  @media (min-width: 460px) {
+    height: calc(46px + 2vw);
+  }
+
+  @media (min-width: 510px) {
+    height: calc(48px + 2vw);
+  }
+
+  @media (min-width: 780px) {
+    height: calc(42px + 4vw);
+  }
+
+  @media (min-width:1024px) {
+    height: 88px;
+  }
+
+  .heading,
   a {
+    height: 100%;
+  }
+
+  .heading--background,
+  .heading--foreground {
+    display: block;
+    line-height: 1;
+    pointer-events: none; // this prevents the link from overflowing the apparent header height where the foreground text escapes
+    position: absolute;
+  }
+
+  .heading--background {
     color: $color-offwhite;
+    @include font-grotesk('Heavy');
+    font-size: calc(44px + 8vw);
+    letter-spacing: -2px;
+    top: -5px;
+    right: 0;
+    bottom: 0;
+    left: -8px;
+    text-transform: uppercase;
+
+    @supports (-ms-ime-align: auto) {
+      top: -13px;
+    }
+
+    @media (min-width: 360px) {
+      font-size: calc(48px + 8vw);
+      top: -10px;
+      left: -7px;
+
+      @supports (-ms-ime-align: auto) {
+        top: -18px;
+      }
+    }
+
+    @media (min-width: 680px) {
+      top: -12px;
+
+      @supports (-ms-ime-align: auto) {
+        top: -20px;
+      }
+    }
+
+    @media (min-width: 720px) {
+      top: -14px;
+      left: -10px;
+
+      @supports (-ms-ime-align: auto) {
+        top: -22px;
+      }
+    }
+
+    @media (min-width: 780px) {
+      top: -12px;
+
+      @supports (-ms-ime-align: auto) {
+        top: -20px;
+      }
+    }
+
+    @media (min-width:1024px) {
+      font-size: 140px;
+      top: -16px;
+
+      @supports (-ms-ime-align: auto) {
+        top: -24px;
+      }
+    }
+  }
+
+  .heading--foreground {
+    color: $color-offblack;
+    @include font-mono;
+    font-size: 1.8rem;
+    bottom: -7px;
+    left: calc(100px + 7vw);
+
+    @media (min-width: 360px) {
+      font-size: 1.95rem;
+      left: calc(100px + 10vw);
+    }
+
+    @media (min-width: 390px) {
+      font-size: 1.9rem;
+      bottom: -6px;
+      left: calc(100px + 11vw);
+    }
+
+    @media (min-width: 460px) {
+      font-size: 2.1rem;
+      bottom: -7px;
+    }
+
+
+    @media (min-width: 520px) {
+      left: calc(96px + 12vw);
+    }
+
+    @media (min-width: 560px) {
+      left: calc(100px + 12vw);
+    }
+
+    @media (min-width: 600px) {
+      font-size: 1.95rem;
+      left: calc(100px + 12.5vw);
+    }
+
+    @media (min-width: 660px) {
+      left: calc(100px + 13vw);
+    }
+
+    @media (min-width: 720px) {
+      font-size: 2.1rem;
+      left: calc(100px + 12.5vw);
+    }
+
+    @media (min-width: 760px) {
+      left: calc(100px + 13vw);
+    }
+
+    @media (min-width: 780px) {
+      font-size: 2.8rem;
+      bottom: -10px;
+      left: calc(100px + 12vw);
+    }
+
+    @media (min-width: 820px) {
+      left: calc(100px + 12.5vw);
+    }
+
+    @media (min-width: 900px) {
+      left: calc(100px + 13vw);
+    }
+
+    @media (min-width: 980px) {
+      left: calc(100px + 13.3vw);
+    }
+
+    @media (min-width:1024px) {
+      font-size: 3rem;
+      bottom: -10px;
+      left: 257px;
+    }
+
   }
 }

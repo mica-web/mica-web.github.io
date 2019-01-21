@@ -1,80 +1,12 @@
 .site-nav {
-  background-color: $color-greyli;
-  text-transform: uppercase;
-
-  @media (max-width: 559px) {
-    >ul {
-      position: relative;
-
-      @supports (display: flex) {
-        display: flex;
-        justify-content: space-around;
-
-        >li {
-          flex: 1 0 auto;
-        }
-      }
-    }
+  ul {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 48px;
+    margin-bottom: 48px;
   }
 
-  @media (min-width: 560px) {
-    >ul>li {
-      margin-bottom: 1em;
-    }
-
-    .submenu li {
-      margin-bottom: 0.5em;
-    }
-  }
-}
-
-.submenu-parent.is-active {
-  >a {
-    &::after {
-      content: "\a0\00BB";
-      visibility: hidden;
-    }
-  }
-
-  &.is-active {
-    min-height: 50px;
-
-    >a {
-      &::after {
-        visibility: visible;
-      }
-    }
-  }
-}
-
-.submenu {
-  display: none;
-  text-transform: initial;
-
-  @media (max-width: 559px) {
-    >li {
-      margin-right: 1em;
-
-      >a {
-        &::before {
-          content: "\00BB\a0";
-        }
-      }
-    }
-  }
-
-  .submenu-parent.is-active & {
-    @media (max-width: 559px) {
-      display: flex;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-    }
-
-    @media (min-width: 560px) {
-      display: block;
-      margin-left: 0.5em;
-    }
+  a {
+    border: none;
   }
 }

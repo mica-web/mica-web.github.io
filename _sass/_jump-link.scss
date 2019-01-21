@@ -1,0 +1,21 @@
+.jump-link {
+  position: absolute;
+  top: calc(10px + 1rem); // to match breadcrumb
+  right: 16px;
+
+  a {
+    font-size: 0.75rem;
+  }
+
+  @media (min-width: 480px) {
+    right: 40px;
+  }
+
+  @media (min-width: 640px) {
+    right: 64px;
+  }
+
+  @media (min-width: 920px) {
+    display: none;
+  }
+}

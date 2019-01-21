@@ -9,9 +9,9 @@ html {
 }
 
 body {
-  background: $color-offwhite;
+  background-color: $color-grey;
   color: $color-text-body;
-  font-family: $font-sans;
+  @include font-body;
   margin: 0;
 }
 
@@ -21,15 +21,35 @@ ol {
   margin-bottom: 0;
 }
 
-a {
-  color: rgba($color-text-link, 0.8);
-  &:hover,
-  &:active {
-    color: $color-text-link;
+ul {
+  main & {
+    list-style-type: none;
+    padding-left: 0;
+
+    >li {
+      margin-left: 2rem;
+      position: relative;
+
+      &::before {
+        content: '\2014';
+        margin-left: -1.7rem;
+        position: absolute;
+      }
+
+      li {
+        margin-left: 1.5rem;
+
+        &::before {
+          content: '\2013';
+          margin-left: -1.25rem;
+        }
+      }
+    }
   }
-  &:visited {
-    color: $color-text-link-visited;
-  }
+}
+
+code {
+  @include font-mono;
 }
 
 img {

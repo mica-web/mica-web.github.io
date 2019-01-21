@@ -1,19 +1,32 @@
-$font-serif: 'Cormorant Garamond',
-Serif;
-$font-sans: 'Fira Sans',
-Sans-Serif;
-// palette inspiration
-// http://www.color-hex.com/color-palette/19403
-// http://www.color-hex.com/color-palette/31786
-// http://www.color-hex.com/color-palette/30990
-// http://www.color-hex.com/color-palette/30412
-$color-offblack: #1b203a;
-$color-offwhite: whitesmoke;
-$color-grey: #889094;
-$color-greyli: rgba($color-grey, 0.2);
-$color-marine: #508ea1;
-$color-eggplant: #404463;
-$color-indigo: #243149;
-$color-text-body: $color-offblack;
-$color-text-link: $color-marine;
-$color-text-link-visited: $color-eggplant;
+// PALETTE
+// https://coolors.co/a2f1c1-fcfcfc-0a0908-f6f930-22333b
+
+$color-offblack: #0A0908;
+$color-offwhite: #FCFCFC;
+$color-grey: #ccc;
+
+$color-yellow: #F6F930;
+$color-mint: #A2F1C1;
+$color-slate: #22333B;
+
+
+$color-text-body: $color-slate;
+$color-text-link: $color-offblack;
+$color-text-link-visited: $color-text-body;
+
+// FONTS
+@mixin font-grotesk($weight:'Regular') {
+  font-family: NeueAlteGrotesk-#{$weight};
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin font-body() {
+  @include font-grotesk();
+}
+
+@mixin font-mono() {
+  font-family: Native-Regular;
+  font-weight: normal;
+  font-style: normal;
+}

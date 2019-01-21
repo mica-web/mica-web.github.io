@@ -1,0 +1,13 @@
+// Corrects the layout around floated elements
+.u-clearfix {
+
+  &::before,
+  &::after {
+    content: ' ';
+    display: table;
+  }
+
+  &::after {
+    clear: both;
+  }
+}

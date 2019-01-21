@@ -16,6 +16,15 @@ h2,
 h3,
 h4,
 h5,
+h6 {
+  font-weight: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
 h6,
 p,
 li {
@@ -24,6 +33,9 @@ li {
 }
 
 p {
+  main & {
+    max-width: 72ch;
+  }
 
   +p,
   ul+&,
@@ -32,45 +44,81 @@ p {
   }
 }
 
+h1,
+h2 {
+  @include font-grotesk('Bold');
+  line-height: $leading / 1.5;
+  margin-top: $leading / 2;
+  margin-bottom: $leading / 2;
+
+  p+&,
+  ol+&,
+  ul+& {
+    margin-top: $leading;
+  }
+}
+
+h1 {
+  font-size: 1.75rem;
+}
+
+h2 {
+  font-size: 1.15rem;
+}
+
+h3 {
+  @include font-grotesk('Semibold');
+  font-size: 1rem;
+  line-height: $leading / 1.5;
+  margin-top: $leading / 1.5;
+  margin-bottom: $leading / 2.5;
+  opacity: 0.8;
+  text-transform: uppercase;
+}
+
 .heading {
-  font-family: $font-serif;
   font-size: 1.4 * $leading;
 
-  @media (min-width: 760px) {
-    &.xl {
-      font-size: 2.2 * $leading;
+  &--underline {
+    background-image: linear-gradient(transparent calc(100% - 2px), $color-yellow 2px);
+    background-position: left 100%;
+    background-repeat: no-repeat;
+    background-size: 90% 100%;
+    @include font-mono;
+    font-size: 1.15rem;
+    margin-bottom: 1em;
+    padding-bottom: 2px;
+
+    @media (min-width: 375px) {
+      background-size: 75% 100%;
     }
   }
 }
 
-.content-wrapper {
+a {
+  main &:not(.button--bordered):not(.highlighter) {
+    // highlight, then underline
+    background-image: linear-gradient($color-yellow 0, $color-yellow 0), linear-gradient(transparent calc(100% - 2px), $color-mint 2px);
+    background-position: left 60%, left calc(100% + 2px);
+    background-repeat: no-repeat, no-repeat;
+    background-size: 100% 0%, 0% calc(100% + 2px);
+    border-bottom: 2px dotted $color-mint;
+    padding-right: 3px;
+    text-decoration: none;
+    transition: all 300ms ease-in-out;
+    width: calc(100%);
 
-  ol,
-  ul,
-  p {
-
-    +h2 {
-      margin-top: 1.25em;
+    &:link {
+      color: $color-text-link;
     }
 
-    +h3,
-    +h4 {
-      margin-top: 1em;
+    &:visited {
+      color: $color-text-link-visited;
     }
 
-    +ol,
-    +ul {
-      margin-top: 0.5em;
+    &:hover,
+    &:focus {
+      background-size: 100% 65%, 100% 100%;
     }
-  }
-}
-
-.checklist {
-  ul {
-    list-style: none;
-  }
-
-  input[type=checkbox] {
-    margin-right: 1em;
   }
 }
