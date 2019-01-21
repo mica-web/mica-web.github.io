@@ -18,6 +18,10 @@ Syllabus
 
 {% include gd-431/rubric.md %}
 
+<a href="{{ site.baseurl }}{% link resources.md %}" class="button--bordered">
+<span class="button__borders"></span>
+Resources</a>
+
 <ol class="u-list-reset schedule-list">
 {% for gd431 in site.gd431 %}
 {% assign weeknum = gd431.path | replace:'_gd431/w','' | replace:'.md', '' %}
