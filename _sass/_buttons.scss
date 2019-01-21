@@ -86,8 +86,13 @@
       width: 120px;
 
       @media (min-width: 1024px) {
-        height: 200px;
-        width: 200px;
+        height: 160px;
+        width: 160px;
+      }
+
+      @media (min-width: 1120px) {
+        height: 180px;
+        width: 180px;
       }
     }
 
