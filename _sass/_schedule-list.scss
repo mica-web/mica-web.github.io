@@ -1,0 +1,77 @@
+.schedule-list {
+  counter-reset: weeks;
+
+  >li {
+    +li {
+      margin-top: 12px;
+    }
+  }
+
+  .accordion-title {
+    background-color: $color-slate;
+
+    button {
+      color: white;
+      @include font-grotesk('Bold');
+      font-size: 1.25rem;
+      padding: 8px 32px 8px 16px;
+      position: relative;
+      width: 100%;
+
+      &::before {
+        color: $color-mint;
+        content: counters(weeks, ".", decimal-leading-zero) " ""|";
+        counter-increment: weeks;
+        @include font-mono;
+        font-size: 1.2rem;
+      }
+
+      svg {
+        border: 2px solid white;
+        border-radius: 50%;
+        height: 24px;
+        margin: auto;
+        padding: 4px;
+        position: absolute;
+        top: 0;
+        right: 8px;
+        bottom: 0;
+        width: 24px;
+
+        rect {
+          fill: currentColor;
+        }
+      }
+
+      &[aria-expanded="true"] {
+        .vert {
+          animation: fadeOut 200ms 1 forwards;
+        }
+      }
+    }
+  }
+
+  h3 {
+    background-image: linear-gradient(transparent calc(100% - 2px), $color-yellow 2px);
+    background-position: 16px 100%;
+    background-repeat: no-repeat;
+    background-size: calc(100% - 32px) 100%;
+    color: $color-offblack;
+    display: inline-block;
+    @include font-mono;
+    font-size: 0.9rem;
+    margin-top: 16px;
+    margin-bottom: 8px;
+
+    &::before {
+      content: '[';
+      padding-right: 12px;
+    }
+
+    &::after {
+      content: ']';
+      padding-left: 12px;
+    }
+  }
+
+}
