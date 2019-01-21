@@ -1,6 +1,7 @@
 .homepage-wrapper {
   @media (min-width: 780px) {
     display: grid;
+    grid-column-gap: 24px;
     grid-template-areas: "main nav""footer footer";
     grid-template-columns: 1fr 260px;
     margin-top: 64px;
@@ -30,13 +31,19 @@
   }
 
   @media (min-width:920px) {
+    grid-template-columns: 1fr 220px;
+
     .site-nav ul {
       margin-top: 32px;
     }
   }
 
   @media (min-width: 1024px) {
-    grid-template-columns: 1fr 360px;
+    grid-template-columns: 1fr 300px;
+  }
+
+  @media (min-width: 1120px) {
+    grid-template-columns: 1fr 340px;
   }
 }
 
@@ -53,7 +60,7 @@
 
   @media (min-width:920px) {
     display: grid;
-    grid-gap: 24px;
+    grid-column-gap: 24px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 4;
 
