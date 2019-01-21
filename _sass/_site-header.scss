@@ -20,10 +20,16 @@
     height: 88px;
   }
 
+  .heading,
+  a {
+    height: 100%;
+  }
+
   .heading--background,
   .heading--foreground {
     display: block;
     line-height: 1;
+    pointer-events: none; // this prevents the link from overflowing the apparent header height where the foreground text escapes
     position: absolute;
   }
 
