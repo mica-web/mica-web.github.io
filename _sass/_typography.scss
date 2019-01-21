@@ -45,7 +45,14 @@ h1,
 h2 {
   @include font-grotesk('Bold');
   line-height: $leading / 1.5;
+  margin-top: $leading / 2;
   margin-bottom: $leading / 2;
+
+  p+&,
+  ol+&,
+  ul+& {
+    margin-top: $leading;
+  }
 }
 
 h1 {
@@ -59,6 +66,9 @@ h2 {
 h3 {
   @include font-grotesk('Semibold');
   font-size: 1rem;
+  line-height: $leading / 1.5;
+  margin-top: $leading / 1.5;
+  margin-bottom: $leading / 2.5;
   opacity: 0.8;
   text-transform: uppercase;
 }
