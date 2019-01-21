@@ -33,6 +33,9 @@ li {
 }
 
 p {
+  main & {
+    max-width: 72ch;
+  }
 
   +p,
   ul+&,
