@@ -26,8 +26,6 @@
     display: flex;
     @include font-grotesk('Black');
     font-size: 28px;
-    // font-size: 32px;
-    // font-size: 36px;
     justify-content: center;
     line-height: 3;
     padding-right: $leading / 2;
@@ -90,25 +88,6 @@
         height: 200px;
         width: 200px;
       }
-
-      //   &::before,
-      //   &::after,
-      //   .borders::before,
-      //   .borders::after {
-      //     height: 60px;
-      //     width: 60px;
-      //   }
-
-      //   &:hover {
-
-      //     &::before,
-      //     &::after,
-      //     .borders::before,
-      //     .borders::after {
-      //       height: 150px;
-      //       width: 150px;
-      //     }
-      //   }
     }
 
     &:hover {
@@ -152,8 +131,6 @@
       background-color: $color-mint;
       font-size: 1.5ch;
       left: -4px;
-      // font-size: 2ch;
-      // left: -6px;
       letter-spacing: 2px;
       line-height: 1;
       opacity: 0;
