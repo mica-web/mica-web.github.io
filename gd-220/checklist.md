@@ -6,19 +6,9 @@ course: gd-220
 Best practices checklist
 ========================
 
-{::options parse_block_html="true" /}
-<div class="content-wrapper checklist">
-
 ### General
 - Git commits have clear, descriptive messages
-- Project is available online (either via CodePen, GitHub Pages, etc.)
-- Site has a consistent, accessible design
 - Sites are designed mobile first and responsive
-- Sites provide similar experiences in the latest versions of Chrome, Edge, Firefox and Safari
-- No framework is used (e.g., Bootstrap)
-- Assets are minified
-- Images are compressed
-- Site does not include extraneous requests
 
 ### HTML
 - HTML is written according to best practices:
@@ -34,7 +24,6 @@ Best practices checklist
   - `title`  
 - Markup makes use of semantic elements and avoids `div`itis
   - Heading tags are used semantically, not simply for presentation; see [the docs](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements)
-  - `input` types are appropriate
   - `<br>` elements are avoided (valid exceptions: addresses, song lyrics and poems); see [the docs](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/br)
   - `<hr>` elements are only used according to [the docs](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hr)
 - `img` elements have helpful `alt` text
@@ -51,14 +40,10 @@ Best practices checklist
 - Box sizing is declared
 - All floats are properly cleared
 - Elements are mainly styled by using classnames on selectors (IDs are avoided, styled bare elements are minimal)
-  - Classnames are written kebab-style and according to [BEM guidelines](https://en.bem.info/methodology/key-concepts/)
-  - Selectors are not overly specific and avoid making assumptions about the markup
+  - Classnames are helpful and written kebab-style
 - Empty `div`s are avoided for presentation
 - CSS does **not** reiterate browser defaults
 - CSS is not written in such a way that it is immediately overwritten by other declarations
   - Including misusing shorthand properties
 - Units are used logically and consistently
   - Zero measurements do **not** include units
-
-
-</div>
