@@ -1,16 +1,11 @@
----
-title: Grading rubric
-course: gd-431
----
-
 Rubric
-======
+------
 
 Assignments are judged to be:
 
-1. Polished / Client-Ready
-1. Final Draft (ready for internal review)
-1. In development
+- Polished / Client-Ready
+- Final Draft (ready for internal review)
+- In development
 
 In general, assignments are graded on the following criteria:
 
