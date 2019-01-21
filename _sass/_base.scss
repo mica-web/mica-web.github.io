@@ -48,6 +48,10 @@ ul {
   }
 }
 
+code {
+  @include font-mono;
+}
+
 img {
   height: auto;
   max-width: 100%;
