@@ -12,7 +12,6 @@ body {
   background-color: $color-grey;
   color: $color-text-body;
   @include font-body;
-  font-display: fallback;
   margin: 0;
 }
 
