@@ -21,7 +21,8 @@
     color: $color-text-link;
     text-decoration: none;
 
-    &:hover {
+    &:hover,
+    &:focus {
       border-bottom-color: $color-mint;
     }
   }

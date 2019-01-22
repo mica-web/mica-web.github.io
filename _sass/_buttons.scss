@@ -1,6 +1,8 @@
 .button {
   &--animated {
-    &:hover {
+
+    &:hover,
+    &:focus {
       .button__text {
         &--initial {
           opacity: 0;
@@ -96,7 +98,8 @@
       }
     }
 
-    &:hover {
+    &:hover,
+    &:focus {
 
       &::before,
       &::after,
