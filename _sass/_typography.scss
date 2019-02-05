@@ -32,7 +32,7 @@ li {
   margin: 0;
 }
 
-p {
+p, li {
   main & {
     max-width: 72ch;
   }
@@ -120,5 +120,29 @@ a {
     &:focus {
       background-size: 100% 65%, 100% 100%;
     }
+  }
+}
+
+ol {
+  padding-left: 1em;
+  > li {
+    margin-bottom: 0.5em;
+    padding-left: 0.5em;
+  }
+}
+
+dl {
+  dt {
+    color: $color-mint;
+    @include font-mono;
+    font-size: 1.2rem;
+    del {
+      color: $color-grey;
+    }
+  }
+  dd {
+    margin-top: 0.25em;
+    margin-bottom: 1em;
+    margin-left: 0;
   }
 }
