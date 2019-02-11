@@ -27,6 +27,8 @@ Syllabus
 [GD 220 Syllabus](files/Syllabus_GraphicDesign2.pdf){:target="_blank"} (PDF, 121kb)
 </span>
 
+{% include gd-220/projects.md %}
+
 {% include gd-220/rubric.md %}
 
 {: .button-wrapper }
