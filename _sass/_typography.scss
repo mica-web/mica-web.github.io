@@ -95,6 +95,10 @@ h3 {
   }
 }
 
+.text-larger {
+  font-size: 180%;
+}
+
 a {
   main &:not(.button--bordered):not(.highlighter) {
     // highlight, then underline
