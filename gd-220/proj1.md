@@ -22,7 +22,7 @@ You will be provided the content from a newspaper article and be required to des
 1. Document some examples of article layouts you find to be effective. Include screenshots and links as an addendum to your style tiles assignment.
 1. Create 2-3 concept sketches of your article layout using the elements from your style tiles. These can be on paper (please use an ink dark enough to document digitally!) or digital.
 1. Present style tiles and concepts.
-1. Update article markup based on current knowledge of HTML and CSS.
+1. Update article markup based on current knowledge of HTML and add CSS.
 1. Create a pull request for code review and final submission.
 
 ## Considerations
@@ -36,7 +36,7 @@ You will be provided the content from a newspaper article and be required to des
 - balance
 
 ## Requirements
-- Your design should include at least 2 non-typographic visuals:
+- Your design should include at least two non-typographic visuals:
   - An inline figure (image or chart) and related caption
   - An additional visual or media element (e.g., chart, background image, inline image, video) of your choosing.
 - Your markup should include the following elements:
