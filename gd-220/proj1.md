@@ -37,7 +37,7 @@ You will be provided the content from a newspaper article and be required to des
 
 ## Requirements
 - Your design should include at least two non-typographic visuals:
-  - An inline figure (image or chart) and related caption
+  - An inline figure (image or chart) and related caption.
   - An additional visual or media element (e.g., chart, background image, inline image, video) of your choosing.
 - Your markup should include the following elements:
   - `h1`
