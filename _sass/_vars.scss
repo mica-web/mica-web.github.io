@@ -30,3 +30,10 @@ $color-text-link-visited: $color-text-body;
   font-weight: normal;
   font-style: normal;
 }
+
+// TYPOGRAPHIC SCALE
+// this uses MAJOR THIRD type scale, or exponents of 1.25
+$base-font-size: 1em;
+$scale: 1.25;
+$line-height: $scale;
+$leading: $scale * $base-font-size * $line-height;

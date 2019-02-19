@@ -56,3 +56,10 @@ img {
   height: auto;
   max-width: 100%;
 }
+
+hr {
+  border: 0;
+  border-bottom: 1px dashed $color-mint;
+  margin-top: $leading;
+  margin-bottom: $leading * 2;
+}
