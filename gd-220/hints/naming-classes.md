@@ -23,6 +23,8 @@ course: gd-220
 .class_name
 ```
 
+---
+
 - Choose classnames based on **function** not appearance or location
 
 <span class="text-larger">👍</span>
@@ -40,6 +42,8 @@ course: gd-220
 .text-blue { }
 .right-column { }
 ```
+
+---
 
 - Keep classnames readable and avoid abbreviations unless well-known
 
