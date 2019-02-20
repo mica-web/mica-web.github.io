@@ -18,6 +18,6 @@ In general, assignments are graded on the following criteria:
 - Student can express reasoning behind their design choices
 - User can complete the stated goals of the site
 
-<!-- A [checklist of best practices]({{ site.baseurl }}{% link gd-220/checklist.md %}) discussed during the course may serve as a point of reference before turning in your assignments. -->
+A [checklist of best practices]({{ site.baseurl }}{% link gd-220/hints/best-practices.md %}) discussed during the course may serve as a point of reference before turning in your assignments.
 
 An [example rubric](https://docs.google.com/spreadsheets/d/14OvRJcowtc2IpjVv1EGY4tRlp3xSzL0Yzvn0urztFks/edit?usp=sharing) is also available.
