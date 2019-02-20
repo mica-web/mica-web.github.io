@@ -65,9 +65,9 @@ You may use additional HTML elements; these are requirements, but not constraint
 <dt>Feb 4</dt>
 <dd>Initial markup due (step 1) ✔️</dd>
 <dt>Feb 12</dt>
-<dd>Present style tiles and sketches (steps 2-6)</dd>
+<dd>Present style tiles and sketches (steps 2-6) ✔️</dd>
 <dt>Feb 16</dt>
-<dd>Initial styles due; first PR (steps 7-8)</dd>
+<dd>Initial styles due; first PR (steps 7-8) ✔️</dd>
 <dt>Feb 21</dt>
 <dd>Project due date</dd>
 </dl>
