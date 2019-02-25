@@ -32,6 +32,11 @@ Syllabus
 {% include gd-220/rubric.md %}
 
 {: .button-wrapper }
+<a href="{{ site.baseurl }}{% link gd-220/hints/index.md %}" class="button--bordered">
+<span class="button__borders"></span>
+Hints + Tips</a>
+
+{: .button-wrapper }
 <a href="{{ site.baseurl }}{% link resources.md %}" class="button--bordered">
 <span class="button__borders"></span>
 Resources</a>
