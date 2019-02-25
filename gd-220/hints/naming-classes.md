@@ -9,14 +9,14 @@ Guidelines for writing CSS classes
 - Classnames should be lowercase
 - If helpful for readability, classnames can also be broken up by a hyphen
 
-<span class="text-larger">👍</span>
+<span class="text-larger emoji">👍</span>
 
 ```css
 .class { }
 .class-name { }
 ```
 
-<span class="text-larger">👎</span>
+<span class="text-larger emoji">👎</span>
 
 ```css
 .CLASS { }
@@ -30,7 +30,7 @@ Guidelines for writing CSS classes
 
 - Choose classnames based on **function** not appearance or location
 
-<span class="text-larger">👍</span>
+<span class="text-larger emoji">👍</span>
 
 ```css
 .site-header { }
@@ -38,7 +38,7 @@ Guidelines for writing CSS classes
 .article-aside { }
 ```
 
-<span class="text-larger">👎</span>
+<span class="text-larger emoji">👎</span>
 
 ```css
 .black-banner { }
@@ -50,13 +50,13 @@ Guidelines for writing CSS classes
 
 - Keep classnames readable and avoid abbreviations unless well-known
 
-<span class="text-larger">👍</span>
+<span class="text-larger emoji">👍</span>
 
 ```css
 .mica-header { }
 ```
 
-<span class="text-larger">👎</span>
+<span class="text-larger emoji">👎</span>
 
 ```css
 .mhdr { }
