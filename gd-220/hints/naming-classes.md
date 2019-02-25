@@ -3,6 +3,9 @@ title: Naming CSS Classes
 course: gd-220
 ---
 
+Guidelines for writing CSS classes
+==================================
+
 - Classnames should be lowercase
 - If helpful for readability, classnames can also be broken up by a hyphen
 

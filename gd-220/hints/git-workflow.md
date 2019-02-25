@@ -3,6 +3,9 @@ title: Git workflow
 course: gd-220
 ---
 
+Git workflow walkthrough
+========================
+
 A walkthrough of saving your changes to your local repo and pushing them up to GitHub.
 
 1. In Visual Studio Code, go to the Source Control menu.
