@@ -91,6 +91,10 @@ h3 {
   font-size: 180%;
 }
 
+.emoji {
+  vertical-align: middle;
+}
+
 a {
   main &:not(.button--bordered):not(.highlighter) {
     // highlight, then underline
