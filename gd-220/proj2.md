@@ -114,7 +114,7 @@ Other possibilities (at least 2):
 <dt>Feb 19</dt>
 <dd>Project intro + overview ✔️</dd>
 <dt>Feb 26</dt>
-<dd>Style tiles and comps due</dd>
+<dd>Style tiles and comps due ✔️</dd>
 <dt>Mar 5</dt>
 <dd>Markup and initial styles due; possible presentations?</dd>
 <dt>Mar 10</dt>

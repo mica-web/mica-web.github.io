@@ -69,7 +69,7 @@ You may use additional HTML elements; these are requirements, but not constraint
 <dt>Feb 16</dt>
 <dd>Initial styles due; first PR (steps 7-8) ✔️</dd>
 <dt>Feb 21</dt>
-<dd>Project due date</dd>
+<dd>Project due date ✔️</dd>
 </dl>
 
 </aside>
