@@ -72,4 +72,7 @@ You may use additional HTML elements; these are requirements, but not constraint
 <dd>Project due date ✔️</dd>
 </dl>
 
+<h2>Rubric</h2>
+<a href="https://docs.google.com/spreadsheets/d/14OvRJcowtc2IpjVv1EGY4tRlp3xSzL0Yzvn0urztFks/edit?usp=sharing" target="_blank">Google Sheet example</a>
+
 </aside>

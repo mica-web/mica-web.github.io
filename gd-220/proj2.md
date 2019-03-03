@@ -114,11 +114,13 @@ Other possibilities (at least 2):
 <dt>Feb 19</dt>
 <dd>Project intro + overview ✔️</dd>
 <dt>Feb 26</dt>
-<dd>Style tiles and comps due ✔️</dd>
+<dd>Style tiles and comps due and presented ✔️</dd>
 <dt>Mar 5</dt>
-<dd>Markup and initial styles due; possible presentations?</dd>
+<dd>Markup and initial styles due</dd>
 <dt>Mar 10</dt>
 <dd>Project due date</dd>
 </dl>
 
+<h2>Rubric</h2>
+<a href="https://docs.google.com/spreadsheets/d/14OvRJcowtc2IpjVv1EGY4tRlp3xSzL0Yzvn0urztFks/edit?usp=sharing" target="_blank">Google Sheet example</a>
 </aside>
