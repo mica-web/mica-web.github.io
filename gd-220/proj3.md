@@ -39,6 +39,7 @@ This project will take into consideration storytelling and the passage of time a
 ## Requirements
 - The design should be responsive, working on mobile devices as small as 375px wide and other devices up to 1280px wide.
 - The design must include a heading for the overall timeline.
+- Your timeline must include at least 14 hours/sections.
 - For each hour of the day that you document, you should include the following:
   - A demarcation of the time being documented
   - A photo and related caption
