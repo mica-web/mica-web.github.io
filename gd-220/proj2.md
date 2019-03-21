@@ -116,9 +116,9 @@ Other possibilities (at least 2):
 <dt>Feb 26</dt>
 <dd>Style tiles and comps due and presented ✔️</dd>
 <dt>Mar 5</dt>
-<dd>Markup and initial styles due</dd>
+<dd>Markup and initial styles due ✔</dd>
 <dt>Mar 10</dt>
-<dd>Project due date</dd>
+<dd>Project due date ✔</dd>
 </dl>
 
 <h2>Rubric</h2>

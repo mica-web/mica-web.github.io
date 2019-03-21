@@ -57,7 +57,7 @@ This project will take into consideration storytelling and the passage of time a
 
 <dl>
 <dt>Mar 12</dt>
-<dd>Project intro + overview</dd>
+<dd>Project intro + overview ✔</dd>
 <dt>Spring Break</dt>
 <dd>Create style tiles (optional), sketches, comps (mobile and desktop) for your timeline. Begin work on initial  markup and mobile styles</dd>
 <dt>Mar 26</dt>
