@@ -133,6 +133,8 @@ ol {
 }
 
 dl {
+  margin-bottom: 3rem;
+
   dt {
     color: $color-mint;
     @include font-mono;
