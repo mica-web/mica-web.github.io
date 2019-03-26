@@ -24,7 +24,7 @@ This project will take into consideration storytelling and the passage of time a
 1. Create a new branch ("project3") based on your master branch. Switch to the new branch.
 1. Create a new directory ("project3") in your course projects directory and, within this directory, create the markup for your timeline. Create a pull request for this work.
 1. Translate your design into mobile-first styles.
-1. Update your pull request for final submission.
+1. Update your pull request for final submission, including the PR template (see [example](https://github.com/mica-web/gd2/pull/3)).
 1. Present your project to the class.
 
 ## Considerations
@@ -59,14 +59,14 @@ This project will take into consideration storytelling and the passage of time a
 <dt>Mar 12</dt>
 <dd>Project intro + overview ✔</dd>
 <dt>Spring Break</dt>
-<dd>Create style tiles (optional), sketches, comps (mobile and desktop) for your timeline. Begin work on initial  markup and mobile styles</dd>
+<dd>Create style tiles (optional), sketches, comps (mobile and desktop) for your timeline. Begin work on initial  markup and mobile styles ✔</dd>
 <dt>Mar 26</dt>
-<dd>Markup and mobile styles check in</dd>
+<dd>Markup and mobile styles check in ✔</dd>
 <dt>Apr 2</dt>
 <dd>Project due and presentations</dd>
 </dl>
 
-<!-- <h2>Rubric</h2>
-<a href="" target="_blank">Google Sheet example</a> -->
+<h2>Rubric</h2>
+<a href="https://docs.google.com/spreadsheets/d/14OvRJcowtc2IpjVv1EGY4tRlp3xSzL0Yzvn0urztFks/edit?usp=sharing" target="_blank">Google Sheet example</a>
 
 </aside>
