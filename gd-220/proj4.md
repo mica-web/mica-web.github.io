@@ -18,11 +18,15 @@ You will design a one-page web site advertising an upcoming design conference. T
 1. Come up with a unique theme for your event. What do you think is the most important issue in the design field today?
 1. Determine event details, such as the conference name, location and date(s).
 1. Identify three speakers for the event and document your initial research to use in creating content for the site.
-1. Identify 3-4 existing conferences with an art/design/tech focus and analyze the strengths and weaknesses of their site designs (_Note:_ These should be different conferences, not the same conference in a different location or year).
+1. Complete a competitor analysis: Identify 3 existing conferences with an art/design/tech focus and document and analyze their event web site. Your analysis should be ~5 pages and include the following:
+  - Event name, year of the event and the URL of the web site
+  - 1 page of screenshots: Take screenshots at 2 widths (375px and 1280px) of the homepage and either the list of speakers or talks (total of 4 screenshots).
+  - Written analysis of the site design, including strengths and weaknesses (~0.5 page per event).
+  - A summary of your main takeaways from this analysis (~ 1 paragraph).
 1. Think about the conference from a potential attendee's POV. What info do they want to know? What info is most crucial?
 1. Consider how the event info should be broken up into sections and how users will navigate within the page.
 1. Skech 2-3 designs for your event site and choose one to make mobile and desktop comps for in Sketch or a similar program.
-1. Create a new directory ("project4") in your course projects directory and, within this directory, create the markup for your event site. Create a pull request for this work.
+1. Create a "project4" branch and a new directory ("project4") in your course projects directory and, within this directory, create the markup for your event site. Create a pull request for this work.
 1. Translate your design into mobile-first styles.
 1. Update your pull request for final submission.
 1. Present your project to the class.
@@ -44,8 +48,9 @@ You will design a one-page web site advertising an upcoming design conference. T
   - Event schedule
   - Details for at least three talks (including talk name and description)
   - Three speaker bios (including a photo)
+  - Call to action and link to buy tickets
 - The content for your speaker bios and talk descriptions does **not** need to be original. You may use content from an existing event, but you must document the source in an HTML comment in each instance.
-- You must document all the resources used in your final design, including images, fonts, patterns, etc. You can do this either in an HTML comment at the end of your HTML file or in CSS comments inside your stylesheet.
+- You must document all the resources used in your final design, including text/copy, images, fonts, patterns, etc. You can do this either in an HTML comment at the end of your HTML file or in your PR description.
 
 </section>
 
@@ -59,9 +64,9 @@ You will design a one-page web site advertising an upcoming design conference. T
 <dt>Apr 2</dt>
 <dd>Project intro + overview</dd>
 <dt>Apr 7</dt>
-<dd>Style tiles and content due</dd>
+<dd>Competitor analysis and content due</dd>
 <dt>Apr 14</dt>
-<dd>Competitor analysis, comps (mobile and desktop) and initial markup due</dd>
+<dd>Create style tiles (optional), sketches, comps (mobile and desktop) for your site. Initial markup due.</dd>
 <dt>Apr 20</dt>
 <dd>Mobile styles checkin</dd>
 <dt>Apr 27</dt>
