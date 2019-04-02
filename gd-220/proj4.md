@@ -49,8 +49,14 @@ You will design a one-page web site advertising an upcoming design conference. T
   - Details for at least three talks (including talk name and description)
   - Three speaker bios (including a photo)
   - Call to action and link to buy tickets
+- Your code **must** include:
+  - The following HTML elements: `header`, `main`, `footer`, `h1`, `img`, `a`
+  - At least one media query
+  - At least two CSS variables
 - The content for your speaker bios and talk descriptions does **not** need to be original. You may use content from an existing event, but you must document the source in an HTML comment in each instance.
-- You must document all the resources used in your final design, including text/copy, images, fonts, patterns, etc. You can do this either in an HTML comment at the end of your HTML file or in your PR description.
+- As always, you must document all the resources used in your final design, including text/copy, images, fonts, patterns, etc. You can do this either in an HTML comment at the end of your HTML file or in your PR description.
+- 💡As this is your final project for the semester, this should be a summary of what you have learned to date about designing for the web, including: writing HTML and CSS according to best practices, your knowledge of CSS layout, incorporating animation/interactivity in your designs, utilizing CSS variables, etc.
+
 
 </section>
 
@@ -63,16 +69,14 @@ You will design a one-page web site advertising an upcoming design conference. T
 <dl>
 <dt>Apr 2</dt>
 <dd>Project intro + overview</dd>
-<dt>Apr 7</dt>
+<dt>Apr 9</dt>
 <dd>Competitor analysis and content due</dd>
-<dt>Apr 14</dt>
-<dd>Create style tiles (optional), sketches, comps (mobile and desktop) for your site. Initial markup due.</dd>
-<dt>Apr 20</dt>
+<dt>Apr 16</dt>
+<dd>Style tiles (optional), sketches, comps (mobile and desktop) presented. Create initial markup in class.</dd>
+<dt>Apr 23</dt>
 <dd>Mobile styles checkin</dd>
-<dt>Apr 27</dt>
-<dd>Desktop styles checkin</dd>
 <dt>Apr 30</dt>
-<dd>Styles checkin and in-class troubleshooting</dd>
+<dd>Desktop styles checkin</dd>
 <dt>May 5</dt>
 <dd>Project due date</dd>
 <dt>May 7</dt>
