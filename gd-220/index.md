@@ -27,11 +27,11 @@ Syllabus
 [GD 220 Syllabus](files/Syllabus_GraphicDesign2.pdf){:target="_blank"} (PDF, 121kb)
 </span>
 
-{% include gd-220/projects.md %}
+<!-- {% include gd-220/projects.md %} -->
 
-{% include gd-220/rubric.md %}
+<!-- {% include gd-220/rubric.md %} -->
 
-{: .button-wrapper }
+<!-- {: .button-wrapper }
 <a href="{{ site.baseurl }}{% link gd-220/hints/index.md %}" class="button--bordered">
 <span class="button__borders"></span>
 Hints + Tips</a>
@@ -39,7 +39,7 @@ Hints + Tips</a>
 {: .button-wrapper }
 <a href="{{ site.baseurl }}{% link resources.md %}" class="button--bordered">
 <span class="button__borders"></span>
-Resources</a>
+Resources</a> -->
 
 </aside>
 
