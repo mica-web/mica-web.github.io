@@ -27,6 +27,7 @@ Syllabus
 [GD 220 Syllabus](files/syllabus.min.pdf){:target="_blank"} (PDF, 259kb)
 </span>
 
+
 <!-- {% include gd-220/projects.md %} -->
 
 <!-- {% include gd-220/rubric.md %} -->
@@ -34,12 +35,12 @@ Syllabus
 <!-- {: .button-wrapper }
 <a href="{{ site.baseurl }}{% link gd-220/hints/index.md %}" class="button--bordered">
 <span class="button__borders"></span>
-Hints + Tips</a>
+Hints + Tips</a> -->
 
 {: .button-wrapper }
-<a href="{{ site.baseurl }}{% link resources.md %}" class="button--bordered">
+<a href="{{ site.baseurl }}{% link gd2-resources.md  %}" class="button--bordered">
 <span class="button__borders"></span>
-Resources</a> -->
+Resources</a>
 
 </aside>
 
