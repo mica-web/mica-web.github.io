@@ -7,49 +7,42 @@ type: project
 {::options parse_block_html="true" /}
 
 <header>
-# Project 1: News Article Specimen
+# Project 1: Typography Specimen
 
-You will be provided the content from a newspaper article and be required to design an online layout for this content using HTML, CSS and any media (e.g., images, icons, video) you choose to incorporate.
+You will be provided the [content from a short story](https://gist.github.com/angeliquejw/a4279c23d1e49d2b5dfadc54b45dcce3) and be required to design an online layout for this content using HTML and CSS.
 
 </header>
 
 <section>
 
 ## Process
-1. Use your current knowledge of HTML to add markup to the article copy.
-1. Do some research into web typography. Share at least one link about web typography in [#general](https://mica-web.slack.com). Explain why you think this resource is useful in 1-2 sentences.
-1. Create 2-3 [style tiles](https://alistapart.com/article/style-tiles-and-how-they-work) with your ideas about typography and colors for this assignment, including the following: color palette, headline, caption, pull quote, link text, body text. Don’t get too carried away with layout thoughts at this stage -- focus your thinking on typography and color palette.
-1. Document some examples of article layouts you find to be effective. Include screenshots and links as an addendum to your style tiles assignment.
-1. Create 2-3 concept sketches of your article layout using the elements from your style tiles. These can be on paper (please use an ink dark enough to document digitally!) or digital.
-1. Present style tiles and concepts.
-1. Update article markup based on current knowledge of HTML and add CSS.
+1. Use your current knowledge of HTML to add markup to the copy.
+1. Do some research into web typography.
+  - Share at least one link about web typography in [#general](https://mica-web.slack.com). Explain why you think this resource is useful in 1-2 sentences.
+  - Document some examples of article layouts you find to be effective. Include screenshots and a link to the source.
+1. Update markup based on current knowledge of HTML and add CSS.
 1. Create a pull request for code review and final submission.
+  - Include PR template and use best practices checklist to check your own work.
+1. Present project to peers.
 
 ## Considerations
 - audience
-- interest
-- readability
-- legibility
+- readability + legibility
 - hierarchy
 - chunking
 - contrast
 - balance
 
 ## Requirements
-- Your design should include at least two non-typographic visuals:
-  - An inline figure (image or chart) and related caption.
-  - An additional visual or media element (e.g., chart, background image, inline image, video) of your choosing.
 - Your markup should include the following elements:
   - `h1`
   - `p`
   - `blockquote`
-  - `figure`
-  - `figcaption`
   - `a`
 
 You may use additional HTML elements; these are requirements, but not constraints.
 - Your CSS should include at least one comment about your choice of line-length constraint.
-- You must document all the resources used in your final design, including images, fonts, patterns, etc. You can do this either in an HTML comment at the end of your HTML file or in CSS comments inside your stylesheet.
+- Your assignment will be viewed at a resolution of 1200 x 800.
 
 </section>
 
@@ -60,19 +53,15 @@ You may use additional HTML elements; these are requirements, but not constraint
 <h2>Schedule</h2>
 
 <dl>
-<dt><del>Jan 29</del> Feb 5</dt>
-<dd>Project intro + overview ✔️</dd>
-<dt>Feb 4</dt>
-<dd>Initial markup due (step 1) ✔️</dd>
-<dt>Feb 12</dt>
-<dd>Present style tiles and sketches (steps 2-6) ✔️</dd>
-<dt>Feb 16</dt>
-<dd>Initial styles due; first PR (steps 7-8) ✔️</dd>
-<dt>Feb 21</dt>
-<dd>Project due date ✔️</dd>
+<dt>Sept 12</dt>
+<dd>Initial markup due; project intro + overview</dd>
+<dt>Sept 19</dt>
+<dd>Typography assignment + initial styles due</dd>
+<dt>Sept 26</dt>
+<dd>Project due date</dd>
 </dl>
 
 <h2>Rubric</h2>
-<a href="https://docs.google.com/spreadsheets/d/14OvRJcowtc2IpjVv1EGY4tRlp3xSzL0Yzvn0urztFks/edit?usp=sharing" target="_blank">Google Sheet example</a>
+<a href="https://docs.google.com/spreadsheets/d/1Z5jf_c10aGK-NYVLHmtQmz0vzfdVQDIIEMS9rpaAAts/edit?usp=sharing" target="_blank">Google Sheet example</a>
 
 </aside>
