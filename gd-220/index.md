@@ -28,9 +28,9 @@ Syllabus
 </span>
 
 
-<!-- {% include gd-220/projects.md %} -->
+{% include gd-220/projects.md %}
 
-<!-- {% include gd-220/rubric.md %} -->
+{% include gd-220/rubric.md %}
 
 <!-- {: .button-wrapper }
 <a href="{{ site.baseurl }}{% link gd-220/hints/index.md %}" class="button--bordered">
