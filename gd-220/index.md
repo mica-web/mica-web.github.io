@@ -49,18 +49,10 @@ Resources</a>
 {% assign weeknum = gd220.path | replace:'_gd220/w','' | replace:'.md', '' %}
 
   <li class="accordion-wrapper" id="week{{ weeknum }}">
-    {% if weeknum == "01" %}
-    <h2 class="accordion-title js-trigger-content-toggle">
-    {% else %}
-    <!-- <h2 class="accordion-title{% if gd220.empty %} has-no-content js-content-toggle-ignore{% else %} js-trigger-content-toggle{% endif %}"> -->
-
-    <h2 class="accordion-title has-no-content js-content-toggle-ignore">
-    {% endif %}
+    <h2 class="accordion-title{% if gd220.empty %} has-no-content js-content-toggle-ignore{% else %} js-trigger-content-toggle{% endif %}">
       {{ gd220.topic }}
     </h2>
-    {% if weeknum == "01" or weeknum == "02" %}
     {{ gd220.content | markdownify }}
-    {% endif %}
   </li>
 
 {% endfor %}
