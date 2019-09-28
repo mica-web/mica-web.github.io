@@ -17,10 +17,11 @@ You will design the layout for a card/tile component and create the design using
 
 ## Process
 1. Review options for the [type of card](#additional-requirements-based-on-card-type) you may design.
-1. Create two [style tiles](https://alistapart.com/article/style-tiles-and-how-they-work) with your ideas about typography and colors for this assignment, including the following: color palette, body text, and two other components of your card.
-1. Using Sketch or a similar program, create two possible design comps for your card component using the elements from your style tiles. Your concept sketches should include how multiple versions of the card would look in a single layout (e.g., multiple recipes on a single page).
-1. Create a new branch and a new directory ("project2") in your course projects directory and, within this directory, create the markup for a single card. Create a pull request for this work.
-1. Present style tiles and concepts. Checkin and feedback on styles in class.
+1. Create **two** [style tiles](https://alistapart.com/article/style-tiles-and-how-they-work) with your ideas about typography and colors for this assignment, including the following: color palette, body text, and two other components of your card.
+1. Using Sketch or a similar program, create **two** different design comps for your card component based on the elements from your style tiles.
+1. Present style tiles and concepts to class for critique.
+1. Create an additional comp for how your design looks with multiple versions of the same card on a single page/layout (e.g., multiple recipes on a single page).
+1. Create a new git branch and a new directory ("project2") in your course projects directory and, within this directory, create a new `index.html`. Create the markup for a single card. Create a pull request for this work.
 1. After deciding on your style direction, write CSS based on your comps and style tiles.
 1. Update your pull request for final submission. (NOTE: While your comps consider multiple versions of a single card design, your code version should only be of a single card.)
 
