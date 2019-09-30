@@ -111,8 +111,6 @@ Other possibilities (at least 2):
 
 <h2>Schedule</h2>
 
-<p>TBD</p>
-
 <dl>
 <dt>Sept 26</dt>
 <dd>Project intro + overview ✔️</dd>
