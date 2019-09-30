@@ -113,17 +113,19 @@ Other possibilities (at least 2):
 
 <p>TBD</p>
 
-<!-- <dl>
-<dt>Feb 19</dt>
+<dl>
+<dt>Sept 26</dt>
 <dd>Project intro + overview ✔️</dd>
-<dt>Feb 26</dt>
-<dd>Style tiles and comps due and presented ✔️</dd>
-<dt>Mar 5</dt>
-<dd>Markup and initial styles due ✔</dd>
-<dt>Mar 10</dt>
-<dd>Project due date ✔</dd>
+<dt>Oct 3</dt>
+<dd>Style tiles and comps due and presented</dd>
+<dt>Oct 10</dt>
+<dd>Markup due</dd>
+<dt>Oct 17</dt>
+<dd>Initial styles due </dd>
+<dt>Oct 24</dt>
+<dd>Project due date</dd>
 </dl>
 
 <h2>Rubric</h2>
-<a href="https://docs.google.com/spreadsheets/d/14OvRJcowtc2IpjVv1EGY4tRlp3xSzL0Yzvn0urztFks/edit?usp=sharing" target="_blank">Google Sheet example</a> -->
+<a href="https://docs.google.com/spreadsheets/d/1Z5jf_c10aGK-NYVLHmtQmz0vzfdVQDIIEMS9rpaAAts/edit?usp=sharing" target="_blank">Google Sheet example</a>
 </aside>
