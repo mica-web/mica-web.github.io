@@ -54,11 +54,11 @@ You may use additional HTML elements; these are requirements, but not constraint
 
 <dl>
 <dt>Sept 12</dt>
-<dd>Initial markup due; project intro + overview</dd>
+<dd>Initial markup due; project intro + overview ✔</dd>
 <dt>Sept 19</dt>
-<dd>Typography assignment + initial styles due</dd>
+<dd>Typography assignment + initial styles due ✔</dd>
 <dt>Sept 26</dt>
-<dd>Project due date</dd>
+<dd>Project due date ✔</dd>
 </dl>
 
 <h2>Rubric</h2>
