@@ -19,7 +19,7 @@ You will design the layout for a card/tile component and create the design using
 1. Review options for the [type of card](#additional-requirements-based-on-card-type) you may design.
 1. Create **two** [style tiles](https://alistapart.com/article/style-tiles-and-how-they-work) with your ideas about typography and colors for this assignment, including the following: color palette, body text, and two other components of your card.
 1. Using Sketch or a similar program, create **two** different design comps for your card component based on the elements from your style tiles.
-1. Present style tiles and concepts to class for critique.
+1. Present style tiles and concepts to classmates for critique.
 1. Create an additional comp for how your design looks with multiple versions of the same card on a single page/layout (e.g., multiple recipes on a single page).
 1. Create a new git branch and a new directory ("project2") in your course projects directory and, within this directory, create a new `index.html`. Create the markup for a single card. Create a pull request for this work.
 1. After deciding on your style direction, write CSS based on your comps and style tiles.
@@ -115,13 +115,13 @@ Other possibilities (at least 2):
 <dt>Sept 26</dt>
 <dd>Project intro + overview ✔️</dd>
 <dt>Oct 3</dt>
-<dd>Style tiles and comps due and presented</dd>
+<dd>Style tiles and comps due and presented (steps 1-4)</dd>
 <dt>Oct 10</dt>
-<dd>Markup due</dd>
+<dd>Markup and cardX3 due (steps 5-6)</dd>
 <dt>Oct 17</dt>
-<dd>Initial styles due </dd>
+<dd>Initial styles due (step 7)</dd>
 <dt>Oct 24</dt>
-<dd>Project due date</dd>
+<dd>Project due date (step 8)</dd>
 </dl>
 
 <h2>Rubric</h2>
