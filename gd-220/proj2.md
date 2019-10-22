@@ -125,5 +125,5 @@ Other possibilities (at least 2):
 </dl>
 
 <h2>Rubric</h2>
-<a href="https://docs.google.com/spreadsheets/d/1Z5jf_c10aGK-NYVLHmtQmz0vzfdVQDIIEMS9rpaAAts/edit?usp=sharing" target="_blank">Google Sheet example</a>
+<a href="https://docs.google.com/spreadsheets/d/1Z5jf_c10aGK-NYVLHmtQmz0vzfdVQDIIEMS9rpaAAts/edit#gid=1993026041" target="_blank">Google Sheet example</a>
 </aside>
