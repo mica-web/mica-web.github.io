@@ -115,11 +115,11 @@ Other possibilities (at least 2):
 <dt>Sept 26</dt>
 <dd>Project intro + overview ✔️</dd>
 <dt>Oct 3</dt>
-<dd>Style tiles and comps due and presented (steps 1-4)</dd>
+<dd>Style tiles and comps due and presented (steps 1-4) ✔️</dd>
 <dt>Oct 10</dt>
-<dd>Markup and cardX3 due (steps 5-6)</dd>
+<dd>Markup and cardX3 due (steps 5-6) ✔️</dd>
 <dt>Oct 17</dt>
-<dd>Initial styles due (step 7)</dd>
+<dd>Initial styles due (step 7) ✔️</dd>
 <dt>Oct 24</dt>
 <dd>Project due date (step 8)</dd>
 </dl>
