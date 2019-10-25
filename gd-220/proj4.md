@@ -87,7 +87,7 @@ Write a ~1 paragraph **summary** of your main takeaways from this analysis, brin
 <h2>Schedule</h2>
 
 <dl>
-  <dt>Oct 31</dt>
+  <dt>Oct 24</dt>
   <dd>Project intro + overview</dd>
   <dt>Nov 7</dt>
   <dd><strong>No class.</strong> Competitor analysis and content due.</dd>

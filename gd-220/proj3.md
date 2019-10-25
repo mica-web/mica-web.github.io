@@ -20,6 +20,9 @@ You will code a web form to match a supplied comp using HTML and mobile-first st
 1. Create the HTML and CSS to recreate the form.
 1. Update your pull request for final submission.
 
+<!-- ## Requirements
+1. Your form should use browser HTML5 validation. -->
+
 </section>
 
 {::options parse_block_html="false" /}
@@ -34,7 +37,7 @@ You will code a web form to match a supplied comp using HTML and mobile-first st
   <dt>Oct 26</dt>
   <dd>Comp shared</dd>
   <dt>Oct 31</dt>
-  <dd>Initial HTML and CSS checkin</dd>
+  <dd>Create initial HTML in class</dd>
   <dt>Nov 7</dt>
   <dd><strong>No class.</strong></dd>
   <dt>Nov 14</dt>
