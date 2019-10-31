@@ -17,12 +17,17 @@ You will code a web form to match a supplied comp using HTML and mobile-first st
 ## Process
 1. Review the comps and ask any questions about the comp in #general.
 1. Create a "project3" branch and a new directory ("project3") in your course projects directory.
-1. Create the HTML and CSS to recreate the form.
+1. Create the HTML and CSS to recreate the form, including state changes.
 1. Update your pull request for final submission.
 
-<!-- ## Requirements
-1. Your form should use browser HTML5 validation. -->
+## Requirements
+- Your form should use browser HTML5 validation.
+- Your form should include styles for the states displayed in the comp: hover/focus, unchecked/checked, and the color change for invalid values
+- Your form styles should be mobile-first and include at least 2 media queries
 
+### Extra Credit
+- Recreate the styles for the [validation icons](https://drive.google.com/drive/u/0/folders/1Xza6yTLHB-kRIqrDewwCo34jYBify8SP)
+- Recreate the [extra border on the button hover](https://drive.google.com/drive/u/0/folders/1Xza6yTLHB-kRIqrDewwCo34jYBify8SP)
 </section>
 
 {::options parse_block_html="false" /}
@@ -33,15 +38,15 @@ You will code a web form to match a supplied comp using HTML and mobile-first st
 
 <dl>
   <dt>Oct 24</dt>
-  <dd>Project intro + overview</dd>
+  <dd>Project intro + overview ✔️</dd>
   <dt>Oct 26</dt>
-  <dd>Comp shared</dd>
+  <dd>Comp shared ✔️</dd>
   <dt>Oct 31</dt>
   <dd>Create initial HTML in class</dd>
   <dt>Nov 7</dt>
-  <dd><strong>No class.</strong></dd>
+  <dd><strong>No class</strong></dd>
   <dt>Nov 14</dt>
-  <dd>Final markup due</dd>
+  <dd>Final markup and styles due</dd>
 </dl>
 
 </aside>

@@ -121,7 +121,7 @@ Other possibilities (at least 2):
 <dt>Oct 17</dt>
 <dd>Initial styles due (step 7) ✔️</dd>
 <dt>Oct 24</dt>
-<dd>Project due date (step 8)</dd>
+<dd>Project due date (step 8) ✔️</dd>
 </dl>
 
 <h2>Rubric</h2>
