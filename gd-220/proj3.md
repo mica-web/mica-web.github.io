@@ -9,7 +9,7 @@ type: project
 <header>
 # Project 3: Web Form
 
-You will code a web form to match a supplied comp using HTML and mobile-first styles.
+You will code a web form to match a [supplied comp](https://drive.google.com/drive/u/0/folders/1HJATZE3yn0RsfMyH-lHKS0glH6G_aQrx) using HTML and mobile-first styles.
 </header>
 
 <section>
