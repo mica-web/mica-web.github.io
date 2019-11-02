@@ -58,6 +58,9 @@ Identify **2 existing conferences** with an art/design/tech focus, then document
 ### Conclusion
 Write a ~1 paragraph **summary** of your main takeaways from this analysis, bringing together what you learned across all three events.
 
+### Submitting your competitor analysis
+Add your document to the [Project 4 Google Drive](https://drive.google.com/drive/u/0/folders/11BqHx7wEOcq8eTKM_2WdC0gjGqAeekTS), following the instructions in the README.
+
 ## Requirements
 - The design should be responsive, working on mobile devices as small as 375px wide and other devices up to 1280px wide.
 - The site **must** be a one-page site. Do not create individual pages for any required or additional content.
