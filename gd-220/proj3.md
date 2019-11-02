@@ -50,4 +50,6 @@ You will code a web form to match a [supplied comp](https://drive.google.com/dri
   <dd>Final markup and styles due</dd>
 </dl>
 
+<h2>Rubric</h2>
+<a href="https://docs.google.com/spreadsheets/d/1Z5jf_c10aGK-NYVLHmtQmz0vzfdVQDIIEMS9rpaAAts/edit?usp=sharing" target="_blank">Google Sheet example</a>
 </aside>
