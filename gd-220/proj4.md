@@ -93,17 +93,20 @@ Add your document to the [Project 4 Google Drive](https://drive.google.com/drive
   <dt>Oct 24</dt>
   <dd>Project intro + overview ✔️</dd>
   <dt>Nov 7</dt>
-  <dd><strong>No class.</strong> Competitor analysis and content due.</dd>
-  <dt>Nov 14</dt>
-  <dd>Sketches and designs due. Initial markup created in class.</dd>
+  <dd><strong>No class.</strong> Competitor analysis and content due. ✔️</dd>
+  <dt>Nov 17</dt>
+  <dd>Sketches and designs due. ✔️</dd>
   <dt>Nov 21</dt>
-  <dd>All markup due and mobile styles checkin</dd>
+  <dd>Initial markup created in class.</dd>
   <dt>Nov 28</dt>
   <dd><strong>No class&ndash;Thanksgiving break</strong></dd>
   <dt>Dec 5</dt>
-  <dd>Desktop styles checkin</dd>
+  <dd>Styles checkin</dd>
   <dt>Dec 12</dt>
   <dd>Project presentations</dd>
 </dl>
+
+<h2>Rubric</h2>
+<a href="https://docs.google.com/spreadsheets/d/1Z5jf_c10aGK-NYVLHmtQmz0vzfdVQDIIEMS9rpaAAts/?usp=sharing" target="_blank">Google Sheet example</a>
 
 </aside>

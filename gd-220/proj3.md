@@ -45,11 +45,13 @@ You will code a web form to match a [supplied comp](https://drive.google.com/dri
   <dt>Oct 31</dt>
   <dd>Create initial HTML in class ✔️</dd>
   <dt>Nov 7</dt>
-  <dd><strong>No class</strong>. Work on form markup and styles.</dd>
+  <dd><strong>No class</strong>. Work on form markup and styles. ✔️</dd>
   <dt>Nov 14</dt>
+  <dd><span style="text-decoration: line-through;">Final markup and styles due</span>One-on-one assistance with markup and styles.</dd>
+  <dt>Nov 21</dt>
   <dd>Final markup and styles due</dd>
 </dl>
 
 <h2>Rubric</h2>
-<a href="https://docs.google.com/spreadsheets/d/1Z5jf_c10aGK-NYVLHmtQmz0vzfdVQDIIEMS9rpaAAts/edit?usp=sharing" target="_blank">Google Sheet example</a>
+<a href="https://docs.google.com/spreadsheets/d/1Z5jf_c10aGK-NYVLHmtQmz0vzfdVQDIIEMS9rpaAAts/?usp=sharing" target="_blank">Google Sheet example</a>
 </aside>
