@@ -97,13 +97,13 @@ Add your document to the [Project 4 Google Drive](https://drive.google.com/drive
   <dt>Nov 17</dt>
   <dd>Sketches and designs due. ✔️</dd>
   <dt>Nov 21</dt>
-  <dd>Initial markup created in class.</dd>
+  <dd>Initial markup created in class. ✔️</dd>
   <dt>Nov 28</dt>
-  <dd><strong>No class&ndash;Thanksgiving break</strong></dd>
+  <dd><strong>No class&ndash;Thanksgiving break</strong> ✔️</dd>
   <dt>Dec 5</dt>
-  <dd>Styles checkin</dd>
+  <dd>Styles checkin ✔️</dd>
   <dt>Dec 12</dt>
-  <dd>Project presentations</dd>
+  <dd>Project presentations 🎉</dd>
 </dl>
 
 <h2>Rubric</h2>

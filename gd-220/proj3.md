@@ -47,9 +47,9 @@ You will code a web form to match a [supplied comp](https://drive.google.com/dri
   <dt>Nov 7</dt>
   <dd><strong>No class</strong>. Work on form markup and styles. ✔️</dd>
   <dt>Nov 14</dt>
-  <dd><span style="text-decoration: line-through;">Final markup and styles due</span>One-on-one assistance with markup and styles.</dd>
+  <dd><span style="text-decoration: line-through;">Final markup and styles due</span>One-on-one assistance with markup and styles. ✔️</dd>
   <dt>Nov 21</dt>
-  <dd>Final markup and styles due</dd>
+  <dd>Final markup and styles due ✔️</dd>
 </dl>
 
 <h2>Rubric</h2>
