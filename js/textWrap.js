@@ -40,4 +40,7 @@ window.addEventListener('resize', function () {
   timer = setTimeout(textWrap, delay);
 });
 
-textWrap();
+
+window.onload = (event) => {
+  textWrap();
+};
