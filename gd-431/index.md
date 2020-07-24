@@ -14,7 +14,7 @@ Front End Web Development
 {: .u-text-right .jump-link }
 [jump to schedule](#week01){: .highlighter }
 
-{% include gd-431/description.md %}
+{% include_relative _includes/description.md %}
 
 </section>
 
@@ -27,7 +27,7 @@ Syllabus
 [GD 431 Syllabus](files/Syllabus_FrontEndWebDevelopment.pdf){:target="_blank"} (PDF, 92kb)
 </span>
 
-{% include gd-431/rubric.md %}
+{% include_relative _includes/rubric.md %}
 
 {: .button-wrapper }
 <a href="{{ site.baseurl }}{% link resources.md %}" class="button--bordered">
