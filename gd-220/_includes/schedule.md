@@ -3,9 +3,9 @@ Schedule
 
 {% include_relative _includes/current.md %}
 
-<button type="button" class="u-button-reset">View All</button>
+<button type="button" class="u-button-reset js-generic-toggle" aria-controls="js-target-schedule">View All</button>
 
-<ol class="u-list-reset schedule-list">
+<ol id="js-target-schedule" class="u-list-reset has-reveal-animation schedule-list">
 {% for gd220 in site.gd220 %}
 {% assign weeknum = gd220.path | replace:'_gd220/w','' | replace:'.md', '' %}
 
