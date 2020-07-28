@@ -9,7 +9,7 @@
     // Give each heading a toggle button child
     // with the SVG plus/minus icon
     heading.innerHTML = `
-      <button class="u-button-reset" aria-expanded="false">
+      <button class="u-button-reset" aria-expanded="false" title="Show more">
         ${heading.textContent}
         <svg aria-hidden="true" focusable="false" role="img" viewBox="0 0 10 10">
           <rect class="vert" height="8" width="2" y="1" x="4"/>
@@ -59,9 +59,11 @@
     btn.onclick = () => {
       // Cast the state as a boolean
       let expanded = btn.getAttribute('aria-expanded') === 'true' || false
+      let title = expanded ? 'Show more' : 'Hide details'
 
       // Switch the state
       btn.setAttribute('aria-expanded', !expanded)
+      btn.setAttribute('title', title)
       // Switch the content's visibility
       contentWrapper.hidden = expanded
     }
