@@ -3,7 +3,7 @@ Schedule
 
 {% include_relative _includes/current.md %}
 
-<button type="button" class="u-button-reset js-generic-toggle" aria-controls="js-target-schedule">View All</button>
+<button type="button" class="u-button-reset js-generic-toggle highlighter" aria-controls="js-target-schedule">View All</button>
 
 <ol id="js-target-schedule" class="u-list-reset has-reveal-animation schedule-list">
 {% for gd220 in site.gd220 %}
