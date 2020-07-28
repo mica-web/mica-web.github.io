@@ -14,12 +14,13 @@
       let btnText = btn.innerText
       let btnTextAlt
 
-      const toggleText = btnText.startsWith('View' || 'Show')
+      const toggleText = btnText.toLowerCase().startsWith('view' || 'show')
 
       if (toggleText) {
         let btnTextArray = btnText.split(' ')
         let btnTextFirst = btnTextArray[0]
-        let btnTextFirstAlt = 'Hide'
+        let isUppercase = btnTextFirst[0] === btnTextFirst[0].toUpperCase()
+        let btnTextFirstAlt = isUppercase ? 'Hide' : 'hide'
         btnTextAlt = btnText.replace(btnTextFirst, btnTextFirstAlt);
       }
 
