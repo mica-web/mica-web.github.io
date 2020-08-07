@@ -2,28 +2,35 @@
 title: Learn
 ---
 
+# Topics
 
-{% assign intro_content = site.learn | where_exp: "learn", "learn.level contains 'intro'" %}
-{% assign adv_content = site.learn | where_exp: "learn", "learn.level contains 'advanced'" %}
+{% assign topics = site.learn | group_by: 'category' %}
 
-## Intro
+{% assign all_levels = site.learn | map: "level" | uniq %}
 
-<ol>
-
-{% for content in intro_content %}
-
-  <li>{{content.topic}}</li>
-
+<p>Filter by level</p>
+<ul class="filter-list">
+{% for level in all_levels %}
+  <li><button type="button" class="u-button-reset">{{ level }}</button></li>
 {% endfor %}
-</ol>
+  <li><button type="button" class="u-button-reset">see all</button></li>
+</ul>
 
-## Advanced
+{% for topic in topics %}
+  <h2>{{ topic.name }}</h2>
 
-<ol>
+  {% assign items = topic.items %}
 
-{% for content in adv_content %}
+  {{ items.category }}
+  <ul>
+  {% for item in items  %}
+    {% assign levels = item.level %}
 
-  <li>{{content.topic}}</li>
+    <li data-level="{% for level in levels %}{{level | slice: 0 }} {% endfor %}">
+      {{ item.topic }}
+      {% for level in levels %} <span>{{ level }}</span> {% endfor %} 
+    </li>
 
+  {% endfor %}
+  </ul>
 {% endfor %}
-</ol>

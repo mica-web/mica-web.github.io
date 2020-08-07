@@ -41,9 +41,13 @@ collections:
     gd431:
     learn:
         order:
-          - html.md
-          - css.md
-          - sass.md
+          - 00_tools/tools.md
+          - 00_tools/slack.md
+          - 00_tools/glitch.md
+          - 01_html/html.md
+          - 02_css/css.md
+          - 02_css/css_color.md
+          - 02_css/sass.md
 
 # Build settings
 markdown: kramdown

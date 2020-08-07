@@ -1,4 +1,0 @@
----
-topic: Sass
-level: advanced
----
