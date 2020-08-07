@@ -11,7 +11,7 @@ type: course
 Graphic Design 2
 ================
 
-{% include_relative _includes/quick-links.md %}
+{% include_relative _includes/quick-links.html %}
 
 <div class="overview__content">
 
