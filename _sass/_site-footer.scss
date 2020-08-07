@@ -24,9 +24,53 @@
     }
   }
 
+  .content {
+    display: flex;
+    justify-content: space-between;
+  }
+
   p {
     @include font-mono;
     font-size: 12px;
     padding: 32px 0 24px;
+  }
+
+  .top-link-wrapper {
+    padding: $spacing-sm;
+    text-transform: lowercase;
+
+    &::before,
+    &::after {
+      color: $color-grey;
+    }
+
+
+    &::before {
+      content: '[ ';
+    }
+
+    &::after {
+      content: ' ]';
+    }
+
+    &:hover {
+
+      &::before,
+      &::after {
+        color: $color-mint;
+      }
+    }
+
+    a {
+      border-bottom: 1px dotted $color-grey;
+      color: $color-slate;
+      text-decoration: none;
+
+      &:hover,
+      &:focus {
+        border-bottom-color: $color-mint;
+        border-bottom-style: solid;
+      }
+    }
   }
 }
