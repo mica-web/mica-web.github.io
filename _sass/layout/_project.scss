@@ -2,7 +2,7 @@
   @media (min-width: 920px) {
     main {
       display: grid;
-      grid-column-gap: 40px;
+      grid-column-gap: $spacing-lg;
       grid-template-areas: "main sidebar";
       grid-template-columns: 1fr 280px;
       grid-template-rows: auto 1fr;

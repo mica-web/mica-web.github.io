@@ -28,8 +28,8 @@
   }
 
   button.highlighter {
-    padding-right: 12px;
-    padding-left: 12px;
+    padding-right: $spacing-sm;
+    padding-left: $spacing-sm;
     position: relative;
 
     &::before,

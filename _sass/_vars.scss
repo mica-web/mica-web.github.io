@@ -37,3 +37,11 @@ $base-font-size: 1em;
 $scale: 1.25;
 $line-height: $scale;
 $leading: $scale * $base-font-size * $line-height;
+
+
+// SPACING
+$spacing-xs: 8px;
+$spacing-sm: 12px;
+$spacing-md: 16px;
+$spacing-lg: 40px;
+$spacing-xl: 64px;

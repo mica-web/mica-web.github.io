@@ -2,7 +2,7 @@
   @media (min-width: 920px) {
     .overview {
       display: grid;
-      grid-column-gap: 40px;
+      grid-column-gap: $spacing-lg;
       grid-template-areas:
         "header header"
         "main sidebar";
