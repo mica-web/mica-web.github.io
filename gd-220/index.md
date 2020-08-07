@@ -11,8 +11,7 @@ type: course
 Graphic Design 2
 ================
 
-{: .u-text-right .jump-link }
-[jump to schedule](#week01){: .highlighter }
+{% include_relative _includes/quick-links.md %}
 
 <div class="overview__content">
 
