@@ -23,13 +23,23 @@ type: learn-index
   {% assign items = topic.items %}
 
   {{ items.category }}
-  <ul>
+  <ul class="topic-list">
   {% for item in items  %}
     {% assign levels = item.level %}
 
     <li data-level="{% for level in levels %}{{level | slice: 0 }} {% endfor %}">
       <a href="{{item.url}}">{{ item.topic }}</a>
-      {% for level in levels %} <span>{{ level }}</span> {% endfor %} 
+      <span class="tag-wrapper">
+      {% for level in levels %}
+        <span class="tag-name tag--{{ level | slice: 0 }}">
+          {% if level == 'advanced' %}
+          adv
+          {% else %}
+          {{ level }}
+          {% endif %}
+        </span>
+      {% endfor %} 
+      </span>
     </li>
 
   {% endfor %}

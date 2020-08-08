@@ -7,13 +7,15 @@
 @import 'utilities/utilities';
 @import 'animations';
 @import 'typography';
-@import 'buttons';
-@import 'highlighter';
 @import 'layout/layout';
 @import 'site-header';
 @import 'site-nav';
+@import 'site-footer';
+
+@import 'buttons';
 @import 'breadcrumb';
 @import 'filter-list';
+@import 'highlighter';
 @import 'quick-links';
-@import 'site-footer';
 @import 'schedule-list';
+@import 'tag-name';
