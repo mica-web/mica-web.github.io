@@ -9,7 +9,7 @@ type: learn-index
 
 {% assign all_levels = site.learn | map: "level" | uniq %}
 
-<p>Filter by level</p>
+<p class="filter-list-label">Filter by level</p>
 <ul class="filter-list">
 {% for level in all_levels %}
   <li><button type="button" data-controls="{{ level | slice: 0 }}" class="u-button-reset js-filter-toggle">{{ level }}</button></li>
