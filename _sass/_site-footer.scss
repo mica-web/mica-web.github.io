@@ -24,11 +24,6 @@
     }
   }
 
-  .content {
-    display: flex;
-    justify-content: space-between;
-  }
-
   p {
     @include font-mono;
     font-size: 12px;
@@ -71,6 +66,20 @@
         border-bottom-color: $color-mint;
         border-bottom-style: solid;
       }
+    }
+
+    @media (max-width: 459px) {
+      margin-top: 0;
+      padding-top: 0;
+      padding-left: 0;
+    }
+  }
+
+  @media (min-width: 460px) {
+    .content {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
     }
   }
 }
