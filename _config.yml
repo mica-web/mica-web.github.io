@@ -40,14 +40,15 @@ collections:
     gd220:
     gd431:
     learn:
-        order:
-          - 00_tools/tools.md
-          - 00_tools/slack.md
-          - 00_tools/glitch.md
-          - 01_html/html.md
-          - 02_css/css.md
-          - 02_css/css_color.md
-          - 02_css/sass.md
+      output: true
+      order:
+        - 00_tools/tools.md
+        - 00_tools/slack.md
+        - 00_tools/glitch.md
+        - 01_html/html.md
+        - 02_css/css.md
+        - 02_css/css_color.md
+        - 02_css/sass.md
 
 # Build settings
 markdown: kramdown

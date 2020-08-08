@@ -28,7 +28,7 @@ type: learn-index
     {% assign levels = item.level %}
 
     <li data-level="{% for level in levels %}{{level | slice: 0 }} {% endfor %}">
-      {{ item.topic }}
+      <a href="{{item.url}}">{{ item.topic }}</a>
       {% for level in levels %} <span>{{ level }}</span> {% endfor %} 
     </li>
 
