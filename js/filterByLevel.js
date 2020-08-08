@@ -26,6 +26,14 @@ var filterByLevel = {
     }
   },
   filter: function (target) {
+    filterByLevel.btns.forEach(btn => {
+      let controls = btn.dataset.controls;
+      if (controls === target) {
+        btn.classList.add('is-active');;
+      } else if (btn.classList.contains('is-active')) {
+        btn.classList.remove('is-active');
+      }
+    })
     filterByLevel.items.forEach(item => {
       let levels = item.dataset.level;
       if (levels.includes(target)) {
