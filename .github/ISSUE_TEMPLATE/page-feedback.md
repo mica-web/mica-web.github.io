@@ -7,6 +7,8 @@ assignees: angeliquejw
 
 ---
 
+> **NOTE:** If you followed a link from the course web site, the title above should automatically include the URL for the page you were on. If not, please note the page URL here: 
+
 ### About this feedback
 👀 I have identified:
 * [ ] A broken link
