@@ -18,6 +18,9 @@ layout: base
 
   <main>
     {{ content }}
+    {% if page.issues == true %}
+    {% include issues.html %}
+    {% endif %}
   </main>
 
   {% include footer.html %}
