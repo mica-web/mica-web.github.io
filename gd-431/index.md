@@ -6,19 +6,21 @@ type: course
 ---
 
 {::options parse_block_html="true" /}
-<section>
+<section class="overview">
 
 Front End Web Development
 =========================
 
-{: .u-text-right .jump-link }
-[jump to schedule](#week01){: .highlighter }
+<div class="overview__content">
 
+**NOTE:** This content is still being updated and revised for 2020.
+
+---
 {% include_relative _includes/description.md %}
 
-</section>
+</div>
 
-<aside>
+<div class="overview__sidebar">
 
 Syllabus
 --------
@@ -27,16 +29,20 @@ Syllabus
 [GD 431 Syllabus](files/Syllabus_FrontEndWebDevelopment.pdf){:target="_blank"} (PDF, 92kb)
 </span>
 
-{% include_relative _includes/rubric.md %}
+</div>
 
-{: .button-wrapper }
-<a href="{{ site.baseurl }}{% link resources.md %}" class="button--bordered">
-<span class="button__borders"></span>
-Resources</a>
+</section>
 
-</aside>
+<section>
 
-<ol class="u-list-reset schedule-list">
+Schedule
+--------
+
+The current schedule is a work in progress, but you can choose instead to review a previous year's schedule:
+
+<button type="button" class="u-button-reset js-generic-toggle highlighter" aria-controls="js-target-schedule">View Previous Schedule</button>
+
+<ol id="js-target-schedule" class="u-list-reset has-reveal-animation schedule-list">
 {% for week in site.gd431 %}
 {% assign weeknum = week.path | replace:'_gd431/w','' | replace:'.md', '' %}
 
@@ -49,3 +55,5 @@ Resources</a>
 
 {% endfor %}
 </ol>
+
+</section>

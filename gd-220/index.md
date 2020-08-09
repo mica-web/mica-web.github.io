@@ -11,10 +11,11 @@ type: course
 Graphic Design 2
 ================
 
-{% include_relative _includes/quick-links.html %}
-
 <div class="overview__content">
 
+**NOTE:** This content is still being updated and revised for 2020.
+
+---
 {% include_relative _includes/description.md %}
 
 </div>
@@ -28,19 +29,31 @@ Syllabus
 [GD 220 Syllabus](files/syllabus.min.pdf){:target="_blank"} (PDF, 259kb)
 </span>
 
-{: .button-wrapper }
-<a href="{{ site.baseurl }}{% link gd2-resources.md  %}" class="button--bordered">
-<span class="button__borders"></span>
-Resources</a>
-
 </div>
 
 </section>
 
 <section>
 
-{% include_relative _includes/schedule.md %}
+Schedule
+--------
 
-{% include_relative _includes/projects.md %}
+The current schedule is a work in progress, but you can choose instead to review last year's schedule:
+
+<button type="button" class="u-button-reset js-generic-toggle highlighter" aria-controls="js-target-schedule">View Previous Schedule</button>
+
+<ol id="js-target-schedule" class="u-list-reset has-reveal-animation schedule-list">
+{% for week in site.gd220 %}
+{% assign weeknum = week.path | replace:'_gd220/w','' | replace:'.md', '' %}
+
+  <li class="accordion-wrapper" id="week{{ weeknum }}">
+    <h2 class="accordion-title{% if week.empty %} has-no-content js-content-toggle-ignore{% else %} js-trigger-content-toggle{% endif %}">
+      {{ week.topic }}
+    </h2>
+    {{ week.content | markdownify }}
+  </li>
+
+{% endfor %}
+</ol>
 
 </section>
