@@ -2,7 +2,7 @@
 name: Page Feedback
 about: Issue template for suggesting changes from the live web site.
 title: ''
-labels: ''
+labels: 'feedback'
 assignees: angeliquejw
 
 ---
