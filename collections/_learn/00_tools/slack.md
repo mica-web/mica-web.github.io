@@ -13,7 +13,7 @@ The course Slack will be our primary form of communication this semeseter.
 All updates about the class, meeting links, Q&A about assignments, etc. -- the vast majority of Slack communication -- will happen via Slack.
 
 {: .callout}
-🤔This isn't a change brought about by teaching online. Even in the semesters when my courses have met in person, we've used Slack.
+🤔 This isn't a change brought about by teaching online. Even in the semesters when my courses have met in person, we've used Slack.
 
 ## Getting started
 
