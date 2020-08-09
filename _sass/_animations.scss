@@ -3,3 +3,12 @@
     color: transparent;
   }
 }
+
+.has-reveal-animation {
+  opacity: 1;
+  transition: opacity 120ms ease-in;
+
+  &.is-animating {
+    opacity: 0;
+  }
+}

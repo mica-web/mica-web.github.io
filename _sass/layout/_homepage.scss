@@ -4,9 +4,9 @@
     grid-column-gap: 24px;
     grid-template-areas: "main nav""footer footer";
     grid-template-columns: 1fr 260px;
-    margin-top: 64px;
-    padding-right: 40px;
-    padding-left: 40px;
+    margin-top: $spacing-xl;
+    padding-right: $spacing-lg;
+    padding-left: $spacing-lg;
 
     .site-nav {
       grid-area: nav;
@@ -27,6 +27,7 @@
 
     .site-footer {
       grid-area: footer;
+      margin-top: 96px;
     }
   }
 
@@ -51,6 +52,8 @@
   >p:first-of-type {
     @include font-grotesk('Semibold');
     font-size: 120%;
+    margin-top: $leading /3;
+    margin-bottom: $leading / 2;
   }
 
   figure {
@@ -88,7 +91,7 @@
     figure {
       grid-column: 1 / span 2;
       grid-row: 4;
-      margin: 0;
+      margin: $spacing-md 0 0;
       width: 65%;
       max-width: 400px;
     }

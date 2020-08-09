@@ -1,0 +1,23 @@
+.tag {
+  &-wrapper {
+    display: inline-flex;
+    line-height: 1.1;
+  }
+
+  &-name {
+    border-radius: 2px;
+    font-size: 0.66rem;
+    letter-spacing: 1px;
+    margin-left: $spacing-xs;
+    opacity: 0.9;
+    padding: 4px;
+  }
+
+  &--i {
+    background-color: #D8DCFF;
+  }
+
+  &--a {
+    background-color: #F76F8E;
+  }
+}

@@ -11,18 +11,18 @@
 }
 
 .content-wrapper {
-  padding: 16px;
+  padding: $spacing-md;
   position: relative;
 
   @media (min-width: 480px) {
-    padding-right: 40px;
-    padding-left: 40px;
+    padding-right: $spacing-lg;
+    padding-left: $spacing-lg;
   }
 
   @media (min-width: 640px) {
-    padding-right: 64px;
-    padding-left: 64px;
+    padding-right: $spacing-xl;
+    padding-left: $spacing-xl;
   }
 }
 
-@import 'homepage', 'course';
+@import 'homepage', 'course', 'project';

@@ -6,7 +6,8 @@
   }
 
   a.highlighter,
-  .highlighter a {
+  .highlighter a,
+  button.highlighter {
     // just underline
     background-image: linear-gradient(transparent calc(100% - 2px), $color-mint 2px);
     background-position: left calc(100% + 2px);
@@ -20,11 +21,36 @@
     }
   }
 
-  a.highlighter {
+  a.highlighter,
+  button.highlighter {
     border-bottom: 2px dotted $color-mint;
+    transition: all 300ms ease-in-out;
+  }
+
+  button.highlighter {
+    padding-right: $spacing-sm;
+    padding-left: $spacing-sm;
+    position: relative;
+
+    &::before,
+    &::after {
+      position: absolute;
+    }
+
+    &::before {
+      content: '[ ';
+      left: -2px;
+    }
+
+    &::after {
+      content: ' ]';
+      right: -2px;
+    }
+  }
+
+  a.highlighter {
     padding-right: 3px;
     text-decoration: none;
-    transition: all 300ms ease-in-out;
     width: calc(100%);
 
     &:link {

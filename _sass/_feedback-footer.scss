@@ -1,0 +1,36 @@
+.feedback-footer {
+  // negative margins match .content-wrapper
+  border-left: 8px solid $color-mint;
+  margin: $spacing-xl (-$spacing-md) (-$spacing-xl);
+  padding: $spacing-md $spacing-md $spacing-lg;
+  position: relative;
+
+  &::before {
+    content: '✨';
+    font-size: 420%;
+    position: absolute;
+    top: -20px;
+    right: 0;
+  }
+
+  @media (min-width: 480px) {
+    margin-right: -$spacing-lg;
+    margin-left: -$spacing-lg;
+    padding-right: $spacing-lg;
+    padding-left: $spacing-lg;
+  }
+
+  @media (min-width: 640px) {
+    margin-right: -$spacing-xl;
+    margin-left: -$spacing-xl;
+    padding-right: $spacing-xl;
+    padding-left: $spacing-xl;
+
+    &::before {
+      top: 25%;
+      transform: translateY(-25%);
+      left: -8px;
+      bottom: 0;
+    }
+  }
+}

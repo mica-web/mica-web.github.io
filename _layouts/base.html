@@ -16,6 +16,12 @@
   {% if page.toggle %}
   <script src="{{ site.baseurl }}/js/contentToggle.js" async defer></script>
   {% endif %}
+  {% if page.type == "course" %}
+  <script src="{{ site.baseurl }}/js/genericToggle.js" async defer></script>
+  {% endif %}
+  {% if page.type == "learn-index" %}
+  <script src="{{ site.baseurl }}/js/filterByLevel.js" async defer></script>
+  {% endif %}
 
 </body>
 {% include credits.html %}

@@ -1,22 +1,35 @@
-    .course-wrapper,
-    .project-wrapper {
-      @media (min-width: 920px) {
-        main {
-          display: grid;
-          grid-column-gap: 40px;
-          grid-template-areas: "main sidebar";
-          grid-template-columns: 1fr 280px;
-          grid-template-rows: auto 1fr;
-        }
+.course-wrapper {
+  @media (min-width: 920px) {
+    .overview {
+      display: grid;
+      grid-column-gap: $spacing-lg;
+      grid-template-areas:
+        "header header"
+        "main sidebar";
+      grid-template-columns: 1fr 280px;
 
-        aside {
-          grid-column: sidebar;
-          grid-row: 1 / span 2;
-          margin-top: $leading / 2; // to match the h1
-        }
+      h1 {
+        grid-area: header;
       }
 
-      @media (min-width: 1080px) {
-        grid-template-columns: 1fr 320px;
+      &__sidebar {
+        display: flex;
+        flex-wrap: wrap;
+
+        h2 {
+          margin-top: 0;
+        }
+
+        .button-wrapper {
+          align-self: flex-end;
+          flex: 1 0 auto;
+          margin-bottom: 0;
+        }
       }
     }
+  }
+
+  @media (min-width: 1080px) {
+    // grid-template-columns: 1fr 320px;
+  }
+}

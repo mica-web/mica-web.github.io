@@ -6,19 +6,21 @@ type: course
 ---
 
 {::options parse_block_html="true" /}
-<section>
+<section class="overview">
 
 Graphic Design 2
 ================
 
-{: .u-text-right .jump-link }
-[jump to schedule](#week01){: .highlighter }
+<div class="overview__content">
 
-{% include gd-220/description.md %}
+**NOTE:** This content is still being updated and revised for 2020.
 
-</section>
+---
+{% include_relative _includes/description.md %}
 
-<aside>
+</div>
+
+<div class="overview__sidebar">
 
 Syllabus
 --------
@@ -27,33 +29,31 @@ Syllabus
 [GD 220 Syllabus](files/syllabus.min.pdf){:target="_blank"} (PDF, 259kb)
 </span>
 
+</div>
 
-{% include gd-220/projects.md %}
+</section>
 
-{% include gd-220/rubric.md %}
+<section>
 
-<!-- {: .button-wrapper }
-<a href="{{ site.baseurl }}{% link gd-220/hints/index.md %}" class="button--bordered">
-<span class="button__borders"></span>
-Hints + Tips</a> -->
+Schedule
+--------
 
-{: .button-wrapper }
-<a href="{{ site.baseurl }}{% link gd2-resources.md  %}" class="button--bordered">
-<span class="button__borders"></span>
-Resources</a>
+The current schedule is a work in progress, but you can choose instead to review last year's schedule:
 
-</aside>
+<button type="button" class="u-button-reset js-generic-toggle highlighter" aria-controls="js-target-schedule">View Previous Schedule</button>
 
-<ol class="u-list-reset schedule-list">
-{% for gd220 in site.gd220 %}
-{% assign weeknum = gd220.path | replace:'_gd220/w','' | replace:'.md', '' %}
+<ol id="js-target-schedule" class="u-list-reset has-reveal-animation schedule-list">
+{% for week in site.gd220 %}
+{% assign weeknum = week.path | replace:'_gd220/w','' | replace:'.md', '' %}
 
   <li class="accordion-wrapper" id="week{{ weeknum }}">
-    <h2 class="accordion-title{% if gd220.empty %} has-no-content js-content-toggle-ignore{% else %} js-trigger-content-toggle{% endif %}">
-      {{ gd220.topic }}
+    <h2 class="accordion-title{% if week.empty %} has-no-content js-content-toggle-ignore{% else %} js-trigger-content-toggle{% endif %}">
+      {{ week.topic }}
     </h2>
-    {{ gd220.content | markdownify }}
+    {{ week.content | markdownify }}
   </li>
 
 {% endfor %}
 </ol>
+
+</section>

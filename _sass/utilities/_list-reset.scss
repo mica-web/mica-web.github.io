@@ -1,5 +1,9 @@
 // Removes the default bullets and padding from a list
-.u-list-reset {
+@mixin u-list-reset {
   list-style: none;
   padding-left: 0;
+}
+
+.u-list-reset {
+  @include u-list-reset();
 }

@@ -7,4 +7,4 @@ Recommended:
 After cloning this repo, `bundle install`
 
 ## Running the site locally
-`bundle  exec jekyll serve--livereload`
+`bundle exec jekyll serve --livereload`

@@ -7,12 +7,24 @@
 @import 'utilities/utilities';
 @import 'animations';
 @import 'typography';
-@import 'buttons';
-@import 'highlighter';
 @import 'layout/layout';
 @import 'site-header';
 @import 'site-nav';
-@import 'breadcrumb';
-@import 'jump-link';
 @import 'site-footer';
+
+@import 'buttons';
+@import 'breadcrumb';
+@import 'callout';
+@import 'feedback-footer';
+@import 'filter-list';
+@import 'highlighter';
+@import 'quick-links';
 @import 'schedule-list';
+@import 'tag-name';
+
+.wip-wrapper {
+  text-align: center;
+  img {
+    max-width: 260px;
+  }
+}

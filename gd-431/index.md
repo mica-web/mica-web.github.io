@@ -6,19 +6,21 @@ type: course
 ---
 
 {::options parse_block_html="true" /}
-<section>
+<section class="overview">
 
 Front End Web Development
 =========================
 
-{: .u-text-right .jump-link }
-[jump to schedule](#week01){: .highlighter }
+<div class="overview__content">
 
-{% include gd-431/description.md %}
+**NOTE:** This content is still being updated and revised for 2020.
 
-</section>
+---
+{% include_relative _includes/description.md %}
 
-<aside>
+</div>
+
+<div class="overview__sidebar">
 
 Syllabus
 --------
@@ -27,25 +29,31 @@ Syllabus
 [GD 431 Syllabus](files/Syllabus_FrontEndWebDevelopment.pdf){:target="_blank"} (PDF, 92kb)
 </span>
 
-{% include gd-431/rubric.md %}
+</div>
 
-{: .button-wrapper }
-<a href="{{ site.baseurl }}{% link resources.md %}" class="button--bordered">
-<span class="button__borders"></span>
-Resources</a>
+</section>
 
-</aside>
+<section>
 
-<ol class="u-list-reset schedule-list">
-{% for gd431 in site.gd431 %}
-{% assign weeknum = gd431.path | replace:'_gd431/w','' | replace:'.md', '' %}
+Schedule
+--------
+
+The current schedule is a work in progress, but you can choose instead to review a previous year's schedule:
+
+<button type="button" class="u-button-reset js-generic-toggle highlighter" aria-controls="js-target-schedule">View Previous Schedule</button>
+
+<ol id="js-target-schedule" class="u-list-reset has-reveal-animation schedule-list">
+{% for week in site.gd431 %}
+{% assign weeknum = week.path | replace:'_gd431/w','' | replace:'.md', '' %}
 
   <li class="accordion-wrapper" id="week{{ weeknum }}">
-    <h2 class="accordion-title{% if gd431.empty %} has-no-content js-content-toggle-ignore{% else %} js-trigger-content-toggle{% endif %}">
-      {{ gd431.topic }}
+    <h2 class="accordion-title{% if week.empty %} has-no-content js-content-toggle-ignore{% else %} js-trigger-content-toggle{% endif %}">
+      {{ week.topic }}
     </h2>
-    {{ gd431.content | markdownify }}
+    {{ week.content | markdownify }}
   </li>
 
 {% endfor %}
 </ol>
+
+</section>

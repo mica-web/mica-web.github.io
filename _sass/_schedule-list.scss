@@ -5,7 +5,7 @@
 
   >li {
     +li {
-      margin-top: 12px;
+      margin-top: $spacing-sm;
     }
   }
 
@@ -28,7 +28,7 @@
       @include font-grotesk('Bold');
       font-size: 1.25rem;
       line-height: 1.3;
-      padding: 8px 36px 8px 16px;
+      padding: $spacing-xs 36px $spacing-xs $spacing-md;
       position: relative;
       width: 100%;
 
@@ -59,7 +59,7 @@
     &.has-no-content {
       background-color: $color-offwhite;
       @include font-grotesk('Medium');
-      padding: 8px 16px 8px;
+      padding: $spacing-xs $spacing-md $spacing-xs;
       position: relative;
     }
   }
@@ -73,24 +73,24 @@
     display: inline-block;
     @include font-mono;
     font-size: 0.9rem;
-    margin-bottom: 8px;
+    margin-bottom: $spacing-xs;
 
     &:first-of-type {
       margin-top: 0;
     }
 
     &:not(:first-of-type) {
-      margin-top: 16px;
+      margin-top: $spacing-md;
     }
 
     &::before {
       content: '[';
-      padding-right: 12px;
+      padding-right: $spacing-sm;
     }
 
     &::after {
       content: ']';
-      padding-left: 12px;
+      padding-left: $spacing-sm;
     }
   }
 
