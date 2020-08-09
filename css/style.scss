@@ -21,3 +21,10 @@
 @import 'quick-links';
 @import 'schedule-list';
 @import 'tag-name';
+
+.wip-wrapper {
+  text-align: center;
+  img {
+    max-width: 260px;
+  }
+}
