@@ -30,6 +30,8 @@ li {
   }
 
   +p,
+  &+ul,
+  &+ol,
   ul+&,
   ol+& {
     margin-top: $leading / 2;
