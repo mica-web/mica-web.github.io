@@ -26,7 +26,7 @@ Syllabus
 --------
 
 <span class="highlighter">
-[GD 431 Syllabus](files/Syllabus_FrontEndWebDevelopment.pdf){:target="_blank"} (PDF, 92kb)
+[GD 431 Syllabus](https://docs.google.com/document/d/1ZuXB5erTCGdzSI3VPOQMzFkac8Rp96WEojIBBZY3oJs/edit?usp=sharing){:target="_blank"}
 </span>
 
 </div>
