@@ -6,9 +6,9 @@ permalink: /:collection/tools/:name
 issues: true
 ---
 
-# Slack
+# {{ page.topic }}
 
-The course Slack will be our primary form of communication this semeseter.
+Slack is a messaging platform and my courses will be using Slack as our primary form of communication this semeseter.
 
 All updates about the class, meeting links, Q&A about assignments, etc. -- the vast majority of Slack communication -- will happen via Slack.
 
