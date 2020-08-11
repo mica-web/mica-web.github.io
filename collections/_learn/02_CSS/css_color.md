@@ -3,7 +3,7 @@ topic: Color
 category: CSS
 level: [ intro, advanced ]
 permalink: /:collection/css/:name
-issues: true
+# issues: true
 ---
 
 # {{ page.topic }}

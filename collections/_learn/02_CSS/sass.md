@@ -3,7 +3,7 @@ topic: Sass
 category: CSS
 level: [ advanced ]
 permalink: /:collection/css/:name
-issues: true
+# issues: true
 ---
 
 # {{ page.topic }}
