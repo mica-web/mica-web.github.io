@@ -25,7 +25,7 @@ Syllabus
 --------
 
 <span class="highlighter">
-[GD 220 Syllabus](files/syllabus.min.pdf){:target="_blank"} (PDF, 259kb)
+[GD 220 Syllabus](https://docs.google.com/document/d/1U2pwRJ7SyvGpGD4lyYk8bEcxOe33caysKf7sSJQlkAM/edit?usp=sharing){:target="_blank"}
 </span>
 
 {: .button-wrapper }
