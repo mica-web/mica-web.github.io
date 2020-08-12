@@ -36,4 +36,10 @@
       margin-left: 0.25rem;
     }
   }
+
+  &.week+.breadcrumb {
+    &::before {
+      content: unset;
+    }
+  }
 }
