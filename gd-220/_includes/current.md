@@ -1,19 +1,41 @@
-### Current Week
 
-<!-- {% assign currentdate = 'now' | date: "%Y-%m-%d" %} -->
-{% assign currentdate = '2020-08-31' | date: "%Y-%m-%d" %}
+{% assign currentdate = 'now' | date: "%Y-%m-%d" %}
+{% assign currentdate = '2020-09-03' | date: "%Y-%m-%d" %}
+{% assign startdate = '2020-09-03' | date: "%Y-%m-%d" %}
+
+{% if (currentdate <= startdate) %}
+
+<section class="schedule-list">
+
+### Prior to class start
+
+Here's [a few things you can do](/gd-220/00/early-start) before the first class meeting on September 3rd.
+
+</section>
+
+{% endif %}
+
+
 {% assign week = 6 | times: 24 | times: 60 | times: 60 %}
 
-{% for gd220 in site.gd220 %}
+{% for week in site.gd220 %}
 
-{% assign weeknum = gd220.path | replace:'_gd220/w','' | replace:'.md', '' %}
+{% assign weeknum = week.path | replace:'_gd220/w','' | replace:'.md', '' %}
 
-{% assign scheduledate = gd220.date | date: "%Y-%m-%d" %}
-{% assign weekstart = gd220.date | date: "%s" | minus: week | date: "%Y-%m-%d" %}
+{% assign scheduledate = week.date | date: "%Y-%m-%d" %}
+{% assign weekstart = week.date | date: "%s" | minus: week | date: "%Y-%m-%d" %}
 
 {% if (currentdate >= weekstart) and (currentdate <= scheduledate) %}
 
-<h4>{{weeknum}} {{ gd220.topic }}</h4>
+
+<section class="schedule-list">
+
+<h3 id="current-week">{{weeknum}} // Current Week: {{ week.topic }}</h3>
+
+{{ week.content | markdownify }}
+
+</section>
+
 
 {% endif %}
 
