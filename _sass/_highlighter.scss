@@ -3,6 +3,11 @@
     @include font-mono;
     font-size: 14px;
     padding: 6px 4px;
+
+    &--simple {
+      background-color: rgba($color-yellow, 0.25);
+      padding: 4px;
+    }
   }
 
   a.highlighter,
