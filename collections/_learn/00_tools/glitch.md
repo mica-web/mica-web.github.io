@@ -3,11 +3,14 @@ topic: Glitch
 category: Tools
 level: [ intro, advanced ]
 permalink: /:collection/tools/:name
+code_example: false
+quiz: false
 issues: true
 ---
 
 # {{ page.topic }}
 
+## Introduction
 [Glitch](https://glitch.com) is an online coding platform. By using Glitch, you'll be able to:
 - see the immediate changes of your code in the browser
 - share links to your demos and projects with your colleagues and me
