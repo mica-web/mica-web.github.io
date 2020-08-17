@@ -12,13 +12,20 @@ layout: base
 
   {% else %}
 
-  {% include breadcrumb.html %}
+  <div class="top-nav">
+    {% include breadcrumb.html %}
+    {% if page.course or page.category %}
+    {% unless page.type == "course" %}
+    {% include reading-time.html %}
+    {% endunless %}
+    {% endif %}
+  </div>
 
   {% endif %}
 
   <main>
     {{ content }}
-    {% if page.issues == true %}
+    {% if page.issues %}
     {% include issues.html %}
     {% endif %}
   </main>
