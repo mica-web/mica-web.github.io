@@ -1,22 +1,22 @@
 - [x] write intro email
 - [ ] create intro video
-- [ ] add estimated reading times?
+- [x] add estimated reading times?
 - add content for first 3 weeks of content
 
 
 # GD2
 ## Week one
-- [ ] about your browser
+- [x] about your browser
 - [ ] GUI
 - [ ] CLI
-- [ ] about your text editor
+- [x] about your text editor
   - generic
   - VS Code specific
     - https://code.visualstudio.com/docs/getstarted/userinterface
     - extensions
-    - [ ] update extension collection
-- [ ] Questions, comments, insights
-- Reading:
+    - [x] update extension collection
+- [x] Questions, comments, insights
+- [x] Reading:
   - A brief history of web design for designers
     - Write an addendum (~200 words; put a Google Doc in the Assignments Google Drive)
   - Git and Github in Plain English
