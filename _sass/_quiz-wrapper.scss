@@ -1,0 +1,55 @@
+.quiz-wrapper {
+  background-color: white;
+  border: 1px solid $color-grey;
+  margin: $spacing-lg;
+  padding: $spacing-lg $spacing-lg $spacing-md;
+  position: relative;
+  max-width: 720px;
+}
+
+.quiz-heading {
+  background-color: white;
+  margin: 0;
+  padding-right: $spacing-xs;
+  padding-left: $spacing-xs;
+  position: absolute;
+  top: (-$spacing-xs);
+  left: $spacing-sm;
+}
+
+.quiz-actions-wrapper {
+  position: absolute;
+  top: $spacing-xs;
+  right: $spacing-xs;
+}
+
+.quiz-action {
+  text-decoration: none;
+
+  svg {
+    fill: $color-grey;
+    transition: all 300ms;
+    width: 28px;
+  }
+
+  &[aria-expanded=true] {
+    svg {
+      .icon-line {
+        &:last-of-type {
+          opacity: 0;
+        }
+      }
+    }
+  }
+
+  +.quiz-action {
+    margin-left: $spacing-xs;
+  }
+
+  &:hover,
+  &:focus {
+    svg {
+      fill: $color-slate;
+    }
+  }
+}

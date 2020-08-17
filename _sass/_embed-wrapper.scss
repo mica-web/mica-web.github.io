@@ -1,0 +1,25 @@
+.embed-wrapper {
+  margin: $spacing-lg;
+  position: relative;
+
+  &::before,
+  &::after {
+    background-color: $color-yellow;
+    content: '';
+    height: 4px;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    left: 0;
+    width: 10%;
+    z-index: 1;
+  }
+
+  &::before {
+    top: (-$spacing-md);
+  }
+
+  &::after {
+    bottom: (-$spacing-md);
+  }
+}
