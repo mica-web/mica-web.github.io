@@ -1,6 +1,61 @@
 - [x] write intro email
 - [ ] create intro video
-- [ ] add content for first 3 weeks of content
+- [ ] add estimated reading times?
+- add content for first 3 weeks of content
+
+
+# GD2
+## Week one
+- [ ] about your browser
+- [ ] GUI
+- [ ] CLI
+- [ ] about your text editor
+  - generic
+  - VS Code specific
+    - https://code.visualstudio.com/docs/getstarted/userinterface
+    - extensions
+    - [ ] update extension collection
+- [ ] Questions, comments, insights
+- Reading:
+  - A brief history of web design for designers
+    - Write an addendum (~200 words; put a Google Doc in the Assignments Google Drive)
+  - Git and Github in Plain English
+
+## Week two
+- [ ] Version control and git
+  - benefits
+  - commands:
+    - git init
+    - git add
+    - git commit
+    - git vs saving
+- [ ] setting up VS Code + Glitch + GitHub
+  - Note that git is not installed on your machine, this is working off of Glitch; explanation of virtual machine 
+- [ ] Markdown basics
+- git branches
+- some example work
+- Intro to HTML
+  - what and why
+  - familiarity: name parts of a page
+    - header, footer
+    - paragraph
+    - list
+    - link (tricky)
+  - paragraph element
+  - DEMO/REMIX
+      2 paragraphs of text
+      an ordered list of the 3 websites you visit most often
+      an unordered list of five objects you spot in the room
+      add links to the ordered list and try them out
+  - headings, hierarchy
+  - DEMO
+  - `!` emmet shortcut to creating a page
+  - document structure
+  - 
+
+
+
+# GD431
 
 
 
