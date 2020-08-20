@@ -12,8 +12,7 @@ issues: true
 
 {% include quiz.html
   title="Share What You Know"
-  quizId="1FAIpQLSfldCxSvc1VQ2xfpc45_3Qdev0-k_6v1Da7WAcnNP77WZmJ4w"
-  height="960"
+  quizId="TSMGCSZ"
   hint=true
 %}
 
@@ -32,9 +31,8 @@ If you use your cursor to explore the dots along the lines, you can see each ver
 Users can opt out of these auto-updates, but since they're enabled by default, most do not.
 
 {% include quiz.html
-  title="Share Your Thoughts"
-  quizId="1FAIpQLSf5Xqdf7ujI9_N_LbKb53nbK1L_Em21IlJjderlHT4FSXxzvg"
-  height="760"
+  title="Share What You Think"
+  quizId="TMKSN2R"
 %}
 
 ## Getting started
