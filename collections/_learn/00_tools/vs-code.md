@@ -33,9 +33,7 @@ After you complete the interface walkthrough, go back to your copy of VS Code an
 
 {% include quiz.html
   title="Share What You've Learned"
-  quizId="1FAIpQLSfqfTFfPNDUPCVi57SnB8KHjSWMVt1xfLwxyUonH1WYFebTUQ"
-  height="580"
-  answers=true
+  quizId="KXT5DHF"
 %}
 
 ## Configuring your text editor

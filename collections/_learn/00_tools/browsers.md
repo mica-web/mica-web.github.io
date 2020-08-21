@@ -13,7 +13,7 @@ issues: true
 {% include quiz.html
   title="Share What You Know"
   quizId="TSMGCSZ"
-  hint=true
+  hint="Remember: Embedded quizzes like this are used as part of your participation grade."
 %}
 
 ## Introduction
@@ -32,7 +32,8 @@ Users can opt out of these auto-updates, but since they're enabled by default, m
 
 {% include quiz.html
   title="Share What You Think"
-  quizId="TMKSN2R"
+  quizId="K2S8DWF"
+  hint="Remember: You must submit this form to get participation credit."
 %}
 
 ## Getting started
