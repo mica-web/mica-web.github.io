@@ -7,7 +7,7 @@
     </div>
   </header>
   {% if include.hint %}
-  <p class="quiz-hint">Remember: Embedded quizzes like this are used as part of your participation grade.</p>
+  <p class="quiz-hint">{{ include.hint }}</p>
   {% endif %}
   <div id="{{include.quizId }}" class="quiz-content">
     <iframe src="https://www.surveymonkey.com/r/{{ include.quizId }}" height="{{ include.height | default: 600 }}" allowTransparency="true" frameborder="0" scrolling="yes"></iframe>
