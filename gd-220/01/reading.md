@@ -29,7 +29,7 @@ Before you dive into the reading, please read [my recommendations for responding
   - Due date: 9/9 by 11:59pm EST ([see in your timezone](https://everytimezone.com/s/bcb7bc69))
   - Length of addendum:  Roughly 200 words
   - Format:  Google Doc or PDF
-  - How to submit: Add your file to the **history** folder inside our [shared GD2 Activities folder in Google Drive](https://drive.google.com/drive/folders/1XJltwb_lotlD5PuPlQKy8FEZIsAkuAEX?usp=sharing)
+  - How to submit: Add your file to the **history** folder inside our [shared GD2 Activities folder in Google Drive](https://drive.google.com/drive/folders/1XJltwb_lotlD5PuPlQKy8FEZIsAkuAEX?usp=sharing) (message me in Slack if you don't have access)
 
 ## Reading #2
 
