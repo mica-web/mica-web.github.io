@@ -22,7 +22,7 @@ Here's [a few things you can do](/gd-220/00/early-start) before the first class 
 
 {% for week in site.gd220 %}
 
-{% assign weeknum = week.path | replace:'_gd220/w','' | replace:'.md', '' %}
+{% assign weeknum = week.path | replace:'_gd220/','' | replace:'.md', '' %}
 
 {% assign scheduledate = week.course_date | date: "%Y-%m-%d" %}
 {% assign weekstart = week.course_date | date: "%s" | minus: week | date: "%Y-%m-%d" %}
