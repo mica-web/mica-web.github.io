@@ -1,7 +1,6 @@
 ---
 title: Front End Web Development (GD 431)
 course: gd-431
-toggle: true
 type: course
 ---
 

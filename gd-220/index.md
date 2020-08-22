@@ -1,7 +1,6 @@
 ---
 title: Graphic Design 2 (GD 220)
 course: gd-220
-toggle: true
 type: course
 ---
 

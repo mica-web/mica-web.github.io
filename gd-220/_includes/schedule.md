@@ -10,13 +10,17 @@ The schedule for fall 2020 is a work in progress, so most of the content below s
 
 <ol id="js-target-schedule" class="u-list-reset has-reveal-animation schedule-list">
 {% for week in site.gd220 %}
-{% assign weeknum = week.path | replace:'_gd220/w','' | replace:'.md', '' %}
 
-  <li class="accordion-wrapper" id="week{{ weeknum }}">
-    <h3 class="accordion-title{% if week.empty %} has-no-content js-content-toggle-ignore{% else %} js-trigger-content-toggle{% endif %}">
-      {{ week.topic }}
+  <li>
+    <h3 class="schedule-topic">
+      {% if week.empty %}
+        {{ week.topic }}
+      {% else %}
+      <a href="{{ week.url }}">
+        {{ week.topic }}
+      </a>
+      {% endif %}
     </h3>
-    {{ week.content | markdownify }}
   </li>
 
 {% endfor %}
