@@ -22,6 +22,7 @@ name: Learning Web Design
 author: Angelique Weger
 email: aweger@mica.edu
 # baseurl: "" # the subpath of your site, e.g. /blog
+url: https://mica-web.github.io
 # url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
 # github_username:  jekyll
@@ -38,7 +39,9 @@ sass:
 collections_dir: collections
 collections:
     gd220:
+      output: true
     gd431:
+      output: true
     learn:
       output: true
       order:
