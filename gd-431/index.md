@@ -11,6 +11,10 @@ type: course
 Front End Web Development
 =========================
 
+{% comment %}
+% include_relative _includes/quick-links.html %
+{% endcomment %}
+
 <div class="overview__content">
 
 **NOTE:** This content is still being updated and revised for 2020.
@@ -35,25 +39,10 @@ Syllabus
 
 <section>
 
-Schedule
---------
+{% include_relative _includes/schedule.md %}
 
-The current schedule is a work in progress, but you can choose instead to review a previous year's schedule:
-
-<button type="button" class="u-button-reset js-generic-toggle highlighter" aria-controls="js-target-schedule">View Previous Schedule</button>
-
-<ol id="js-target-schedule" class="u-list-reset has-reveal-animation schedule-list">
-{% for week in site.gd431 %}
-{% assign weeknum = week.path | replace:'_gd431/w','' | replace:'.md', '' %}
-
-  <li class="accordion-wrapper" id="week{{ weeknum }}">
-    <h2 class="accordion-title{% if week.empty %} has-no-content js-content-toggle-ignore{% else %} js-trigger-content-toggle{% endif %}">
-      {{ week.topic }}
-    </h2>
-    {{ week.content | markdownify }}
-  </li>
-
-{% endfor %}
-</ol>
+{% comment %}
+% include_relative _includes/projects.md %
+{% endcomment %}
 
 </section>

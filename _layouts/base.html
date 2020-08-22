@@ -22,6 +22,9 @@
   {% if page.type == "learn-index" %}
   <script src="{{ site.baseurl }}/js/filterByLevel.js" async defer></script>
   {% endif %}
+  {% if page.quiz %}
+  <script src="{{ site.baseurl }}/js/quizToggle.js" async defer></script>
+  {% endif %}
 
 </body>
 {% include credits.html %}

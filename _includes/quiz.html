@@ -1,0 +1,18 @@
+<div class="quiz-wrapper">
+  <header class="quiz-header">
+    <h2 class="quiz-heading">{{ include.title }}</h2>
+    <div class="quiz-actions-wrapper">
+      <button type="button" class="u-button-reset quiz-action js-quiz-toggle" aria-controls="{{ include.quizId }}">{% include collapse.svg %}</button>
+      <a class="quiz-action" href="https://www.surveymonkey.com/r/{{ include.quizId }}" target="_blank">{% include new-window.svg %}</a>
+    </div>
+  </header>
+  {% if include.hint %}
+  <p class="quiz-hint">{{ include.hint }}</p>
+  {% endif %}
+  <div id="{{include.quizId }}" class="quiz-content">
+    <iframe src="https://www.surveymonkey.com/r/{{ include.quizId }}" height="{{ include.height | default: 600 }}" allowTransparency="true" frameborder="0" scrolling="yes"></iframe>
+  </div>
+  {% if include.answers %}
+  <p class="hint"><span class="emoji">💡</span> After you submit this form, click the "View Accuracy" button to check your answers.</p>
+  {% endif %}
+</div>

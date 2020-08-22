@@ -7,7 +7,7 @@ type: learn-index
 
 {% assign topics = site.learn | group_by: 'category' %}
 
-{% assign all_levels = site.learn | map: "level" | uniq %}
+{% assign all_levels = site.learn | map: 'level' | uniq %}
 
 <p class="filter-list-label">Filter by level</p>
 <ul class="filter-list">

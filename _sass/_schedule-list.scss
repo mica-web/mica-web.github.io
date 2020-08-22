@@ -1,6 +1,6 @@
 .schedule-list {
   counter-reset: weeks;
-  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
   max-width: 540px;
 
   >li {
@@ -64,7 +64,7 @@
     }
   }
 
-  h3 {
+  h4 {
     background-image: linear-gradient(transparent calc(100% - 2px), $color-yellow 2px);
     background-position: 16px 100%;
     background-repeat: no-repeat;
@@ -73,7 +73,7 @@
     display: inline-block;
     @include font-mono;
     font-size: 0.9rem;
-    margin-bottom: $spacing-xs;
+    margin-bottom: $spacing-sm;
 
     &:first-of-type {
       margin-top: 0;

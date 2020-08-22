@@ -1,6 +1,5 @@
 .breadcrumb-wrapper {
-  margin-top: 1rem;
-  margin-bottom: 1.5rem;
+  margin-right: $spacing-xl;
 
   &::before {
     content: '\005C\005C ';
@@ -34,6 +33,12 @@
       font-size: 0.65rem;
       margin-right: 0.35rem;
       margin-left: 0.25rem;
+    }
+  }
+
+  &.week+.breadcrumb {
+    &::before {
+      content: unset;
     }
   }
 }

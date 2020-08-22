@@ -48,8 +48,36 @@ ul {
   }
 }
 
+pre {
+  &::before {
+    background-color: $color-slate;
+    color: $color-grey;
+    content: 'Example Code';
+    display: inline-block;
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    padding: 4px;
+    position: relative;
+    top: -4px;
+    left: 8px;
+    text-transform: uppercase;
+  }
+}
+
 code {
   @include font-mono;
+
+  pre & {
+    display: block;
+    padding: 2px $spacing-xs $spacing-xs;
+  }
+
+  p &,
+  li & {
+    background-color: rgba($color-mint, 0.35);
+    padding-right: 2px;
+    padding-left: 2px;
+  }
 }
 
 img {

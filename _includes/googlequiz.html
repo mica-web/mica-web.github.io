@@ -1,0 +1,16 @@
+<div class="quiz-wrapper">
+  <h2 class="quiz-heading">{{ include.title }}</h2>
+  <div class="quiz-actions-wrapper">
+    <button type="button" class="u-button-reset quiz-action js-quiz-toggle" aria-controls="{{ include.quizId }}">{% include collapse.svg %}</button>
+    <a class="quiz-action" href="https://docs.google.com/forms/d/e/{{ include.quizId }}/viewform?usp=sf_link" target="_blank">{% include new-window.svg %}</a>
+  </div>
+  {% if include.hint %}
+  <p class="hint">Remember: Embedded quizzes like this are used as part of your participation grade.</p>
+  {% endif %}p
+  <div id="{{include.quizId }}" class="quiz-content">
+    <iframe src="https://docs.google.com/forms/d/e/{{ include.quizId }}/viewform?embedded=true" width="100%" height="{{ include.height | default: 600 }}" frameborder="0" marginheight="0" marginwidth="0">Loading&hellip;</iframe>
+  </div>
+  {% if include.answers %}
+  <p class="hint"><span class="emoji">💡</span> After you submit this form, click the "View Accuracy" button to check your answers.</p>
+  {% endif %}
+</div>

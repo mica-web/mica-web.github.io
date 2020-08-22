@@ -1,0 +1,113 @@
+.quiz-wrapper {
+  background-color: white;
+  border: 1px solid $color-grey;
+  margin-top: $spacing-lg;
+  margin-bottom: $spacing-lg;
+  position: relative;
+  max-width: 720px;
+
+  @media (min-width: 620px) {
+    margin-right: $spacing-lg;
+    margin-left: $spacing-lg;
+  }
+}
+
+.quiz-header {
+  background-image: linear-gradient(to top, transparent, white 16%);
+  padding-bottom: $spacing-lg;
+  position: absolute;
+  top: (-$spacing-xs);
+  left: $spacing-sm;
+  width: calc(100% - 24px); // $spacing-sm * 2
+  z-index: 1;
+
+  @media (min-width: 380px) {
+    align-items: center;
+    background-image: linear-gradient(to top, transparent, white 35%);
+    display: flex;
+    justify-content: space-between;
+    top: -18px;
+  }
+}
+
+.quiz-heading {
+  margin: 0;
+  padding-right: $spacing-xs;
+  padding-left: $spacing-xs;
+}
+
+.quiz-actions-wrapper {
+  padding-top: $spacing-xs;
+  padding-right: $spacing-xs;
+
+  @media (max-width: 379px) {
+    position: absolute;
+    top: $spacing-sm;
+    right: (-$spacing-xs);
+  }
+}
+
+.quiz-action {
+  text-decoration: none;
+
+  svg {
+    fill: $color-grey;
+    transition: all 300ms;
+    width: 28px;
+  }
+
+  &[aria-expanded=true] {
+    svg {
+      .icon-line {
+        &:last-of-type {
+          opacity: 0;
+        }
+      }
+    }
+  }
+
+  +.quiz-action {
+    margin-left: $spacing-xs;
+  }
+
+  &:hover,
+  &:focus {
+    svg {
+      fill: $color-slate;
+    }
+  }
+}
+
+.quiz-hint {
+  background-image: linear-gradient(to top, transparent, white 35%);
+  padding-right: $spacing-lg;
+  padding-left: $spacing-lg;
+  padding-bottom: $spacing-xl;
+  position: relative;
+  top: 40px;
+  z-index: 1;
+
+  &::after {
+    background-color: $color-yellow;
+    content: '';
+    height: 4px;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    bottom: $spacing-lg;
+    left: 0;
+    width: 10%;
+  }
+}
+
+.quiz-content {
+  .quiz-hint+& {
+    margin-bottom: (-$spacing-lg);
+    position: relative;
+    top: (-$spacing-lg);
+  }
+
+  iframe {
+    width: 100%;
+  }
+}
