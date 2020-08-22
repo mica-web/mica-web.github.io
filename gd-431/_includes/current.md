@@ -31,7 +31,14 @@ Here's [a few things you can do](/gd-431/00/early-start) before the first class 
 
 <section class="schedule-list">
 
-<h3 id="current-week">{{weeknum}} // Current Week: {{ week.topic }}</h3>
+{::options parse_block_html="false" /}
+<header class="current-header">
+  <h3 id="current-week">{{ weeknum }} // Current Week: {{ week.topic }}</h3>
+  <a href="{{ week.url }}" class="u-link-reset">
+    {% include new-window.svg %}
+  </a>
+</header>
+{::options parse_block_html="true" /}
 
 {{ week.content | markdownify | replace: '<h2', '<h4' | replace: '</h2>', '</h4>'  }}
 
