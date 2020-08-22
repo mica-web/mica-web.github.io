@@ -1,4 +1,3 @@
-
 {% assign currentdate = 'now' | date: "%Y-%m-%d" %}
 {% comment %}
 %  assign currentdate = '2020-09-03' | date: "%Y-%m-%d" %
@@ -22,7 +21,7 @@ Here's [a few things you can do](/gd-431/00/early-start) before the first class 
 
 {% for week in site.gd431 %}
 
-{% assign weeknum = week.path | replace:'_gd431/w','' | replace:'.md', '' %}
+{% assign weeknum = week.path | replace:'_gd431/','' | replace:'.md', '' %}
 
 {% assign scheduledate = week.course_date | date: "%Y-%m-%d" %}
 {% assign weekstart = week.course_date | date: "%s" | minus: week | date: "%Y-%m-%d" %}
@@ -34,7 +33,7 @@ Here's [a few things you can do](/gd-431/00/early-start) before the first class 
 
 <h3 id="current-week">{{weeknum}} // Current Week: {{ week.topic }}</h3>
 
-{{ week.content | markdownify }}
+{{ week.content | markdownify | replace: '<h2', '<h4' | replace: '</h2>', '</h4>'  }}
 
 </section>
 

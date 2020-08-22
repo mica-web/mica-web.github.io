@@ -1,7 +1,6 @@
-
 {% assign currentdate = 'now' | date: "%Y-%m-%d" %}
 {% comment %}
-% assign currentdate = '2020-09-03' | date: "%Y-%m-%d" %
+%  assign currentdate = '2020-09-03' | date: "%Y-%m-%d" %
 {% endcomment %}
 {% assign startdate = '2020-09-03' | date: "%Y-%m-%d" %}
 
@@ -34,7 +33,7 @@ Here's [a few things you can do](/gd-220/00/early-start) before the first class 
 
 <h3 id="current-week">{{weeknum}} // Current Week: {{ week.topic }}</h3>
 
-{{ week.content | markdownify }}
+{{ week.content | markdownify | replace: '<h2', '<h4' | replace: '</h2>', '</h4>'  }}
 
 </section>
 
