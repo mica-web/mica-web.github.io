@@ -24,8 +24,8 @@ Here's [a few things you can do](/gd-431/00/early-start) before the first class 
 
 {% assign weeknum = week.path | replace:'_gd431/w','' | replace:'.md', '' %}
 
-{% assign scheduledate = week.date | date: "%Y-%m-%d" %}
-{% assign weekstart = week.date | date: "%s" | minus: week | date: "%Y-%m-%d" %}
+{% assign scheduledate = week.course_date | date: "%Y-%m-%d" %}
+{% assign weekstart = week.course_date | date: "%s" | minus: week | date: "%Y-%m-%d" %}
 
 {% if (currentdate >= weekstart) and (currentdate <= scheduledate) %}
 

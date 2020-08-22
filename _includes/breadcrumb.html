@@ -9,7 +9,11 @@
   {% assign crumb_title = crumb | replace:'-',' ' | replace:'00_', '' | replace:'01_','' | replace:'02_','' | replace:'.html', '' %}
 
   {% if forloop.index == crumbs_total %}
+  {% if crumb.size == 2 %}
+  <li class="u-inline-block breadcrumb">week {{ crumb_title }}</li>
+  {% else %}
   <li class="u-inline-block breadcrumb">{{ crumb_title }}</li>
+  {% endif %}
   {% elsif crumb.size == 2 %}
   <li class="u-inline-block breadcrumb week">week {{ crumb_title }}: </li>
   {% else %}
