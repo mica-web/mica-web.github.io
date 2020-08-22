@@ -23,7 +23,7 @@ This data is the worldwide usage of browsers by version number for the last year
 
 <div class="embed-wrapper">
 <div id="desktop-browser_version-ww-monthly-201907-202007" width="100%" height="400" style="width:100%; height: 400px;"></div>
-<p class="cite">Source: <a href="https://gs.statcounter.com/browser-version-market-share/desktop/worldwide/#monthly-201907-202007">StatCounter Global Stats - Browser Version Market Share</a></p><script async defer type="text/javascript" src="https://www.statcounter.com/js/fusioncharts.js"></script><script async defer type="text/javascript" src="https://gs.statcounter.com/chart.php?desktop-browser_version-ww-monthly-201907-202007&chartWidth=600"></script>
+<p class="citation">Source: <a href="https://gs.statcounter.com/browser-version-market-share/desktop/worldwide/#monthly-201907-202007" class="u-link-reset">StatCounter Global Stats - Browser Version Market Share</a></p><script async defer type="text/javascript" src="https://www.statcounter.com/js/fusioncharts.js"></script><script async defer type="text/javascript" src="https://gs.statcounter.com/chart.php?desktop-browser_version-ww-monthly-201907-202007&chartWidth=600"></script>
 </div>
 
 If you use your cursor to explore the dots along the lines, you can see each version by number.
