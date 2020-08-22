@@ -42,6 +42,29 @@
   }
 }
 
+.current-header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+
+  svg {
+    fill: $color-grey;
+    transition: all 300ms;
+    width: 28px;
+  }
+
+  >a {
+    margin-left: $spacing-md;
+
+    &:hover,
+    &:focus {
+      svg {
+        fill: $color-slate;
+      }
+    }
+  }
+}
+
 .schedule-topic {
   &::before {
     content: counters(weeks, ".", decimal-leading-zero) " ""//";

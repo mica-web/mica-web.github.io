@@ -27,4 +27,4 @@ When you finish a reading assignment using this note-taking tool, you end up wit
 ✍️ If it helps you, I have an example [Q-C-Q Worksheet](https://docs.google.com/document/d/1-nLkkIevl2CT39mvkKj42de9HOqmlMkhN1NNCzJTsaQ/copy?usp=sharing) that you can make a copy of and use for your notes. (Just want to see the worksheet without making your own copy? [Preview the worksheet](https://docs.google.com/document/d/1-nLkkIevl2CT39mvkKj42de9HOqmlMkhN1NNCzJTsaQ/preview?usp=sharing))
 
 {: .text-faded.citation }
-This text and worksheet adapted from <cite><a href="https://bacwritingfellows.commons.gc.cuny.edu/for-students/from-reading-to-writing-quotation-comment-question-q-c-q/">From Reading to Writing: Quotation-Comment-Question (Q-C-Q)</a></cite>.
+This text and worksheet adapted from <cite><a href="https://bacwritingfellows.commons.gc.cuny.edu/for-students/from-reading-to-writing-quotation-comment-question-q-c-q/" class="u-link-reset">From Reading to Writing: Quotation-Comment-Question (Q-C-Q)</a></cite>.
