@@ -1,6 +1,6 @@
 ---
 title: Responding to Readings
-course: gd-220
+course: gd-431
 issues: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 title: Join Slack
-course: gd-220
+course: gd-431
 issues: true
 ---
 
 # {{ page.title }}
 
 {% include shared_slack.md %}
-- Join the **#gd2** Slack channel
+- Join the **#gd431** Slack channel
