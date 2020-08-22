@@ -24,6 +24,10 @@ layout: base
   {% endif %}
 
   <main>
+    {% if page.type == "week" %}
+    {% assign weeknum = page.url | split: "/" | last %}
+    <h1>{{ weeknum }} // {{ page.topic }}</h1>
+    {% endif %}
     {{ content }}
     {% if page.issues %}
     {% include issues.html %}
