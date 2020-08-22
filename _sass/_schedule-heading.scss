@@ -1,0 +1,29 @@
+%schedule_heading {
+  background-image: linear-gradient(transparent calc(100% - 2px), $color-yellow 2px);
+  background-position: 16px 100%;
+  background-repeat: no-repeat;
+  background-size: calc(100% - 32px) 100%;
+  color: $color-offblack;
+  display: inline-block;
+  @include font-mono;
+  font-size: 0.9rem;
+  margin-bottom: $spacing-sm;
+
+  &:first-of-type {
+    margin-top: 0;
+  }
+
+  &:not(:first-of-type) {
+    margin-top: $spacing-md;
+  }
+
+  &::before {
+    content: '[';
+    padding-right: $spacing-sm;
+  }
+
+  &::after {
+    content: ']';
+    padding-left: $spacing-sm;
+  }
+}

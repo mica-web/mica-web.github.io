@@ -1,0 +1,5 @@
+.week-wrapper {
+  h2 {
+    @extend %schedule_heading;
+  }
+}

@@ -20,6 +20,7 @@
 @import 'filter-list';
 @import 'highlighter';
 @import 'quick-links';
+@import 'schedule-heading';
 @import 'schedule-list';
 @import 'tag-name';
 @import 'top-nav';
@@ -27,6 +28,7 @@
 
 .wip-wrapper {
   text-align: center;
+
   img {
     max-width: 260px;
   }
