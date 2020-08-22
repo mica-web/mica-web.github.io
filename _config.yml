@@ -38,10 +38,6 @@ sass:
 
 collections_dir: collections
 collections:
-    gd220:
-      output: true
-    gd431:
-      output: true
     learn:
       output: true
       order:
@@ -52,6 +48,12 @@ collections:
         - 02_css/css.md
         - 02_css/css_color.md
         - 02_css/sass.md
+    gd220:
+      output: true
+      permalink: /gd-220/:name
+    gd431:
+      output: true
+      permalink: /gd-431/:name
 
 # Build settings
 markdown: kramdown
