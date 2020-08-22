@@ -16,5 +16,5 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-config" content="/favicons/browserconfig.xml">
   <meta name="theme-color" content="#9ff2c0">
-  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.name }}</title>
+  <title>{% if page.topic %}{{ page.topic }} | {% elsif page.title  %}{{ page.title }} | {% endif %}{{ site.name }}</title>
 </head>
