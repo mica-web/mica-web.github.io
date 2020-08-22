@@ -2,8 +2,8 @@
   <header class="quiz-header">
     <h2 class="quiz-heading">{{ include.title }}</h2>
     <div class="quiz-actions-wrapper">
-      <button type="button" class="u-button-reset quiz-action js-quiz-toggle" aria-controls="{{ include.quizId }}">{% include collapse.svg %}</button>
-      <a class="quiz-action" href="https://www.surveymonkey.com/r/{{ include.quizId }}" target="_blank">{% include new-window.svg %}</a>
+      <button type="button" class="u-button-reset u-link-reset quiz-action js-quiz-toggle" aria-controls="{{ include.quizId }}">{% include collapse.svg %}</button>
+      <a class="u-link-reset quiz-action" href="https://www.surveymonkey.com/r/{{ include.quizId }}" target="_blank">{% include new-window.svg %}</a>
     </div>
   </header>
   {% if include.hint %}

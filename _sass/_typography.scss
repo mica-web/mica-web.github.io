@@ -129,7 +129,7 @@ h3 {
 }
 
 a {
-  main &:not(.button--bordered):not(.highlighter):not(.quiz-action) {
+  main &:not(.u-link-reset) {
     // highlight, then underline
     $border-color: $color-slate;
     background-image: linear-gradient($color-yellow 0, $color-yellow 0), linear-gradient(transparent calc(100% - 2px), $border-color 2px);
