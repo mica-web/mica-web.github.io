@@ -5,7 +5,7 @@ level: [ advanced ]
 permalink: /:collection/css/:name
 code_example: false
 quiz: false
-issues: true
+issues: false
 ---
 
 # {{ page.topic }}
