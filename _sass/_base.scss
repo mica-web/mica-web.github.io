@@ -48,7 +48,13 @@ ul {
   }
 }
 
+figure {
+  margin: $spacing-lg 0;
+}
+
 pre {
+  white-space: pre-wrap;
+
   &::before {
     background-color: $color-slate;
     color: $color-grey;
