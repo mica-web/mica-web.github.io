@@ -24,107 +24,227 @@ Now, you'll learn how to create projects on Glitch and connect them with GitHub.
 {: .callout }
 Note that it's entirely possible to use Glitch without GitHub and to add non-Glitch projects to GitHub; they're not necessary for each other, but they are complimentary. As part of this course, you may create Glitch projects just for your own experimentation and those will not need to be shared with GitHub. However, **every graded project will be on both Glitch and GitHub** so I can easily review and comment on your code.
 
+<span class="emoji">👉🏻</span> Please note that this will go most smoothly if you have an uninterrupted 30 minutes to work through these steps from start to finish.
+
+## Step 1: Create a new repository
 Starting on [GitHub](https://github.com), log into your account, and then create a new repository following [these directions](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-new-repository).
 - Name your repo **mica-web-demo**.
 - Make your repo public.
-- Don't check the box for "Initialize this repository with a README".
+- Don't check the box for **Initialize this repository with a README**.
 
 See this screenshot for a full view of the settings to create the new repo:
 ![Create repo settings on GitHub]({{ ip | append: 'new-repo-settings.png' }})
 
-When you've correctly entered everything, click the "Create Repository" button. You'll end up with a page full of instructions; leave this page open for now, and you'll come back to it later.
+When you've correctly entered everything, click the **Create Repository** button. You'll end up with a page full of instructions; leave this page open for now, and you'll come back to it later.
 
+## Step 2: Remix a project on Glitch
 Next, open a new tab or browser and go to [Glitch](https://glitch.com) and log into your account. Open up my [starter project](https://glitch.com/edit/#!/mica-web-starter) and remix the project:
 
 ![Click the project name and choose "Remix Project"]({{ ip | append: 'glitch-remix.gif' }})
 
-As you can see above, the original project is named **mica-web-starter** and then a copy is created with the dynamically generated name **south-shell-shoemaker**.
+As you can see above, the original project is named **mica-web-starter** and then a copy is created with the dynamically generated name **south-shell-shoemaker**. In your remix, you can rename this project to something more relevant or keep the creative name Glitch has assigned.
 
 {: .callout }
 Both GitHub and Glitch have the concept of taking existing work and creating your own copy or version; on GitHub, this is called [**forking**](https://docs.github.com/en/github/getting-started-with-github/github-glossary#fork) and on Glitch it's called [**remixing**](https://glitch.happyfox.com/kb/article/23-what%E2%80%99s-remixing/). As you can see in the above screen capture, you can copy your own work as well as other people's.
 
 Now you have a project on Glitch and a repo on GitHub and are ready to connect them both.
 
+Open up VS Code and access the Command Palette (**View > Command Palette**), then type "Glitch" and select **Glitch: Show Commands**. This will open up a new menu and you should select **Open Project**. Then select the project you just created; those files will now be visible and editable inside of VS Code.
+
+## Step 3: Create SSH authentication
+
 {: .callout }
-The next steps will involve using the **command line**. If you haven't used the command line or terminal before, I've written a [short introduction to the command line]({{ lp | append: 'tools/command-line' }}) that you should review.
+The next steps will involve using the **command line**. If you haven't used the command line or console before, I've written a [short introduction to the command line]({{ lp | append: 'tools/command-line' }}) that you should review first.
 
----
+Open up the Command Palette again and again type "Glitch." This time, select **Glitch: Console**. This will open up your console view in VS Code.
 
+{: .callout }
+In the rest of these directions, whenever I use the word "console," I specifically mean this Glitch console in VS Code.
 
-1. Connect Glitch to GitHub
-1. In Glitch, Tools -> Terminal
-1. In Glitch project terminal:
-  - `ssh-keygen`
-  - Just press <Enter> to accept all the questions.
-  - This process creates a new hidden file: `.ssh/id_rsa.pub`
-  - Read the contents of that file by: `cat .ssh/id_rsa.pub`
-  - Copy the key
-1. On GitHub: Settings -> SSH & GPG Keys -> New SSH key
-1. Name "Push from Glitch," paste key
-1. Back in Glitch project terminal:
-  - `ssh -T git@github.com`
-  - May say "Are you sure you want to continue connecting (yes/no)?" If so, type "yes"
-  - Should see: "Hi [your GH username]! You've successfully authenticated, but GitHub does not provide shell access."
-1. Now GitHub knows about you, but doesn't know about your project. We can prove this by typing:
-  - `git remote -v`
-1. No remotes.
-1. Go back to repo page on GitHub and scroll down to "…or push an existing repository from the command line" heading
-1. Copy the address that begins with "git@", e.g. `git@github.com:mica-web/glitch-example.git`
-1. `git remote add gh [address here]`
-1. `git remote -v` should now show your GH address twice
-1. `git branch` -- lists branches; only one: "master"
-1. `git push -u gh master` : push this current branch to my GH repo
-1. Verify that you now see your files on GitHub 🎉
-1. Back in Glitch: `git status`
-1. `git checkout -b learning-branches`
-1. `git branch`
-  - See two branches: master and learning-branches
-  - The one with the asterisk is your active branch, where you are currently working
-1. Add a new file `project1/index.html`
-  - This creates the folder and the file
-1. In Terminal:
-  - `git status`
-  - `git add project1/index.html`
-  - `git status`
-1. Repeat for 2 more projects; add the files first:
-  - `project2/index.html`
-  - `project3/indext.html`
-1. In Terminal:
-  - `git status`
-  - `git add .`
-    - This adds all the new and/or changed files to your 
-  - `git status`
-  - `git commit -m "Set up project folders"`
-  - `git status`
-  - `git push -u gh learning-branches`
-💡 Need to explain commits and staging now
-1. Verify on GitHub
-  - Should see banner with "Compare and pull request" button
-  - Should NOT see folders or new files in your repo 🤯
-  - Dropdown to switch branches, change to "learning-branches"
-  - Now you should see the additions!
-💡 Need to explain branch workflow now
+In the console, type `ssh-keygen` and press **Enter**.
 
-1. Create PR on GitHub
-  - DO NOT MERGE AT THIS POINT
-  - Files changed tab
-  - Note that you may see some commits made by Glitch itself as it autosaves things
+{: .callout }
+Pressing **Enter** in the console is what runs a command. It's always a good idea to slow down and check what you've typed _before_ pressing **Enter**.
 
-1. Pull request will stay in sync with your branch. Back to Glitch:
-  1. Add another folder: `project4/index.html`
-  1. Stage this change (still on the learning-branches branch)
-  1. Make a new commit for this file and folder
-  1. Push to GitHub
-(include these instructions and a "show me how" reveal for more info)
-1. On GitHub, should see "new changes since your last visit" on pull request
-1. Merge pull request, delete branch.
-1. Now your changes are integrated into the master branch 🎉
+After you press **Enter**, you'll get a series of prompts in the console. You should press **Enter** through each of them and don't have to add any additional information.
 
-1. Back on Glitch in the Terminal, `git checkout master && refresh`
-  - `refresh` is a Glitch-specific command to make sure what you see in the text editor is in sync with what you expect from the terminal
-1. Your project folders aren't there any more, what gives!
-1. Your master branch on Glitch is still the old version and not in sync with what's on GitHub. Let's get the latest changes from GitHub.
-1. `git fetch` to peek at the changes, but not update
-1. `git status` will now tell you you're behind gh/master by a certain number of commits
-1. `git pull` pulls those changes from GitHub into Glitch
-  - `git pull && refresh` will update the text editor all in one go 🎉
+This screenshot shows the prompts you should see and the beginning of the success message you'll see:
+
+![]({{ ip | append: 'console-ssh-keygen.png' }})
+
+You have just created an SSH key pair which will allow your Glitch project and your GitHub repo to pass information back and forth without passwords.
+
+{: .callout }
+If you're interested in more detail about this, you can read about [public key authentication](https://www.ssh.com/ssh/public-key-authentication).
+
+Now you want to take the info from your public key and share it with GitHub. To do this, type `cat .ssh/id_rsa.pub` in the console and press **Enter**.
+
+{: .callout }
+The `cat` command reads the file you name (in this case, the **id_rsa.pub** file in your newly created **.ssh** directory) and prints out the file contents to the console.
+
+Highlight and copy the key that is displayed in the console; it should start with **ssh-rsa**.
+
+Now, open a new browser window and go to your [GitHub settings](https://github.com/settings/keys).
+
+{: .callout }
+This link takes you directly to the page, but you can always get there yourself by clicking your profile photo in the upper-right corner of any page, then clicking **Settings**. Then, in the user settings sidebar, click **SSH and GPG keys**.
+
+Click the button to add **New SSH key** and name the key "Push from Glitch demo". Paste in the public key code you copied from the console and then click **Add SSH key**. (You may be prompted to enter your GitHub password at this point.)
+
+{: .callout }
+Want to see detailed screenshots of the this process? [View this walkthrough from the GitHub docs](https://docs.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account).
+
+Because an SSH key is a form of access to your account, you will also receive an email from GitHub alerting you to this change to your settings.
+
+Now you have a private and public key on Glitch and have added your public key to GitHub. Let's confirm with Glitch that all has gone according to plan.
+
+Back in VS Code, type `ssh -T git@github.com` in the console and press **Enter**.
+
+This attempts to open an SSH connection to GitHub. You may see a warning that the authenticity of the host can't be established followed by a prompt asking you if you still want to connect.
+
+If the fingerprint is either:
+- `SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8`
+- `16:27:ac:a5:76:28:2d:36:63:1b:56:4d:eb:df:a6:48`
+
+Then you can type "yes" and press **Enter**. (You can see and verify this information in the [GitHub docs](https://docs.github.com/en/github/authenticating-to-github/testing-your-ssh-connection).)
+
+At this point, you should see a message in the console with your username, like so:
+
+{: .cli }
+> Hi angeliquejw! You've successfully authenticated, but GitHub does not provide shell access.
+
+{: .emoji.text-larger.text-center}
+🎉
+
+<span class="emoji">⚠️</span> If you see anything else at this point, please copy the full message from your console and send it to me via DM on Slack, and we'll troubleshoot. You will not be able to continue with these instructions until this is resolved.
+
+## Step 4: Connect Glitch to GitHub
+So, we've now shown that GitHub and Glitch can talk to each other. Your Glitch project is already using git by default -- you didn't have to do anything extra to set this up --  and we can prove that by typing `git status` in the console.
+
+You should see a response like so:
+
+{: .cli }
+> On branch master
+
+{: .cli }
+> nothing to commit, working directory clean
+
+{: .callout }
+`git status` is our way of asking git to tell us some of the information and detail known about our work.
+
+Way back at the end of [step one](#step-1-create-a-new-repository), you created your GitHub repo and got a screen full of instructions. Now you actually need to revisit that page and use some of the info there.
+
+Under the heading **…or push an existing repository from the command line** is an address for your repo; it should start with `git@github.com` and end with `.git`. Copy this full address.
+
+{: .callout }
+For me, this address is `git@github.com:mica-web/mica-web-demo.git`, but your address will be different because the bit immediately after the colon (`:`) will be your GitHub username.
+
+Now, back in VS Code, type `git remote add gh your-address-here` in the console, replacing the **your-address-here** with the address you copied from GitHub. As an example, here's what the full command looks like for me:
+
+{: .cli }
+> git remote add gh git@github.com:mica-web/mica-web-demo.git
+
+When you've got the full command right, press **Enter**.
+
+{::options parse_block_html="true" /}
+<div class="callout">
+If you want to know more, I've broken this command down:
+- **`git`** means this is a git command; all git commands start this way (remember `git status` from earlier?), so you'll be typing this a lot
+- **`remote`** is the word git uses for a location where your code is stored
+- **`add`** is the action; this means we're adding a new remote
+- **`gh`** is the name we're giving the remote (short for GitHub in this case)
+- the next bit is the address for the remote we're adding
+
+`git remote add` is the bit that is always consistent; the next two bits are customized based on what you're adding. This is like creating an entry in an address book; we've added an entry named **gh** and told git where that entry is located.
+</div>
+
+To verify that your new remote is in place, type `git remote -v` in the console and press **Enter**.
+
+You should see your address listed twice with the name **gh**.
+
+![]({{ ip | append: 'git-remote-v.png' }})
+
+{: .emoji.text-larger.text-center}
+🎉
+
+The two actions you see to the right in the parentheses of your address -- **fetch** and **push** -- reference the two main ways of sharing information in git.
+
+{: .text-center }
+![]({{ ip | append: 'git-push-pull.png' }})
+
+- **fetching** or **pulling** references bringing code from your repo into your working project
+- **pushing** is going in the other direction -- moving code from your working project into your repo
+
+{: .callout}
+This was explained in more detail in [**Git and Github in Plain English**](https://blog.red-badger.com/2016/11/29/gitgithub-in-plain-english).
+
+## Step 5: Push Glitch code to GitHub
+Now the big finale, the thing we've been working toward all through these steps: Let's get your code from Glitch to GitHub.
+
+In VS Code, type `git push -u gh master` in the console and press **Enter**.
+
+Your console will display a bunch of info as it takes the files from Glitch and copies them over to GitHub.
+
+![Example of console output from a "git push" command.]({{ ip | append: 'git-push.png' }})
+
+If you go back to your browser at the GitHub tab, refresh the page and you should now see the files from Glitch.
+
+{: .emoji.text-larger.text-center}
+🎉
+
+Back in VS Code, if you type `git status` in the console and press **Enter**, you should see some new information:
+
+{: .cli }
+> On branch master
+
+{: .cli }
+> Your branch is up-to-date with 'gh/master'.
+
+{: .cli }
+> nothing to commit, working directory clean
+
+That second line is telling you that Glitch and GitHub are in sync -- which is exactly what we want to see.
+
+## Step 6: Your first git commit
+In VS Code with the demo project open, open the file named `README.md`.
+
+At the top of that file, create a new line and add some text.
+
+{: .callout }
+This text can be anything, even just the word "testing." Just remember that we're going to push this change to GitHub, so it shouldn't be private or embarrassing. <span class="emoji">🙈</span>
+
+Now, in the console, if you type `git status`, you'll see there are changes tracked by git:
+
+![]({{ ip | append: 'git-changes.png' }})
+
+Also, git is providing some helpful tips about the commands you can use going forward. What we want to do is stage the changes to the **README.md** file and commit them.
+
+First, type `git add README.md` in the console and press **Enter**.
+
+Then, type `git status` in the console again to see how this has changed things.
+
+While a git commit can include multiple files, in this instance we're just changing one file so we don't need to `git add` anything else.
+
+In the console, type `git commit -m "My first commit"` (make sure to include the quote marks) and press **Enter**.
+
+{::options parse_block_html="true" /}
+<div class="callout">
+- **`git commit`** says you're making a commit
+- the **`-m`** means you're including a message with your commit (which you always want to do)
+- the bit in quotes is your commit message and can be customized
+</div>
+
+{: .callout }
+Over the course of the semester, we'll talk more in depth about what makes a good commit message, but, for now, "My first commit" is good enough <span class="emoji">👍🏻</span>
+
+Once more, type `git status` into the console. You should now see a notification:
+
+{: .cli }
+> Your branch is ahead of 'gh/master' by 1 commit.
+
+Using the `git push` command in the console will then move those changes up to GitHub and another `git status` will show that things are back in sync. If you go to your project on Glitch and your repo on GitHub, both places should now show the changes you made to your `README.md` file.
+
+{: .text-center }
+![](https://media.giphy.com/media/18pjPEqqIt2k8/giphy.gif)
+
+That's it! You'll be using this demo project and repo throughout the course to practice things, and you'll repeat this process to create new projects and repos for each of your graded projects. But those are tasks for future-you; right now, you should get up, stretch and take a break. <span class="emoji">😀</span>
