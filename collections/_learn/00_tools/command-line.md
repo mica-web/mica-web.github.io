@@ -36,19 +36,11 @@ While GUIs are far more intuitive, the command line can be faster and allow for 
 
 Many developer tutorials expect some degree of familiarity with the command line. So, while it may be a bit intimidating to start with, it's worth tackling. This course won't provide an in-depth overview of the CLI, but you will use it for interacting with git and [GitHub]({{ lp | append: 'tools/github' }}).
 
-Both [VS Code]({{ lp | append: 'tools/vs-code' }}) and [Glitch]({{ lp | append: 'tools/glitch' }}) have an integrated command line, which is called **Terminal**.
+Both [VS Code]({{ lp | append: 'tools/vs-code' }}) and [Glitch]({{ lp | append: 'tools/glitch' }}) have an integrated command line, which is called **Terminal** or sometimes **Console**.
 
 {: .callout }
-While there are some technical differences between a terminal and the command line, they're not important to get into at this point. Going forward, the class documents will always refer to terminal, since that's the name used in both VS Code and Glitch. <span class="emoji">👍🏻</span>
+While there are some technical differences between a terminal, a console, and the command line, they're not important to get into at this point. Going forward, the class documents will always refer to console, since that's the name used in for the Glitch terminal _inside of_ VS Code. <span class="emoji">👍🏻</span>
 
 Learn more about the:
 - [VS Code Terminal](https://code.visualstudio.com/docs/editor/integrated-terminal)
 - [Glitch Terminal](https://glitch.happyfox.com/kb/article/48-i-ve-got-mad-skillz-i-need-a-terminal-command-line-console/)
-
-You open the Terminal in VS Code using the **Terminal** menu; this screen capture shows how to do that and what the terminal looks like when it's open:
-![]({{ ip | append: 'vscode-terminal.gif' }})
-
-Your terminal may look slightly different than mine -- both the colors and the information provided. Don't stress about that. <span class="emoji">😀</span>
-
-{: .callout }
-It is worth noting that not all terminal commands work across all operating systems or in all environments. If you ever come across a command that doesn't work as expected, it may be for this reason and you should let me know via Slack ASAP.
