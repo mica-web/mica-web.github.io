@@ -90,6 +90,10 @@ h3 {
   }
 }
 
+.text-center {
+  text-align: center;
+}
+
 .text-larger {
   font-size: 180%;
 }
@@ -111,6 +115,23 @@ h3 {
     &:focus {
       color: black;
     }
+  }
+}
+
+.cli {
+  @include font-mono;
+  background-color: #eaedf0;
+  margin: $spacing-lg;
+  padding: $spacing-sm;
+  max-width: 560px;
+
+  p {
+    margin: 0;
+  }
+
+  +.cli {
+    margin-top: (-$spacing-lg);
+    padding-top: 0;
   }
 }
 
