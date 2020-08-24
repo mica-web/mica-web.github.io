@@ -6,11 +6,12 @@ issues: true
 Resources
 =========
 
-An ever-growing list of links that will help you better understand front end web development.
+* TOC
+{:toc}
 
 ## Class resources
-Links to resources specific to your course
-
+- The [learn](/learn) pages have all the topics we're covering this semester: our tools and workflows, information about HTML, CSS and JavaScript (including additional resources to learn more)
+  - <span class="emoji">💡</span> If you're looking to instructions or info that was linked from one of the week's agendas, it's probably here
 - View [this site's GitHub repo](https://github.com/mica-web/mica-web.github.io)
 - [Class Slack](https://mica-web.slack.com/)
 
