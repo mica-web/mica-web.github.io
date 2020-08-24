@@ -32,6 +32,8 @@ Syllabus
 [GD 220 Syllabus](https://docs.google.com/document/d/1U2pwRJ7SyvGpGD4lyYk8bEcxOe33caysKf7sSJQlkAM/edit?usp=sharing){:target="_blank"}
 </span>
 
+{% include resources-link.html %}
+
 </div>
 
 </section>

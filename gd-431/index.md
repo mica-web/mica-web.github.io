@@ -32,6 +32,8 @@ Syllabus
 [GD 431 Syllabus](https://docs.google.com/document/d/1ZuXB5erTCGdzSI3VPOQMzFkac8Rp96WEojIBBZY3oJs/edit?usp=sharing){:target="_blank"}
 </span>
 
+{% include resources-link.html %}
+
 </div>
 
 </section>
