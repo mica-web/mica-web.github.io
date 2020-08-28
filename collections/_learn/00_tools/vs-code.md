@@ -29,6 +29,12 @@ After you've downloaded and installed VS Code, open it up and make sure the inst
 ### Get familiar with your text editor
 Before going further, it will help to read this [intro to the VS Code user interface](https://code.visualstudio.com/docs/getstarted/userinterface) to get an explanation of the different areas within VS Code. You don't need to read the whole thing and can stop when you finish the section titled **Preview mode**.
 
+Prefer a video walkthrough? Ornella, from the VS Code team, has this 5-min intro:
+
+<div class="embed-wrapper">
+  <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/S320N3sxinE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
 After you complete the interface walkthrough, go back to your copy of VS Code and poke around a bit. I especially recommend clicking through the different icons on the **Activity Bar** so you start to explore what they offer and how they change what's visible in the app.
 
 {% include quiz.html
