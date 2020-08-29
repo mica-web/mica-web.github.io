@@ -16,6 +16,11 @@ Even if the class does not meet in a given week, <span class="highlighter--simpl
 {: .callout }
 🤔 I know this might be a bit confusing. If there's a way to make it clearer, let me know!
 
+Within the pages I've made in this course web site, I wanted to provide as much information as possible, but I realized sometimes it may confusing which instructions, links, readings, etc. are required and which are optional. I have tried to consistently use this {% include optional.html demo="true" %} asterisk emoji to identify links or materials that are **optional**.
+
+{: .callout }
+This, however, does rely on me remembering to add in the emoji, so if you're ever in doubt, feel free to ask in Slack if I expect you to read a particular link!
+
 ## Week one details
 This week, we have two priorities:
 

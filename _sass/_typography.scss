@@ -90,16 +90,22 @@ h3 {
   }
 }
 
-.text-center {
-  text-align: center;
-}
+.text {
+  &-center {
+    text-align: center;
+  }
 
-.text-larger {
-  font-size: 180%;
-}
+  &-smaller {
+    font-size: 65%;
+  }
 
-.text-faded {
-  opacity: 0.7;
+  &-larger {
+    font-size: 180%;
+  }
+
+  &-faded {
+    opacity: 0.7;
+  }
 }
 
 .citation {
