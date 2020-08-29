@@ -28,14 +28,14 @@ Note that it's entirely possible to use Glitch without GitHub and to add non-Gli
 
 ## Step 1: Create a new repository
 Starting on [GitHub](https://github.com), log into your account, and then create a new repository following [these directions](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-new-repository).
-- Name your repo **mica-web-demo**.
+- Name your repo **project1** with no spaces.
 - Make your repo public.
-- Don't check the box for **Initialize this repository with a README**.
+- Don't check any of the extra checkboxes.
 
 See this screenshot for a full view of the settings to create the new repo:
 ![Create repo settings on GitHub]({{ ip | append: 'new-repo-settings.png' }})
 
-When you've correctly entered everything, click the **Create Repository** button. You'll end up with a page full of instructions; leave this page open for now, and you'll come back to it later.
+When you've correctly entered everything, click the **Create repository** button. You'll end up with a page full of instructions; leave this page open for now, and you'll come back to it later.
 
 ## Step 2: Remix a project on Glitch
 Next, open a new tab or browser and go to [Glitch](https://glitch.com) and log into your account. Open up my [starter project](https://glitch.com/edit/#!/mica-web-starter) and remix the project:
@@ -45,7 +45,7 @@ Next, open a new tab or browser and go to [Glitch](https://glitch.com) and log i
 As you can see above, the original project is named **mica-web-starter** and then a copy is created with the dynamically generated name **south-shell-shoemaker**. In your remix, you can rename this project to something more relevant or keep the creative name Glitch has assigned.
 
 {: .callout }
-Both GitHub and Glitch have the concept of taking existing work and creating your own copy or version; on GitHub, this is called [**forking**](https://docs.github.com/en/github/getting-started-with-github/github-glossary#fork) and on Glitch it's called [**remixing**](https://glitch.happyfox.com/kb/article/23-what%E2%80%99s-remixing/). As you can see in the above screen capture, you can copy your own work as well as other people's.
+Both GitHub and Glitch have the concept of taking existing work and creating your own copy or version; on GitHub, this is called [**forking**](https://docs.github.com/en/github/getting-started-with-github/github-glossary#fork) {% include optional.html %}  and on Glitch it's called [**remixing**](https://glitch.happyfox.com/kb/article/23-what%E2%80%99s-remixing/).{% include optional.html %} As you can see in the above screen capture, you can copy your own work as well as other people's.
 
 Now you have a project on Glitch and a repo on GitHub and are ready to connect them both.
 
@@ -59,7 +59,7 @@ The next steps will involve using the **command line**. If you haven't used the 
 Open up the Command Palette again and again type "Glitch." This time, select **Glitch: Console**. This will open up your console view in VS Code.
 
 {: .callout }
-In the rest of these directions, whenever I use the word "console," I specifically mean this Glitch console in VS Code.
+In the rest of these directions, whenever I use the word "console," I specifically mean the Glitch console in VS Code.
 
 In the console, type `ssh-keygen` and press **Enter**.
 
@@ -75,7 +75,7 @@ This screenshot shows the prompts you should see and the beginning of the succes
 You have just created an SSH key pair which will allow your Glitch project and your GitHub repo to pass information back and forth without passwords.
 
 {: .callout }
-If you're interested in more detail about this, you can read about [public key authentication](https://www.ssh.com/ssh/public-key-authentication).
+If you're interested in more detail about this, you can read about [public key authentication](https://www.ssh.com/ssh/public-key-authentication).{% include optional.html %}
 
 Now you want to take the info from your public key and share it with GitHub. To do this, type `cat .ssh/id_rsa.pub` in the console and press **Enter**.
 
@@ -92,7 +92,7 @@ This link takes you directly to the page, but you can always get there yourself 
 Click the button to add **New SSH key** and name the key "Push from Glitch demo". Paste in the public key code you copied from the console and then click **Add SSH key**. (You may be prompted to enter your GitHub password at this point.)
 
 {: .callout }
-Want to see detailed screenshots of the this process? [View this walkthrough from the GitHub docs](https://docs.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account).
+Want to see detailed screenshots of the this process? [View this walkthrough from the GitHub docs](https://docs.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account).{% include optional.html %}
 
 Because an SSH key is a form of access to your account, you will also receive an email from GitHub alerting you to this change to your settings.
 

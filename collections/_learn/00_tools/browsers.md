@@ -37,13 +37,13 @@ Users can opt out of these auto-updates, but since they're enabled by default, m
 %}
 
 ## Getting started
-Most of my demos in this course will be using Mozilla Firefox, but you can work in _either_ Firefox or Google Chrome. It's important for you to use one of these browsers because it is evergreen and because they both have powerful built-in web developer tools that will help you examine, edit and debug the code you create.
+Most of my demos in this course will be using Mozilla Firefox, but you can work in _either_ Firefox or Google Chrome. It's important for you to use one of these browsers because they are evergreen and because they both have powerful built-in web developer tools that will help you examine, edit and debug the code you create.
 
 Download at least one of these browsers:
 
   - [Firefox (browser)](https://www.mozilla.org/en-US/firefox/new/)
-    - _optional:_ Learn about [FF dev tools](https://developer.mozilla.org/en-US/docs/Tools)
+    - Learn about [FF dev tools](https://developer.mozilla.org/en-US/docs/Tools){% include optional.html %}
   - [Google Chrome (browser)](https://www.google.com/chrome/)
-    - _optional:_ Learn about [Chrome dev tools](https://developers.google.com/web/tools/chrome-devtools/)
+    - Learn about [Chrome dev tools](https://developers.google.com/web/tools/chrome-devtools/){% include optional.html %}
 
 You don't have to understand how to use dev tools at this point; we'll discuss that in depth later when talking about how to debug your code. <span class="emoji">👍🏻</span>

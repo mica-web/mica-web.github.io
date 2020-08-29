@@ -42,5 +42,5 @@ Both [VS Code]({{ lp | append: 'tools/vs-code' }}) and [Glitch]({{ lp | append: 
 While there are some technical differences between a terminal, a console, and the command line, they're not important to get into at this point. Going forward, the class documents will always refer to console, since that's the name used in for the Glitch terminal _inside of_ VS Code. <span class="emoji">👍🏻</span>
 
 Learn more about the:
-- [VS Code Terminal](https://code.visualstudio.com/docs/editor/integrated-terminal)
-- [Glitch Terminal](https://glitch.happyfox.com/kb/article/48-i-ve-got-mad-skillz-i-need-a-terminal-command-line-console/)
+- [VS Code Terminal](https://code.visualstudio.com/docs/editor/integrated-terminal){% include optional.html %} 
+- [Glitch Terminal](https://glitch.happyfox.com/kb/article/48-i-ve-got-mad-skillz-i-need-a-terminal-command-line-console/){% include optional.html %} 

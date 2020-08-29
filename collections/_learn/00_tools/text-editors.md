@@ -52,7 +52,7 @@ In the example above:
 - attribute names (`href`, `src`, `alt`) are in green and
 - the values for the above-mentioned attributes are in red.
 
-Even if you can't read this code example, you might start to understand that similarly colored bits of text have something in common. And making those similarities easily visible is the point of syntax highlighting.
+Even if you don't understand this code, the example might lead you to believe--correctly so--that similarly colored bits of text have something in common. And making those similarities easily visible is the point of syntax highlighting.
 
 ### Automatic formatting
 Because writing code involves **nesting** code -- that is, placing chunks of code inside other bits of code -- the layout or formatting of your code files can help with understanding the structure of your code and even spotting bits of broken code.
