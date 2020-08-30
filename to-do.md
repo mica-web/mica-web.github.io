@@ -69,7 +69,7 @@ As above, plus
 
 ---
 
-- [ ] update deploy to use GH actions b/c default GH Pages doesn't support Jekyll 4+ 🤦🏻‍♀️
+- [/] update deploy to use GH actions b/c default GH Pages doesn't support Jekyll 4+ 🤦🏻‍♀️
   - see here for GH version notes: https://pages.github.com/versions/
   - https://jekyllrb.com/docs/continuous-integration/github-actions/
   - https://github.com/BryanSchuetz/jekyll-deploy-gh-pages

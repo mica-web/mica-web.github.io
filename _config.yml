@@ -41,11 +41,14 @@ collections:
   learn:
     output: true
     order:
-      - 00_tools/tools.md
+      - 00_tools/zoom.md
       - 00_tools/slack.md
+      - 00_tools/browsers.md
       - 00_tools/glitch.md
-      - 01_html/html.md
-      - 02_css/css.md
+      - 00_tools/github.md
+      - 00_tools/text-editors.md
+      - 00_tools/vs-code.md
+      - 00_tools/command-line.md
       - 02_css/css_color.md
       - 02_css/sass.md
   gd220:
