@@ -16,9 +16,6 @@ Front End Web Development
 
 <div class="overview__content">
 
-**NOTE:** This content is still being updated and revised for 2020.
-
----
 {% include_relative _includes/description.md %}
 
 </div>
