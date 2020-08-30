@@ -1,0 +1,22 @@
+- Advanced HTML and CSS, including
+  - best practices
+  - CSS naming and organization strategies
+  - Flexbox
+  - CSS grid
+  - Sass
+  - media queries
+
+- Design for a multi-faceted web
+  - heuristic evaluation
+  - inclusive components + WCAG
+  - performance considerations
+  - mobile-first
+  - desktop-first
+
+- Working collaboratively
+  - git and GitHub
+  - priority guides
+  - priority matrixes
+  - kaban boards
+  - stakeholder POV
+  - giving and receiving feedback

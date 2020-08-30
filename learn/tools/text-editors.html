@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="ie=edge" http-equiv="X-UA-Compatible">
+  <meta name="author" content="Angelique Weger" />
+  <meta name="Description" content="Curriculum, schedule and resources for web design.">
+  <link href="/css/style.css" rel="stylesheet">
+  
+  <link href="/css/syntax.css" rel="stylesheet">
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+  <link rel="manifest" href="/favicons/site.webmanifest">
+  <link rel="shortcut icon" href="/favicons/favicon.ico">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-config" content="/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#9ff2c0">
+  <title>Text Editors | Learning Web Design</title>
+</head>
+
+
+<body>
+  <div class="site-wrapper">
+
+    <header id="top" class="site-header">
+  <h2 class="u-m0 u-clearfix heading">
+    <a href="https://mica-web.github.io/" class="u-block u-clearfix" title="Return to homepage" >
+      <span class="heading--background">Learning</span>
+      <span class="heading--foreground">Web Design</span>
+    </a>
+  </h2>
+</header>
+
+
+<div class="content-wrapper ">
+
+  
+
+  <div class="top-nav">
+    <ul class="u-list-reset breadcrumb-wrapper">
+  <li class="u-inline-block breadcrumb"><a href="https://mica-web.github.io">Home</a></li>
+
+  
+  
+
+  
+
+  
+
+  
+  <li class="u-inline-block breadcrumb"><a href="/learn/">learn</a>
+    
+
+    
+
+  
+
+  
+  <li class="u-inline-block breadcrumb"><a href="/learn/tools/">tools</a>
+    
+
+    
+
+  
+
+  
+  
+  <li class="u-inline-block breadcrumb">text editors</li>
+  
+  
+
+    
+
+</ul>
+
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p class="text-faded reading-est">4 min read</p>
+
+    
+    
+  </div>
+
+  
+
+  <main>
+    
+    
+<h1 id="text-editors">Text Editors</h1>
+
+<h2 id="introduction">Introduction</h2>
+<p>A text editor is a program that help you write and edit code.</p>
+
+<p>Since code is made up of words, you might think a text editor is similar to a word processing program (like Microsoft Word or Google Docs), but they differ in some pretty important ways. Word processing programs create <strong>rich text</strong>, which includes a lot of information about how the text is formatted: Is it bold? What color is it? What font is used? When I save a document in a word processor and share it with another person, I expect this formatting information to be shared with them, too. So, if my report uses the font Arial, I expect anyone else who opens the report to also see it in Arial.</p>
+
+<p>Text editors create <strong>plain text</strong>; they essentially just save the characters you see on your screen with no formatting information. While that sounds pretty boring, text editors have some powerful features that make writing code faster and easier.</p>
+
+<h2 id="text-editor-benefits">Text editor benefits</h2>
+
+<h3 id="file-and-folder-organization">File and folder organization</h3>
+<p>While a report in Microsoft Word or Google Docs might be complete all on its own, web projects rely on many different files to create a web page or site:</p>
+<ul>
+  <li>HTML for the layout</li>
+  <li>CSS for the style of the document</li>
+  <li>image files for any photos or illustrations included</li>
+</ul>
+
+<p>Text editors have a concept of project folders – so you can access and view not only the file you’re working on right now, but also any related files. As a point of reference, as of the time when I’m writing this, the site for this course has more than 400 files – being able to navigate through those when working on any given page while staying in the same program where I’m working is a huge time saver.</p>
+
+<h3 id="find-and-replace">Find and replace</h3>
+<p>Text editors provide the capability to search in individual documents or within whole folders for a word or phrase and, additionally, to replace the search term(s) with another word or phrase. So, if MICA changed the course number of GD 431, it would be a pretty simple exercise to replace all existing mentions of GD 431 on this site with the new number using my text editor.</p>
+
+<p>If you’ve used this feature in word processing or other software, you likely know what to expect here.</p>
+
+<h3 id="syntax-highlighting">Syntax highlighting</h3>
+<p>Remember how text editors create plain text? That doesn’t mean that fonts and colors <em>aren’t</em> used in the editor – it just means those fonts and colors are part of your editor’s settings and not saved or shared when you save the file.</p>
+
+<p>As a result, color can be automatically applied to your document to highlight specific bits of code, like in this HTML example:</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"https://www.instagram.com/"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/images/icon-insta.png"</span> <span class="na">alt=</span><span class="s">"See my photos on Instagram."</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/a&gt;</span></code></pre></figure>
+
+<p>In the example above:</p>
+<ul>
+  <li>HTML elements (<code class="language-plaintext highlighter-rouge">a</code> and <code class="language-plaintext highlighter-rouge">img</code>) are in purple,</li>
+  <li>attribute names (<code class="language-plaintext highlighter-rouge">href</code>, <code class="language-plaintext highlighter-rouge">src</code>, <code class="language-plaintext highlighter-rouge">alt</code>) are in green and</li>
+  <li>the values for the above-mentioned attributes are in red.</li>
+</ul>
+
+<p>Even if you don’t understand this code, the example might lead you to believe–correctly so–that similarly colored bits of text have something in common. And making those similarities easily visible is the point of syntax highlighting.</p>
+
+<h3 id="automatic-formatting">Automatic formatting</h3>
+<p>Because writing code involves <strong>nesting</strong> code – that is, placing chunks of code inside other bits of code – the layout or formatting of your code files can help with understanding the structure of your code and even spotting bits of broken code.</p>
+
+<p>There’s no need for you to handle this formatting yourself, though, as most text editors can automatically format your code when you save your files or when you run a command to format the file.</p>
+
+<p>In the previous HTML example, there was a tiny bit of nesting – the <code class="language-plaintext highlighter-rouge">a</code> element wraps around the <code class="language-plaintext highlighter-rouge">img</code>.  In this GIF, you can see the formatting applied as a I save the file, making the nested code on line 2 more evident.</p>
+
+<p><img src="/learn/00_tools/img/autoformat.gif" alt="Animated screen capture of autoformatting in VS Code." /></p>
+
+<p class="callout">You may have noticed that the syntax highlighting in this example is different. That’s because I’m using a different highlighting theme on this site (first example) compared to inside my text editor (this GIF). You’ll be able to choose your own theme when working inside your text editor.</p>
+
+<h3 id="line-numbers">Line numbers</h3>
+<p>In the previous example, I was able to refer to a specific section of code by its line number. Most text editors display line numbers on the left side of the code (see the 1, 2, 3, 4 above?), making it easier for folks to discuss code. With  line numbers, I don’t have to describe the context of the image (“The fourth image in your site header…”) and hope you understand, but can instead be very specific (“The image on line 2.”).</p>
+
+<h3 id="automatic-text-completion">Automatic text completion</h3>
+<p>Because text editors are mainly for writing and editing code, they can also be very smart about the code you’re writing and help you avoid mistakes by suggesting bits of code, like this example of CSS autocompletion:</p>
+
+<p><img src="/learn/00_tools/img/autocomplete.gif" alt="Animated screen capture of autocompletion in VS Code." /></p>
+
+<p>In the above example, as I’m typing, my text editor is making recommendations along the way, both for properties and possible values. Pressing <code class="language-plaintext highlighter-rouge">tab</code> or <code class="language-plaintext highlighter-rouge">enter</code> allows me to accept the recommendation, or I can use the arrow keys to scroll through other options, like I do when selecting <code class="language-plaintext highlighter-rouge">blueviolet</code> from the color list.</p>
+
+<h2 id="your-text-editor">Your text editor</h2>
+<p>Now that we’ve talked about text editors generally, let’s get you started with the text editor you’ll be using for this course: <a href="/learn/tools/vs-code">Visual Studio Code</a></p>
+
+    
+    <footer class="feedback-footer">
+  
+
+  <p><strong>Make this page better.</strong></p>
+  <p>Found something that's incorrect or confusing on this page? Broken link? I want to know! <a href="https://github.com/mica-web/mica-web.github.io/issues/new?title=Feedback+for+%2Flearn%2Ftools%2Ftext-editors&template=page-feedback.md" target="_blank">Open an issue on GitHub</a> to tell me what's up and help me update the page.</p>
+</footer>
+
+    
+  </main>
+
+  <footer class="site-footer">
+  <div class="rule"></div>
+  <div class="content">
+    <p>&copy; Copyright 2018&ndash;<span id="js-current-year"></span> Ang&eacute;lique Weger</p>
+    <p class="top-link-wrapper"><a href="#top">Back to top</a></p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('js-current-year').appendChild(document.createTextNode(new Date().getFullYear()))
+</script>
+
+
+</div>
+
+
+  </div>
+
+  
+  
+  
+  
+
+</body>
+<!--
+/**
+ * @license
+ * MyFonts Webfont Build ID 3700915, 2019-01-18T17:07:51-0500
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Native-Regular by Fort Foundry
+ * URL: https://www.myfonts.com/fonts/fort-foundry/native/regular/
+ * Copyright: Copyright &#x00A9; 2016 by Mattox Shuler. All rights reserved.
+ * Licensed pageviews: Unlimited
+ * 
+ * Webfont: NeueAlteGrotesk-Regular by VisualWorks
+ * URL: https://www.myfonts.com/fonts/visualworks/neue-alte-grotesk/regular/
+ * Copyright: Copyright © 2017-2018 by Krzysztof Chuc. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * Webfont: NeueAlteGrotesk-Medium by VisualWorks
+ * URL: https://www.myfonts.com/fonts/visualworks/neue-alte-grotesk/medium/
+ * Copyright: Copyright © 2017-2018 by Krzysztof Chuc. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * Webfont: NeueAlteGrotesk-SemiBold by VisualWorks
+ * URL: https://www.myfonts.com/fonts/visualworks/neue-alte-grotesk/semi-bold/
+ * Copyright: Copyright © 2017-2018 by Krzysztof Chuc. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * Webfont: NeueAlteGrotesk-Bold by VisualWorks
+ * URL: https://www.myfonts.com/fonts/visualworks/neue-alte-grotesk/bold/
+ * Copyright: Copyright © 2017-2018 by Krzysztof Chuc. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * Webfont: NeueAlteGrotesk-Heavy by VisualWorks
+ * URL: https://www.myfonts.com/fonts/visualworks/neue-alte-grotesk/heavy/
+ * Copyright: Copyright © 2017-2018 by Krzysztof Chuc. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * Webfont: NeueAlteGrotesk-Black by VisualWorks
+ * URL: https://www.myfonts.com/fonts/visualworks/neue-alte-grotesk/black/
+ * Copyright: Copyright © 2017-2018 by Krzysztof Chuc. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * 
+ * License: https://www.myfonts.com/viewlicense?type=web&buildid=3700915
+ * 
+ * © 2019 MyFonts Inc
+*/
+
+-->
+
+
+</html>
