@@ -30,4 +30,4 @@ This week, we have two priorities:
 Week one is going to start off with some pretty solid technical challenges -- but know that I've guided several classes through this in the past and we've always been able to troubleshoot any issues that have come up. Also, the tools you're being introduced to are ones you'll use for every project this semester -- so, what might feel challenging or confusing in week one will be routine by week 16 (and even earlier).
 
 {: .text-center }
-![](https://media.giphy.com/media/3ohs7IaSo4fordCeBi/giphy.gif)
+![Gwen Stefani says, You got this.](https://media.giphy.com/media/3ohs7IaSo4fordCeBi/giphy.gif)

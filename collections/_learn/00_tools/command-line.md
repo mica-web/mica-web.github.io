@@ -15,20 +15,20 @@ issues: true
 
 ## Introduction
 
-![]({{ ip | append: 'gui.webp' }})
+![A cat is mesmerized by a moving cursor on a computer screen.]({{ ip | append: 'gui.webp' }})
 
 To date, most of your computer experience has been using **graphic user interfaces** (GUI, pronounced like "gooey"). This is a visually intuitive way to interact with your computer using your mouse, trackpad and/or keyboard.
 
 In fact, GUIs are so common, you may wonder: are there other user interfaces for computers? If you've ever spoken to your computer, phone or other device -- saying, "Hey, Google" or "Hey, Siri" -- then you've used a **voice user interface**.
 
-![]({{ ip | append: 'hey-siri.gif' }})
+![The pulsing animation that displays when users say Hey Siri.]({{ ip | append: 'hey-siri.gif' }})
 
 Graphic and voice user interfaces are both new additions, however. The original computer interfaces were wholly text based -- the prompts provided by the computer were in text and user input was entirely typed commands.
 
 While GUIs have largely replaced text-based computer interfaces, they are still used and useful.
 
 ## Why use the CLI 
-![]({{ ip | append: 'cli-hacking.webp' }})
+![A woman, who is blonde and white, mimics typing on a keyboard, then speaks into her smart watch, saying We're in.]({{ ip | append: 'cli-hacking.webp' }})
 
 Images of the **command line interface** (or CLI) in popular media are often tied to hacking -- like in The Matrix or Mr. Robot -- but there are common legit reasons to use the command line, too.
 

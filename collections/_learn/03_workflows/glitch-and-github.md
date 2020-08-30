@@ -70,7 +70,7 @@ After you press **Enter**, you'll get a series of prompts in the console. You sh
 
 This screenshot shows the prompts you should see and the beginning of the success message you'll see:
 
-![]({{ ip | append: 'console-ssh-keygen.png' }})
+![After completing the ssh-keygen command, the success message says Your identification has been saved in /app/.ssh/id_rsa.]({{ ip | append: 'console-ssh-keygen.png' }})
 
 You have just created an SSH key pair which will allow your Glitch project and your GitHub repo to pass information back and forth without passwords.
 
@@ -162,7 +162,7 @@ To verify that your new remote is in place, type `git remote -v` in the console 
 
 You should see your address listed twice with the name **gh**.
 
-![]({{ ip | append: 'git-remote-v.png' }})
+![Screenshot of the console with the output from the git remote -v command.]({{ ip | append: 'git-remote-v.png' }})
 
 {: .emoji.text-larger.text-center}
 🎉
@@ -170,7 +170,7 @@ You should see your address listed twice with the name **gh**.
 The two actions you see to the right in the parentheses of your address -- **fetch** and **push** -- reference the two main ways of sharing information in git.
 
 {: .text-center }
-![]({{ ip | append: 'git-push-pull.png' }})
+![The pull command comes from GitHub to your computer and the push command goes in the opposite direction.]({{ ip | append: 'git-push-pull.png' }})
 
 - **fetching** or **pulling** references bringing code from your repo into your working project
 - **pushing** is going in the other direction -- moving code from your working project into your repo
@@ -185,7 +185,7 @@ In VS Code, type `git push -u gh master` in the console and press **Enter**.
 
 Your console will display a bunch of info as it takes the files from Glitch and copies them over to GitHub.
 
-![Example of console output from a "git push" command.]({{ ip | append: 'git-push.png' }})
+![Example of console output from a git push command.]({{ ip | append: 'git-push.png' }})
 
 If you go back to your browser at the GitHub tab, refresh the page and you should now see the files from Glitch.
 
@@ -215,7 +215,7 @@ This text can be anything, even just the word "testing." Just remember that we'r
 
 Now, in the console, if you type `git status`, you'll see there are changes tracked by git:
 
-![]({{ ip | append: 'git-changes.png' }})
+![Output from git says there are changes not staged for commit and recommends the git add and git checkout commands.]({{ ip | append: 'git-changes.png' }})
 
 Also, git is providing some helpful tips about the commands you can use going forward. What we want to do is stage the changes to the **README.md** file and commit them.
 
@@ -245,6 +245,6 @@ Once more, type `git status` into the console. You should now see a notification
 Using the `git push` command in the console will then move those changes up to GitHub and another `git status` will show that things are back in sync. If you go to your project on Glitch and your repo on GitHub, both places should now show the changes you made to your `README.md` file.
 
 {: .text-center }
-![](https://media.giphy.com/media/18pjPEqqIt2k8/giphy.gif)
+![The title character from Unbreakable Kimmy Schmidt raises the roof in celebration.](https://media.giphy.com/media/18pjPEqqIt2k8/giphy.gif)
 
 That's it! You'll be using this demo project and repo throughout the course to practice things, and you'll repeat this process to create new projects and repos for each of your graded projects. But those are tasks for future-you; right now, you should get up, stretch and take a break. <span class="emoji">😀</span>

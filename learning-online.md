@@ -20,7 +20,7 @@ For each of your classes this semester, write out 1-2 goals you have in taking t
 Getting clear about **your** goals will help your prioritize coursework and stay motivated this semester. Add reminders on your calendar to revisit your goals each month during the semester to make sure you're on track and to prompt yourself to recognize when you're knocking those goals outta the park.
 
 {: .text-center }
-![](https://media.giphy.com/media/6brH8dM3zeMyA/giphy.gif)
+![Small baby celebrates with a fist pump.](https://media.giphy.com/media/6brH8dM3zeMyA/giphy.gif)
 
 ## Make a schedule
 Online and in person, a kind of surprising amount of your success in college comes down to having a plan. Make a weekly plan to identify your commitments, including things that
@@ -39,7 +39,7 @@ When blocking out time for coursework, pay special attention to due dates and pr
 In addition to a weekly overview, I personally benefit a lot from a daily to-do list. It helps me break things down into actual tasks (vs lofty or abstract goals) and feels good to check things off.
 
 {: .text-center }
-![](https://media.giphy.com/media/3o6ozD4FXYQNv5ERjy/giphy.gif)
+![Animation of a task list and crossing off items one by one.](https://media.giphy.com/media/3o6ozD4FXYQNv5ERjy/giphy.gif)
 
 It's worth noting that having a plan doesn't mean being inflexible. Things change or come up and your plan can flex with that; in fact, it's helpful because it makes it clear what you skipped and need to make up, as well as what time you have to do that in.
 
@@ -85,4 +85,5 @@ Here are some that you can attempt to avoid that dreadful, regretful feeling in 
 
 @TODO: link to apps
 
-![](https://media.giphy.com/media/sFWDp31gcfPSo/giphy.gif)
+{: .text-center }
+![Oprah says emphatically, I want you to win.](https://media.giphy.com/media/sFWDp31gcfPSo/giphy.gif)

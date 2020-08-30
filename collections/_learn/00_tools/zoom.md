@@ -17,11 +17,11 @@ All our sync-up meetings will be via [Zoom](https://zoom.us/). You do **not** ne
 
 It's optional to [install the Zoom app](https://zoom.us/download), but it definitely offers a better experience, so I recommend doing so. If you're installing Zoom on your laptop or desktop computer, you want to download the **Zoom Client for Meetings**:
 
-[![]({{ ip | append: 'zoom_desktop.png' }})](https://zoom.us/download){: .u-link-reset }
+[![Screenshot of the download section for the Zoom Client for Meetings.]({{ ip | append: 'zoom_desktop.png' }})](https://zoom.us/download){: .u-link-reset }
 
 Alternately, you can also install Zoom on iOS and Android devices:
 
-[![]({{ ip | append: 'zoom_apps.png' }})](https://zoom.us/download){: .u-link-reset }
+[![Screenshot of the download section for the Zoom Mobile Apps.]({{ ip | append: 'zoom_apps.png' }})](https://zoom.us/download){: .u-link-reset }
 
 All our meetings will also be accessible via the [Zoom web client](https://support.zoom.us/hc/en-us/articles/214629443){% include optional.html %} which does **not** require you to install any additional software.
 
@@ -32,7 +32,8 @@ All our meetings will also be accessible via the [Zoom web client](https://suppo
 - I also encourage you to get familiar with and use Zoom's [nonverbal feedback icons](https://support.zoom.us/hc/en-us/articles/115001286183#h_50523139-7bac-403b-9c59-1755ada65ad9) (see the section under **Providing nonverbal feedback during meetings (participants)**).
 
 {: .text-center }
-[![]({{ ip | append: 'zoom-icons.png' }})](https://support.zoom.us/hc/en-us/articles/115001286183#h_50523139-7bac-403b-9c59-1755ada65ad9){: .u-link-reset }
+[![Screenshot of the participation icons in the Zoom user interface.]({{ ip | append: 'zoom-icons.png' }})](https://support.zoom.us/hc/en-us/articles/115001286183#h_50523139-7bac-403b-9c59-1755ada65ad9){: .u-link-reset }
+
 - As with [Slack]({{ lp | append: 'slack' }}), MICA's [guidelines for online etiquette (PDF, 102 KB)](https://drive.google.com/file/d/1MR15B4UBGtdSwonED3IIu0igkUD5Sp3F/view) apply to our communications via Zoom.
 
 ### Additional audio recommendations
