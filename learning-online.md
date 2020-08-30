@@ -56,8 +56,7 @@ Other tips to get the most out of any readings:
 - Use the [Q-C-Q Worksheet](https://docs.google.com/document/d/1-nLkkIevl2CT39mvkKj42de9HOqmlMkhN1NNCzJTsaQ/copy?usp=sharing) to make reading more active and engaging.
 - After you complete a reading or a section of course material, challenge yourself to summarize what you've read in your own words. While this may feel like "extra work," it's a tried and true way to prove to yourself that you got something out of the reading and will expose any confusion you have.
 
-@TODO:
-- https://learningcenter.unc.edu/tips-and-tools/studying-101-study-smarter-not-harder/
+This [Study smarter, not harder guide](https://learningcenter.unc.edu/tips-and-tools/studying-101-study-smarter-not-harder/){:target="_blank"} from UNC Chapel Hill includes a wealth of good hints and recommendations, too.
 
 ## Practice self care
 Take breaks! Take breaks! Take breaks!
@@ -77,13 +76,18 @@ Here are some that you can attempt to avoid that dreadful, regretful feeling in 
 - Read all material provided -- make sure you haven't prematurely closed a window or tab when there's more content underneath a quiz or graphic.
 - Break larger projects down into tasks you can achieve in smaller chunks of time. Legit, ask yourself, "Can I get this done in two hours?" (or less time) and, if the answer is no, break the task down into smaller tasks.
   - If you're struggling with this for any of the projects in this course, I'm happy to help.
-- Be real about the distractions when you're studying or working. Some are unavoidable -- if you're sharing living space with others, for example -- and some of our own doing (watching Netflix/YouTube while reading). I don't expect students to give that up entirely (I'm listening to music while writing this, tbh), but, when you're struggling or finding something challenging, take a step back and see what distractions you can eliminate to give yourself the best opportunity to understand the material or accomplish the task.
+- Be **real** about the distractions when you're studying or working. Some are unavoidable -- if you're sharing living space with others, for example -- and some of our own doing (watching Netflix/YouTube while reading). I don't expect students to give that up entirely (I'm listening to music while writing this, tbh), but, when you're struggling or finding something challenging, take a step back and see what distractions you can eliminate to give yourself the best opportunity to understand the material or accomplish the task.
   - If this is something you struggle with a lot, you're not alone, and there's a variety of tools and strategies to try to help you out:
-    - Some apps are preventative and will block access to your distraction sites for a set window of time (for example, blocking YouTube for 45 mins)
-    - Some apps reward you for completing periods of focus time, like [Forest]()
-    - Others provide timers to help you cycle between focused time and breaks
+    - Some apps are preventative; [LeechBlock](https://www.proginosko.com/leechblock/), for example, is a browser extension that will block access to your distraction sites for a set window of time (for example, blocking YouTube for 45 mins)
+    - Some apps reward you for completing periods of focus time, like [Forest](https://www.forestapp.cc/)
+    - Others provide timers to help you cycle between focused time and breaks; you can learn more about this by searching for the "[Pomodoro technique](https://lifehacker.com/productivity-101-a-primer-to-the-pomodoro-technique-1598992730)" and experiment with a web-based timer [like this](https://pomofocus.io/) (though versions also exist as browser extensions and mobile apps).
 
-@TODO: link to apps
+{% include quiz.html
+  title="Share Your Experience"
+  quizId="8BTHHWL"
+%}
+
+If you let me know what specifically you're struggling with, I'm happy to provide suggestions and let you know some of what's helped me with my focus and productivity.
 
 {: .text-center }
 ![Oprah says emphatically, I want you to win.](https://media.giphy.com/media/sFWDp31gcfPSo/giphy.gif)
