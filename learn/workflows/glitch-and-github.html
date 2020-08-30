@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="ie=edge" http-equiv="X-UA-Compatible">
+  <meta name="author" content="Angelique Weger" />
+  <meta name="Description" content="Curriculum, schedule and resources for web design.">
+  <link href="/css/style.css" rel="stylesheet">
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+  <link rel="manifest" href="/favicons/site.webmanifest">
+  <link rel="shortcut icon" href="/favicons/favicon.ico">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-config" content="/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#9ff2c0">
+  <title>Glitch + GitHub | Learning Web Design</title>
+</head>
+
+
+<body>
+  <div class="site-wrapper">
+
+    <header id="top" class="site-header">
+  <h2 class="u-m0 u-clearfix heading">
+    <a href="https://mica-web.github.io/" class="u-block u-clearfix" title="Return to homepage" >
+      <span class="heading--background">Learning</span>
+      <span class="heading--foreground">Web Design</span>
+    </a>
+  </h2>
+</header>
+
+
+<div class="content-wrapper ">
+
+  
+
+  <div class="top-nav">
+    <ul class="u-list-reset breadcrumb-wrapper">
+  <li class="u-inline-block breadcrumb"><a href="https://mica-web.github.io">Home</a></li>
+
+  
+  
+
+  
+
+  
+
+  
+  <li class="u-inline-block breadcrumb"><a href="/learn/">learn</a>
+    
+
+    
+
+  
+
+  
+  <li class="u-inline-block breadcrumb"><a href="/learn/workflows/">workflows</a>
+    
+
+    
+
+  
+
+  
+  
+  <li class="u-inline-block breadcrumb">glitch and github</li>
+  
+  
+
+    
+
+</ul>
+
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p class="text-faded reading-est">10 min read</p>
+
+    
+    
+  </div>
+
+  
+
+  <main>
+    
+    
+<h1 id="glitch--github">Glitch + GitHub</h1>
+
+<p>If you’re tackling this content in order, you should have already read the introduction to <a href="/learn/tools/glitch">Glitch</a> and <a href="/learn/tools/github">GitHub</a> and created accounts for both.</p>
+
+<p>Now, you’ll learn how to create projects on Glitch and connect them with GitHub. Doing this is helpful for a few reasons:</p>
+
+<ul>
+  <li>It creates another copy of your code on GitHub (think of it as a backup of what’s on Glitch).</li>
+  <li>It provides you with experience using git commands and GitHub, both of which are commonly used in modern web development.</li>
+</ul>
+
+<p class="callout">Note that it’s entirely possible to use Glitch without GitHub and to add non-Glitch projects to GitHub; they’re not necessary for each other, but they are complimentary. As part of this course, you may create Glitch projects just for your own experimentation and those will not need to be shared with GitHub. However, <strong>every graded project will be on both Glitch and GitHub</strong> so I can easily review and comment on your code.</p>
+
+<p><span class="emoji">👉🏻</span> Please note that this will go most smoothly if you have an uninterrupted 30 minutes to work through these steps from start to finish.</p>
+
+<h2 id="step-1-create-a-new-repository">Step 1: Create a new repository</h2>
+<p>Starting on <a href="https://github.com">GitHub</a>, log into your account, and then create a new repository following <a href="https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-new-repository">these directions</a>.</p>
+<ul>
+  <li>Name your repo <strong>project1</strong> with no spaces.</li>
+  <li>Make your repo public.</li>
+  <li>Don’t check any of the extra checkboxes.</li>
+</ul>
+
+<p>See this screenshot for a full view of the settings to create the new repo:
+<img src="/learn/03_workflows/img/new-repo-settings.png" alt="Create repo settings on GitHub" /></p>
+
+<p>When you’ve correctly entered everything, click the <strong>Create repository</strong> button. You’ll end up with a page full of instructions; leave this page open for now, and you’ll come back to it later.</p>
+
+<h2 id="step-2-remix-a-project-on-glitch">Step 2: Remix a project on Glitch</h2>
+<p>Next, open a new tab or browser and go to <a href="https://glitch.com">Glitch</a> and log into your account. Open up my <a href="https://glitch.com/edit/#!/mica-web-starter">starter project</a> and remix the project:</p>
+
+<p><img src="/learn/03_workflows/img/glitch-remix.gif" alt="Click the project name and choose &quot;Remix Project&quot;" /></p>
+
+<p>As you can see above, the original project is named <strong>mica-web-starter</strong> and then a copy is created with the dynamically generated name <strong>south-shell-shoemaker</strong>. In your remix, you can rename this project to something more relevant or keep the creative name Glitch has assigned.</p>
+
+<p class="callout">Both GitHub and Glitch have the concept of taking existing work and creating your own copy or version; on GitHub, this is called <a href="https://docs.github.com/en/github/getting-started-with-github/github-glossary#fork"><strong>forking</strong></a> <span class="emoji text-smaller" title="Following and reading this link is optional."><span class="u-sr-only">Following and reading this link is optional.</span>✳️</span>
+  and on Glitch it’s called <a href="https://glitch.happyfox.com/kb/article/23-what%E2%80%99s-remixing/"><strong>remixing</strong></a>.<span class="emoji text-smaller" title="Following and reading this link is optional."><span class="u-sr-only">Following and reading this link is optional.</span>✳️</span>
+ As you can see in the above screen capture, you can copy your own work as well as other people’s.</p>
+
+<p>Now you have a project on Glitch and a repo on GitHub and are ready to connect them both.</p>
+
+<p>Open up VS Code and access the Command Palette (<strong>View &gt; Command Palette</strong>), then type “Glitch” and select <strong>Glitch: Show Commands</strong>. This will open up a new menu and you should select <strong>Open Project</strong>. Then select the project you just created; those files will now be visible and editable inside of VS Code.</p>
+
+<h2 id="step-3-create-ssh-authentication">Step 3: Create SSH authentication</h2>
+
+<p class="callout">The next steps will involve using the <strong>command line</strong>. If you haven’t used the command line or console before, I’ve written a <a href="/learn/tools/command-line">short introduction to the command line</a> that you should review first.</p>
+
+<p>Open up the Command Palette again and again type “Glitch.” This time, select <strong>Glitch: Console</strong>. This will open up your console view in VS Code.</p>
+
+<p class="callout">In the rest of these directions, whenever I use the word “console,” I specifically mean the Glitch console in VS Code.</p>
+
+<p>In the console, type <code class="language-plaintext highlighter-rouge">ssh-keygen</code> and press <strong>Enter</strong>.</p>
+
+<p class="callout">Pressing <strong>Enter</strong> in the console is what runs a command. It’s always a good idea to slow down and check what you’ve typed <em>before</em> pressing <strong>Enter</strong>.</p>
+
+<p>After you press <strong>Enter</strong>, you’ll get a series of prompts in the console. You should press <strong>Enter</strong> through each of them and don’t have to add any additional information.</p>
+
+<p>This screenshot shows the prompts you should see and the beginning of the success message you’ll see:</p>
+
+<p><img src="/learn/03_workflows/img/console-ssh-keygen.png" alt="After completing the ssh-keygen command, the success message says Your identification has been saved in /app/.ssh/id_rsa." /></p>
+
+<p>You have just created an SSH key pair which will allow your Glitch project and your GitHub repo to pass information back and forth without passwords.</p>
+
+<p class="callout">If you’re interested in more detail about this, you can read about <a href="https://www.ssh.com/ssh/public-key-authentication">public key authentication</a>.<span class="emoji text-smaller" title="Following and reading this link is optional."><span class="u-sr-only">Following and reading this link is optional.</span>✳️</span></p>
+
+<p>Now you want to take the info from your public key and share it with GitHub. To do this, type <code class="language-plaintext highlighter-rouge">cat .ssh/id_rsa.pub</code> in the console and press <strong>Enter</strong>.</p>
+
+<p class="callout">The <code class="language-plaintext highlighter-rouge">cat</code> command reads the file you name (in this case, the <strong>id_rsa.pub</strong> file in your newly created <strong>.ssh</strong> directory) and prints out the file contents to the console.</p>
+
+<p>Highlight and copy the key that is displayed in the console; it should start with <strong>ssh-rsa</strong>.</p>
+
+<p>Now, open a new browser window and go to your <a href="https://github.com/settings/keys">GitHub settings</a>.</p>
+
+<p class="callout">This link takes you directly to the page, but you can always get there yourself by clicking your profile photo in the upper-right corner of any page, then clicking <strong>Settings</strong>. Then, in the user settings sidebar, click <strong>SSH and GPG keys</strong>.</p>
+
+<p>Click the button to add <strong>New SSH key</strong> and name the key “Push from Glitch demo”. Paste in the public key code you copied from the console and then click <strong>Add SSH key</strong>. (You may be prompted to enter your GitHub password at this point.)</p>
+
+<p class="callout">Want to see detailed screenshots of the this process? <a href="https://docs.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account">View this walkthrough from the GitHub docs</a>.<span class="emoji text-smaller" title="Following and reading this link is optional."><span class="u-sr-only">Following and reading this link is optional.</span>✳️</span></p>
+
+<p>Because an SSH key is a form of access to your account, you will also receive an email from GitHub alerting you to this change to your settings.</p>
+
+<p>Now you have a private and public key on Glitch and have added your public key to GitHub. Let’s confirm with Glitch that all has gone according to plan.</p>
+
+<p>Back in VS Code, type <code class="language-plaintext highlighter-rouge">ssh -T git@github.com</code> in the console and press <strong>Enter</strong>.</p>
+
+<p>This attempts to open an SSH connection to GitHub. You may see a warning that the authenticity of the host can’t be established followed by a prompt asking you if you still want to connect.</p>
+
+<p>If the fingerprint is either:</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8</code></li>
+  <li><code class="language-plaintext highlighter-rouge">16:27:ac:a5:76:28:2d:36:63:1b:56:4d:eb:df:a6:48</code></li>
+</ul>
+
+<p>Then you can type “yes” and press <strong>Enter</strong>. (You can see and verify this information in the <a href="https://docs.github.com/en/github/authenticating-to-github/testing-your-ssh-connection">GitHub docs</a>.)</p>
+
+<p>At this point, you should see a message in the console with your username, like so:</p>
+
+<blockquote class="cli">
+  <p>Hi angeliquejw! You’ve successfully authenticated, but GitHub does not provide shell access.</p>
+</blockquote>
+
+<p class="emoji text-larger text-center">🎉</p>
+
+<p><span class="emoji">⚠️</span> If you see anything else at this point, please copy the full message from your console and send it to me via DM on Slack, and we’ll troubleshoot. You will not be able to continue with these instructions until this is resolved.</p>
+
+<h2 id="step-4-connect-glitch-to-github">Step 4: Connect Glitch to GitHub</h2>
+<p>So, we’ve now shown that GitHub and Glitch can talk to each other. Your Glitch project is already using git by default – you didn’t have to do anything extra to set this up –  and we can prove that by typing <code class="language-plaintext highlighter-rouge">git status</code> in the console.</p>
+
+<p>You should see a response like so:</p>
+
+<blockquote class="cli">
+  <p>On branch master</p>
+</blockquote>
+
+<blockquote class="cli">
+  <p>nothing to commit, working directory clean</p>
+</blockquote>
+
+<p class="callout"><code class="language-plaintext highlighter-rouge">git status</code> is our way of asking git to tell us some of the information and detail known about our work.</p>
+
+<p>Way back at the end of <a href="#step-1-create-a-new-repository">step one</a>, you created your GitHub repo and got a screen full of instructions. Now you actually need to revisit that page and use some of the info there.</p>
+
+<p>Under the heading <strong>…or push an existing repository from the command line</strong> is an address for your repo; it should start with <code class="language-plaintext highlighter-rouge">git@github.com</code> and end with <code class="language-plaintext highlighter-rouge">.git</code>. Copy this full address.</p>
+
+<p class="callout">For me, this address is <code class="language-plaintext highlighter-rouge">git@github.com:mica-web/mica-web-demo.git</code>, but your address will be different because the bit immediately after the colon (<code class="language-plaintext highlighter-rouge">:</code>) will be your GitHub username.</p>
+
+<p>Now, back in VS Code, type <code class="language-plaintext highlighter-rouge">git remote add gh your-address-here</code> in the console, replacing the <strong>your-address-here</strong> with the address you copied from GitHub. As an example, here’s what the full command looks like for me:</p>
+
+<blockquote class="cli">
+  <p>git remote add gh git@github.com:mica-web/mica-web-demo.git</p>
+</blockquote>
+
+<p>When you’ve got the full command right, press <strong>Enter</strong>.</p>
+
+<div class="callout">
+  <p>If you want to know more, I’ve broken this command down:</p>
+  <ul>
+    <li><strong><code class="language-plaintext highlighter-rouge">git</code></strong> means this is a git command; all git commands start this way (remember <code class="language-plaintext highlighter-rouge">git status</code> from earlier?), so you’ll be typing this a lot</li>
+    <li><strong><code class="language-plaintext highlighter-rouge">remote</code></strong> is the word git uses for a location where your code is stored</li>
+    <li><strong><code class="language-plaintext highlighter-rouge">add</code></strong> is the action; this means we’re adding a new remote</li>
+    <li><strong><code class="language-plaintext highlighter-rouge">gh</code></strong> is the name we’re giving the remote (short for GitHub in this case)</li>
+    <li>the next bit is the address for the remote we’re adding</li>
+  </ul>
+
+  <p><code class="language-plaintext highlighter-rouge">git remote add</code> is the bit that is always consistent; the next two bits are customized based on what you’re adding. This is like creating an entry in an address book; we’ve added an entry named <strong>gh</strong> and told git where that entry is located.</p>
+</div>
+
+<p>To verify that your new remote is in place, type <code class="language-plaintext highlighter-rouge">git remote -v</code> in the console and press <strong>Enter</strong>.</p>
+
+<p>You should see your address listed twice with the name <strong>gh</strong>.</p>
+
+<p><img src="/learn/03_workflows/img/git-remote-v.png" alt="Screenshot of the console with the output from the git remote -v command." /></p>
+
+<p class="emoji text-larger text-center">🎉</p>
+
+<p>The two actions you see to the right in the parentheses of your address – <strong>fetch</strong> and <strong>push</strong> – reference the two main ways of sharing information in git.</p>
+
+<p class="text-center"><img src="/learn/03_workflows/img/git-push-pull.png" alt="The pull command comes from GitHub to your computer and the push command goes in the opposite direction." /></p>
+
+<ul>
+  <li><strong>fetching</strong> or <strong>pulling</strong> references bringing code from your repo into your working project</li>
+  <li><strong>pushing</strong> is going in the other direction – moving code from your working project into your repo</li>
+</ul>
+
+<p class="callout">This was explained in more detail in <a href="https://blog.red-badger.com/2016/11/29/gitgithub-in-plain-english"><strong>Git and Github in Plain English</strong></a>.</p>
+
+<h2 id="step-5-push-glitch-code-to-github">Step 5: Push Glitch code to GitHub</h2>
+<p>Now the big finale, the thing we’ve been working toward all through these steps: Let’s get your code from Glitch to GitHub.</p>
+
+<p>In VS Code, type <code class="language-plaintext highlighter-rouge">git push -u gh master</code> in the console and press <strong>Enter</strong>.</p>
+
+<p>Your console will display a bunch of info as it takes the files from Glitch and copies them over to GitHub.</p>
+
+<p><img src="/learn/03_workflows/img/git-push.png" alt="Example of console output from a git push command." /></p>
+
+<p>If you go back to your browser at the GitHub tab, refresh the page and you should now see the files from Glitch.</p>
+
+<p class="emoji text-larger text-center">🎉</p>
+
+<p>Back in VS Code, if you type <code class="language-plaintext highlighter-rouge">git status</code> in the console and press <strong>Enter</strong>, you should see some new information:</p>
+
+<blockquote class="cli">
+  <p>On branch master</p>
+</blockquote>
+
+<blockquote class="cli">
+  <p>Your branch is up-to-date with ‘gh/master’.</p>
+</blockquote>
+
+<blockquote class="cli">
+  <p>nothing to commit, working directory clean</p>
+</blockquote>
+
+<p>That second line is telling you that Glitch and GitHub are in sync – which is exactly what we want to see.</p>
+
+<h2 id="step-6-your-first-git-commit">Step 6: Your first git commit</h2>
+<p>In VS Code with the demo project open, open the file named <code class="language-plaintext highlighter-rouge">README.md</code>.</p>
+
+<p>At the top of that file, create a new line and add some text.</p>
+
+<p class="callout">This text can be anything, even just the word “testing.” Just remember that we’re going to push this change to GitHub, so it shouldn’t be private or embarrassing. <span class="emoji">🙈</span></p>
+
+<p>Now, in the console, if you type <code class="language-plaintext highlighter-rouge">git status</code>, you’ll see there are changes tracked by git:</p>
+
+<p><img src="/learn/03_workflows/img/git-changes.png" alt="Output from git says there are changes not staged for commit and recommends the git add and git checkout commands." /></p>
+
+<p>Also, git is providing some helpful tips about the commands you can use going forward. What we want to do is stage the changes to the <strong>README.md</strong> file and commit them.</p>
+
+<p>First, type <code class="language-plaintext highlighter-rouge">git add README.md</code> in the console and press <strong>Enter</strong>.</p>
+
+<p>Then, type <code class="language-plaintext highlighter-rouge">git status</code> in the console again to see how this has changed things.</p>
+
+<p>While a git commit can include multiple files, in this instance we’re just changing one file so we don’t need to <code class="language-plaintext highlighter-rouge">git add</code> anything else.</p>
+
+<p>In the console, type <code class="language-plaintext highlighter-rouge">git commit -m "My first commit"</code> (make sure to include the quote marks) and press <strong>Enter</strong>.</p>
+
+<div class="callout">
+  <ul>
+    <li><strong><code class="language-plaintext highlighter-rouge">git commit</code></strong> says you’re making a commit</li>
+    <li>the <strong><code class="language-plaintext highlighter-rouge">-m</code></strong> means you’re including a message with your commit (which you always want to do)</li>
+    <li>the bit in quotes is your commit message and can be customized</li>
+  </ul>
+</div>
+
+<p class="callout">Over the course of the semester, we’ll talk more in depth about what makes a good commit message, but, for now, “My first commit” is good enough <span class="emoji">👍🏻</span></p>
+
+<p>Once more, type <code class="language-plaintext highlighter-rouge">git status</code> into the console. You should now see a notification:</p>
+
+<blockquote class="cli">
+  <p>Your branch is ahead of ‘gh/master’ by 1 commit.</p>
+</blockquote>
+
+<p>Using the <code class="language-plaintext highlighter-rouge">git push</code> command in the console will then move those changes up to GitHub and another <code class="language-plaintext highlighter-rouge">git status</code> will show that things are back in sync. If you go to your project on Glitch and your repo on GitHub, both places should now show the changes you made to your <code class="language-plaintext highlighter-rouge">README.md</code> file.</p>
+
+<p class="text-center"><img src="https://media.giphy.com/media/18pjPEqqIt2k8/giphy.gif" alt="The title character from Unbreakable Kimmy Schmidt raises the roof in celebration." /></p>
+
+<p>That’s it! You’ll be using this demo project and repo throughout the course to practice things, and you’ll repeat this process to create new projects and repos for each of your graded projects. But those are tasks for future-you; right now, you should get up, stretch and take a break. <span class="emoji">😀</span></p>
+
+    
+    <footer class="feedback-footer">
+  
+
+  <p><strong>Make this page better.</strong></p>
+  <p>Found something that's incorrect or confusing on this page? Broken link? I want to know! <a href="https://github.com/mica-web/mica-web.github.io/issues/new?title=Feedback+for+%2Flearn%2Fworkflows%2Fglitch-and-github&template=page-feedback.md" target="_blank">Open an issue on GitHub</a> to tell me what's up and help me update the page.</p>
+</footer>
+
+    
+  </main>
+
+  <footer class="site-footer">
+  <div class="rule"></div>
+  <div class="content">
+    <p>&copy; Copyright 2018&ndash;<span id="js-current-year"></span> Ang&eacute;lique Weger</p>
+    <p class="top-link-wrapper"><a href="#top">Back to top</a></p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('js-current-year').appendChild(document.createTextNode(new Date().getFullYear()))
+</script>
+
+
+</div>
+
+
+  </div>
+
+  
+  
+  
+  
+
+</body>
+<!--
+/**
+ * @license
+ * MyFonts Webfont Build ID 3700915, 2019-01-18T17:07:51-0500
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Native-Regular by Fort Foundry
+ * URL: https://www.myfonts.com/fonts/fort-foundry/native/regular/
+ * Copyright: Copyright &#x00A9; 2016 by Mattox Shuler. All rights reserved.
+ * Licensed pageviews: Unlimited
+ * 
+ * Webfont: NeueAlteGrotesk-Regular by VisualWorks
+ * URL: https://www.myfonts.com/fonts/visualworks/neue-alte-grotesk/regular/
+ * Copyright: Copyright © 2017-2018 by Krzysztof Chuc. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * Webfont: NeueAlteGrotesk-Medium by VisualWorks
+ * URL: https://www.myfonts.com/fonts/visualworks/neue-alte-grotesk/medium/
+ * Copyright: Copyright © 2017-2018 by Krzysztof Chuc. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * Webfont: NeueAlteGrotesk-SemiBold by VisualWorks
+ * URL: https://www.myfonts.com/fonts/visualworks/neue-alte-grotesk/semi-bold/
+ * Copyright: Copyright © 2017-2018 by Krzysztof Chuc. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * Webfont: NeueAlteGrotesk-Bold by VisualWorks
+ * URL: https://www.myfonts.com/fonts/visualworks/neue-alte-grotesk/bold/
+ * Copyright: Copyright © 2017-2018 by Krzysztof Chuc. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * Webfont: NeueAlteGrotesk-Heavy by VisualWorks
+ * URL: https://www.myfonts.com/fonts/visualworks/neue-alte-grotesk/heavy/
+ * Copyright: Copyright © 2017-2018 by Krzysztof Chuc. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * Webfont: NeueAlteGrotesk-Black by VisualWorks
+ * URL: https://www.myfonts.com/fonts/visualworks/neue-alte-grotesk/black/
+ * Copyright: Copyright © 2017-2018 by Krzysztof Chuc. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * 
+ * License: https://www.myfonts.com/viewlicense?type=web&buildid=3700915
+ * 
+ * © 2019 MyFonts Inc
+*/
+
+-->
+
+
+</html>
