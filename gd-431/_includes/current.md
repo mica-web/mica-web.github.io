@@ -17,17 +17,16 @@ Here's [a few things you can do](/gd-431/00/early-start) before the first class 
 {% endif %}
 
 
-{% assign week = 6 | times: 24 | times: 60 | times: 60 %}
+{% assign week_length = 7 | times: 24 | times: 60 | times: 60 %}
 
 {% for week in site.gd431 %}
 
 {% assign weeknum = week.path | replace:'_gd431/','' | replace:'.md', '' %}
 
-{% assign scheduledate = week.course_date | date: "%Y-%m-%d" %}
-{% assign weekstart = week.course_date | date: "%s" | minus: week | date: "%Y-%m-%d" %}
+{% assign weekstart = week.course_date | date: "%Y-%m-%d" %}
+{% assign weekend = week.course_date | date: "%s" | plus: week_length | date: "%Y-%m-%d" %}
 
-{% if (currentdate >= weekstart) and (currentdate <= scheduledate) %}
-
+{% if (currentdate >= weekstart) and (currentdate <= weekend)  %}
 
 <section class="schedule-list">
 
@@ -43,7 +42,6 @@ Here's [a few things you can do](/gd-431/00/early-start) before the first class 
 {{ week.content | markdownify | replace: '<h2', '<h4' | replace: '</h2>', '</h4>'  }}
 
 </section>
-
 
 {% endif %}
 

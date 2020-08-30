@@ -2,6 +2,12 @@
   margin: $spacing-lg;
   position: relative;
 
+  >iframe {
+    display: block;
+    margin: auto;
+    max-width: 720px;
+  }
+
   &::before,
   &::after {
     background-color: $color-yellow;

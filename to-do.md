@@ -5,10 +5,8 @@
 
 
 # GD2
-## Week one
+## Week one: Intro to the course + your text editor, your first git commit 🎉
 - [x] about your browser
-- [ ] GUI
-- [ ] CLI
 - [x] about your text editor
   - generic
   - VS Code specific
@@ -17,11 +15,15 @@
     - [x] update extension collection
 - [x] Questions, comments, insights
 - [x] Reading:
-  - A brief history of web design for designers
-    - Write an addendum (~200 words; put a Google Doc in the Assignments Google Drive)
   - Git and Github in Plain English
+- [x] setting up VS Code + Glitch + GitHub
+  - Note that git is not installed on your machine, this is working off of Glitch; explanation of virtual machine 
+- [x] GUI
+- [x] CLI
+- [ ] Markdown basics
 
-## Week two
+
+## Week two: HTML + CSS intro
 - [ ] Version control and git
   - benefits
   - commands:
@@ -29,9 +31,6 @@
     - git add
     - git commit
     - git vs saving
-- [ ] setting up VS Code + Glitch + GitHub
-  - Note that git is not installed on your machine, this is working off of Glitch; explanation of virtual machine 
-- [ ] Markdown basics
 - git branches
 - some example work
 - Intro to HTML
@@ -53,9 +52,18 @@
   - document structure
   - 
 
+# Week three: HTML + CSS intro, continued
 
 
 # GD431
+## Week one:  Intro to the course + understanding the Internet, your first git commit 🎉
+As above, plus
+- [ ] Internet 101
+- [x] Reading
+## Week two: Review of CSS + HTML, discussion of best practices
+- [ ] Semantic HTML
+- 
+## Week three: Review of CSS + HTML, discussion of best practices, continued
 
 
 

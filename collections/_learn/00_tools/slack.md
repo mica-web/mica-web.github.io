@@ -42,7 +42,7 @@ There are some additional things you can learn to do in Slack that will help you
 1. You can **add emoji reactions** to any message in Slack. [Learn how](https://slack.com/help/articles/206870317-Use-emoji-reactions). I especially appreciate a thumbs-up to class announcements so I know you've seen it. <span class="emoji">👍</span>
 1. **Send DMs...to yourself.** You can make notes to yourself here. I use it to set myself reminders or save links I want to share to the class at certain times.
 1. Speaking of reminders, **Slack has a built-in reminder system.** See the Slack Help Center for [instructions on creating reminders](https://slack.com/help/articles/208423427-Set-a-reminder).
-1. Want info on more Slack features? Check out these [19 tips](https://okdork.com/slack-app-19-tips-advanced-tutorial/).
+1. Want info on more Slack features? Check out these [19 tips](https://okdork.com/slack-app-19-tips-advanced-tutorial/).{% include optional.html %}
 
 ## Reminder
 MICA's [guidelines for online etiquette (PDF, 102 KB)](https://drive.google.com/file/d/1MR15B4UBGtdSwonED3IIu0igkUD5Sp3F/view) definitely apply to this space. Conversation may be casual (I definitely rely heavily on emoji and GIFs <span class="emoji">😁</span>), but it should always be appropriate and respectful.

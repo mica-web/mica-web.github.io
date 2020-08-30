@@ -4,12 +4,14 @@ type: learn-index
 ---
 
 # Topics
+The topics covered in GD2 are labeled as "intro" and those we'll cover in GD431 only are "advanced."
 
 {% assign topics = site.learn | group_by: 'category' %}
 
 {% assign all_levels = site.learn | map: 'level' | uniq %}
 
-<p class="filter-list-label">Filter by level</p>
+{: .filter-list-label}
+Filter by level
 <ul class="filter-list">
 {% for level in all_levels %}
   <li><button type="button" data-controls="{{ level | slice: 0 }}" class="u-button-reset js-filter-toggle">{{ level }}</button></li>

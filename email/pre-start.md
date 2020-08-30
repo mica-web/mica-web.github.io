@@ -1,5 +1,5 @@
-GD2
-===
+Welcome to GD2
+==============
 
 Hi there! 👋🏻
 
@@ -24,8 +24,8 @@ I'll be in touch the week of August 31 with more information and hope to see you
 
 
 
-GD431
-=====
+Welcome to GD 431 -- Front End Web Development
+==============================================
 
 Hi there! 👋🏻
 

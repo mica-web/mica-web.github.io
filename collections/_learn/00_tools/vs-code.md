@@ -27,7 +27,14 @@ Download the [stable build of VS Code](https://code.visualstudio.com/) for your 
 After you've downloaded and installed VS Code, open it up and make sure the install worked as expected. Hopefully we can celebrate a bit at this point. <span class="emoji">🙌🏻🎉</span>
 
 ### Get familiar with your text editor
-Before going further, it will help to read this [intro to the VS Code user interface](https://code.visualstudio.com/docs/getstarted/userinterface) to get an explanation of the different areas within VS Code. You don't need to read the whole thing and can stop when you finish the section titled "Preview mode."
+Before going further, it will help to learn about it about the user interface of VS Code. You can either:
+
+- read this [intro to the VS Code user interface](https://code.visualstudio.com/docs/getstarted/userinterface); you don't need to read the whole thing and can stop when you finish the section titled **Preview mode**.
+- watch a walkthrough of the user interface in this 5-min video by Ornella, a member of the VS Code team:
+
+<div class="embed-wrapper">
+  <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/S320N3sxinE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 After you complete the interface walkthrough, go back to your copy of VS Code and poke around a bit. I especially recommend clicking through the different icons on the **Activity Bar** so you start to explore what they offer and how they change what's visible in the app.
 
@@ -72,7 +79,7 @@ To get you started customizing VS Code, I've created a [pack of recommended exte
 
 ![Screenshot of the MICA GD Pack extension from inside of VS Code with the Extensions icon identified.]({{ ip | append: 'mica-web-ext.png' }})
 
-Clicking the "Install" button will add all the extensions in this pack to your copy of VS Code.
+Clicking the **Install** button will add all the extensions in this pack to your copy of VS Code.
 
 There are seven extensions included in this pack; please read the descriptions for each one and post any questions you have about how they work or what benefit they provide in the **#general** Slack channel.
 

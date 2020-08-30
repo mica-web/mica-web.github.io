@@ -90,12 +90,22 @@ h3 {
   }
 }
 
-.text-larger {
-  font-size: 180%;
-}
+.text {
+  &-center {
+    text-align: center;
+  }
 
-.text-faded {
-  opacity: 0.7;
+  &-smaller {
+    font-size: 65%;
+  }
+
+  &-larger {
+    font-size: 180%;
+  }
+
+  &-faded {
+    opacity: 0.7;
+  }
 }
 
 .citation {
@@ -111,6 +121,23 @@ h3 {
     &:focus {
       color: black;
     }
+  }
+}
+
+.cli {
+  @include font-mono;
+  background-color: #eaedf0;
+  margin: $spacing-lg;
+  padding: $spacing-sm;
+  max-width: 560px;
+
+  p {
+    margin: 0;
+  }
+
+  +.cli {
+    margin-top: (-$spacing-lg);
+    padding-top: 0;
   }
 }
 

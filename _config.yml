@@ -38,25 +38,27 @@ sass:
 
 collections_dir: collections
 collections:
-    learn:
-      output: true
-      order:
-        - 00_tools/tools.md
-        - 00_tools/slack.md
-        - 00_tools/glitch.md
-        - 01_html/html.md
-        - 02_css/css.md
-        - 02_css/css_color.md
-        - 02_css/sass.md
-    gd220:
-      output: true
-      permalink: /gd-220/:name
-    gd431:
-      output: true
-      permalink: /gd-431/:name
+  learn:
+    output: true
+    order:
+      - 00_tools/tools.md
+      - 00_tools/slack.md
+      - 00_tools/glitch.md
+      - 01_html/html.md
+      - 02_css/css.md
+      - 02_css/css_color.md
+      - 02_css/sass.md
+  gd220:
+    output: true
+    permalink: /gd-220/:name
+  gd431:
+    output: true
+    permalink: /gd-431/:name
 
 # Build settings
 markdown: kramdown
+kramdown:
+  toc_levels: "2"
 highlighter: rouge
 
 # Exclude from processing.

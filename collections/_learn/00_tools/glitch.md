@@ -21,7 +21,7 @@ issues: true
 
 ## Getting Started
 
-Go to the [sign in page](https://glitch.com/signin) and click "Create an account."
+Go to the [sign in page](https://glitch.com/signin) and click **Create an account**.
 
 You **do not** need to upgrade to premium. The free level of Glitch should work just fine for this purposes of this course.
 

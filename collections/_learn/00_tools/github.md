@@ -20,4 +20,5 @@ Go to the [GitHub homepage to sign up](https://github.com/).
 
 You **do not** need to pay for your GitHub account. The free level will work just fine for this purposes of this course.
 
+{: .callout }
 Want to see detailed screenshots of the sign up process? [View this walkthrough on wikiHow](https://www.wikihow.com/Create-an-Account-on-GitHub).

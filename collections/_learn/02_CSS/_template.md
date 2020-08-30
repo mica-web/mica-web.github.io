@@ -1,5 +1,5 @@
 ---
-topic: CSS
+topic: NAME
 category: CSS
 level: [ intro, advanced ]
 permalink: /:collection/css/:name
