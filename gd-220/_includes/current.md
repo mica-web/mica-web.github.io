@@ -38,7 +38,7 @@ Here's [a few things you can do](/gd-220/00/early-start) before the first class 
 </header>
 {::options parse_block_html="true" /}
 
-{{ week.content | markdownify | replace: '<h2', '<h4' | replace: '</h2>', '</h4>'  }}
+{{ week.content | markdownify | replace: '<h2', '<h4' | replace: '</h2>', '</h4>' }}
 
 </section>
 
