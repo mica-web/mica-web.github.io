@@ -10,12 +10,12 @@ Schedule
 
   <li>
     <h3 class="schedule-topic">
-      {% if forloop.first == true %}
+       {% if week.published %}
       <a href="{{ week.url }}">
         {{ week.topic }}
       </a>
       {% else %}
-      {{ week.topic }}
+        {{ week.topic }}
       {% endif %}
     </h3>
   </li>
