@@ -15,4 +15,4 @@ If you have not used git and GitHub before, this explainer will provide a helpfu
 **Purpose:** Summarize the purpose and benefits of version control.
 
 ### Tasks
-- Read [Git and Github in Plain English](https://blog.red-badger.com/2016/11/29/gitgithub-in-plain-english) {% include estimate.html time=8 %}
+- Read [Git and GitHub in Plain English](https://blog.red-badger.com/2016/11/29/gitgithub-in-plain-english) {% include estimate.html time=8 %}

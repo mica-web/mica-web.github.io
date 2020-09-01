@@ -23,5 +23,5 @@ Before you dive into the reading, please read [my recommendations for responding
 **Purpose:** Summarize the purpose and benefits of version control.
 
 ### Tasks
-- Read [Git and Github in Plain English](https://blog.red-badger.com/2016/11/29/gitgithub-in-plain-english) {% include estimate.html time=8 %}
-- Make note of your **quotes, comments and questions** to this reading
+- Read [Git and GitHub in Plain English](https://blog.red-badger.com/2016/11/29/gitgithub-in-plain-english) {% include estimate.html time=8 %}
+- Make note of your **quotes, comments and questions** for this reading
