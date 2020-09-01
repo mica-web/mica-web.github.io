@@ -176,7 +176,7 @@ The two actions you see to the right in the parentheses of your address -- **fet
 - **pushing** is going in the other direction -- moving code from your working project into your repo
 
 {: .callout}
-This was explained in more detail in [**Git and Github in Plain English**](https://blog.red-badger.com/2016/11/29/gitgithub-in-plain-english).
+This was explained in more detail in [**Git and GitHub in Plain English**](https://blog.red-badger.com/2016/11/29/gitgithub-in-plain-english).
 
 ## Step 5: Push Glitch code to GitHub
 Now the big finale, the thing we've been working toward all through these steps: Let's get your code from Glitch to GitHub.
