@@ -3,7 +3,7 @@ GD2: Week One
 
 Hello there. I hope you're in the excitement of your first week of the fall 2020 semester and look forward to meeting you on Thursday 😀
 
-The course web site has now been updated with details for the first two weeks of our semester: https://mica-web.github.io/gd-220/
+The course web site has now been updated with details for the first week of our semester: https://mica-web.github.io/gd-220/
 
 Before our sync-up meeting on Thursday (more about that in a few), you can get a jump start by reviewing this list of initial tasks and things to read: https://mica-web.github.io/gd-220/00/early-start. Doing this will make sure you're sorted to start on Thursday.
 
@@ -32,7 +32,7 @@ GD 431: Week One
 
 Hello there. I hope you're in the excitement of your first week of the fall 2020 semester and look forward to meeting you on Thursday 😀
 
-The course web site has now been updated with details for the first two weeks of our semester: https://mica-web.github.io/gd-431/
+The course web site has now been updated with details for the first week of our semester: https://mica-web.github.io/gd-431/
 
 Before our sync-up meeting on Thursday (more about that in a few), you can get a jump start by reviewing this list of initial tasks and things to read: https://mica-web.github.io/gd-431/00/early-start. Doing this will make sure you're sorted to start on Thursday.
 
