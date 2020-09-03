@@ -11,6 +11,7 @@ issues: true
 {% assign lp = '/learn/tools/' %}
 {% assign ip = '/learn/00_tools/img/zoom/' %}
 
+
 # {{ page.topic }}
 
 All our sync-up meetings will be via [Zoom](https://zoom.us/). You do **not** need to install anything to use Zoom, but the meeting security restrictions **will require you [sign up for a Zoom account](https://zoom.us/signup)**.
