@@ -17,7 +17,7 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-config" content="/favicons/browserconfig.xml">
   <meta name="theme-color" content="#9ff2c0">
-  <title>Zoom | Learning Web Design</title>
+  <title>Git | Learning Web Design</title>
 </head>
 
 
@@ -67,7 +67,7 @@
 
   
   
-  <li class="u-inline-block breadcrumb">zoom</li>
+  <li class="u-inline-block breadcrumb">git</li>
   
   
 
@@ -91,7 +91,7 @@
 
 
 
-<p class="text-faded reading-est">1 min read</p>
+<p class="text-faded reading-est">2 min read</p>
 
     
     
@@ -102,52 +102,65 @@
   <main>
     
     
-<h1 id="zoom">Zoom</h1>
+<h1 id="git-draft-in-progress">Git (draft in progress)</h1>
 
-<p>All our sync-up meetings will be via <a href="https://zoom.us/">Zoom</a>. You do <strong>not</strong> need to install anything to use Zoom, but the meeting security restrictions <strong>will require you <a href="https://zoom.us/signup">sign up for a Zoom account</a></strong>.</p>
+<p class="wip-wrapper"><img src="https://media.giphy.com/media/SwP1HunIXetehTvy43/giphy.gif" alt="This page is a work in progress" /></p>
 
-<p>It’s optional to <a href="https://zoom.us/download">install the Zoom app</a>, but it definitely offers a better experience, so I recommend doing so. If you’re installing Zoom on your laptop or desktop computer, you want to download the <strong>Zoom Client for Meetings</strong>:</p>
+<p class="text-center"><img src="/learn/00_tools/img/git/wo_git.png" alt="A meme about naming PhotoShop files." aria-describedby="wo-git" /></p>
 
-<p><a href="https://zoom.us/download" class="u-link-reset"><img src="/learn/00_tools/img/zoom/zoom_desktop.png" alt="Screenshot of the download section for the Zoom Client for Meetings." /></a></p>
+<p id="wo-git" class="u-sr-only">Headline: Every Designer In This World. Followed by a series of icons of PhotoShop files named New.psd, NewFinal.psd, NewFinalFinal.psd, NewFinalestFinal.psd, NewFinalestFinalForSure.psd, and ending with NewFinalestFuckThisShitFinal.psd. Image by Twitter user @AksharPathak.</p>
 
-<p>Alternately, you can also install Zoom on iOS and Android devices:</p>
+<p>While a familiar scenario, we can do better than this, and version control helps us do exactly that.</p>
 
-<p><a href="https://zoom.us/download" class="u-link-reset"><img src="/learn/00_tools/img/zoom/zoom_apps.png" alt="Screenshot of the download section for the Zoom Mobile Apps." /></a></p>
+<p class="callout">The content on this page assumes you have already read <a href="https://blog.red-badger.com/2016/11/29/gitgithub-in-plain-english">Git and GitHub in Plain English</a> and uses vocabulary defined in that reading.</p>
 
-<p>All our meetings will also be accessible via the <a href="https://support.zoom.us/hc/en-us/articles/214629443">Zoom web client</a><span class="emoji text-smaller" title="Following and reading this link is optional."><span class="u-sr-only">Following and reading this link is optional.</span>✳️</span>
- which does <strong>not</strong> require you to install any additional software.</p>
+<h2 id="git-basics">Git basics</h2>
 
-<h2 id="zoom-meeting-expectations">Zoom meeting expectations</h2>
-<ul>
-  <li>When setting up your <a href="https://zoom.us/profile">Zoom profile</a>, please use your preferred name and a photo that matches your Slack account.</li>
-  <li>I consider video to be <span class="emoji">💯</span> <strong>optional</strong> during our class meetings; I know not everyone has the bandwidth or the comfort to be on video.</li>
-  <li>Video, audio and Zoom chat are all valid ways to participate in our meetings; please use whichever is comfortable for you.</li>
-  <li>I also encourage you to get familiar with and use Zoom’s <a href="https://support.zoom.us/hc/en-us/articles/115001286183#h_50523139-7bac-403b-9c59-1755ada65ad9">nonverbal feedback icons</a> (see the section under <strong>Providing nonverbal feedback during meetings (participants)</strong>).</li>
-</ul>
-
-<p class="text-center"><a href="https://support.zoom.us/hc/en-us/articles/115001286183#h_50523139-7bac-403b-9c59-1755ada65ad9" class="u-link-reset"><img src="/learn/00_tools/img/zoom/zoom-icons.png" alt="Screenshot of the participation icons in the Zoom user interface." /></a></p>
+<p>Even very simple web projects are made up of a collection of files:</p>
 
 <ul>
-  <li>As with <a href="/learn/tools/slack">Slack</a>, MICA’s <a href="https://drive.google.com/file/d/1MR15B4UBGtdSwonED3IIu0igkUD5Sp3F/view">guidelines for online etiquette (PDF, 102 KB)</a> apply to our communications via Zoom.</li>
+  <li>an HTML document for each page of your content</li>
+  <li>one or more CSS files for the styling of that content</li>
+  <li>image files referenced in your HTML or CSS</li>
 </ul>
 
-<h3 id="additional-audio-recommendations">Additional audio recommendations</h3>
-<p>If you’re likely to want to use audio during our meetings, keep the following in mind:</p>
+<p class="text-center"><img src="/learn/00_tools/img/git/git01.png" alt="" /></p>
+
+<p>There are even likely to be folders inside your project, for example, an “images” folder to organize all the image files.</p>
+
+<p>Git allows you to track changes on these files – their content as well as their names and organization.</p>
+
+<p>Additionally, while saving a file only affects individual files, git introduces a concept called a <strong>commit</strong> which allows you to save a group of changes across files along with notes (called a <strong>commit message</strong>) about those changes.</p>
+
+<p>In this way, when you add a new image file to your web project and then reference it in the HTML document, both changes can be tracked as a unit as a <strong>commit</strong>.</p>
+
+<h2 id="getting-started-with-git">Getting started with git</h2>
+
+<p class="callout"><span class="emoji">💡</span> While there are references to specific commands in the following text, this is just informational at this point. You are <strong>not</strong> meant to be following along and running these commands.</p>
+
+<p>In order to use git in a project, you first need to run a command to tell git to start paying attention to your project. Running the command <code class="language-plaintext highlighter-rouge">git init</code> inside your project folder on the command line <strong>initializes</strong> git in your project.</p>
+
+<p>While nothing changes visually in your project folder after running this command, there are some git concepts that have now been added:</p>
+
+<p class="text-center"><img src="/learn/00_tools/img/git/git02.png" alt="" /></p>
 
 <ul>
-  <li>Please try to join our meetings from a quiet location.</li>
-  <li>If you are not talking, please turn off your mic/mute yourself.</li>
-  <li>If possible, use set of headphones with an inline mic; while Zoom works with the built-in microphone in many laptops, that also tends to pick up the sound of your computer fans and typing, too.</li>
+  <li>the <strong>working directory</strong> is your project folder with all your current work</li>
+  <li>the <strong>staging area</strong> is a holding cell for changes you’re going to commit to your repo</li>
+  <li>the <strong>repository</strong> is your current work, plus the entire git history of your commits and any alternate versions you may have created along the way</li>
 </ul>
 
-<p class="callout"><span class="emoji">💡</span> Are there Zoom strategies used by other professors that you’d recommend for this class? Let me know! While I use Zoom <strong>a lot</strong> for work and other professional meetings, you’re the expert about using it in a classroom or educational setting. Let me know what works; I welcome your suggestions via Slack of the <strong>open an issue link</strong> below.</p>
+<p class="callout">Again, these are <strong>not</strong> ever visible in your project folder – they’re entirely conceptual. You need to use the command line or another tool (like VS Code or <a href="https://desktop.github.com/">GitHub Desktop</a>) to be able to see these changes.</p>
+
+<p>If it helps, imagine that the <strong>repo</strong> is a storage unit and the <strong>working directory</strong> is your house or apartment. The <strong>staging area</strong> is the boxes you put your stuff in to designate that you’re going to take it off to the storage unit. You can move stuff in and out of those boxes as much as you like before <strong>committing</strong> (see what I did there?) to the storage unit.</p>
+
 
     
     <footer class="feedback-footer">
   
 
   <p><strong>Make this page better.</strong></p>
-  <p>Found something that's incorrect or confusing on this page? Broken link? I want to know! <a href="https://github.com/mica-web/mica-web.github.io/issues/new?title=Feedback+for+%2Flearn%2Ftools%2Fzoom&template=page-feedback.md" target="_blank">Open an issue on GitHub</a> to tell me what's up and help me update the page.</p>
+  <p>Found something that's incorrect or confusing on this page? Broken link? I want to know! <a href="https://github.com/mica-web/mica-web.github.io/issues/new?title=Feedback+for+%2Flearn%2Ftools%2Fgit&template=page-feedback.md" target="_blank">Open an issue on GitHub</a> to tell me what's up and help me update the page.</p>
 </footer>
 
     
