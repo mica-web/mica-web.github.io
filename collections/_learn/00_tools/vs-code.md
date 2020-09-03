@@ -8,7 +8,7 @@ quiz: true
 issues: true
 ---
 
-{% assign ip = '/learn/00_tools/img/' %}
+{% assign ip = '/learn/00_tools/img/vsc/' %}
 
 
 # {{ page.topic }}

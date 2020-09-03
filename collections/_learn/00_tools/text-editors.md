@@ -9,7 +9,7 @@ issues: true
 ---
 
 {% assign lp = '/learn/tools/' %}
-{% assign ip = '/learn/00_tools/img/' %}
+{% assign ip = '/learn/00_tools/img/texted/' %}
 
 
 # {{ page.topic }}
