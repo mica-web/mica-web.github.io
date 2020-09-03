@@ -12,7 +12,11 @@ issues: true
 {% assign ip = '/learn/00_tools/img/git/' %}
 
 
-# {{ page.topic }}
+# {{ page.topic }} (draft in progress)
+
+{: .wip-wrapper}
+![This page is a work in progress](https://media.giphy.com/media/SwP1HunIXetehTvy43/giphy.gif)
+
 
 {: .text-center }
 ![A meme about naming PhotoShop files.]({{ ip | append: 'wo_git.png' }}){: aria-describedby="wo-git"}
