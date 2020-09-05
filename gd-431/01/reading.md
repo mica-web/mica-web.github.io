@@ -20,7 +20,7 @@ Before you dive into the reading, please read [my recommendations for responding
 
 ## Reading
 
-{: .callout}
+{: .callout }
 **Purpose:** Understand and create a priority guide and be able to compare priority guides with wireframes.
 
 ### Tasks
@@ -43,5 +43,5 @@ Before you dive into the reading, please read [my recommendations for responding
   - File name: **Please** use your first initial and last name plus "pg" to name your file (for example: `aweger-pg`)
   - How to submit: Add your file to the **resumes** folder inside our  {% include gd431-drive.md %}
 
-{: .callout}
+{: .callout }
 Message me in Slack if you don't have the necessary access to the shared Google Drive

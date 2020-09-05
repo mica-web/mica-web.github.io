@@ -113,7 +113,7 @@ At this point, you should see a message in the console with your username, like 
 {: .cli }
 > Hi angeliquejw! You've successfully authenticated, but GitHub does not provide shell access.
 
-{: .emoji.text-larger.text-center}
+{: .emoji.text-larger.text-center }
 🎉
 
 <span class="emoji">⚠️</span> If you see anything else at this point, please copy the full message from your console and send it to me via DM on Slack, and we'll troubleshoot. You will not be able to continue with these instructions until this is resolved.
@@ -166,7 +166,7 @@ You should see your address listed twice with the name **gh**.
 
 ![Screenshot of the console with the output from the git remote -v command.]({{ ip | append: 'git-remote-v.png' }})
 
-{: .emoji.text-larger.text-center}
+{: .emoji.text-larger.text-center }
 🎉
 
 The two actions you see to the right in the parentheses of your address -- **fetch** and **push** -- reference the two main ways of sharing information in git.
@@ -177,7 +177,7 @@ The two actions you see to the right in the parentheses of your address -- **fet
 - **fetching** or **pulling** references bringing code from your repo into your working project
 - **pushing** is going in the other direction -- moving code from your working project into your repo
 
-{: .callout}
+{: .callout }
 This was explained in more detail in [**Git and GitHub in Plain English**](https://blog.red-badger.com/2016/11/29/gitgithub-in-plain-english).
 
 ## Step 5: Push Glitch code to GitHub
@@ -191,7 +191,7 @@ Your console will display a bunch of info as it takes the files from Glitch and 
 
 If you go back to your browser at the GitHub tab, refresh the page and you should now see the files from Glitch.
 
-{: .emoji.text-larger.text-center}
+{: .emoji.text-larger.text-center }
 🎉
 
 Back in VS Code, if you type `git status` in the console and press **Enter**, you should see some new information:

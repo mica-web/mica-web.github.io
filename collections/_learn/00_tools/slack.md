@@ -15,7 +15,7 @@ Slack is a messaging platform and my courses will be using Slack as our primary 
 
 All updates about the class, meeting links, Q&A about assignments, etc. -- the vast majority of Slack communication -- will happen via Slack.
 
-{: .callout}
+{: .callout }
 <span class="emoji">🤔</span> This isn't a change brought about by teaching online. Even in the semesters when my courses have met in person, we've used Slack.
 
 ## Getting started
@@ -33,7 +33,7 @@ You can use Slack in your web browser, as a desktop app and/or on mobile devices
 ## Getting the most out of Slack
 One of the many perks of Slack is that _everyone_ from the class is there -- that's so much better than just emailing me directly because your colleagues may have the same question or -- _so awesome_ -- may have the answer to your question. For this reason, I recommend that you default to posting in a channel (either **#general** or the channel for your course) if you have a question. You can always use `@Angelique` in your message to make sure I see it, even if you post it to a public channel.
 
-{: .callout}
+{: .callout }
 <span class="emoji">👉🏻</span> There are, of course, times when it makes sense to DM me directly. Please DM me at any time and don't take the above to mean I don't want you to DM me.
 
 There are some additional things you can learn to do in Slack that will help you get the most out of it.

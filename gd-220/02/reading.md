@@ -16,7 +16,7 @@ issues: true
 
 ## Reading
 
-{: .callout}
+{: .callout }
 **Purpose:** Review a the timeline of web design and identify key features and trends.
 
 ### Tasks

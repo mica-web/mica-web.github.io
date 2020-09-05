@@ -19,7 +19,7 @@ Before you dive into the reading, please read [my recommendations for responding
 
 ## Reading
 
-{: .callout}
+{: .callout }
 **Purpose:** Summarize the purpose and benefits of version control.
 
 ### Tasks

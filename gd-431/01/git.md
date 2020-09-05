@@ -11,7 +11,7 @@ If you have not used git and GitHub before, this explainer will provide a helpfu
 
 ## Reading
 
-{: .callout}
+{: .callout }
 **Purpose:** Summarize the purpose and benefits of version control.
 
 ### Tasks
