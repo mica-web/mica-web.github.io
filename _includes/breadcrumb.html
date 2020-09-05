@@ -8,18 +8,30 @@
 
   {% assign crumb_title = crumb | replace:'-',' ' | replace:'00_', '' | replace:'01_','' | replace:'02_','' | replace:'.html', '' %}
 
-  {% if forloop.index == crumbs_total %}
   {% if crumb.size == 2 %}
-  <li class="u-inline-block breadcrumb">week {{ crumb_title }}</li>
-  {% else %}
-  <li class="u-inline-block breadcrumb">{{ crumb_title }}</li>
+  {% assign crumb_title = crumb_title | prepend: 'week ' %}
   {% endif %}
-  {% elsif crumb.size == 2 %}
-  <li class="u-inline-block breadcrumb week">week {{ crumb_title }}: </li>
-  {% else %}
-  <li class="u-inline-block breadcrumb"><a href="{% assign crumb_limit=forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' }}{% endfor %}">{{ crumb_title }}</a>
-    {% endif %}
 
-    {% endfor %}
+  {% if forloop.index == crumbs_total %}
+  <li class="u-inline-block breadcrumb">{{ crumb_title }}</li>
+  {% else %}
+  <li class="u-inline-block breadcrumb">
+    <a href="
+    {%- assign crumb_limit=forloop.index | plus: 1 -%}
+    {%- for crumb in crumbs limit: crumb_limit -%}
+      {%- if forloop.last == true -%}
+        {%- assign crumb_link = crumb -%}
+      {%- else -%}
+        {%- assign crumb_link = crumb | append: '/' -%}
+      {%- endif -%}
+      {{ crumb_link }}
+    {%- endfor -%}
+    ">
+      {{ crumb_title }}
+    </a>
+  </li>
+  {% endif %}
+
+  {% endfor %}
 
 </ul>
