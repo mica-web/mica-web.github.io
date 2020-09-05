@@ -61,7 +61,8 @@ h2 {
   font-size: 1.15rem;
 }
 
-h3 {
+h3,
+dt {
   @include font-grotesk('Semibold');
   font-size: 1rem;
   line-height: $leading / 1.5;
@@ -203,19 +204,9 @@ ol {
 dl {
   margin-bottom: 3rem;
 
-  dt {
-    color: $color-mint;
-    @include font-mono;
-    font-size: 1.2rem;
-
-    del {
-      color: $color-grey;
-    }
-  }
-
   dd {
-    margin-top: 0.25em;
-    margin-bottom: 1em;
+    // margin-top: 0.25em;
+    // margin-bottom: 1em;
     margin-left: 0;
   }
 }

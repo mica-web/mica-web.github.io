@@ -1,4 +1,8 @@
 .project-wrapper {
+  h2 {
+    @extend %schedule_heading;
+  }
+
   @media (min-width: 920px) {
     main {
       display: grid;
