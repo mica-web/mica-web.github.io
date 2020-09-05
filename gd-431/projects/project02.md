@@ -45,15 +45,13 @@ type: project
 
 {::options parse_block_html="false" /}
 <dl>
-<dt>Oct 01</dt>
+<dt>Sept 24</dt>
 <dd>Project introduction</dd>
+<dt>Oct 01</dt>
+<dd>-</dd>
 <dt>Oct 08</dt>
 <dd>-</dd>
 <dt>Oct 15</dt>
-<dd>-</dd>
-<dt>Oct 22</dt>
-<dd>-</dd>
-<dt>Oct 29</dt>
 <dd>Project due date</dd>
 </dl>
 

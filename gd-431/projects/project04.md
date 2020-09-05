@@ -34,8 +34,16 @@ type: project
 
 {::options parse_block_html="false" /}
 <dl>
-<dt>Nov 19</dt>
+<dt>Oct 22</dt>
 <dd>Project introduction</dd>
+<dt>Oct 29</dt>
+<dd>-</dd>
+<dt>Nov 05</dt>
+<dd>-</dd>
+<dt>Nov 12</dt>
+<dd>-</dd>
+<dt>Nov 19</dt>
+<dd>-</dd>
 <dt>Dec 03</dt>
 <dd>-</dd>
 <dt>Dec 10</dt>
