@@ -16,7 +16,17 @@
   <li class="u-inline-block breadcrumb">{{ crumb_title }}</li>
   {% else %}
   <li class="u-inline-block breadcrumb">
-    <a href="{% assign crumb_limit=forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' }}{% endfor %}">
+    <a href="
+    {%- assign crumb_limit=forloop.index | plus: 1 -%}
+    {%- for crumb in crumbs limit: crumb_limit -%}
+      {%- if forloop.last == true -%}
+        {%- assign crumb_link = crumb -%}
+      {%- else -%}
+        {%- assign crumb_link = crumb | append: '/' -%}
+      {%- endif -%}
+      {{ crumb_link }}
+    {%- endfor -%}
+    ">
       {{ crumb_title }}
     </a>
   </li>
