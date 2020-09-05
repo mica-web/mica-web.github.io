@@ -134,7 +134,7 @@ You should see a response like so:
 
 Way back at the end of [step one](#step-1-create-a-new-repository), you created your GitHub repo and got a screen full of instructions. Now you actually need to revisit that page and use some of the info there.
 
-Under the heading **Quick setup** is an address for your repo. **Make sure to click the small SSH button** to get the correct address; it should start with `git@github.com` and end with `.git`. Copy this full address.
+Under the heading **Quick setup** is an address for your repo; it should start with `git@github.com` and end with `.git`. If it does not look like this, you may need to click the **small SSH button** to update the address. Once you see the correct address, copy this full address.
 
 {: .callout }
 For me, this address is `git@github.com:mica-web/mica-web-demo.git`, but your address will be different because the bit immediately after the colon (`:`) will be your GitHub username.
