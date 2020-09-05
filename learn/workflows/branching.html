@@ -17,7 +17,7 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-config" content="/favicons/browserconfig.xml">
   <meta name="theme-color" content="#9ff2c0">
-  <title>Interaction + animation | Learning Web Design</title>
+  <title>Git Branches | Learning Web Design</title>
 </head>
 
 
@@ -34,7 +34,7 @@
 </header>
 
 
-<div class="content-wrapper week-wrapper">
+<div class="content-wrapper ">
 
   
 
@@ -53,8 +53,8 @@
 
   
   <li class="u-inline-block breadcrumb">
-    <a href="/gd-220">
-      gd 220
+    <a href="/learn">
+      learn
     </a>
   </li>
   
@@ -66,13 +66,46 @@
   
 
   
-  <li class="u-inline-block breadcrumb">week 08</li>
+  <li class="u-inline-block breadcrumb">
+    <a href="/learn/workflows">
+      workflows
+    </a>
+  </li>
+  
+
+  
+
+  
+
+  
+
+  
+  <li class="u-inline-block breadcrumb">branching</li>
   
 
   
 
 </ul>
 
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p class="text-faded reading-est">1 min read</p>
+
+    
     
   </div>
 
@@ -81,45 +114,40 @@
   <main>
     
     
-    <h1>08 // Interaction + animation</h1>
-    
-    
-<h2 id="w08-intro">Intro</h2>
+<h1 id="git-branches">Git Branches</h1>
 
-<h2 id="w08-sync-up">Sync Up</h2>
+<p>When you create a new repo in git, a branch named <strong>master</strong> is created; you don’t have to do anything to gain this, it is done automatically for you.</p>
 
-<h2 id="w08-activities">Activities</h2>
+<p class="callout">You may have noticed this info when you ran <code class="language-plaintext highlighter-rouge">git status</code> commands; you usually receive some output back that tells you what branch you’re currently working on.</p>
 
-<p class="aside-wrapper"><span class="highlighter">
-<a href="files/w08.min.pdf" target="_blank">W08 Slides</a> (PDF, 82 KB)
-</span></p>
+<p>When you’ve added commits so far, they’ve all gone to this master branch. While this is a fine way to use git for your solo work, it doesn’t let you enjoy all the power of git and it makes it difficult for me to review your work.</p>
 
-<h2 id="w08-agenda">Agenda</h2>
-<ul>
-  <li>Proj 2 survey</li>
-  <li>Interaction</li>
-  <li>Pseudoelements, pseudoclasses</li>
-  <li>Transition basics</li>
-  <li>Midterm survey</li>
-  <li>Working on Project 2</li>
-</ul>
+<p>Instead, when you collaborate with others, you want to create a copy of this master branch, make all your changes in that copy and then share your changes via GitHub in a pull request.</p>
 
-<h2 id="w08-activities-in-codepen">Activities in CodePen</h2>
-<ul>
-  <li><a href="https://codepen.io/angeliquejw/pen/pYBjWL?editors=1100">Pseudoclasses</a></li>
-  <li><a href="https://codepen.io/angeliquejw/pen/vPMLYg?editors=0100">Pseudoelements</a></li>
-  <li><a href="https://codepen.io/angeliquejw/pen/YzzXdqZ"><code class="language-plaintext highlighter-rouge">::selection</code></a></li>
-</ul>
+<p><span class="emoji">🤔</span> That was a lotta words and all of them may not yet make sense. Let’s walk through the process step by step.</p>
 
-<h2 id="w08-homework">Homework</h2>
-<p>Complete Project 2 work and PR; submit your work next week!</p>
+<h2 id="step-1">Step 1</h2>
+<p>To create a copy of the master branch to work from, type <code class="language-plaintext highlighter-rouge">git checkout -b new-branch</code> in your Glitch Console and press <strong>Enter</strong>.</p>
+
+<p class="text-center"><img src="/learn/03_workflows/img/branching01.png" alt="" /></p>
+
+<p>This command does a couple of things:</p>
+<ol>
+  <li>It creates a copy of the <strong>master</strong> branch named <strong>new-branch</strong>. This copy includes all your commits to date.</li>
+  <li>It switches your working branch from <strong>master</strong> to <strong>new-branch</strong>.</li>
+</ol>
+
+<p>You can view the effects of this by typing <code class="language-plaintext highlighter-rouge">git branch</code> in the console; the output will be a list of your current branches with an asterisk marking the branch you’re currently working on.</p>
+
+<p class="text-center"><img src="/learn/03_workflows/img/git-branch.png" alt="" /></p>
+
 
     
     <footer class="feedback-footer">
   
 
   <p><strong>Make this page better.</strong></p>
-  <p>Found something that's incorrect or confusing on this page? Broken link? I want to know! <a href="https://github.com/mica-web/mica-web.github.io/issues/new?title=Feedback+for+%2Fgd-220%2F08&template=page-feedback.md" target="_blank">Open an issue on GitHub</a> to tell me what's up and help me update the page.</p>
+  <p>Found something that's incorrect or confusing on this page? Broken link? I want to know! <a href="https://github.com/mica-web/mica-web.github.io/issues/new?title=Feedback+for+%2Flearn%2Fworkflows%2Fbranching&template=page-feedback.md" target="_blank">Open an issue on GitHub</a> to tell me what's up and help me update the page.</p>
 </footer>
 
     

@@ -106,7 +106,7 @@ h1 { font-size: 1.75rem; }
 
 h2 { font-size: 1.15rem; }
 
-h3 { font-family: NeueAlteGrotesk-Semibold; font-weight: normal; font-style: normal; font-size: 1rem; line-height: 1.0416666667em; margin-top: 1.0416666667em; margin-bottom: 0.625em; opacity: 0.8; text-transform: uppercase; }
+h3, dt { font-family: NeueAlteGrotesk-Semibold; font-weight: normal; font-style: normal; font-size: 1rem; line-height: 1.0416666667em; margin-top: 1.0416666667em; margin-bottom: 0.625em; opacity: 0.8; text-transform: uppercase; }
 
 .heading { font-size: 2.1875em; }
 
@@ -156,11 +156,7 @@ ol > li { margin-bottom: 0.5em; padding-left: 0.5em; }
 
 dl { margin-bottom: 3rem; }
 
-dl dt { color: #A2F1C1; font-family: Native-Regular; font-weight: normal; font-style: normal; font-size: 1.2rem; }
-
-dl dt del { color: #ccc; }
-
-dl dd { margin-top: 0.25em; margin-bottom: 1em; margin-left: 0; }
+dl dd { margin-left: 0; }
 
 .site-wrapper { background-color: #FCFCFC; overflow-x: hidden; max-width: 100vw; }
 
@@ -416,15 +412,15 @@ a.highlighter:visited { color: #22333B; }
 
 @media (min-width: 920px) { .quick-links { display: none; } }
 
-.schedule-list h4, .week-wrapper h2 { background-image: linear-gradient(transparent calc(100% - 2px), #F6F930 2px); background-position: 16px 100%; background-repeat: no-repeat; background-size: calc(100% - 32px) 100%; color: #0A0908; display: inline-block; font-family: Native-Regular; font-weight: normal; font-style: normal; font-size: 0.9rem; margin-bottom: 12px; }
+.schedule-list h4, .week-wrapper h2, .project-wrapper h2 { background-image: linear-gradient(transparent calc(100% - 2px), #F6F930 2px); background-position: 16px 100%; background-repeat: no-repeat; background-size: calc(100% - 32px) 100%; color: #0A0908; display: inline-block; font-family: Native-Regular; font-weight: normal; font-style: normal; font-size: 0.9rem; margin-bottom: 12px; }
 
-.schedule-list h4:first-of-type, .week-wrapper h2:first-of-type { margin-top: 0; }
+.schedule-list h4:first-of-type, .week-wrapper h2:first-of-type, .project-wrapper h2:first-of-type { margin-top: 0; }
 
-.schedule-list h4:not(:first-of-type), .week-wrapper h2:not(:first-of-type) { margin-top: 16px; }
+.schedule-list h4:not(:first-of-type), .week-wrapper h2:not(:first-of-type), .project-wrapper h2:not(:first-of-type) { margin-top: 16px; }
 
-.schedule-list h4::before, .week-wrapper h2::before { content: '['; padding-right: 12px; }
+.schedule-list h4::before, .week-wrapper h2::before, .project-wrapper h2::before { content: '['; padding-right: 12px; }
 
-.schedule-list h4::after, .week-wrapper h2::after { content: ']'; padding-left: 12px; }
+.schedule-list h4::after, .week-wrapper h2::after, .project-wrapper h2::after { content: ']'; padding-left: 12px; }
 
 .schedule-list { counter-reset: weeks; margin-bottom: 1.5rem; max-width: 540px; }
 

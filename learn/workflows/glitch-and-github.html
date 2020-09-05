@@ -236,9 +236,11 @@
 
 <p>Way back at the end of <a href="#step-1-create-a-new-repository">step one</a>, you created your GitHub repo and got a screen full of instructions. Now you actually need to revisit that page and use some of the info there.</p>
 
-<p>Under the heading <strong>…or push an existing repository from the command line</strong> is an address for your repo; it should start with <code class="language-plaintext highlighter-rouge">git@github.com</code> and end with <code class="language-plaintext highlighter-rouge">.git</code>. Copy this full address.</p>
+<p>Under the heading <strong>Quick setup</strong> is an address for your repo. <strong>Make sure to click the small SSH button</strong> to get the correct address; it should start with <code class="language-plaintext highlighter-rouge">git@github.com</code> and end with <code class="language-plaintext highlighter-rouge">.git</code>. Copy this full address.</p>
 
 <p class="callout">For me, this address is <code class="language-plaintext highlighter-rouge">git@github.com:mica-web/mica-web-demo.git</code>, but your address will be different because the bit immediately after the colon (<code class="language-plaintext highlighter-rouge">:</code>) will be your GitHub username.</p>
+
+<p><img src="/learn/03_workflows/img/git-address.gif" alt="Screen capture of the GitHub UI and the location of the SSH button." /></p>
 
 <p>Now, back in VS Code, type <code class="language-plaintext highlighter-rouge">git remote add gh your-address-here</code> in the console, replacing the <strong>your-address-here</strong> with the address you copied from GitHub. As an example, here’s what the full command looks like for me:</p>
 

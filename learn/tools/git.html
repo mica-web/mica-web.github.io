@@ -103,7 +103,7 @@
 
 
 
-<p class="text-faded reading-est">2 min read</p>
+<p class="text-faded reading-est">5 min read</p>
 
     
     
@@ -162,10 +162,79 @@
   <li>the <strong>repository</strong> is your current work, plus the entire git history of your commits and any alternate versions you may have created along the way</li>
 </ul>
 
-<p class="callout">Again, these are <strong>not</strong> ever visible in your project folder – they’re entirely conceptual. You need to use the command line or another tool (like VS Code or <a href="https://desktop.github.com/">GitHub Desktop</a>) to be able to see these changes.</p>
+<p class="callout">The staging area and repo are <strong>not</strong> ever visible in your project folder – they’re entirely conceptual. You need to use the command line or another tool (like VS Code or <a href="https://desktop.github.com/">GitHub Desktop</a>) to be able to see these changes.</p>
 
 <p>If it helps, imagine that the <strong>repo</strong> is a storage unit and the <strong>working directory</strong> is your house or apartment. The <strong>staging area</strong> is the boxes you put your stuff in to designate that you’re going to take it off to the storage unit. You can move stuff in and out of those boxes as much as you like before <strong>committing</strong> (see what I did there?) to the storage unit.</p>
 
+<p>As you work on or add files in your working directory, you save them as you normally would. When you have completed a task or a group of work that you want to commit, you add those updated files to the staging area. The command to do this is <code class="language-plaintext highlighter-rouge">git add</code>.</p>
+
+<p>You can add a single file to the staging area…
+<img src="/learn/00_tools/img/git/git03.png" alt="" /></p>
+
+<p>…or you can add multiple files.
+<img src="/learn/00_tools/img/git/git04.png" alt="" /></p>
+
+<p>After you have identified the chunk of work and group of files you want to add to the repo, you use the command <code class="language-plaintext highlighter-rouge">git commit</code>.</p>
+
+<p><img src="/learn/00_tools/img/git/git05.png" alt="" /></p>
+
+<p>This takes the work in the staging area and commits it to the repo and your project history.</p>
+
+<h3 id="what-is-a-chunk-of-work">What is a chunk of work?</h3>
+<p>If this seems like an odd way to think of your work, don’t stress at this point. We’ll talk more throughout the semester about the when and why of making commits. For now, I’ll try to provide some metaphorical examples that maybe will help you wrap your head around this:</p>
+
+<ul>
+  <li>
+    <p>Think of saving in a video game; first, when you save, you’re not just saving one thing – you’re saving multiple bits of data: your progress in the game so far, your character details, your location. Also, it’s common in video games to save before a big battle or doing something difficult; why? Because you may want to restart from that save point. Git commits are a lot like this.</p>
+  </li>
+  <li>
+    <p>Think of a baking or cooking project; there are multiple, discrete steps: deciding on a recipe, gathering ingredients, prepping ingredients, etc. Each one of those might be a spot to make a commit (if, you know, git worked in the kitchen).</p>
+  </li>
+</ul>
+
+<p class="callout">Thinking in terms of commits and chunks of work will also help you organize your time this semester. It’s difficult to sit down to a project with the goal of “finish project 1;” that goal is too broad and ill defined. Instead, if you think, “Today I’m going to get the fonts sorted for this project” – that’s much doable and is a perfect chunk of work for a commit.</p>
+
+<div class="quiz-wrapper">
+  <header class="quiz-header">
+    <h2 class="quiz-heading">Share What You've Learned</h2>
+    <div class="quiz-actions-wrapper">
+      <button type="button" class="u-button-reset u-link-reset quiz-action js-quiz-toggle" aria-controls="HKYGKW3"><?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 24 24" role="img" xmlns="http://www.w3.org/2000/svg">
+  <title>Collapse this content</title>
+  <path d="M23 24H1a1 1 0 01-1-1V1a1 1 0 011-1h22a1 1 0 110 2H2v20h20V5.19a1 1 0 112 0V23a1 1 0 01-1 1z" />
+  <path class="icon-line" d="M18 13H6a1 1 0 110-2h12a1 1 0 110 2z" />
+  <path class="icon-line" d="M11 18V6a1 1 0 112 0v12a1 1 0 11-2 0z" />
+</svg>
+</button>
+      <a class="u-link-reset quiz-action" href="https://www.surveymonkey.com/r/HKYGKW3" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img">
+  <title>Open in a new window</title>
+  <path d="M23 24H1a1 1 0 01-1-1V1a1 1 0 011-1h11.95a1 1 0 010 2H2v20h20l-.01-11.35a1 1 0 012 0L24 23a1 1 0 01-1 1z" />
+  <path d="M17.5 2c-.38 0-.62-.83-.43-1.5.09-.3.25-.5.43-.5h6c.12 0 .22.08.3.2.13.09.2.2.2.3v6c0 .38-.83.63-1.5.43-.3-.09-.5-.25-.5-.43V3.2l-7.13 7.26c-.48.5-1.37.21-1.6-.51a.91.91 0 01.2-.92L20.37 2z" />
+</svg>
+</a>
+    </div>
+  </header>
+  
+  <p class="quiz-hint">Remember: Embedded quizzes like this are used as part of your participation grade.</p>
+  
+  <div id="HKYGKW3" class="quiz-content">
+    <iframe src="https://www.surveymonkey.com/r/HKYGKW3" height="600" allowtransparency="true" frameborder="0" scrolling="yes"></iframe>
+  </div>
+  
+</div>
+
+<h2 id="git--github">Git + GitHub</h2>
+<p>All of the examples so far only reference work on your local computer – the working directory, staging area and repo all exist on your computer and only there.</p>
+
+<p><a href="/learn/tools/github">GitHub</a> is a site where you can create a version of your local repo that is available on the web, both as a backup for yourself and for other people to view and interact with your code. GitHub uses git and adds additional features and tools, but they are separate things; it’s entirely possible to use git and never have a GitHub account, for example.</p>
+
+<p class="callout">There are other services like this that also use git (for example, <a href="https://about.gitlab.com/">GitLab</a>, <a href="https://bitbucket.org/">Bitbucket</a>). You don’t need to know details about these services at this point, but I mention them just to further cement the idea that git and GitHub are not the same thing.</p>
+
+<p>The commands <code class="language-plaintext highlighter-rouge">git push</code> and <code class="language-plaintext highlighter-rouge">git pull</code> are what move your files back and forth between your local computer and the GitHub web site.</p>
+
+<p class="text-center"><img src="/learn/00_tools/img/git/push-pull.png" alt="The pull command comes from GitHub to your computer and the push command goes in the opposite direction." /></p>
+
+<p>This is, admittedly, a lot of typing to accomplish things, but it will definitely get easier and make more sense through repetition. If you have questions about any of these concepts, feel free to ask in the <strong>#general</strong> Slack channel or get in touch with me via DM.</p>
 
     
     <footer class="feedback-footer">
