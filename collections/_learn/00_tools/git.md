@@ -14,10 +14,6 @@ issues: true
 
 # {{ page.topic }} (draft in progress)
 
-{: .wip-wrapper}
-![This page is a work in progress](https://media.giphy.com/media/SwP1HunIXetehTvy43/giphy.gif)
-
-
 {: .text-center }
 ![A meme about naming PhotoShop files.]({{ ip | append: 'wo_git.png' }}){: aria-describedby="wo-git"}
 
@@ -113,3 +109,11 @@ The commands `git push` and `git pull` are what move your files back and forth b
 ![The pull command comes from GitHub to your computer and the push command goes in the opposite direction.]({{ ip | append: 'push-pull.png' }})
 
 This is, admittedly, a lot of typing to accomplish things, but it will definitely get easier and make more sense through repetition. If you have questions about any of these concepts, feel free to ask in the **#general** Slack channel or get in touch with me via DM.
+
+## Summary of commands
+- `git init` creates a new git repo; **you will not need to do this in any of your Glitch projects**, as it has already been done for you
+- `git status` provides an output of information, including your current branch name and details about any changes you've made
+- `git add example.html` stages the changes from a single file (replace `example.html` with the actual filename)
+- `git commit -m "Your message here"` will commit all the staged changes with the message you add between the double quotes (replacing "Your message here")
+- `git push` will send all the changes you've committed to to your GitHub repo
+- `git pull` will bring any changes in your GitHub repo into your local repo
