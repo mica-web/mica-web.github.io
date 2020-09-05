@@ -103,7 +103,7 @@
 
 
 
-<p class="text-faded reading-est">1 min read</p>
+<p class="text-faded reading-est">3 min read</p>
 
     
     
@@ -115,8 +115,6 @@
     
     
 <h1 id="git-branches">Git Branches</h1>
-
-<p class="wip-wrapper"><img src="https://media.giphy.com/media/SwP1HunIXetehTvy43/giphy.gif" alt="This page is a work in progress" /></p>
 
 <p>When you create a new repo in git, a branch named <strong>master</strong> is created; you don’t have to do anything to gain this, it is done automatically for you.</p>
 
@@ -139,10 +137,55 @@
   <li>It switches your working branch from <strong>master</strong> to <strong>new-branch</strong>.</li>
 </ol>
 
+<p class="callout">The name <strong>new-branch</strong> is for demonstration purposes only. Usually, you would want to name your branch something related to what changes you plan on making to your project. <strong>Branch names should be all lowercase and cannot have spaces in them.</strong></p>
+
 <p>You can view the effects of this by typing <code class="language-plaintext highlighter-rouge">git branch</code> in the console; the output will be a list of your current branches with an asterisk marking the branch you’re currently working on.</p>
 
-<p class="text-center"><img src="/learn/03_workflows/img/git-branch.png" alt="" /></p>
+<p class="text-center"><img src="/learn/03_workflows/img/git-branch.png" alt="Output of git branch command. List is: master, *new-branch." /></p>
 
+<p>Additionally, if you type <code class="language-plaintext highlighter-rouge">git status</code>, you should now see that it says “On branch new-branch” instead of “On branch master.”</p>
+
+<p>Once you’ve created a new branch and switched to it, all your commits going forward will be added to this branch.</p>
+
+<p class="text-center"><img src="/learn/03_workflows/img/branching02.png" alt="" /></p>
+
+<p>Just like a commit is a group of changes to files that are related, a branch is a group of commits that are related.</p>
+
+<h3 id="why-use-branches">Why use branches?</h3>
+<p>If the only change you’re making to a web project is updating a couple of sentences or fixing a broken link, this process likely feels like overkill.</p>
+
+<p>However, if you had a single page site with very little content and were going to redo that site to have more content and multiple pages, it’s unlikely you’d want to do all that work in a single commit. Also, it would be helpful to view <strong>all the changes</strong> related to this update in one group. Using git branches gets you all that.</p>
+
+<p class="text-center"><img src="/learn/03_workflows/img/example-project.png" alt="Example of a single-page web page about my cat and an update to a more complex site." /></p>
+
+<h3 id="switching-between-branches">Switching between branches</h3>
+<p>At any time, you can switch between your branches via the <code class="language-plaintext highlighter-rouge">checkout</code> command.</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">git checkout master</code> will switch you over to the master branch</li>
+  <li><code class="language-plaintext highlighter-rouge">git checkout new-branch</code> will switch you back to your working branch</li>
+  <li><code class="language-plaintext highlighter-rouge">git branch</code> will list all your current branches, if you’re struggling with remembering a branch name</li>
+  <li><code class="language-plaintext highlighter-rouge">git branch</code> and <code class="language-plaintext highlighter-rouge">git status</code> will tell you which branch you’re currently on</li>
+</ul>
+
+<p class="callout">It’s not uncommon during my workday for me to be switching between multiple branches, both to add to my own work but also to review the work of my colleagues on their branches. For your work this semester, you will likely only need your current working branch and the master branch.</p>
+
+<h2 id="step-2">Step 2</h2>
+<p>When the changes on your working branch are all complete and have been tested and reviewed, git also has a simple process for taking all the commits you made on your working branch and reintroducing them back to master; this is called <strong>merging</strong>.</p>
+
+<p class="text-center"><img src="/learn/03_workflows/img/branching03.png" alt="" /></p>
+
+<p>To merge your work, you must:</p>
+<ol>
+  <li>Switch to the master branch via <code class="language-plaintext highlighter-rouge">git checkout master</code>.</li>
+  <li>Perform the merge via <code class="language-plaintext highlighter-rouge">git merge new-branch</code>.</li>
+</ol>
+
+<p>Now all the changes you made as part of <strong>new-branch</strong> are part of <strong>master</strong>. <span class="emoji">🎉</span></p>
+
+<p class="callout">For any of your graded projects this semester, you should never merge back to master until <strong>after</strong> I have reviewed and graded your work. I will always specifically call out when you should do a merge.</p>
+
+<p>It is also possible to merge your code via the GitHub UI, and we will walk through that process after you’ve completed Project 01.</p>
 
     
     <footer class="feedback-footer">
