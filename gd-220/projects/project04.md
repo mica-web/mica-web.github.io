@@ -1,15 +1,19 @@
 ---
 title: Project 4
-course: gd-220
 type: project
 ---
 
 {::options parse_block_html="true" /}
 
 <header>
-# Project 4: One-page Event Site
+# {{page.title }}: One-page Event Site
 
-You will design a one-page web site advertising an upcoming design conference. The final project will be usable by mobile devices as small as 375px wide and desktop monitors as large as 1280px wide.
+## In Brief
+You will design a one-page web site advertising an upcoming design conference.
+
+## Purpose
+TBD
+
 </header>
 
 <section>
@@ -33,34 +37,6 @@ You will design a one-page web site advertising an upcoming design conference. T
 1. Update your pull request for final submission.
 1. Present your project to the class.
 
-## Considerations
-- audience
-- hierarchy
-- wayfinding
-- readability
-- legibility
-- contrast
-- chunking
-
-## Competitor Analysis
-Identify **2 existing conferences** with an art/design/tech focus, then document and analyze the event web sites. Your analysis should be ~3 pages and include the following:
-
-### For _each_ conference:
-  - Event name
-  - Year of the event
-  - URL of the event web site
-  - 4 screenshots:
-    - homepage @ 375px and 1280px
-    - either the list of speakers or the list of talks @ 375px and 1280px
-  - Written analysis of the site design, including strengths and weaknesses (~0.5 page per event).
-
-
-### Conclusion
-Write a ~1 paragraph **summary** of your main takeaways from this analysis, bringing together what you learned across all three events.
-
-### Submitting your competitor analysis
-Add your document to the [Project 4 Google Drive](https://drive.google.com/drive/u/0/folders/11BqHx7wEOcq8eTKM_2WdC0gjGqAeekTS), following the instructions in the README.
-
 ## Requirements
 - The design should be responsive, working on mobile devices as small as 375px wide and other devices up to 1280px wide.
 - The site **must** be a one-page site. Do not create individual pages for any required or additional content.
@@ -80,33 +56,43 @@ Add your document to the [Project 4 Google Drive](https://drive.google.com/drive
 - As always, you must document all the resources used in your final design, including text/copy, images, fonts, patterns, etc. You can do this either in an HTML comment at the end of your HTML file or in your PR description.
 - 💡As this is your final project for the semester, this should be a summary of what you have learned to date about designing for the web, including: writing HTML and CSS according to best practices, your knowledge of CSS layout, incorporating animation/interactivity in your designs, utilizing CSS variables, etc.
 
+## Competitor Analysis
+Identify **2 existing conferences** with an art/design/tech focus, then document and analyze the event web sites. Your analysis should be ~3 pages and include the following:
 
+### For _each_ conference:
+  - Event name
+  - Year of the event
+  - URL of the event web site
+  - 4 screenshots:
+    - homepage @ 375px and 1280px
+    - either the list of speakers or the list of talks @ 375px and 1280px
+  - Written analysis of the site design, including strengths and weaknesses (~0.5 page per event).
+
+
+### Conclusion
+Write a ~1 paragraph **summary** of your main takeaways from this analysis, bringing together what you learned across all three events.
+
+### Submitting your competitor analysis
+Add your document to the [Project 4 Google Drive](https://drive.google.com/drive/u/0/folders/11BqHx7wEOcq8eTKM_2WdC0gjGqAeekTS), following the instructions in the README.
 </section>
-
-{::options parse_block_html="false" /}
 
 <aside>
 
-<h2>Schedule</h2>
+## Schedule
 
+{::options parse_block_html="false" /}
 <dl>
-  <dt>Oct 24</dt>
-  <dd>Project intro + overview ✔️</dd>
-  <dt>Nov 7</dt>
-  <dd><strong>No class.</strong> Competitor analysis and content due. ✔️</dd>
-  <dt>Nov 17</dt>
-  <dd>Sketches and designs due. ✔️</dd>
-  <dt>Nov 21</dt>
-  <dd>Initial markup created in class. ✔️</dd>
-  <dt>Nov 28</dt>
-  <dd><strong>No class&ndash;Thanksgiving break</strong> ✔️</dd>
-  <dt>Dec 5</dt>
-  <dd>Styles checkin ✔️</dd>
-  <dt>Dec 12</dt>
-  <dd>Project presentations 🎉</dd>
+<dt>Nov 19</dt>
+<dd>Project introduction</dd>
+<dt>Dec 03</dt>
+<dd>-</dd>
+<dt>Dec 10</dt>
+<dd>-</dd>
+<dt>Dec 17</dt>
+<dd>Project due date</dd>
 </dl>
 
-<h2>Rubric</h2>
-<a href="https://docs.google.com/spreadsheets/d/1Z5jf_c10aGK-NYVLHmtQmz0vzfdVQDIIEMS9rpaAAts/?usp=sharing" target="_blank">Google Sheet example</a>
+## Rubric
+[Google Sheet example](){:target="_blank"}
 
 </aside>

@@ -1,16 +1,21 @@
 ---
 title: Project 2
-course: gd-220
 type: project
 ---
 
 {::options parse_block_html="true" /}
 
 <header>
-# Project 2: Card Specimen
+# {{page.title }}: Web Component
 
-You will design the layout for a card/tile component and create the design using HTML, CSS and any media (e.g., images, icons) you choose to incorporate. Your design should take into consideration that this component will be repeated in a page layout.
+## In Brief
+You will create the design for a card component and then recreate that design using your current knowledge of HTML and CSS, as well as any media (e.g., images, icons) you choose.
 
+Your final design should be based on the understanding that multiple card components will appear on a single page.
+
+## Purpose
+- Recognize and resolve the issues of interpreting a static design into an adaptable, functional web component.
+- Demonstrate your understanding of basic HTML and CSS, including basic layout styles.
 </header>
 
 <section>
@@ -25,14 +30,6 @@ You will design the layout for a card/tile component and create the design using
 1. After deciding on your style direction, write CSS based on your comps and style tiles.
 1. Update your pull request for final submission. (NOTE: While your comps consider multiple versions of a single card design, your code version should only be of a single card.)
 
-## Considerations
-- audience
-- readability
-- legibility
-- hierarchy
-- contrast
-- repetition
-
 ## Requirements
 - Your design can have a maximum width of 640 pixels.
 - All designs, regardless of card type, should include the following:
@@ -40,90 +37,27 @@ You will design the layout for a card/tile component and create the design using
   - Image
 - You must document all the resources used in your final design, including images, fonts, patterns, etc. You can do this either in an HTML comment at the end of your HTML file or in CSS comments inside your stylesheet.
 
-## Additional requirements based on card type
-
-### Article
-
-Must include:
-- Author name
-- Date posted
-
-Other possibilities (at least 2):
-- Tag/section
-- Short preview
-- Number of comments
-- Read more link
-- Link(s) to fave, bookmark and/or share
-
-### Recipe
-
-Must include:
-- Ingredients
-- Instructions
-
-Other possibilities (at least 2):
-- Servings
-- Time to cook
-- Nutrition info
-- Tag/section
-- Number of comments
-- Read more link
-- Link(s) to fave, bookmark and/or share
-
-### Movie
-
-Must include:
-- Play CTA (could be for movie or for trailer?)
-- User rating (e.g., stars, IMDB)
-
-Other possibilities (at least 2):
-- Genre(s)
-- Length
-- Year
-- Cast, etc. info
-- Short description
-- Rating (PG, R, etc.)
-- Link(s) to fave, bookmark and/or share
-
-### Product
-
-Must include:
-- Price
-- Buy CTA
-
-Other possibilities (at least 2):
-- Description and/or features
-- Maker/manufacturer/place of manufacture
-- Size (or size options; also color options)
-- Materials
-- User ratings
-- Number of user reviews
-- Sale price
-- Separate Add to Cart CTA
-- Link to more details
-  - Link(s) to fave, bookmark and/or share
-
 </section>
-
-{::options parse_block_html="false" /}
 
 <aside>
 
-<h2>Schedule</h2>
+## Schedule
 
+{::options parse_block_html="false" /}
 <dl>
-<dt>Sept 26</dt>
-<dd>Project intro + overview ✔️</dd>
-<dt>Oct 3</dt>
-<dd>Style tiles and comps due and presented (steps 1-4) ✔️</dd>
-<dt>Oct 10</dt>
-<dd>Markup and cardX3 due (steps 5-6) ✔️</dd>
-<dt>Oct 17</dt>
-<dd>Initial styles due (step 7) ✔️</dd>
-<dt>Oct 24</dt>
-<dd>Project due date (step 8) ✔️</dd>
+<dt>Oct 01</dt>
+<dd>Project introduction</dd>
+<dt>Oct 08</dt>
+<dd>-</dd>
+<dt>Oct 15</dt>
+<dd>-</dd>
+<dt>Oct 22</dt>
+<dd>-</dd>
+<dt>Oct 29</dt>
+<dd>Project due date</dd>
 </dl>
 
-<h2>Rubric</h2>
-<a href="https://docs.google.com/spreadsheets/d/1Z5jf_c10aGK-NYVLHmtQmz0vzfdVQDIIEMS9rpaAAts/edit#gid=1993026041" target="_blank">Google Sheet example</a>
+## Rubric
+[Google Sheet example](){:target="_blank"}
+
 </aside>
