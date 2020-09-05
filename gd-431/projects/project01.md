@@ -9,17 +9,20 @@ type: project
 # {{page.title }}: Resume
 
 ## In Brief
-Create a priority guide for your resume and then, based on that, create an HTML version of your resume. Use your current knowledge of CSS to format/style the document.
+Create a priority guide based on the content of your current resume. Use your current knowledge of HTML and CSS to markup and format your resume.
 
 ## Purpose
-- Demonstrate your understanding of basic HTML and CSS, specifically as it pertains to typography and color.
+- Demonstrate your understanding of basic HTML and CSS.
 - Reinterpret your resume based on the priority guide reading.
 </header>
 
 <section>
 
 ## Process
-1. Use your current knowledge of HTML to recreate your resume based on the priority guide template you made in week 01.
+1. Do the [week 01 reading](/gd-431/01/reading) and follow the instructions to create a priority guide for your resume.
+1. In your **project1** Glitch, create a [new branch](/learn/workflows/branching) named **resume**.
+  - Going forward, all your work on this project should be on the **resume** branch.
+1. Based on your priority guide template and using your current knowledge of HTML, create an HTML version of your resume.
 1. Use your current knowledge of CSS to add formatting/styles to your resume.
 1. Create a pull request for code review and final submission.
   - Include PR template and use best practices checklist to check your own work.
