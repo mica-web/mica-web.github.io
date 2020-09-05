@@ -1,5 +1,5 @@
 - [x] write intro email
-- [ ] create intro video
+- [ ] ~~create intro video~~
 - [x] add estimated reading times?
 - add content for first 3 weeks of content
 
