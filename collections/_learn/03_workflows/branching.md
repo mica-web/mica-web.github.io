@@ -1,6 +1,6 @@
 ---
 topic: Git Branches
-category: workflows
+category: Workflows
 level: [ intro, advanced ]
 permalink: /:collection/workflows/:name
 code_example: false
@@ -12,6 +12,9 @@ issues: true
 
 
 # {{ page.topic }}
+
+{: .wip-wrapper}
+![This page is a work in progress](https://media.giphy.com/media/SwP1HunIXetehTvy43/giphy.gif)
 
 When you create a new repo in git, a branch named **master** is created; you don't have to do anything to gain this, it is done automatically for you.
 
