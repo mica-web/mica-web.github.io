@@ -12,7 +12,7 @@ type: project
 You will design a one-page web site advertising an upcoming design conference.
 
 ## Purpose
-TBD
+@TBD
 
 </header>
 

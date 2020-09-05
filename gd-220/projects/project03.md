@@ -20,7 +20,9 @@ You will create a simple web form and style it to match your existing project 01
 <section>
 
 ## Process
-TBD
+@TBD
+1. Create a pull request for code review and final submission.
+  - Include PR template and use best practices checklist to check your own work.
 
 ## Requirements
 - Your form styles should be mobile-first and include at least 1 media query

@@ -32,16 +32,16 @@ Before you dive into the reading, please read [my recommendations for responding
   quizId="25M6LRN"
 %}
 
-- Add your current resume to the **resumes** folder inside our [shared GD431 Activities folder in Google Drive](https://drive.google.com/drive/folders/1Q-WnEfuIkqqBdvmSiNm5OKJX53aObnpf?usp=sharing){:target="_blank"}
+- Provide a copy of your current resume
   - Due date: 9/10 by midnight EST ([see in your timezone](https://everytimezone.com/s/bcb7bc69){:target="_blank"})
-  - Format:  PDF
+  - Format: PDF
   - File name: **Please** use your first initial and last name plus "resume" to name your file (for example: `aweger-resume`)
-  - How to submit: Add your file to the **resumes** folder inside our [shared GD431 Activities folder in Google Drive](https://drive.google.com/drive/folders/1Q-WnEfuIkqqBdvmSiNm5OKJX53aObnpf?usp=sharing){:target="_blank"}
+  - How to submit: Add your file to the **resumes** folder inside our  {% include gd431-drive.md %}
 - Create a priority guide for your resume using [this template](https://docs.google.com/document/d/1ViffQR3U26Wjv7uu1_imILvmTIADASIM8q-d9dNPDTw/copy?usp=sharing){:target="_blank"}
   - Due date: 9/10 by midnight EST ([see in your timezone](https://everytimezone.com/s/bcb7bc69){:target="_blank"})
-  - Format:  Google Doc
+  - Format: Google Doc
   - File name: **Please** use your first initial and last name plus "pg" to name your file (for example: `aweger-pg`)
-  - How to submit: Add your file to the **resumes** folder inside our [shared GD431 Activities folder in Google Drive](https://drive.google.com/drive/folders/1Q-WnEfuIkqqBdvmSiNm5OKJX53aObnpf?usp=sharing){:target="_blank"}
+  - How to submit: Add your file to the **resumes** folder inside our  {% include gd431-drive.md %}
 
 {: .callout}
 Message me in Slack if you don't have the necessary access to the shared Google Drive

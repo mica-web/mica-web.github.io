@@ -9,21 +9,22 @@ type: project
 # {{page.title }}: Heuristic Evaluation
 
 ## In Brief
-You will create a simple web form and style it to match your existing project 01.
+@TBD
 
 ## Purpose
-- Construct proper markup for web form elements.
-- Experiment with HTML5 form validation.
-- Recognize common accessibility issues with web forms.
+@TBD
 </header>
 
 <section>
 
 ## Process
-TBD
+@TBD
+1. Create a pull request for code review and final submission.
+  - Include PR template and use best practices checklist to check your own work.
+1. Present project to colleagues.
 
 ## Requirements
-- Your form styles should be mobile-first and include at least 1 media query
+@TBD
 
 </section>
 
