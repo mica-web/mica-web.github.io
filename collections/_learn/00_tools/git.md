@@ -65,7 +65,7 @@ While nothing changes visually in your project folder after running this command
 - the **repository** is your current work, plus the entire git history of your commits and any alternate versions you may have created along the way
 
 {: .callout }
-Again, the staging area and repo are **not** ever visible in your project folder -- they're entirely conceptual. You need to use the command line or another tool (like VS Code or [GitHub Desktop](https://desktop.github.com/)) to be able to see these changes.
+The staging area and repo are **not** ever visible in your project folder -- they're entirely conceptual. You need to use the command line or another tool (like VS Code or [GitHub Desktop](https://desktop.github.com/)) to be able to see these changes.
 
 If it helps, imagine that the **repo** is a storage unit and the **working directory** is your house or apartment. The **staging area** is the boxes you put your stuff in to designate that you're going to take it off to the storage unit. You can move stuff in and out of those boxes as much as you like before **committing** (see what I did there?) to the storage unit.
 
@@ -106,3 +106,10 @@ All of the examples so far only reference work on your local computer -- the wor
 
 {: .callout }
 There are other services like this that also use git (for example, [GitLab](https://about.gitlab.com/), [Bitbucket](https://bitbucket.org/)). You don't need to know details about these services at this point, but I mention them just to further cement the idea that git and GitHub are not the same thing.
+
+The commands `git push` and `git pull` are what move your files back and forth between your local computer and the GitHub web site.
+
+{: .text-center }
+![The pull command comes from GitHub to your computer and the push command goes in the opposite direction.]({{ ip | append: 'push-pull.png' }})
+
+This is, admittedly, a lot of typing to accomplish things, but it will definitely get easier and make more sense through repetition. If you have questions about any of these concepts, feel free to ask in the **#general** Slack channel or get in touch with me via DM.
