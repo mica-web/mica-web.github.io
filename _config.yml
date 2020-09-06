@@ -49,8 +49,17 @@ collections:
       - 00_tools/text-editors.md
       - 00_tools/vs-code.md
       - 00_tools/command-line.md
-      - 02_css/css_color.md
-      - 02_css/sass.md
+      - 00_tools/git.md
+      - 01_HTML/basics.md
+      - 01_HTML/headings.md
+      - 01_HTML/semantics.md
+      - 01_HTML/best-practices.md
+      - 01_HTML/history.md
+      - 02_CSS/css_color.md
+      - 02_CSS/sass.md
+      - 03_workflows/glitch-and-github.md
+      - 03_workflows/branching.md
+      - 03_workflows/troubleshooting.md
   gd220:
     output: true
     permalink: /gd-220/:name
