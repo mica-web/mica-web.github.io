@@ -19,6 +19,7 @@ Demonstrate your understanding of basic HTML and CSS, specifically as it pertain
 <section>
 
 ## Process
+1. Follow the [setup instructions]()
 1. Use your current knowledge of HTML to add markup to the [copy provided](https://gist.github.com/angeliquejw/0c2727ac5c065350565112216b3f7f0b).
 1. Do some research into web typography.
   - Share at least one link about web typography in the [#gd2 channel](https://mica-web.slack.com). Explain why you think this resource is useful in 1-2 sentences.
@@ -44,6 +45,7 @@ Demonstrate your understanding of basic HTML and CSS, specifically as it pertain
 <dl>
 <dt>Sept 10</dt>
 <dd>Project introduction</dd>
+<dd>Complete steps 1, 2 & 3</dd>
 <dt>Sept 17</dt>
 <dd>Initial markup due</dd>
 <dt>Sept 24</dt>

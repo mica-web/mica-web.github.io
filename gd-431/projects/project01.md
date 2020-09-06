@@ -19,8 +19,8 @@ Create a priority guide based on the content of your current resume. Use your cu
 <section>
 
 ## Process
-1. Do the [week 01 reading](/gd-431/01/reading) and follow the instructions to create a priority guide for your resume.
-1. In your **project1** Glitch, create a [new branch](/learn/workflows/branching) named **resume**.
+1. Do the [week 01 reading]({% link gd-431/01/reading.md %}) and follow the instructions to create a priority guide for your resume.
+1. In your **project1** Glitch, create a [new branch]({% link _learn/03_workflows/branching.md %}) named **resume**.
   - Going forward, all your work on this project should be on the **resume** branch.
 1. Based on your priority guide template and using your current knowledge of HTML, create an HTML version of your resume.
 1. Use your current knowledge of CSS to add formatting/styles to your resume.

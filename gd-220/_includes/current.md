@@ -10,7 +10,7 @@
 
 ### Prior to class start
 
-Here's [a few things you can do](/gd-220/00/early-start) before the first class meeting on September 3rd.
+Here's [a few things you can do]({% link gd-220/00/early-start.md %}) before the first class meeting on September 3rd.
 
 </section>
 
