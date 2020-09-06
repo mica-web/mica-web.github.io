@@ -53,6 +53,8 @@ figure {
 }
 
 pre {
+  margin-top: $spacing-md;
+  margin-bottom: $spacing-lg;
   white-space: pre-wrap;
 
   &::before {
