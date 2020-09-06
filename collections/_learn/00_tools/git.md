@@ -12,7 +12,7 @@ issues: true
 {% assign ip = '/learn/00_tools/img/git/' %}
 
 
-# {{ page.topic }} (draft in progress)
+# {{ page.topic }}
 
 {: .text-center }
 ![A meme about naming PhotoShop files.]({{ ip | append: 'wo_git.png' }}){: aria-describedby="wo-git"}
