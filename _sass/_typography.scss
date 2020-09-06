@@ -182,12 +182,13 @@ a {
     }
 
     &:visited {
-      color: $color-text-link-visited;
+      color: mix($color-text-link-visited, white, 80%);
     }
 
     &:hover,
     &:focus {
       background-size: 100% 65%, 100% 100%;
+      color: $color-text-link;
     }
   }
 }
