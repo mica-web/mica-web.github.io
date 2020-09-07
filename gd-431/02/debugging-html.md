@@ -24,9 +24,14 @@ The following HTML example has several errors in it. <b>Remix</b> this project o
 </div>
 
 ## Purpose
-This is meant to be a quick way for you to consider your current familiarity with HTML and for me to evaluate where you stand. This exercise is a **participation grade** so, do your best, but **don't stress about what you don't know or can't fix at this point.**
+This is an evaluation exercise that will give you a sense of what familiarity with HTML you've retained from previous classes. You'll be asked to complete an activity and also evaluate yourself, so you know whether or not to do additional HTML review.
 
 ## Process
+This is meant to be a **short** exercise; [set a timer](https://timer.onlineclock.net/timers/20minutes/){:target="_blank"} and don't spend more than 20 minutes on this please. <span class="emoji">🙏🏻</span>
+
+{: .callout }
+The timer is not meant to make you anxious, but rather to stop you from spending _too_ much time on this activity. It's a _much_ better use of your time to read the review links below than to spend an hour on this activity.
+
 1. Click the <b>Remix to Edit</b> button to make a copy of this Glitch project.
 1. Next, click <b>Edit Fullscreen</b>; this will force the project to open in its own window where you can save your work. **You must do this in order to have a copy of your changes to share back with me.**
 1. Make changes to the `index.html`, focusing first on any code that is broken.
@@ -42,7 +47,7 @@ This is meant to be a quick way for you to consider your current familiarity wit
 %}
 
 ## Next Steps
-If this activity made you want to review some HTML, I highly recommend these lessons from the tutorial <cite>HTML & CSS Is Hard (But it doesn’t have to be)</cite> by Oliver James:
+If this activity made you want to review some HTML, I highly recommend these lessons from the tutorial <cite>HTML & CSS Is Hard (but it doesn’t have to be)</cite> by Oliver James:
 - [Basic Web Pages](https://www.internetingishard.com/html-and-css/basic-web-pages/){% include estimate.html time=16 %}
 - [Links and Images](https://www.internetingishard.com/html-and-css/links-and-images/){% include estimate.html time=20 %}
 - [Semantic HTML](https://www.internetingishard.com/html-and-css/semantic-html/){% include estimate.html time=22 %}
