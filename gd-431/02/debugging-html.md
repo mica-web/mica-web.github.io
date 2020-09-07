@@ -42,8 +42,7 @@ This is meant to be a quick way for you to consider your current familiarity wit
 %}
 
 ## Next Steps
-If this activity made you want to review some HTML, see these tutorials and explainers:
-  - [HTML Basics]({{ lp | append: 'html/basics' }}){% include optional.html %}
-  - [HTML Headings]({{ lp | append: 'html/headings' }}){% include optional.html %}
-  - [HTML Text]({{ lp | append: 'html/text' }}){% include optional.html %}
-  - [Block and Inline Elements]({{ lp | append: 'html/block-inline' }}){% include optional.html %}
+If this activity made you want to review some HTML, I highly recommend these lessons from the tutorial <cite>HTML & CSS Is Hard (But it doesn’t have to be)</cite> by Oliver James:
+- [Basic Web Pages](https://www.internetingishard.com/html-and-css/basic-web-pages/){% include estimate.html time=16 %}
+- [Links and Images](https://www.internetingishard.com/html-and-css/links-and-images/){% include estimate.html time=20 %}
+- [Semantic HTML](https://www.internetingishard.com/html-and-css/semantic-html/){% include estimate.html time=22 %}
