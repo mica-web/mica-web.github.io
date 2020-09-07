@@ -214,4 +214,23 @@ dl {
     // margin-bottom: 1em;
     margin-left: 0;
   }
+
+  &.definition-quote {
+    border-left: 4px solid $color-grey;
+    margin: 0 $spacing-lg $spacing-md;
+    padding: $spacing-sm;
+    max-width: 560px;
+
+    dt {
+      margin-top: 0;
+    }
+
+    dd+dd {
+      margin-top: $spacing-xs;
+    }
+
+    +.citation {
+      margin-top: 0;
+    }
+  }
 }
