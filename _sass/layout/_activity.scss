@@ -1,0 +1,5 @@
+.activity-wrapper {
+  main>h2 {
+    @extend %schedule_heading;
+  }
+}
