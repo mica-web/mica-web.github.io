@@ -53,6 +53,7 @@ collections:
       - 01_HTML/basics.md
       - 01_HTML/headings.md
       - 01_HTML/text.md
+      - 01_HTML/block-inline.md
       - 01_HTML/semantics.md
       - 01_HTML/best-practices.md
       - 01_HTML/history.md

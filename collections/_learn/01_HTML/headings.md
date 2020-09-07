@@ -1,7 +1,7 @@
 ---
 topic: Headings
 category: HTML
-level: [ intro, advanced ]
+level: [ intro ]
 permalink: /:collection/html/:name
 code_example: false
 quiz: false
