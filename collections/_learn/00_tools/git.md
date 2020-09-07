@@ -89,6 +89,7 @@ If this seems like an odd way to think of your work, don't stress at this point.
 {: .callout }
 Thinking in terms of commits and chunks of work will also help you organize your time this semester. It's difficult to sit down to a project with the goal of "finish project 1;" that goal is too broad and ill defined. Instead, if you think, "Today I'm going to get the fonts sorted for this project" -- that's much doable and is a perfect chunk of work for a commit.
 
+<!-- Git 1 -->
 {% include quiz.html
   title="Share What You've Learned"
   quizId="HKYGKW3"

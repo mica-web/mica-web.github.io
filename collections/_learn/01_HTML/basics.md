@@ -31,6 +31,7 @@ When you've completed the entire MDN page and your own `index.html`, copy the li
 
 ![Click the Share button and then the Code button. Copy the URL that reveals.]({{ ip | append: 'glitch-share.gif' }})
 
+<!-- HTML 1 -->
 {% include quiz.html
   title="Share Your Work"
   quizId="FTPZNH8"

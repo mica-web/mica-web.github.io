@@ -10,6 +10,7 @@ issues: true
 
 # {{ page.topic }}
 
+<!-- Browsers 1 -->
 {% include quiz.html
   title="Share What You Know"
   quizId="TSMGCSZ"
@@ -30,6 +31,7 @@ If you use your cursor to explore the dots along the lines, you can see each ver
 
 Users can opt out of these auto-updates, but since they're enabled by default, most do not.
 
+<!-- Browsers 2 -->
 {% include quiz.html
   title="Share What You Think"
   quizId="K2S8DWF"

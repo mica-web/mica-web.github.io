@@ -27,6 +27,7 @@ Before you dive into the reading, please read [my recommendations for responding
 - Read about [content-first priority guides](https://alistapart.com/article/priority-guides-a-content-first-alternative-to-wireframes) {% include estimate.html time=14 %}
 - Make note of your **quotes, comments and questions** to this reading (which should make sense if you read the link under "A recommendation" above)
 
+<!-- Priority Guides 1 -->
 {% include quiz.html
   title="Share What You Know"
   quizId="25M6LRN"

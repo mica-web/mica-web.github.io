@@ -82,6 +82,7 @@ Here are some that you can attempt to avoid that dreadful, regretful feeling in 
     - Some apps reward you for completing periods of focus time, like [Forest](https://www.forestapp.cc/)
     - Others provide timers to help you cycle between focused time and breaks; you can learn more about this by searching for the "[Pomodoro technique](https://lifehacker.com/productivity-101-a-primer-to-the-pomodoro-technique-1598992730)" and experiment with a web-based timer [like this](https://pomofocus.io/) (though versions also exist as browser extensions and mobile apps).
 
+<!-- Learning Online 1 -->
 {% include quiz.html
   title="Share Your Experience"
   quizId="8BTHHWL"

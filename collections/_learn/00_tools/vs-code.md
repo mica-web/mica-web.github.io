@@ -38,6 +38,7 @@ Before going further, it will help to learn about it about the user interface of
 
 After you complete the interface walkthrough, go back to your copy of VS Code and poke around a bit. I especially recommend clicking through the different icons on the <b>Activity Bar</b> so you start to explore what they offer and how they change what's visible in the app.
 
+<!-- VS Code 1 -->
 {% include quiz.html
   title="Share What You've Learned"
   quizId="KXT5DHF"
