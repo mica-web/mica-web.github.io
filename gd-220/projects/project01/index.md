@@ -19,14 +19,14 @@ Demonstrate your understanding of basic HTML and CSS, specifically as it pertain
 <section>
 
 ## Process
-1. Follow the [setup instructions]()
-1. Use your current knowledge of HTML to add markup to the [copy provided](https://gist.github.com/angeliquejw/0c2727ac5c065350565112216b3f7f0b).
+1. Follow the [setup instructions]({% link gd-220/projects/project01/setup.md %})
+1. Use your current knowledge of HTML to add markup to the [copy provided](https://gist.githubusercontent.com/angeliquejw/0c2727ac5c065350565112216b3f7f0b/raw/b1d087a6acd37814f901f2de439ef2facc85a0f2/on-paper.txt){:target="_blank"}.
 1. Do some research into web typography.
   - Share at least one link about web typography in the [#gd2 channel](https://mica-web.slack.com). Explain why you think this resource is useful in 1-2 sentences.
-1. Update markup based on current knowledge of HTML and add CSS.
+1. Update project markup based on current knowledge of HTML and add CSS.
+1. Present project to colleagues.
 1. Create a pull request for code review and final submission.
   - Include PR template and use best practices checklist to check your own work.
-1. Present project to colleagues.
 
 ## Requirements
 - Your assignment should use:
@@ -45,16 +45,16 @@ Demonstrate your understanding of basic HTML and CSS, specifically as it pertain
 <dl>
 <dt>Sept 10</dt>
 <dd>Project introduction</dd>
-<dd>Complete steps 1, 2 & 3</dd>
 <dt>Sept 17</dt>
-<dd>Initial markup due</dd>
+<dd>Steps 1 & 2 complete</dd>
 <dt>Sept 24</dt>
-<dd>Initial styles due</dd>
+<dd>Steps 3 & 4 complete</dd>
 <dt>Oct 01</dt>
 <dd>Project due date</dd>
+<dd>Steps 5 & 6 complete</dd>
 </dl>
 
 ## Rubric
-[Google Sheet example](){:target="_blank"}
+[Grading Rubric Template](https://docs.google.com/spreadsheets/d/e/2PACX-1vTwhxDx3oZco1CQLtyOhTPnaZ4aAIzSXt62AbhiQLHlvYesx649B08L1XfLbVoRkCenMPsAkfFy2MfW/pubhtml?gid=1244627885&single=true){:target="_blank"}
 
 </aside>
