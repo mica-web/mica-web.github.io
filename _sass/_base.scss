@@ -72,8 +72,18 @@ pre {
   }
 }
 
+kbd,
 code {
   @include font-mono;
+
+  p &,
+  li & {
+    padding-right: 2px;
+    padding-left: 2px;
+  }
+}
+
+code {
 
   pre & {
     display: block;
@@ -83,8 +93,22 @@ code {
   p &,
   li & {
     background-color: rgba($color-mint, 0.35);
-    padding-right: 2px;
-    padding-left: 2px;
+  }
+}
+
+kbd {
+
+  p &,
+  li & {
+    background-color: rgba($color-grey, 0.35);
+  }
+}
+
+strong,
+b,
+em {
+  main & {
+    @include font-grotesk($weight:'SemiBold')
   }
 }
 
