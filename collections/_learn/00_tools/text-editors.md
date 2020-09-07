@@ -17,9 +17,9 @@ issues: true
 ## Introduction
 A text editor is a program that help you write and edit code.
 
-Since code is made up of words, you might think a text editor is similar to a word processing program (like Microsoft Word or Google Docs), but they differ in some pretty important ways. Word processing programs create **rich text**, which includes a lot of information about how the text is formatted: Is it bold? What color is it? What font is used? When I save a document in a word processor and share it with another person, I expect this formatting information to be shared with them, too. So, if my report uses the font Arial, I expect anyone else who opens the report to also see it in Arial. 
+Since code is made up of words, you might think a text editor is similar to a word processing program (like Microsoft Word or Google Docs), but they differ in some pretty important ways. Word processing programs create <b>rich text</b>, which includes a lot of information about how the text is formatted: Is it bold? What color is it? What font is used? When I save a document in a word processor and share it with another person, I expect this formatting information to be shared with them, too. So, if my report uses the font Arial, I expect anyone else who opens the report to also see it in Arial. 
 
-Text editors create **plain text**; they essentially just save the characters you see on your screen with no formatting information. While that sounds pretty boring, text editors have some powerful features that make writing code faster and easier.
+Text editors create <b>plain text</b>; they essentially just save the characters you see on your screen with no formatting information. While that sounds pretty boring, text editors have some powerful features that make writing code faster and easier.
 
 ## Text editor benefits
 
@@ -55,7 +55,7 @@ In the example above:
 Even if you don't understand this code, the example might lead you to believe--correctly so--that similarly colored bits of text have something in common. And making those similarities easily visible is the point of syntax highlighting.
 
 ### Automatic formatting
-Because writing code involves **nesting** code -- that is, placing chunks of code inside other bits of code -- the layout or formatting of your code files can help with understanding the structure of your code and even spotting bits of broken code.
+Because writing code involves <b>nesting</b> code -- that is, placing chunks of code inside other bits of code -- the layout or formatting of your code files can help with understanding the structure of your code and even spotting bits of broken code.
 
 There's no need for you to handle this formatting yourself, though, as most text editors can automatically format your code when you save your files or when you run a command to format the file. 
 
@@ -74,7 +74,7 @@ Because text editors are mainly for writing and editing code, they can also be v
 
 ![Animated screen capture of autocompletion in VS Code.]({{ ip | append: 'autocomplete.gif' }})
 
-In the above example, as I'm typing, my text editor is making recommendations along the way, both for properties and possible values. Pressing `tab` or `enter` allows me to accept the recommendation, or I can use the arrow keys to scroll through other options, like I do when selecting `blueviolet` from the color list.
+In the above example, as I'm typing, my text editor is making recommendations along the way, both for properties and possible values. Pressing <kbd>Tab</kbd> or <kbd>Enter</kbd> allows me to accept the recommendation, or I can use the arrow keys to scroll through other options, like I do when selecting `blueviolet` from the color list.
 
 ## Your text editor
 Now that we've talked about text editors generally, let's get you started with the text editor you'll be using for this course: [Visual Studio Code]({{ lp | append: 'vs-code' }})

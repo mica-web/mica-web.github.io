@@ -7,4 +7,4 @@ issues: true
 # {{ page.title }}
 
 {% include shared_slack.md %}
-- Join the **#gd431** Slack channel
+- Join the <b>#gd431</b> Slack channel

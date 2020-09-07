@@ -31,7 +31,7 @@ You can use Slack in your web browser, as a desktop app and/or on mobile devices
   - Bonus: This means that if you send me a DM at 2am, I also won't see it until after my Do Not Disturb hours. <span class="emoji">😴</span>
 
 ## Getting the most out of Slack
-One of the many perks of Slack is that _everyone_ from the class is there -- that's so much better than just emailing me directly because your colleagues may have the same question or -- _so awesome_ -- may have the answer to your question. For this reason, I recommend that you default to posting in a channel (either **#general** or the channel for your course) if you have a question. You can always use `@Angelique` in your message to make sure I see it, even if you post it to a public channel.
+One of the many perks of Slack is that _everyone_ from the class is there -- that's so much better than just emailing me directly because your colleagues may have the same question or -- _so awesome_ -- may have the answer to your question. For this reason, I recommend that you default to posting in a channel (either <b>#general</b> or the channel for your course) if you have a question. You can always use `@Angelique` in your message to make sure I see it, even if you post it to a public channel.
 
 {: .callout }
 <span class="emoji">👉🏻</span> There are, of course, times when it makes sense to DM me directly. Please DM me at any time and don't take the above to mean I don't want you to DM me.

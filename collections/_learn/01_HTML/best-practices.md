@@ -9,7 +9,7 @@ issues: true
 ---
 
 # {{ page.topic }}
-The following list represents some best practices to use when writing your HTML. The examples of things **not** to do, in some cases, may even be valid HTML, but still are not ideal.
+The following list represents some best practices to use when writing your HTML. The examples of things _not_ to do, in some cases, may even be valid HTML, but still are not ideal.
 
 * TOC
 {:toc}
@@ -87,7 +87,7 @@ In the first example, it's appropriate to write MICA in all caps because it is a
 
 In the first examples, the heading tree begins with an `h1` and continues in a logical order. In comparison, the second example has three issues:
 - It is missing an `h1`; in most cases, every page should have a single `h1` element.
-- It does not begin with an `h1`; while the `h1` does **not** need to be the first markup on your page, it should always be the first heading encountered.
+- It does not begin with an `h1`; while the `h1` does _not_ need to be the first markup on your page, it should always be the first heading encountered.
 - Headings are listed out of order and skipped (for example, there is no `h3` between the `h2` and `h4`).
 
 In the second example, it is likely that the headings were selected based on appearance and not meaning, which is incorrect and creates issues with the document outline and specifically impacts the accessibility of your web content.

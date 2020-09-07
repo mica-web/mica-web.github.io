@@ -15,7 +15,7 @@ If you're reading this page because something in your current exercise or projec
 {: .text-center }
 ![Cartoon person is sitting in a yoga pose, eyes closed and breathing calmly. Text says Take A Deep Breath.](https://media.giphy.com/media/U5aefu6Sbf8Cg1lisU/giphy.gif)
 
-Remember:  Troubleshooting is a **normal** part of the coding process. Here are some tips to help you to identify where issues are in your code and for solving those issues:
+Remember:  Troubleshooting is a _normal_ part of the coding process. Here are some tips to help you to identify where issues are in your code and for solving those issues:
 
 ## <span class="text-larger emoji">🧹</span> Clean up/organize your code
 

@@ -5,9 +5,9 @@ This class will be <span class="emoji">💯</span> online and mainly asynchronou
 To double down on what I wrote in the syllabus: **This does _not_ mean you're on your own!** You'll be connected to your colleagues and me via Slack, and I will provide a variety of opportunities to connect via Zoom.
 
 Your weekly course materials will include the following sections
-- **intro**: my overview of what we're covering this week, why it matters and how it can help you
-- **sync up**: what we'll plan to do during our synchronous meeting
-- **activities**: what you should work on during the week (for example, readings, coding demos) and complete before the _next_ class meeting
+- <b>intro</b>: my overview of what we're covering this week, why it matters and how it can help you
+- <b>sync up</b>: what we'll plan to do during our synchronous meeting
+- <b>activities</b>: what you should work on during the week (for example, readings, coding demos) and complete before the _next_ class meeting
 
 So, for example, the activities for this week -- week one -- should be completed before _next_ Thursday and are _not_ expected to be done before the first class meeting.
 

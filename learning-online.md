@@ -17,7 +17,7 @@ In our syllabi and course planning, your instructors have created all sorts of p
 
 For each of your classes this semester, write out 1-2 goals you have in taking the class. In some cases, your goal may simply be "Pass this class." You don't need to lie to yourself about that or dress it up. <span class="emoji">🤷🏻‍♀️</span>
 
-Getting clear about **your** goals will help your prioritize coursework and stay motivated this semester. Add reminders on your calendar to revisit your goals each month during the semester to make sure you're on track and to prompt yourself to recognize when you're knocking those goals outta the park.
+Getting clear about _your_ goals will help your prioritize coursework and stay motivated this semester. Add reminders on your calendar to revisit your goals each month during the semester to make sure you're on track and to prompt yourself to recognize when you're knocking those goals outta the park.
 
 {: .text-center }
 ![Small baby celebrates with a fist pump.](https://media.giphy.com/media/6brH8dM3zeMyA/giphy.gif)
@@ -50,7 +50,7 @@ If you want to read more about productivity systems, I recommend:
 - Coraline's [low-friction task management system](https://github.com/coralineada/lftm) -- this is the system I've used for the last 2+ years
 
 ## Be an active learner
-Lucky for us, this is a class deeply rooted in **doing** things. So, while there's more reading to do when the class is delivered online, there's also a lot of putting that knowledge to use. When activities or quizzes are incorporated into the reading, do those as they arise; it's far better to do them along with the reading than trying to cram all the reading first.
+Lucky for us, this is a class deeply rooted in _doing_ things. So, while there's more reading to do when the class is delivered online, there's also a lot of putting that knowledge to use. When activities or quizzes are incorporated into the reading, do those as they arise; it's far better to do them along with the reading than trying to cram all the reading first.
 
 Other tips to get the most out of any readings:
 - Use the [Q-C-Q Worksheet](https://docs.google.com/document/d/1-nLkkIevl2CT39mvkKj42de9HOqmlMkhN1NNCzJTsaQ/copy?usp=sharing) to make reading more active and engaging.
@@ -76,7 +76,7 @@ Here are some that you can attempt to avoid that dreadful, regretful feeling in 
 - Read all material provided -- make sure you haven't prematurely closed a window or tab when there's more content underneath a quiz or graphic.
 - Break larger projects down into tasks you can achieve in smaller chunks of time. Legit, ask yourself, "Can I get this done in two hours?" (or less time) and, if the answer is no, break the task down into smaller tasks.
   - If you're struggling with this for any of the projects in this course, I'm happy to help.
-- Be **real** about the distractions when you're studying or working. Some are unavoidable -- if you're sharing living space with others, for example -- and some of our own doing (watching Netflix/YouTube while reading). I don't expect students to give that up entirely (I'm listening to music while writing this, tbh), but, when you're struggling or finding something challenging, take a step back and see what distractions you can eliminate to give yourself the best opportunity to understand the material or accomplish the task.
+- Be _real_ about the distractions when you're studying or working. Some are unavoidable -- if you're sharing living space with others, for example -- and some of our own doing (watching Netflix/YouTube while reading). I don't expect students to give that up entirely (I'm listening to music while writing this, tbh), but, when you're struggling or finding something challenging, take a step back and see what distractions you can eliminate to give yourself the best opportunity to understand the material or accomplish the task.
   - If this is something you struggle with a lot, you're not alone, and there's a variety of tools and strategies to try to help you out:
     - Some apps are preventative; [LeechBlock](https://www.proginosko.com/leechblock/), for example, is a browser extension that will block access to your distraction sites for a set window of time (for example, blocking YouTube for 45 mins)
     - Some apps reward you for completing periods of focus time, like [Forest](https://www.forestapp.cc/)

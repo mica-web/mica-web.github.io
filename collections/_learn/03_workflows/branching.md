@@ -13,7 +13,7 @@ issues: true
 
 # {{ page.topic }}
 
-When you create a new repo in git, a branch named **master** is created; you don't have to do anything to gain this, it is done automatically for you.
+When you create a new repo in git, a branch named <b>master</b> is created; you don't have to do anything to gain this, it is done automatically for you.
 
 {: .callout }
 You may have noticed this info when you ran `git status` commands; you usually receive some output back that tells you what branch you're currently working on.
@@ -25,20 +25,20 @@ Instead, when you collaborate with others, you want to create a copy of this mas
 <span class="emoji">🤔</span> That was a lotta words and all of them may not yet make sense. Let's walk through the process step by step.
 
 {: .callout }
-<span class="emoji">💡</span> While there are references to specific commands in the following text, this is just informational at this point. You are **not** meant to be following along and running these commands.
+<span class="emoji">💡</span> While there are references to specific commands in the following text, this is just informational at this point. You are _not_ meant to be following along and running these commands.
 
 ## Step 1
-To create a copy of the master branch to work from, type `git checkout -b new-branch` in your Glitch Console and press **Enter**.
+To create a copy of the master branch to work from, type `git checkout -b new-branch` in your Glitch Console and press <kbd>Enter</kbd>.
 
 {: .text-center }
 ![]({{ ip | append: 'branching01.png' }})
 
 This command does a couple of things:
-1. It creates a copy of the **master** branch named **new-branch**. This copy includes all your commits to date.
-1. It switches your working branch from **master** to **new-branch**.
+1. It creates a copy of the <b>master</b> branch named <b>new-branch</b>. This copy includes all your commits to date.
+1. It switches your working branch from <b>master</b> to <b>new-branch</b>.
 
 {: .callout }
-The name **new-branch** is for demonstration purposes only. Usually, you would want to name your branch something related to what changes you plan on making to your project. **Branch names should be all lowercase and cannot have spaces in them.**
+The name <b>new-branch</b> is for demonstration purposes only. Usually, you would want to name your branch something related to what changes you plan on making to your project. **Branch names should be all lowercase and cannot have spaces in them.**
 
 You can view the effects of this by typing `git branch` in the console; the output will be a list of your current branches with an asterisk marking the branch you're currently working on.
 
@@ -57,7 +57,7 @@ Just like a commit is a group of changes to files that are related, a branch is 
 ### Why use branches?
 If the only change you're making to a web project is updating a couple of sentences or fixing a broken link, this process likely feels like overkill.
 
-However, if you had a single page site with very little content and were going to redo that site to have more content and multiple pages, it's unlikely you'd want to do all that work in a single commit. Also, it would be helpful to view **all the changes** related to this update in one group. Using git branches gets you all that.
+However, if you had a single page site with very little content and were going to redo that site to have more content and multiple pages, it's unlikely you'd want to do all that work in a single commit. Also, it would be helpful to view _all the changes_ related to this update in one group. Using git branches gets you all that.
 
 {: .text-center }
 ![Example of a single-page web page about my cat and an update to a more complex site.]({{ ip | append: 'example-project.png' }})
@@ -74,7 +74,7 @@ At any time, you can switch between your branches via the `checkout` command.
 It's not uncommon during my workday for me to be switching between multiple branches, both to add to my own work but also to review the work of my colleagues on their branches. For your work this semester, you will likely only need your current working branch and the master branch.
 
 ## Step 2
-To date, there has been no pushing/pulling, so GitHub doesn't yet know about your new branch. At any point, you can push your new branch up to GitHub; you **do not** need to wait until your project or work is complete.
+To date, there has been no pushing/pulling, so GitHub doesn't yet know about your new branch. At any point, you can push your new branch up to GitHub; you _do not_ need to wait until your project or work is complete.
 
 To push your new branch up to GitHub, use the following command:
 
@@ -92,10 +92,10 @@ Clicking that button will open a blank pull request template for you and, clicki
 
 ![Screenshot of a new pull request on GitHub.com]({{ ip | append: 'pull-request02.png' }})
 
-You can update your pull request info at any point **and** it will continue to update with any new commits you make to your working branch, so it's absolutely fine to create the pull request when you start a new project.
+You can update your pull request info at any point _and_ it will continue to update with any new commits you make to your working branch, so it's absolutely fine to create the pull request when you start a new project.
 
 ## Step 3
-When the changes on your working branch are all complete and have been tested and reviewed, git also has a simple process for taking all the commits you made on your working branch and reintroducing them back to master; this is called **merging**.
+When the changes on your working branch are all complete and have been tested and reviewed, git also has a simple process for taking all the commits you made on your working branch and reintroducing them back to master; this is called <b>merging</b>.
 
 {: .text-center }
 ![]({{ ip | append: 'branching03.png' }})
@@ -104,17 +104,17 @@ To merge your work, you must:
 1. Switch to the master branch via `git checkout master`.
 1. Perform the merge via `git merge new-branch`.
 
-Now all the changes you made as part of **new-branch** are part of **master**. <span class="emoji">🎉</span>
+Now all the changes you made as part of <b>new-branch</b> are part of <b>master</b>. <span class="emoji">🎉</span>
 
 {: .callout }
-For any of your graded projects this semester, you should never merge back to master until **after** I have reviewed and graded your work. I will always specifically call out when you should do a merge.
+For any of your graded projects this semester, you should never merge back to master until _after_ I have reviewed and graded your work. I will always specifically call out when you should do a merge.
 
 It is also possible to merge your code via the GitHub UI, and we will walk through that process after you've completed Project 01.
 
 ## Summary of commands
 - `git status` provides an output of information, including your current branch name and details about any changes you've made
-- `git checkout -b new-branch` creates a new branch (with the name **new-branch** or whatever you write here) and switches to that branch immediately
+- `git checkout -b new-branch` creates a new branch (with the name <b>new-branch</b> or whatever you write here) and switches to that branch immediately
 - `git branch` displays a list of your branches and identifies your current branch with an asterisk
-- `git push gh new-branch` pushes the named branch with all its current changes to a remote repo (in this case, a remote named **gh** for GitHub)
+- `git push gh new-branch` pushes the named branch with all its current changes to a remote repo (in this case, a remote named <b>gh</b> for GitHub)
 - `git checkout master` switches between branches (in this case, from your current branch to the master branch)
-- `git merge new-branch` merges the changes from the named branch (in this case **new-branch**) to whichever branch you are currently on
+- `git merge new-branch` merges the changes from the named branch (in this case <b>new-branch</b>) to whichever branch you are currently on

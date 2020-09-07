@@ -1,6 +1,6 @@
-Have you ever read an assignment and, as you reached the final paragraph, struggled to remember **any** worthwhile details about what you just read? <span class="emoji">🙈</span> It's a familiar and frustrating problem, to be sure.
+Have you ever read an assignment and, as you reached the final paragraph, struggled to remember _any_ worthwhile details about what you just read? <span class="emoji">🙈</span> It's a familiar and frustrating problem, to be sure.
 
-It helps to have some active questions in mind to engage you while reading, so I ask students to bring their **Quotations-Comments-Questions** (or Q-C-Q, for short) in response to any class readings. As you read any articles assigned as part of this course, be prepared to take notes and jot down quotes from the article that feel important to you. Then, use that note taking as an opportunity to ask yourself some additional questions:
+It helps to have some active questions in mind to engage you while reading, so I ask students to bring their <b>Quotations-Comments-Questions</b> (or Q-C-Q, for short) in response to any class readings. As you read any articles assigned as part of this course, be prepared to take notes and jot down quotes from the article that feel important to you. Then, use that note taking as an opportunity to ask yourself some additional questions:
 
 - Why does this seem significant?
 - What does this make you think of?

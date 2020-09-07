@@ -27,4 +27,4 @@ issues: true
   - Length of addendum:  Roughly 200 words
   - Format:  Google Doc or PDF
   - File name: **Please** use your first initial and last name to name your file (for example: `aweger`)
-  - How to submit: Add your file to the **history** folder inside our [shared GD2 Activities folder in Google Drive](https://drive.google.com/drive/folders/1XJltwb_lotlD5PuPlQKy8FEZIsAkuAEX?usp=sharing){:target="_blank"} (message me in Slack if you don't have access)
+  - How to submit: Add your file to the <b>history</b> folder inside our [shared GD2 Activities folder in Google Drive](https://drive.google.com/drive/folders/1XJltwb_lotlD5PuPlQKy8FEZIsAkuAEX?usp=sharing){:target="_blank"} (message me in Slack if you don't have access)

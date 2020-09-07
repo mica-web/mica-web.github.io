@@ -39,7 +39,7 @@ You will design a one-page web site advertising an upcoming design conference.
 
 ## Requirements
 - The design should be responsive, working on mobile devices as small as 375px wide and other devices up to 1280px wide.
-- The site **must** be a one-page site. Do not create individual pages for any required or additional content.
+- The site _must_ be a one-page site. Do not create individual pages for any required or additional content.
 - The design must include:
   - Event name
   - In-page navigation
@@ -47,12 +47,12 @@ You will design a one-page web site advertising an upcoming design conference.
   - Details for at least three talks (including talk name and description)
   - Three speaker bios (including a photo)
   - Call to action and link to buy tickets
-- Your code **must** include:
+- Your code _must_ include:
   - The following HTML elements: `header`, `main`, `footer`, `h1`, `img`, `a`
   - At least two media queries
   - At least two CSS variables
-- Your CSS **must** be written mobile first.
-- The content for your speaker bios and talk descriptions does **not** need to be original. You may use content from an existing event, but you must document the source in an HTML comment in each instance.
+- Your CSS _must_ be written mobile first.
+- The content for your speaker bios and talk descriptions does _not_ need to be original. You may use content from an existing event, but you must document the source in an HTML comment in each instance.
 - As always, you must document all the resources used in your final design, including text/copy, images, fonts, patterns, etc. You can do this either in an HTML comment at the end of your HTML file or in your PR description.
 - 💡As this is your final project for the semester, this should be a summary of what you have learned to date about designing for the web, including: writing HTML and CSS according to best practices, your knowledge of CSS layout, incorporating animation/interactivity in your designs, utilizing CSS variables, etc.
 

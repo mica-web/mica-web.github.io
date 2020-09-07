@@ -40,30 +40,30 @@ There are even likely to be folders inside your project, for example, an "images
 
 Git allows you to track changes on these files -- their content as well as their names and organization.
 
-Additionally, while saving a file only affects individual files, git introduces a concept called a **commit** which allows you to save a group of changes across files along with notes (called a **commit message**) about those changes.
+Additionally, while saving a file only affects individual files, git introduces a concept called a <b>commit</b> which allows you to save a group of changes across files along with notes (called a <b>commit message</b>) about those changes.
 
-In this way, when you add a new image file to your web project and then reference it in the HTML document, both changes can be tracked as a unit as a **commit**.
+In this way, when you add a new image file to your web project and then reference it in the HTML document, both changes can be tracked as a unit as a <b>commit</b>.
 
 ## Getting started with git
 
 {: .callout }
-<span class="emoji">💡</span> While there are references to specific commands in the following text, this is just informational at this point. You are **not** meant to be following along and running these commands.
+<span class="emoji">💡</span> While there are references to specific commands in the following text, this is just informational at this point. You are _not_ meant to be following along and running these commands.
 
-In order to use git in a project, you first need to run a command to tell git to start paying attention to your project. Running the command `git init` inside your project folder on the command line **initializes** git in your project.
+In order to use git in a project, you first need to run a command to tell git to start paying attention to your project. Running the command `git init` inside your project folder on the command line _initializes_ git in your project.
 
 While nothing changes visually in your project folder after running this command, there are some git concepts that have now been added:
 
 {: .text-center }
 ![]({{ ip | append: 'git02.png' }})
 
-- the **working directory** is your project folder with all your current work
-- the **staging area** is a holding cell for changes you're going to commit to your repo
-- the **repository** is your current work, plus the entire git history of your commits and any alternate versions you may have created along the way
+- the <b>working directory</b> is your project folder with all your current work
+- the <b>staging area</b> is a holding cell for changes you're going to commit to your repo
+- the <b>repository</b> is your current work, plus the entire git history of your commits and any alternate versions you may have created along the way
 
 {: .callout }
-The staging area and repo are **not** ever visible in your project folder -- they're entirely conceptual. You need to use the command line or another tool (like VS Code or [GitHub Desktop](https://desktop.github.com/)) to be able to see these changes.
+The staging area and repo are _not_ ever visible in your project folder -- they're entirely conceptual. You need to use the command line or another tool (like VS Code or [GitHub Desktop](https://desktop.github.com/)) to be able to see these changes.
 
-If it helps, imagine that the **repo** is a storage unit and the **working directory** is your house or apartment. The **staging area** is the boxes you put your stuff in to designate that you're going to take it off to the storage unit. You can move stuff in and out of those boxes as much as you like before **committing** (see what I did there?) to the storage unit.
+If it helps, imagine that the <b>repo</b> is a storage unit and the <b>working directory</b> is your house or apartment. The <b>staging area</b> is the boxes you put your stuff in to designate that you're going to take it off to the storage unit. You can move stuff in and out of those boxes as much as you like before _committing_ (see what I did there?) to the storage unit.
 
 As you work on or add files in your working directory, you save them as you normally would. When you have completed a task or a group of work that you want to commit, you add those updated files to the staging area. The command to do this is `git add`.
 
@@ -108,7 +108,7 @@ The commands `git push` and `git pull` are what move your files back and forth b
 {: .text-center }
 ![The pull command comes from GitHub to your computer and the push command goes in the opposite direction.]({{ ip | append: 'push-pull.png' }})
 
-This is, admittedly, a lot of typing to accomplish things, but it will definitely get easier and make more sense through repetition. If you have questions about any of these concepts, feel free to ask in the **#general** Slack channel or get in touch with me via DM.
+This is, admittedly, a lot of typing to accomplish things, but it will definitely get easier and make more sense through repetition. If you have questions about any of these concepts, feel free to ask in the <b>#general</b> Slack channel or get in touch with me via DM.
 
 ## Summary of commands
 - `git init` creates a new git repo; **you will not need to do this in any of your Glitch projects**, as it has already been done for you

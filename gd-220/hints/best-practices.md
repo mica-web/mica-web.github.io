@@ -14,7 +14,7 @@ Best practices checklist
 - HTML is indented to enhance readability
 - HTML is lowercase (valid exceptions: filenames)
 - Double quotes are used around attributes (e.g., `href="https://mica.edu"`, `class="class-name"`)
-- Self-closing elements do **not** include a closing slash (e.g., `img`)
+- Self-closing elements do _not_ include a closing slash (e.g., `img`)
 - Markup makes use of semantic elements and avoids `div`-itis
 - A proper HTML5 `doctype` is set
 - The HTML head includes a proper `title`
@@ -32,9 +32,9 @@ Best practices checklist
 - All floats are properly cleared
 - Selectors are either bare elements or classnames (IDs are avoided)
 - Classnames are helpful and written kebab-style (i.e., using hyphens)
-- CSS does **not** reiterate browser defaults
+- CSS does _not_ reiterate browser defaults
 - CSS is not written in such a way that it is immediately overwritten by other declarations
 - Color values are used logically and consistently (e.g., hex and hsl values aren't mixed)
 - Units are used logically and consistently
-- Zero measurements do **not** include units
+- Zero measurements do _not_ include units
 - CSS is error free

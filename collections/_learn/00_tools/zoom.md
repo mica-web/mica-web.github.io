@@ -14,9 +14,9 @@ issues: true
 
 # {{ page.topic }}
 
-All our sync-up meetings will be via [Zoom](https://zoom.us/). You do **not** need to install anything to use Zoom, but the meeting security restrictions **will require you [sign up for a Zoom account](https://zoom.us/signup)**.
+All our sync-up meetings will be via [Zoom](https://zoom.us/). You do _not_ need to install anything to use Zoom, but the meeting security restrictions **will require you [sign up for a Zoom account](https://zoom.us/signup)**.
 
-It's optional to [install the Zoom app](https://zoom.us/download), but it definitely offers a better experience, so I recommend doing so. If you're installing Zoom on your laptop or desktop computer, you want to download the **Zoom Client for Meetings**:
+It's optional to [install the Zoom app](https://zoom.us/download), but it definitely offers a better experience, so I recommend doing so. If you're installing Zoom on your laptop or desktop computer, you want to download the <b>Zoom Client for Meetings</b>:
 
 [![Screenshot of the download section for the Zoom Client for Meetings.]({{ ip | append: 'zoom_desktop.png' }})](https://zoom.us/download){: .u-link-reset }
 
@@ -24,13 +24,13 @@ Alternately, you can also install Zoom on iOS and Android devices:
 
 [![Screenshot of the download section for the Zoom Mobile Apps.]({{ ip | append: 'zoom_apps.png' }})](https://zoom.us/download){: .u-link-reset }
 
-All our meetings will also be accessible via the [Zoom web client](https://support.zoom.us/hc/en-us/articles/214629443){% include optional.html %} which does **not** require you to install any additional software.
+All our meetings will also be accessible via the [Zoom web client](https://support.zoom.us/hc/en-us/articles/214629443){% include optional.html %} which does _not_ require you to install any additional software.
 
 ## Zoom meeting expectations
 - When setting up your [Zoom profile](https://zoom.us/profile), please use your preferred name and a photo that matches your Slack account.
-- I consider video to be <span class="emoji">💯</span> **optional** during our class meetings; I know not everyone has the bandwidth or the comfort to be on video.
+- I consider video to be <span class="emoji">💯</span> _optional_ during our class meetings; I know not everyone has the bandwidth or the comfort to be on video.
 - Video, audio and Zoom chat are all valid ways to participate in our meetings; please use whichever is comfortable for you.
-- I also encourage you to get familiar with and use Zoom's [nonverbal feedback icons](https://support.zoom.us/hc/en-us/articles/115001286183#h_50523139-7bac-403b-9c59-1755ada65ad9) (see the section under **Providing nonverbal feedback during meetings (participants)**).
+- I also encourage you to get familiar with and use Zoom's [nonverbal feedback icons](https://support.zoom.us/hc/en-us/articles/115001286183#h_50523139-7bac-403b-9c59-1755ada65ad9) (see the section under <b>Providing nonverbal feedback during meetings (participants)</b>).
 
 {: .text-center }
 [![Screenshot of the participation icons in the Zoom user interface.]({{ ip | append: 'zoom-icons.png' }})](https://support.zoom.us/hc/en-us/articles/115001286183#h_50523139-7bac-403b-9c59-1755ada65ad9){: .u-link-reset }

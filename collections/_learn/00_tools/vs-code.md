@@ -29,14 +29,14 @@ After you've downloaded and installed VS Code, open it up and make sure the inst
 ### Get familiar with your text editor
 Before going further, it will help to learn about it about the user interface of VS Code. You can either:
 
-- read this [intro to the VS Code user interface](https://code.visualstudio.com/docs/getstarted/userinterface); you don't need to read the whole thing and can stop when you finish the section titled **Preview mode**.
+- read this [intro to the VS Code user interface](https://code.visualstudio.com/docs/getstarted/userinterface); you don't need to read the whole thing and can stop when you finish the section titled <b>Preview mode</b>
 - watch a walkthrough of the user interface in this 5-min video by Ornella, a member of the VS Code team:
 
 <div class="embed-wrapper">
   <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/S320N3sxinE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-After you complete the interface walkthrough, go back to your copy of VS Code and poke around a bit. I especially recommend clicking through the different icons on the **Activity Bar** so you start to explore what they offer and how they change what's visible in the app.
+After you complete the interface walkthrough, go back to your copy of VS Code and poke around a bit. I especially recommend clicking through the different icons on the <b>Activity Bar</b> so you start to explore what they offer and how they change what's visible in the app.
 
 {% include quiz.html
   title="Share What You've Learned"
@@ -47,8 +47,8 @@ After you complete the interface walkthrough, go back to your copy of VS Code an
 Before working on any demos or projects, let's set some sensible defaults. VS Code has an immense number of settings you can configure, but we're going to start with just two.
 
 How you access settings depends on your OS:
-- On Windows/Linux - **File > Preferences > Settings**
-- On macOS - **Code > Preferences > Settings**
+- On Windows/Linux - <b>File > Preferences > Settings</b>
+- On macOS - <b>Code > Preferences > Settings</b>
 
 Want extra help or to learn more? See the [instructions here](https://code.visualstudio.com/docs/getstarted/settings#_creating-user-and-workspace-settings).
 
@@ -73,14 +73,14 @@ After you've made these two changes, you can close your Settings; it will automa
 ## Customizing your text editor
 <span class="emoji">👀</span> Your VS Code will very likely not match mine exactly in terms of colors, icons and some other details. One of the other benefits of text editors is that they are often very **extensible**, which means you can add to or modify them with plugins or other code.
 
-In VS Code, these are called **extensions**. You can browse and install extensions from inside the app by using the  
+In VS Code, these are called <b>extensions</b>. You can browse and install extensions from inside the app by using the  
 
-To get you started customizing VS Code, I've created a [pack of recommended extensions](https://marketplace.visualstudio.com/items?itemName=angeliquejw.mica-web), which you can find by clicking the Extensions icon in the Activity Bar and searching for "MICA." You should see a result titled **MICA GD Pack** and, if you click on that result, it will take you to a description page for the extension pack.
+To get you started customizing VS Code, I've created a [pack of recommended extensions](https://marketplace.visualstudio.com/items?itemName=angeliquejw.mica-web), which you can find by clicking the Extensions icon in the Activity Bar and searching for "MICA." You should see a result titled <b>MICA GD Pack</b> and, if you click on that result, it will take you to a description page for the extension pack.
 
 ![Screenshot of the MICA GD Pack extension from inside of VS Code with the Extensions icon identified.]({{ ip | append: 'mica-web-ext.png' }})
 
-Clicking the **Install** button will add all the extensions in this pack to your copy of VS Code.
+Clicking the <b>Install</b> button will add all the extensions in this pack to your copy of VS Code.
 
-There are seven extensions included in this pack; please read the descriptions for each one and post any questions you have about how they work or what benefit they provide in the **#general** Slack channel.
+There are seven extensions included in this pack; please read the descriptions for each one and post any questions you have about how they work or what benefit they provide in the <b>#general</b> Slack channel.
 
 After you've done that, have fun exploring VS Code's [color themes](https://code.visualstudio.com/docs/getstarted/themes). Note that there are a handful of default themes included in the core app, but many more are available as extensions.

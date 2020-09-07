@@ -17,7 +17,7 @@ issues: true
 %}
 
 ## Introduction
-Modern web browsers -- Google Chrome, Mozilla Firefox and Microsoft Edge -- are considered **evergreen browsers**. This means that these browsers automatically update so users are always running the latest version.
+Modern web browsers -- Google Chrome, Mozilla Firefox and Microsoft Edge -- are considered <b>evergreen browsers</b>. This means that these browsers automatically update so users are always running the latest version.
 
 This data is the worldwide usage of browsers by version number for the last year and shows how each new version of Chrome overtakes the last, in part because there's no effort on the part of users to switch to the latest version:
 

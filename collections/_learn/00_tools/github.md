@@ -18,7 +18,7 @@ Unlike [Glitch]({% link _learn/00_tools/glitch.md %}), GitHub doesn't make your 
 ## Getting Started
 Go to the [GitHub homepage to sign up](https://github.com/).
 
-You **do not** need to pay for your GitHub account. The free level will work just fine for this purposes of this course.
+You _do not_ need to pay for your GitHub account. The free level will work just fine for this purposes of this course.
 
 {: .callout }
 Want to see detailed screenshots of the sign up process? [View this walkthrough on wikiHow](https://www.wikihow.com/Create-an-Account-on-GitHub).

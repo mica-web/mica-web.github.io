@@ -13,9 +13,9 @@ issues: true
 
 # {{ page.topic }}
 
-**HTML** stands for **Hypertext Markup Language**, and all the pages you browse when using the web are HTML documents.
+<b>HTML</b> stands for <b>Hypertext Markup Language</b>, and all the pages you browse when using the web are HTML documents.
 
-Read MDN's [Getting started with HTML](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started){% include estimate.html time=18 %} and do each of the activities embedded in that page. You are **not** required to follow any of the links in that content or read any additional pages.
+Read MDN's [Getting started with HTML](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started){% include estimate.html time=18 %} and do each of the activities embedded in that page. You are _not_ required to follow any of the links in that content or read any additional pages.
 
 When you get to the activity titled "Active learning: Adding some features to an HTML document," instead of working on your local computer, remix [this Glitch project](https://glitch.com/edit/#!/html-active-learning) instead.
 

@@ -24,8 +24,8 @@ HTML
 - HTML is lowercase (valid exceptions: filenames)
 - HTML is indented to enhance readability
 - Double quotes are used around attributes
-- Self-closing elements do **not** include a closing slash
-- Boolean attributes do **not** include values
+- Self-closing elements do _not_ include a closing slash
+- Boolean attributes do _not_ include values
 - A proper HTML5 `doctype` is set
 - The `head` includes the following:
   - `charset`
@@ -54,8 +54,8 @@ CSS
   - Classnames are written kebab-style and according to [BEM guidelines](https://en.bem.info/methodology/key-concepts/)
   - Selectors are not overly specific and avoid making assumptions about the markup
 - Empty `div`s are avoided for presentation
-- CSS does **not** reiterate browser defaults
+- CSS does _not_ reiterate browser defaults
 - CSS is not written in such a way that it is immediately overwritten by other declarations
   - Including misusing shorthand properties
 - Units are used logically and consistently
-  - Zero measurements do **not** include units
+  - Zero measurements do _not_ include units
