@@ -23,7 +23,7 @@ Headline: Every Designer In This World. Followed by a series of icons of PhotoSh
 While a familiar scenario, we can do better than this, and version control helps us do exactly that.
 
 {: .callout }
-The content on this page assumes you have already read [Git and GitHub in Plain English](https://blog.red-badger.com/2016/11/29/gitgithub-in-plain-english) and uses vocabulary defined in that reading.
+The content on this page assumes you have either used git and GitHub previously _or_ have already read [Git and GitHub in Plain English](https://blog.red-badger.com/2016/11/29/gitgithub-in-plain-english) and uses vocabulary defined in that reading.
 
 ## Git basics
 
