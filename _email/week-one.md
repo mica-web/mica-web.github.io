@@ -15,7 +15,7 @@ This Thursday, there will be two 60-minute sessions for our sync up; you only ne
   - starting at 7:45pm Eastern (see in your time zone: https://everytimezone.com/s/71b83168)
   - Zoom link: https://mica-edu.zoom.us/j/93154070591?pwd=WGwwUVlzMHlXZFN5N3VxMjlKWlFPZz09
 
-I will include a poll in the #gd2 channel in Slack to find out which session you'll be joining, and you can let me know via DM if neither of these times work for you.
+I will include a poll in the #gd2 Slack channel to find out which session you'll be joining, and you can let me know via DM if neither of these times work for you.
 
 Please let me know if you have any questions about the info I've shared so far, the course web site or my plans for Thursday. I'm happy to answer any of your questions via Slack 👍🏻
 
@@ -44,7 +44,7 @@ This Thursday, there will be two 60-minute sessions for our sync up; you only ne
   - starting at 9pm Eastern (see in your time zone: https://everytimezone.com/s/0062e9c7)
   - Zoom link: https://mica-edu.zoom.us/j/91963113476?pwd=YVdJUDRsODdDSXArS1pRQlQxVFRpZz09
 
-I will include a poll in the #gd431 channel in Slack to find out which session you'll be joining, and you can let me know via DM if neither of these times work for you.
+I will include a poll in the #gd431 Slack channel to find out which session you'll be joining, and you can let me know via DM if neither of these times work for you.
 
 Please let me know if you have any questions about the info I've shared so far, the course web site or my plans for Thursday. I'm happy to answer any of your questions via Slack 👍🏻
 
