@@ -22,7 +22,7 @@ Demonstrate your understanding of basic HTML and CSS, specifically as it pertain
 1. Follow the [setup instructions]({% link gd-220/projects/project01/setup.md %})
 1. Use your current knowledge of HTML to add markup to the [copy provided](https://gist.githubusercontent.com/angeliquejw/0c2727ac5c065350565112216b3f7f0b/raw/b1d087a6acd37814f901f2de439ef2facc85a0f2/on-paper.txt){:target="_blank"}.
 1. Do some research into web typography.
-  - Share at least one link about web typography in the [#gd2 channel](https://mica-web.slack.com). Explain why you think this resource is useful in 1-2 sentences.
+  - Share at least one link about web typography in the <b>#gd2</b> Slack channel. Explain why you think this resource is useful in 1-2 sentences.
 1. Update project markup based on current knowledge of HTML and add CSS.
 1. Present project to colleagues.
 1. Create a pull request for code review and final submission.
