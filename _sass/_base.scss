@@ -112,6 +112,10 @@ em {
   }
 }
 
+em.text-italic {
+  @include font-grotesk($weight:'Regular');
+}
+
 img {
   height: auto;
   max-width: 100%;
