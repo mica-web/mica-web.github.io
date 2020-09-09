@@ -73,7 +73,7 @@ After you've made these two changes, you can close your Settings; it will automa
 ## Customizing your text editor
 <span class="emoji">👀</span> Your VS Code will very likely not match mine exactly in terms of colors, icons and some other details. One of the other benefits of text editors is that they are often very **extensible**, which means you can add to or modify them with plugins or other code.
 
-In VS Code, these are called **extensions**. You can browse and install extensions from inside the app by using the  
+In VS Code, these are called **extensions**. You can browse and install extensions from inside the app by using the Activity Bar.  
 
 To get you started customizing VS Code, I've created a [pack of recommended extensions](https://marketplace.visualstudio.com/items?itemName=angeliquejw.mica-web), which you can find by clicking the Extensions icon in the Activity Bar and searching for "MICA." You should see a result titled **MICA GD Pack** and, if you click on that result, it will take you to a description page for the extension pack.
 
