@@ -1,7 +1,4 @@
 {% assign currentdate = 'now' | date: "%Y-%m-%d" %}
-{% comment %}
-%  assign currentdate = '2020-09-03' | date: "%Y-%m-%d" %
-{% endcomment %}
 {% assign startdate = '2020-09-03' | date: "%Y-%m-%d" %}
 
 {% if (currentdate <= startdate) %}
