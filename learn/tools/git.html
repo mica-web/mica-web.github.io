@@ -103,7 +103,7 @@
 
 
 
-<p class="text-faded reading-est">5 min read</p>
+<p class="text-faded reading-est">6 min read</p>
 
     
     
@@ -114,9 +114,7 @@
   <main>
     
     
-<h1 id="git-draft-in-progress">Git (draft in progress)</h1>
-
-<p class="wip-wrapper"><img src="https://media.giphy.com/media/SwP1HunIXetehTvy43/giphy.gif" alt="This page is a work in progress" /></p>
+<h1 id="git">Git</h1>
 
 <p class="text-center"><img src="/learn/00_tools/img/git/wo_git.png" alt="A meme about naming PhotoShop files." aria-describedby="wo-git" /></p>
 
@@ -124,7 +122,7 @@
 
 <p>While a familiar scenario, we can do better than this, and version control helps us do exactly that.</p>
 
-<p class="callout">The content on this page assumes you have already read <a href="https://blog.red-badger.com/2016/11/29/gitgithub-in-plain-english">Git and GitHub in Plain English</a> and uses vocabulary defined in that reading.</p>
+<p class="callout">The content on this page assumes you have either used git and GitHub previously <em>or</em> have already read <a href="https://blog.red-badger.com/2016/11/29/gitgithub-in-plain-english">Git and GitHub in Plain English</a> and uses vocabulary defined in that reading.</p>
 
 <h2 id="git-basics">Git basics</h2>
 
@@ -142,29 +140,29 @@
 
 <p>Git allows you to track changes on these files – their content as well as their names and organization.</p>
 
-<p>Additionally, while saving a file only affects individual files, git introduces a concept called a <strong>commit</strong> which allows you to save a group of changes across files along with notes (called a <strong>commit message</strong>) about those changes.</p>
+<p>Additionally, while saving a file only affects individual files, git introduces a concept called a <b>commit</b> which allows you to save a group of changes across files along with notes (called a <b>commit message</b>) about those changes.</p>
 
-<p>In this way, when you add a new image file to your web project and then reference it in the HTML document, both changes can be tracked as a unit as a <strong>commit</strong>.</p>
+<p>In this way, when you add a new image file to your web project and then reference it in the HTML document, both changes can be tracked as a unit as a <b>commit</b>.</p>
 
 <h2 id="getting-started-with-git">Getting started with git</h2>
 
-<p class="callout"><span class="emoji">💡</span> While there are references to specific commands in the following text, this is just informational at this point. You are <strong>not</strong> meant to be following along and running these commands.</p>
+<p class="callout"><span class="emoji">💡</span> While there are references to specific commands in the following text, this is just informational at this point. You are <em>not</em> meant to be following along and running these commands.</p>
 
-<p>In order to use git in a project, you first need to run a command to tell git to start paying attention to your project. Running the command <code class="language-plaintext highlighter-rouge">git init</code> inside your project folder on the command line <strong>initializes</strong> git in your project.</p>
+<p>In order to use git in a project, you first need to run a command to tell git to start paying attention to your project. Running the command <code class="language-plaintext highlighter-rouge">git init</code> inside your project folder on the command line <em>initializes</em> git in your project.</p>
 
 <p>While nothing changes visually in your project folder after running this command, there are some git concepts that have now been added:</p>
 
 <p class="text-center"><img src="/learn/00_tools/img/git/git02.png" alt="" /></p>
 
 <ul>
-  <li>the <strong>working directory</strong> is your project folder with all your current work</li>
-  <li>the <strong>staging area</strong> is a holding cell for changes you’re going to commit to your repo</li>
-  <li>the <strong>repository</strong> is your current work, plus the entire git history of your commits and any alternate versions you may have created along the way</li>
+  <li>the <b>working directory</b> is your project folder with all your current work</li>
+  <li>the <b>staging area</b> is a holding cell for changes you’re going to commit to your repo</li>
+  <li>the <b>repository</b> is your current work, plus the entire git history of your commits and any alternate versions you may have created along the way</li>
 </ul>
 
-<p class="callout">The staging area and repo are <strong>not</strong> ever visible in your project folder – they’re entirely conceptual. You need to use the command line or another tool (like VS Code or <a href="https://desktop.github.com/">GitHub Desktop</a>) to be able to see these changes.</p>
+<p class="callout">The staging area and repo are <em>not</em> ever visible in your project folder – they’re entirely conceptual. You need to use the command line or another tool (like VS Code or <a href="https://desktop.github.com/">GitHub Desktop</a>) to be able to see these changes.</p>
 
-<p>If it helps, imagine that the <strong>repo</strong> is a storage unit and the <strong>working directory</strong> is your house or apartment. The <strong>staging area</strong> is the boxes you put your stuff in to designate that you’re going to take it off to the storage unit. You can move stuff in and out of those boxes as much as you like before <strong>committing</strong> (see what I did there?) to the storage unit.</p>
+<p>If it helps, imagine that the <b>repo</b> is a storage unit and the <b>working directory</b> is your house or apartment. The <b>staging area</b> is the boxes you put your stuff in to designate that you’re going to take it off to the storage unit. You can move stuff in and out of those boxes as much as you like before <em>committing</em> (see what I did there?) to the storage unit.</p>
 
 <p>As you work on or add files in your working directory, you save them as you normally would. When you have completed a task or a group of work that you want to commit, you add those updated files to the staging area. The command to do this is <code class="language-plaintext highlighter-rouge">git add</code>.</p>
 
@@ -194,6 +192,7 @@
 
 <p class="callout">Thinking in terms of commits and chunks of work will also help you organize your time this semester. It’s difficult to sit down to a project with the goal of “finish project 1;” that goal is too broad and ill defined. Instead, if you think, “Today I’m going to get the fonts sorted for this project” – that’s much doable and is a perfect chunk of work for a commit.</p>
 
+<!-- Git 1 -->
 <div class="quiz-wrapper">
   <header class="quiz-header">
     <h2 class="quiz-heading">Share What You've Learned</h2>
@@ -234,7 +233,17 @@
 
 <p class="text-center"><img src="/learn/00_tools/img/git/push-pull.png" alt="The pull command comes from GitHub to your computer and the push command goes in the opposite direction." /></p>
 
-<p>This is, admittedly, a lot of typing to accomplish things, but it will definitely get easier and make more sense through repetition. If you have questions about any of these concepts, feel free to ask in the <strong>#general</strong> Slack channel or get in touch with me via DM.</p>
+<p>This is, admittedly, a lot of typing to accomplish things, but it will definitely get easier and make more sense through repetition. If you have questions about any of these concepts, feel free to ask in the <b>#general</b> Slack channel or get in touch with me via DM.</p>
+
+<h2 id="summary-of-commands">Summary of commands</h2>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">git init</code> creates a new git repo; <strong>you will not need to do this in any of your Glitch projects</strong>, as it has already been done for you</li>
+  <li><code class="language-plaintext highlighter-rouge">git status</code> provides an output of information, including your current branch name and details about any changes you’ve made</li>
+  <li><code class="language-plaintext highlighter-rouge">git add example.html</code> stages the changes from a single file (replace <code class="language-plaintext highlighter-rouge">example.html</code> with the actual filename)</li>
+  <li><code class="language-plaintext highlighter-rouge">git commit -m "Your message here"</code> will commit all the staged changes with the message you add between the double quotes (replacing “Your message here”)</li>
+  <li><code class="language-plaintext highlighter-rouge">git push</code> will send all the changes you’ve committed to to your GitHub repo</li>
+  <li><code class="language-plaintext highlighter-rouge">git pull</code> will bring any changes in your GitHub repo into your local repo</li>
+</ul>
 
     
     <footer class="feedback-footer">

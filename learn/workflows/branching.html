@@ -103,7 +103,7 @@
 
 
 
-<p class="text-faded reading-est">3 min read</p>
+<p class="text-faded reading-est">5 min read</p>
 
     
     
@@ -116,7 +116,7 @@
     
 <h1 id="git-branches">Git Branches</h1>
 
-<p>When you create a new repo in git, a branch named <strong>master</strong> is created; you don’t have to do anything to gain this, it is done automatically for you.</p>
+<p>When you create a new repo in git, a branch named <b>master</b> is created; you don’t have to do anything to gain this, it is done automatically for you.</p>
 
 <p class="callout">You may have noticed this info when you ran <code class="language-plaintext highlighter-rouge">git status</code> commands; you usually receive some output back that tells you what branch you’re currently working on.</p>
 
@@ -126,18 +126,20 @@
 
 <p><span class="emoji">🤔</span> That was a lotta words and all of them may not yet make sense. Let’s walk through the process step by step.</p>
 
+<p class="callout"><span class="emoji">💡</span> While there are references to specific commands in the following text, this is just informational at this point. You are <em>not</em> meant to be following along and running these commands.</p>
+
 <h2 id="step-1">Step 1</h2>
-<p>To create a copy of the master branch to work from, type <code class="language-plaintext highlighter-rouge">git checkout -b new-branch</code> in your Glitch Console and press <strong>Enter</strong>.</p>
+<p>To create a copy of the master branch to work from, type <code class="language-plaintext highlighter-rouge">git checkout -b new-branch</code> in your Glitch Console and press <kbd>Enter</kbd>.</p>
 
 <p class="text-center"><img src="/learn/03_workflows/img/branching01.png" alt="" /></p>
 
 <p>This command does a couple of things:</p>
 <ol>
-  <li>It creates a copy of the <strong>master</strong> branch named <strong>new-branch</strong>. This copy includes all your commits to date.</li>
-  <li>It switches your working branch from <strong>master</strong> to <strong>new-branch</strong>.</li>
+  <li>It creates a copy of the <b>master</b> branch named <b>new-branch</b>. This copy includes all your commits to date.</li>
+  <li>It switches your working branch from <b>master</b> to <b>new-branch</b>.</li>
 </ol>
 
-<p class="callout">The name <strong>new-branch</strong> is for demonstration purposes only. Usually, you would want to name your branch something related to what changes you plan on making to your project. <strong>Branch names should be all lowercase and cannot have spaces in them.</strong></p>
+<p class="callout">The name <b>new-branch</b> is for demonstration purposes only. Usually, you would want to name your branch something related to what changes you plan on making to your project. <strong>Branch names should be all lowercase and cannot have spaces in them.</strong></p>
 
 <p>You can view the effects of this by typing <code class="language-plaintext highlighter-rouge">git branch</code> in the console; the output will be a list of your current branches with an asterisk marking the branch you’re currently working on.</p>
 
@@ -154,7 +156,7 @@
 <h3 id="why-use-branches">Why use branches?</h3>
 <p>If the only change you’re making to a web project is updating a couple of sentences or fixing a broken link, this process likely feels like overkill.</p>
 
-<p>However, if you had a single page site with very little content and were going to redo that site to have more content and multiple pages, it’s unlikely you’d want to do all that work in a single commit. Also, it would be helpful to view <strong>all the changes</strong> related to this update in one group. Using git branches gets you all that.</p>
+<p>However, if you had a single page site with very little content and were going to redo that site to have more content and multiple pages, it’s unlikely you’d want to do all that work in a single commit. Also, it would be helpful to view <em>all the changes</em> related to this update in one group. Using git branches gets you all that.</p>
 
 <p class="text-center"><img src="/learn/03_workflows/img/example-project.png" alt="Example of a single-page web page about my cat and an update to a more complex site." /></p>
 
@@ -171,7 +173,30 @@
 <p class="callout">It’s not uncommon during my workday for me to be switching between multiple branches, both to add to my own work but also to review the work of my colleagues on their branches. For your work this semester, you will likely only need your current working branch and the master branch.</p>
 
 <h2 id="step-2">Step 2</h2>
-<p>When the changes on your working branch are all complete and have been tested and reviewed, git also has a simple process for taking all the commits you made on your working branch and reintroducing them back to master; this is called <strong>merging</strong>.</p>
+<p>To date, there has been no pushing/pulling, so GitHub doesn’t yet know about your new branch. At any point, you can push your new branch up to GitHub; you <em>do not</em> need to wait until your project or work is complete.</p>
+
+<p>To push your new branch up to GitHub, use the following command:</p>
+
+<p><code class="language-plaintext highlighter-rouge">git push gh new-branch</code>.</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">git push</code> is the command; just like you’ve done before</li>
+  <li><code class="language-plaintext highlighter-rouge">gh</code> is the name of your remote; we set this up back during week 01</li>
+  <li><code class="language-plaintext highlighter-rouge">new-branch</code> is the name of your branch</li>
+</ul>
+
+<p>After you do this push, if you go to your repo page on GitHub, you should see a banner asking if you want to make a pull request.</p>
+
+<p><img src="/learn/03_workflows/img/pull-request01.png" alt="Screenshot of repo homepage and the new button that says Compare &amp; Pull Request." /></p>
+
+<p>Clicking that button will open a blank pull request template for you and, clicking one more green button – this time: “Create pull request” – will actually create the pull request.</p>
+
+<p><img src="/learn/03_workflows/img/pull-request02.png" alt="Screenshot of a new pull request on GitHub.com" /></p>
+
+<p>You can update your pull request info at any point <em>and</em> it will continue to update with any new commits you make to your working branch, so it’s absolutely fine to create the pull request when you start a new project.</p>
+
+<h2 id="step-3">Step 3</h2>
+<p>When the changes on your working branch are all complete and have been tested and reviewed, git also has a simple process for taking all the commits you made on your working branch and reintroducing them back to master; this is called <b>merging</b>.</p>
 
 <p class="text-center"><img src="/learn/03_workflows/img/branching03.png" alt="" /></p>
 
@@ -181,11 +206,21 @@
   <li>Perform the merge via <code class="language-plaintext highlighter-rouge">git merge new-branch</code>.</li>
 </ol>
 
-<p>Now all the changes you made as part of <strong>new-branch</strong> are part of <strong>master</strong>. <span class="emoji">🎉</span></p>
+<p>Now all the changes you made as part of <b>new-branch</b> are part of <b>master</b>. <span class="emoji">🎉</span></p>
 
-<p class="callout">For any of your graded projects this semester, you should never merge back to master until <strong>after</strong> I have reviewed and graded your work. I will always specifically call out when you should do a merge.</p>
+<p class="callout">For any of your graded projects this semester, you should never merge back to master until <em>after</em> I have reviewed and graded your work. I will always specifically call out when you should do a merge.</p>
 
 <p>It is also possible to merge your code via the GitHub UI, and we will walk through that process after you’ve completed Project 01.</p>
+
+<h2 id="summary-of-commands">Summary of commands</h2>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">git status</code> provides an output of information, including your current branch name and details about any changes you’ve made</li>
+  <li><code class="language-plaintext highlighter-rouge">git checkout -b new-branch</code> creates a new branch (with the name <b>new-branch</b> or whatever you write here) and switches to that branch immediately</li>
+  <li><code class="language-plaintext highlighter-rouge">git branch</code> displays a list of your branches and identifies your current branch with an asterisk</li>
+  <li><code class="language-plaintext highlighter-rouge">git push gh new-branch</code> pushes the named branch with all its current changes to a remote repo (in this case, a remote named <b>gh</b> for GitHub)</li>
+  <li><code class="language-plaintext highlighter-rouge">git checkout master</code> switches between branches (in this case, from your current branch to the master branch)</li>
+  <li><code class="language-plaintext highlighter-rouge">git merge new-branch</code> merges the changes from the named branch (in this case <b>new-branch</b>) to whichever branch you are currently on</li>
+</ul>
 
     
     <footer class="feedback-footer">

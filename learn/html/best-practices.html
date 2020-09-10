@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="ie=edge" http-equiv="X-UA-Compatible">
+  <meta name="author" content="Angelique Weger" />
+  <meta name="Description" content="Curriculum, schedule and resources for web design.">
+  <link href="/css/style.css" rel="stylesheet">
+  
+  <link href="/css/syntax.css" rel="stylesheet">
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+  <link rel="manifest" href="/favicons/site.webmanifest">
+  <link rel="shortcut icon" href="/favicons/favicon.ico">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-config" content="/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#9ff2c0">
+  <title>Best Practices | Learning Web Design</title>
+</head>
+
+
+<body>
+  <div class="site-wrapper">
+
+    <header id="top" class="site-header">
+  <h2 class="u-m0 u-clearfix heading">
+    <a href="https://mica-web.github.io/" class="u-block u-clearfix" title="Return to homepage" >
+      <span class="heading--background">Learning</span>
+      <span class="heading--foreground">Web Design</span>
+    </a>
+  </h2>
+</header>
+
+
+<div class="content-wrapper ">
+
+  
+
+  <div class="top-nav">
+    <ul class="u-list-reset breadcrumb-wrapper">
+  <li class="u-inline-block breadcrumb"><a href="https://mica-web.github.io">Home</a></li>
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+  <li class="u-inline-block breadcrumb">
+    <a href="/learn">
+      learn
+    </a>
+  </li>
+  
+
+  
+
+  
+
+  
+
+  
+  <li class="u-inline-block breadcrumb">
+    <a href="/learn/html">
+      html
+    </a>
+  </li>
+  
+
+  
+
+  
+
+  
+
+  
+  <li class="u-inline-block breadcrumb">best practices</li>
+  
+
+  
+
+</ul>
+
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p class="text-faded reading-est">3 min read</p>
+
+    
+    
+  </div>
+
+  
+
+  <main>
+    
+    <h1 id="best-practices">Best Practices</h1>
+<p>The following list represents some best practices to use when writing your HTML. The examples of things <em>not</em> to do, in some cases, may even be valid HTML, but still are not ideal.</p>
+
+<ul id="markdown-toc">
+  <li><a href="#keep-your-code-readable-with-line-breaks-and-indenting-nested-elements" id="markdown-toc-keep-your-code-readable-with-line-breaks-and-indenting-nested-elements">Keep your code readable with line breaks and indenting nested elements</a></li>
+  <li><a href="#write-markup-using-lowercase" id="markdown-toc-write-markup-using-lowercase">Write markup using lowercase</a></li>
+  <li><a href="#do-not-use-all-caps-in-your-markup-content-for-presentational-purposes" id="markdown-toc-do-not-use-all-caps-in-your-markup-content-for-presentational-purposes">Do not use ALL CAPS in your markup content for presentational purposes</a></li>
+  <li><a href="#heading-tags-are-used-semantically-not-simply-for-presentation" id="markdown-toc-heading-tags-are-used-semantically-not-simply-for-presentation">Heading tags are used semantically, not simply for presentation</a></li>
+  <li><a href="#provide-helpful-alt-text-for-your-img-elements" id="markdown-toc-provide-helpful-alt-text-for-your-img-elements">Provide helpful <code class="language-plaintext highlighter-rouge">alt</code> text for your <code class="language-plaintext highlighter-rouge">img</code> elements</a></li>
+  <li><a href="#wrap-attribute-values-in-double-quotes" id="markdown-toc-wrap-attribute-values-in-double-quotes">Wrap attribute values in double quotes</a></li>
+  <li><a href="#include-a-proper-title-in-your-html-head" id="markdown-toc-include-a-proper-title-in-your-html-head">Include a proper <code class="language-plaintext highlighter-rouge">title</code> in your HTML <code class="language-plaintext highlighter-rouge">head</code></a></li>
+</ul>
+
+<h2 id="keep-your-code-readable-with-line-breaks-and-indenting-nested-elements">Keep your code readable with line breaks and indenting nested elements</h2>
+<p><span class="emoji">😺</span> Do this</p>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;h1&gt;</span>Page title<span class="nt">&lt;/h1&gt;</span>
+<span class="nt">&lt;p&gt;</span>Page content<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;ul&gt;</span>
+  <span class="nt">&lt;li&gt;</span>List item<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Another item<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+</code></pre></div></div>
+<p><span class="emoji">❌</span> Not this</p>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;h1&gt;</span>Page title<span class="nt">&lt;/h1&gt;&lt;p&gt;</span>Page content<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;ul&gt;&lt;li&gt;</span>List item<span class="nt">&lt;/li&gt;&lt;li&gt;</span>Another item<span class="nt">&lt;/li&gt;&lt;/ul&gt;</span>
+</code></pre></div></div>
+
+<p>HTML ignores whitespace, but we write code for people not just robots and browsers, so we should also endeavor to write readable code.</p>
+
+<h2 id="write-markup-using-lowercase">Write markup using lowercase</h2>
+<p><span class="emoji">😺</span> Do this</p>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;h1&gt;</span>Page title<span class="nt">&lt;/h1&gt;</span>
+<span class="nt">&lt;p&gt;</span>Page content<span class="nt">&lt;/p&gt;</span>
+</code></pre></div></div>
+<p><span class="emoji">❌</span> Not this</p>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;H1&gt;</span>Page title<span class="nt">&lt;/H1&gt;</span>
+<span class="nt">&lt;P&gt;</span>Page content<span class="nt">&lt;/P&gt;</span>
+</code></pre></div></div>
+
+<p>This also helps with the readability and consistency of your markup.</p>
+
+<p>A valid exception to this is filenames (that is, when you’re embedding an image or linking to another file). Some web servers are case sensitive and require you to write filenames exactly as they’ve been saved. <strong>For this reason, I would also recommend renaming your files to be all lowercase, too, as you’re able.</strong></p>
+
+<p class="callout">Some HTML generators capitalize the doctype as <code class="language-plaintext highlighter-rouge">!DOCTYPE html</code> and you don’t need to stress about that being in all caps.</p>
+
+<h2 id="do-not-use-all-caps-in-your-markup-content-for-presentational-purposes">Do not use ALL CAPS in your markup content for presentational purposes</h2>
+<p><span class="emoji">😺</span> Do this</p>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;h1&gt;</span>Page title<span class="nt">&lt;/h1&gt;</span>
+<span class="nt">&lt;p&gt;</span>MICA<span class="nt">&lt;/p&gt;</span>
+</code></pre></div></div>
+<p><span class="emoji">❌</span> Not this</p>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;H1&gt;</span>PAGE TITLE<span class="nt">&lt;/H1&gt;</span>
+</code></pre></div></div>
+
+<p>In the first example, it’s appropriate to write MICA in all caps because it is an acronym. In the second example, the <code class="language-plaintext highlighter-rouge">h1</code> content being all caps is a design choice – not specific to the words being used. This effect should be achieved via the CSS property <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform"><code class="language-plaintext highlighter-rouge">text-transform</code></a> instead.</p>
+
+<h2 id="heading-tags-are-used-semantically-not-simply-for-presentation">Heading tags are used semantically, not simply for presentation</h2>
+<p><span class="emoji">😺</span> Do this</p>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;h1&gt;</span>The title of my page<span class="nt">&lt;/h1&gt;</span>
+<span class="nt">&lt;h2&gt;</span>Introduction<span class="nt">&lt;/h2&gt;</span>
+<span class="nt">&lt;p&gt;</span>Some intro content...<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;h2&gt;</span>A section on the same level as the intro<span class="nt">&lt;/h2&gt;</span>
+<span class="nt">&lt;h3&gt;</span>A subheading<span class="nt">&lt;/h3&gt;</span>
+</code></pre></div></div>
+<p><span class="emoji">❌</span> Not this</p>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;h3&gt;</span>The title of my page<span class="nt">&lt;/h3&gt;</span>
+<span class="nt">&lt;h2&gt;</span>Introduction<span class="nt">&lt;/h2&gt;</span>
+<span class="nt">&lt;p&gt;</span>Some intro content...<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;h2&gt;</span>A section on the same level as the intro<span class="nt">&lt;/h2&gt;</span>
+<span class="nt">&lt;h4&gt;</span>A subheading<span class="nt">&lt;/h4&gt;</span>
+</code></pre></div></div>
+
+<p>In the first examples, the heading tree begins with an <code class="language-plaintext highlighter-rouge">h1</code> and continues in a logical order. In comparison, the second example has three issues:</p>
+<ul>
+  <li>It is missing an <code class="language-plaintext highlighter-rouge">h1</code>; in most cases, every page should have a single <code class="language-plaintext highlighter-rouge">h1</code> element.</li>
+  <li>It does not begin with an <code class="language-plaintext highlighter-rouge">h1</code>; while the <code class="language-plaintext highlighter-rouge">h1</code> does <em>not</em> need to be the first markup on your page, it should always be the first heading encountered.</li>
+  <li>Headings are listed out of order and skipped (for example, there is no <code class="language-plaintext highlighter-rouge">h3</code> between the <code class="language-plaintext highlighter-rouge">h2</code> and <code class="language-plaintext highlighter-rouge">h4</code>).</li>
+</ul>
+
+<p>In the second example, it is likely that the headings were selected based on appearance and not meaning, which is incorrect and creates issues with the document outline and specifically impacts the accessibility of your web content.</p>
+
+<h2 id="provide-helpful-alt-text-for-your-img-elements">Provide helpful <code class="language-plaintext highlighter-rouge">alt</code> text for your <code class="language-plaintext highlighter-rouge">img</code> elements</h2>
+<p><span class="emoji">😺</span> Do this</p>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"images/cat.jpg"</span> <span class="na">alt=</span><span class="s">"Zim, a tuxedo cat, lays in handknit basket."</span><span class="nt">&gt;</span>
+</code></pre></div></div>
+<p><span class="emoji">❌</span> Not this</p>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"images/cat.jpg"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"images/cat.jpg"</span> <span class="na">alt=</span><span class="s">"Image"</span><span class="nt">&gt;</span>
+</code></pre></div></div>
+
+<p>The first example provides a meaningful description of the image. In the second example where no <code class="language-plaintext highlighter-rouge">alt</code> text is provided, instead a user may:</p>
+<ul>
+  <li>hear nothing</li>
+  <li>see only a broken image icon</li>
+  <li>or, in the worse case scenario, hear the filename</li>
+</ul>
+
+<p>In my example, since the filename is also related to the image content, this isn’t wholly terrible, but there are a lot of images on the web where the filename is generated automatically – like Instagram – and in those cases a screen reader may instead read out this blob:
+<code class="language-plaintext highlighter-rouge">https://scontent-iad3-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/28427940_442900622795637_6420743066889486336_n.jpg</code> <span class="emoji text-larger">🙀</span></p>
+
+<p>In the second example where the <code class="language-plaintext highlighter-rouge">alt</code> is just the word “Image,” this issue is avoided, but no meaningful content has been added. Read <a href="https://axesslab.com/alt-texts/">Alt-texts: The Ultimate Guide</a> for more detail about <code class="language-plaintext highlighter-rouge">alt</code> text and how to write better image descriptions.</p>
+
+<h2 id="wrap-attribute-values-in-double-quotes">Wrap attribute values in double quotes</h2>
+<p><span class="emoji">😺</span> Do this</p>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"https://mica.edu"</span> <span class="na">class=</span><span class="s">"text-link"</span><span class="nt">&gt;</span>MICA<span class="nt">&lt;/a&gt;</span>
+</code></pre></div></div>
+<p><span class="emoji">❌</span> Not this</p>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">'https://mica.edu'</span> <span class="na">class=</span><span class="s">'text-link'</span><span class="nt">&gt;</span>MICA<span class="nt">&lt;/a&gt;</span>
+</code></pre></div></div>
+
+<p>Both are valid, but consistency is important. For the purposes of this course, we will default to double quotes.</p>
+
+<h2 id="include-a-proper-title-in-your-html-head">Include a proper <code class="language-plaintext highlighter-rouge">title</code> in your HTML <code class="language-plaintext highlighter-rouge">head</code></h2>
+<p><span class="emoji">❌</span> Not this</p>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+  <span class="nt">&lt;title&gt;</span>Document<span class="nt">&lt;/title&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+</code></pre></div></div>
+
+<p>The <code class="language-plaintext highlighter-rouge">title</code> element, while not visible inside your web page, defines the document’s title that is shown in a browser’s title bar or a page’s tab and is by search engines and search results.</p>
+
+    
+    <footer class="feedback-footer">
+  
+
+  <p><strong>Make this page better.</strong></p>
+  <p>Found something that's incorrect or confusing on this page? Broken link? I want to know! <a href="https://github.com/mica-web/mica-web.github.io/issues/new?title=Feedback+for+%2Flearn%2Fhtml%2Fbest-practices&template=page-feedback.md" target="_blank">Open an issue on GitHub</a> to tell me what's up and help me update the page.</p>
+</footer>
+
+    
+  </main>
+
+  <footer class="site-footer">
+  <div class="rule"></div>
+  <div class="content">
+    <p>&copy; Copyright 2018&ndash;<span id="js-current-year"></span> Ang&eacute;lique Weger</p>
+    <p class="top-link-wrapper"><a href="#top">Back to top</a></p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('js-current-year').appendChild(document.createTextNode(new Date().getFullYear()))
+</script>
+
+
+</div>
+
+
+  </div>
+
+  
+  
+  
+  
+
+</body>
+<!--
+/**
+ * @license
+ * MyFonts Webfont Build ID 3700915, 2019-01-18T17:07:51-0500
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Native-Regular by Fort Foundry
+ * URL: https://www.myfonts.com/fonts/fort-foundry/native/regular/
+ * Copyright: Copyright &#x00A9; 2016 by Mattox Shuler. All rights reserved.
+ * Licensed pageviews: Unlimited
+ * 
+ * Webfont: NeueAlteGrotesk-Regular by VisualWorks
+ * URL: https://www.myfonts.com/fonts/visualworks/neue-alte-grotesk/regular/
+ * Copyright: Copyright © 2017-2018 by Krzysztof Chuc. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * Webfont: NeueAlteGrotesk-Medium by VisualWorks
+ * URL: https://www.myfonts.com/fonts/visualworks/neue-alte-grotesk/medium/
+ * Copyright: Copyright © 2017-2018 by Krzysztof Chuc. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * Webfont: NeueAlteGrotesk-SemiBold by VisualWorks
+ * URL: https://www.myfonts.com/fonts/visualworks/neue-alte-grotesk/semi-bold/
+ * Copyright: Copyright © 2017-2018 by Krzysztof Chuc. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * Webfont: NeueAlteGrotesk-Bold by VisualWorks
+ * URL: https://www.myfonts.com/fonts/visualworks/neue-alte-grotesk/bold/
+ * Copyright: Copyright © 2017-2018 by Krzysztof Chuc. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * Webfont: NeueAlteGrotesk-Heavy by VisualWorks
+ * URL: https://www.myfonts.com/fonts/visualworks/neue-alte-grotesk/heavy/
+ * Copyright: Copyright © 2017-2018 by Krzysztof Chuc. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * Webfont: NeueAlteGrotesk-Black by VisualWorks
+ * URL: https://www.myfonts.com/fonts/visualworks/neue-alte-grotesk/black/
+ * Copyright: Copyright © 2017-2018 by Krzysztof Chuc. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * 
+ * License: https://www.myfonts.com/viewlicense?type=web&buildid=3700915
+ * 
+ * © 2019 MyFonts Inc
+*/
+
+-->
+
+
+</html>

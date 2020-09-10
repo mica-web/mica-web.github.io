@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="ie=edge" http-equiv="X-UA-Compatible">
+  <meta name="author" content="Angelique Weger" />
+  <meta name="Description" content="Curriculum, schedule and resources for web design.">
+  <link href="/css/style.css" rel="stylesheet">
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+  <link rel="manifest" href="/favicons/site.webmanifest">
+  <link rel="shortcut icon" href="/favicons/favicon.ico">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-config" content="/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#9ff2c0">
+  <title>Semantics | Learning Web Design</title>
+</head>
+
+
+<body>
+  <div class="site-wrapper">
+
+    <header id="top" class="site-header">
+  <h2 class="u-m0 u-clearfix heading">
+    <a href="https://mica-web.github.io/" class="u-block u-clearfix" title="Return to homepage" >
+      <span class="heading--background">Learning</span>
+      <span class="heading--foreground">Web Design</span>
+    </a>
+  </h2>
+</header>
+
+
+<div class="content-wrapper ">
+
+  
+
+  <div class="top-nav">
+    <ul class="u-list-reset breadcrumb-wrapper">
+  <li class="u-inline-block breadcrumb"><a href="https://mica-web.github.io">Home</a></li>
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+  <li class="u-inline-block breadcrumb">
+    <a href="/learn">
+      learn
+    </a>
+  </li>
+  
+
+  
+
+  
+
+  
+
+  
+  <li class="u-inline-block breadcrumb">
+    <a href="/learn/html">
+      html
+    </a>
+  </li>
+  
+
+  
+
+  
+
+  
+
+  
+  <li class="u-inline-block breadcrumb">semantics</li>
+  
+
+  
+
+</ul>
+
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p class="text-faded reading-est">2 min read</p>
+
+    
+    
+  </div>
+
+  
+
+  <main>
+    
+    
+<h1 id="semantics">Semantics</h1>
+
+<p>You may have encountered the word <b>semantics</b> in some other contexts, like in linguistic or media studies.</p>
+
+<dl class="definition-quote">
+  <dt>Semantics</dt>
+  <dd>1. A branch of linguistics studying the meaning of words.</dd>
+  <dd>2. The study of the relationship between words and their meanings.</dd>
+  <dd>3. The individual meanings of words, as opposed to the overall meaning of a passage.</dd>
+  <dd>4. The meaning of computer language constructs, in contrast to their form or syntax.</dd>
+</dl>
+
+<p class="citation">Definition of <a href="https://en.wiktionary.org/wiki/semantics">semantics</a> from <cite>Wiktionary</cite>.</p>
+
+<p>In the context of HTML, we use <b>Semantic HTML</b> to describe the idea that the code you write should reinforce and describe the meaning of your content.</p>
+
+<p>When writing HTML, you should always be thinking about the function or purpose of your content and how it relates to other bits on the page. Doing so:</p>
+
+<ul>
+  <li>reduces ambiguity in your code</li>
+  <li>increases the accessibility of your web pages</li>
+  <li>improves the usefulness of your web content, making it understood by search engines, RSS readers and other apps</li>
+</ul>
+
+<p>As a specific example, if you wanted to add some song lyrics to a web page, you wouldn’t use the <code class="language-plaintext highlighter-rouge">img</code> element because that’s not meant for text. <strong>This tells you that HTML elements have meaning and impart that meaning to your code and content.</strong></p>
+
+<p>The only two HTML elements without meaning are:</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">div</code> – the generic container for block-level content</li>
+  <li><code class="language-plaintext highlighter-rouge">span</code> – the generic container for inline content</li>
+</ul>
+
+<p>While these elements are useful in HTML, they should not be the ones you reach for immediately; it is always best to first consider if a more meaningful, or <em>semantic</em>, option exists.</p>
+
+<p>Without semantic HTML, you can easily end up with an HTML document that looks like this: containers everywhere, but no sense of their purpose.</p>
+
+<p class="text-center"><img src="/learn/01_html/img/semantics1.png" alt="Diagram of HTML code that is just a series of div elements, sometimes nested one inside the other." /></p>
+
+<p>Compare that diagram to this, where semantic HTML elements provide important information about the structure and content of the web page:</p>
+
+<p class="text-center"><img src="/learn/01_html/img/semantics2.png" alt="Same diagram as above, but this one uses semantic HTML." aria-describedby="w-semantic-html" /></p>
+
+<p id="w-semantic-html" class="u-sr-only">Across the top of the page is a nav element inside a header element. This is followed by a section element with a header element inside, followed by two article elements and a footer. To the right side is an aside element with a form inside of it. Spanning the bottom of the page is a footer element.</p>
+
+<p>Each of the areas in the second example is a legitimate HTML element. Read this <a href="https://www.pluralsight.com/guides/semantic-html">guide to semantic HTML</a> <span class="text-faded">(est. reading time: 12min)</span> to get a more in-depth description and examples of how to use the following elements:</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">nav</code></li>
+  <li><code class="language-plaintext highlighter-rouge">main</code>, <code class="language-plaintext highlighter-rouge">section</code>, <code class="language-plaintext highlighter-rouge">article</code></li>
+  <li><code class="language-plaintext highlighter-rouge">aside</code></li>
+  <li><code class="language-plaintext highlighter-rouge">figure</code></li>
+</ul>
+
+<p>The <cite><a href="http://html5doctor.com/">HTML5 Doctor</a></cite><span class="emoji text-smaller" title="Following and reading this link is optional."><span class="u-sr-only">Following and reading this link is optional.</span>✳️</span>
+ HTML Element Flowchart is also a great guide when you’re struggling with which element is right for your use case:</p>
+
+<p class="text-center"><img src="/learn/01_html/img/h5d-flowchart.png" alt="HTML5 Sectioning Flowchart." /></p>
+
+<p class="citation">You can also view a <a href="/learn/01_HTML/h5d-flowchart.pdf" target="_blank">PDF version (102 KB) of this chart</a></p>
+
+    
+    <footer class="feedback-footer">
+  
+
+  <p><strong>Make this page better.</strong></p>
+  <p>Found something that's incorrect or confusing on this page? Broken link? I want to know! <a href="https://github.com/mica-web/mica-web.github.io/issues/new?title=Feedback+for+%2Flearn%2Fhtml%2Fsemantics&template=page-feedback.md" target="_blank">Open an issue on GitHub</a> to tell me what's up and help me update the page.</p>
+</footer>
+
+    
+  </main>
+
+  <footer class="site-footer">
+  <div class="rule"></div>
+  <div class="content">
+    <p>&copy; Copyright 2018&ndash;<span id="js-current-year"></span> Ang&eacute;lique Weger</p>
+    <p class="top-link-wrapper"><a href="#top">Back to top</a></p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('js-current-year').appendChild(document.createTextNode(new Date().getFullYear()))
+</script>
+
+
+</div>
+
+
+  </div>
+
+  
+  
+  
+  
+
+</body>
+<!--
+/**
+ * @license
+ * MyFonts Webfont Build ID 3700915, 2019-01-18T17:07:51-0500
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Native-Regular by Fort Foundry
+ * URL: https://www.myfonts.com/fonts/fort-foundry/native/regular/
+ * Copyright: Copyright &#x00A9; 2016 by Mattox Shuler. All rights reserved.
+ * Licensed pageviews: Unlimited
+ * 
+ * Webfont: NeueAlteGrotesk-Regular by VisualWorks
+ * URL: https://www.myfonts.com/fonts/visualworks/neue-alte-grotesk/regular/
+ * Copyright: Copyright © 2017-2018 by Krzysztof Chuc. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * Webfont: NeueAlteGrotesk-Medium by VisualWorks
+ * URL: https://www.myfonts.com/fonts/visualworks/neue-alte-grotesk/medium/
+ * Copyright: Copyright © 2017-2018 by Krzysztof Chuc. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * Webfont: NeueAlteGrotesk-SemiBold by VisualWorks
+ * URL: https://www.myfonts.com/fonts/visualworks/neue-alte-grotesk/semi-bold/
+ * Copyright: Copyright © 2017-2018 by Krzysztof Chuc. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * Webfont: NeueAlteGrotesk-Bold by VisualWorks
+ * URL: https://www.myfonts.com/fonts/visualworks/neue-alte-grotesk/bold/
+ * Copyright: Copyright © 2017-2018 by Krzysztof Chuc. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * Webfont: NeueAlteGrotesk-Heavy by VisualWorks
+ * URL: https://www.myfonts.com/fonts/visualworks/neue-alte-grotesk/heavy/
+ * Copyright: Copyright © 2017-2018 by Krzysztof Chuc. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * Webfont: NeueAlteGrotesk-Black by VisualWorks
+ * URL: https://www.myfonts.com/fonts/visualworks/neue-alte-grotesk/black/
+ * Copyright: Copyright © 2017-2018 by Krzysztof Chuc. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * 
+ * License: https://www.myfonts.com/viewlicense?type=web&buildid=3700915
+ * 
+ * © 2019 MyFonts Inc
+*/
+
+-->
+
+
+</html>

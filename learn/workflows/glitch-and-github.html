@@ -132,7 +132,7 @@
 <h2 id="step-1-create-a-new-repository">Step 1: Create a new repository</h2>
 <p>Starting on <a href="https://github.com">GitHub</a>, log into your account, and then create a new repository following <a href="https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-new-repository">these directions</a>.</p>
 <ul>
-  <li>Name your repo <strong>project1</strong> with no spaces.</li>
+  <li>Name your repo <b>project1</b> with no spaces.</li>
   <li>Make your repo public.</li>
   <li>Don’t check any of the extra checkboxes.</li>
 </ul>
@@ -140,36 +140,36 @@
 <p>See this screenshot for a full view of the settings to create the new repo:
 <img src="/learn/03_workflows/img/new-repo-settings.png" alt="Create repo settings on GitHub" /></p>
 
-<p>When you’ve correctly entered everything, click the <strong>Create repository</strong> button. You’ll end up with a page full of instructions; leave this page open for now, and you’ll come back to it later.</p>
+<p>When you’ve correctly entered everything, click the <b>Create repository</b> button. You’ll end up with a page full of instructions; leave this page open for now, and you’ll come back to it later.</p>
 
 <h2 id="step-2-remix-a-project-on-glitch">Step 2: Remix a project on Glitch</h2>
 <p>Next, open a new tab or browser and go to <a href="https://glitch.com">Glitch</a> and log into your account. Open up my <a href="https://glitch.com/edit/#!/mica-web-starter">starter project</a> and remix the project:</p>
 
 <p><img src="/learn/03_workflows/img/glitch-remix.gif" alt="Click the project name and choose &quot;Remix Project&quot;" /></p>
 
-<p>As you can see above, the original project is named <strong>mica-web-starter</strong> and then a copy is created with the dynamically generated name <strong>south-shell-shoemaker</strong>. In your remix, you can rename this project to something more relevant or keep the creative name Glitch has assigned.</p>
+<p>As you can see above, the original project is named <b>mica-web-starter</b> and then a copy is created with the dynamically generated name <b>south-shell-shoemaker</b>. In your remix, you can rename this project to something more relevant or keep the creative name Glitch has assigned.</p>
 
-<p class="callout">Both GitHub and Glitch have the concept of taking existing work and creating your own copy or version; on GitHub, this is called <a href="https://docs.github.com/en/github/getting-started-with-github/github-glossary#fork"><strong>forking</strong></a> <span class="emoji text-smaller" title="Following and reading this link is optional."><span class="u-sr-only">Following and reading this link is optional.</span>✳️</span>
-  and on Glitch it’s called <a href="https://glitch.happyfox.com/kb/article/23-what%E2%80%99s-remixing/"><strong>remixing</strong></a>.<span class="emoji text-smaller" title="Following and reading this link is optional."><span class="u-sr-only">Following and reading this link is optional.</span>✳️</span>
+<p class="callout">Both GitHub and Glitch have the concept of taking existing work and creating your own copy or version; on GitHub, this is called <a href="https://docs.github.com/en/github/getting-started-with-github/github-glossary#fork"><b>forking</b></a> <span class="emoji text-smaller" title="Following and reading this link is optional."><span class="u-sr-only">Following and reading this link is optional.</span>✳️</span>
+  and on Glitch it’s called <a href="https://glitch.happyfox.com/kb/article/23-what%E2%80%99s-remixing/"><b>remixing</b></a>.<span class="emoji text-smaller" title="Following and reading this link is optional."><span class="u-sr-only">Following and reading this link is optional.</span>✳️</span>
  As you can see in the above screen capture, you can copy your own work as well as other people’s.</p>
 
 <p>Now you have a project on Glitch and a repo on GitHub and are ready to connect them both.</p>
 
-<p>Open up VS Code and access the Command Palette (<strong>View &gt; Command Palette</strong>), then type “Glitch” and select <strong>Glitch: Show Commands</strong>. This will open up a new menu and you should select <strong>Open Project</strong>. Then select the project you just created; those files will now be visible and editable inside of VS Code.</p>
+<p>Open up VS Code and access the Command Palette (<b>View &gt; Command Palette</b>), then type “Glitch” and select <b>Glitch: Show Commands</b>. This will open up a new menu and you should select <b>Open Project</b>. Then select the project you just created; those files will now be visible and editable inside of VS Code.</p>
 
 <h2 id="step-3-create-ssh-authentication">Step 3: Create SSH authentication</h2>
 
-<p class="callout">The next steps will involve using the <strong>command line</strong>. If you haven’t used the command line or console before, I’ve written a <a href="/learn/tools/command-line">short introduction to the command line</a> that you should review first.</p>
+<p class="callout">The next steps will involve using the <b>command line</b>. If you haven’t used the command line or console before, I’ve written a <a href="/learn/tools/command-line">short introduction to the command line</a> that you should review first.</p>
 
-<p>Open up the Command Palette again and again type “Glitch.” This time, select <strong>Glitch: Console</strong>. This will open up your console view in VS Code.</p>
+<p>Open up the Command Palette again and again type “Glitch.” This time, select <b>Glitch: Console</b>. This will open up your console view in VS Code.</p>
 
 <p class="callout">In the rest of these directions, whenever I use the word “console,” I specifically mean the Glitch console in VS Code.</p>
 
-<p>In the console, type <code class="language-plaintext highlighter-rouge">ssh-keygen</code> and press <strong>Enter</strong>.</p>
+<p>In the console, type <code class="language-plaintext highlighter-rouge">ssh-keygen</code> and press <kbd>Enter</kbd>.</p>
 
-<p class="callout">Pressing <strong>Enter</strong> in the console is what runs a command. It’s always a good idea to slow down and check what you’ve typed <em>before</em> pressing <strong>Enter</strong>.</p>
+<p class="callout">Pressing <kbd>Enter</kbd> in the console is what runs a command. It’s always a good idea to slow down and check what you’ve typed <em>before</em> pressing <kbd>Enter</kbd>.</p>
 
-<p>After you press <strong>Enter</strong>, you’ll get a series of prompts in the console. You should press <strong>Enter</strong> through each of them and don’t have to add any additional information.</p>
+<p>After you press <kbd>Enter</kbd>, you’ll get a series of prompts in the console. You should press <kbd>Enter</kbd> through each of them and don’t have to add any additional information.</p>
 
 <p>This screenshot shows the prompts you should see and the beginning of the success message you’ll see:</p>
 
@@ -179,17 +179,17 @@
 
 <p class="callout">If you’re interested in more detail about this, you can read about <a href="https://www.ssh.com/ssh/public-key-authentication">public key authentication</a>.<span class="emoji text-smaller" title="Following and reading this link is optional."><span class="u-sr-only">Following and reading this link is optional.</span>✳️</span></p>
 
-<p>Now you want to take the info from your public key and share it with GitHub. To do this, type <code class="language-plaintext highlighter-rouge">cat .ssh/id_rsa.pub</code> in the console and press <strong>Enter</strong>.</p>
+<p>Now you want to take the info from your public key and share it with GitHub. To do this, type <code class="language-plaintext highlighter-rouge">cat .ssh/id_rsa.pub</code> in the console and press <kbd>Enter</kbd>.</p>
 
-<p class="callout">The <code class="language-plaintext highlighter-rouge">cat</code> command reads the file you name (in this case, the <strong>id_rsa.pub</strong> file in your newly created <strong>.ssh</strong> directory) and prints out the file contents to the console.</p>
+<p class="callout">The <code class="language-plaintext highlighter-rouge">cat</code> command reads the file you name (in this case, the <b>id_rsa.pub</b> file in your newly created <b>.ssh</b> directory) and prints out the file contents to the console.</p>
 
-<p>Highlight and copy the key that is displayed in the console; it should start with <strong>ssh-rsa</strong>.</p>
+<p>Highlight and copy the key that is displayed in the console; it should start with <b>ssh-rsa</b>.</p>
 
 <p>Now, open a new browser window and go to your <a href="https://github.com/settings/keys">GitHub settings</a>.</p>
 
-<p class="callout">This link takes you directly to the page, but you can always get there yourself by clicking your profile photo in the upper-right corner of any page, then clicking <strong>Settings</strong>. Then, in the user settings sidebar, click <strong>SSH and GPG keys</strong>.</p>
+<p class="callout">This link takes you directly to the page, but you can always get there yourself by clicking your profile photo in the upper-right corner of any page, then clicking <b>Settings</b>. Then, in the user settings sidebar, click <b>SSH and GPG keys</b>.</p>
 
-<p>Click the button to add <strong>New SSH key</strong> and name the key “Push from Glitch demo”. Paste in the public key code you copied from the console and then click <strong>Add SSH key</strong>. (You may be prompted to enter your GitHub password at this point.)</p>
+<p>Click the button to add <b>New SSH key</b> and name the key “Push from Glitch demo”. Paste in the public key code you copied from the console and then click <b>Add SSH key</b>. (You may be prompted to enter your GitHub password at this point.)</p>
 
 <p class="callout">Want to see detailed screenshots of the this process? <a href="https://docs.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account">View this walkthrough from the GitHub docs</a>.<span class="emoji text-smaller" title="Following and reading this link is optional."><span class="u-sr-only">Following and reading this link is optional.</span>✳️</span></p>
 
@@ -197,7 +197,7 @@
 
 <p>Now you have a private and public key on Glitch and have added your public key to GitHub. Let’s confirm with Glitch that all has gone according to plan.</p>
 
-<p>Back in VS Code, type <code class="language-plaintext highlighter-rouge">ssh -T git@github.com</code> in the console and press <strong>Enter</strong>.</p>
+<p>Back in VS Code, type <code class="language-plaintext highlighter-rouge">ssh -T git@github.com</code> in the console and press <kbd>Enter</kbd>.</p>
 
 <p>This attempts to open an SSH connection to GitHub. You may see a warning that the authenticity of the host can’t be established followed by a prompt asking you if you still want to connect.</p>
 
@@ -207,7 +207,7 @@
   <li><code class="language-plaintext highlighter-rouge">16:27:ac:a5:76:28:2d:36:63:1b:56:4d:eb:df:a6:48</code></li>
 </ul>
 
-<p>Then you can type “yes” and press <strong>Enter</strong>. (You can see and verify this information in the <a href="https://docs.github.com/en/github/authenticating-to-github/testing-your-ssh-connection">GitHub docs</a>.)</p>
+<p>Then you can type “yes” and press <kbd>Enter</kbd>. (You can see and verify this information in the <a href="https://docs.github.com/en/github/authenticating-to-github/testing-your-ssh-connection">GitHub docs</a>.)</p>
 
 <p>At this point, you should see a message in the console with your username, like so:</p>
 
@@ -236,48 +236,48 @@
 
 <p>Way back at the end of <a href="#step-1-create-a-new-repository">step one</a>, you created your GitHub repo and got a screen full of instructions. Now you actually need to revisit that page and use some of the info there.</p>
 
-<p>Under the heading <strong>Quick setup</strong> is an address for your repo; it should start with <code class="language-plaintext highlighter-rouge">git@github.com</code> and end with <code class="language-plaintext highlighter-rouge">.git</code>. If it does not look like this, you may need to click the <strong>small SSH button</strong> to update the address. Once you see the correct address, copy this full address.</p>
+<p>Under the heading <b>Quick setup</b> is an address for your repo; it should start with <code class="language-plaintext highlighter-rouge">git@github.com</code> and end with <code class="language-plaintext highlighter-rouge">.git</code>. If it does not look like this, you may need to click the <strong>small SSH button</strong> to update the address. Once you see the correct address, copy this full address.</p>
 
 <p class="callout">For me, this address is <code class="language-plaintext highlighter-rouge">git@github.com:mica-web/mica-web-demo.git</code>, but your address will be different because the bit immediately after the colon (<code class="language-plaintext highlighter-rouge">:</code>) will be your GitHub username.</p>
 
 <p><img src="/learn/03_workflows/img/git-address.gif" alt="Screen capture of the GitHub UI and the location of the SSH button." /></p>
 
-<p>Now, back in VS Code, type <code class="language-plaintext highlighter-rouge">git remote add gh your-address-here</code> in the console, replacing the <strong>your-address-here</strong> with the address you copied from GitHub. As an example, here’s what the full command looks like for me:</p>
+<p>Now, back in VS Code, type <code class="language-plaintext highlighter-rouge">git remote add gh your-address-here</code> in the console, replacing the <b>your-address-here</b> with the address you copied from GitHub. As an example, here’s what the full command looks like for me:</p>
 
 <blockquote class="cli">
   <p>git remote add gh git@github.com:mica-web/mica-web-demo.git</p>
 </blockquote>
 
-<p>When you’ve got the full command right, press <strong>Enter</strong>.</p>
+<p>When you’ve got the full command right, press <kbd>Enter</kbd>.</p>
 
 <div class="callout">
   <p>If you want to know more, I’ve broken this command down:</p>
   <ul>
-    <li><strong><code class="language-plaintext highlighter-rouge">git</code></strong> means this is a git command; all git commands start this way (remember <code class="language-plaintext highlighter-rouge">git status</code> from earlier?), so you’ll be typing this a lot</li>
-    <li><strong><code class="language-plaintext highlighter-rouge">remote</code></strong> is the word git uses for a location where your code is stored</li>
-    <li><strong><code class="language-plaintext highlighter-rouge">add</code></strong> is the action; this means we’re adding a new remote</li>
-    <li><strong><code class="language-plaintext highlighter-rouge">gh</code></strong> is the name we’re giving the remote (short for GitHub in this case)</li>
+    <li><b><code class="language-plaintext highlighter-rouge">git</code></b> means this is a git command; all git commands start this way (remember <code class="language-plaintext highlighter-rouge">git status</code> from earlier?), so you’ll be typing this a lot</li>
+    <li><b><code class="language-plaintext highlighter-rouge">remote</code></b> is the word git uses for a location where your code is stored</li>
+    <li><b><code class="language-plaintext highlighter-rouge">add</code></b> is the action; this means we’re adding a new remote</li>
+    <li><b><code class="language-plaintext highlighter-rouge">gh</code></b> is the name we’re giving the remote (short for GitHub in this case)</li>
     <li>the next bit is the address for the remote we’re adding</li>
   </ul>
 
-  <p><code class="language-plaintext highlighter-rouge">git remote add</code> is the bit that is always consistent; the next two bits are customized based on what you’re adding. This is like creating an entry in an address book; we’ve added an entry named <strong>gh</strong> and told git where that entry is located.</p>
+  <p><code class="language-plaintext highlighter-rouge">git remote add</code> is the bit that is always consistent; the next two bits are customized based on what you’re adding. This is like creating an entry in an address book; we’ve added an entry named <b>gh</b> and told git where that entry is located.</p>
 </div>
 
-<p>To verify that your new remote is in place, type <code class="language-plaintext highlighter-rouge">git remote -v</code> in the console and press <strong>Enter</strong>.</p>
+<p>To verify that your new remote is in place, type <code class="language-plaintext highlighter-rouge">git remote -v</code> in the console and press <kbd>Enter</kbd>.</p>
 
-<p>You should see your address listed twice with the name <strong>gh</strong>.</p>
+<p>You should see your address listed twice with the name <b>gh</b>.</p>
 
 <p><img src="/learn/03_workflows/img/git-remote-v.png" alt="Screenshot of the console with the output from the git remote -v command." /></p>
 
 <p class="emoji text-larger text-center">🎉</p>
 
-<p>The two actions you see to the right in the parentheses of your address – <strong>fetch</strong> and <strong>push</strong> – reference the two main ways of sharing information in git.</p>
+<p>The two actions you see to the right in the parentheses of your address – <b>fetch</b> and <b>push</b> – reference the two main ways of sharing information in git.</p>
 
 <p class="text-center"><img src="/learn/03_workflows/img/git-push-pull.png" alt="The pull command comes from GitHub to your computer and the push command goes in the opposite direction." /></p>
 
 <ul>
-  <li><strong>fetching</strong> or <strong>pulling</strong> references bringing code from your repo into your working project</li>
-  <li><strong>pushing</strong> is going in the other direction – moving code from your working project into your repo</li>
+  <li><b>fetching</b> or <b>pulling</b> references bringing code from your repo into your working project</li>
+  <li><b>pushing</b> is going in the other direction – moving code from your working project into your repo</li>
 </ul>
 
 <p class="callout">This was explained in more detail in <a href="https://blog.red-badger.com/2016/11/29/gitgithub-in-plain-english"><strong>Git and GitHub in Plain English</strong></a>.</p>
@@ -285,7 +285,7 @@
 <h2 id="step-5-push-glitch-code-to-github">Step 5: Push Glitch code to GitHub</h2>
 <p>Now the big finale, the thing we’ve been working toward all through these steps: Let’s get your code from Glitch to GitHub.</p>
 
-<p>In VS Code, type <code class="language-plaintext highlighter-rouge">git push -u gh master</code> in the console and press <strong>Enter</strong>.</p>
+<p>In VS Code, type <code class="language-plaintext highlighter-rouge">git push -u gh master</code> in the console and press <kbd>Enter</kbd>.</p>
 
 <p>Your console will display a bunch of info as it takes the files from Glitch and copies them over to GitHub.</p>
 
@@ -295,7 +295,7 @@
 
 <p class="emoji text-larger text-center">🎉</p>
 
-<p>Back in VS Code, if you type <code class="language-plaintext highlighter-rouge">git status</code> in the console and press <strong>Enter</strong>, you should see some new information:</p>
+<p>Back in VS Code, if you type <code class="language-plaintext highlighter-rouge">git status</code> in the console and press <kbd>Enter</kbd>, you should see some new information:</p>
 
 <blockquote class="cli">
   <p>On branch master</p>
@@ -322,20 +322,20 @@
 
 <p><img src="/learn/03_workflows/img/git-changes.png" alt="Output from git says there are changes not staged for commit and recommends the git add and git checkout commands." /></p>
 
-<p>Also, git is providing some helpful tips about the commands you can use going forward. What we want to do is stage the changes to the <strong>README.md</strong> file and commit them.</p>
+<p>Also, git is providing some helpful tips about the commands you can use going forward. What we want to do is stage the changes to the <b>README.md</b> file and commit them.</p>
 
-<p>First, type <code class="language-plaintext highlighter-rouge">git add README.md</code> in the console and press <strong>Enter</strong>.</p>
+<p>First, type <code class="language-plaintext highlighter-rouge">git add README.md</code> in the console and press <kbd>Enter</kbd>.</p>
 
 <p>Then, type <code class="language-plaintext highlighter-rouge">git status</code> in the console again to see how this has changed things.</p>
 
 <p>While a git commit can include multiple files, in this instance we’re just changing one file so we don’t need to <code class="language-plaintext highlighter-rouge">git add</code> anything else.</p>
 
-<p>In the console, type <code class="language-plaintext highlighter-rouge">git commit -m "My first commit"</code> (make sure to include the quote marks) and press <strong>Enter</strong>.</p>
+<p>In the console, type <code class="language-plaintext highlighter-rouge">git commit -m "My first commit"</code> (make sure to include the quote marks) and press <kbd>Enter</kbd>.</p>
 
 <div class="callout">
   <ul>
-    <li><strong><code class="language-plaintext highlighter-rouge">git commit</code></strong> says you’re making a commit</li>
-    <li>the <strong><code class="language-plaintext highlighter-rouge">-m</code></strong> means you’re including a message with your commit (which you always want to do)</li>
+    <li><b><code class="language-plaintext highlighter-rouge">git commit</code></b> says you’re making a commit</li>
+    <li>the <b><code class="language-plaintext highlighter-rouge">-m</code></b> means you’re including a message with your commit (which you always want to do)</li>
     <li>the bit in quotes is your commit message and can be customized</li>
   </ul>
 </div>
