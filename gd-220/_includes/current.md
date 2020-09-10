@@ -22,7 +22,7 @@ Here's [a few things you can do]({% link gd-220/00/early-start.md %}) before the
 {% assign weekstart = week.course_date | date: "%Y-%m-%d" %}
 {% assign weekend = week.course_date | date: "%s" | plus: week_length | date: "%Y-%m-%d" %}
 
-{% if (currentdate >= weekstart) and (currentdate <= weekend)  %}
+{% if (currentdate >= weekstart) and (currentdate < weekend)  %}
 
 <section class="schedule-list">
 
