@@ -172,6 +172,17 @@
 
 <p class="callout">It’s not uncommon during my workday for me to be switching between multiple branches, both to add to my own work but also to review the work of my colleagues on their branches. For your work this semester, you will likely only need your current working branch and the master branch.</p>
 
+<h3 id="renaming-your-branch">Renaming your branch</h3>
+<p>The <code class="language-plaintext highlighter-rouge">-m</code> flag allows you to rename your branch. If you are currently on the branch you want to rename, you only need to type:
+<code class="language-plaintext highlighter-rouge">git branch -m new-name</code>
+where <b><code class="language-plaintext highlighter-rouge">new-name</code></b> is the new name you want to give to your branch.</p>
+
+<p>If you are on a different branch, you can still rename any branch by typing:
+<code class="language-plaintext highlighter-rouge">git branch -m old-name new-name</code>
+where <b><code class="language-plaintext highlighter-rouge">old-name</code></b> is the branch you want to rename and <b><code class="language-plaintext highlighter-rouge">new-name</code></b> is the new name you want to give it.</p>
+
+<p>If you have already pushed your branch with its old name, you will need to repeat the <code class="language-plaintext highlighter-rouge">push</code> commands in <a href="#step-2">Step 2</a>.</p>
+
 <h2 id="step-2">Step 2</h2>
 <p>To date, there has been no pushing/pulling, so GitHub doesn’t yet know about your new branch. At any point, you can push your new branch up to GitHub; you <em>do not</em> need to wait until your project or work is complete.</p>
 
