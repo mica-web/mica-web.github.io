@@ -73,6 +73,18 @@ At any time, you can switch between your branches via the `checkout` command.
 {: .callout }
 It's not uncommon during my workday for me to be switching between multiple branches, both to add to my own work but also to review the work of my colleagues on their branches. For your work this semester, you will likely only need your current working branch and the master branch.
 
+### Renaming your branch
+The `-m` flag allows you to rename your branch. If you are currently on the branch you want to rename, you only need to type:
+`git branch -m new-name`
+where <b>`new-name`</b> is the new name you want to give to your branch.
+
+If you are on a different branch, you can still rename any branch by typing:
+`git branch -m old-name new-name`
+where <b>`old-name`</b> is the branch you want to rename and <b>`new-name`</b> is the new name you want to give it.
+
+If you have already pushed your branch with its old name, you will need to repeat the `push` commands in [Step 2](#step-2).
+
+
 ## Step 2
 To date, there has been no pushing/pulling, so GitHub doesn't yet know about your new branch. At any point, you can push your new branch up to GitHub; you _do not_ need to wait until your project or work is complete.
 
