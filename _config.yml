@@ -57,6 +57,8 @@ collections:
       - 01_HTML/semantics.md
       - 01_HTML/best-practices.md
       - 01_HTML/history.md
+      - 02_CSS/basics.md
+      - 02_CSS/typography.md
       - 02_CSS/css_color.md
       - 02_CSS/sass.md
       - 03_workflows/glitch-and-github.md
