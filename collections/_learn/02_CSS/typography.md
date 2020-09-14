@@ -21,6 +21,9 @@ There are two main categories of CSS properties that affect text styles:
 - font styles that affect the size and look of the font
 - text layout styles that affect the spacing and layout of the text within its containing element
 
+{: .callout }
+<span class="emoji">🤔</span> Nothing on this page will teach you how to change the font that text is displayed in. That's totally possible in CSS, but will be covered after you are introduced to some more basic text styling.
+
 ## Font styles
 The following CSS properties work on almost all text elements (like headings, paragraphs, anchor elements).
 
