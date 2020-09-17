@@ -1,24 +1,14 @@
 ---
-topic: Color
+topic: Writing and Organizing CSS
 category: CSS
-level: [ intro, advanced ]
+level: [ advanced ]
 permalink: /:collection/css/:name
 code_example: false
 quiz: false
-issues: false
+issues: fa;se
 ---
 
 # {{ page.topic }}
 
 {: .wip-wrapper}
 ![This page is a work in progress](https://media.giphy.com/media/SwP1HunIXetehTvy43/giphy.gif)
-
-`color`
-`background-color`
-
-- keywords
-- hex
-- rgb
-- hsl
-- opacity
-- rgba and hsla

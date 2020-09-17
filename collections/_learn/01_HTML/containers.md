@@ -1,8 +1,8 @@
 ---
-topic: Color
-category: CSS
+topic: Containers
+category: HTML
 level: [ intro, advanced ]
-permalink: /:collection/css/:name
+permalink: /:collection/html/:name
 code_example: false
 quiz: false
 issues: false
@@ -12,13 +12,3 @@ issues: false
 
 {: .wip-wrapper}
 ![This page is a work in progress](https://media.giphy.com/media/SwP1HunIXetehTvy43/giphy.gif)
-
-`color`
-`background-color`
-
-- keywords
-- hex
-- rgb
-- hsl
-- opacity
-- rgba and hsla
