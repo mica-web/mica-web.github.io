@@ -13,7 +13,7 @@ issues: false
 {: .wip-wrapper}
 ![This page is a work in progress](https://media.giphy.com/media/SwP1HunIXetehTvy43/giphy.gif)
 
-`color`
+<!-- `color`
 `background-color`
 
 - keywords
@@ -21,4 +21,4 @@ issues: false
 - rgb
 - hsl
 - opacity
-- rgba and hsla
+- rgba and hsla -->

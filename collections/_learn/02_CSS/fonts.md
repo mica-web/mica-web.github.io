@@ -1,8 +1,8 @@
 ---
-topic: Containers
-category: HTML
+topic: Fonts
+category: CSS
 level: [ intro, advanced ]
-permalink: /:collection/html/:name
+permalink: /:collection/css/:name
 code_example: false
 quiz: false
 issues: false

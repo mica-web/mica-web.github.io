@@ -60,6 +60,7 @@ collections:
       - 02_CSS/basics.md
       - 02_CSS/typography.md
       - 02_CSS/css_color.md
+      - 02_CSS/fonts.md
       - 02_CSS/floats.md
       - 02_CSS/browser-defaults.md
       - 02_CSS/resets.md
