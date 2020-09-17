@@ -60,6 +60,11 @@ collections:
       - 02_CSS/basics.md
       - 02_CSS/typography.md
       - 02_CSS/css_color.md
+      - 02_CSS/floats.md
+      - 02_CSS/browser-defaults.md
+      - 02_CSS/resets.md
+      - 02_CSS/organization.md
+      - 02_CSS/best-practices.md
       - 02_CSS/sass.md
       - 03_workflows/glitch-and-github.md
       - 03_workflows/branching.md
