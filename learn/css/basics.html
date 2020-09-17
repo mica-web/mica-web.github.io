@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="ie=edge" http-equiv="X-UA-Compatible">
+  <meta name="author" content="Angelique Weger" />
+  <meta name="Description" content="Curriculum, schedule and resources for web design.">
+  <link href="/css/style.css" rel="stylesheet">
+  
+  <link href="/css/syntax.css" rel="stylesheet">
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+  <link rel="manifest" href="/favicons/site.webmanifest">
+  <link rel="shortcut icon" href="/favicons/favicon.ico">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-config" content="/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#9ff2c0">
+  <title>CSS Basics | Learning Web Design</title>
+</head>
+
+
+<body>
+  <div class="site-wrapper">
+
+    <header id="top" class="site-header">
+  <h2 class="u-m0 u-clearfix heading">
+    <a href="https://mica-web.github.io/" class="u-block u-clearfix" title="Return to homepage" >
+      <span class="heading--background">Learning</span>
+      <span class="heading--foreground">Web Design</span>
+    </a>
+  </h2>
+</header>
+
+
+<div class="content-wrapper ">
+
+  
+
+  <div class="top-nav">
+    <ul class="u-list-reset breadcrumb-wrapper">
+  <li class="u-inline-block breadcrumb"><a href="https://mica-web.github.io">Home</a></li>
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+  <li class="u-inline-block breadcrumb">
+    <a href="/learn">
+      learn
+    </a>
+  </li>
+  
+
+  
+
+  
+
+  
+
+  
+  <li class="u-inline-block breadcrumb">
+    <a href="/learn/css">
+      css
+    </a>
+  </li>
+  
+
+  
+
+  
+
+  
+
+  
+  <li class="u-inline-block breadcrumb">basics</li>
+  
+
+  
+
+</ul>
+
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p class="text-faded reading-est">3 min read</p>
+
+    
+    
+  </div>
+
+  
+
+  <main>
+    
+    
+<h1 id="css-basics">CSS Basics</h1>
+
+<p><b>CSS</b> stands for <b>Cascading StyleSheets</b> and is used to modify the appearance of a web page, including fonts used, text size, colors, spacing and layout. It is a  <strong>distinct language from HTML</strong> – which means it’s written in a different style and has different rules – yet has a close relationship with HTML because it affects and changes HTML elements.</p>
+
+<p>That pretty much sums up the <b>stylesheet</b> part of the name – it’s a file that outlines the stylistic rules for another document – but what about <strong>cascading</strong>? That is a pretty poetic and evocative word for a computer language, no? The short answer is this: the cascade refers to the order and importance of your style rules. Once you’ve practiced some basic CSS, we’ll revisit the cascade and you’ll explore some examples of why it’s important.</p>
+
+<h2 id="writing-css">Writing CSS</h2>
+<p>There are three key decisions in writing CSS:</p>
+<ul>
+  <li>Which element do I want to affect?</li>
+  <li>What about it do I want to change?</li>
+  <li>How do I want it to change?</li>
+</ul>
+
+<p>The element you are affecting is called a <b>selector</b> and the code you write to affect the selector are known as <b>declarations</b>. A declaration is made up of two parts: the area of your affect is a <b>CSS property</b> and the way you want it to change is the <b>value</b>. Combined, all of these things make a CSS ruleset.</p>
+
+<p class="text-center"><img src="/learn/02_CSS/img/css-ruleset.png" alt="" aria-describedby="css-ruleset" /></p>
+
+<figure class="highlight u-sr-only" id="css-ruleset"><pre><code class="language-css" data-lang="css"><span class="nt">p</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="no">purple</span><span class="p">;</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="m">18px</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
+
+<!-- CSS 1 -->
+<div class="quiz-wrapper">
+  <header class="quiz-header">
+    <h2 class="quiz-heading">Share What You Think</h2>
+    <div class="quiz-actions-wrapper">
+      <button type="button" class="u-button-reset u-link-reset quiz-action js-quiz-toggle" aria-controls="2LPZSSL"><?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 24 24" role="img" xmlns="http://www.w3.org/2000/svg">
+  <title>Collapse this content</title>
+  <path d="M23 24H1a1 1 0 01-1-1V1a1 1 0 011-1h22a1 1 0 110 2H2v20h20V5.19a1 1 0 112 0V23a1 1 0 01-1 1z" />
+  <path class="icon-line" d="M18 13H6a1 1 0 110-2h12a1 1 0 110 2z" />
+  <path class="icon-line" d="M11 18V6a1 1 0 112 0v12a1 1 0 11-2 0z" />
+</svg>
+</button>
+      <a class="u-link-reset quiz-action" href="https://www.surveymonkey.com/r/2LPZSSL" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img">
+  <title>Open in a new window</title>
+  <path d="M23 24H1a1 1 0 01-1-1V1a1 1 0 011-1h11.95a1 1 0 010 2H2v20h20l-.01-11.35a1 1 0 012 0L24 23a1 1 0 01-1 1z" />
+  <path d="M17.5 2c-.38 0-.62-.83-.43-1.5.09-.3.25-.5.43-.5h6c.12 0 .22.08.3.2.13.09.2.2.2.3v6c0 .38-.83.63-1.5.43-.3-.09-.5-.25-.5-.43V3.2l-7.13 7.26c-.48.5-1.37.21-1.6-.51a.91.91 0 01.2-.92L20.37 2z" />
+</svg>
+</a>
+    </div>
+  </header>
+  
+  <div id="2LPZSSL" class="quiz-content">
+    <iframe src="https://www.surveymonkey.com/r/2LPZSSL" height="600" allowtransparency="true" frameborder="0" scrolling="yes"></iframe>
+  </div>
+  
+</div>
+
+<p>CSS is a fairly readable language, which is why you may have gotten that question correct, even if this is the first time you’re looking at CSS code.</p>
+
+<p>In this example, the <code class="language-plaintext highlighter-rouge">p</code> element is the selector and the declarations change the color of the text inside the <code class="language-plaintext highlighter-rouge">p</code> element to be 18 pixels in size and purple in color.</p>
+
+<p>Multiple selectors can receive the same rules if they are separated by commas, like so:</p>
+
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nt">h1</span><span class="o">,</span> <span class="nt">h2</span><span class="o">,</span> <span class="nt">h3</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="no">green</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
+
+<p>And a styesheet is made up of multiple rulesets, like so:</p>
+
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nt">h1</span><span class="o">,</span> <span class="nt">h2</span><span class="o">,</span> <span class="nt">h3</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="no">green</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">h4</span><span class="o">,</span> <span class="nt">h5</span><span class="o">,</span> <span class="nt">h6</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="no">orange</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">p</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="no">purple</span><span class="p">;</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="m">18px</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
+
+<p>Looking through these examples, you may have noticed some basic expectations of CSS, specifically:</p>
+
+<ul>
+  <li>selectors are separated with commas (<code class="language-plaintext highlighter-rouge">,</code>)</li>
+  <li>declarations are wrapped in curly brackets (<code class="language-plaintext highlighter-rouge">{}</code>)</li>
+  <li>properties may be hyphenated (but never include a space, so <code class="language-plaintext highlighter-rouge">font-size</code> is correct and <code class="language-plaintext highlighter-rouge">font size</code> is invalid)</li>
+  <li>properties and values are separated with a colon (<code class="language-plaintext highlighter-rouge">:</code>)</li>
+  <li>every rule ends with a semicolon (<code class="language-plaintext highlighter-rouge">;</code>)</li>
+</ul>
+
+<h2 id="connecting-your-html-and-css">Connecting your HTML and CSS</h2>
+<p>In order to use the CSS you write in a specific HTML document, you must first link the two files – and there’s an HTML element named <code class="language-plaintext highlighter-rouge">link</code> that does exactly this.</p>
+
+<p class="callout">Note that the <code class="language-plaintext highlighter-rouge">link</code> HTML element is used to link to an external resource that is used within your HTML; it is entirely separate from the <code class="language-plaintext highlighter-rouge">a</code> element that creates hyperlinks in your HTML document.</p>
+
+<p>A <code class="language-plaintext highlighter-rouge">link</code> element goes into the <code class="language-plaintext highlighter-rouge">head</code> section of your HTML. In  <a href="/learn/html/basics">HTML Basics</a> you reviewed <cite>MDN’s <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started#Anatomy_of_an_HTML_document">Anatomy of an HTML document</a></cite>, which explained the <code class="language-plaintext highlighter-rouge">head</code> element like so:</p>
+
+<blockquote>
+  <p>This element acts as a container for everything you want to include on the HTML page, that isn’t the content the page will show to viewers. This includes keywords and a page description that would appear in search results, CSS to style content, character set declarations, and more.</p>
+</blockquote>
+
+<p>For the purposes of your stylesheet, the <code class="language-plaintext highlighter-rouge">link</code> element has two important attributes:</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">rel</code>, which is short for <b>relationship</b>, and explains the relationship between the documents being linked</li>
+  <li><code class="language-plaintext highlighter-rouge">href</code>, which stands for <b>hyperlink reference</b> and points to the document being linked; this is the same attribute used on anchor (<code class="language-plaintext highlighter-rouge">a</code>) elements</li>
+</ul>
+
+<p>A properly formatted <code class="language-plaintext highlighter-rouge">link</code> element looks like this:</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">  <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"style.css"</span><span class="nt">&gt;</span></code></pre></figure>
+
+<p>The <code class="language-plaintext highlighter-rouge">link</code> element can be added anywhere in the <code class="language-plaintext highlighter-rouge">head</code> element of your HTML file.</p>
+
+<h3 id="practicing-css">Practicing CSS</h3>
+<p>Remix my <a href="https://glitch.com/edit/#!/mica-css-basics" target="_blank">CSS Basics</a> project and update the <code class="language-plaintext highlighter-rouge">index.html</code> by linking to the <code class="language-plaintext highlighter-rouge">style.css</code> file that also exists in that project, using the format above.</p>
+
+<p>If your link works, you should see the paragraph text update to be red, like in this screenshot:</p>
+
+<p class="text-center"><img src="/learn/02_CSS/img/css-link-works.png" alt="Screenshot of the Glitch project where the paragraph text is red and all other text is black." /></p>
+
+<p class="callout">As you work through the following CSS lessons, keep using this project to test out what you’re learning.</p>
+
+<h3 id="link-shortcut"><code class="language-plaintext highlighter-rouge">link</code> shortcut</h3>
+<p>If you are using VS Code and are working in an already saved HTML file (that is, a document with the <code class="language-plaintext highlighter-rouge">.html</code> extension), you can type <code class="language-plaintext highlighter-rouge">link</code> and then press the <kbd>Tab</kbd> key, which should result in a blank <code class="language-plaintext highlighter-rouge">link</code> statement for you, like this: <code class="language-plaintext highlighter-rouge">&lt;link rel="stylesheet" href=""&gt;</code>. Note that you still need to update the <code class="language-plaintext highlighter-rouge">href</code> value.</p>
+
+    
+    <footer class="feedback-footer">
+  
+
+  <p><strong>Make this page better.</strong></p>
+  <p>Found something that's incorrect or confusing on this page? Broken link? I want to know! <a href="https://github.com/mica-web/mica-web.github.io/issues/new?title=Feedback+for+%2Flearn%2Fcss%2Fbasics&template=page-feedback.md" target="_blank">Open an issue on GitHub</a> to tell me what's up and help me update the page.</p>
+</footer>
+
+    
+  </main>
+
+  <footer class="site-footer">
+  <div class="rule"></div>
+  <div class="content">
+    <p>&copy; Copyright 2018&ndash;<span id="js-current-year"></span> Ang&eacute;lique Weger</p>
+    <p class="top-link-wrapper"><a href="#top">Back to top</a></p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('js-current-year').appendChild(document.createTextNode(new Date().getFullYear()))
+</script>
+
+
+</div>
+
+
+  </div>
+
+  
+  
+  
+  
+  <script src="/js/quizToggle.js" async defer></script>
+  
+
+</body>
+<!--
+/**
+ * @license
+ * MyFonts Webfont Build ID 3700915, 2019-01-18T17:07:51-0500
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Native-Regular by Fort Foundry
+ * URL: https://www.myfonts.com/fonts/fort-foundry/native/regular/
+ * Copyright: Copyright &#x00A9; 2016 by Mattox Shuler. All rights reserved.
+ * Licensed pageviews: Unlimited
+ * 
+ * Webfont: NeueAlteGrotesk-Regular by VisualWorks
+ * URL: https://www.myfonts.com/fonts/visualworks/neue-alte-grotesk/regular/
+ * Copyright: Copyright © 2017-2018 by Krzysztof Chuc. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * Webfont: NeueAlteGrotesk-Medium by VisualWorks
+ * URL: https://www.myfonts.com/fonts/visualworks/neue-alte-grotesk/medium/
+ * Copyright: Copyright © 2017-2018 by Krzysztof Chuc. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * Webfont: NeueAlteGrotesk-SemiBold by VisualWorks
+ * URL: https://www.myfonts.com/fonts/visualworks/neue-alte-grotesk/semi-bold/
+ * Copyright: Copyright © 2017-2018 by Krzysztof Chuc. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * Webfont: NeueAlteGrotesk-Bold by VisualWorks
+ * URL: https://www.myfonts.com/fonts/visualworks/neue-alte-grotesk/bold/
+ * Copyright: Copyright © 2017-2018 by Krzysztof Chuc. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * Webfont: NeueAlteGrotesk-Heavy by VisualWorks
+ * URL: https://www.myfonts.com/fonts/visualworks/neue-alte-grotesk/heavy/
+ * Copyright: Copyright © 2017-2018 by Krzysztof Chuc. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * Webfont: NeueAlteGrotesk-Black by VisualWorks
+ * URL: https://www.myfonts.com/fonts/visualworks/neue-alte-grotesk/black/
+ * Copyright: Copyright © 2017-2018 by Krzysztof Chuc. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * 
+ * License: https://www.myfonts.com/viewlicense?type=web&buildid=3700915
+ * 
+ * © 2019 MyFonts Inc
+*/
+
+-->
+
+
+</html>

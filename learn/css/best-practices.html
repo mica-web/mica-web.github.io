@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="ie=edge" http-equiv="X-UA-Compatible">
+  <meta name="author" content="Angelique Weger" />
+  <meta name="Description" content="Curriculum, schedule and resources for web design.">
+  <link href="/css/style.css" rel="stylesheet">
+  
+  <link href="/css/syntax.css" rel="stylesheet">
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+  <link rel="manifest" href="/favicons/site.webmanifest">
+  <link rel="shortcut icon" href="/favicons/favicon.ico">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-config" content="/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#9ff2c0">
+  <title>Best Practices | Learning Web Design</title>
+</head>
+
+
+<body>
+  <div class="site-wrapper">
+
+    <header id="top" class="site-header">
+  <h2 class="u-m0 u-clearfix heading">
+    <a href="https://mica-web.github.io/" class="u-block u-clearfix" title="Return to homepage" >
+      <span class="heading--background">Learning</span>
+      <span class="heading--foreground">Web Design</span>
+    </a>
+  </h2>
+</header>
+
+
+<div class="content-wrapper ">
+
+  
+
+  <div class="top-nav">
+    <ul class="u-list-reset breadcrumb-wrapper">
+  <li class="u-inline-block breadcrumb"><a href="https://mica-web.github.io">Home</a></li>
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+  <li class="u-inline-block breadcrumb">
+    <a href="/learn">
+      learn
+    </a>
+  </li>
+  
+
+  
+
+  
+
+  
+
+  
+  <li class="u-inline-block breadcrumb">
+    <a href="/learn/css">
+      css
+    </a>
+  </li>
+  
+
+  
+
+  
+
+  
+
+  
+  <li class="u-inline-block breadcrumb">best practices</li>
+  
+
+  
+
+</ul>
+
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p class="text-faded reading-est">4 min read</p>
+
+    
+    
+  </div>
+
+  
+
+  <main>
+    
+    <h1 id="best-practices">Best Practices</h1>
+<p>The following list represents some best practices to use when writing your CSS. The examples of things <em>not</em> to do, in some cases, may even be valid CSS, but still are not ideal.</p>
+
+<ul id="markdown-toc">
+  <li><a href="#write-your-css-all-lowercase" id="markdown-toc-write-your-css-all-lowercase">Write your CSS all lowercase</a></li>
+  <li><a href="#end-each-css-declaration-with-a-semicolon" id="markdown-toc-end-each-css-declaration-with-a-semicolon">End each CSS declaration with a semicolon</a></li>
+  <li><a href="#order-your-declarations-alphabetically-by-property-name" id="markdown-toc-order-your-declarations-alphabetically-by-property-name">Order your declarations alphabetically by property name</a></li>
+  <li><a href="#declare-box-sizing-in-all-your-stylesheets" id="markdown-toc-declare-box-sizing-in-all-your-stylesheets">Declare <code class="language-plaintext highlighter-rouge">box-sizing</code> in all your stylesheets</a></li>
+  <li><a href="#dont-reiterate-browser-defaults" id="markdown-toc-dont-reiterate-browser-defaults">Don’t reiterate browser defaults</a></li>
+  <li><a href="#dont-write-css-in-such-a-way-that-youre-immediately-overwriting-it" id="markdown-toc-dont-write-css-in-such-a-way-that-youre-immediately-overwriting-it">Don’t write CSS in such a way that you’re immediately overwriting it</a></li>
+  <li><a href="#wrap-all-floated-elements-in-another-element-with-the-clearfix-class-applied" id="markdown-toc-wrap-all-floated-elements-in-another-element-with-the-clearfix-class-applied">Wrap all floated elements in another element with the <code class="language-plaintext highlighter-rouge">clearfix</code> class applied</a></li>
+  <li><a href="#use-color-values-logically-and-consistently" id="markdown-toc-use-color-values-logically-and-consistently">Use color values logically and consistently</a></li>
+  <li><a href="#avoid-using-units-on-measurements-of-zero" id="markdown-toc-avoid-using-units-on-measurements-of-zero">Avoid using units on measurements of zero</a></li>
+</ul>
+
+<h2 id="write-your-css-all-lowercase">Write your CSS all lowercase</h2>
+<p><span class="emoji">😺</span> Do this</p>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">div</span> <span class="p">{</span>
+  <span class="nl">font-weight</span><span class="p">:</span> <span class="nb">bold</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<p><span class="emoji">❌</span> Not this</p>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">DIV</span> <span class="p">{</span>
+  <span class="nl">font-weight</span><span class="p">:</span> <span class="n">BOLD</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p class="callout">An exception to this is when you are referring to font names; writing <code class="language-plaintext highlighter-rouge">font-family: 'Open Sans', sans-serif;</code> in your CSS is totally okay. <span class="emoji">👍🏻</span></p>
+
+<h2 id="end-each-css-declaration-with-a-semicolon">End each CSS declaration with a semicolon</h2>
+<p><span class="emoji">😺</span> Do this</p>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">p</span> <span class="p">{</span>
+  <span class="nl">font-style</span><span class="p">:</span> <span class="nb">italic</span><span class="p">;</span>
+  <span class="nl">font-weight</span><span class="p">:</span> <span class="nb">bold</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<p><span class="emoji">❌</span> Not this</p>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">p</span> <span class="p">{</span>
+  <span class="nl">font-style</span><span class="p">:</span> <span class="nb">italic</span>
+  <span class="n">font-weight</span><span class="p">:</span> <span class="nb">bold</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p class="callout">Technically, leaving off the semicolon on your <em>last</em> declaration is valid CSS, but it is not worth the headache of remembering to add it back in when you add new declarations.</p>
+
+<h2 id="order-your-declarations-alphabetically-by-property-name">Order your declarations alphabetically by property name</h2>
+<p><span class="emoji">😺</span> Do this</p>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">p</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="no">thistle</span><span class="p">;</span>
+  <span class="nl">font-style</span><span class="p">:</span> <span class="nb">italic</span><span class="p">;</span>
+  <span class="nl">font-weight</span><span class="p">:</span> <span class="nb">bold</span><span class="p">;</span>
+  <span class="nl">max-width</span><span class="p">:</span> <span class="m">500px</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<p><span class="emoji">❌</span> Not this</p>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">p</span> <span class="p">{</span>
+  <span class="nl">max-width</span><span class="p">:</span> <span class="m">500px</span><span class="p">;</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="no">thistle</span><span class="p">;</span>
+  <span class="nl">font-weight</span><span class="p">:</span> <span class="nb">bold</span><span class="p">;</span>
+  <span class="nl">font-style</span><span class="p">:</span> <span class="nb">italic</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>This seems like a lot of extra fuss as you start writing CSS, but it saves you time in debugging because you are less likely to have a property duplicated in the same ruleset if you follow this practice.</p>
+
+<h2 id="declare-box-sizing-in-all-your-stylesheets">Declare <code class="language-plaintext highlighter-rouge">box-sizing</code> in all your stylesheets</h2>
+<p><span class="emoji">😺</span> Do this at the top of every CSS file</p>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">*</span> <span class="p">{</span>
+  <span class="nl">box-sizing</span><span class="p">:</span> <span class="n">border-box</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>The browser default for <code class="language-plaintext highlighter-rouge">box-sizing</code> is <code class="language-plaintext highlighter-rouge">content-box</code>, and it is generally rubbish and operates contrary to your expectations.</p>
+
+<p class="callout">See <a href="https://www.internetingishard.com/html-and-css/css-box-model/#content-boxes-and-border-boxes" target="_blank">this explanation of <code class="language-plaintext highlighter-rouge">content-box</code> and <code class="language-plaintext highlighter-rouge">border-box</code></a> for more detail.</p>
+
+<h2 id="dont-reiterate-browser-defaults">Don’t reiterate browser defaults</h2>
+<p><span class="emoji">😺</span> Do this</p>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">h1</span> <span class="p">{</span>
+  <span class="nl">font-weight</span><span class="p">:</span> <span class="nb">normal</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">a</span> <span class="p">{</span>
+  <span class="nl">text-decoration</span><span class="p">:</span> <span class="nb">dotted</span> <span class="nb">underline</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p><span class="emoji">❌</span> Not this</p>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">h1</span> <span class="p">{</span>
+  <span class="nl">font-weight</span><span class="p">:</span> <span class="nb">bold</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">a</span> <span class="p">{</span>
+  <span class="nl">text-decoration</span><span class="p">:</span> <span class="nb">underline</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>The code in the second example only restates the <a href="/learn/css/browser-defaults">browser defaults</a>; you’ve essentially written six lines of useless CSS.</p>
+
+<h2 id="dont-write-css-in-such-a-way-that-youre-immediately-overwriting-it">Don’t write CSS in such a way that you’re immediately overwriting it</h2>
+<p><span class="emoji">😺</span> Do this</p>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">li</span> <span class="p">{</span>
+  <span class="nl">display</span><span class="p">:</span> <span class="n">inline-block</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">li</span> <span class="o">+</span> <span class="nt">li</span> <span class="p">{</span>
+  <span class="nl">margin-left</span><span class="p">:</span> <span class="m">14px</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p><span class="emoji">❌</span> Not this</p>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">li</span> <span class="p">{</span>
+  <span class="nl">display</span><span class="p">:</span> <span class="n">inline-block</span><span class="p">;</span>
+  <span class="nl">margin-left</span><span class="p">:</span> <span class="m">14px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">li</span><span class="nd">:first-of-type</span> <span class="p">{</span>
+  <span class="nl">margin-left</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>In the first example, <code class="language-plaintext highlighter-rouge">li + li</code> uses the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Adjacent_sibling_combinator">sibling selector</a> (the plus <code class="language-plaintext highlighter-rouge">+</code> sign) to select every <code class="language-plaintext highlighter-rouge">li</code> that is <em>immediately preceded</em> by an <code class="language-plaintext highlighter-rouge">li</code> and adds a margin to space them out.</p>
+
+<p>The second example adds the margin to <em>all</em> <code class="language-plaintext highlighter-rouge">li</code> elements only to then remove it from the very first one (using the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:first-of-type"><code class="language-plaintext highlighter-rouge">:first-of-type</code> pseudo-class</a>).</p>
+
+<h2 id="wrap-all-floated-elements-in-another-element-with-the-clearfix-class-applied">Wrap all floated elements in another element with the <code class="language-plaintext highlighter-rouge">clearfix</code> class applied</h2>
+<p><span class="emoji">😺</span> Do this</p>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"clearfix"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"box"</span><span class="nt">&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"box"</span><span class="nt">&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"box"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div></div>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">/* Clearfix utility class */</span>
+<span class="nc">.clearfix</span><span class="nd">::before</span><span class="o">,</span> <span class="nc">.clearfix</span><span class="nd">::after</span> <span class="p">{</span>
+  <span class="nl">content</span><span class="p">:</span> <span class="s2">''</span><span class="p">;</span>
+  <span class="nl">display</span><span class="p">:</span> <span class="n">table</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.clearfix</span><span class="nd">::after</span> <span class="p">{</span>
+  <span class="nl">clear</span><span class="p">:</span> <span class="nb">both</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">/* Your floated element */</span>
+<span class="nc">.box</span> <span class="p">{</span>
+  <span class="nl">float</span><span class="p">:</span> <span class="nb">left</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p><span class="emoji">❌</span> Not this</p>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!-- No wrapping element used :( --&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"box"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"box"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"box"</span><span class="nt">&gt;&lt;/div&gt;</span>
+</code></pre></div></div>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">/* Your floated element */</span>
+<span class="nc">.box</span> <span class="p">{</span>
+  <span class="nl">float</span><span class="p">:</span> <span class="nb">left</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Not that it’s not super crucial to fully understand the code for the clearfix above, but it is helpful to understand the problem it solves. See <a href="https://mica-css-floats.glitch.me/">this example</a> for what it can look like when you don’t clear your floated elements.</p>
+
+<h2 id="use-color-values-logically-and-consistently">Use color values logically and consistently</h2>
+<p><span class="emoji">😺</span> Do this</p>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">p</span> <span class="p">{</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="n">hsla</span><span class="p">(</span><span class="m">62</span><span class="p">,</span> <span class="m">81%</span><span class="p">,</span> <span class="m">70%</span><span class="p">,</span> <span class="m">0.25</span><span class="p">);</span>
+  <span class="nl">border</span><span class="p">:</span> <span class="m">3px</span> <span class="nb">solid</span> <span class="n">hsl</span><span class="p">(</span><span class="m">62</span><span class="p">,</span> <span class="m">81%</span><span class="p">,</span> <span class="m">70%</span><span class="p">);</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="no">white</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p><span class="emoji">❌</span> Not this</p>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">p</span> <span class="p">{</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="n">hsla</span><span class="p">(</span><span class="m">62</span><span class="p">,</span> <span class="m">81%</span><span class="p">,</span> <span class="m">70%</span><span class="p">,</span> <span class="m">0.25</span><span class="p">);</span>
+  <span class="nl">border</span><span class="p">:</span> <span class="m">3px</span> <span class="nb">solid</span> <span class="m">#ecf26c</span><span class="p">;</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="nb">rgb</span><span class="p">(</span><span class="m">255</span><span class="p">,</span> <span class="m">255</span><span class="p">,</span> <span class="m">255</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>In the first example, the CSS keyword is used for white and otherwise HSL(a) colors are used; this makes it clear that the background and border colors have a relationship.</p>
+
+<p>In the second example, that relationship is no longer obvious because the border color is expressed as a hex value. Additionally, the text color is expressed as an rgb value, which would be fine if the other colors in this example were <em>also</em> rgb(a), but instead it is just random and chaotic. <span class="emoji">😵</span></p>
+
+<p class="callout">This example does <em>not</em> mean that using HSL(a) values is a best practice, though I do find them to be easier to understand and modify than the other color values. It’s fine to use hex values if you’re not messing around with opacity of colors and either RGB(a) or HSL(a) if you are.</p>
+
+<p class="callout">In general, CSS keywords should be avoided except for <code class="language-plaintext highlighter-rouge">black</code> or <code class="language-plaintext highlighter-rouge">white</code>. You’ll see that I use them often in demos because they’re simple to use and easy to understand, but they are very limiting to use in real world projects.</p>
+
+<h2 id="avoid-using-units-on-measurements-of-zero">Avoid using units on measurements of zero</h2>
+<p><span class="emoji">😺</span> Do this</p>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">div</span> <span class="p">{</span>
+  <span class="nl">margin</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p><span class="emoji">❌</span> Not this</p>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">div</span> <span class="p">{</span>
+  <span class="nl">margin</span><span class="p">:</span> <span class="m">0px</span><span class="p">;</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">0px</span><span class="p">;</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">0px</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>There is no logical difference between <code class="language-plaintext highlighter-rouge">0</code> and <code class="language-plaintext highlighter-rouge">0px</code> or <code class="language-plaintext highlighter-rouge">0%</code>, so you can just skip using units on zero measurements.</p>
+
+<!-- - Selectors are either bare elements or classnames (IDs are avoided)
+- Classnames are helpful and written kebab-style (i.e., using hyphens)
+- Units are used logically and consistently
+
+## Rule
+<span class="emoji">😺</span> Do this
+```css
+```
+
+<span class="emoji">❌</span> Not this
+```css
+``` -->
+
+    
+    <footer class="feedback-footer">
+  
+
+  <p><strong>Make this page better.</strong></p>
+  <p>Found something that's incorrect or confusing on this page? Broken link? I want to know! <a href="https://github.com/mica-web/mica-web.github.io/issues/new?title=Feedback+for+%2Flearn%2Fcss%2Fbest-practices&template=page-feedback.md" target="_blank">Open an issue on GitHub</a> to tell me what's up and help me update the page.</p>
+</footer>
+
+    
+  </main>
+
+  <footer class="site-footer">
+  <div class="rule"></div>
+  <div class="content">
+    <p>&copy; Copyright 2018&ndash;<span id="js-current-year"></span> Ang&eacute;lique Weger</p>
+    <p class="top-link-wrapper"><a href="#top">Back to top</a></p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('js-current-year').appendChild(document.createTextNode(new Date().getFullYear()))
+</script>
+
+
+</div>
+
+
+  </div>
+
+  
+  
+  
+  
+
+</body>
+<!--
+/**
+ * @license
+ * MyFonts Webfont Build ID 3700915, 2019-01-18T17:07:51-0500
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Native-Regular by Fort Foundry
+ * URL: https://www.myfonts.com/fonts/fort-foundry/native/regular/
+ * Copyright: Copyright &#x00A9; 2016 by Mattox Shuler. All rights reserved.
+ * Licensed pageviews: Unlimited
+ * 
+ * Webfont: NeueAlteGrotesk-Regular by VisualWorks
+ * URL: https://www.myfonts.com/fonts/visualworks/neue-alte-grotesk/regular/
+ * Copyright: Copyright © 2017-2018 by Krzysztof Chuc. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * Webfont: NeueAlteGrotesk-Medium by VisualWorks
+ * URL: https://www.myfonts.com/fonts/visualworks/neue-alte-grotesk/medium/
+ * Copyright: Copyright © 2017-2018 by Krzysztof Chuc. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * Webfont: NeueAlteGrotesk-SemiBold by VisualWorks
+ * URL: https://www.myfonts.com/fonts/visualworks/neue-alte-grotesk/semi-bold/
+ * Copyright: Copyright © 2017-2018 by Krzysztof Chuc. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * Webfont: NeueAlteGrotesk-Bold by VisualWorks
+ * URL: https://www.myfonts.com/fonts/visualworks/neue-alte-grotesk/bold/
+ * Copyright: Copyright © 2017-2018 by Krzysztof Chuc. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * Webfont: NeueAlteGrotesk-Heavy by VisualWorks
+ * URL: https://www.myfonts.com/fonts/visualworks/neue-alte-grotesk/heavy/
+ * Copyright: Copyright © 2017-2018 by Krzysztof Chuc. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * Webfont: NeueAlteGrotesk-Black by VisualWorks
+ * URL: https://www.myfonts.com/fonts/visualworks/neue-alte-grotesk/black/
+ * Copyright: Copyright © 2017-2018 by Krzysztof Chuc. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * 
+ * License: https://www.myfonts.com/viewlicense?type=web&buildid=3700915
+ * 
+ * © 2019 MyFonts Inc
+*/
+
+-->
+
+
+</html>

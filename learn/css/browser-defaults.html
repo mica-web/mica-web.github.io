@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="ie=edge" http-equiv="X-UA-Compatible">
+  <meta name="author" content="Angelique Weger" />
+  <meta name="Description" content="Curriculum, schedule and resources for web design.">
+  <link href="/css/style.css" rel="stylesheet">
+  
+  <link href="/css/syntax.css" rel="stylesheet">
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+  <link rel="manifest" href="/favicons/site.webmanifest">
+  <link rel="shortcut icon" href="/favicons/favicon.ico">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-config" content="/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#9ff2c0">
+  <title>Browser Defaults | Learning Web Design</title>
+</head>
+
+
+<body>
+  <div class="site-wrapper">
+
+    <header id="top" class="site-header">
+  <h2 class="u-m0 u-clearfix heading">
+    <a href="https://mica-web.github.io/" class="u-block u-clearfix" title="Return to homepage" >
+      <span class="heading--background">Learning</span>
+      <span class="heading--foreground">Web Design</span>
+    </a>
+  </h2>
+</header>
+
+
+<div class="content-wrapper ">
+
+  
+
+  <div class="top-nav">
+    <ul class="u-list-reset breadcrumb-wrapper">
+  <li class="u-inline-block breadcrumb"><a href="https://mica-web.github.io">Home</a></li>
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+  <li class="u-inline-block breadcrumb">
+    <a href="/learn">
+      learn
+    </a>
+  </li>
+  
+
+  
+
+  
+
+  
+
+  
+  <li class="u-inline-block breadcrumb">
+    <a href="/learn/css">
+      css
+    </a>
+  </li>
+  
+
+  
+
+  
+
+  
+
+  
+  <li class="u-inline-block breadcrumb">browser defaults</li>
+  
+
+  
+
+</ul>
+
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p class="text-faded reading-est">1 min read</p>
+
+    
+    
+  </div>
+
+  
+
+  <main>
+    
+    
+<h1 id="browser-defaults">Browser Defaults</h1>
+
+<p>The following document is only HTML, no CSS at all. But even without a single line of custom CSS, there are clearly style choices made; what gives?</p>
+
+<div class="glitch-embed-wrap" style="height: 600px; width: 100%;">
+  <iframe src="https://glitch.com/embed/#!/embed/html5-kitchen-sink?path=index.html&amp;previewSize=100&amp;sidebarCollapsed=true" title="html5-kitchen-sink on Glitch" allow="geolocation; microphone; camera; midi; vr; encrypted-media" style="height: 100%; width: 100%; border: 0;">
+  </iframe>
+</div>
+
+<p>All web browsers apply a certain amount of default styling to HTML documents and, as a result, <code class="language-plaintext highlighter-rouge">h1</code> elements are larger than <code class="language-plaintext highlighter-rouge">h3</code>s, links are usually blue and underlined (until a user clicks on them, in which case they turn purple). Some elements, such as <code class="language-plaintext highlighter-rouge">button</code> are heavily styled with colors, borders and shadows to varying degrees depending on which browser you’re using.</p>
+
+<p class="text-center"><img src="/learn/02_CSS/img/buttons-chrome.png" alt="Default buttons in Chrome are grey and have dark grey borders." title="Default buttons in Google Chrome." />
+<img src="/learn/02_CSS/img/buttons-firefox.png" alt="Default buttons in Firefox are thin, light grey and have light grey borders." title="Default buttons in Mozilla Firefox." />
+<img src="/learn/02_CSS/img/buttons-safari.png" alt="Default buttons in Safari are almost white with light grey borders and very rounded corners." title="Default buttons in Apple Safari." /></p>
+
+<p class="citation">These photos were all taken in macOS and will look different based on your OS, too. Hover over each image to see which browser each screenshot was taken in.</p>
+
+<p>These browser defaults <strong>do not go away</strong> when you add your custom stylesheet to a web page. Any styles you write will only add on to what is already done by the default browser styles. <strong>This makes it extra useful to know what the browser defaults are.</strong></p>
+
+<p>This doesn’t mean you need to memorize the exact styles; a rough idea is helpful enough. You don’t need to know the size of margins added to headings by browser defaults – but should instead simply know that each heading (<code class="language-plaintext highlighter-rouge">h1</code>-<code class="language-plaintext highlighter-rouge">h6</code>) has a default top and bottom margin added to it by default.</p>
+
+<p>This <a href="https://browserdefaultstyles.com/">searchable directory of browser default styles</a> is a great resource for investigating default styles.</p>
+
+<p class="text-center"><a href="https://browserdefaultstyles.com/" class="u-link-reset"><img src="/learn/02_CSS/img/browser-default-styles.png" alt="Screenshot of BrowserDefaultStyles.com showing the default styles applied to the H2 element." /></a></p>
+
+<p>This screenshot shows that browsers go about it a variety of different ways, but all add some margin to the top and bottom of the <code class="language-plaintext highlighter-rouge">h2</code> element. To undo this, you’d need to apply your own styles, like so:</p>
+
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nt">h2</span> <span class="p">{</span>
+  <span class="nl">margin-top</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="nl">margin-bottom</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
+
+<p>Where you use <code class="language-plaintext highlighter-rouge">0</code> to remove all the top and bottom margins or replace <code class="language-plaintext highlighter-rouge">0</code> with a number of your choosing.</p>
+
+<p>You can also explore browser default styles by using your developer tools; this screen capture shows you how to do that using Firefox:</p>
+
+<p class="text-center"><a href="/learn/02_CSS/img/moz-dev-tools.gif" target="_blank" class="u-link-reset"><img src="/learn/02_CSS/img/moz-dev-tools.gif" alt="" title="Click to view this image in a new tab." /></a></p>
+
+<!-- @TODO: Replace this with a quick screencast  -->
+
+    
+    <footer class="feedback-footer">
+  
+
+  <p><strong>Make this page better.</strong></p>
+  <p>Found something that's incorrect or confusing on this page? Broken link? I want to know! <a href="https://github.com/mica-web/mica-web.github.io/issues/new?title=Feedback+for+%2Flearn%2Fcss%2Fbrowser-defaults&template=page-feedback.md" target="_blank">Open an issue on GitHub</a> to tell me what's up and help me update the page.</p>
+</footer>
+
+    
+  </main>
+
+  <footer class="site-footer">
+  <div class="rule"></div>
+  <div class="content">
+    <p>&copy; Copyright 2018&ndash;<span id="js-current-year"></span> Ang&eacute;lique Weger</p>
+    <p class="top-link-wrapper"><a href="#top">Back to top</a></p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('js-current-year').appendChild(document.createTextNode(new Date().getFullYear()))
+</script>
+
+
+</div>
+
+
+  </div>
+
+  
+  
+  
+  
+
+</body>
+<!--
+/**
+ * @license
+ * MyFonts Webfont Build ID 3700915, 2019-01-18T17:07:51-0500
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Native-Regular by Fort Foundry
+ * URL: https://www.myfonts.com/fonts/fort-foundry/native/regular/
+ * Copyright: Copyright &#x00A9; 2016 by Mattox Shuler. All rights reserved.
+ * Licensed pageviews: Unlimited
+ * 
+ * Webfont: NeueAlteGrotesk-Regular by VisualWorks
+ * URL: https://www.myfonts.com/fonts/visualworks/neue-alte-grotesk/regular/
+ * Copyright: Copyright © 2017-2018 by Krzysztof Chuc. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * Webfont: NeueAlteGrotesk-Medium by VisualWorks
+ * URL: https://www.myfonts.com/fonts/visualworks/neue-alte-grotesk/medium/
+ * Copyright: Copyright © 2017-2018 by Krzysztof Chuc. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * Webfont: NeueAlteGrotesk-SemiBold by VisualWorks
+ * URL: https://www.myfonts.com/fonts/visualworks/neue-alte-grotesk/semi-bold/
+ * Copyright: Copyright © 2017-2018 by Krzysztof Chuc. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * Webfont: NeueAlteGrotesk-Bold by VisualWorks
+ * URL: https://www.myfonts.com/fonts/visualworks/neue-alte-grotesk/bold/
+ * Copyright: Copyright © 2017-2018 by Krzysztof Chuc. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * Webfont: NeueAlteGrotesk-Heavy by VisualWorks
+ * URL: https://www.myfonts.com/fonts/visualworks/neue-alte-grotesk/heavy/
+ * Copyright: Copyright © 2017-2018 by Krzysztof Chuc. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * Webfont: NeueAlteGrotesk-Black by VisualWorks
+ * URL: https://www.myfonts.com/fonts/visualworks/neue-alte-grotesk/black/
+ * Copyright: Copyright © 2017-2018 by Krzysztof Chuc. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * 
+ * License: https://www.myfonts.com/viewlicense?type=web&buildid=3700915
+ * 
+ * © 2019 MyFonts Inc
+*/
+
+-->
+
+
+</html>
