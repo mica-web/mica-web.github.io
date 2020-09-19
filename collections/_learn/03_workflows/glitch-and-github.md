@@ -267,7 +267,7 @@ Using the `git push` command in the console will then move those changes up to G
 If it's helpful, you can also watch me go through the process of editing files in VS Code, committing my changes and pushing those changes up to GitHub.
 
 {: .text-center }
-<a href="https://www.loom.com/share/6b0160e97dcf4aef984b076184729802"><img style="max-width:420px;" src="https://cdn.loom.com/sessions/thumbnails/6b0160e97dcf4aef984b076184729802-with-play.gif"></a>
+<a href="https://www.loom.com/share/6b0160e97dcf4aef984b076184729802" target="_blank"><img style="max-width:420px;" src="https://cdn.loom.com/sessions/thumbnails/6b0160e97dcf4aef984b076184729802-with-play.gif"></a>
 
 
 
