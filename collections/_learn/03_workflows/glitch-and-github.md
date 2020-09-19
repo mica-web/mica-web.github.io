@@ -27,6 +27,10 @@ Note that it's entirely possible to use Glitch without GitHub and to add non-Gli
 <span class="emoji">👉🏻</span> Please note that this will go most smoothly if you have an uninterrupted 30 minutes to work through these steps from start to finish.
 
 ## Step 1: Create a new repository
+
+{: .callout }
+<span class="emoji">👀</span> I have also created a [step-by-step video](https://www.loom.com/share/cca15d1dd0864e4dacb17790994cec04){:target="_blank"} <span class="text-faded">(2mins)</span> of this process.
+
 Starting on [GitHub](https://github.com), log into your account, and then create a new repository following [these directions](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-new-repository).
 - Name your repo <b>project1</b> with no spaces.
 - Make your repo public.
@@ -38,6 +42,10 @@ See this screenshot for a full view of the settings to create the new repo:
 When you've correctly entered everything, click the <b>Create repository</b> button. You'll end up with a page full of instructions; leave this page open for now, and you'll come back to it later.
 
 ## Step 2: Remix a project on Glitch
+
+{: .callout }
+<span class="emoji">👀</span> I have also created a [step-by-step video](https://www.loom.com/share/b9dc8909b0414ab685bdad5ba30a8fe0){:target="_blank"} <span class="text-faded">(2mins)</span> of this process. The video does _not_ cover all the info in the text below, though, so you should still read through the instructions.
+
 Next, open a new tab or browser and go to [Glitch](https://glitch.com) and log into your account. Open up my [starter project](https://glitch.com/edit/#!/mica-web-starter) and remix the project:
 
 ![Click the project name and choose "Remix Project"]({{ ip | append: 'glitch-remix.gif' }})
@@ -52,6 +60,9 @@ Now you have a project on Glitch and a repo on GitHub and are ready to connect t
 Open up VS Code and access the Command Palette (<b>View > Command Palette</b>), then type "Glitch" and select <b>Glitch: Show Commands</b>. This will open up a new menu and you should select <b>Open Project</b>. Then select the project you just created; those files will now be visible and editable inside of VS Code.
 
 ## Step 3: Create SSH authentication
+
+{: .callout }
+<span class="emoji">👀</span> I have also created a [step-by-step video](https://www.loom.com/share/e4d7ced45dd443e9b232cb9fdd1ecc50){:target="_blank"} <span class="text-faded">(5mins)</span> of this process. **The video does _not_ cover all the info in the text below, though, so you should still read through the instructions.**
 
 {: .callout }
 The next steps will involve using the <b>command line</b>. If you haven't used the command line or console before, I've written a [short introduction to the command line]({{ lp | append: 'tools/command-line' }}) that you should review first.
@@ -119,6 +130,10 @@ At this point, you should see a message in the console with your username, like 
 <span class="emoji">⚠️</span> If you see anything else at this point, please copy the full message from your console and send it to me via DM on Slack, and we'll troubleshoot. You will not be able to continue with these instructions until this is resolved.
 
 ## Step 4: Connect Glitch to GitHub
+
+{: .callout }
+<span class="emoji">👀</span> I have also created a [step-by-step video](https://www.loom.com/share/585f0336f8644affab2cbc014b69f8bc){:target="_blank"} <span class="text-faded">(5mins)</span> of this process. **The video does _not_ cover all the info in the text below, though, so you should still read through the instructions.**
+
 So, we've now shown that GitHub and Glitch can talk to each other. Your Glitch project is already using git by default -- you didn't have to do anything extra to set this up --  and we can prove that by typing `git status` in the console.
 
 You should see a response like so:
@@ -248,5 +263,13 @@ Using the `git push` command in the console will then move those changes up to G
 
 {: .text-center }
 ![The title character from Unbreakable Kimmy Schmidt raises the roof in celebration.](https://media.giphy.com/media/18pjPEqqIt2k8/giphy.gif)
+
+If it's helpful, you can also watch me go through the process of editing files in VS Code, committing my changes and pushing those changes up to GitHub.
+
+{: .text-center }
+<a href="https://www.loom.com/share/6b0160e97dcf4aef984b076184729802"><img style="max-width:420px;" src="https://cdn.loom.com/sessions/thumbnails/6b0160e97dcf4aef984b076184729802-with-play.gif"></a>
+
+
+
 
 That's it! You'll be using this demo project and repo throughout the course to practice things, and you'll repeat this process to create new projects and repos for each of your graded projects. But those are tasks for future-you; right now, you should get up, stretch and take a break. <span class="emoji">😀</span>
