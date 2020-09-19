@@ -4,6 +4,12 @@ title: Project 1 Setup
 
 # {{page.title }}
 
+{: .text-center }
+<a href="https://www.loom.com/share/2355cd4eca6c485ebf2eefae7c9fd43b" target="_blank"><img style="max-width:460px;" src="https://cdn.loom.com/sessions/thumbnails/2355cd4eca6c485ebf2eefae7c9fd43b-with-play.gif"> </a>
+
+{: .callout }
+The video above covers steps 2-6. If you need help completing step 1, there is a separate [video walkthrough](https://loom.com/share/folder/779298f8d2a9447e9d2030228720b72a){:target="_blank"} for that.
+
 1. You will use the project and repo you created when completing the [instructions to connect Glitch and GitHub]({% link _learn/03_workflows/glitch-and-github.md %}).
 1. Before starting to write any HTML, you must first [create a branch]({% link _learn/03_workflows/branching.md %}) off the master branch. Name your new branch <b>resume</b>.
 1. After you've created your new branch and are working on the <b>resume</b> branch, add a new file named <b>index.html</b>
