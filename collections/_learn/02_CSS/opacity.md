@@ -1,7 +1,7 @@
 ---
 topic: Opacity
 category: CSS
-level: [ intro, advanced ]
+level: [ intro ]
 permalink: /:collection/css/:name
 code_example: false
 quiz: false
