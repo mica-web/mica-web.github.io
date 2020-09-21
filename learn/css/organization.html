@@ -9,6 +9,8 @@
   <meta name="Description" content="Curriculum, schedule and resources for web design.">
   <link href="/css/style.css" rel="stylesheet">
   
+  <link href="/css/syntax.css" rel="stylesheet">
+  
   <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
@@ -103,7 +105,7 @@
 
 
 
-<p class="text-faded reading-est">1 min read</p>
+<p class="text-faded reading-est">3 min read</p>
 
     
     
@@ -115,7 +117,121 @@
     
     <h1 id="writing-and-organizing-css">Writing and Organizing CSS</h1>
 
-<p class="wip-wrapper"><img src="https://media.giphy.com/media/SwP1HunIXetehTvy43/giphy.gif" alt="This page is a work in progress" /></p>
+<h2 id="writing-css">Writing CSS</h2>
+
+<p>When writing CSS, you can include your styles in three different ways:</p>
+<ul>
+  <li>inline</li>
+  <li>internal styles</li>
+  <li>external stylesheet</li>
+</ul>
+
+<h3 id="inline-styles">Inline styles</h3>
+<p>Inline styles are written as part of your HTML document and use the <code class="language-plaintext highlighter-rouge">style</code> attribute.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;h1</span> <span class="na">style=</span><span class="s">"color: blue;"</span><span class="nt">&gt;</span>My heading<span class="nt">&lt;/h1&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">style=</span><span class="s">"color: green; font-style: italic;"</span><span class="nt">&gt;</span>My content<span class="nt">&lt;/p&gt;</span>
+</code></pre></div></div>
+
+<p>While this is valid CSS and HTML, it has many downsides:</p>
+<ul>
+  <li>There is no way to reuse these styles. If you want every <code class="language-plaintext highlighter-rouge">p</code> element to be green and italicized, you must add the same <code class="language-plaintext highlighter-rouge">style</code> attribute to each <code class="language-plaintext highlighter-rouge">p</code> element.</li>
+  <li>Because your CSS is <em>inside</em> your HTML file, you don’t gain any of the text editor benefits found in a stylesheet file, like autoformatting and autocompletion.</li>
+</ul>
+
+<p>In general, one of the benefits of thinking of HTML and CSS as separate languages is that they each have separate concerns: HTML is all about the meaning of your content and CSS is about the appearance of your content.</p>
+
+<p>For all of these reasons, this way of writing CSS should be <strong>avoided</strong>.</p>
+
+<h3 id="internal-styles">Internal styles</h3>
+<p>You can also add CSS via a <code class="language-plaintext highlighter-rouge">style</code> block within your HTML document’s <code class="language-plaintext highlighter-rouge">head</code>:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
+
+<span class="nt">&lt;head&gt;</span>
+  <span class="nt">&lt;title&gt;</span>Internal styles demo<span class="nt">&lt;/title&gt;</span>
+  <span class="nt">&lt;style&gt;</span>
+    <span class="nt">h1</span> <span class="p">{</span>
+      <span class="nl">color</span><span class="p">:</span> <span class="no">blue</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="nt">p</span> <span class="p">{</span>
+      <span class="nl">color</span><span class="p">:</span> <span class="no">green</span><span class="p">;</span>
+      <span class="nl">font-style</span><span class="p">:</span> <span class="nb">italic</span><span class="p">;</span>
+    <span class="p">}</span>
+  <span class="nt">&lt;/style&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+
+<span class="nt">&lt;body&gt;</span>
+  <span class="nt">&lt;h1&gt;</span>My heading<span class="nt">&lt;/h1&gt;</span>
+  <span class="nt">&lt;p&gt;</span>My content<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
+
+<p>In comparison to inline styles, this allows for some separation between your CSS and HTML <em>and</em> lets you reuse styles more easily, but these styles can only be applied to the HTML file they are inside of. If you have a site with multiple pages and you want <em>all</em> the <code class="language-plaintext highlighter-rouge">p</code> elements across the site to be green and italicized, you must copy and paste this style block onto each page. This isn’t terrible when your style block is as short as this example, but once it’s a hundred lines long, it’s a lot of effort to keep them all up to date.</p>
+
+<p>Luckily, there’s a better way. <span class="emoji">✨</span></p>
+
+<h3 id="external-styles">External styles</h3>
+<p>Within the <code class="language-plaintext highlighter-rouge">head</code> of your HTML document, you can use the <code class="language-plaintext highlighter-rouge">link</code> element to point to an external stylesheet – either within your project or even hosted elsewhere.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
+
+<span class="nt">&lt;head&gt;</span>
+  <span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">"styles.css"</span> <span class="na">rel=</span><span class="s">"stylesheet"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;title&gt;</span>External styles demo<span class="nt">&lt;/title&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+
+<span class="nt">&lt;body&gt;</span>
+  <span class="nt">&lt;h1&gt;</span>My heading<span class="nt">&lt;/h1&gt;</span>
+  <span class="nt">&lt;p&gt;</span>My content<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
+
+<p>Separate from your HTML document, you would also need to create a <code class="language-plaintext highlighter-rouge">styles.css</code> file and, within that, write your CSS:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">h1</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="no">blue</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">p</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="no">green</span><span class="p">;</span>
+  <span class="nl">font-style</span><span class="p">:</span> <span class="nb">italic</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>In the previous example, the stylesheet is in the same directory as the HTML document that references it. You can also update the <code class="language-plaintext highlighter-rouge">href</code> of your <code class="language-plaintext highlighter-rouge">link</code> element to point to a directory, for example if you are using multiple CSS files for your page:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">"styles/base.css"</span> <span class="na">rel=</span><span class="s">"stylesheet"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">"styles/theme.css"</span> <span class="na">rel=</span><span class="s">"stylesheet"</span><span class="nt">&gt;</span>
+</code></pre></div></div>
+
+<p class="callout">Unless you have a solid reason to do otherwise, you should default to writing your CSS in an external stylesheet and reference it in your HTML using the <code class="language-plaintext highlighter-rouge">link</code> element.</p>
+
+<h2 id="organizing-css">Organizing CSS</h2>
+<p>It’s helpful to start your stylesheet with some structure in mind, otherwise it’s all too common to just write from top to bottom and provide no sense of organization. This more chaotic approach also makes it more difficult to troubleshoot and debug your CSS, as related styles may not be in the same location in your stylesheet and there may even be duplicate styles in the same sheet.</p>
+
+<p>I recommend organizing your stylesheet using the following minimal structure:</p>
+
+<ul>
+  <li><strong>base elements</strong>: all classless HTML element styles (for example, <code class="language-plaintext highlighter-rouge">body</code>)</li>
+  <li><strong>layout</strong>: the main components of your site’s layout</li>
+  <li><strong>all other classnames</strong>: any other class selectors in use</li>
+</ul>
+
+<p>You can use CSS comments to break up your styles and make this structure apparent, as well as add other sections as needed. This example stylesheet shows what using this structure might look like in practice:</p>
+
+<div class="glitch-embed-wrap" style="height: 600px; width: 100%;">
+  <iframe src="https://glitch.com/embed/#!/embed/organizing-css?path=styles.css&amp;previewSize=0&amp;sidebarCollapsed=true" title="organizing-css on Glitch" allow="geolocation; microphone; camera; midi; vr; encrypted-media" style="height: 100%; width: 100%; border: 0;">
+  </iframe>
+</div>
+
+<p>Jeff Starr’s post <a href="https://perishablepress.com/obsessive-css-code-formatting-organization-comments-and-signatures/">Obsessive CSS Code Formatting</a><span class="emoji text-smaller" title="Following and reading this link is optional."><span class="u-sr-only">Following and reading this link is optional.</span>✳️</span>
+ provides other strategies for using CSS comments and other styles of comment headings, too.</p>
 
     
     <footer class="feedback-footer">

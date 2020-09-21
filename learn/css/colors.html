@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="ie=edge" http-equiv="X-UA-Compatible">
+  <meta name="author" content="Angelique Weger" />
+  <meta name="Description" content="Curriculum, schedule and resources for web design.">
+  <link href="/css/style.css" rel="stylesheet">
+  
+  <link href="/css/syntax.css" rel="stylesheet">
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+  <link rel="manifest" href="/favicons/site.webmanifest">
+  <link rel="shortcut icon" href="/favicons/favicon.ico">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-config" content="/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#9ff2c0">
+  <title>Colors | Learning Web Design</title>
+</head>
+
+
+<body>
+  <div class="site-wrapper">
+
+    <header id="top" class="site-header">
+  <h2 class="u-m0 u-clearfix heading">
+    <a href="https://mica-web.github.io/" class="u-block u-clearfix" title="Return to homepage" >
+      <span class="heading--background">Learning</span>
+      <span class="heading--foreground">Web Design</span>
+    </a>
+  </h2>
+</header>
+
+
+<div class="content-wrapper ">
+
+  
+
+  <div class="top-nav">
+    <ul class="u-list-reset breadcrumb-wrapper">
+  <li class="u-inline-block breadcrumb"><a href="https://mica-web.github.io">Home</a></li>
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+  <li class="u-inline-block breadcrumb">
+    <a href="/learn">
+      learn
+    </a>
+  </li>
+  
+
+  
+
+  
+
+  
+
+  
+  <li class="u-inline-block breadcrumb">
+    <a href="/learn/css">
+      css
+    </a>
+  </li>
+  
+
+  
+
+  
+
+  
+
+  
+  <li class="u-inline-block breadcrumb">colors</li>
+  
+
+  
+
+</ul>
+
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p class="text-faded reading-est">4 min read</p>
+
+    
+    
+  </div>
+
+  
+
+  <main>
+    
+    
+<h1 id="colors">Colors</h1>
+
+<p>Using CSS, you can apply color to text, backgrounds and borders.</p>
+
+<p class="callout">We’ll learn more about CSS borders later, so here you’ll focus on text and background colors.</p>
+
+<h2 id="css-properties-related-to-color">CSS properties related to color</h2>
+<p>To change or apply a color to the background of a an HTML document or element, you use the property <code class="language-plaintext highlighter-rouge">background-color</code>. The property <code class="language-plaintext highlighter-rouge">color</code> is used to do the same, but affects only text.</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">p</span> <span class="p">{</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="no">purple</span><span class="p">;</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="no">white</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>As a result of this code, every <code class="language-plaintext highlighter-rouge">p</code> element would have a purple background and the text would be in white.</p>
+
+<h2 id="color-values">Color values</h2>
+<p>Color values can be expressed in multiple formats, including color keywords (like the example above), RGB and HSL.</p>
+
+<p class="callout"><span class="emoji">👩🏻‍🎨</span> You may notice that there is no CMYK format for CSS color values. While CMYK is appropriate for print design, where ink is layered to achieve colors using subtractive color mixing, in web design you are creating for screens. Our monitors and phone displays use light to make colors, and this depends upon the additive RGB color mode. If you’re interested, you can explore more about the <a href="http://www.differencebetween.net/science/difference-between-additive-colors-and-subtractive-colors/" target="_blank">differences between additive and subtractive colors</a><span class="emoji text-smaller" title="Following and reading this link is optional."><span class="u-sr-only">Following and reading this link is optional.</span>✳️</span>
+, but for this course you mainly need to know that RGB is the way to go for screens.</p>
+
+<h3 id="keyword-values">Keyword values</h3>
+<p>There are more than <a href="https://www.w3.org/wiki/CSS3/Color/Extended_color_keywords">130 valid color keywords</a><span class="emoji text-smaller" title="Following and reading this link is optional."><span class="u-sr-only">Following and reading this link is optional.</span>✳️</span>
+, ranging from <code class="language-plaintext highlighter-rouge">black</code> to <code class="language-plaintext highlighter-rouge">papayawhip</code>. These color values are text-based and have no spaces or hyphens in their names.</p>
+
+<div class="glitch-embed-wrap" style="height: 720px; width: 100%;">
+  <iframe src="https://glitch.com/embed/#!/embed/css-color-keywords?path=sass/styles.scss&amp;previewSize=100&amp;sidebarCollapsed=true" title="css-color-keywords on Glitch" allow="geolocation; microphone; camera; midi; vr; encrypted-media" style="height: 100%; width: 100%; border: 0;">
+  </iframe>
+</div>
+
+<p>While these color keywords are easy to use when doing practice exercises, they often are limiting when attempting to match brand colors or color palettes of your own devising. In general, it’s fine to use <code class="language-plaintext highlighter-rouge">black</code> or <code class="language-plaintext highlighter-rouge">white</code> in your stylesheets, but for most other colors you’ll want a higher degree of control than color keywords offer.</p>
+
+<h3 id="rgb-values">RGB values</h3>
+
+<p>There are two ways of representing an RGB color in CSS:</p>
+
+<p><b>Hexadecimal string notation</b> uses a combination of six letters and/or numbers to represent an RGB color. This format is also referred to as a <b>hex code</b> and always begins with a <code class="language-plaintext highlighter-rouge">#</code> symbol.</p>
+
+<p>While there is a logic that breaks down how the color black becomes <code class="language-plaintext highlighter-rouge">#000000</code>, it’s not really necessary to learn.</p>
+
+<p>In comparison, the <b>RGB functional notation</b> is a much simpler format to understand. This format only uses numbers and maps its values to the color picker you may already be familiar with in programs like Adobe Illustrator.</p>
+
+<p class="text-center"><img src="/learn/02_CSS/img/adobe-color-picker-rgb.png" alt="Adobe Color Picker with RGB area highlighted." /></p>
+
+<p>To represent this same color in CSS as functional RGB, begin with <code class="language-plaintext highlighter-rouge">rgb</code> followed by a set of parentheses <code class="language-plaintext highlighter-rouge">()</code>; inside the parentheses, list the values for red, green and blue, each separated by a comma, like so:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">h1</span> <span class="p">{</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="nb">rgb</span><span class="p">(</span><span class="m">168</span><span class="p">,</span> <span class="m">255</span><span class="p">,</span> <span class="m">0</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="hsl-values">HSL values</h3>
+<p>The final way you can represent color in CSS is according to a color’s hue, saturation and lightness. This is a readable format that’s easy to adapt when adjusting colors for hover effects or creating color palettes.</p>
+
+<p><span class="emoji">⚠️</span> Unfortunately, the CSS HSL value <em>does not</em> map to the HSB or HSV values displayed in most color pickers:</p>
+
+<p class="text-center"><img src="/learn/02_CSS/img/adobe-color-picker-hsb.png" alt="Adobe Color Picker with HSB area highlighted." /></p>
+
+<p>While the value for the hue is correct, you will need to use a color picker that outputs HSL values or use an online converter, like <a href="https://colordesigner.io/convert/hsvtohsl" target="_blank">ColorDesigner.io</a> or <a href="https://convertacolor.com/" target="_blank">ConvertAColor.com</a> to get the other two values.</p>
+
+<p>HSL values use a similar format to RGB functional notation and begin with <code class="language-plaintext highlighter-rouge">hsl</code> followed by a set of parentheses <code class="language-plaintext highlighter-rouge">()</code>; inside the parentheses, list the values for hue, saturation and lightness, each separated by a comma and with the last two values represented as percentages, like so:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">h1</span> <span class="p">{</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="n">hsl</span><span class="p">(</span><span class="m">80</span><span class="p">,</span> <span class="m">100%</span><span class="p">,</span> <span class="m">50%</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>While it may be more fuss to get to the values for an HSL color, they are very friendly and powerful once you’re working in CSS.</p>
+
+<div class="glitch-embed-wrap" style="height: 730px; width: 100%;">
+  <iframe src="https://glitch.com/embed/#!/embed/css-hsl?path=index.html&amp;previewSize=100&amp;sidebarCollapsed=true" title="css-hsl on Glitch" allow="geolocation; microphone; camera; midi; vr; encrypted-media" style="height: 100%; width: 100%; border: 0;">
+  </iframe>
+</div>
+
+<h2 id="which-value-format-should-you-use">Which value format should you use?</h2>
+
+<p>The following table shows the original 16 basic CSS color keywords expressed in hexadecimal, functional RGB and HSL.</p>
+
+<div class="glitch-embed-wrap" style="height: 700px; width: 100%;">
+  <iframe src="https://glitch.com/embed/#!/embed/css-color-values?path=sass/styles.scss&amp;previewSize=100&amp;sidebarCollapsed=true" title="css-color-values on Glitch" allow="geolocation; microphone; camera; midi; vr; encrypted-media" style="height: 100%; width: 100%; border: 0;">
+  </iframe>
+</div>
+
+<p>If it’s possible to refer to a single color in more than three ways – how do you know which color format to use?</p>
+
+<p>As stated in the beginning, color keywords are usually too limiting to achieve specific palettes, but it’s still fine to use them where helpful (for example, <code class="language-plaintext highlighter-rouge">black</code> and <code class="language-plaintext highlighter-rouge">white</code> are easier to remember than <code class="language-plaintext highlighter-rouge">#000000</code> and <code class="language-plaintext highlighter-rouge">#FFFFFF</code>).</p>
+
+<p>Hex codes are commonly used because they were available in CSS before the functional RGB and HSL formats, but these newer formats are both easier to understand and offer more flexibility. For these reasons, I would recommend either the functional RGB or HSL formats, but <strong>the most important thing as you’re writing CSS is to be consistent with which color value format you use</strong>.</p>
+
+<p>Writing consistent color formats is a gift to your future self. Imagine that, after having written 700 lines of CSS for a project, you want to modify the color palette. If you’ve used one color format consistently, it’s easy enough to search for <code class="language-plaintext highlighter-rouge">rgb(131, 0, 135)</code> and replace it with the new shade. If you’ve also used the keyword <code class="language-plaintext highlighter-rouge">purple</code> and sometimes <code class="language-plaintext highlighter-rouge">#810082</code>, all you’ve done is make life harder for yourself because now you must search out additional terms to make sure you change the color in all the places.</p>
+
+<!-- CSS Colors 1 -->
+<div class="quiz-wrapper">
+  <header class="quiz-header">
+    <h2 class="quiz-heading">Share What You've Learned</h2>
+    <div class="quiz-actions-wrapper">
+      <button type="button" class="u-button-reset u-link-reset quiz-action js-quiz-toggle" aria-controls="YM97RPQ"><?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 24 24" role="img" xmlns="http://www.w3.org/2000/svg">
+  <title>Collapse this content</title>
+  <path d="M23 24H1a1 1 0 01-1-1V1a1 1 0 011-1h22a1 1 0 110 2H2v20h20V5.19a1 1 0 112 0V23a1 1 0 01-1 1z" />
+  <path class="icon-line" d="M18 13H6a1 1 0 110-2h12a1 1 0 110 2z" />
+  <path class="icon-line" d="M11 18V6a1 1 0 112 0v12a1 1 0 11-2 0z" />
+</svg>
+</button>
+      <a class="u-link-reset quiz-action" href="https://www.surveymonkey.com/r/YM97RPQ" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img">
+  <title>Open in a new window</title>
+  <path d="M23 24H1a1 1 0 01-1-1V1a1 1 0 011-1h11.95a1 1 0 010 2H2v20h20l-.01-11.35a1 1 0 012 0L24 23a1 1 0 01-1 1z" />
+  <path d="M17.5 2c-.38 0-.62-.83-.43-1.5.09-.3.25-.5.43-.5h6c.12 0 .22.08.3.2.13.09.2.2.2.3v6c0 .38-.83.63-1.5.43-.3-.09-.5-.25-.5-.43V3.2l-7.13 7.26c-.48.5-1.37.21-1.6-.51a.91.91 0 01.2-.92L20.37 2z" />
+</svg>
+</a>
+    </div>
+  </header>
+  
+  <div id="YM97RPQ" class="quiz-content">
+    <iframe src="https://www.surveymonkey.com/r/YM97RPQ" height="600" allowtransparency="true" frameborder="0" scrolling="yes"></iframe>
+  </div>
+  
+</div>
+
+
+    
+    <footer class="feedback-footer">
+  
+
+  <p><strong>Make this page better.</strong></p>
+  <p>Found something that's incorrect or confusing on this page? Broken link? I want to know! <a href="https://github.com/mica-web/mica-web.github.io/issues/new?title=Feedback+for+%2Flearn%2Fcss%2Fcolors&template=page-feedback.md" target="_blank">Open an issue on GitHub</a> to tell me what's up and help me update the page.</p>
+</footer>
+
+    
+  </main>
+
+  <footer class="site-footer">
+  <div class="rule"></div>
+  <div class="content">
+    <p>&copy; Copyright 2018&ndash;<span id="js-current-year"></span> Ang&eacute;lique Weger</p>
+    <p class="top-link-wrapper"><a href="#top">Back to top</a></p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('js-current-year').appendChild(document.createTextNode(new Date().getFullYear()))
+</script>
+
+
+</div>
+
+
+  </div>
+
+  
+  
+  
+  
+  <script src="/js/quizToggle.js" async defer></script>
+  
+
+</body>
+<!--
+/**
+ * @license
+ * MyFonts Webfont Build ID 3700915, 2019-01-18T17:07:51-0500
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Native-Regular by Fort Foundry
+ * URL: https://www.myfonts.com/fonts/fort-foundry/native/regular/
+ * Copyright: Copyright &#x00A9; 2016 by Mattox Shuler. All rights reserved.
+ * Licensed pageviews: Unlimited
+ * 
+ * Webfont: NeueAlteGrotesk-Regular by VisualWorks
+ * URL: https://www.myfonts.com/fonts/visualworks/neue-alte-grotesk/regular/
+ * Copyright: Copyright © 2017-2018 by Krzysztof Chuc. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * Webfont: NeueAlteGrotesk-Medium by VisualWorks
+ * URL: https://www.myfonts.com/fonts/visualworks/neue-alte-grotesk/medium/
+ * Copyright: Copyright © 2017-2018 by Krzysztof Chuc. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * Webfont: NeueAlteGrotesk-SemiBold by VisualWorks
+ * URL: https://www.myfonts.com/fonts/visualworks/neue-alte-grotesk/semi-bold/
+ * Copyright: Copyright © 2017-2018 by Krzysztof Chuc. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * Webfont: NeueAlteGrotesk-Bold by VisualWorks
+ * URL: https://www.myfonts.com/fonts/visualworks/neue-alte-grotesk/bold/
+ * Copyright: Copyright © 2017-2018 by Krzysztof Chuc. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * Webfont: NeueAlteGrotesk-Heavy by VisualWorks
+ * URL: https://www.myfonts.com/fonts/visualworks/neue-alte-grotesk/heavy/
+ * Copyright: Copyright © 2017-2018 by Krzysztof Chuc. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * Webfont: NeueAlteGrotesk-Black by VisualWorks
+ * URL: https://www.myfonts.com/fonts/visualworks/neue-alte-grotesk/black/
+ * Copyright: Copyright © 2017-2018 by Krzysztof Chuc. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * 
+ * License: https://www.myfonts.com/viewlicense?type=web&buildid=3700915
+ * 
+ * © 2019 MyFonts Inc
+*/
+
+-->
+
+
+</html>

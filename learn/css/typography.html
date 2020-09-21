@@ -9,6 +9,8 @@
   <meta name="Description" content="Curriculum, schedule and resources for web design.">
   <link href="/css/style.css" rel="stylesheet">
   
+  <link href="/css/syntax.css" rel="stylesheet">
+  
   <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
@@ -140,36 +142,39 @@
 
 <p>Experiment in your Glitch project with setting the <code class="language-plaintext highlighter-rouge">font-size</code> property on different HTML elements.</p>
 
-<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nt">h1</span> <span class="p">{</span>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">h1</span> <span class="p">{</span>
   <span class="nl">font-size</span><span class="p">:</span> <span class="m">52px</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="nt">p</span> <span class="p">{</span>
   <span class="nl">font-size</span><span class="p">:</span> <span class="m">18px</span><span class="p">;</span>
-<span class="p">}</span></code></pre></figure>
+<span class="p">}</span>
+</code></pre></div></div>
 
 <p class="callout"><span class="emoji">⚠️</span> When you write the value for your <code class="language-plaintext highlighter-rouge">font-size</code>, make sure there’s no space between the number and the unit (in this case, <code class="language-plaintext highlighter-rouge">px</code>). <code class="language-plaintext highlighter-rouge">font-size: 18px;</code> is correct and <code class="language-plaintext highlighter-rouge">font-size: 18 px;</code> is invalid.</p>
 
 <h3 id="font-style"><code class="language-plaintext highlighter-rouge">font-style</code></h3>
 <p>This CSS property controls if text is italicized or not. A value of <code class="language-plaintext highlighter-rouge">normal</code> removes the italics from text, as seen in this example.</p>
 
-<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nt">p</span> <span class="p">{</span>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">p</span> <span class="p">{</span>
   <span class="nl">font-style</span><span class="p">:</span> <span class="nb">italic</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="nt">b</span> <span class="p">{</span>
   <span class="nl">font-style</span><span class="p">:</span> <span class="nb">normal</span><span class="p">;</span>
-<span class="p">}</span></code></pre></figure>
+<span class="p">}</span>
+</code></pre></div></div>
 
 <p class="callout"><span class="emoji">⚠️</span> Do not set <code class="language-plaintext highlighter-rouge">font-style: normal;</code> on text that would otherwise <em>not</em> be italicized. So, in the above example, the <code class="language-plaintext highlighter-rouge">font-style</code> declaration on the <code class="language-plaintext highlighter-rouge">b</code> element <em>only</em> makes sense because of the earlier rule. If the rule on the <code class="language-plaintext highlighter-rouge">p</code> element was deleted, then the <code class="language-plaintext highlighter-rouge">font-style</code> rule on the <code class="language-plaintext highlighter-rouge">b</code> element could also be deleted, since it would only be reiterating a browser default.</p>
 
 <h3 id="font-weight"><code class="language-plaintext highlighter-rouge">font-weight</code></h3>
 <p>This property controls how heavy or light the text is. The value for <code class="language-plaintext highlighter-rouge">font-weight</code> can be a keyword (like <code class="language-plaintext highlighter-rouge">bold</code> or <code class="language-plaintext highlighter-rouge">normal</code>):</p>
 
-<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nt">h1</span> <span class="p">{</span>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">h1</span> <span class="p">{</span>
   <span class="nl">font-weight</span><span class="p">:</span> <span class="nb">normal</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="nt">p</span> <span class="p">{</span>
   <span class="nl">font-weight</span><span class="p">:</span> <span class="nb">bold</span><span class="p">;</span>
-<span class="p">}</span></code></pre></figure>
+<span class="p">}</span>
+</code></pre></div></div>
 
 <p>Headings (<code class="language-plaintext highlighter-rouge">h1</code>-<code class="language-plaintext highlighter-rouge">h6</code>) are set to bold by default, so the <code class="language-plaintext highlighter-rouge">font-weight</code> rule above is overriding that browser default and not reiterating it (which a <code class="language-plaintext highlighter-rouge">font-weight: bold;</code> rule on <code class="language-plaintext highlighter-rouge">h1</code> would be doing).</p>
 
@@ -186,19 +191,21 @@
   <li><b><code class="language-plaintext highlighter-rouge">none</code></b> prevents text transformation and the text will use whatever capitalization exists in the HTML document</li>
 </ul>
 
-<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nt">h1</span> <span class="p">{</span>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">h1</span> <span class="p">{</span>
   <span class="nl">text-transform</span><span class="p">:</span> <span class="nb">lowercase</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="nt">h2</span> <span class="p">{</span>
   <span class="nl">text-transform</span><span class="p">:</span> <span class="nb">uppercase</span><span class="p">;</span>
-<span class="p">}</span></code></pre></figure>
+<span class="p">}</span>
+</code></pre></div></div>
 
 <h3 id="text-decoration"><code class="language-plaintext highlighter-rouge">text-decoration</code></h3>
 <p>This property is mainly used for making changes to the default underline on links, but it does offer some other stylistic effects.</p>
 
-<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nt">a</span> <span class="p">{</span>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">a</span> <span class="p">{</span>
   <span class="nl">text-decoration</span><span class="p">:</span> <span class="nb">underline</span> <span class="nb">dotted</span><span class="p">;</span>
-<span class="p">}</span></code></pre></figure>
+<span class="p">}</span>
+</code></pre></div></div>
 
 <p><code class="language-plaintext highlighter-rouge">text-decoration</code> is the first example of a <b>shorthand CSS property</b>; it combines four related CSS properties into a single declaration:</p>
 <ul>
@@ -219,21 +226,23 @@
 <h3 id="text-align"><code class="language-plaintext highlighter-rouge">text-align</code></h3>
 <p>This property sets the alignment of any block-level element. It uses the following keyword values: <code class="language-plaintext highlighter-rouge">center</code>, <code class="language-plaintext highlighter-rouge">right</code>, <code class="language-plaintext highlighter-rouge">left</code>, <code class="language-plaintext highlighter-rouge">justify</code>.</p>
 
-<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nt">h1</span> <span class="p">{</span>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">h1</span> <span class="p">{</span>
   <span class="nl">text-align</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="nt">p</span> <span class="p">{</span>
   <span class="nl">text-align</span><span class="p">:</span> <span class="nb">justify</span><span class="p">;</span>
-<span class="p">}</span></code></pre></figure>
+<span class="p">}</span>
+</code></pre></div></div>
 
 <p class="callout"><span class="emoji">⚠️</span> Note that the specification of block-level elements in this description. Setting <code class="language-plaintext highlighter-rouge">text-align</code> on an inline element, like <code class="language-plaintext highlighter-rouge">b</code> or <code class="language-plaintext highlighter-rouge">a</code>, has no effect if the layout of that element has not been changed from its default.</p>
 
 <h3 id="line-height"><code class="language-plaintext highlighter-rouge">line-height</code></h3>
 <p>This property controls the height of a line of text and can be used to configure the spacing between lines. The value of <code class="language-plaintext highlighter-rouge">line-height</code> should be a number and will work even without a measurement, like so:</p>
 
-<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nt">p</span> <span class="p">{</span>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">p</span> <span class="p">{</span>
   <span class="nl">line-height</span><span class="p">:</span> <span class="m">1.5</span><span class="p">;</span>
-<span class="p">}</span></code></pre></figure>
+<span class="p">}</span>
+</code></pre></div></div>
 
 <p class="callout"><span class="emoji">👉🏻</span> When the value of <code class="language-plaintext highlighter-rouge">line-height</code> is unitless, like in the example above, it is based on the element’s font size. So, if the <code class="language-plaintext highlighter-rouge">font-size</code> value of that <code class="language-plaintext highlighter-rouge">p</code> element is 18 pixels, the calculated <code class="language-plaintext highlighter-rouge">line-height</code> value would be 27 pixels (18 × 1.5 = 27).</p>
 
@@ -246,22 +255,24 @@
 
 <p>The above example uses this CSS:</p>
 
-<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nt">p</span> <span class="p">{</span>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">p</span> <span class="p">{</span>
   <span class="nl">font-size</span><span class="p">:</span> <span class="m">22px</span><span class="p">;</span>
   <span class="nl">line-height</span><span class="p">:</span> <span class="m">12px</span><span class="p">;</span>
-<span class="p">}</span></code></pre></figure>
+<span class="p">}</span>
+</code></pre></div></div>
 
 <p>Because the <code class="language-plaintext highlighter-rouge">line-height</code> value is set in pixels and less than the <code class="language-plaintext highlighter-rouge">font-size</code> value, the text overlaps.</p>
 
 <h3 id="letter-spacing"><code class="language-plaintext highlighter-rouge">letter-spacing</code></h3>
 <p>This property controls the horizontal space between letters. The value of <code class="language-plaintext highlighter-rouge">letter-spacing</code> should be a number with a unit and negative numbers are valid.</p>
 
-<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nt">h1</span> <span class="p">{</span>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">h1</span> <span class="p">{</span>
   <span class="nl">letter-spacing</span><span class="p">:</span> <span class="m">-1px</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="nt">h2</span> <span class="p">{</span>
   <span class="nl">letter-spacing</span><span class="p">:</span> <span class="m">1px</span><span class="p">;</span>
-<span class="p">}</span></code></pre></figure>
+<span class="p">}</span>
+</code></pre></div></div>
 
 <p class="callout"><span class="emoji">👉🏻</span> Note that it is <em>much less</em> refined than the kerning offered in software for print design. A <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-kerning"><code class="language-plaintext highlighter-rouge">font-kerning</code> property</a><span class="emoji text-smaller" title="Following and reading this link is optional."><span class="u-sr-only">Following and reading this link is optional.</span>✳️</span>
  also exists, but only applies kerning info stored in a font file and does not allow you to further modify that.</p>
@@ -269,9 +280,10 @@
 <h3 id="word-spacing"><code class="language-plaintext highlighter-rouge">word-spacing</code></h3>
 <p>As with <code class="language-plaintext highlighter-rouge">letter-spacing</code>, but this property allows you to configure the spacing between words.</p>
 
-<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nt">h1</span> <span class="p">{</span>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">h1</span> <span class="p">{</span>
   <span class="nl">word-spacing</span><span class="p">:</span> <span class="m">20px</span><span class="p">;</span>
-<span class="p">}</span></code></pre></figure>
+<span class="p">}</span>
+</code></pre></div></div>
 
 <h2 id="glitch-example">Glitch example</h2>
 
