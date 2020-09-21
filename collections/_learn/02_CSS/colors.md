@@ -3,9 +3,9 @@ topic: Colors
 category: CSS
 level: [ intro ]
 permalink: /:collection/css/:name
-code_example: false
-quiz: false
-issues: false
+code_example: true
+quiz: true
+issues: true
 ---
 
 {% assign ip = '/learn/02_CSS/img/' %}
@@ -121,3 +121,9 @@ As stated in the beginning, color keywords are usually too limiting to achieve s
 Hex codes are commonly used because they were available in CSS before the functional RGB and HSL formats, but these newer formats are both easier to understand and offer more flexibility. For these reasons, I would recommend either the functional RGB or HSL formats, but **the most important thing as you're writing CSS is to be consistent with which color value format you use**.
 
 Writing consistent color formats is a gift to your future self. Imagine that, after having written 700 lines of CSS for a project, you want to modify the color palette. If you've used one color format consistently, it's easy enough to search for `rgb(131, 0, 135)` and replace it with the new shade. If you've also used the keyword `purple` and sometimes `#810082`, all you've done is make life harder for yourself because now you must search out additional terms to make sure you change the color in all the places.
+
+<!-- CSS Colors 1 -->
+{% include quiz.html
+  title="Share What You've Learned"
+  quizId="YM97RPQ"
+%}
