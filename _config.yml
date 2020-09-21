@@ -59,7 +59,8 @@ collections:
       - 01_HTML/history.md
       - 02_CSS/basics.md
       - 02_CSS/typography.md
-      - 02_CSS/css_color.md
+      - 02_CSS/colors.md
+      - 02_CSS/opacity.md
       - 02_CSS/fonts.md
       - 02_CSS/floats.md
       - 02_CSS/browser-defaults.md
