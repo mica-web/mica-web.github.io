@@ -61,3 +61,12 @@ Guidelines for writing CSS classes
 ```css
 .mhdr { }
 ```
+
+<!--
+
+- [BEM key concepts](https://en.bem.info/methodology/key-concepts/)
+- An [intro to other CSS naming structures](https://codepen.io/hidanielle/post/css-methodologies-naming-conventions-and-file-structures)
+- [Sass basics](https://sass-lang.com/guide)
+- All my [CodePen examples](https://codepen.io/collection/AaWBNz/) to date
+
+-->

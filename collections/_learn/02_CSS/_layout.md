@@ -1,0 +1,2 @@
+- [Getting Started With CSS Layout](https://www.smashingmagazine.com/2018/05/guide-css-layout/)
+- [New CSS Features That Are Changing Web Design](https://www.smashingmagazine.com/2018/05/future-of-web-design/)
