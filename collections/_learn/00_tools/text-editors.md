@@ -41,11 +41,11 @@ Remember how text editors create plain text? That doesn't mean that fonts and co
 
 As a result, color can be automatically applied to your document to highlight specific bits of code, like in this HTML example: 
 
-{% highlight html %}
+```html
 <a href="https://www.instagram.com/">
   <img src="/images/icon-insta.png" alt="See my photos on Instagram.">
 </a>
-{% endhighlight %}
+```
 
 In the example above:
 - HTML elements (`a` and `img`) are in purple,

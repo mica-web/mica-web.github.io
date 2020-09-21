@@ -45,12 +45,12 @@ This [searchable directory of browser default styles](https://browserdefaultstyl
 
 This screenshot shows that browsers go about it a variety of different ways, but all add some margin to the top and bottom of the `h2` element. To undo this, you'd need to apply your own styles, like so:
 
-{% highlight css %}
+```css
 h2 {
   margin-top: 0;
   margin-bottom: 0;
 }
-{% endhighlight %}
+```
 
 Where you use `0` to remove all the top and bottom margins or replace `0` with a number of your choosing.
 

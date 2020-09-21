@@ -30,12 +30,12 @@ The element you are affecting is called a <b>selector</b> and the code you write
 ![]({{ ip | append: 'css-ruleset.png' }}){: aria-describedby="css-ruleset"}
 
 {: #css-ruleset .u-sr-only }
-{% highlight css %}
+```css
 p {
   color: purple;
   font-size: 18px;
 }
-{% endhighlight %}
+```
 
 <!-- CSS 1 -->
 {% include quiz.html
@@ -49,14 +49,15 @@ In this example, the `p` element is the selector and the declarations change the
 
 Multiple selectors can receive the same rules if they are separated by commas, like so:
 
-{% highlight css %}
+```css
 h1, h2, h3 {
   color: green;
 }
-{% endhighlight %}
+```
 
-And a styesheet is made up of multiple rulesets, like so:
-{% highlight css %}
+And a stylesheet is made up of multiple rulesets, like so:
+
+```css
 h1, h2, h3 {
   color: green;
 }
@@ -67,7 +68,7 @@ p {
   color: purple;
   font-size: 18px;
 }
-{% endhighlight %}
+```
 
 Looking through these examples, you may have noticed some basic expectations of CSS, specifically:
 
@@ -93,9 +94,9 @@ For the purposes of your stylesheet, the `link` element has two important attrib
 
 A properly formatted `link` element looks like this:
 
-{% highlight html %}
+```html
   <link rel="stylesheet" href="style.css">
-{% endhighlight %}
+```
 
 The `link` element can be added anywhere in the `head` element of your HTML file.
 

@@ -3,7 +3,7 @@ topic: Typography
 category: CSS
 level: [ intro ]
 permalink: /:collection/css/:name
-code_example: false
+code_example: true
 quiz: false
 issues: true
 ---
@@ -39,14 +39,14 @@ The default `font-size` in most browsers is 16 pixels for paragraph text, but us
 
 Experiment in your Glitch project with setting the `font-size` property on different HTML elements.
 
-{% highlight css %}
+```css
 h1 {
   font-size: 52px;
 }
 p {
   font-size: 18px;
 }
-{% endhighlight %}
+```
 
 {: .callout }
 <span class="emoji">⚠️</span> When you write the value for your `font-size`, make sure there's no space between the number and the unit (in this case, `px`). `font-size: 18px;` is correct and `font-size: 18 px;` is invalid.
@@ -54,14 +54,14 @@ p {
 ### `font-style`
 This CSS property controls if text is italicized or not. A value of `normal` removes the italics from text, as seen in this example.
 
-{% highlight css %}
+```css
 p {
   font-style: italic;
 }
 b {
   font-style: normal;
 }
-{% endhighlight %}
+```
 
 {: .callout }
 <span class="emoji">⚠️</span> Do not set `font-style: normal;` on text that would otherwise _not_ be italicized. So, in the above example, the `font-style` declaration on the `b` element _only_ makes sense because of the earlier rule. If the rule on the `p` element was deleted, then the `font-style` rule on the `b` element could also be deleted, since it would only be reiterating a browser default.
@@ -69,14 +69,14 @@ b {
 ### `font-weight`
 This property controls how heavy or light the text is. The value for `font-weight` can be a keyword (like `bold` or `normal`):
 
-{% highlight css %}
+```css
 h1 {
   font-weight: normal;
 }
 p {
   font-weight: bold;
 }
-{% endhighlight %}
+```
 
 Headings (`h1`-`h6`) are set to bold by default, so the `font-weight` rule above is overriding that browser default and not reiterating it (which a `font-weight: bold;` rule on `h1` would be doing).
 
@@ -92,23 +92,23 @@ This property adjusts the capitalization rules for your text; there are four com
 - <b>`capitalize`</b> transforms your text to be Title Case, where the first letter of each word is capitalized
 - <b>`none`</b> prevents text transformation and the text will use whatever capitalization exists in the HTML document
 
-{% highlight css %}
+```css
 h1 {
   text-transform: lowercase;
 }
 h2 {
   text-transform: uppercase;
 }
-{% endhighlight %}
+```
 
 ### `text-decoration`
 This property is mainly used for making changes to the default underline on links, but it does offer some other stylistic effects.
 
-{% highlight css %}
+```css
 a {
   text-decoration: underline dotted;
 }
-{% endhighlight %}
+```
 
 `text-decoration` is the first example of a <b>shorthand CSS property</b>; it combines four related CSS properties into a single declaration:
 - `text-decoration-color` 
@@ -127,14 +127,14 @@ The following CSS properties affect the layout of text.
 ### `text-align`
 This property sets the alignment of any block-level element. It uses the following keyword values: `center`, `right`, `left`, `justify`.
 
-{% highlight css %}
+```css
 h1 {
   text-align: center;
 }
 p {
   text-align: justify;
 }
-{% endhighlight %}
+```
 
 {: .callout }
 <span class="emoji">⚠️</span> Note that the specification of block-level elements in this description. Setting `text-align` on an inline element, like `b` or `a`, has no effect if the layout of that element has not been changed from its default.
@@ -142,11 +142,11 @@ p {
 ### `line-height`
 This property controls the height of a line of text and can be used to configure the spacing between lines. The value of `line-height` should be a number and will work even without a measurement, like so:
 
-{% highlight css %}
+```css
 p {
   line-height: 1.5;
 }
-{% endhighlight %}
+```
 
 {: .callout }
 <span class="emoji">👉🏻</span> When the value of `line-height` is unitless, like in the example above, it is based on the element's font size. So, if the `font-size` value of that `p` element is 18 pixels, the calculated `line-height` value would be 27 pixels (18 &times; 1.5 = 27).
@@ -164,26 +164,26 @@ p {
 
 The above example uses this CSS:
 
-{% highlight css %}
+```css
 p {
   font-size: 22px;
   line-height: 12px;
 }
-{% endhighlight %}
+```
 
 Because the `line-height` value is set in pixels and less than the `font-size` value, the text overlaps.
 
 ### `letter-spacing`
 This property controls the horizontal space between letters. The value of `letter-spacing` should be a number with a unit and negative numbers are valid.
 
-{% highlight css %}
+```css
 h1 {
   letter-spacing: -1px;
 }
 h2 {
   letter-spacing: 1px;
 }
-{% endhighlight %}
+```
 
 {: .callout }
 <span class="emoji">👉🏻</span> Note that it is _much less_ refined than the kerning offered in software for print design. A [`font-kerning` property](https://developer.mozilla.org/en-US/docs/Web/CSS/font-kerning){% include optional.html %} also exists, but only applies kerning info stored in a font file and does not allow you to further modify that.
@@ -191,11 +191,11 @@ h2 {
 ### `word-spacing`
 As with `letter-spacing`, but this property allows you to configure the spacing between words.
 
-{% highlight css %}
+```css
 h1 {
   word-spacing: 20px;
 }
-{% endhighlight %}
+```
 
 ## Glitch example
 

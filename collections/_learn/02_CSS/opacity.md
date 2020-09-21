@@ -3,7 +3,7 @@ topic: Opacity
 category: CSS
 level: [ intro ]
 permalink: /:collection/css/:name
-code_example: false
+code_example: true
 quiz: false
 issues: true
 ---
