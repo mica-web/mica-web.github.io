@@ -24,7 +24,7 @@ Use your current knowledge of HTML and CSS to markup and format your resume.
 1. Based on your priority guide template and using your current knowledge of HTML, create an HTML version of your resume.
 1. Use your current knowledge of CSS to add formatting/styles to your resume.
 1. Create a pull request for code review and final submission.
-  - Include PR template and use best practices checklist to check your own work.
+  - Include PR template and use best practices checklists for [HTML]({% link _learn/01_HTML/best-practices.md %}) and [CSS]({% link _learn/02_CSS/best-practices.md %}) to check your own work.
 
 ## Requirements
 - Your assignment will be viewed at a resolution of 1200 x 800.
@@ -44,10 +44,11 @@ Use your current knowledge of HTML and CSS to markup and format your resume.
 <dd>Step 4 optional</dd>
 <dt>Sept 24</dt>
 <dd>Project due date</dd>
+<dd class="text-faded">(attempt to complete PR before class on Thursday; hard due date is midnight on 9/25)</dd>
 <dd>Steps 4 & 5 complete</dd>
 </dl>
 
 ## Rubric
-[Google Sheet example](){:target="_blank"}
+[Google Sheet example](https://docs.google.com/spreadsheets/d/e/2PACX-1vSh5-j09DkLj0Pdjwgki14cSTAYWnLl794H4yft27Fg7ijsFyz2XbBa5Od18e_z8V1KXKfzpqj2LhOT/pubhtml?gid=1244627885&single=true){:target="_blank"}
 
 </aside>
