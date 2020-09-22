@@ -4,8 +4,7 @@ title: Project 1 Setup
 
 # {{page.title }}
 
-{: .text-center }
-<a href="https://www.loom.com/share/d10f38c2fe5544bead97da1e36c4e078" target="_blank"><img style="max-width:460px;" src="https://cdn.loom.com/sessions/thumbnails/d10f38c2fe5544bead97da1e36c4e078-with-play.gif"> </a>
+<div class="loom-embed-wrapper" style="position: relative; padding-bottom: 62.5%; height: 0;"><iframe src="https://www.loom.com/embed/d10f38c2fe5544bead97da1e36c4e078" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 
 {: .callout }
 The video above covers steps 2-8. If you need help completing step 1, there is a separate [video walkthrough](https://loom.com/share/folder/779298f8d2a9447e9d2030228720b72a){:target="_blank"} for that.

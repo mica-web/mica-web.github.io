@@ -266,10 +266,6 @@ Using the `git push` command in the console will then move those changes up to G
 
 If it's helpful, you can also watch me go through the process of editing files in VS Code, committing my changes and pushing those changes up to GitHub.
 
-{: .text-center }
-<a href="https://www.loom.com/share/6b0160e97dcf4aef984b076184729802" target="_blank"><img style="max-width:420px;" src="https://cdn.loom.com/sessions/thumbnails/6b0160e97dcf4aef984b076184729802-with-play.gif"></a>
-
-
-
+<div class="loom-embed-wrapper" style="position: relative; padding-bottom: 62.5%; height: 0;"><iframe src="https://www.loom.com/embed/6b0160e97dcf4aef984b076184729802" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 
 That's it! You'll be using this demo project and repo throughout the course to practice things, and you'll repeat this process to create new projects and repos for each of your graded projects. But those are tasks for future-you; right now, you should get up, stretch and take a break. <span class="emoji">😀</span>
