@@ -376,7 +376,7 @@ h1 + .callout, h2 + .callout, h3 + .callout, h4 + .callout, h5 + .callout, h6 + 
 
 .embed-wrapper::after { bottom: -16px; }
 
-.cp_embed_wrapper, .glitch-embed-wrap { margin: 40px 0; }
+.cp_embed_wrapper, .glitch-embed-wrap, .loom-embed-wrapper { margin: 40px 0; }
 
 .feedback-footer { border-left: 8px solid #A2F1C1; margin: 64px -16px -64px; padding: 16px 16px 40px; position: relative; }
 

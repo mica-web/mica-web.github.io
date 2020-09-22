@@ -9,6 +9,8 @@
   <meta name="Description" content="Curriculum, schedule and resources for web design.">
   <link href="/css/style.css" rel="stylesheet">
   
+  <link href="/css/syntax.css" rel="stylesheet">
+  
   <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
@@ -103,7 +105,7 @@
 
 
 
-<p class="text-faded reading-est">1 min read</p>
+<p class="text-faded reading-est">3 min read</p>
 
     
     
@@ -113,9 +115,92 @@
 
   <main>
     
-    <h1 id="fonts">Fonts</h1>
+    
+<h1 id="fonts">Fonts</h1>
 
-<p class="wip-wrapper"><img src="https://media.giphy.com/media/SwP1HunIXetehTvy43/giphy.gif" alt="This page is a work in progress" /></p>
+<p>In <a href="/learn/css/typography">CSS Typography</a>, you learned about some of the ways you can modify how text looks in the browser, but not how to change the actual font your text displays in. Let’s dig into that now.</p>
+
+<p class="text-center"><img src="https://media.giphy.com/media/Lr3UeH9tYu3qJtsSUg/giphy.gif" alt="Text says So excited for this and Kermit the frog waves his arms enthusiastically." /></p>
+
+<h2 id="css-property">CSS property</h2>
+<p>The property that changes the font is <code class="language-plaintext highlighter-rouge">font-family</code>. It is common practice to include multiple values for the font in order to provide a reasonable <b>fallback</b> if the font you’ve selected is not available to the user. The list of values provided for <code class="language-plaintext highlighter-rouge">font-family</code> is referred to as a <b>font stack</b>.</p>
+
+<h2 id="font-stack-values">Font stack values</h2>
+<p>Each font stack should end with a <b>generic family name</b>; these represent the fallback of last resort. Some valid options for the generic family name include:</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">serif</code></li>
+  <li><code class="language-plaintext highlighter-rouge">sans-serif</code></li>
+  <li><code class="language-plaintext highlighter-rouge">monospace</code></li>
+</ul>
+
+<p>You can view a full list of <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family#%3Cgeneric-name%3E">generic family names</a><span class="emoji text-smaller" title="Following and reading this link is optional."><span class="u-sr-only">Following and reading this link is optional.</span>✳️</span>
+ on MDN.</p>
+
+<p>In addition to the generic family name, you can also provide one or more <b>family names</b> of specific fonts. Family names should always be in double quotes, like so: <code class="language-plaintext highlighter-rouge">"Helvetica Neue"</code>.</p>
+
+<p class="callout">The double quotes are important because, without them, font family names with spaces in them would be broken. While <code class="language-plaintext highlighter-rouge">"Helvetica"</code> doesn’t need quotes for this reason, it’s just better to be consistent and avoid this issue.</p>
+
+<p>A complete font stack for Helvetica might then look something like this:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">body</span> <span class="p">{</span>
+  <span class="nl">font-family</span><span class="p">:</span> <span class="s1">"Helvetica Neue"</span><span class="p">,</span> <span class="nb">sans-serif</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="web-safe-font-stacks">Web-safe font stacks</h3>
+<p>Originally, CSS didn’t allow you to use external fonts in a design, which meant you were limited to using the fonts available on a user’s system – which, of course, varied not only from operating system to operating system, but also from user to user. <span class="emoji">😱</span></p>
+
+<p>The site <a href="https://www.cssfontstack.com/" target="_blank">CSS Font Stack</a> provides a list of fonts and how common they are on Windows and Mac OSes. Take our earlier example of <a href="https://www.cssfontstack.com/Helvetica" target="_blank">Helvetica</a> – while the font is available on 100% of Macs, it’s only on 7% of Windows systems. This means the previous font stack is <em>not</em> <b>web safe</b> because it doesn’t provide a similar font for most users.</p>
+
+<p>If you wanted to use Helvetica in your design, the site recommends a font stack that looks like this:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">body</span> <span class="p">{</span>
+  <span class="nl">font-family</span><span class="p">:</span> <span class="s1">"Helvetica Neue"</span><span class="p">,</span> <span class="s1">"Helvetica"</span><span class="p">,</span> <span class="s1">"Arial"</span><span class="p">,</span> <span class="nb">sans-serif</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>This is a much more comprehensive font stack because it provides two different family names for Helvetica and uses Arial – which is on over 99% of Windows systems and nearly as many Macs – as a replacement option.</p>
+
+<p>Given the limitations of this method of declaring fonts, is there any reason to still do it? Absolutely! While, as designers it’s frustrating to cede control to the limitations of a user’s system, providing fonts in this way has a few benefits:</p>
+
+<ul>
+  <li><strong>Your web pages will load faster.</strong> Using web-safe font stacks means you don’t ask the user to download any other font resources.</li>
+  <li><strong>Your designs are less brittle.</strong> You’re not relying on any external resources that could break or be unavailable.</li>
+</ul>
+
+<h3 id="web-fonts">Web fonts</h3>
+<p>You are not limited, however, to using only fonts on a user’s system. It’s possible to provide your own font files either that you host or provided by an external service, like:</p>
+<ul>
+  <li><a href="https://fonts.google.com/about" target="_blank">Google Fonts</a> – free</li>
+  <li><a href="https://fonts.adobe.com/about" target="_blank">Adobe Fonts</a> – subscription based</li>
+  <li><a href="https://www.fonts.com/web-fonts" target="_blank">Fonts.com</a> – purchase / subscription</li>
+</ul>
+
+<p>In general, I recommend using a hosted service because they will have done some additional work to make sure their fonts are being delivered in the best way to optimize the font <em>and</em> the performance of its delivery.</p>
+
+<p>The following two-part video walks you through the process of adding <a href="https://fonts.google.com/">Google Fonts</a> to your web project.</p>
+
+<p class="callout">Want to follow along with this video? You can remix my <a href="https://glitch.com/edit/#!/google-fonts-demo">Google Fonts Demo</a>.</p>
+
+<div class="loom-embed-wrapper" style="position: relative; padding-bottom: 62.5%; height: 0;"><iframe src="https://www.loom.com/embed/78d4a2950d09467a9e638356c9c8fc27" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+
+<div class="loom-embed-wrapper" style="position: relative; padding-bottom: 62.5%; height: 0;"><iframe src="https://www.loom.com/embed/6a90519a4a9342caa9e539b6249be163" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+
+<p><span class="emoji">💡</span> When using Google Fonts always remember the following:</p>
+<ul>
+  <li>Only add the fonts you use in your project, otherwise you’ll be asking your users to download unused resources</li>
+  <li>Include the exact font weights you need</li>
+  <li>Reference a single Google Fonts stylesheet, even when you’re using multiple fonts</li>
+  <li>Double check the generic font family provided and change it as you choose</li>
+</ul>
+
+    
+    <footer class="feedback-footer">
+  
+
+  <p><strong>Make this page better.</strong></p>
+  <p>Found something that's incorrect or confusing on this page? Broken link? I want to know! <a href="https://github.com/mica-web/mica-web.github.io/issues/new?title=Feedback+for+%2Flearn%2Fcss%2Ffonts&template=page-feedback.md" target="_blank">Open an issue on GitHub</a> to tell me what's up and help me update the page.</p>
+</footer>
 
     
   </main>
