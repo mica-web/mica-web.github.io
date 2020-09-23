@@ -1,5 +1,5 @@
 ---
-topic: Block and inline elements
+topic: Block + inline elements
 category: HTML
 level: [ intro, advanced ]
 permalink: /:collection/html/:name
