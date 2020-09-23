@@ -14,13 +14,13 @@ Here's [a few things you can do]({% link gd-220/00/early-start.md %}) before the
 {% endif %}
 
 
-{% assign week_length = 7 | times: 24 | times: 60 | times: 60 %}
+{% assign range = 8 | times: 24 | times: 60 | times: 60 %}
 
 {% for week in site.gd220 %}
 
 {% assign weeknum = week.path | replace:'_gd220/','' | replace:'.md', '' %}
 {% assign weekstart = week.course_date | date: "%Y-%m-%d" %}
-{% assign weekend = week.course_date | date: "%s" | plus: week_length | date: "%Y-%m-%d" %}
+{% assign weekend = week.course_date | date: "%s" | plus: range | date: "%Y-%m-%d" %}
 
 {% if (currentdate >= weekstart) and (currentdate < weekend)  %}
 
