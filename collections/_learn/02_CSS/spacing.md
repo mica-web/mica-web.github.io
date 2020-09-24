@@ -1,7 +1,7 @@
 ---
 topic: Spacing
 category: CSS
-level: [ intro, advanced ]
+level: [ intro ]
 permalink: /:collection/css/:name
 code_example: true
 quiz: true
