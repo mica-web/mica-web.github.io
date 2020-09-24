@@ -4,7 +4,9 @@ title: Project 1 PR Template
 
 # {{page.title }}
 
-Before submitting your PR, please add the following questions and your responses to your PR description.
+Before submitting your PR, please update its title (it often defaults to one of your commit messages) and, in the description, include the link to your corresponding project on Glitch.
+
+Additionally, please add the following questions and your responses to your PR description.
 
 1. Summarize at least 2 benefits of using priority guides in a web design process.
 1. List the ways in which the organization of this version of your resume differs from your initial resume.

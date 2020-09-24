@@ -25,8 +25,8 @@ Demonstrate your understanding of basic HTML and CSS, specifically as it pertain
   - Share at least one link about web typography in the <b>#gd2</b> Slack channel. Explain why you think this resource is useful in 1-2 sentences.
 1. Update project markup based on current knowledge of HTML and add CSS.
 1. Present project to colleagues.
-1. Create a pull request for code review and final submission.
-  - Include PR template and use best practices checklist to check your own work.
+1. Create a [pull request]({% link _learn/03_workflows/pull-request.md %}) for code review and final submission.
+  - Include [PR template questions]({% link gd-220/projects/project01/pr-template.md %}) and your responses.
 
 ## Requirements
 - Your assignment should use:
