@@ -5,9 +5,9 @@ on:
   push:
     branches:
       - master
-  # Also build every Thursday to update things based on the current.md partial
+  # Also build every Thursday morn to update things based on the current.md partial
   schedule:
-    - cron: '0 0 * * THU'
+    - cron: '30 4 * * THU'
 
 jobs:
   jekyll:
