@@ -92,5 +92,7 @@ div, img {
 }
 ```
 
+A `border-radius` value of `50%` creates a circle from any square element. Rectangular elements will appear as ovals, so keep in mind that you may need to crop or reformat an image before this effect works as seen in this demo.
+
 {: .callout }
 Note in this example of the image, you can use the either `border` or `border-radius` directly on the `img` element -- no container `div` needed.
