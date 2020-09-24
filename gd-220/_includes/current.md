@@ -1,5 +1,5 @@
-{% assign currentdate = 'now' | date: "%Y-%m-%d" %}
-{% assign startdate = '2020-09-03' | date: "%Y-%m-%d" %}
+{% assign currentdate = 'now' | date: "%s" %}
+{% assign startdate = '2020-09-03' | date: "%s" %}
 
 {% if (currentdate <= startdate) %}
 
@@ -14,13 +14,13 @@ Here's [a few things you can do]({% link gd-220/00/early-start.md %}) before the
 {% endif %}
 
 
-{% assign range = 8 | times: 24 | times: 60 | times: 60 %}
+{% assign range = 7 | times: 24 | times: 60 | times: 60 %}
 
 {% for week in site.gd220 %}
 
 {% assign weeknum = week.path | replace:'_gd220/','' | replace:'.md', '' %}
-{% assign weekstart = week.course_date | date: "%Y-%m-%d" %}
-{% assign weekend = week.course_date | date: "%s" | plus: range | date: "%Y-%m-%d" %}
+{% assign weekstart = week.course_date | date: "%s" %}
+{% assign weekend = week.course_date | date: "%s" | plus: range | date: "%s" %}
 
 {% if (currentdate >= weekstart) and (currentdate < weekend)  %}
 
