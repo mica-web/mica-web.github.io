@@ -39,8 +39,12 @@ Use your current knowledge of HTML and CSS layout to reinterpret an existing pos
 1. Write mobile-first CSS.
 1. Add media queries to achieve desktop design.
 1. Present project to colleagues.
+
+## Submission
 1. Create a [pull request]({% link _learn/03_workflows/pull-request.md %}) for code review and final submission.
   - Include [PR template questions]({% link gd-431/projects/project02/pr-template.md %}) and your responses.
+1. Send me a link to the pull request via Slack DM by midnight EST on 10/16 ([see in your timezone](https://everytimezone.com/s/1f14f2eb){:target="_blank"}).
+
 
 ## Requirements
 - Your final design should be closely inspired by the original poster, including color, type, etc.

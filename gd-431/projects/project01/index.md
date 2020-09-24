@@ -23,8 +23,11 @@ Use your current knowledge of HTML and CSS to markup and format your resume.
 1. Follow the [setup instructions]({% link gd-431/projects/project01/setup.md %})
 1. Based on your priority guide template and using your current knowledge of HTML, create an HTML version of your resume.
 1. Use your current knowledge of CSS to add formatting/styles to your resume.
+
+## Submission
 1. Create a [pull request]({% link _learn/03_workflows/pull-request.md %}) for code review and final submission.
   - Include [PR template questions]({% link gd-431/projects/project01/pr-template.md %}) and your responses.
+1. Send me a link to the pull request via Slack DM by midnight EST on 9/26 ([see in your timezone](https://everytimezone.com/s/fe1851a7){:target="_blank"}).
 
 ## Requirements
 - Your assignment will be viewed at a resolution of 1200 x 800.
@@ -44,7 +47,7 @@ Use your current knowledge of HTML and CSS to markup and format your resume.
 <dd>Step 4 optional</dd>
 <dt>Sept 24</dt>
 <dd>Project due date</dd>
-<dd class="text-faded">(attempt to complete PR before class on Thursday; hard due date is midnight on 9/25)</dd>
+<dd class="text-faded">(attempt to complete PR before class on Thursday; hard due date is end of day Friday</dd>
 <dd>Steps 4 & 5 complete</dd>
 </dl>
 
