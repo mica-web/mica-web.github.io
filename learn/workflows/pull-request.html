@@ -17,7 +17,7 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-config" content="/favicons/browserconfig.xml">
   <meta name="theme-color" content="#9ff2c0">
-  <title>HTML + CSS intro | Learning Web Design</title>
+  <title>Pull request | Learning Web Design</title>
 </head>
 
 
@@ -34,7 +34,7 @@
 </header>
 
 
-<div class="content-wrapper week-wrapper">
+<div class="content-wrapper ">
 
   
 
@@ -53,8 +53,8 @@
 
   
   <li class="u-inline-block breadcrumb">
-    <a href="/gd-220">
-      gd 220
+    <a href="/learn">
+      learn
     </a>
   </li>
   
@@ -66,13 +66,46 @@
   
 
   
-  <li class="u-inline-block breadcrumb">week 04</li>
+  <li class="u-inline-block breadcrumb">
+    <a href="/learn/workflows">
+      workflows
+    </a>
+  </li>
+  
+
+  
+
+  
+
+  
+
+  
+  <li class="u-inline-block breadcrumb">pull request</li>
   
 
   
 
 </ul>
 
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p class="text-faded reading-est">1 min read</p>
+
+    
     
   </div>
 
@@ -81,44 +114,61 @@
   <main>
     
     
-    <h1>04 // HTML + CSS intro</h1>
-    
-    
-<h2 id="w04-intro">Intro</h2>
-<p>This week, you’ll continue to grow your knowledge of CSS: learning how to resize HTML elements, add spacing and borders around them and gain a new way of targeting which elements you want to change with your CSS. All of these new skills can be put to use in your ongoing work on project 1.</p>
+<h1 id="pull-request">Pull request</h1>
 
-<h2 id="w04-sync-up">Sync Up</h2>
+<h2 id="introduction">Introduction</h2>
+<p>A <b>pull request</b> (PR) on GitHub is a process of</p>
+
+<ul>
+  <li>comparing the work on your branch against another branch (often the master branch)</li>
+  <li>evaluating if the code <em>can</em> be merged into that branch</li>
+</ul>
+
+<p>These two steps are handled entirely by automation provided by the combination of git and GitHub. No user intervention needed (thanks, helpful robots <span class="emoji">🤖</span>).</p>
+
+<p>When everything is golden, GitHub will include a clear notification that your work can be merged.</p>
+
+<p><img src="/learn/03_workflows/img/pr-merge.png" alt="This branch has no conflicts with the base branch." /></p>
+
+<p>However, a PR is also an opportunity for a discussion and review of the code that is being submitted. In this way, when you create a PR and share it with me, I can then see the changes you’ve made, file-by-file and line-by-line, and provide comments and suggestions about that code.</p>
+
+<p>For this reason, <strong>your project PRs should never be merged until after you have received a grade.</strong></p>
+
+<h2 id="creating-your-pull-request">Creating your pull request</h2>
+<p>Usually, after you push to GitHub a new branch with some changes, you will see a notification on your repo homepage.</p>
+
+<p><img src="/learn/03_workflows/img/pr-create1.png" alt="Test (branch name) had recent pushes less than a minute ago. Followed by a button action to compare and pull request." /></p>
+
+<p>If you do not see that option, you can use the branch select dropdown to switch to your branch and then select “Pull Request” to create your PR.</p>
+
+<p><img src="/learn/03_workflows/img/pr-create2.png" alt="This branch is 1 commit ahead of master. Followed by links for: pull request, compare." /></p>
+
+<p>The PR form has two elements:</p>
+
 <ol>
-  <li><a href="/gd-220/projects/project01/">Project 1</a> checkin</li>
-  <li>Intro to the box model</li>
-  <li>The cascade</li>
-  <li><a href="/learn/workflows/pull-request">Pull requests</a></li>
-  <li>Discuss week four plan and expectations</li>
+  <li>A title: What is your summary description of these changes?</li>
+  <li>A description: More detail about your project. I will provide you with prompts to aid the writing of your PR description.</li>
 </ol>
 
-<h2 id="w04-activities">Activities</h2>
-<p>Learn more CSS:</p>
+<p><img src="/learn/03_workflows/img/pr-template.png" alt="" /></p>
+
+<p class="callout">You may create a PR any time after you have pushed your first changes to your branch. The PR will update with all future commits to the branch and be an accurate portrayal of all your work on the branch, regardless of when the PR itself is created.</p>
+
+<p>You can edit the PR form at any time by:</p>
+
 <ul>
-  <li><a href="/learn/css/dimensions">Dimensions in CSS</a></li>
-  <li><a href="/learn/css/spacing">Spacing in CSS</a></li>
-  <li><a href="/learn/css/display">Display property</a></li>
-  <li><a href="/learn/css/borders">Borders</a></li>
-  <li><a href="/learn/css/selectors">Additional CSS selectors</a></li>
-  <li>Complete <a href="/gd-220/projects/project01/">Project 1</a>; due at start of class next week (5pm Eastern on 10/1)</li>
+  <li>using the Edit button to update the title</li>
+  <li>using the menu icon (represented by three dots) and selecting Edit to update the PR description</li>
 </ul>
 
-<p>More info about some of the things discussed during our sync up:</p>
-<ul>
-  <li><a href="/learn/css/box-model">Intro to the box model</a> – work in progress; ETA: Saturday</li>
-  <li><a href="/learn/css/cascade">The cascade</a> – work in progress; ETA: Saturday</li>
-</ul>
+<p><img src="/learn/03_workflows/img/pr-edit.gif" alt="" /></p>
 
     
     <footer class="feedback-footer">
   
 
   <p><strong>Make this page better.</strong></p>
-  <p>Found something that's incorrect or confusing on this page? Broken link? I want to know! <a href="https://github.com/mica-web/mica-web.github.io/issues/new?title=Feedback+for+%2Fgd-220%2F04&template=page-feedback.md" target="_blank">Open an issue on GitHub</a> to tell me what's up and help me update the page.</p>
+  <p>Found something that's incorrect or confusing on this page? Broken link? I want to know! <a href="https://github.com/mica-web/mica-web.github.io/issues/new?title=Feedback+for+%2Flearn%2Fworkflows%2Fpull-request&template=page-feedback.md" target="_blank">Open an issue on GitHub</a> to tell me what's up and help me update the page.</p>
 </footer>
 
     

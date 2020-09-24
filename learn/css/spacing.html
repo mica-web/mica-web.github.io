@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="ie=edge" http-equiv="X-UA-Compatible">
+  <meta name="author" content="Angelique Weger" />
+  <meta name="Description" content="Curriculum, schedule and resources for web design.">
+  <link href="/css/style.css" rel="stylesheet">
+  
+  <link href="/css/syntax.css" rel="stylesheet">
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+  <link rel="manifest" href="/favicons/site.webmanifest">
+  <link rel="shortcut icon" href="/favicons/favicon.ico">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-config" content="/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#9ff2c0">
+  <title>Spacing | Learning Web Design</title>
+</head>
+
+
+<body>
+  <div class="site-wrapper">
+
+    <header id="top" class="site-header">
+  <h2 class="u-m0 u-clearfix heading">
+    <a href="https://mica-web.github.io/" class="u-block u-clearfix" title="Return to homepage" >
+      <span class="heading--background">Learning</span>
+      <span class="heading--foreground">Web Design</span>
+    </a>
+  </h2>
+</header>
+
+
+<div class="content-wrapper ">
+
+  
+
+  <div class="top-nav">
+    <ul class="u-list-reset breadcrumb-wrapper">
+  <li class="u-inline-block breadcrumb"><a href="https://mica-web.github.io">Home</a></li>
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+  <li class="u-inline-block breadcrumb">
+    <a href="/learn">
+      learn
+    </a>
+  </li>
+  
+
+  
+
+  
+
+  
+
+  
+  <li class="u-inline-block breadcrumb">
+    <a href="/learn/css">
+      css
+    </a>
+  </li>
+  
+
+  
+
+  
+
+  
+
+  
+  <li class="u-inline-block breadcrumb">spacing</li>
+  
+
+  
+
+</ul>
+
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p class="text-faded reading-est">3 min read</p>
+
+    
+    
+  </div>
+
+  
+
+  <main>
+    
+    
+<h1 id="spacing">Spacing</h1>
+
+<h2 id="understanding-the-difference-between-margin-and-padding">Understanding the difference between margin and padding</h2>
+
+<p>Previously, when describing <a href="/learn/html/block-inline">block and inline elements</a>, I wrote:</p>
+
+<blockquote>
+  <p>In general, you can think of HTML elements as some type of box around some type of content.</p>
+</blockquote>
+
+<p>If you visualize that box, then it’s easier to understand the difference between <b>margin</b> and <b>padding</b> in CSS:</p>
+
+<ul>
+  <li><b>margin</b> affects the space outside of and between HTML elements</li>
+  <li><b>padding</b> affects the space inside an HTML element</li>
+</ul>
+
+<div class="glitch-embed-wrap" style="height: 650px; width: 100%;">
+  <iframe src="https://glitch.com/embed/#!/embed/css-spacing-1?path=styles.css&amp;previewSize=100&amp;sidebarCollapsed=true" title="css-spacing-1 on Glitch" allow="geolocation; microphone; camera; midi; vr; encrypted-media" style="height: 100%; width: 100%; border: 0;">
+  </iframe>
+</div>
+
+<p>In the second example, <code class="language-plaintext highlighter-rouge">margin</code> pushes the <code class="language-plaintext highlighter-rouge">div</code> away from the left side of the browser and the paragraph above and <code class="language-plaintext highlighter-rouge">padding</code> moves the text inside the <code class="language-plaintext highlighter-rouge">div</code> away from its edges and makes the whole <code class="language-plaintext highlighter-rouge">div</code> larger. The CSS to create this affect looks like this:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">div</span> <span class="p">{</span>
+  <span class="nl">margin</span><span class="p">:</span> <span class="m">50px</span><span class="p">;</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">50px</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="shorthand-variations">Shorthand variations</h2>
+<p>Both <code class="language-plaintext highlighter-rouge">margin</code> and <code class="language-plaintext highlighter-rouge">padding</code> are <b>shorthand properties</b>.</p>
+
+<p class="callout">If this term sounds familiar, it’s because you first heard about it when learning about <a href="/learn/css/typography#text-decoration">styling text with CSS</a>. <code class="language-plaintext highlighter-rouge">text-decoration</code> is also a shorthand property.</p>
+
+<p>This means that they are a simpler way of combining multiple CSS properties; in the case of <code class="language-plaintext highlighter-rouge">margin</code>, it allows you to use the following CSS properties with one declaration:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">margin-top</code></li>
+  <li><code class="language-plaintext highlighter-rouge">margin-right</code></li>
+  <li><code class="language-plaintext highlighter-rouge">margin-bottom</code></li>
+  <li><code class="language-plaintext highlighter-rouge">margin-left</code></li>
+</ul>
+
+<p>So, when you write <code class="language-plaintext highlighter-rouge">margin: 50px</code> you’re applying 50 pixels of margin to each side of an element. If, instead, you wrote <code class="language-plaintext highlighter-rouge">margin-top: 50px</code> and no other margin rules, only the top of the element would get 50 pixels of margin and the other three sides would get the browser defaults for that element.</p>
+
+<p>The same is true for <code class="language-plaintext highlighter-rouge">padding</code>; it combines:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">padding-top</code></li>
+  <li><code class="language-plaintext highlighter-rouge">padding-right</code></li>
+  <li><code class="language-plaintext highlighter-rouge">padding-bottom</code></li>
+  <li><code class="language-plaintext highlighter-rouge">padding-left</code></li>
+</ul>
+
+<p>There are a total of <strong>four ways</strong> to write the shorthand values for <code class="language-plaintext highlighter-rouge">margin</code> and <code class="language-plaintext highlighter-rouge">padding</code>. The following examples are going to use <code class="language-plaintext highlighter-rouge">margin</code>, but the same formats can be used for <code class="language-plaintext highlighter-rouge">padding</code>.</p>
+
+<h3 id="single-value">Single value</h3>
+<p>The first you’ve already seen. This format takes one value (in this case, 10 pixels) and applies it to all sides of the element.</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">div</span> <span class="p">{</span>
+  <span class="nl">margin</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>This is the same as writing out all the individual properties:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">div</span> <span class="p">{</span>
+  <span class="nl">margin-top</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
+  <span class="nl">margin-right</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
+  <span class="nl">margin-bottom</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
+  <span class="nl">margin-left</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="two-values">Two values</h3>
+<p>This format applies the first value to the top and bottom of the element and the second to the sides.</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">div</span> <span class="p">{</span>
+  <span class="nl">margin</span><span class="p">:</span> <span class="m">5px</span> <span class="m">10px</span><span class="p">;</span>
+  <span class="c">/* top&amp;bottom left&amp;right */</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>This is the same as writing out all the individual properties:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">div</span> <span class="p">{</span>
+  <span class="nl">margin-top</span><span class="p">:</span> <span class="m">5px</span><span class="p">;</span>
+  <span class="nl">margin-right</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
+  <span class="nl">margin-bottom</span><span class="p">:</span> <span class="m">5px</span><span class="p">;</span>
+  <span class="nl">margin-left</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="three-values">Three values</h3>
+<p>Use this format when you want to apply a shared value to the sides (middle value), but a different value to the top (first value) and bottom (last value).</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">div</span> <span class="p">{</span>
+  <span class="nl">margin</span><span class="p">:</span> <span class="m">10px</span> <span class="m">20px</span> <span class="m">30px</span><span class="p">;</span>
+  <span class="c">/* top left&amp;right bottom */</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>This is the same as writing out all the individual properties:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">div</span> <span class="p">{</span>
+  <span class="nl">margin-top</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
+  <span class="nl">margin-right</span><span class="p">:</span> <span class="m">20px</span><span class="p">;</span>
+  <span class="nl">margin-bottom</span><span class="p">:</span> <span class="m">30px</span><span class="p">;</span>
+  <span class="nl">margin-left</span><span class="p">:</span> <span class="m">20px</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="four-values">Four values</h3>
+<p>You can also use the shorthand to apply margins to each side individually:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">div</span> <span class="p">{</span>
+  <span class="nl">margin</span><span class="p">:</span> <span class="m">5px</span> <span class="m">10px</span> <span class="m">15px</span> <span class="m">20px</span><span class="p">;</span>
+  <span class="c">/* top right bottom left */</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>In this case, the values would be applied starting at the top of the element and then going clockwise. 
+This is the same as writing out all the individual properties:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">div</span> <span class="p">{</span>
+  <span class="nl">margin-top</span><span class="p">:</span> <span class="m">5px</span><span class="p">;</span>
+  <span class="nl">margin-right</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
+  <span class="nl">margin-bottom</span><span class="p">:</span> <span class="m">15px</span><span class="p">;</span>
+  <span class="nl">margin-left</span><span class="p">:</span> <span class="m">20px</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<!-- CSS Spacing 1 -->
+<div class="quiz-wrapper">
+  <header class="quiz-header">
+    <h2 class="quiz-heading">Share What You've Learned</h2>
+    <div class="quiz-actions-wrapper">
+      <button type="button" class="u-button-reset u-link-reset quiz-action js-quiz-toggle" aria-controls="PQWZ9GT"><?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 24 24" role="img" xmlns="http://www.w3.org/2000/svg">
+  <title>Collapse this content</title>
+  <path d="M23 24H1a1 1 0 01-1-1V1a1 1 0 011-1h22a1 1 0 110 2H2v20h20V5.19a1 1 0 112 0V23a1 1 0 01-1 1z" />
+  <path class="icon-line" d="M18 13H6a1 1 0 110-2h12a1 1 0 110 2z" />
+  <path class="icon-line" d="M11 18V6a1 1 0 112 0v12a1 1 0 11-2 0z" />
+</svg>
+</button>
+      <a class="u-link-reset quiz-action" href="https://www.surveymonkey.com/r/PQWZ9GT" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img">
+  <title>Open in a new window</title>
+  <path d="M23 24H1a1 1 0 01-1-1V1a1 1 0 011-1h11.95a1 1 0 010 2H2v20h20l-.01-11.35a1 1 0 012 0L24 23a1 1 0 01-1 1z" />
+  <path d="M17.5 2c-.38 0-.62-.83-.43-1.5.09-.3.25-.5.43-.5h6c.12 0 .22.08.3.2.13.09.2.2.2.3v6c0 .38-.83.63-1.5.43-.3-.09-.5-.25-.5-.43V3.2l-7.13 7.26c-.48.5-1.37.21-1.6-.51a.91.91 0 01.2-.92L20.37 2z" />
+</svg>
+</a>
+    </div>
+  </header>
+  
+  <div id="PQWZ9GT" class="quiz-content">
+    <iframe src="https://www.surveymonkey.com/r/PQWZ9GT" height="600" allowtransparency="true" frameborder="0" scrolling="yes"></iframe>
+  </div>
+  
+</div>
+
+<h2 id="negative-values">Negative values</h2>
+<p>While negative values are ignored by the <code class="language-plaintext highlighter-rouge">padding</code> property, they do work and can be useful when applying margins.</p>
+
+<div class="glitch-embed-wrap" style="height: 540px; width: 100%;">
+  <iframe src="https://glitch.com/embed/#!/embed/css-spacing-2?path=index.html&amp;previewSize=100&amp;sidebarCollapsed=true" title="css-spacing-2 on Glitch" allow="geolocation; microphone; camera; midi; vr; encrypted-media" style="height: 100%; width: 100%; border: 0;">
+  </iframe>
+</div>
+
+<p>Here’s a real-world example of when and why you might need to apply negative margins:</p>
+
+<div class="glitch-embed-wrap" style="height: 420px; width: 100%;">
+  <iframe src="https://glitch.com/embed/#!/embed/css-spacing-3?path=styles.css&amp;previewSize=100&amp;sidebarCollapsed=true" title="css-spacing-3 on Glitch" allow="geolocation; microphone; camera; midi; vr; encrypted-media" style="height: 100%; width: 100%; border: 0;">
+  </iframe>
+</div>
+
+<p>This is a simplified version of the CSS used in the demo above:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">body</span> <span class="p">{</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">24px</span> <span class="m">36px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">section</span> <span class="p">{</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="m">#A2F1C1</span><span class="p">;</span>
+  <span class="nl">margin-right</span><span class="p">:</span> <span class="m">-36px</span><span class="p">;</span>
+  <span class="nl">margin-left</span><span class="p">:</span> <span class="m">-36px</span><span class="p">;</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">12px</span> <span class="m">36px</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+    
+    <footer class="feedback-footer">
+  
+
+  <p><strong>Make this page better.</strong></p>
+  <p>Found something that's incorrect or confusing on this page? Broken link? I want to know! <a href="https://github.com/mica-web/mica-web.github.io/issues/new?title=Feedback+for+%2Flearn%2Fcss%2Fspacing&template=page-feedback.md" target="_blank">Open an issue on GitHub</a> to tell me what's up and help me update the page.</p>
+</footer>
+
+    
+  </main>
+
+  <footer class="site-footer">
+  <div class="rule"></div>
+  <div class="content">
+    <p>&copy; Copyright 2018&ndash;<span id="js-current-year"></span> Ang&eacute;lique Weger</p>
+    <p class="top-link-wrapper"><a href="#top">Back to top</a></p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('js-current-year').appendChild(document.createTextNode(new Date().getFullYear()))
+</script>
+
+
+</div>
+
+
+  </div>
+
+  
+  
+  
+  
+  <script src="/js/quizToggle.js" async defer></script>
+  
+
+</body>
+<!--
+/**
+ * @license
+ * MyFonts Webfont Build ID 3700915, 2019-01-18T17:07:51-0500
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Native-Regular by Fort Foundry
+ * URL: https://www.myfonts.com/fonts/fort-foundry/native/regular/
+ * Copyright: Copyright &#x00A9; 2016 by Mattox Shuler. All rights reserved.
+ * Licensed pageviews: Unlimited
+ * 
+ * Webfont: NeueAlteGrotesk-Regular by VisualWorks
+ * URL: https://www.myfonts.com/fonts/visualworks/neue-alte-grotesk/regular/
+ * Copyright: Copyright © 2017-2018 by Krzysztof Chuc. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * Webfont: NeueAlteGrotesk-Medium by VisualWorks
+ * URL: https://www.myfonts.com/fonts/visualworks/neue-alte-grotesk/medium/
+ * Copyright: Copyright © 2017-2018 by Krzysztof Chuc. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * Webfont: NeueAlteGrotesk-SemiBold by VisualWorks
+ * URL: https://www.myfonts.com/fonts/visualworks/neue-alte-grotesk/semi-bold/
+ * Copyright: Copyright © 2017-2018 by Krzysztof Chuc. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * Webfont: NeueAlteGrotesk-Bold by VisualWorks
+ * URL: https://www.myfonts.com/fonts/visualworks/neue-alte-grotesk/bold/
+ * Copyright: Copyright © 2017-2018 by Krzysztof Chuc. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * Webfont: NeueAlteGrotesk-Heavy by VisualWorks
+ * URL: https://www.myfonts.com/fonts/visualworks/neue-alte-grotesk/heavy/
+ * Copyright: Copyright © 2017-2018 by Krzysztof Chuc. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * Webfont: NeueAlteGrotesk-Black by VisualWorks
+ * URL: https://www.myfonts.com/fonts/visualworks/neue-alte-grotesk/black/
+ * Copyright: Copyright © 2017-2018 by Krzysztof Chuc. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * 
+ * License: https://www.myfonts.com/viewlicense?type=web&buildid=3700915
+ * 
+ * © 2019 MyFonts Inc
+*/
+
+-->
+
+
+</html>

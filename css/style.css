@@ -476,6 +476,8 @@ a.highlighter:visited { color: #22333B; }
 
 .top-nav { align-items: center; display: flex; flex-wrap: wrap; justify-content: space-between; margin-top: 1rem; margin-bottom: 1.5rem; }
 
+.topic-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+
 .quiz-wrapper { background-color: white; border: 1px solid #ccc; margin-top: 40px; margin-bottom: 64px; position: relative; max-width: 720px; }
 
 @media (min-width: 620px) { .quiz-wrapper { margin-right: 40px; margin-left: 40px; } }

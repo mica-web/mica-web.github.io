@@ -9,6 +9,8 @@
   <meta name="Description" content="Curriculum, schedule and resources for web design.">
   <link href="/css/style.css" rel="stylesheet">
   
+  <link href="/css/syntax.css" rel="stylesheet">
+  
   <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
@@ -17,7 +19,7 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-config" content="/favicons/browserconfig.xml">
   <meta name="theme-color" content="#9ff2c0">
-  <title>HTML + CSS intro | Learning Web Design</title>
+  <title>Dimensions | Learning Web Design</title>
 </head>
 
 
@@ -34,7 +36,7 @@
 </header>
 
 
-<div class="content-wrapper week-wrapper">
+<div class="content-wrapper ">
 
   
 
@@ -53,8 +55,8 @@
 
   
   <li class="u-inline-block breadcrumb">
-    <a href="/gd-220">
-      gd 220
+    <a href="/learn">
+      learn
     </a>
   </li>
   
@@ -66,13 +68,46 @@
   
 
   
-  <li class="u-inline-block breadcrumb">week 04</li>
+  <li class="u-inline-block breadcrumb">
+    <a href="/learn/css">
+      css
+    </a>
+  </li>
+  
+
+  
+
+  
+
+  
+
+  
+  <li class="u-inline-block breadcrumb">dimensions</li>
   
 
   
 
 </ul>
 
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p class="text-faded reading-est">1 min read</p>
+
+    
     
   </div>
 
@@ -80,45 +115,49 @@
 
   <main>
     
-    
-    <h1>04 // HTML + CSS intro</h1>
-    
-    
-<h2 id="w04-intro">Intro</h2>
-<p>This week, you’ll continue to grow your knowledge of CSS: learning how to resize HTML elements, add spacing and borders around them and gain a new way of targeting which elements you want to change with your CSS. All of these new skills can be put to use in your ongoing work on project 1.</p>
+    <h1 id="dimensions">Dimensions</h1>
 
-<h2 id="w04-sync-up">Sync Up</h2>
-<ol>
-  <li><a href="/gd-220/projects/project01/">Project 1</a> checkin</li>
-  <li>Intro to the box model</li>
-  <li>The cascade</li>
-  <li><a href="/learn/workflows/pull-request">Pull requests</a></li>
-  <li>Discuss week four plan and expectations</li>
-</ol>
+<p>So far, you’ve learned about block elements that take up the full width of the browser window and inline elements that are exactly the width of their content. CSS gives you the option to modify both the height and width of HTML elements.</p>
 
-<h2 id="w04-activities">Activities</h2>
-<p>Learn more CSS:</p>
-<ul>
-  <li><a href="/learn/css/dimensions">Dimensions in CSS</a></li>
-  <li><a href="/learn/css/spacing">Spacing in CSS</a></li>
-  <li><a href="/learn/css/display">Display property</a></li>
-  <li><a href="/learn/css/borders">Borders</a></li>
-  <li><a href="/learn/css/selectors">Additional CSS selectors</a></li>
-  <li>Complete <a href="/gd-220/projects/project01/">Project 1</a>; due at start of class next week (5pm Eastern on 10/1)</li>
-</ul>
+<p>You can modify the size of an element using the <code class="language-plaintext highlighter-rouge">height</code> and <code class="language-plaintext highlighter-rouge">width</code> properties:</p>
 
-<p>More info about some of the things discussed during our sync up:</p>
-<ul>
-  <li><a href="/learn/css/box-model">Intro to the box model</a> – work in progress; ETA: Saturday</li>
-  <li><a href="/learn/css/cascade">The cascade</a> – work in progress; ETA: Saturday</li>
-</ul>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">div</span> <span class="p">{</span>
+  <span class="nl">height</span><span class="p">:</span> <span class="m">200px</span><span class="p">;</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">200px</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>This CSS would result in a square <code class="language-plaintext highlighter-rouge">div</code>, like you see  in the first example here:</p>
+
+<div class="glitch-embed-wrap" style="height: 630px; width: 100%;">
+  <iframe src="https://glitch.com/embed/#!/embed/css-dimensions-1?path=index.html&amp;previewSize=100&amp;sidebarCollapsed=true" title="css-dimensions-1 on Glitch" allow="geolocation; microphone; camera; midi; vr; encrypted-media" style="height: 100%; width: 100%; border: 0;">
+  </iframe>
+</div>
+
+<p>Values for <code class="language-plaintext highlighter-rouge">height</code> and <code class="language-plaintext highlighter-rouge">width</code> can also be set in percents, like so:</p>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">div</span> <span class="p">{</span>
+  <span class="nl">height</span><span class="p">:</span> <span class="m">50%</span><span class="p">;</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">50%</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>As you can see in the second example above, the <code class="language-plaintext highlighter-rouge">height</code> property does not work as expected when set as a percentage. This is because the percentage value is calculated based on a parent element – and if that doesn’t have a specified height, the height of the <code class="language-plaintext highlighter-rouge">div</code> reverts back to its default behavior.</p>
+
+<p>Example three below shows the effect of <code class="language-plaintext highlighter-rouge">height: 50%</code> when the parent has a set height.</p>
+
+<div class="glitch-embed-wrap" style="height: 920px; width: 100%;">
+  <iframe src="https://glitch.com/embed/#!/embed/css-dimensions-2?path=styles.css&amp;previewSize=100&amp;sidebarCollapsed=true" title="css-dimensions-2 on Glitch" allow="geolocation; microphone; camera; midi; vr; encrypted-media" style="height: 100%; width: 100%; border: 0;">
+  </iframe>
+</div>
+
+<p>Finally, while I’ve been saying that a <code class="language-plaintext highlighter-rouge">div</code> (or other block element) takes up the width of the browser by default, it’s also true that block elements can be constrained by their parent elements, as in example four above.</p>
 
     
     <footer class="feedback-footer">
   
 
   <p><strong>Make this page better.</strong></p>
-  <p>Found something that's incorrect or confusing on this page? Broken link? I want to know! <a href="https://github.com/mica-web/mica-web.github.io/issues/new?title=Feedback+for+%2Fgd-220%2F04&template=page-feedback.md" target="_blank">Open an issue on GitHub</a> to tell me what's up and help me update the page.</p>
+  <p>Found something that's incorrect or confusing on this page? Broken link? I want to know! <a href="https://github.com/mica-web/mica-web.github.io/issues/new?title=Feedback+for+%2Flearn%2Fcss%2Fdimensions&template=page-feedback.md" target="_blank">Open an issue on GitHub</a> to tell me what's up and help me update the page.</p>
 </footer>
 
     
