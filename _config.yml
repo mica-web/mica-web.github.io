@@ -65,6 +65,7 @@ collections:
       - 02_CSS/dimensions.md
       - 02_CSS/spacing.md
       - 02_CSS/display.md
+      - 02_CSS/borders.md
       - 02_CSS/floats.md
       - 02_CSS/browser-defaults.md
       - 02_CSS/resets.md
