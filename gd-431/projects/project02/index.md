@@ -18,7 +18,7 @@ Use your current knowledge of HTML and CSS layout to reinterpret an existing pos
 
 <section>
 
-## Design Selection
+## Research
 1. Search for posters to emulate in code and make responsive.
   - Focus on posters that are predominantly **text** and **shapes**
   - Some imagery is fine, but less or none is better
@@ -36,7 +36,8 @@ Use your current knowledge of HTML and CSS layout to reinterpret an existing pos
 ## Process
 1. Write markup to semantically represent the poster content.
 1. Crop or recreate elements of imagery as needed.
-1. Write mobile-first CSS, followed by media queries to achieve desktop design.
+1. Write mobile-first CSS.
+1. Add media queries to achieve desktop design.
 1. Present project to colleagues.
 1. Create a [pull request]({% link _learn/03_workflows/pull-request.md %}) for code review and final submission.
   - Include [PR template questions]({% link gd-431/projects/project02/pr-template.md %}) and your responses.
@@ -59,12 +60,13 @@ Use your current knowledge of HTML and CSS layout to reinterpret an existing pos
 <dd>Ideas template due</dd>
 <dd>Review and select design</dd>
 <dt>Oct 08</dt>
-<dd>Markup and mobile styles due</dd>
+<dd>Process steps 1-3 complete</dd>
 <dt>Oct 15</dt>
 <dd>Project due date</dd>
+<dd>Process steps 4-6 complete</dd>
 </dl>
 
 ## Rubric
-[Google Sheet example](){:target="_blank"}
+[Google Sheet example](https://docs.google.com/spreadsheets/d/e/2PACX-1vSh5-j09DkLj0Pdjwgki14cSTAYWnLl794H4yft27Fg7ijsFyz2XbBa5Od18e_z8V1KXKfzpqj2LhOT/pubhtml?gid=1932255578&single=true){:target="_blank"}
 
 </aside>
