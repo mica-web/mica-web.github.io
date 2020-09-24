@@ -59,5 +59,4 @@ You can also explore browser default styles by using your developer tools; this 
 {: .text-center }
 [![]({{ ip | append: 'moz-dev-tools.gif' }}){:title="Click to view this image in a new tab."}]({{ ip | append: 'moz-dev-tools.gif' }}){:target="_blank"}{: .u-link-reset }
 
-
 <!-- @TODO: Replace this with a quick screencast  -->

@@ -66,6 +66,11 @@ collections:
       - 02_CSS/spacing.md
       - 02_CSS/display.md
       - 02_CSS/borders.md
+      - 02_CSS/box-model.md
+      - 02_CSS/position.md
+      - 02_CSS/selectors.md
+      - 02_CSS/pseudoclass.md
+      - 02_CSS/cascade.md
       - 02_CSS/floats.md
       - 02_CSS/browser-defaults.md
       - 02_CSS/resets.md
@@ -74,6 +79,7 @@ collections:
       - 02_CSS/sass.md
       - 03_workflows/glitch-and-github.md
       - 03_workflows/branching.md
+      - 03_workflows/pull-request.md
       - 03_workflows/troubleshooting.md
   gd220:
     output: true
