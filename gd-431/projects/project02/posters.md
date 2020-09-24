@@ -1,10 +1,9 @@
 ---
-title: Poster resources for W3 homework
+title: Poster examples
 course: gd-431
 ---
 
-Poster Examples
-===============
+# {{page.title }}
 
 - [Globe @ MICA](http://globeatmica.com/type/posters/)
 - Swiss Poster Collection @ CMU, especially these categories:
@@ -20,4 +19,4 @@ Poster Examples
   - [Women Conductors Needed](https://www.ltmuseum.co.uk/collections/collections-online/posters/item/1983-4-6901?&apiurl=aHR0cHM6Ly9hcGkubHRtdXNldW0uY28udWsvcG9zdGVycz9zaG9ydD0xJnNraXA9MzM2JmxpbWl0PTQ4&searchpage=)
   - [Cheap Return Tickets](https://www.ltmuseum.co.uk/collections/collections-online/posters/item/1983-4-3128?&apiurl=aHR0cHM6Ly9hcGkubHRtdXNldW0uY28udWsvcG9zdGVycz9zaG9ydD0xJnNraXA9Mjg4JmxpbWl0PTQ4&searchpage=)
 
-[&#x21b5; back to project page]({% link gd-431/projects/project02.md %})
+[&#x21b5; back to project page]({% link gd-431/projects/project02/index.md %})
