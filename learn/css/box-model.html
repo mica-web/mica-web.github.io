@@ -9,6 +9,8 @@
   <meta name="Description" content="Curriculum, schedule and resources for web design.">
   <link href="/css/style.css" rel="stylesheet">
   
+  <link href="/css/syntax.css" rel="stylesheet">
+  
   <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
@@ -103,7 +105,7 @@
 
 
 
-<p class="text-faded reading-est">1 min read</p>
+<p class="text-faded reading-est">2 min read</p>
 
     
     
@@ -113,9 +115,107 @@
 
   <main>
     
-    <h1 id="box-model">Box model</h1>
+    
+<h1 id="box-model">Box model</h1>
 
-<p class="wip-wrapper"><img src="https://media.giphy.com/media/SwP1HunIXetehTvy43/giphy.gif" alt="This page is a work in progress" /></p>
+<h2 id="everything-is-made-of-boxes">Everything is made of boxes</h2>
+<p>The base of web design is rectangular boxes. Everything is a box, before and after CSS is applied. This is a simple concept, but worth repeating because it has bearing on so much of the CSS you’ll write and how elements interact with each other.</p>
+
+<p>In this screenshot, I have used CSS to add solid and dotted borders around the various HTML elements on this site’s homepage, making visible all the boxes, including some overlapping:</p>
+
+<p><img src="/learn/02_CSS/img/all-boxes.png" alt="" /></p>
+
+<p>Even in this example, where an <code class="language-plaintext highlighter-rouge">img</code> element has been modified using <code class="language-plaintext highlighter-rouge">border-radius: 50%</code>, when you highlight the element using the browser dev tools, it is still treated as a rectangle (in this case, specifically a square).</p>
+
+<p><img src="/learn/02_CSS/img/circles-are-boxes.png" alt="Screenshot of a circular image highlighted via the browser dev tools and can be seen to have a transparent square around the image." /></p>
+
+<p class="callout">You can see this for yourself by using your browser dev tools on this <a href="https://mica-css-borders.glitch.me/" target="_blank">Glitch project</a>.</p>
+
+<h2 id="what-makes-up-a-box">What makes up a box</h2>
+<p>These underlying boxes are made up of the following components:</p>
+
+<ul>
+  <li>content (not just text, but also images, other elements, etc.)</li>
+  <li>size (width and height)</li>
+  <li>padding</li>
+  <li>borders</li>
+  <li>margin</li>
+</ul>
+
+<p>These components are listed from innermost to outermost, so an element’s border encloses its padding, dimensions and content. The CSS <b>box model</b> refers to how these different components work together to result in what you see in your browser.</p>
+
+<p>Both Firefox and Chrome developer tools include a diagram of the box model of any element you inspect; this screenshot is from Firefox dev tools:</p>
+
+<p><img src="/learn/02_CSS/img/box-model-devtools.png" alt="Box model area of the layout pane inside of Firefox dev tools." /></p>
+
+<p>From the screenshot above, you can see the element’s:</p>
+
+<ul>
+  <li>content and/or dimensions (light blue) are 300x150 pixels</li>
+  <li>padding (light purple) is 40 pixels on each side</li>
+  <li>border (grey) is 5 pixels on each side</li>
+  <li>margin (yellow) is 40 pixels on each side</li>
+</ul>
+
+<h2 id="box-sizing">Box sizing</h2>
+<p>Both of the <code class="language-plaintext highlighter-rouge">div</code>s in this demo use these same values for height, width, padding, border and margin.</p>
+
+<div class="glitch-embed-wrap" style="height: 590px; width: 100%;">
+  <iframe src="https://glitch.com/embed/#!/embed/mica-box-model?path=styles.css&amp;previewSize=100&amp;sidebarCollapsed=true" title="mica-box-model on Glitch" allow="geolocation; microphone; camera; midi; vr; encrypted-media" style="height: 100%; width: 100%; border: 0;">
+  </iframe>
+</div>
+
+<p>The difference comes from a CSS property named <code class="language-plaintext highlighter-rouge">box-sizing</code>. By default, browsers apply a value of <code class="language-plaintext highlighter-rouge">content-box</code>. This means that an element’s final size is a calculation of its dimensions (width/height) + padding + border. So, while both <code class="language-plaintext highlighter-rouge">div</code>s have a width value of 300 pixels and height of 150 pixels, the first box also adds in the values for padding and border, like so:</p>
+
+<p class="text-center text-larger">300 + 40 + 40 + 5 + 5  = 390 pixels wide<br />
+<span class="text-smaller"><code class="language-plaintext highlighter-rouge">width</code> + <code class="language-plaintext highlighter-rouge">padding-left</code> + <code class="language-plaintext highlighter-rouge">padding-right</code> + <code class="language-plaintext highlighter-rouge">border-left</code> + <code class="language-plaintext highlighter-rouge">border-right</code></span></p>
+
+<p class="text-center text-larger">150 + 40 + 40 + 5 + 5  = 240 pixels tall<br />
+<span class="text-smaller"><code class="language-plaintext highlighter-rouge">width</code> + <code class="language-plaintext highlighter-rouge">padding-top</code> + <code class="language-plaintext highlighter-rouge">padding-bottom</code> + <code class="language-plaintext highlighter-rouge">border-top</code> + <code class="language-plaintext highlighter-rouge">border-bottom</code></span></p>
+
+<p>While you likely can follow along with this logic when it’s written out like this, there’s still something <strong>deeply unintuitive</strong> about an element with a <code class="language-plaintext highlighter-rouge">width</code> value of 300 pixels being 390 pixels wide.</p>
+
+<p class="text-center"><img src="https://media.giphy.com/media/vdpdWhpcIrtTi/giphy.gif" alt="Finn from Adventure Time looks confounded and says I don't know what to believe any more." /></p>
+
+<p>Luckily, this confusing default behavior can easily be overridden by updating the <code class="language-plaintext highlighter-rouge">box-sizing</code> value from <code class="language-plaintext highlighter-rouge">content-box</code> to <code class="language-plaintext highlighter-rouge">border-box</code> instead. Using this value means an element’s set <code class="language-plaintext highlighter-rouge">width</code> and <code class="language-plaintext highlighter-rouge">height</code> values are not affected by padding or borders; simply, your 300-pixel box is 300 pixels wide, as in the second example above.</p>
+
+<p>You can easily apply this setting to <em>all</em> your HTML elements by using the <a href="https://css-tricks.com/almanac/selectors/u/universal/">universal selector</a>, which is the asterisk (<code class="language-plaintext highlighter-rouge">*</code>):</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">*</span> <span class="p">{</span>
+  <span class="nl">box-sizing</span><span class="p">:</span> <span class="n">border-box</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>You may have already seen this code, as it is included among the <a href="/learn/css/best-practices#declare-box-sizing-in-all-your-stylesheets">CSS best practices</a> I recommend.</p>
+
+<!-- Box Model 1 -->
+<div class="quiz-wrapper">
+  <header class="quiz-header">
+    <h2 class="quiz-heading">Share What You've Learned</h2>
+    <div class="quiz-actions-wrapper">
+      <button type="button" class="u-button-reset u-link-reset quiz-action js-quiz-toggle" aria-controls="7SQH9QR"><?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 24 24" role="img" xmlns="http://www.w3.org/2000/svg">
+  <title>Collapse this content</title>
+  <path d="M23 24H1a1 1 0 01-1-1V1a1 1 0 011-1h22a1 1 0 110 2H2v20h20V5.19a1 1 0 112 0V23a1 1 0 01-1 1z" />
+  <path class="icon-line" d="M18 13H6a1 1 0 110-2h12a1 1 0 110 2z" />
+  <path class="icon-line" d="M11 18V6a1 1 0 112 0v12a1 1 0 11-2 0z" />
+</svg>
+</button>
+      <a class="u-link-reset quiz-action" href="https://www.surveymonkey.com/r/7SQH9QR" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img">
+  <title>Open in a new window</title>
+  <path d="M23 24H1a1 1 0 01-1-1V1a1 1 0 011-1h11.95a1 1 0 010 2H2v20h20l-.01-11.35a1 1 0 012 0L24 23a1 1 0 01-1 1z" />
+  <path d="M17.5 2c-.38 0-.62-.83-.43-1.5.09-.3.25-.5.43-.5h6c.12 0 .22.08.3.2.13.09.2.2.2.3v6c0 .38-.83.63-1.5.43-.3-.09-.5-.25-.5-.43V3.2l-7.13 7.26c-.48.5-1.37.21-1.6-.51a.91.91 0 01.2-.92L20.37 2z" />
+</svg>
+</a>
+    </div>
+  </header>
+  
+  <div id="7SQH9QR" class="quiz-content">
+    <iframe src="https://www.surveymonkey.com/r/7SQH9QR" height="600" allowtransparency="true" frameborder="0" scrolling="yes"></iframe>
+  </div>
+  
+</div>
+
 
     
     <footer class="feedback-footer">
