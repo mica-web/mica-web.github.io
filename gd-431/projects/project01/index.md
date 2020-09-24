@@ -23,8 +23,8 @@ Use your current knowledge of HTML and CSS to markup and format your resume.
 1. Follow the [setup instructions]({% link gd-431/projects/project01/setup.md %})
 1. Based on your priority guide template and using your current knowledge of HTML, create an HTML version of your resume.
 1. Use your current knowledge of CSS to add formatting/styles to your resume.
-1. Create a pull request for code review and final submission.
-  - Include PR template and use best practices checklists for [HTML]({% link _learn/01_HTML/best-practices.md %}) and [CSS]({% link _learn/02_CSS/best-practices.md %}) to check your own work.
+1. Create a [pull request]({% link _learn/03_workflows/pull-request.md %}) for code review and final submission.
+  - Include [PR template questions]({% link gd-431/projects/project01/pr-template.md %}) and your responses.
 
 ## Requirements
 - Your assignment will be viewed at a resolution of 1200 x 800.
