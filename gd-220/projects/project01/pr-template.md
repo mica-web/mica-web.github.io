@@ -18,4 +18,4 @@ Finally, include a short (1-2 sentence) response to these questions:
 1. Summarize the project requirements and evaluate if you have met them.
 1. Did you review the best practices checklists for [HTML]({% link _learn/01_HTML/best-practices.md %}) and [CSS]({% link _learn/02_CSS/best-practices.md %}) to check your own work on this project?
 
-You can copy the questions from [this file](https://gist.githubusercontent.com/angeliquejw/ca1fe647cb89238fad23692784a9c1bb/raw/a9f42b6347b3a1aea621dd0ea5d3bcc9d0a2e57c/gd220-p1-pr-template.md){:target="_blank"} and paste them into your PR description.
+You can copy the questions from [this file](https://gist.githubusercontent.com/angeliquejw/ca1fe647cb89238fad23692784a9c1bb/raw/1cc2f22056b654064a751129052688c9a023079a/gd220-p1-pr-template.md){:target="_blank"} and paste them into your PR description.

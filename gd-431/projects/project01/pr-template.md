@@ -18,4 +18,4 @@ The answers to each question should be ~50-200 words long (or, more simply, **no
 Finally, include a short (1-2 sentence) response to this:
 - Did you review the best practices checklists for [HTML]({% link _learn/01_HTML/best-practices.md %}) and [CSS]({% link _learn/02_CSS/best-practices.md %}) to check your own work on this project?
 
-You can copy the questions from [this file](https://gist.githubusercontent.com/angeliquejw/cffa95fe311f871d55795b146b3b2a0a/raw/02e7c9b7561e1cea071db793071e2fd6b32ce915/gd431-p1-pr-template.md){:target="_blank"} and paste them into your PR description.
+You can copy the questions from [this file](https://gist.githubusercontent.com/angeliquejw/cffa95fe311f871d55795b146b3b2a0a/raw/4529729da52e8ce645b17c0bfcafd42f14c5dc76/gd431-p1-pr-template.md){:target="_blank"} and paste them into your PR description.
