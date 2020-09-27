@@ -4,7 +4,7 @@ category: CSS
 level: [ intro, advanced ]
 permalink: /:collection/css/:name
 code_example: true
-quiz: false
+quiz: true
 issues: true
 ---
 
@@ -60,3 +60,9 @@ Take note of the following:
 - Class names (like `columns`) can be shared by multiple elements. In this way, you can use classes to create consistency throughout your project.
 - It's totally valid for a single HTML element to have multiple class names, as the `p` elements do here.
 - The stylesheet starts with base elements at the top, followed by class names. This reinforces the idea that your stylesheet starts with generic defaults and gets more custom further down.
+
+<!-- CSS Selectors 1 -->
+{% include quiz.html
+  title="Share What You've Learned"
+  quizId="V9T66WW"
+%}

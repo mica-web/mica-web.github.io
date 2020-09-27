@@ -4,7 +4,7 @@ category: CSS
 level: [ intro ]
 permalink: /:collection/css/:name
 code_example: true
-quiz: false
+quiz: true
 issues: true
 ---
 
@@ -111,7 +111,12 @@ You can see this in your browser developer tools. In the example below, you will
 
 ![Screenshot of the Glitch project above with developer tools visible and the CSS conflicts highlighted.]({{ ip | append: 'css-conflicts.png' }})
 
-Also, note that conflicts are resolved on a declaration-by-declaration basis. Just because the `background-color` declaration on the `p` selector is overwritten does **not** mean the `color` rule with the same selector also gets overwritten; since there are no conflicts with the `color` declaration, it is applied as written.
+Also, note that conflicts are resolved on a declaration-by-declaration basis. Just because the `background-color` declaration on the `p` selector is overwritten does **not** mean the `color` declaration within the same ruleset also gets overwritten; since there are no conflicts with the `color` declaration, it is applied as written.
+
+This is a pretty cool thing about writing CSS. Instead of treating such conflicts as errors that break stylesheets, they are accounted for in the browser logic.
+
+{: .callout }
+This also extends to CSS that is actually broken or invalid, not just conflicts. It's rare to write CSS that totally breaks your stylesheet; instead, it's often just a single declaration that fails.
 
 ## Selectors have specificity
 You've already learned that CSS files are read top to bottom, but you should also know that selectors are read from right to left.
@@ -146,3 +151,9 @@ Any `a` element inside a `h1` that is inside a `header` will be red, even though
 <span class="emoji text-larger">💡</span> You can hopefully avoid this issue by:
 - Not writing your CSS selectors to reflect your nested HTML structure and instead using classnames
 - In general, avoiding using more than two selectors for a single ruleset
+
+<!-- CSS Cascade 1 -->
+{% include quiz.html
+  title="Share What You've Learned"
+  quizId="VW88NCZ"
+%}
