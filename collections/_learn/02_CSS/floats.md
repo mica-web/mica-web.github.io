@@ -10,8 +10,7 @@ issues: true
 
 # {{ page.topic }}
 
-{: .wip-wrapper}
-![This page is a work in progress](https://media.giphy.com/media/SwP1HunIXetehTvy43/giphy.gif)
+{% include wip.md %}
 
 <div class="glitch-embed-wrap" style="height: 720px; width: 100%;">
   <iframe
