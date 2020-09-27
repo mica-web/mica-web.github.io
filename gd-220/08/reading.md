@@ -4,7 +4,7 @@ course: gd-220
 issues: true
 ---
 
-{% assign week = '06' %}
+{% assign week = '08' %}
 
 {::options auto_id_prefix='w{{week}}-' /}
 
