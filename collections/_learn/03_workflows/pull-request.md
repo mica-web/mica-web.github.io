@@ -1,6 +1,6 @@
 ---
 topic: Pull request
-category: workflows
+category: Workflows
 level: [ intro, advanced ]
 permalink: /:collection/workflows/:name
 code_example: false
