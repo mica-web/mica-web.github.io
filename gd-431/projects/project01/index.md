@@ -43,12 +43,12 @@ Use your current knowledge of HTML and CSS to markup and format your resume.
 <dt>Sept 10</dt>
 <dd>Project introduction</dd>
 <dt>Sept 17</dt>
-<dd>Steps 1, 2 & 3 complete</dd>
-<dd>Step 4 optional</dd>
+<dd>Steps 1-3 complete</dd>
+<dd>Step 4 begun</dd>
 <dt>Sept 24</dt>
 <dd>Project due date</dd>
 <dd class="text-faded">(attempt to complete PR before class on Thursday; hard due date is end of day Friday</dd>
-<dd>Steps 4 & 5 complete</dd>
+<dd>Step 4 complete</dd>
 </dl>
 
 ## Rubric

@@ -54,7 +54,7 @@ Demonstrate your understanding of basic HTML and CSS, specifically as it pertain
 <dd>Steps 3 & 4 complete</dd>
 <dt>Oct 01</dt>
 <dd>Project due date</dd>
-<dd>Steps 5 & 6 complete</dd>
+<dd>Step 5 complete</dd>
 </dl>
 
 ## Rubric
