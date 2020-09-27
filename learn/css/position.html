@@ -9,6 +9,8 @@
   <meta name="Description" content="Curriculum, schedule and resources for web design.">
   <link href="/css/style.css" rel="stylesheet">
   
+  <link href="/css/syntax.css" rel="stylesheet">
+  
   <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
@@ -103,7 +105,7 @@
 
 
 
-<p class="text-faded reading-est">1 min read</p>
+<p class="text-faded reading-est">6 min read</p>
 
     
     
@@ -115,7 +117,185 @@
     
     <h1 id="position">Position</h1>
 
-<p class="wip-wrapper"><img src="https://media.giphy.com/media/SwP1HunIXetehTvy43/giphy.gif" alt="This page is a work in progress" /></p>
+<p>Position refers to how an element is laid out in an HTML document. The CSS  property <code class="language-plaintext highlighter-rouge">position</code> works in relationship the following CSS properties to determine an element’s final position:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">top</code></li>
+  <li><code class="language-plaintext highlighter-rouge">right</code></li>
+  <li><code class="language-plaintext highlighter-rouge">bottom</code></li>
+  <li><code class="language-plaintext highlighter-rouge">left</code></li>
+  <li><code class="language-plaintext highlighter-rouge">z-index</code></li>
+</ul>
+
+<p>There are five valid values for <code class="language-plaintext highlighter-rouge">position</code> and they are described and demonstrated below.</p>
+
+<h2 id="default-value">Default value</h2>
+<p>The default value of the <code class="language-plaintext highlighter-rouge">position</code> property is <code class="language-plaintext highlighter-rouge">static</code>.</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">div</span> <span class="p">{</span>
+  <span class="nl">position</span><span class="p">:</span> <span class="nb">static</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Since this is the browser default for all HTML elements, you would only write this CSS if you needed to override a previous custom setting.</p>
+
+<p>Elements with static positioning <strong>ignore</strong> the effects of <code class="language-plaintext highlighter-rouge">top</code>, <code class="language-plaintext highlighter-rouge">right</code>, <code class="language-plaintext highlighter-rouge">bottom</code>, <code class="language-plaintext highlighter-rouge">left</code> and <code class="language-plaintext highlighter-rouge">z-index</code>. This means that, by default, these  properties have <strong>no effect</strong> when used on most HTML elements <em>unless</em> their <code class="language-plaintext highlighter-rouge">position</code> value has been changed. As a result, it would be meaningless to write the following CSS:</p>
+
+<p><span class="emoji">❌</span> Don’t do this</p>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">div</span> <span class="p">{</span>
+  <span class="nl">top</span><span class="p">:</span> <span class="m">30px</span><span class="p">;</span>
+  <span class="nl">z-index</span><span class="p">:</span> <span class="m">10</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p class="callout">Any element that has a <code class="language-plaintext highlighter-rouge">position</code> value <em>other</em> than <code class="language-plaintext highlighter-rouge">static</code> is referred to as a <b>positioned element</b>.</p>
+
+<h2 id="relative-positioning">Relative positioning</h2>
+<p>Using relative positioning allows you to position an element <strong>relative to its original or starting position</strong>. This is the simplest form of positioning to understand and does not effect the position of other elements.</p>
+
+<div class="glitch-embed-wrap" style="height: 380px; width: 100%;">
+  <iframe src="https://glitch.com/embed/#!/embed/css-position-1?path=styles.css&amp;previewSize=100&amp;sidebarCollapsed=true" title="css-position-1 on Glitch" allow="geolocation; microphone; camera; midi; vr; encrypted-media" style="height: 100%; width: 100%; border: 0;">
+  </iframe>
+</div>
+
+<p>The yellow box above has the following CSS applied to it, which causes it to be 20 pixels lower and to the right than the other boxes:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">div</span> <span class="p">{</span>
+  <span class="nl">position</span><span class="p">:</span> <span class="nb">relative</span><span class="p">;</span>
+  <span class="nl">top</span><span class="p">:</span> <span class="m">20px</span><span class="p">;</span>
+  <span class="nl">left</span><span class="p">:</span> <span class="m">20px</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>You can compare the original position by clicking the toggle button in the Glitch demo.</p>
+
+<p class="callout"><span class="emoji">💡</span> You can remix any of the embedded Glitch projects if you want to update or experiment with the CSS.</p>
+
+<h2 id="absolute-positioning">Absolute positioning</h2>
+<p>Using absolute positioning is far more dramatic than relative positioning because it removes an element from the normal flow of a document. Additionally, the space that element would take up is removed from the document.</p>
+
+<div class="glitch-embed-wrap" style="height: 570px; width: 100%;">
+  <iframe src="https://glitch.com/embed/#!/embed/css-position-2?path=styles.css&amp;previewSize=100&amp;sidebarCollapsed=true" title="css-position-2 on Glitch" allow="geolocation; microphone; camera; midi; vr; encrypted-media" style="height: 100%; width: 100%; border: 0;">
+  </iframe>
+</div>
+
+<p>The yellow box above has the following CSS applied to it:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">div</span> <span class="p">{</span>
+  <span class="nl">position</span><span class="p">:</span> <span class="nb">absolute</span><span class="p">;</span>
+  <span class="nl">top</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="nl">right</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>In the first row, this CSS causes the box to be positioned in the top right corner of the HTML document because <strong>none</strong> of its parent elements are positioned (that is, they are the default of <code class="language-plaintext highlighter-rouge">position: static</code>).</p>
+
+<p>In the second row, the <code class="language-plaintext highlighter-rouge">section</code> element (with the grey background) wraps around all the boxes and is itself a positioned element. It has the CSS <code class="language-plaintext highlighter-rouge">position: relative</code> added to it, and this causes any absolutely positioned children to be positioned relative to it.</p>
+
+<p>Using the toggle button in this demo, you can also see how the space taken up by the box is lost when it is positioned absolutely. In both rows, the remaining green boxes are positioned as if the absolutely positioned box doesn’t exist at all.</p>
+
+<p class="callout"><span class="emoji">🤔</span> Did you notice the little bit of white space on the right side of the absolutely positioned box? This is my stylesheet adds 12 pixels of margin to the left and right of each box. Those styles carry through, even when the element is absolutely positioned. There is no top margin on the box, so it appears flush with the <code class="language-plaintext highlighter-rouge">body</code> or <code class="language-plaintext highlighter-rouge">section</code> element it is positioned relative to.</p>
+
+<h2 id="fixed-positioning">Fixed positioning</h2>
+
+<p>Fixed elements are positioned relative to the <b>viewport</b>, not the document, and do not scroll with the document.</p>
+
+<p class="callout"><b>Viewport</b> is used to describe the area of an HTML document that is currently visible. Take this page as an example: it has a lot of content and examples, so it requires scrolling to see everything. The space that you’re currently able to see is the viewport.</p>
+
+<div class="glitch-embed-wrap" style="height: 600px; width: 100%;">
+  <iframe src="https://glitch.com/embed/#!/embed/css-position-3?path=styles.css&amp;previewSize=100&amp;sidebarCollapsed=true" title="css-position-3 on Glitch" allow="geolocation; microphone; camera; midi; vr; encrypted-media" style="height: 100%; width: 100%; border: 0;">
+  </iframe>
+</div>
+
+<p>In this example, the yellow box has the following CSS applied to it:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">div</span> <span class="p">{</span>
+  <span class="nl">position</span><span class="p">:</span> <span class="nb">fixed</span><span class="p">;</span>
+  <span class="nl">bottom</span><span class="p">:</span> <span class="m">12px</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>This takes the box out of the normal document flow and locks it in at 12 pixels from the bottom of the viewport.</p>
+
+<p>If you’ve ever encountered an ad or video that stubbornly sticks to your web browser, even when you scroll, that element was likely created using <code class="language-plaintext highlighter-rouge">position: fixed</code>.</p>
+
+<p>Fixed and absolutely positioned elements have a lot in common; both are:</p>
+
+<ul>
+  <li>removed from the default layout</li>
+  <li>leave no space behind in their original position</li>
+  <li>positioned relative to another element</li>
+</ul>
+
+<h2 id="sticky-positioning">Sticky positioning</h2>
+<p>Sticky elements change their behavior based on a user’s scrolling behavior. They start out acting as if relatively positioned and then act more like a fixed element as its parent element leaves the viewport.</p>
+
+<p>Scroll inside the following Glitch window to see a demonstration of this behavior:</p>
+
+<div class="glitch-embed-wrap" style="height: 420px; width: 100%;">
+  <iframe src="https://glitch.com/embed/#!/embed/css-position-4?path=styles.css&amp;previewSize=100&amp;sidebarCollapsed=true" title="css-position-4 on Glitch" allow="geolocation; microphone; camera; midi; vr; encrypted-media" style="height: 100%; width: 100%; border: 0;">
+  </iframe>
+</div>
+
+<p>In this example, the yellow box has the following CSS applied:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">div</span> <span class="p">{</span>
+  <span class="nl">position</span><span class="p">:</span> <span class="n">sticky</span><span class="p">;</span>
+  <span class="nl">top</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>As the containing <code class="language-plaintext highlighter-rouge">section</code> element (with the grey background) moves out of the viewport, the yellow box locks in at the top of the viewport.</p>
+
+<h2 id="layering-elements">Layering elements</h2>
+<p>Positioned elements, in addition to respecting values of <code class="language-plaintext highlighter-rouge">top</code>, <code class="language-plaintext highlighter-rouge">right</code>, <code class="language-plaintext highlighter-rouge">bottom</code> and <code class="language-plaintext highlighter-rouge">left</code>, also can be layered, much like layers in a PhotoShop file. This is done via a property named <code class="language-plaintext highlighter-rouge">z-index</code>.</p>
+
+<p>This property uses number values where higher/larger numbers get stacked on top of elements with lower or no numbers.</p>
+
+<div class="glitch-embed-wrap" style="height: 570px; width: 100%;">
+  <iframe src="https://glitch.com/embed/#!/embed/css-layers?path=styles.css&amp;previewSize=100&amp;sidebarCollapsed=true" title="css-layers on Glitch" allow="geolocation; microphone; camera; midi; vr; encrypted-media" style="height: 100%; width: 100%; border: 0;">
+  </iframe>
+</div>
+
+<p>Clicking the “make relative” button sets all the boxes to be <code class="language-plaintext highlighter-rouge">position: relative</code> and updates their <code class="language-plaintext highlighter-rouge">left</code> values to force them to overlap. By default, they stack so that the last element in the HTML is on top (so, in this case, the third box covers the second box).</p>
+
+<p>The <code class="language-plaintext highlighter-rouge">z-index</code> buttons add a <code class="language-plaintext highlighter-rouge">z-index</code> value of <code class="language-plaintext highlighter-rouge">2</code> to the box of your choice, like so:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">div</span> <span class="p">{</span>
+  <span class="nl">z-index</span><span class="p">:</span> <span class="m">2</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>If you reset this demo and then press “make relative” followed by “third box,” you’ll see that adding a <code class="language-plaintext highlighter-rouge">z-index</code> value to the final box doesn’t initially do anything; it’s stacked on top by default.</p>
+
+<p>If you remix <a href="https://glitch.com/edit/#!/css-layers-demo" target="_blank">this project</a>, you can experiment with using different <code class="language-plaintext highlighter-rouge">z-index</code> values on these boxes.</p>
+
+<h2 id="some-final-thoughts">Some final thoughts</h2>
+<p>CSS positioning is very powerful and has many uses, but it is also often over used by beginning developers. Keep the following in mind:</p>
+
+<ul>
+  <li>If you are looking to create space between elements, use <code class="language-plaintext highlighter-rouge">margin</code> or <code class="language-plaintext highlighter-rouge">padding</code>, as these achieve consistent results without changing the default browser position of an element.</li>
+  <li>Most layouts can be achieved without taking items out of the document flow (<code class="language-plaintext highlighter-rouge">absolute</code>, <code class="language-plaintext highlighter-rouge">fixed</code>, <code class="language-plaintext highlighter-rouge">sticky</code> positioning) or by only using those effects on a few elements. If you find yourself writing CSS where multiple elements are positioned absolutely, you’re probably creating a layout that will require far too much code, be difficult to maintain and/or only work at very specific sizes.</li>
+  <li>If and when you do absolutely position an element, remember to consider which element it should be positioned relative to and to make sure that element is <code class="language-plaintext highlighter-rouge">position: relative</code>.</li>
+</ul>
+
+<p>This example shows how overusing the <code class="language-plaintext highlighter-rouge">position</code> property can break your layout. When you click the “make absolute” button, all the boxes are absolutely positioned. As before, the first row is positioned relative to the entire HTML document and the second is relative to the parent <code class="language-plaintext highlighter-rouge">section</code> element.</p>
+
+<div class="glitch-embed-wrap" style="height: 600px; width: 100%;">
+  <iframe src="https://glitch.com/embed/#!/embed/css-position-2b?path=styles.css&amp;previewSize=100&amp;sidebarCollapsed=true" title="css-position-2b on Glitch" allow="geolocation; microphone; camera; midi; vr; encrypted-media" style="height: 100%; width: 100%; border: 0;">
+  </iframe>
+</div>
+
+<p>A couple of not great things happen here:</p>
+
+<ul>
+  <li>Once all the elements are absolutely positioned, the <code class="language-plaintext highlighter-rouge">section</code> elements act as though they have no content – because the elements within them have been removed from the normal document flow. This is why you no longer see the grey background and only the border on the <code class="language-plaintext highlighter-rouge">section</code> elements remains visible.</li>
+  <li>All of the boxes stack up on themselves because they have the same <code class="language-plaintext highlighter-rouge">top</code> and <code class="language-plaintext highlighter-rouge">right</code> values. For a demo, this isn’t tragic, but if those <code class="language-plaintext highlighter-rouge">div</code> elements contained content important to your web page, this would be very frustrating for your site’s users.</li>
+</ul>
+
+<p>Similarly, it’s possible for an element with sticky or fixed positioning to cover up other content and make it difficult or impossible for users to complete actions on your site.</p>
+
+<p>None of this means you can’t or shouldn’t absolutely position elements, but you should think through the potential consequences and not overuse these properties in your layout.</p>
 
     
     <footer class="feedback-footer">
