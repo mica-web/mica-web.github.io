@@ -35,3 +35,29 @@
 .loom-embed-wrapper {
   margin: $spacing-lg 0;
 }
+
+.cp-sbs-wrapper {
+  @media (min-width: 720px) {
+    display: flex;
+    margin: $spacing-lg 0;
+
+    >div {
+      border-bottom: 1px solid #ccc;
+      height: 500px;
+      overflow: hidden;
+      width: 50%;
+
+      +div {
+        margin-left: -1px;
+      }
+    }
+
+    .cp_embed_wrapper {
+      margin: 0;
+    }
+
+    iframe {
+      min-height: 580px;
+    }
+  }
+}
