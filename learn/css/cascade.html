@@ -9,6 +9,8 @@
   <meta name="Description" content="Curriculum, schedule and resources for web design.">
   <link href="/css/style.css" rel="stylesheet">
   
+  <link href="/css/syntax.css" rel="stylesheet">
+  
   <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
@@ -103,7 +105,7 @@
 
 
 
-<p class="text-faded reading-est">1 min read</p>
+<p class="text-faded reading-est">3 min read</p>
 
     
     
@@ -113,9 +115,170 @@
 
   <main>
     
-    <h1 id="the-cascade">The Cascade</h1>
+    
+<h1 id="the-cascade">The Cascade</h1>
 
-<p class="wip-wrapper"><img src="https://media.giphy.com/media/SwP1HunIXetehTvy43/giphy.gif" alt="This page is a work in progress" /></p>
+<p>In your <a href="/learn/css/basics">initial lesson</a> about CSS, you learned that CSS stands for Cascading StyleSheets and that</p>
+
+<blockquote>
+  <p>…the cascade refers to the order and importance of your style rules. Once you’ve practiced some basic CSS, we’ll revisit the cascade and you’ll explore some examples of why it’s important.</p>
+</blockquote>
+
+<p>This poetic word – the cascade – encompasses all the logic that determines how the styles you write are applied in the browser.</p>
+
+<p>This intro to the cascade will not cover all its details, but it is helpful to understand some basics about the cascade in order to debug any CSS conflicts you may encounter. In this lesson, you’ll learn a bit about the cascade, including the weight and specificity of CSS selectors.</p>
+
+<h2 id="order-matters">Order matters</h2>
+<p>The most basic thing to know about CSS is that the order in which you write your stylesheet has an impact on what happens in the browser.</p>
+
+<p>The following CSS has conflicts because the <code class="language-plaintext highlighter-rouge">color</code> property is repeated for both the <code class="language-plaintext highlighter-rouge">h1</code> and the <code class="language-plaintext highlighter-rouge">h2</code> elements:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">h1</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="no">blue</span><span class="p">;</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="no">purple</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">h2</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="no">purple</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">h2</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="no">red</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>In the following demo, you can see how things get resolved:</p>
+
+<div class="glitch-embed-wrap" style="height: 180px; width: 100%;">
+  <iframe src="https://glitch.com/embed/#!/embed/css-cascade-1?path=index.html&amp;previewSize=100&amp;sidebarCollapsed=true" title="css-cascade-1 on Glitch" allow="geolocation; microphone; camera; midi; vr; encrypted-media" style="height: 100%; width: 100%; border: 0;">
+  </iframe>
+</div>
+
+<p>Since a CSS file is read from top to bottom, in general, later declarations overwrite earlier ones; simply stated: <strong>what’s last, wins.</strong></p>
+
+<p><span class="emoji text-larger">💡</span> You can hopefully avoid this issue by:</p>
+<ul>
+  <li>Organizing your CSS properties alphabetically within each ruleset.</li>
+  <li>Organizing your CSS selectors with a logical structure.</li>
+</ul>
+
+<h2 id="selectors-have-weight">Selectors have weight</h2>
+<p>In the previous example, all the <a href="/learn/css/selectors">CSS selectors</a> were base HTML elements. This, however, is only one way you can select elements. For example, you can also select an element based on an ID or class selector:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;p</span> <span class="na">id=</span><span class="s">"special"</span> <span class="na">class=</span><span class="s">"demo"</span><span class="nt">&gt;</span>Lorem ipsum...<span class="nt">&lt;/p&gt;</span>
+</code></pre></div></div>
+
+<p>The following demo uses the HTML above and this CSS:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">#special</span> <span class="p">{</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="no">silver</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.demo</span> <span class="p">{</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="no">red</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">p</span> <span class="p">{</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="no">purple</span><span class="p">;</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="no">white</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<div class="glitch-embed-wrap" style="height: 160px; width: 100%;">
+  <iframe src="https://glitch.com/embed/#!/embed/css-cascade-2?path=styles.css&amp;previewSize=100&amp;sidebarCollapsed=true" title="css-cascade-2 on Glitch" allow="geolocation; microphone; camera; midi; vr; encrypted-media" style="height: 100%; width: 100%; border: 0;">
+  </iframe>
+</div>
+
+<p>Despite the fact that the last <code class="language-plaintext highlighter-rouge">background-color</code> declaration has a value of <code class="language-plaintext highlighter-rouge">purple</code>, it still doesn’t win? <span class="emoji">🤷🏻‍♀️</span> What gives?</p>
+
+<p>Here, the issue is that the selectors used have a different weight; the cascade considers how generic a selector is as part of its calculations.</p>
+
+<ul>
+  <li>a base element, like <code class="language-plaintext highlighter-rouge">p</code>, selects all elements of that type in the document and is <em>very</em> generic</li>
+  <li>a class name (<code class="language-plaintext highlighter-rouge">.demo</code>) only selects elements with a matching class and is <em>less</em> generic</li>
+  <li>an ID (<code class="language-plaintext highlighter-rouge">#special</code>) should be <em>unique</em> and, therefore, can only apply to one element on a page</li>
+</ul>
+
+<p>Because of its uniqueness, the ID selector wins out against these other selectors, <em>regardless</em> of its location in the stylesheet.</p>
+
+<p><span class="emoji text-larger">💡</span> You can hopefully avoid this issue by:</p>
+<ul>
+  <li>Organizing your stylesheet so all your base element selectors are first, followed by your class selectors</li>
+  <li>Avoiding using ID selectors</li>
+</ul>
+
+<h2 id="conflicts-overwrite">Conflicts overwrite</h2>
+<p>When there are CSS conflicts, it’s important to note that the “losing” declarations are overwritten, <em>not</em> ignored.</p>
+
+<p>You can see this in your browser developer tools. In the example below, you will see in the bottom right corner that all three <code class="language-plaintext highlighter-rouge">background-color</code> declarations are visible, and the losing declarations are grey and crossed out.</p>
+
+<p><img src="/learn/02_CSS/img/css-conflicts.png" alt="Screenshot of the Glitch project above with developer tools visible and the CSS conflicts highlighted." /></p>
+
+<p>Also, note that conflicts are resolved on a declaration-by-declaration basis. Just because the <code class="language-plaintext highlighter-rouge">background-color</code> declaration on the <code class="language-plaintext highlighter-rouge">p</code> selector is overwritten does <strong>not</strong> mean the <code class="language-plaintext highlighter-rouge">color</code> declaration within the same ruleset also gets overwritten; since there are no conflicts with the <code class="language-plaintext highlighter-rouge">color</code> declaration, it is applied as written.</p>
+
+<p>This is a pretty cool thing about writing CSS. Instead of treating such conflicts as errors that break stylesheets, they are accounted for in the browser logic.</p>
+
+<p class="callout">This also extends to CSS that is actually broken or invalid, not just conflicts. It’s rare to write CSS that totally breaks your stylesheet; instead, it’s often just a single declaration that fails.</p>
+
+<h2 id="selectors-have-specificity">Selectors have specificity</h2>
+<p>You’ve already learned that CSS files are read top to bottom, but you should also know that selectors are read from right to left.</p>
+
+<p>This means the selector <code class="language-plaintext highlighter-rouge">header h1 a</code> applies to:</p>
+<ul>
+  <li>any <code class="language-plaintext highlighter-rouge">a</code> element</li>
+  <li>that is inside an <code class="language-plaintext highlighter-rouge">h1</code> element</li>
+  <li>that is inside a <code class="language-plaintext highlighter-rouge">header</code> element</li>
+</ul>
+
+<p>Referring to multiple elements or class names increases the specificity of the selector. Given the following CSS:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">header</span> <span class="nt">h1</span> <span class="nt">a</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="no">red</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">a</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="no">green</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Any <code class="language-plaintext highlighter-rouge">a</code> element inside a <code class="language-plaintext highlighter-rouge">h1</code> that is inside a <code class="language-plaintext highlighter-rouge">header</code> will be red, even though the <code class="language-plaintext highlighter-rouge">color: green</code> declaration is later in the stylesheet; you can see this result in the following demo:</p>
+
+<div class="glitch-embed-wrap" style="height: 180px; width: 100%;">
+  <iframe src="https://glitch.com/embed/#!/embed/css-cascade-3?path=styles.css&amp;previewSize=100&amp;sidebarCollapsed=true" title="css-cascade-3 on Glitch" allow="geolocation; microphone; camera; midi; vr; encrypted-media" style="height: 100%; width: 100%; border: 0;">
+  </iframe>
+</div>
+
+<p><span class="emoji text-larger">💡</span> You can hopefully avoid this issue by:</p>
+<ul>
+  <li>Not writing your CSS selectors to reflect your nested HTML structure and instead using classnames</li>
+  <li>In general, avoiding using more than two selectors for a single ruleset</li>
+</ul>
+
+<!-- CSS Cascade 1 -->
+<div class="quiz-wrapper">
+  <header class="quiz-header">
+    <h2 class="quiz-heading">Share What You've Learned</h2>
+    <div class="quiz-actions-wrapper">
+      <button type="button" class="u-button-reset u-link-reset quiz-action js-quiz-toggle" aria-controls="VW88NCZ"><?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 24 24" role="img" xmlns="http://www.w3.org/2000/svg">
+  <title>Collapse this content</title>
+  <path d="M23 24H1a1 1 0 01-1-1V1a1 1 0 011-1h22a1 1 0 110 2H2v20h20V5.19a1 1 0 112 0V23a1 1 0 01-1 1z" />
+  <path class="icon-line" d="M18 13H6a1 1 0 110-2h12a1 1 0 110 2z" />
+  <path class="icon-line" d="M11 18V6a1 1 0 112 0v12a1 1 0 11-2 0z" />
+</svg>
+</button>
+      <a class="u-link-reset quiz-action" href="https://www.surveymonkey.com/r/VW88NCZ" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img">
+  <title>Open in a new window</title>
+  <path d="M23 24H1a1 1 0 01-1-1V1a1 1 0 011-1h11.95a1 1 0 010 2H2v20h20l-.01-11.35a1 1 0 012 0L24 23a1 1 0 01-1 1z" />
+  <path d="M17.5 2c-.38 0-.62-.83-.43-1.5.09-.3.25-.5.43-.5h6c.12 0 .22.08.3.2.13.09.2.2.2.3v6c0 .38-.83.63-1.5.43-.3-.09-.5-.25-.5-.43V3.2l-7.13 7.26c-.48.5-1.37.21-1.6-.51a.91.91 0 01.2-.92L20.37 2z" />
+</svg>
+</a>
+    </div>
+  </header>
+  
+  <div id="VW88NCZ" class="quiz-content">
+    <iframe src="https://www.surveymonkey.com/r/VW88NCZ" height="600" allowtransparency="true" frameborder="0" scrolling="yes"></iframe>
+  </div>
+  
+</div>
+
 
     
     <footer class="feedback-footer">
@@ -149,6 +312,8 @@
   
   
   
+  
+  <script src="/js/quizToggle.js" async defer></script>
   
 
 </body>

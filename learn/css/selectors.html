@@ -9,6 +9,8 @@
   <meta name="Description" content="Curriculum, schedule and resources for web design.">
   <link href="/css/style.css" rel="stylesheet">
   
+  <link href="/css/syntax.css" rel="stylesheet">
+  
   <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
@@ -113,9 +115,79 @@
 
   <main>
     
-    <h1 id="selectors">Selectors</h1>
+    
+<h1 id="selectors">Selectors</h1>
+<p>In your <a href="/learn/css/basics">initial lesson</a> about CSS, you learned that the element your ruleset targets is called a <b>selector</b>. So, in the following CSS, the <code class="language-plaintext highlighter-rouge">p</code> element is the selector:</p>
 
-<p class="wip-wrapper"><img src="https://media.giphy.com/media/SwP1HunIXetehTvy43/giphy.gif" alt="This page is a work in progress" /></p>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">p</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="no">purple</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>While writing CSS this way has worked for the very basic examples thus far, what are your options if you don’t want <em>every</em> <code class="language-plaintext highlighter-rouge">p</code> element to be purple, but only one or a few?</p>
+
+<p>In this case, you can add custom class names to your HTML elements and reference them in your CSS. You write class names like so:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"my-class-name"</span><span class="nt">&gt;</span>Content<span class="nt">&lt;/p&gt;</span>
+</code></pre></div></div>
+
+<p>You use this class name in your CSS by repeating the name and starting it off with a period:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">.my-class-name</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="no">purple</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>The period differentiates this as a class selector (vs a base element selector, which is what you’ve been writing to date).</p>
+
+<p>Your class names may be single words or use hyphens/dashes to connect multiple words, as in this example. Class names <strong>cannot</strong> have spaces in them. Spaces, as in the following example, are read as separate class names:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"class1 class2"</span><span class="nt">&gt;</span>Content<span class="nt">&lt;/p&gt;</span>
+</code></pre></div></div>
+
+<p>Use the “View Source” button on the Glitch project below to explore how a combination of base and class name selectors are used to create this final design:</p>
+
+<div class="glitch-embed-wrap" style="height: 650px; width: 100%;">
+  <iframe src="https://glitch.com/embed/#!/embed/mica-css-selectors?path=styles.css&amp;previewSize=100&amp;sidebarCollapsed=true" title="mica-css-selectors on Glitch" allow="geolocation; microphone; camera; midi; vr; encrypted-media" style="height: 100%; width: 100%; border: 0;">
+  </iframe>
+</div>
+
+<p>Take note of the following:</p>
+
+<ul>
+  <li>Class names (like <code class="language-plaintext highlighter-rouge">columns</code>) can be shared by multiple elements. In this way, you can use classes to create consistency throughout your project.</li>
+  <li>It’s totally valid for a single HTML element to have multiple class names, as the <code class="language-plaintext highlighter-rouge">p</code> elements do here.</li>
+  <li>The stylesheet starts with base elements at the top, followed by class names. This reinforces the idea that your stylesheet starts with generic defaults and gets more custom further down.</li>
+</ul>
+
+<!-- CSS Selectors 1 -->
+<div class="quiz-wrapper">
+  <header class="quiz-header">
+    <h2 class="quiz-heading">Share What You've Learned</h2>
+    <div class="quiz-actions-wrapper">
+      <button type="button" class="u-button-reset u-link-reset quiz-action js-quiz-toggle" aria-controls="V9T66WW"><?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 24 24" role="img" xmlns="http://www.w3.org/2000/svg">
+  <title>Collapse this content</title>
+  <path d="M23 24H1a1 1 0 01-1-1V1a1 1 0 011-1h22a1 1 0 110 2H2v20h20V5.19a1 1 0 112 0V23a1 1 0 01-1 1z" />
+  <path class="icon-line" d="M18 13H6a1 1 0 110-2h12a1 1 0 110 2z" />
+  <path class="icon-line" d="M11 18V6a1 1 0 112 0v12a1 1 0 11-2 0z" />
+</svg>
+</button>
+      <a class="u-link-reset quiz-action" href="https://www.surveymonkey.com/r/V9T66WW" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img">
+  <title>Open in a new window</title>
+  <path d="M23 24H1a1 1 0 01-1-1V1a1 1 0 011-1h11.95a1 1 0 010 2H2v20h20l-.01-11.35a1 1 0 012 0L24 23a1 1 0 01-1 1z" />
+  <path d="M17.5 2c-.38 0-.62-.83-.43-1.5.09-.3.25-.5.43-.5h6c.12 0 .22.08.3.2.13.09.2.2.2.3v6c0 .38-.83.63-1.5.43-.3-.09-.5-.25-.5-.43V3.2l-7.13 7.26c-.48.5-1.37.21-1.6-.51a.91.91 0 01.2-.92L20.37 2z" />
+</svg>
+</a>
+    </div>
+  </header>
+  
+  <div id="V9T66WW" class="quiz-content">
+    <iframe src="https://www.surveymonkey.com/r/V9T66WW" height="600" allowtransparency="true" frameborder="0" scrolling="yes"></iframe>
+  </div>
+  
+</div>
+
 
     
     <footer class="feedback-footer">
@@ -149,6 +221,8 @@
   
   
   
+  
+  <script src="/js/quizToggle.js" async defer></script>
   
 
 </body>
