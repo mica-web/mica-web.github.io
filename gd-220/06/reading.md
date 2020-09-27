@@ -4,7 +4,7 @@ course: gd-220
 issues: true
 ---
 
-{% assign week = '02' %}
+{% assign week = '06' %}
 
 {::options auto_id_prefix='w{{week}}-' /}
 
@@ -12,7 +12,7 @@ issues: true
 /gd-220/{{week}}/
 {% endcapture %}
 
-# Week 02 {{ page.title }}
+# Week {{week}} {{ page.title }}
 
 ## Reading
 
@@ -23,7 +23,7 @@ issues: true
 - Read [A brief history of web design for designers](http://blog.froont.com/brief-history-of-web-design-for-designers/) {% include estimate.html time=14 %}
 - Make note of your **quotes, comments and questions** to this reading (which should make sense if you read the link under "A recommendation" above)
 - The timeline in the article above ends around 2014. What would _you_ add about the years since then or about the near future of the web? Write an addendum to the timeline for the year 2020.
-  - Due date: 9/17 by midnight EST ([see in your timezone](https://everytimezone.com/s/941a879e){:target="_blank"})
+  - Due date: @TODO by midnight EST ([see in your timezone](){:target="_blank"})
   - Length of addendum:  Roughly 200 words
   - Format:  Google Doc or PDF
   - File name: **Please** use your first initial and last name to name your file (for example: `aweger`)
