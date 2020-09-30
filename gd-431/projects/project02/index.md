@@ -22,7 +22,7 @@ Use your current knowledge of HTML and CSS layout to reinterpret an existing pos
 1. Search for posters to emulate in code and make responsive.
   - Focus on posters that are predominantly **text** and **shapes**
   - Some imagery is fine, but less or none is better
-  - While you are free to use examples from any source, I have also provides some [example poster sources here]({{ site.baseurl }}{% link gd-431/projects/project02/posters.md %})
+  - While you are free to use examples from any source, I have also provides some [example poster sources here]({% link gd-431/projects/project02/posters.md %})
 1. Identify four possibilities:
   - three possibilities of interesting designs to recreate
   - plus one "stretch" example
@@ -34,7 +34,8 @@ Use your current knowledge of HTML and CSS layout to reinterpret an existing pos
 1. I will review all ideas and discuss them, providing guidance on your final selection of a design to recreate.
 
 ## Process
-1. Write markup to semantically represent the poster content.
+1. Follow the [setup instructions]({% link gd-431/projects/project02/setup.md %})
+1. In your `index.html` and on the branch you created in the previous step, write markup to semantically represent the poster content.
 1. Crop or recreate elements of imagery as needed.
 1. Write mobile-first CSS.
 1. Add media queries to achieve desktop design.
@@ -60,6 +61,7 @@ Use your current knowledge of HTML and CSS layout to reinterpret an existing pos
 <dl>
 <dt>Sept 24</dt>
 <dd>Project introduction</dd>
+<dd>Begin research</dd>
 <dt>Oct 01</dt>
 <dd>Ideas template due</dd>
 <dd>Review and select design</dd>
