@@ -70,6 +70,18 @@ pre {
     left: 8px;
     text-transform: uppercase;
   }
+
+  .language-html &::before {
+    content: 'Example HTML';
+  }
+
+  .language-css &::before {
+    content: 'Example CSS';
+  }
+
+  .language-scss &::before {
+    content: 'Example SCSS';
+  }
 }
 
 kbd,
