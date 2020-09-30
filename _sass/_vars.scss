@@ -16,7 +16,12 @@ $color-text-link-visited: $color-text-body;
 
 // FONTS
 @mixin font-grotesk($weight:'Regular') {
-  font-family: NeueAlteGrotesk-#{$weight};
+  font-family: NeueAlteGrotesk-#{$weight},
+  "Lucida Grande",
+  "Lucida Sans Unicode",
+  "Lucida Sans",
+  Tahoma,
+  sans-serif;
   font-weight: normal;
   font-style: normal;
 }
@@ -26,7 +31,7 @@ $color-text-link-visited: $color-text-body;
 }
 
 @mixin font-mono() {
-  font-family: Native-Regular;
+  font-family: Native-Regular, "Andale Mono", AndaleMono, monospace;
   font-weight: normal;
   font-style: normal;
 }
