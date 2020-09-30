@@ -77,6 +77,9 @@ collections:
       - 02_CSS/organization.md
       - 02_CSS/best-practices.md
       - 02_CSS/sass.md
+      - 02_CSS/sass-variables.md
+      - 02_CSS/sass-functions.md
+      - 02_CSS/sass-nesting.md
       - 03_workflows/glitch-and-github.md
       - 03_workflows/branching.md
       - 03_workflows/pull-request.md
