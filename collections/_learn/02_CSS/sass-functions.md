@@ -73,4 +73,4 @@ If you want to experiment with modifying this page, [remix this project](https:/
 </div>
 
 {: .text-push--top }
-[&#x21b5; back to Sass intro]({{% lp | append: 'sass#functions' %}})
+[&#x21b5; back to Sass intro]({{ lp | append: 'sass#functions' }})

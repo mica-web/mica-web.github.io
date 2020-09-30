@@ -142,4 +142,4 @@ Which should be all the info you need to fix the issue. Thanks, Glitch! <span cl
 For the purposes of this demo, you should not need to make changes to the HTML document.
 
 {: .text-push--top }
-[&#x21b5; back to Sass intro]({{% lp | append: 'sass#variables' %}})
+[&#x21b5; back to Sass intro]({{ lp | append: 'sass#variables' }})

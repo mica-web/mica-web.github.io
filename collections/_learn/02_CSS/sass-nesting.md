@@ -189,4 +189,4 @@ This refactor includes examples of each type of nesting:
 - nested parent selector (line 157)
 
 {: .text-push--top }
-[&#x21b5; back to Sass intro]({{% lp | append: 'sass#mestomg' %}})
+[&#x21b5; back to Sass intro]({{ lp | append: 'sass#nesting' }})
