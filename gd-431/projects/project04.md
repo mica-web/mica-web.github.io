@@ -53,6 +53,6 @@ type: project
 </dl>
 
 ## Rubric
-[Google Sheet example](){:target="_blank"}
+[Google Sheet example](@TODO){:target="_blank"}
 
 </aside>
