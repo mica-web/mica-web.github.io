@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="ie=edge" http-equiv="X-UA-Compatible">
+  <meta name="author" content="Angelique Weger" />
+  <meta name="Description" content="Curriculum, schedule and resources for web design.">
+  <link href="/css/style.css" rel="stylesheet">
+  
+  <link href="/css/syntax.css" rel="stylesheet">
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+  <link rel="manifest" href="/favicons/site.webmanifest">
+  <link rel="shortcut icon" href="/favicons/favicon.ico">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-config" content="/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#9ff2c0">
+  <title>Sass Variables | Learning Web Design</title>
+</head>
+
+
+<body>
+  <div class="site-wrapper">
+
+    <header id="top" class="site-header">
+  <h2 class="u-m0 u-clearfix heading">
+    <a href="https://mica-web.github.io/" class="u-block u-clearfix" title="Return to homepage" >
+      <span class="heading--background">Learning</span>
+      <span class="heading--foreground">Web Design</span>
+    </a>
+  </h2>
+</header>
+
+
+<div class="content-wrapper ">
+
+  
+
+  <div class="top-nav">
+    <ul class="u-list-reset breadcrumb-wrapper">
+  <li class="u-inline-block breadcrumb"><a href="https://mica-web.github.io">Home</a></li>
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+  <li class="u-inline-block breadcrumb">
+    <a href="/learn">
+      learn
+    </a>
+  </li>
+  
+
+  
+
+  
+
+  
+
+  
+  <li class="u-inline-block breadcrumb">
+    <a href="/learn/css">
+      css
+    </a>
+  </li>
+  
+
+  
+
+  
+
+  
+
+  
+  <li class="u-inline-block breadcrumb">sass variables</li>
+  
+
+  
+
+</ul>
+
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p class="text-faded reading-est">5 min read</p>
+
+    
+    
+  </div>
+
+  
+
+  <main>
+    
+    
+<h1 id="sass-variables">Sass Variables</h1>
+<p>Variables are nicknames or shorthand used to refer to other elements in your code. In Sass, it’s common to use variables in place of color names and font stacks.</p>
+
+<h2 id="step-1-creating-variables">Step 1: Creating variables</h2>
+<p>A variable has two parts: the unique name you create for it and the value it stands in for. The name and the value are separated by a colon (<code class="language-plaintext highlighter-rouge">:</code>). You can name your variables any way that makes sense for you, so long as they follow these basic rules; all variable names:</p>
+
+<ul>
+  <li><strong>must</strong> begin with a dollar sign (<code class="language-plaintext highlighter-rouge">$</code>)</li>
+  <li><strong>cannot</strong> begin with a number:
+    <ul>
+      <li><span class="emoji">✅</span> <code class="language-plaintext highlighter-rouge">$test1</code> is valid</li>
+      <li><span class="emoji">❌</span> <code class="language-plaintext highlighter-rouge">$1test</code> is not</li>
+    </ul>
+  </li>
+  <li><strong>cannot</strong> have spaces in their name:
+    <ul>
+      <li><span class="emoji">✅</span> <code class="language-plaintext highlighter-rouge">$test-one</code> is valid</li>
+      <li><span class="emoji">❌</span> <code class="language-plaintext highlighter-rouge">$test one</code> is not</li>
+    </ul>
+  </li>
+</ul>
+
+<p>Ideally, you should declare your variables at the top of your stylesheet so they can be easily reused throughout the rest of your Sass code.</p>
+
+<h3 id="example">Example</h3>
+<p>The monospace font used on this site is called <a href="https://fortfoundry.com/pages/native" target="_blank">Native</a><span class="emoji text-smaller" title="Following and reading this link is optional."><span class="u-sr-only">Following and reading this link is optional.</span>✳️</span>
+. In CSS, whenever I want to use this font, I have to reference the entire font stack, like so:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">code</span> <span class="p">{</span>
+  <span class="nl">font-family</span><span class="p">:</span> <span class="n">Native-Regular</span><span class="p">,</span> <span class="s1">"Andale Mono"</span><span class="p">,</span> <span class="n">AndaleMono</span><span class="p">,</span> <span class="nb">monospace</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>On this page alone, there more than five elements using this font. That repetition is a chore and usually involves copying and pasting the entire <code class="language-plaintext highlighter-rouge">font-family</code> declaration from another spot in my stylesheet. But there’s an easier way! <span class="emoji">🌈</span></p>
+
+<p>Instead, using Sass, I can define a variable to represent the entire font stack and reuse it any time I want to use this specific monospace font.</p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$font-mono</span><span class="p">:</span> <span class="n">Native-Regular</span><span class="o">,</span> <span class="s2">"Andale Mono"</span><span class="o">,</span> <span class="n">AndaleMono</span><span class="o">,</span> <span class="nb">monospace</span><span class="p">;</span>
+</code></pre></div></div>
+
+<h2 id="step-2-using-variables">Step 2: Using variables</h2>
+
+<p class="callout"><span class="emoji">⚠️</span> Remember that you <strong>cannot</strong> use a variable in your stylesheet without first creating it and assigning its value. Attempting to do so will cause an error in your Sass.</p>
+
+<p>After I have named my variable (<code class="language-plaintext highlighter-rouge">$font-mono</code>) and assigned its value (the monospace font stack I’m using), I can now use it on any element where I want to use my monospace font:</p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">code</span> <span class="p">{</span>
+  <span class="nl">font-family</span><span class="p">:</span> <span class="nv">$font-mono</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>And when the Sass compiles to CSS, it will look exactly like the first code example on this page. <span class="emoji">🎉</span></p>
+
+<h2 id="why-use-variables">Why use variables</h2>
+<p>Because you control the naming of your variables, they provide an easy way to replace hard-to-remember bits of CSS with something you’ve chosen the name for instead. <code class="language-plaintext highlighter-rouge">$font-mono</code> is significantly easier for me to remember than the entirety of my monospace font stack.</p>
+
+<p>This is why variable names are great for replacing colors, too. On this site, I use specific shades of green and yellow as accent colors. Because I use Sass variables, I don’t have to remember the exact color values or even remember which is which. Is <code class="language-plaintext highlighter-rouge">#A2F1C1</code> green or yellow? <span class="emoji">🤷🏻‍♀️</span> I don’t know and I don’t have to care because I use variables instead. When I want green, I say exactly that:</p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">div</span> <span class="p">{</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="nv">$color-mint</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Variables are also a useful tool to maintain consistency. For example, on this site, instead of creating unique values everywhere for my margins and paddings, I mostly limit myself to five values, and I’ve named a T-shirt sized variable for each:</p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// SPACING</span>
+<span class="nv">$spacing-xs</span><span class="p">:</span> <span class="m">8px</span><span class="p">;</span>
+<span class="nv">$spacing-sm</span><span class="p">:</span> <span class="m">12px</span><span class="p">;</span>
+<span class="nv">$spacing-md</span><span class="p">:</span> <span class="m">16px</span><span class="p">;</span>
+<span class="nv">$spacing-lg</span><span class="p">:</span> <span class="m">40px</span><span class="p">;</span>
+<span class="nv">$spacing-xl</span><span class="p">:</span> <span class="m">64px</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>It’s more typing to add <code class="language-plaintext highlighter-rouge">$spacing-xl</code> than the actual value, but using variables helps keep my spacing consistent, even as I adapt the site styles from mobile to desktop.</p>
+
+<h2 id="when-to-use-variables">When to use variables</h2>
+<p>There is definitely a sweet spot with variables – too many and they be hard to remember or differentiate. Questions to ask yourself before creating a variable:</p>
+
+<ul>
+  <li>Is this value <strong>used in more than one place</strong>? If not, hold off. For example, if I used my monospace font stack on the <code class="language-plaintext highlighter-rouge">body</code> element and then never changed the font, I wouldn’t create a variable for that.</li>
+  <li>Am I likely to want to <strong>change or tweak this value</strong>? If so, creating a variable makes sense because it means I only have to make the change in one place, not all over my stylesheets.</li>
+  <li>Is the value <strong>meaningful</strong>? This one is harder to explain simply, but it prevents creating variables just because you can. For example, I <em>can</em> create a variable for the value of 3 pixels, like so:</li>
+</ul>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$pixels-3</span><span class="p">:</span> <span class="m">3px</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>And then I can use that in all sorts of places in my styles:</p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">h1</span> <span class="p">{</span>
+  <span class="nl">margin-top</span><span class="p">:</span> <span class="nv">$pixels-3</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">main</span> <span class="p">{</span>
+  <span class="nl">border</span><span class="p">:</span> <span class="nv">$pixels-3</span> <span class="nb">solid</span> <span class="no">green</span><span class="p">;</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="nv">$pixels-3</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>This is <em>totally</em> valid Sass, but it’s not really helpful. The margin on my <code class="language-plaintext highlighter-rouge">h1</code> and the border on my <code class="language-plaintext highlighter-rouge">main</code> element don’t really have anything in common; if I want to change the margin on the <code class="language-plaintext highlighter-rouge">h1</code>, that’s unlikely to affect my thinking about my border styles.</p>
+
+<h2 id="try-it">Try it</h2>
+
+<ol>
+  <li>Remix <a href="https://glitch.com/edit/?utm_content=project_sass-variables&amp;utm_source=remix_this&amp;utm_medium=button&amp;utm_campaign=glitchButton#!/remix/sass-variables">this project on Glitch</a>. <a href="https://glitch.com/edit/?utm_content=project_sass-variables&amp;utm_source=remix_this&amp;utm_medium=button&amp;utm_campaign=glitchButton#!/remix/sass-variables" class="u-link-reset glitch-remix-button">
+  <img src="https://cdn.glitch.com/2bdfb3f8-05ef-4035-a06e-2043962a3a13%2Fremix%402x.png?1513093958726" alt="Remix my Glitch Project" />
+</a>
+    <ul>
+      <li>This uses the same markup and styles from the lesson on <a href="/learn/css/organization">organizing your CSS</a></li>
+      <li>This link will automatically remix the project for you;  <span class="emoji">👍🏻</span> no need to remix yourself.</li>
+    </ul>
+  </li>
+  <li><strong>Do not edit the <code class="language-plaintext highlighter-rouge">styles.css</code> file.</strong> This gets automatically generated/updated when you make changes to the Sass file.</li>
+  <li>Open and look at the <code class="language-plaintext highlighter-rouge">sass/styles.scss</code> file.
+    <ul>
+      <li>Other than updating the format of some of the comments, this file is unchanged from the earlier lesson. I just copied and pasted the whole original CSS file.</li>
+      <li>This is the file you should be editing.</li>
+    </ul>
+  </li>
+  <li>In the <code class="language-plaintext highlighter-rouge">sass/styles.scss</code> file, change the color palette (lines 5-9) into Sass variables.</li>
+  <li>Use the variables in place of the HSL values in the remainder of the stylesheet.
+    <ul>
+      <li>If you attempt to use a variable that you haven’t created, Glitch will show an error, like so:</li>
+    </ul>
+  </li>
+</ol>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Error: Undefined variable
+   |
+91 | background-color: <span class="nv">$color</span><span class="p">;</span>
+   |                   ^^^^^^
+sass/styles.scss 91:21 root stylesheet
+</code></pre></div></div>
+
+<p>This error tells me:</p>
+<ul>
+  <li>I’m attempting to use a variable before I’ve created it (<code class="language-plaintext highlighter-rouge">undefined variable</code>)</li>
+  <li>What the invalid variable name is (<code class="language-plaintext highlighter-rouge">$color</code>)</li>
+  <li>What file it’s in (<code class="language-plaintext highlighter-rouge">sass/styles.scss</code>)</li>
+  <li>What line it’s on (line 91)</li>
+</ul>
+
+<p>Which should be all the info you need to fix the issue. Thanks, Glitch! <span class="emoji">😄</span></p>
+
+<p>For the purposes of this demo, you should not need to make changes to the HTML document.</p>
+
+<p class="text-push--top"><a href="/learn/sass#variables">↵ back to Sass intro</a></p>
+
+    
+    <footer class="feedback-footer">
+  
+
+  <p><strong>Make this page better.</strong></p>
+  <p>Found something that's incorrect or confusing on this page? Broken link? I want to know! <a href="https://github.com/mica-web/mica-web.github.io/issues/new?title=Feedback+for+%2Flearn%2Fcss%2Fsass-variables&template=page-feedback.md" target="_blank">Open an issue on GitHub</a> to tell me what's up and help me update the page.</p>
+</footer>
+
+    
+  </main>
+
+  <footer class="site-footer">
+  <div class="rule"></div>
+  <div class="content">
+    <p>&copy; Copyright 2018&ndash;<span id="js-current-year"></span> Ang&eacute;lique Weger</p>
+    <p class="top-link-wrapper"><a href="#top">Back to top</a></p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('js-current-year').appendChild(document.createTextNode(new Date().getFullYear()))
+</script>
+
+
+</div>
+
+
+  </div>
+
+  
+  
+  
+  
+
+</body>
+<!--
+/**
+ * @license
+ * MyFonts Webfont Build ID 3700915, 2019-01-18T17:07:51-0500
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Native-Regular by Fort Foundry
+ * URL: https://www.myfonts.com/fonts/fort-foundry/native/regular/
+ * Copyright: Copyright &#x00A9; 2016 by Mattox Shuler. All rights reserved.
+ * Licensed pageviews: Unlimited
+ * 
+ * Webfont: NeueAlteGrotesk-Regular by VisualWorks
+ * URL: https://www.myfonts.com/fonts/visualworks/neue-alte-grotesk/regular/
+ * Copyright: Copyright © 2017-2018 by Krzysztof Chuc. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * Webfont: NeueAlteGrotesk-Medium by VisualWorks
+ * URL: https://www.myfonts.com/fonts/visualworks/neue-alte-grotesk/medium/
+ * Copyright: Copyright © 2017-2018 by Krzysztof Chuc. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * Webfont: NeueAlteGrotesk-SemiBold by VisualWorks
+ * URL: https://www.myfonts.com/fonts/visualworks/neue-alte-grotesk/semi-bold/
+ * Copyright: Copyright © 2017-2018 by Krzysztof Chuc. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * Webfont: NeueAlteGrotesk-Bold by VisualWorks
+ * URL: https://www.myfonts.com/fonts/visualworks/neue-alte-grotesk/bold/
+ * Copyright: Copyright © 2017-2018 by Krzysztof Chuc. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * Webfont: NeueAlteGrotesk-Heavy by VisualWorks
+ * URL: https://www.myfonts.com/fonts/visualworks/neue-alte-grotesk/heavy/
+ * Copyright: Copyright © 2017-2018 by Krzysztof Chuc. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * Webfont: NeueAlteGrotesk-Black by VisualWorks
+ * URL: https://www.myfonts.com/fonts/visualworks/neue-alte-grotesk/black/
+ * Copyright: Copyright © 2017-2018 by Krzysztof Chuc. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * 
+ * License: https://www.myfonts.com/viewlicense?type=web&buildid=3700915
+ * 
+ * © 2019 MyFonts Inc
+*/
+
+-->
+
+
+</html>

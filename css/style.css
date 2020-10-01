@@ -20,7 +20,7 @@ html { box-sizing: border-box; }
 
 *, *::before, *::after { box-sizing: inherit; }
 
-body { background-color: #ccc; color: #22333B; font-family: NeueAlteGrotesk-Regular; font-weight: normal; font-style: normal; margin: 0; }
+body { background-color: #ccc; color: #22333B; font-family: NeueAlteGrotesk-Regular, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; font-weight: normal; font-style: normal; margin: 0; }
 
 ul, ol { margin-top: 0; margin-bottom: 0; }
 
@@ -40,7 +40,13 @@ pre { margin-top: 16px; margin-bottom: 40px; white-space: pre-wrap; }
 
 pre::before { background-color: #22333B; color: #ccc; content: 'Example Code'; display: inline-block; font-size: 0.9em; letter-spacing: 1px; padding: 4px; position: relative; top: -4px; left: 8px; text-transform: uppercase; }
 
-kbd, code { font-family: Native-Regular; font-weight: normal; font-style: normal; }
+.language-html pre::before { content: 'Example HTML'; }
+
+.language-css pre::before { content: 'Example CSS'; }
+
+.language-scss pre::before { content: 'Example SCSS'; }
+
+kbd, code { font-family: Native-Regular, "Andale Mono", AndaleMono, monospace; font-weight: normal; font-style: normal; }
 
 p kbd, li kbd, p code, li code { padding-right: 2px; padding-left: 2px; }
 
@@ -50,9 +56,9 @@ p code, li code { background-color: rgba(162, 241, 193, 0.35); }
 
 p kbd, li kbd { background-color: rgba(204, 204, 204, 0.35); }
 
-main strong, main b, main em { font-family: NeueAlteGrotesk-SemiBold; font-weight: normal; font-style: normal; }
+main strong, main b, main em { font-family: NeueAlteGrotesk-SemiBold, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; font-weight: normal; font-style: normal; }
 
-em.text-italic { font-family: NeueAlteGrotesk-Regular; font-weight: normal; font-style: normal; }
+em.text-italic { font-family: NeueAlteGrotesk-Regular, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; font-weight: normal; font-style: normal; }
 
 img { height: auto; max-width: 100%; }
 
@@ -106,7 +112,7 @@ main p, main li { max-width: 72ch; margin-bottom: 0.78125em; }
 
 p + p, p + ul, p + ol, ul + p, ol + p, li + p, li + ul, li + ol, ul + li, ol + li { margin-top: 0.78125em; }
 
-h1, h2 { font-family: NeueAlteGrotesk-Bold; font-weight: normal; font-style: normal; line-height: 1.0416666667em; margin-top: 0.78125em; margin-bottom: 0.78125em; }
+h1, h2 { font-family: NeueAlteGrotesk-Bold, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; font-weight: normal; font-style: normal; line-height: 1.0416666667em; margin-top: 0.78125em; margin-bottom: 0.78125em; }
 
 p + h1, ol + h1, ul + h1, p + h2, ol + h2, ul + h2 { margin-top: 1.5625em; }
 
@@ -116,11 +122,11 @@ h2 { font-size: 1.15rem; }
 
 h3 { font-size: 1.1rem; }
 
-h3, dt { font-family: NeueAlteGrotesk-Semibold; font-weight: normal; font-style: normal; line-height: 1.0416666667em; margin-top: 1.0416666667em; margin-bottom: 0.625em; opacity: 0.85; text-transform: uppercase; }
+h3, dt { font-family: NeueAlteGrotesk-Semibold, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; font-weight: normal; font-style: normal; line-height: 1.0416666667em; margin-top: 1.0416666667em; margin-bottom: 0.625em; opacity: 0.85; text-transform: uppercase; }
 
 .heading { font-size: 2.1875em; }
 
-.heading--underline { background-image: linear-gradient(transparent calc(100% - 2px), #F6F930 2px); background-position: left 100%; background-repeat: no-repeat; background-size: 90% 100%; font-family: Native-Regular; font-weight: normal; font-style: normal; font-size: 1.15rem; margin-bottom: 1em; padding-bottom: 2px; }
+.heading--underline { background-image: linear-gradient(transparent calc(100% - 2px), #F6F930 2px); background-position: left 100%; background-repeat: no-repeat; background-size: 90% 100%; font-family: Native-Regular, "Andale Mono", AndaleMono, monospace; font-weight: normal; font-style: normal; font-size: 1.15rem; margin-bottom: 1em; padding-bottom: 2px; }
 
 @media (min-width: 375px) { .heading--underline { background-size: 75% 100%; } }
 
@@ -132,6 +138,10 @@ h3, dt { font-family: NeueAlteGrotesk-Semibold; font-weight: normal; font-style:
 
 .text-larger { font-size: 180%; }
 
+.text-push--top { margin-top: 40px; }
+
+.text-push--bottom { margin-bottom: 40px; }
+
 .text-faded, .citation { opacity: 0.7; }
 
 p cite { font-style: normal; }
@@ -142,13 +152,13 @@ p cite { font-style: normal; }
 
 .citation a:hover, .citation a:focus { color: black; }
 
-.cli { font-family: Native-Regular; font-weight: normal; font-style: normal; background-color: #eaedf0; margin: 40px; padding: 12px; max-width: 560px; }
+.cli { font-family: Native-Regular, "Andale Mono", AndaleMono, monospace; font-weight: normal; font-style: normal; background-color: #eaedf0; margin: 40px; padding: 12px; max-width: 560px; }
 
 .cli p { margin: 0; }
 
 .cli + .cli { margin-top: -40px; padding-top: 0; }
 
-.reading-est { font-family: Native-Regular; font-weight: normal; font-style: normal; font-size: 0.75em; margin-top: 0; }
+.reading-est { font-family: Native-Regular, "Andale Mono", AndaleMono, monospace; font-weight: normal; font-style: normal; font-size: 0.75em; margin-top: 0; }
 
 .reading-est::before { content: '[ '; padding-right: 2px; }
 
@@ -200,7 +210,7 @@ dl.definition-quote + .citation { margin-top: 0; }
 
 @media (min-width: 1120px) { .homepage-wrapper { grid-template-columns: 1fr 340px; } }
 
-.homepage-grid > p:first-of-type { font-family: NeueAlteGrotesk-Semibold; font-weight: normal; font-style: normal; font-size: 120%; margin-top: 0.5208333333em; margin-bottom: 0.78125em; }
+.homepage-grid > p:first-of-type { font-family: NeueAlteGrotesk-Semibold, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; font-weight: normal; font-style: normal; font-size: 120%; margin-top: 0.5208333333em; margin-bottom: 0.78125em; }
 
 .homepage-grid figure { margin: 24px auto; max-width: 400px; }
 
@@ -230,7 +240,7 @@ dl.definition-quote + .citation { margin-top: 0; }
 
 .site-header .heading--background, .site-header .heading--foreground { display: block; line-height: 1; pointer-events: none; position: absolute; }
 
-.site-header .heading--background { color: #FCFCFC; font-family: NeueAlteGrotesk-Heavy; font-weight: normal; font-style: normal; font-size: calc(44px + 8vw); letter-spacing: -2px; top: -5px; right: 0; bottom: 0; left: -8px; text-transform: uppercase; }
+.site-header .heading--background { color: #FCFCFC; font-family: NeueAlteGrotesk-Heavy, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; font-weight: normal; font-style: normal; font-size: calc(44px + 8vw); letter-spacing: -2px; top: -5px; right: 0; bottom: 0; left: -8px; text-transform: uppercase; }
 
 @supports (-ms-ime-align: auto) { .site-header .heading--background { top: -13px; } }
 
@@ -244,7 +254,7 @@ dl.definition-quote + .citation { margin-top: 0; }
 
 @media (min-width: 1024px) { .site-header .heading--background { font-size: 140px; top: -16px; } @supports (-ms-ime-align: auto) { .site-header .heading--background { top: -24px; } } }
 
-.site-header .heading--foreground { color: #0A0908; font-family: Native-Regular; font-weight: normal; font-style: normal; font-size: 1.8rem; bottom: -7px; left: calc(100px + 7vw); }
+.site-header .heading--foreground { color: #0A0908; font-family: Native-Regular, "Andale Mono", AndaleMono, monospace; font-weight: normal; font-style: normal; font-size: 1.8rem; bottom: -7px; left: calc(100px + 7vw); }
 
 @media (min-width: 360px) { .site-header .heading--foreground { font-size: 1.95rem; left: calc(100px + 10vw); } }
 
@@ -288,7 +298,7 @@ dl.definition-quote + .citation { margin-top: 0; }
 
 @media (min-width: 860px) { .site-footer .rule { width: 55%; max-width: 400px; } }
 
-.site-footer p { font-family: Native-Regular; font-weight: normal; font-style: normal; font-size: 12px; padding: 32px 0 24px; }
+.site-footer p { font-family: Native-Regular, "Andale Mono", AndaleMono, monospace; font-weight: normal; font-style: normal; font-size: 12px; padding: 32px 0 24px; }
 
 .site-footer .top-link-wrapper { padding: 12px; text-transform: lowercase; }
 
@@ -312,7 +322,7 @@ dl.definition-quote + .citation { margin-top: 0; }
 
 .button--animated:hover .button__text--revealed, .button--animated:focus .button__text--revealed { opacity: 1; transform: translate3d(0, 0, 0); transition: opacity 250ms ease-out, transform 300ms 150ms cubic-bezier(0, 0, 0.4, 1); }
 
-.button--bordered { align-items: center; outline: 4px solid transparent; color: #0A0908; display: flex; font-family: NeueAlteGrotesk-Black; font-weight: normal; font-style: normal; font-size: 24px; justify-content: center; line-height: 3; padding-right: 0.78125em; padding-left: 0.78125em; position: relative; text-decoration: none; }
+.button--bordered { align-items: center; outline: 4px solid transparent; color: #0A0908; display: flex; font-family: NeueAlteGrotesk-Black, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; font-weight: normal; font-style: normal; font-size: 24px; justify-content: center; line-height: 3; padding-right: 0.78125em; padding-left: 0.78125em; position: relative; text-decoration: none; }
 
 .button--bordered.button--animated { padding: 0; }
 
@@ -352,7 +362,7 @@ dl.definition-quote + .citation { margin-top: 0; }
 
 .breadcrumb-wrapper::before { content: '\005C\005C '; display: inline-block; font-size: 0.65rem; vertical-align: middle; }
 
-.breadcrumb { font-family: Native-Regular; font-weight: normal; font-style: normal; font-size: 0.75rem; text-transform: lowercase; vertical-align: middle; }
+.breadcrumb { font-family: Native-Regular, "Andale Mono", AndaleMono, monospace; font-weight: normal; font-style: normal; font-size: 0.75rem; text-transform: lowercase; vertical-align: middle; }
 
 .breadcrumb > a { border-bottom: 2px solid transparent; color: #0A0908; text-decoration: none; }
 
@@ -376,7 +386,13 @@ h1 + .callout, h2 + .callout, h3 + .callout, h4 + .callout, h5 + .callout, h6 + 
 
 .embed-wrapper::after { bottom: -16px; }
 
+.glitch-remix-button { display: inline-block; line-height: 1; vertical-align: bottom; }
+
+.glitch-remix-button img { height: 28px; width: auto; }
+
 .cp_embed_wrapper, .glitch-embed-wrap, .loom-embed-wrapper { margin: 40px 0; }
+
+@media (min-width: 720px) { .cp-sbs-wrapper { display: flex; margin: 40px 0; } .cp-sbs-wrapper > div { border-bottom: 1px solid #ccc; height: 500px; overflow: hidden; width: 50%; } .cp-sbs-wrapper > div + div { margin-left: -1px; } .cp-sbs-wrapper .cp_embed_wrapper { margin: 0; } .cp-sbs-wrapper iframe { min-height: 580px; } }
 
 .feedback-footer { border-left: 8px solid #A2F1C1; margin: 64px -16px -64px; padding: 16px 16px 40px; position: relative; }
 
@@ -402,7 +418,21 @@ h1 + .callout, h2 + .callout, h3 + .callout, h4 + .callout, h5 + .callout, h6 + 
 
 .filter-list li + li { margin-left: 40px; }
 
-.highlighter { background-color: rgba(246, 249, 48, 0.35); font-family: Native-Regular; font-weight: normal; font-style: normal; font-size: 14px; padding: 6px 4px; }
+.image-wrapper { display: flex; flex-wrap: wrap; justify-content: space-between; margin: 16px 0; }
+
+.image-wrapper > li { flex-grow: 1; height: 36vh; margin-left: 0; }
+
+.image-wrapper > li::before { content: initial; }
+
+@media (max-aspect-ratio: 1/1) { .image-wrapper > li { height: 30vh; } }
+
+@media (max-height: 480px) { .image-wrapper > li { height: 80vh; } }
+
+.image-wrapper img { max-height: 100%; min-width: 100%; object-fit: scale-down; vertical-align: bottom; }
+
+@media (max-aspect-ratio: 1/1) and (max-width: 480px) { .image-wrapper { flex-direction: row; } .image-wrapper > li { height: auto; width: 100%; } .image-wrapper img { width: 100%; max-height: 75vh; min-width: 0; } }
+
+.highlighter { background-color: rgba(246, 249, 48, 0.35); font-family: Native-Regular, "Andale Mono", AndaleMono, monospace; font-weight: normal; font-style: normal; font-size: 14px; padding: 6px 4px; }
 
 .highlighter--simple { background-color: rgba(246, 249, 48, 0.25); padding: 4px; }
 
@@ -438,7 +468,7 @@ a.highlighter:visited { color: #22333B; }
 
 @media (min-width: 920px) { .quick-links { display: none; } }
 
-.schedule-list h4, .week-wrapper h2, .activity-wrapper main > h2, .project-wrapper h2 { background-image: linear-gradient(transparent calc(100% - 2px), #F6F930 2px); background-position: 16px 100%; background-repeat: no-repeat; background-size: calc(100% - 32px) 100%; color: #0A0908; display: inline-block; font-family: Native-Regular; font-weight: normal; font-style: normal; font-size: 0.9rem; margin-bottom: 12px; }
+.schedule-list h4, .week-wrapper h2, .activity-wrapper main > h2, .project-wrapper h2 { background-image: linear-gradient(transparent calc(100% - 2px), #F6F930 2px); background-position: 16px 100%; background-repeat: no-repeat; background-size: calc(100% - 32px) 100%; color: #0A0908; display: inline-block; font-family: Native-Regular, "Andale Mono", AndaleMono, monospace; font-weight: normal; font-style: normal; font-size: 0.9rem; margin-bottom: 12px; }
 
 .schedule-list h4:first-of-type, .week-wrapper h2:first-of-type, .activity-wrapper main > h2:first-of-type, .project-wrapper h2:first-of-type { margin-top: 0; }
 

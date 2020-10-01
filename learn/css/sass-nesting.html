@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="ie=edge" http-equiv="X-UA-Compatible">
+  <meta name="author" content="Angelique Weger" />
+  <meta name="Description" content="Curriculum, schedule and resources for web design.">
+  <link href="/css/style.css" rel="stylesheet">
+  
+  <link href="/css/syntax.css" rel="stylesheet">
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+  <link rel="manifest" href="/favicons/site.webmanifest">
+  <link rel="shortcut icon" href="/favicons/favicon.ico">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-config" content="/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#9ff2c0">
+  <title>Nesting in Sass | Learning Web Design</title>
+</head>
+
+
+<body>
+  <div class="site-wrapper">
+
+    <header id="top" class="site-header">
+  <h2 class="u-m0 u-clearfix heading">
+    <a href="https://mica-web.github.io/" class="u-block u-clearfix" title="Return to homepage" >
+      <span class="heading--background">Learning</span>
+      <span class="heading--foreground">Web Design</span>
+    </a>
+  </h2>
+</header>
+
+
+<div class="content-wrapper ">
+
+  
+
+  <div class="top-nav">
+    <ul class="u-list-reset breadcrumb-wrapper">
+  <li class="u-inline-block breadcrumb"><a href="https://mica-web.github.io">Home</a></li>
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+  <li class="u-inline-block breadcrumb">
+    <a href="/learn">
+      learn
+    </a>
+  </li>
+  
+
+  
+
+  
+
+  
+
+  
+  <li class="u-inline-block breadcrumb">
+    <a href="/learn/css">
+      css
+    </a>
+  </li>
+  
+
+  
+
+  
+
+  
+
+  
+  <li class="u-inline-block breadcrumb">sass nesting</li>
+  
+
+  
+
+</ul>
+
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p class="text-faded reading-est">3 min read</p>
+
+    
+    
+  </div>
+
+  
+
+  <main>
+    
+    
+<h1 id="nesting-in-sass">Nesting in Sass</h1>
+<p>You’re already familiar with the concept of <b>nesting</b> from writing HTML. When you write a list in HTML, the <code class="language-plaintext highlighter-rouge">li</code> element is <em>nested</em> inside of another HTML element (either <code class="language-plaintext highlighter-rouge">ul</code> or <code class="language-plaintext highlighter-rouge">ol</code>):</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;ul&gt;</span> <span class="c">&lt;!-- parent element --&gt;</span>
+  <span class="nt">&lt;li&gt;</span>List item<span class="nt">&lt;/li&gt;</span> <span class="c">&lt;!-- nested child element --&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+</code></pre></div></div>
+
+<p>With Sass, you can do something similar with selectors and certain CSS properties.</p>
+
+<h2 id="nesting-selectors">Nesting selectors</h2>
+<p>Nesting selectors in Sass has the same logic as the HTML above. The following is valid Sass:</p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">ul</span> <span class="p">{</span>
+  <span class="nt">li</span> <span class="p">{</span>
+    <span class="nl">background-color</span><span class="p">:</span> <span class="no">silver</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>When compiled to CSS, the resulting code will look like this:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">ul</span> <span class="nt">li</span> <span class="p">{</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="no">silver</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>This is helpful, as it lets you write less code, but it definitely can be taken to an extreme. <strong>It is <em>not</em> necessary or helpful for your Sass to mirror your exact HTML structure.</strong></p>
+
+<p>For example, if you had the following HTML:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;header</span> <span class="na">class=</span><span class="s">"container site-header"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"site-name"</span><span class="nt">&gt;</span>Site name<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;/header&gt;</span>
+<span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"container site-nav"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;ul&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>About<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Blog<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Contact<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;/ul&gt;</span>
+<span class="nt">&lt;/nav&gt;</span>
+</code></pre></div></div>
+
+<p>And you wanted to modify the <code class="language-plaintext highlighter-rouge">text-decoration</code> property on the <code class="language-plaintext highlighter-rouge">a</code> element inside that list, you should <em>not</em> do this:</p>
+
+<p><span class="emoji">❌</span> Don’t do this</p>
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">nav</span><span class="nc">.site-nav</span> <span class="p">{</span>
+  <span class="nt">ul</span> <span class="p">{</span>
+    <span class="nt">li</span> <span class="p">{</span>
+      <span class="nt">a</span> <span class="p">{</span>
+        <span class="nl">text-decoration</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<p>Writing your Sass like that would result in the following CSS:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">nav</span><span class="nc">.site-nav</span> <span class="nt">ul</span> <span class="nt">li</span> <span class="nt">a</span> <span class="p">{</span>
+  <span class="nl">text-decoration</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>This is an <em>overly</em> specific selector, which was warned against in the reading you did on <a href="/learn/css/cascade#selectors-have-specificity">the cascade in CSS</a>.</p>
+
+<p class="callout">Since the Sass you write results in CSS, the same rules and best practices should still be kept in mind.</p>
+
+<p>Instead, write your Sass like so:</p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">.site-nav</span> <span class="p">{</span>
+  <span class="nt">a</span> <span class="p">{</span>
+    <span class="nl">text-decoration</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Which will result in this much more reasonable selector in your CSS: <code class="language-plaintext highlighter-rouge">.site-nav a</code></p>
+
+<p class="text-center text-push--top"><img src="https://media.giphy.com/media/aImJnc9F8Omzu/giphy.gif" alt="" /></p>
+
+<p>In the movie Inception, there’s a stated rule about how deep into layered dreams is safe to go…and you should have similar guidelines for your Sass.</p>
+
+<p>When nesting, stick to 2 layers, 3 at the max. Otherwise, things get unweildy.</p>
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/KgqHKk-yriI?start=57" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" class="embed-wrapper"></iframe>
+
+<p>OK, maybe a <em>slight</em> exaggeration, but <a href="http://thesassway.com/beginner/the-inception-rule">the rule</a><span class="emoji text-smaller" title="Following and reading this link is optional."><span class="u-sr-only">Following and reading this link is optional.</span>✳️</span>
+ still stands. <span class="emoji">😹</span></p>
+
+<h2 id="nesting-properties">Nesting properties</h2>
+<p>In addition to selectors, you can also nest certain CSS properties. If properties share a <b>prefix</b>, they can be nested. For example, <code class="language-plaintext highlighter-rouge">font-size</code> and <code class="language-plaintext highlighter-rouge">font-weight</code> share the same prefix and can be nested like so:</p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">p</span> <span class="p">{</span>
+  <span class="nl">font</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nl">size</span><span class="p">:</span> <span class="m">24px</span><span class="p">;</span>
+    <span class="na">weight</span><span class="p">:</span> <span class="nb">bold</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>This would compile to the following CSS:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">p</span> <span class="p">{</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="m">24px</span><span class="p">;</span>
+  <span class="nl">font-weight</span><span class="p">:</span> <span class="nb">bold</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>You can do the same thing with properties that begin with:</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">margin-</code></li>
+  <li><code class="language-plaintext highlighter-rouge">padding-</code></li>
+  <li><code class="language-plaintext highlighter-rouge">text-</code></li>
+  <li>and many others.</li>
+</ul>
+
+<p>Like nesting selectors, this can save you time typing and keep your properties tightly organized.</p>
+
+<h2 id="parent-selector">Parent selector</h2>
+<p>In Sass, the ampersand (<code class="language-plaintext highlighter-rouge">&amp;</code>) is called the <b>parent selector</b> and can be used when nesting your code to reference the outer selector.</p>
+
+<p>A demonstration using the parent selector with pseudoclasses will help make this clearer; if you write the following Sass:</p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">a</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="no">orange</span><span class="p">;</span>
+  <span class="k">&amp;</span><span class="nd">:hover</span><span class="o">,</span> <span class="k">&amp;</span><span class="nd">:focus</span> <span class="p">{</span>
+    <span class="nl">color</span><span class="p">:</span> <span class="no">red</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>It will result in the following CSS:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">a</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="no">orange</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">a</span><span class="nd">:hover</span><span class="o">,</span> <span class="nt">a</span><span class="nd">:focus</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="no">red</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Here, you can see that the ampersand gets replaced by the <code class="language-plaintext highlighter-rouge">a</code> element, completing the hover and focus effect styles on the link.</p>
+
+<p>Like other nesting rules, the parent selector is powerful, but can get convoluted. Using it for hover and focus effects is recommended because it allows you to nest those effects within the parent selector, but you don’t have to invent additional clever ways of using this, especially as you’re starting out with Sass.</p>
+
+<p class="text-center"><img src="https://media.giphy.com/media/xTiN0pn9UrktJMnThu/giphy.gif" alt="" /></p>
+
+<h2 id="nesting-demonstration">Nesting demonstration</h2>
+
+<p>This stylesheet refactors the code from the lessons on <a href="/learn/css/organization">organizing your CSS</a> and <a href="/learn/css/sass-variables">Sass variables</a>. Taking just the header and navigation elements styles, I’ve updated them to use Sass nesting. I’ve commented out the original CSS so you can still see what and how I modified the code. Look for changes specifically starting on line 58:</p>
+
+<div class="glitch-embed-wrap" style="height: 600px; width: 100%;">
+  <iframe src="https://glitch.com/embed/#!/embed/sass-nesting?path=sass/styles.scss&amp;previewSize=0&amp;sidebarCollapsed=true" title="sass-nesting on Glitch" allow="geolocation; microphone; camera; midi; vr; encrypted-media" style="height: 100%; width: 100%; border: 0;">
+  </iframe>
+</div>
+
+<p>This refactor includes examples of each type of nesting:</p>
+<ul>
+  <li>nested selectors (line 141)</li>
+  <li>nested properties (line 178)</li>
+  <li>nested parent selector (line 157)</li>
+</ul>
+
+<p class="text-push--top"><a href="/learn/sass#nesting">↵ back to Sass intro</a></p>
+
+    
+    <footer class="feedback-footer">
+  
+
+  <p><strong>Make this page better.</strong></p>
+  <p>Found something that's incorrect or confusing on this page? Broken link? I want to know! <a href="https://github.com/mica-web/mica-web.github.io/issues/new?title=Feedback+for+%2Flearn%2Fcss%2Fsass-nesting&template=page-feedback.md" target="_blank">Open an issue on GitHub</a> to tell me what's up and help me update the page.</p>
+</footer>
+
+    
+  </main>
+
+  <footer class="site-footer">
+  <div class="rule"></div>
+  <div class="content">
+    <p>&copy; Copyright 2018&ndash;<span id="js-current-year"></span> Ang&eacute;lique Weger</p>
+    <p class="top-link-wrapper"><a href="#top">Back to top</a></p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('js-current-year').appendChild(document.createTextNode(new Date().getFullYear()))
+</script>
+
+
+</div>
+
+
+  </div>
+
+  
+  
+  
+  
+
+</body>
+<!--
+/**
+ * @license
+ * MyFonts Webfont Build ID 3700915, 2019-01-18T17:07:51-0500
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Native-Regular by Fort Foundry
+ * URL: https://www.myfonts.com/fonts/fort-foundry/native/regular/
+ * Copyright: Copyright &#x00A9; 2016 by Mattox Shuler. All rights reserved.
+ * Licensed pageviews: Unlimited
+ * 
+ * Webfont: NeueAlteGrotesk-Regular by VisualWorks
+ * URL: https://www.myfonts.com/fonts/visualworks/neue-alte-grotesk/regular/
+ * Copyright: Copyright © 2017-2018 by Krzysztof Chuc. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * Webfont: NeueAlteGrotesk-Medium by VisualWorks
+ * URL: https://www.myfonts.com/fonts/visualworks/neue-alte-grotesk/medium/
+ * Copyright: Copyright © 2017-2018 by Krzysztof Chuc. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * Webfont: NeueAlteGrotesk-SemiBold by VisualWorks
+ * URL: https://www.myfonts.com/fonts/visualworks/neue-alte-grotesk/semi-bold/
+ * Copyright: Copyright © 2017-2018 by Krzysztof Chuc. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * Webfont: NeueAlteGrotesk-Bold by VisualWorks
+ * URL: https://www.myfonts.com/fonts/visualworks/neue-alte-grotesk/bold/
+ * Copyright: Copyright © 2017-2018 by Krzysztof Chuc. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * Webfont: NeueAlteGrotesk-Heavy by VisualWorks
+ * URL: https://www.myfonts.com/fonts/visualworks/neue-alte-grotesk/heavy/
+ * Copyright: Copyright © 2017-2018 by Krzysztof Chuc. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * Webfont: NeueAlteGrotesk-Black by VisualWorks
+ * URL: https://www.myfonts.com/fonts/visualworks/neue-alte-grotesk/black/
+ * Copyright: Copyright © 2017-2018 by Krzysztof Chuc. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * 
+ * License: https://www.myfonts.com/viewlicense?type=web&buildid=3700915
+ * 
+ * © 2019 MyFonts Inc
+*/
+
+-->
+
+
+</html>
