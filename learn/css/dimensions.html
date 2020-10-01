@@ -141,7 +141,9 @@
 <span class="p">}</span>
 </code></pre></div></div>
 
-<p>As you can see in the second example above, the <code class="language-plaintext highlighter-rouge">height</code> property does not work as expected when set as a percentage. This is because the percentage value is calculated based on a parent element – and if that doesn’t have a specified height, the height of the <code class="language-plaintext highlighter-rouge">div</code> reverts back to its default behavior.</p>
+<p>As you can see in the second example above, the <code class="language-plaintext highlighter-rouge">height</code> property does not work as expected when set as a percentage. This is because the percentage value is calculated based on a <b>parent element</b> – and if that doesn’t have a specified height, the height of the <code class="language-plaintext highlighter-rouge">div</code> reverts back to its default behavior.</p>
+
+<p class="callout">The <b>parent element</b> is the element wraps around the HTML element you’re targeting. For a link (<code class="language-plaintext highlighter-rouge">a</code>) inside a paragraph (<code class="language-plaintext highlighter-rouge">p</code>), the <code class="language-plaintext highlighter-rouge">p</code> is the parent of the <code class="language-plaintext highlighter-rouge">a</code> element. The parent can even be the same type of HTML element, like in the case of nested <code class="language-plaintext highlighter-rouge">div</code>s.</p>
 
 <p>Example three below shows the effect of <code class="language-plaintext highlighter-rouge">height: 50%</code> when the parent has a set height.</p>
 
