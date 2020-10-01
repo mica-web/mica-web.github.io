@@ -46,6 +46,6 @@ You will create a simple web form and style it to match your existing project 01
 </dl>
 
 ## Rubric
-[Google Sheet example](){:target="_blank"}
+[Google Sheet example](@TODO){:target="_blank"}
 
 </aside>

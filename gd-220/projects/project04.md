@@ -93,6 +93,6 @@ Add your document to the [Project 4 Google Drive](https://drive.google.com/drive
 </dl>
 
 ## Rubric
-[Google Sheet example](){:target="_blank"}
+[Google Sheet example](@TODO){:target="_blank"}
 
 </aside>
