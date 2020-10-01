@@ -37,6 +37,7 @@ Use your current knowledge of HTML and CSS layout to reinterpret an existing pos
 1. Follow the [setup instructions]({% link gd-431/projects/project02/setup.md %})
 1. In your `index.html` and on the branch you created in the previous step, write markup to semantically represent the poster content.
 1. Crop or recreate elements of imagery as needed.
+  - <span class="emoji">⚠️</span> To add images to your project, you must use Glitch.com in the browser, not VS Code. See [these instructions](https://glitch.happyfox.com/kb/article/43-how-do-i-add-assets-like-audio-images-or-videos-to-my-projects/) from Glitch and give a shout if you have any issues.
 1. Write mobile-first CSS.
 1. Add media queries to achieve desktop design.
 1. Present project to colleagues.
@@ -50,6 +51,7 @@ Use your current knowledge of HTML and CSS layout to reinterpret an existing pos
 ## Requirements
 - Your final design should be closely inspired by the original poster, including color, type, etc.
 - The design should be responsive, working on mobile devices as small as 480px wide and other devices up to 1280px wide.
+- You should use Sass, not CSS, for writing your styles.
 
 </section>
 
