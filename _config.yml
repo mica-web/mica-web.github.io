@@ -83,6 +83,9 @@ collections:
       - 03_workflows/glitch-and-github.md
       - 03_workflows/branching.md
       - 03_workflows/pull-request.md
+      - 03_workflows/feedback.md
+      - 03_workflows/style-tiles.md
+      - 03_workflows/project-workflows.md
       - 03_workflows/troubleshooting.md
   gd220:
     output: true
