@@ -35,7 +35,7 @@ Demonstrate your understanding of basic HTML and CSS, specifically as it pertain
 - Your assignment should use:
   - at least one web font
   - at least one text color
-  - at last one background color
+  - at least one background color
 - Your assignment will be viewed at a resolution of 1200 x 800.
 
 </section>
