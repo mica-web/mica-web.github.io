@@ -40,7 +40,10 @@ div {
 }
 ```
 
-As you can see in the second example above, the `height` property does not work as expected when set as a percentage. This is because the percentage value is calculated based on a parent element -- and if that doesn't have a specified height, the height of the `div` reverts back to its default behavior.
+As you can see in the second example above, the `height` property does not work as expected when set as a percentage. This is because the percentage value is calculated based on a <b>parent element</b> -- and if that doesn't have a specified height, the height of the `div` reverts back to its default behavior.
+
+{: .callout }
+The <b>parent element</b> is the element wraps around the HTML element you're targeting. For a link (`a`) inside a paragraph (`p`), the `p` is the parent of the `a` element. The parent can even be the same type of HTML element, like in the case of nested `div`s.
 
 Example three below shows the effect of `height: 50%` when the parent has a set height.
 
