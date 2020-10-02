@@ -20,6 +20,7 @@ You will design a card component and then recreate that design using your curren
 
 ## Process
 1. Review options for the [type of card]({% link gd-220/projects/project02/card-options.md %}) you may design.
+  - Even though you're not designing a whole site, you should think about the context for your card: What type of site does it exist on? Who is the audience for this site?
 1. Create **two** [style tiles]({% link _learn/03_workflows/style-tiles.md %}) with your ideas about typography and colors for this assignment, including the following:
   - color palette
   - body text styling
