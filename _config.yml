@@ -56,6 +56,8 @@ collections:
       - 01_HTML/text.md
       - 01_HTML/block-inline.md
       - 01_HTML/semantics.md
+      # - 01_HTML/images.md
+      # - 01_HTML/svg.md
       - 01_HTML/best-practices.md
       - 01_HTML/history.md
       - 02_CSS/basics.md
@@ -71,10 +73,15 @@ collections:
       - 02_CSS/selectors.md
       - 02_CSS/cascade.md
       - 02_CSS/position.md
-      - 02_CSS/pseudoclass.md
-      - 02_CSS/floats.md
       - 02_CSS/browser-defaults.md
-      - 02_CSS/resets.md
+      # - 02_CSS/background-image.md
+      # - 02_CSS/media-queries.md
+      - 02_CSS/pseudoclass.md
+      # - 02_CSS/transition.md
+      # - 02_CSS/transform.md
+      # - 02_CSS/brittle-layout.md
+      # - 02_CSS/floats.md
+      # - 02_CSS/resets.md
       - 02_CSS/organization.md
       - 02_CSS/best-practices.md
       - 02_CSS/sass.md
@@ -82,9 +89,12 @@ collections:
       - 02_CSS/sass-functions.md
       - 02_CSS/sass-nesting.md
       - 03_workflows/glitch-and-github.md
+      - 03_workflows/add-img-glitch.md
       - 03_workflows/branching.md
       - 03_workflows/pull-request.md
+      # - 03_workflows/merging.md
       - 03_workflows/feedback.md
+      # - 03_workflows/components.md
       - 03_workflows/style-tiles.md
       - 03_workflows/project-workflows.md
       - 03_workflows/troubleshooting.md
