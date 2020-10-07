@@ -50,6 +50,7 @@ collections:
       - 00_tools/vs-code.md
       - 00_tools/command-line.md
       - 00_tools/git.md
+      - 00_tools/git-cheatsheet.md
       - 01_HTML/basics.md
       - 01_HTML/headings.md
       - 01_HTML/text.md
