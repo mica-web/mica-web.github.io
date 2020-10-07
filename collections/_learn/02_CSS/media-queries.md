@@ -42,7 +42,7 @@ This term was introduced in 2010 by Ethan Marcotte, and the header illustration 
 </figcaption>
 </figure>
 
-It's important to note here that HTML, with no CSS applied, is already responsive. You may remember [this example](https://html5-kitchen-sink.glitch.me/){:target="_blank"} from the reading on [Browser Defaults]({{ lp: | append: 'css/browser-defaults' }}){% include optional.html %} -- 99% of the elements on that page just work, with no additional CSS, regardless of the size of your browser or device.
+It's important to note here that HTML, with no CSS applied, is already responsive. You may remember [this example](https://html5-kitchen-sink.glitch.me/){:target="_blank"} from the reading on [Browser Defaults]({{ lp | append: 'css/browser-defaults' }}){% include optional.html %} -- 99% of the elements on that page just work, with no additional CSS, regardless of the size of your browser or device.
 
 Of course, we _are_ going to add CSS to our HTML, modifying the defaults in all sorts of ways. And, since HTML with no CSS is responsive, we owe it to our users to make the CSS we write _also_ responsive.
 
