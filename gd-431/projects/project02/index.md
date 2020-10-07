@@ -77,4 +77,7 @@ Use your current knowledge of HTML and CSS layout to reinterpret an existing pos
 ## Rubric
 [Google Sheet example](https://docs.google.com/spreadsheets/d/e/2PACX-1vSh5-j09DkLj0Pdjwgki14cSTAYWnLl794H4yft27Fg7ijsFyz2XbBa5Od18e_z8V1KXKfzpqj2LhOT/pubhtml?gid=1932255578&single=true){:target="_blank"}
 
+## Git Cheatsheet
+Need a reminder of [git commands?]({% link _learn/00_tools/git-cheatsheet.md %}) 
+
 </aside>
