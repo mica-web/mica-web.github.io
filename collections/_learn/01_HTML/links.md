@@ -183,7 +183,7 @@ Then, those `id`s are used in the links like this:
 </ul>
 ```
 
-<div class="glitch-embed-wrap" style="height: 680px; width: 100%;">
+<div class="glitch-embed-wrap" style="height: 740px; width: 100%;">
   <iframe
     src="https://glitch.com/embed/#!/embed/in-page-links?path=index.html&previewSize=100&sidebarCollapsed=true"
     title="in-page-links on Glitch"

@@ -51,12 +51,14 @@ collections:
       - 00_tools/command-line.md
       - 00_tools/git.md
       - 00_tools/git-cheatsheet.md
+      # - 00_tools/internet.md
+      # - 00_tools/screen-readers.md
       - 01_HTML/basics.md
       - 01_HTML/headings.md
       - 01_HTML/text.md
       - 01_HTML/block-inline.md
       - 01_HTML/semantics.md
-      # - 01_HTML/images.md
+      - 01_HTML/links.md
       # - 01_HTML/svg.md
       - 01_HTML/best-practices.md
       - 01_HTML/history.md
@@ -75,14 +77,15 @@ collections:
       - 02_CSS/position.md
       - 02_CSS/browser-defaults.md
       # - 02_CSS/background-image.md
-      # - 02_CSS/media-queries.md
       - 02_CSS/pseudoclass.md
       # - 02_CSS/transition.md
       # - 02_CSS/transform.md
+      # - 02_CSS/animation.md
       # - 02_CSS/brittle-layout.md
       # - 02_CSS/floats.md
       # - 02_CSS/resets.md
       - 02_CSS/organization.md
+      - 02_CSS/media-queries.md
       - 02_CSS/best-practices.md
       - 02_CSS/sass.md
       - 02_CSS/sass-variables.md
@@ -97,6 +100,7 @@ collections:
       # - 03_workflows/components.md
       - 03_workflows/style-tiles.md
       - 03_workflows/project-workflows.md
+      - 03_workflows/images.md
       - 03_workflows/troubleshooting.md
   gd220:
     output: true
