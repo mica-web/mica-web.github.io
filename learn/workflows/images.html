@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="ie=edge" http-equiv="X-UA-Compatible">
+  <meta name="author" content="Angelique Weger" />
+  <meta name="Description" content="Curriculum, schedule and resources for web design.">
+  <link href="/css/style.css" rel="stylesheet">
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+  <link rel="manifest" href="/favicons/site.webmanifest">
+  <link rel="shortcut icon" href="/favicons/favicon.ico">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-config" content="/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#9ff2c0">
+  <title>Images | Learning Web Design</title>
+</head>
+
+
+<body>
+  <div class="site-wrapper">
+
+    <header id="top" class="site-header">
+  <h2 class="u-m0 u-clearfix heading">
+    <a href="https://mica-web.github.io/" class="u-block u-clearfix" title="Return to homepage" >
+      <span class="heading--background">Learning</span>
+      <span class="heading--foreground">Web Design</span>
+    </a>
+  </h2>
+</header>
+
+
+<div class="content-wrapper ">
+
+  
+
+  <div class="top-nav">
+    <ul class="u-list-reset breadcrumb-wrapper">
+  <li class="u-inline-block breadcrumb"><a href="https://mica-web.github.io">Home</a></li>
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+  <li class="u-inline-block breadcrumb">
+    <a href="/learn">
+      learn
+    </a>
+  </li>
+  
+
+  
+
+  
+
+  
+
+  
+  <li class="u-inline-block breadcrumb">
+    <a href="/learn/workflows">
+      workflows
+    </a>
+  </li>
+  
+
+  
+
+  
+
+  
+
+  
+  <li class="u-inline-block breadcrumb">images</li>
+  
+
+  
+
+</ul>
+
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p class="text-faded reading-est">1 min read</p>
+
+    
+    
+  </div>
+
+  
+
+  <main>
+    
+    <h1 id="images">Images</h1>
+
+<p>This page will provide important context for using images in your web projects.</p>
+
+<h2 id="choosing-the-right-image-format">Choosing the right image format</h2>
+<p>The first choice you must make when selecting an image is if a <b>raster image</b> or <b>vector image</b> is best for your purposes.</p>
+
+<h3 id="raster-image-types">Raster image types</h3>
+<p>These formats are best for photographs and artwork, but do not scale well and, when scaled up, will result in jagged edges and blurry results. Since there are many raster formats, here’s a brief list of them and their attributes:</p>
+
+<ul>
+  <li><strong>JPG</strong> or <strong>JPEG</strong> – common choice for photos that can be optimized easily for the web</li>
+  <li><strong>PNG</strong> – also valid for photos <em>and</em> supports transparency</li>
+  <li><strong>GIF</strong> – limited color palette, optimizes well, supports transparency <em>and</em> animation</li>
+  <li><strong>WebP</strong> – newer image format that aims to replace all of the above, but isn’t fully supported by all browsers…yet</li>
+</ul>
+
+<h3 id="vector-images">Vector images</h3>
+<p>This format is best for simple geometric shapes, icons and charts and scales easily without any loss of quality. To use vector images in the browser, you must use the <strong>SVG</strong> format.</p>
+
+<h2 id="optimizing-your-images">Optimizing your images</h2>
+<p>In <a href="https://image-optimization-demo.glitch.me/" target="_blank">this example</a>, both versions of the photo are being displayed at 600 pixels wide, but only the bottom image has been resized to that width and optimized. The first image, while appearing the same in the browser, is actually several times larger – both in dimensions and, as a result, in file size.</p>
+
+<p>The size of the images you include in your project can greatly affect the performance of your web pages, especially for users who are on mobile devices. You can take two steps to improve this aspect of your web pages for all users:</p>
+
+<h3 id="1-resize-your-raster-images">1. Resize your raster images</h3>
+<p>Before adding raster images to your web project, it is important to consider the largest size they will actually be displayed in the browser. Once you have identified the largest dimensions the image will be used at, you can resize the image using photo editing software to match those dimensions.</p>
+
+<h3 id="2-optimizecompress-your-images">2. Optimize/compress your images</h3>
+<p>If your photo editing software has special options to save an image for the web, you can attempt to use those settings to optimize your raster images.</p>
+
+<p>Alternately, you can use a browser-based optimizer like <a href="https://tinypng.com/">TinyPNG</a>, which optimizes PNGs and JPGs (despite the name).</p>
+
+<p>SVGs can also be optimized and, for this, I recommend <a href="https://jakearchibald.github.io/svgomg/">SVGOMG</a>.</p>
+
+    
+    <footer class="feedback-footer">
+  
+
+  <p><strong>Make this page better.</strong></p>
+  <p>Found something that's incorrect or confusing on this page? Broken link? I want to know! <a href="https://github.com/mica-web/mica-web.github.io/issues/new?title=Feedback+for+%2Flearn%2Fworkflows%2Fimages&template=page-feedback.md" target="_blank">Open an issue on GitHub</a> to tell me what's up and help me update the page.</p>
+</footer>
+
+    
+  </main>
+
+  <footer class="site-footer">
+  <div class="rule"></div>
+  <div class="content">
+    <p>&copy; Copyright 2018&ndash;<span id="js-current-year"></span> Ang&eacute;lique Weger</p>
+    <p class="top-link-wrapper"><a href="#top">Back to top</a></p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('js-current-year').appendChild(document.createTextNode(new Date().getFullYear()))
+</script>
+
+
+</div>
+
+
+  </div>
+
+  
+  
+  
+  
+
+</body>
+<!--
+/**
+ * @license
+ * MyFonts Webfont Build ID 3700915, 2019-01-18T17:07:51-0500
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Native-Regular by Fort Foundry
+ * URL: https://www.myfonts.com/fonts/fort-foundry/native/regular/
+ * Copyright: Copyright &#x00A9; 2016 by Mattox Shuler. All rights reserved.
+ * Licensed pageviews: Unlimited
+ * 
+ * Webfont: NeueAlteGrotesk-Regular by VisualWorks
+ * URL: https://www.myfonts.com/fonts/visualworks/neue-alte-grotesk/regular/
+ * Copyright: Copyright © 2017-2018 by Krzysztof Chuc. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * Webfont: NeueAlteGrotesk-Medium by VisualWorks
+ * URL: https://www.myfonts.com/fonts/visualworks/neue-alte-grotesk/medium/
+ * Copyright: Copyright © 2017-2018 by Krzysztof Chuc. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * Webfont: NeueAlteGrotesk-SemiBold by VisualWorks
+ * URL: https://www.myfonts.com/fonts/visualworks/neue-alte-grotesk/semi-bold/
+ * Copyright: Copyright © 2017-2018 by Krzysztof Chuc. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * Webfont: NeueAlteGrotesk-Bold by VisualWorks
+ * URL: https://www.myfonts.com/fonts/visualworks/neue-alte-grotesk/bold/
+ * Copyright: Copyright © 2017-2018 by Krzysztof Chuc. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * Webfont: NeueAlteGrotesk-Heavy by VisualWorks
+ * URL: https://www.myfonts.com/fonts/visualworks/neue-alte-grotesk/heavy/
+ * Copyright: Copyright © 2017-2018 by Krzysztof Chuc. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * Webfont: NeueAlteGrotesk-Black by VisualWorks
+ * URL: https://www.myfonts.com/fonts/visualworks/neue-alte-grotesk/black/
+ * Copyright: Copyright © 2017-2018 by Krzysztof Chuc. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * 
+ * License: https://www.myfonts.com/viewlicense?type=web&buildid=3700915
+ * 
+ * © 2019 MyFonts Inc
+*/
+
+-->
+
+
+</html>

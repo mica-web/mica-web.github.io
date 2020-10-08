@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="ie=edge" http-equiv="X-UA-Compatible">
+  <meta name="author" content="Angelique Weger" />
+  <meta name="Description" content="Curriculum, schedule and resources for web design.">
+  <link href="/css/style.css" rel="stylesheet">
+  
+  <link href="/css/syntax.css" rel="stylesheet">
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+  <link rel="manifest" href="/favicons/site.webmanifest">
+  <link rel="shortcut icon" href="/favicons/favicon.ico">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-config" content="/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#9ff2c0">
+  <title>Links | Learning Web Design</title>
+</head>
+
+
+<body>
+  <div class="site-wrapper">
+
+    <header id="top" class="site-header">
+  <h2 class="u-m0 u-clearfix heading">
+    <a href="https://mica-web.github.io/" class="u-block u-clearfix" title="Return to homepage" >
+      <span class="heading--background">Learning</span>
+      <span class="heading--foreground">Web Design</span>
+    </a>
+  </h2>
+</header>
+
+
+<div class="content-wrapper ">
+
+  
+
+  <div class="top-nav">
+    <ul class="u-list-reset breadcrumb-wrapper">
+  <li class="u-inline-block breadcrumb"><a href="https://mica-web.github.io">Home</a></li>
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+  <li class="u-inline-block breadcrumb">
+    <a href="/learn">
+      learn
+    </a>
+  </li>
+  
+
+  
+
+  
+
+  
+
+  
+  <li class="u-inline-block breadcrumb">
+    <a href="/learn/html">
+      html
+    </a>
+  </li>
+  
+
+  
+
+  
+
+  
+
+  
+  <li class="u-inline-block breadcrumb">links</li>
+  
+
+  
+
+</ul>
+
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p class="text-faded reading-est">5 min read</p>
+
+    
+    
+  </div>
+
+  
+
+  <main>
+    
+    
+<h1 id="links">Links</h1>
+
+<p>In <a href="/learn/html/basics">HTML Basics</a>, you wrote your first hyperlink using the anchor (<code class="language-plaintext highlighter-rouge">a</code>) element. As a reminder, a link looks like this:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"https://mica.edu"</span><span class="nt">&gt;</span>MICA<span class="nt">&lt;/a&gt;</span>
+</code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">href</code> stands for <b>hyperlink reference</b> and the value for this attribute should be the web site you’re linking to.</p>
+
+<p class="callout">The <code class="language-plaintext highlighter-rouge">href</code> attribute is <em>also</em> used when you connect your HTML and CSS via the <code class="language-plaintext highlighter-rouge">link</code> element (see <a href="/learn/css/basics#connecting-your-html-and-css">CSS Basics</a>).</p>
+
+<h2 id="absolute-vs-relative-urls">Absolute vs. Relative URLs</h2>
+<p>The example above uses what’s called an <b>absolute URL</b> because it provides all the information to get to that web site from anywhere else on the internet.</p>
+
+<p>An absolute URL <em>always</em> begins with <code class="language-plaintext highlighter-rouge">http://</code> or <code class="language-plaintext highlighter-rouge">https://</code>.</p>
+
+<p>Any time you are linking to information on a <b>domain name</b> other than your own, you <strong>must</strong> use absolute URLs.</p>
+
+<p class="callout">The <b>domain name</b> is the primary address of a web site (in this case, <code class="language-plaintext highlighter-rouge">mica.edu</code> is the domain name).</p>
+
+<p>When you are linking to content on your site, you have the additional option of using a <b>relative URL</b>, which is an address that is <em>relative</em> to either the domain name or the current page.</p>
+
+<p>This is better explained with a demo; the following project has four HTML files:</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">index.html</code> and <code class="language-plaintext highlighter-rouge">test.html</code>, which are in the project’s root directory</li>
+  <li><code class="language-plaintext highlighter-rouge">relative.html</code> and <code class="language-plaintext highlighter-rouge">absolute.html</code>, which are in a folder named <code class="language-plaintext highlighter-rouge">demo</code> in the root directory</li>
+</ul>
+
+<div class="glitch-embed-wrap" style="height: 460px; width: 100%;">
+  <iframe src="https://glitch.com/embed/#!/embed/relative-absolute-urls?path=demo/relative.html&amp;previewSize=100&amp;sidebarCollapsed=true" title="relative-absolute-urls on Glitch" allow="geolocation; microphone; camera; midi; vr; encrypted-media" style="height: 100%; width: 100%; border: 0;">
+  </iframe>
+</div>
+
+<h3 id="gotchas-when-making-links">Gotchas when making links</h3>
+
+<p><strong>1. Relative to <em>what</em>?</strong>
+Relative URLs can be relative to the current document (the default) or, if they begin with a forward slash (<code class="language-plaintext highlighter-rouge">/</code>), they will be relative to the root directory/domain.</p>
+
+<p>You can see this in effect in the demo above. Because <code class="language-plaintext highlighter-rouge">absolute.html</code> and <code class="language-plaintext highlighter-rouge">relative.html</code> are <strong>both</strong> in the <code class="language-plaintext highlighter-rouge">demo</code> folder, a relative link to <code class="language-plaintext highlighter-rouge">absolute.html</code> could be written two ways:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">/demo/absolute.html</code></li>
+  <li><code class="language-plaintext highlighter-rouge">absolute.html</code></li>
+</ul>
+
+<p>But the link to <code class="language-plaintext highlighter-rouge">test.html</code> <strong>must</strong> begin with the slash because it is not in the same folder, but is in the site’s root directory.</p>
+
+<p><strong>2. Absolute URLs being parsed as relative.</strong>
+At the start of this section, I called out that absolute URLs must always begin with either the <code class="language-plaintext highlighter-rouge">http://</code> or <code class="language-plaintext highlighter-rouge">https://</code> protocol; without this information, the browser will parse the URL as a relative URL.</p>
+
+<p><span class="emoji">❌</span> Don’t do this</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"google.com"</span><span class="nt">&gt;</span>Invalid!<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"www.google.com"</span><span class="nt">&gt;</span>Also doesn't work!<span class="nt">&lt;/a&gt;</span>
+</code></pre></div></div>
+
+<div class="embed-wrapper" style="height: 320px; width: 100%;">
+  <iframe src="https://relative-absolute-urls.glitch.me/invalid.html" title="relative-absolute-urls on Glitch" style="height: 100%; width: 100%; border: 0;">
+  </iframe>
+</div>
+
+<p>Without a protocol, these URLs are parsed as relative to their current page, like so:</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">https://relative-absolute-urls.glitch.me/google.com</code></li>
+  <li><code class="language-plaintext highlighter-rouge">https://relative-absolute-urls.glitch.me/www.google.com</code></li>
+</ul>
+
+<p><strong>3. Link text.</strong>
+All the advice and rules so far have been about actually forming valid link elements. In general, you can include whatever you want in the actual text you’re linking; the text does not need to mirror the URL in any way, but it is considered good UX for the link text to be understandable to your users and to lead them to expected places.</p>
+
+<p><span class="emoji">❌</span> Don’t do this</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"https://gmail.com"</span><span class="nt">&gt;</span>Go to Hotmail<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"https://gmail.com"</span><span class="nt">&gt;</span>Click here!<span class="nt">&lt;/a&gt;</span>
+</code></pre></div></div>
+
+<p>The first example above is just misdirection and will lead your users not to trust your site. The second example is unhelpfully vague; in general, link text should be more specific than “click here.”</p>
+
+<h2 id="other-types-of-links">Other types of links</h2>
+
+<p>In addition to linking to other web pages or HTML pages on your site, you can also create links to:</p>
+
+<ul class="text-push--bottom">
+  <li><a href="#email-addresses-and-telephone-numbers">email addresses and telephone numbers</a></li>
+  <li><a href="#images-and-other-files">images and other file types</a></li>
+  <li><a href="#specific-elements">specific elements on a page</a></li>
+</ul>
+
+<h3 id="email-addresses-and-telephone-numbers">Email addresses and telephone numbers</h3>
+
+<p>These links look just like web links, but begin with a keyword that identifies their content as something other than a web link:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"mailto:info@mica.edu"</span><span class="nt">&gt;</span>info (at) mica (dot) edu<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"tel:4106699200"</span><span class="nt">&gt;</span>410-669-9200<span class="nt">&lt;/a&gt;</span>
+</code></pre></div></div>
+
+<p>For the most reliable results, avoid adding any spaces in either of these formats.</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">mailto</code> links will open in the user’s default mail program</li>
+  <li><code class="language-plaintext highlighter-rouge">tel</code> links will dial the number (if clicked on a phone) or attempt to make the call with another suitable program (like FaceTime or Skype)</li>
+</ul>
+
+<h3 id="images-and-other-files">Images and other files</h3>
+<p>Everything you just learned about absolute and relative URLs also applies to anything else you might link to from a web site, with an anchor (<code class="language-plaintext highlighter-rouge">a</code>) element or also:</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">img</code></li>
+  <li><code class="language-plaintext highlighter-rouge">link</code></li>
+  <li>other media formats</li>
+</ul>
+
+<p>In this example, I’m displaying an inline image using the <code class="language-plaintext highlighter-rouge">img</code> element and also wrapping it in a link (<code class="language-plaintext highlighter-rouge">a</code>) so that it can be viewed full size. Both the <code class="language-plaintext highlighter-rouge">img</code> <code class="language-plaintext highlighter-rouge">src</code> attribute and my link’s <code class="language-plaintext highlighter-rouge">href</code> use absolute URLs.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"https://placekitten.com/g/920/920"</span> <span class="na">target=</span><span class="s">"_blank"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"https://placekitten.com/g/920/920"</span> <span class="na">alt=</span><span class="s">"An adorable kitten placeholder image."</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/a&gt;</span>
+</code></pre></div></div>
+
+<figure class="text-center">
+  <a href="https://placekitten.com/g/920/920" target="_blank" class="u-link-reset">
+    <img src="https://placekitten.com/g/920/920" alt="An adorable kitten placeholder image." style="height:auto;width:200px;" />
+  </a>
+  <figcaption class="text-faded">Clicking this photo will open it at a larger size in a new window.</figcaption>
+</figure>
+
+<p>You can do the same thing to link any manner of documents or media files.</p>
+
+<p class="callout"><span class="emoji">⚠️</span> Everything stated previously about giving users info about <em>what</em> they’re clicking is <strong>even more true</strong> if the link is opening or downloading something other than an HTML file.</p>
+
+<h3 id="specific-elements">Specific elements</h3>
+<p>It is also possible to link to specific areas of content on the page you’re already viewing. On this page, you can see that in both:</p>
+<ul>
+  <li>the <a href="#top">back to top</a> link</li>
+  <li>the links listed under the <a href="#other-types-of-links">Other types of links heading</a></li>
+  <li>each of the links above <span class="emoji">🤓</span></li>
+</ul>
+
+<p>You can create a “back to top” style link on any page by adding either of the following to any web page:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>top<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#top"</span><span class="nt">&gt;</span>top<span class="nt">&lt;/a&gt;</span>
+</code></pre></div></div>
+
+<p>That just works, no extra markup.</p>
+
+<p>However, if you want to link to a specific part of the page, this requires two steps:</p>
+
+<ol>
+  <li>Add an <code class="language-plaintext highlighter-rouge">id</code> attribute and a unique value to the element you want to be able to scroll to.</li>
+  <li>Use that <code class="language-plaintext highlighter-rouge">id</code> value <em>preceded by</em> the number symbol/hashtag (<code class="language-plaintext highlighter-rouge">#</code>) for your <code class="language-plaintext highlighter-rouge">href</code> value.</li>
+</ol>
+
+<p>In practice, that looks like this:</p>
+
+<p>First, the <code class="language-plaintext highlighter-rouge">section</code> elements have unique <code class="language-plaintext highlighter-rouge">id</code> attributes.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;section</span> <span class="na">id=</span><span class="s">"retsuko"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;h2&gt;</span>Retsuko<span class="nt">&lt;/h2&gt;</span>
+<span class="nt">&lt;/section&gt;</span>
+</code></pre></div></div>
+
+<p>Then, those <code class="language-plaintext highlighter-rouge">id</code>s are used in the links like this:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;ul&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#retsuko"</span><span class="nt">&gt;</span>Retsuko<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+</code></pre></div></div>
+
+<div class="glitch-embed-wrap" style="height: 740px; width: 100%;">
+  <iframe src="https://glitch.com/embed/#!/embed/in-page-links?path=index.html&amp;previewSize=100&amp;sidebarCollapsed=true" title="in-page-links on Glitch" allow="geolocation; microphone; camera; midi; vr; encrypted-media" style="height: 100%; width: 100%; border: 0;">
+  </iframe>
+</div>
+
+<p><strong>A few notes about creating <code class="language-plaintext highlighter-rouge">id</code> values:</strong></p>
+
+<ul>
+  <li>Each <code class="language-plaintext highlighter-rouge">id</code> value on your page <strong>must</strong> be unique (for example, it is <em>not valid</em> to have two <code class="language-plaintext highlighter-rouge">id</code>s with the value of <code class="language-plaintext highlighter-rouge">retsuko</code>).
+    <ul>
+      <li>The <code class="language-plaintext highlighter-rouge">href</code> values do <strong>not</strong> need to be unique, however.</li>
+    </ul>
+  </li>
+  <li>The <code class="language-plaintext highlighter-rouge">id</code> values do <strong>not</strong> need to match text on the page. While in most cases in this demo the <code class="language-plaintext highlighter-rouge">id</code>, link text and <code class="language-plaintext highlighter-rouge">h2</code> all match (see Retsuko, for example), also note that the same is not true for the character Migi.</li>
+</ul>
+
+    
+    <footer class="feedback-footer">
+  
+
+  <p><strong>Make this page better.</strong></p>
+  <p>Found something that's incorrect or confusing on this page? Broken link? I want to know! <a href="https://github.com/mica-web/mica-web.github.io/issues/new?title=Feedback+for+%2Flearn%2Fhtml%2Flinks&template=page-feedback.md" target="_blank">Open an issue on GitHub</a> to tell me what's up and help me update the page.</p>
+</footer>
+
+    
+  </main>
+
+  <footer class="site-footer">
+  <div class="rule"></div>
+  <div class="content">
+    <p>&copy; Copyright 2018&ndash;<span id="js-current-year"></span> Ang&eacute;lique Weger</p>
+    <p class="top-link-wrapper"><a href="#top">Back to top</a></p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('js-current-year').appendChild(document.createTextNode(new Date().getFullYear()))
+</script>
+
+
+</div>
+
+
+  </div>
+
+  
+  
+  
+  
+
+</body>
+<!--
+/**
+ * @license
+ * MyFonts Webfont Build ID 3700915, 2019-01-18T17:07:51-0500
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Native-Regular by Fort Foundry
+ * URL: https://www.myfonts.com/fonts/fort-foundry/native/regular/
+ * Copyright: Copyright &#x00A9; 2016 by Mattox Shuler. All rights reserved.
+ * Licensed pageviews: Unlimited
+ * 
+ * Webfont: NeueAlteGrotesk-Regular by VisualWorks
+ * URL: https://www.myfonts.com/fonts/visualworks/neue-alte-grotesk/regular/
+ * Copyright: Copyright © 2017-2018 by Krzysztof Chuc. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * Webfont: NeueAlteGrotesk-Medium by VisualWorks
+ * URL: https://www.myfonts.com/fonts/visualworks/neue-alte-grotesk/medium/
+ * Copyright: Copyright © 2017-2018 by Krzysztof Chuc. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * Webfont: NeueAlteGrotesk-SemiBold by VisualWorks
+ * URL: https://www.myfonts.com/fonts/visualworks/neue-alte-grotesk/semi-bold/
+ * Copyright: Copyright © 2017-2018 by Krzysztof Chuc. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * Webfont: NeueAlteGrotesk-Bold by VisualWorks
+ * URL: https://www.myfonts.com/fonts/visualworks/neue-alte-grotesk/bold/
+ * Copyright: Copyright © 2017-2018 by Krzysztof Chuc. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * Webfont: NeueAlteGrotesk-Heavy by VisualWorks
+ * URL: https://www.myfonts.com/fonts/visualworks/neue-alte-grotesk/heavy/
+ * Copyright: Copyright © 2017-2018 by Krzysztof Chuc. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * Webfont: NeueAlteGrotesk-Black by VisualWorks
+ * URL: https://www.myfonts.com/fonts/visualworks/neue-alte-grotesk/black/
+ * Copyright: Copyright © 2017-2018 by Krzysztof Chuc. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * 
+ * License: https://www.myfonts.com/viewlicense?type=web&buildid=3700915
+ * 
+ * © 2019 MyFonts Inc
+*/
+
+-->
+
+
+</html>

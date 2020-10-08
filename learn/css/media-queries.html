@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="ie=edge" http-equiv="X-UA-Compatible">
+  <meta name="author" content="Angelique Weger" />
+  <meta name="Description" content="Curriculum, schedule and resources for web design.">
+  <link href="/css/style.css" rel="stylesheet">
+  
+  <link href="/css/syntax.css" rel="stylesheet">
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+  <link rel="manifest" href="/favicons/site.webmanifest">
+  <link rel="shortcut icon" href="/favicons/favicon.ico">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-config" content="/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#9ff2c0">
+  <title>Media queries | Learning Web Design</title>
+</head>
+
+
+<body>
+  <div class="site-wrapper">
+
+    <header id="top" class="site-header">
+  <h2 class="u-m0 u-clearfix heading">
+    <a href="https://mica-web.github.io/" class="u-block u-clearfix" title="Return to homepage" >
+      <span class="heading--background">Learning</span>
+      <span class="heading--foreground">Web Design</span>
+    </a>
+  </h2>
+</header>
+
+
+<div class="content-wrapper ">
+
+  
+
+  <div class="top-nav">
+    <ul class="u-list-reset breadcrumb-wrapper">
+  <li class="u-inline-block breadcrumb"><a href="https://mica-web.github.io">Home</a></li>
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+  <li class="u-inline-block breadcrumb">
+    <a href="/learn">
+      learn
+    </a>
+  </li>
+  
+
+  
+
+  
+
+  
+
+  
+  <li class="u-inline-block breadcrumb">
+    <a href="/learn/css">
+      css
+    </a>
+  </li>
+  
+
+  
+
+  
+
+  
+
+  
+  <li class="u-inline-block breadcrumb">media queries</li>
+  
+
+  
+
+</ul>
+
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p class="text-faded reading-est">6 min read</p>
+
+    
+    
+  </div>
+
+  
+
+  <main>
+    
+    
+<h1 id="media-queries">Media queries</h1>
+
+<p>This page covers the core concepts that will allow you to create responsive web sites – that is, web sites that look good on all devices, regardless of size or form factor.</p>
+
+<h2 id="understanding-viewports">Understanding viewports</h2>
+
+<p>The <b>viewport</b> is the area within a web browser that is being viewed. Currently, as you’re looking at this very page, the area that the site content takes up – the bits of this actual site, not the browser’s address bar, toolbars, menu bar, etc – is the viewport.</p>
+
+<p>Even if your laptop or computer screen is huge, if you’ve set your browser to only take up a fraction of that display, the viewport is the space the browser’s content actually uses – <em>not</em> the space available to it. So, if you have a 17” laptop that is roughly 1920 pixels wide, but your browser is only taking up 50% of the width of the screen, the viewport is less than 960 pixels.</p>
+
+<p>If you look back at your previous project’s HTML, you’ll note that you’ve already been writing code targeting viewports; you should see a <code class="language-plaintext highlighter-rouge">meta</code> element in your HTML <code class="language-plaintext highlighter-rouge">head</code> that looks like this:</p>
+
+<p><code class="language-plaintext highlighter-rouge">&lt;meta content="width=device-width, initial-scale=1.0" name="viewport"&gt;</code></p>
+
+<p>This code tells the browser to use the width of the browser or device as the viewport width (compared to some other specific number or a default value) and to set the page’s initial zoom level to be 100% (neither zoomed in nor zoomed out).</p>
+
+<p>Understanding what a viewport is and how it impacts your layout is key to <b>responsive web design</b>.</p>
+
+<h2 id="what-is-responsive-design">What is responsive design?</h2>
+
+<p>A web page is considered <b>responsive</b> when its content adjusts to a variety of viewport sizes.</p>
+
+<p>This term was introduced in 2010 by Ethan Marcotte, and the header illustration for his article is still a fun example of what it means to be responsive:</p>
+
+<figure>
+  <p><img src="/learn/02_CSS/img/rwd-ala.gif" alt="Animated screen capture of the following link, which features an illustration of a soccer team in various positions to properly make use of the browser's width." /></p>
+  <figcaption>
+    <p>See <a href="https://alistapart.com/article/responsive-web-design/" target="_blank">this page</a> for yourself.</p>
+  </figcaption>
+</figure>
+
+<p>It’s important to note here that HTML, with no CSS applied, is already responsive. You may remember <a href="https://html5-kitchen-sink.glitch.me/" target="_blank">this example</a> from the reading on <a href="css/browser-defaults">Browser Defaults</a><span class="emoji text-smaller" title="Following and reading this link is optional."><span class="u-sr-only">Following and reading this link is optional.</span>✳️</span>
+ – 99% of the elements on that page just work, with no additional CSS, regardless of the size of your browser or device.</p>
+
+<p>Of course, we <em>are</em> going to add CSS to our HTML, modifying the defaults in all sorts of ways. And, since HTML with no CSS is responsive, we owe it to our users to make the CSS we write <em>also</em> responsive.</p>
+
+<p>Put another way: The styles you write shouldn’t make things worse than they were before you added CSS.</p>
+
+<h2 id="responsive-css">Responsive CSS</h2>
+
+<p class="callout">Since responsive demos require being able to adjust the viewport width directly, the examples that follow will <strong>not</strong> be embedded in the page; instead, be on the lookout for links to Glitch projects that demonstrate the following CSS. Glitch demos are identified by <span class="emoji">🐠</span> symbol.</p>
+
+<p>To create responsive designs, you will need to write <b>media queries</b> inside of your CSS. Media queries are a way of targeting specific viewport sizes.</p>
+
+<p>If, for example, you wanted the background color of your site to be different for anyone with a viewport 800 pixels or larger, you could write the following CSS:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@media</span> <span class="p">(</span><span class="n">min-width</span><span class="p">:</span> <span class="m">800px</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nt">body</span> <span class="p">{</span>
+    <span class="nl">background-color</span><span class="p">:</span> <span class="no">gold</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p><span class="emoji">🐠</span> See an example on <a href="https://mq-1.glitch.me/" target="_blank">Glitch</a> <span class="emoji">🐠</span></p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">@media</code> identifies that your code is a media query; <strong>all of your media queries will begin this way.</strong></li>
+  <li>The content inside the parentheses <code class="language-plaintext highlighter-rouge">()</code> is a rule; this rule must be <strong>matched</strong> by the viewport conditions in order for the CSS inside the media query to be applied</li>
+  <li><code class="language-plaintext highlighter-rouge">min-width</code> means the viewport must be <em>at least</em> this large and requires a value (in this case, 800 pixels) to match against</li>
+  <li>everything inside the curly brackets <code class="language-plaintext highlighter-rouge">{}</code> is <strong>standard CSS</strong>: at least one selector, followed by another set of curly brackets, and one or more CSS declarations</li>
+</ul>
+
+<p class="callout"><span class="emoji">🤔</span> This is worth repeating: The only thing that’s new here is the media query. <strong>Everything that happens inside your media query is standard CSS, just like you’ve been writing.</strong></p>
+
+<p>If you went back to your last project and put the media query above around <em>all the CSS you wrote</em>, it would mean your HTML would have <strong>no styling</strong> at any viewport size up to and including 799 pixels and then, <span class="emoji">💥</span> <em>whammo!</em> <span class="emoji">💥</span> at 800 pixels, your styles would be applied.</p>
+
+<p>You can also write a media query that is the reverse of the above example; you can target viewports that are less than 800 pixels by using <code class="language-plaintext highlighter-rouge">max-width</code> instead of <code class="language-plaintext highlighter-rouge">min-width</code>:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@media</span> <span class="p">(</span><span class="n">max-width</span><span class="p">:</span> <span class="m">799px</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nt">body</span> <span class="p">{</span>
+    <span class="nl">background-color</span><span class="p">:</span> <span class="no">silver</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p><span class="emoji">🐠</span> See an example on <a href="https://mq-2.glitch.me/" target="_blank">Glitch</a> <span class="emoji">🐠</span></p>
+
+<p>In this example, the background color would be silver for any viewport <em>smaller than</em> 800 pixels.</p>
+
+<p>These targeted values where your site’s styles change based on the viewport are known as <b>breakpoints</b>. So, for both of the examples above, the layout would be said to have a breakpoint of 800 pixels.</p>
+
+<p>You may include <em>multiple</em> breakpoints in your stylesheet.</p>
+
+<p>In addition to height and width, you can also target viewports more generically by orientation.</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@media</span> <span class="p">(</span><span class="n">orientation</span><span class="p">:</span> <span class="nb">landscape</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nt">body</span> <span class="p">{</span>
+    <span class="nl">background-color</span><span class="p">:</span> <span class="no">gold</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+<span class="k">@media</span> <span class="p">(</span><span class="n">orientation</span><span class="p">:</span> <span class="nb">portrait</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nt">body</span> <span class="p">{</span>
+    <span class="nl">background-color</span><span class="p">:</span> <span class="no">silver</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p><span class="emoji">🐠</span> See an example on <a href="https://mq-3.glitch.me/" target="_blank">Glitch</a> <span class="emoji">🐠</span></p>
+
+<p>In this example, when the browser is wider than it is tall (landscape mode), the background will be gold, and otherwise it will be silver.</p>
+
+<h3 id="best-practices-when-writing-media-queries">Best practices when writing media queries</h3>
+<ul>
+  <li><strong>Start with no media queries.</strong> Establish the smallest viewport you’re coding for (in your responsive projects, I will tell you this info), set your browser to that size and write CSS normally without media queries. This is called writing <strong>mobile-first styles</strong> as your stylesheet treats the smallest viewport size as the default.</li>
+  <li><em>After</em> you have written your mobile styles (again, <em>without</em> media queries), begin to expand your viewport. At some point, things will look not great: There will be too much whitespace, text lines will be too long, images too huge, <em>something</em>. <strong>This is your first media query.</strong></li>
+  <li><strong>Do not look to set breakpoints by specific devices.</strong> This is, in fact, the <em>opposite</em> of what I just suggested you do. At one point in the history of mobile devices, there were few enough types that people wrote break points specifically for the first and second generation of iPhones, for the first iPad, etc. We are so beyond those times that it’s comical.</li>
+</ul>
+
+<p><img src="/learn/02_CSS/img/screen-sizes.png" alt="" /></p>
+
+<p>This image (originally from an <a href="https://www.opensignal.com/">Open Signal</a> report) shows the variety of screen sizes of Android devices…and it’s from 2015. <strong>Design for the content you’re working with, not for a specific device.</strong></p>
+
+<ul>
+  <li>Media queries are <em>not</em> just for changing layout. You can also use them to adjust spacing, font sizes, etc.</li>
+</ul>
+
+<h2 id="example">Example</h2>
+<p>The following demo shows how to write mobile-first styles, followed by three media queries to achieve a very basic photo gallery layout.</p>
+
+<div class="glitch-embed-wrap" style="height: 420px; width: 100%;">
+  <iframe src="https://glitch.com/embed/#!/embed/mq-4?path=styles.css&amp;previewSize=0&amp;sidebarCollapsed=true" title="mq-4 on Glitch" allow="geolocation; microphone; camera; midi; vr; encrypted-media" style="height: 100%; width: 100%; border: 0;"></iframe>
+</div>
+
+<p>Click the Remix button to make your own changes to this CSS.</p>
+
+<h2 id="additional-reading-following-and-reading-this-link-is-optional️">Additional reading <span class="emoji text-smaller" title="Following and reading this link is optional."><span class="u-sr-only">Following and reading this link is optional.</span>✳️</span></h2>
+
+<p>The following links are <strong>entirely optional</strong> but provide more context, examples and opportunities to write media queries, if any of those things would be helpful to you.</p>
+
+<ul>
+  <li><a href="https://www.smashingmagazine.com/2018/02/media-queries-responsive-design-2018/">Using Media Queries For Responsive Design In 2018</a>  <span class="text-faded">(est. reading time: 15min)</span> – Even though this article by Rachel Andrew is 2 years old, it’s still a great read and a thorough look into how to create responsive designs.</li>
+  <li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Media_queries">Beginner’s guide to media queries</a>  <span class="text-faded">(est. reading time: 20min)</span> – This tutorial includes more details about breakpoints and an active learning exercise where you add media queries to some existing HTML.</li>
+</ul>
+
+    
+    <footer class="feedback-footer">
+  
+
+  <p><strong>Make this page better.</strong></p>
+  <p>Found something that's incorrect or confusing on this page? Broken link? I want to know! <a href="https://github.com/mica-web/mica-web.github.io/issues/new?title=Feedback+for+%2Flearn%2Fcss%2Fmedia-queries&template=page-feedback.md" target="_blank">Open an issue on GitHub</a> to tell me what's up and help me update the page.</p>
+</footer>
+
+    
+  </main>
+
+  <footer class="site-footer">
+  <div class="rule"></div>
+  <div class="content">
+    <p>&copy; Copyright 2018&ndash;<span id="js-current-year"></span> Ang&eacute;lique Weger</p>
+    <p class="top-link-wrapper"><a href="#top">Back to top</a></p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('js-current-year').appendChild(document.createTextNode(new Date().getFullYear()))
+</script>
+
+
+</div>
+
+
+  </div>
+
+  
+  
+  
+  
+
+</body>
+<!--
+/**
+ * @license
+ * MyFonts Webfont Build ID 3700915, 2019-01-18T17:07:51-0500
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Native-Regular by Fort Foundry
+ * URL: https://www.myfonts.com/fonts/fort-foundry/native/regular/
+ * Copyright: Copyright &#x00A9; 2016 by Mattox Shuler. All rights reserved.
+ * Licensed pageviews: Unlimited
+ * 
+ * Webfont: NeueAlteGrotesk-Regular by VisualWorks
+ * URL: https://www.myfonts.com/fonts/visualworks/neue-alte-grotesk/regular/
+ * Copyright: Copyright © 2017-2018 by Krzysztof Chuc. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * Webfont: NeueAlteGrotesk-Medium by VisualWorks
+ * URL: https://www.myfonts.com/fonts/visualworks/neue-alte-grotesk/medium/
+ * Copyright: Copyright © 2017-2018 by Krzysztof Chuc. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * Webfont: NeueAlteGrotesk-SemiBold by VisualWorks
+ * URL: https://www.myfonts.com/fonts/visualworks/neue-alte-grotesk/semi-bold/
+ * Copyright: Copyright © 2017-2018 by Krzysztof Chuc. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * Webfont: NeueAlteGrotesk-Bold by VisualWorks
+ * URL: https://www.myfonts.com/fonts/visualworks/neue-alte-grotesk/bold/
+ * Copyright: Copyright © 2017-2018 by Krzysztof Chuc. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * Webfont: NeueAlteGrotesk-Heavy by VisualWorks
+ * URL: https://www.myfonts.com/fonts/visualworks/neue-alte-grotesk/heavy/
+ * Copyright: Copyright © 2017-2018 by Krzysztof Chuc. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * Webfont: NeueAlteGrotesk-Black by VisualWorks
+ * URL: https://www.myfonts.com/fonts/visualworks/neue-alte-grotesk/black/
+ * Copyright: Copyright © 2017-2018 by Krzysztof Chuc. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * 
+ * License: https://www.myfonts.com/viewlicense?type=web&buildid=3700915
+ * 
+ * © 2019 MyFonts Inc
+*/
+
+-->
+
+
+</html>
