@@ -30,7 +30,8 @@ You will design a card component and then recreate that design using your curren
     - Upload your style tiles and designs to {% include gd431-drive.md %}
     - Only upload PDFs, PNGs or JPGS please <span class="emoji">🙏🏻</span>
 1. Follow the [setup instructions]({% link gd-220/projects/project02/setup.md %})
-1. In the HTML file and on the branch you created in the previous step, write the markup for a single card.
+1. Create your pull request.
+1. In the HTML file and on the branch you created in the previous step, write the markup for a **single** card.
 1. After deciding on your style direction, write CSS based on your comps and style tiles.
 1. Present project to colleagues.
 
@@ -60,12 +61,13 @@ You will design a card component and then recreate that design using your curren
 <dt>Oct 08</dt>
 <dd>Steps 1-4 complete</dd>
 <dt>Oct 15</dt>
-<dd>Steps 5 & 6 complete</dd>
+<dd>Steps 5-7 complete</dd>
+<dd>Share the link to your PR via DM for HTML review</dd>
 <dt>Oct 22</dt>
-<dd>Step 7 begun</dd>
+<dd>Step 8 begun</dd>
 <dt>Oct 29</dt>
 <dd>Project due date</dd>
-<dd>Steps 7 & 8 complete</dd>
+<dd>Steps 8 & 9 complete</dd>
 </dl>
 
 ## Rubric
