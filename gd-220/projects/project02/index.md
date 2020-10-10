@@ -27,6 +27,8 @@ You will design a card component and then recreate that design using your curren
   - button design
 1. Using the design program of your choosing, create **two** different design comps for your card component based on the elements from your style tiles.
 1. Present style tiles and concepts to classmates for critique.
+    - Upload your style tiles and designs to {% include gd431-drive.md %}
+    - Only upload PDFs, PNGs or JPGS please <span class="emoji">🙏🏻</span>
 1. Follow the [setup instructions]({% link gd-220/projects/project02/setup.md %})
 1. In the HTML file and on the branch you created in the previous step, write the markup for a single card.
 1. After deciding on your style direction, write CSS based on your comps and style tiles.
