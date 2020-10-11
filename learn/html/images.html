@@ -9,6 +9,8 @@
   <meta name="Description" content="Curriculum, schedule and resources for web design.">
   <link href="/css/style.css" rel="stylesheet">
   
+  <link href="/css/syntax.css" rel="stylesheet">
+  
   <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
@@ -17,7 +19,7 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-config" content="/favicons/browserconfig.xml">
   <meta name="theme-color" content="#9ff2c0">
-  <title>Reading | Learning Web Design</title>
+  <title>Images | Learning Web Design</title>
 </head>
 
 
@@ -53,8 +55,8 @@
 
   
   <li class="u-inline-block breadcrumb">
-    <a href="/gd-431">
-      gd 431
+    <a href="/learn">
+      learn
     </a>
   </li>
   
@@ -67,8 +69,8 @@
 
   
   <li class="u-inline-block breadcrumb">
-    <a href="/gd-431/01">
-      week 01
+    <a href="/learn/html">
+      html
     </a>
   </li>
   
@@ -80,7 +82,7 @@
   
 
   
-  <li class="u-inline-block breadcrumb">reading</li>
+  <li class="u-inline-block breadcrumb">images</li>
   
 
   
@@ -114,28 +116,41 @@
   <main>
     
     
-<h1 id="w01-week-01-reading">Week 01 Reading</h1>
+<h1 id="images">Images</h1>
 
-<h2 id="w01-a-recommendation">A recommendation</h2>
-<p>Before you dive into the reading, please read <a href="/gd-431/01/
-qcq">my recommendations for responding to readings</a>.</p>
+<p>You can embed an image into a document by using the <code class="language-plaintext highlighter-rouge">img</code> element. This element uses two important attributes:</p>
 
-<h2 id="w01-reading">Reading</h2>
-
-<p class="callout"><strong>Purpose:</strong> Understand and create a priority guide and be able to compare priority guides with wireframes.</p>
-
-<h3 id="w01-tasks">Tasks</h3>
 <ul>
-  <li>Read about <a href="https://alistapart.com/article/priority-guides-a-content-first-alternative-to-wireframes">content-first priority guides</a>  <span class="text-faded">(est. reading time: 14min)</span></li>
-  <li>Make note of your <strong>quotes, comments and questions</strong> to this reading (which should make sense if you read the link under “A recommendation” above)</li>
+  <li><code class="language-plaintext highlighter-rouge">src</code>, which is <strong>required</strong> and contains the location and filename of the image you want to embed</li>
+  <li><code class="language-plaintext highlighter-rouge">alt</code>, which allows you to add a text description of the image and its meaning</li>
 </ul>
 
-<!-- Priority Guides 1 -->
+<h2 id="example">Example</h2>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;img</span>
+  <span class="na">src=</span><span class="s">"heart.png"</span>
+  <span class="na">alt=</span><span class="s">"Pink heart in an 8-bit style."</span>
+<span class="nt">&gt;</span>
+</code></pre></div></div>
+
+<p>The <code class="language-plaintext highlighter-rouge">src</code> attribute uses all the same logic you learned about creating <a href="/learn/html/links">absolute and relative links</a>.</p>
+
+<p>The <code class="language-plaintext highlighter-rouge">alt</code> attribute should <strong>be present on all inline images</strong> and generally includes a description that could replace the image and should be informed by the context and meaning of the image, as you can see in these examples:</p>
+
+<div class="glitch-embed-wrap" style="height: 520px; width: 100%;">
+  <iframe src="https://glitch.com/embed/#!/embed/img-basics?path=index.html&amp;previewSize=100&amp;sidebarCollapsed=true" title="img-basics on Glitch" allow="geolocation; microphone; camera; midi; vr; encrypted-media" style="height: 100%; width: 100%; border: 0;">
+  </iframe>
+</div>
+
+<h2 id="writing-good-alt-text">Writing good <code class="language-plaintext highlighter-rouge">alt</code> text</h2>
+<p>It is an important responsibility of front-end developers to understand when to write <code class="language-plaintext highlighter-rouge">alt</code> text and how to write good <code class="language-plaintext highlighter-rouge">alt</code> descriptions. To that end, I’d like you to read <a href="https://axesslab.com/alt-texts/">Alt-texts: The Ultimate Guide</a> <span class="text-faded">(est. reading time: 11min)</span>, which was written by a <a href="/learn/tools/screen-readers">screen reader</a> user and has a wealth of examples.</p>
+
+<!-- Alt text 1 -->
 <div class="quiz-wrapper">
   <header class="quiz-header">
-    <h2 class="quiz-heading">Share What You Know</h2>
+    <h2 class="quiz-heading">Share What You've Learned</h2>
     <div class="quiz-actions-wrapper">
-      <button type="button" class="u-button-reset u-link-reset quiz-action js-quiz-toggle" aria-controls="25M6LRN"><?xml version="1.0" encoding="utf-8"?>
+      <button type="button" class="u-button-reset u-link-reset quiz-action js-quiz-toggle" aria-controls="5RYDJXV"><?xml version="1.0" encoding="utf-8"?>
 <svg viewBox="0 0 24 24" role="img" xmlns="http://www.w3.org/2000/svg">
   <title>Collapse this content</title>
   <path d="M23 24H1a1 1 0 01-1-1V1a1 1 0 011-1h22a1 1 0 110 2H2v20h20V5.19a1 1 0 112 0V23a1 1 0 01-1 1z" />
@@ -143,7 +158,7 @@ qcq">my recommendations for responding to readings</a>.</p>
   <path class="icon-line" d="M11 18V6a1 1 0 112 0v12a1 1 0 11-2 0z" />
 </svg>
 </button>
-      <a class="u-link-reset quiz-action" href="https://www.surveymonkey.com/r/25M6LRN" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img">
+      <a class="u-link-reset quiz-action" href="https://www.surveymonkey.com/r/5RYDJXV" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img">
   <title>Open in a new window</title>
   <path d="M23 24H1a1 1 0 01-1-1V1a1 1 0 011-1h11.95a1 1 0 010 2H2v20h20l-.01-11.35a1 1 0 012 0L24 23a1 1 0 01-1 1z" />
   <path d="M17.5 2c-.38 0-.62-.83-.43-1.5.09-.3.25-.5.43-.5h6c.12 0 .22.08.3.2.13.09.2.2.2.3v6c0 .38-.83.63-1.5.43-.3-.09-.5-.25-.5-.43V3.2l-7.13 7.26c-.48.5-1.37.21-1.6-.51a.91.91 0 01.2-.92L20.37 2z" />
@@ -152,39 +167,28 @@ qcq">my recommendations for responding to readings</a>.</p>
     </div>
   </header>
   
-  <div id="25M6LRN" class="quiz-content">
-    <iframe src="https://www.surveymonkey.com/r/25M6LRN" height="600" allowtransparency="true" frameborder="0" scrolling="yes"></iframe>
+  <div id="5RYDJXV" class="quiz-content">
+    <iframe src="https://www.surveymonkey.com/r/5RYDJXV" height="600" allowtransparency="true" frameborder="0" scrolling="yes"></iframe>
   </div>
   
 </div>
 
+<h3 id="additional-alt-text-resources">Additional <code class="language-plaintext highlighter-rouge">alt</code> text resources</h3>
 <ul>
-  <li>Provide a copy of your current resume
-    <ul>
-      <li>Due date: 9/10 by midnight EST (<a href="https://everytimezone.com/s/bcb7bc69" target="_blank">see in your timezone</a>)</li>
-      <li>Format: PDF</li>
-      <li>File name: <strong>Please</strong> use your first initial and last name plus “resume” to name your file (for example: <code class="language-plaintext highlighter-rouge">aweger-resume</code>)</li>
-      <li>How to submit: Add your file to the <b>resumes</b> folder inside our <a href="https://drive.google.com/drive/folders/1Q-WnEfuIkqqBdvmSiNm5OKJX53aObnpf?usp=sharing" target="_blank">shared GD431 Activities folder in Google Drive</a></li>
-    </ul>
-  </li>
-  <li>Create a priority guide for your resume using <a href="https://docs.google.com/document/d/1ViffQR3U26Wjv7uu1_imILvmTIADASIM8q-d9dNPDTw/copy?usp=sharing" target="_blank">this template</a>
-    <ul>
-      <li>Due date: 9/10 by midnight EST (<a href="https://everytimezone.com/s/bcb7bc69" target="_blank">see in your timezone</a>)</li>
-      <li>Format: Google Doc</li>
-      <li>File name: <strong>Please</strong> use your first initial and last name plus “pg” to name your file (for example: <code class="language-plaintext highlighter-rouge">aweger-pg</code>)</li>
-      <li>How to submit: Add your file to the <b>resumes</b> folder inside our <a href="https://drive.google.com/drive/folders/1Q-WnEfuIkqqBdvmSiNm5OKJX53aObnpf?usp=sharing" target="_blank">shared GD431 Activities folder in Google Drive</a></li>
-    </ul>
-  </li>
+  <li>WebAIM’s <a href="https://webaim.org/techniques/alttext/">guide to alternative text</a><span class="emoji text-smaller" title="Following and reading this link is optional."><span class="u-sr-only">Following and reading this link is optional.</span>✳️</span>
+ provides information and a series of examples to test your understanding.</li>
+  <li>A <a href="https://www.w3.org/WAI/tutorials/images/decision-tree/">simple decision tree</a><span class="emoji text-smaller" title="Following and reading this link is optional."><span class="u-sr-only">Following and reading this link is optional.</span>✳️</span>
+ to determine if you need <code class="language-plaintext highlighter-rouge">alt</code> text.</li>
+  <li>The <a href="https://poet.diagramcenter.org/how.html">Poet Training Tool</a><span class="emoji text-smaller" title="Following and reading this link is optional."><span class="u-sr-only">Following and reading this link is optional.</span>✳️</span>
+ is a web-based image description resource that helps people learn when and how to describe various types of images. Originally created for people writing educational content, the examples and exercises are still useful when thinking about images in articles, news stories, etc.</li>
 </ul>
-
-<p class="callout">Message me in Slack if you don’t have the necessary access to the shared Google Drive</p>
 
     
     <footer class="feedback-footer">
   
 
   <p><strong>Make this page better.</strong></p>
-  <p>Found something that's incorrect or confusing on this page? Broken link? I want to know! <a href="https://github.com/mica-web/mica-web.github.io/issues/new?title=Feedback+for+%2Fgd-431%2F01%2Freading.html&template=page-feedback.md" target="_blank">Open an issue on GitHub</a> to tell me what's up and help me update the page.</p>
+  <p>Found something that's incorrect or confusing on this page? Broken link? I want to know! <a href="https://github.com/mica-web/mica-web.github.io/issues/new?title=Feedback+for+%2Flearn%2Fhtml%2Fimages&template=page-feedback.md" target="_blank">Open an issue on GitHub</a> to tell me what's up and help me update the page.</p>
 </footer>
 
     
@@ -211,8 +215,6 @@ qcq">my recommendations for responding to readings</a>.</p>
   
   
   
-  
-  <script src="/js/quizToggle.js" async defer></script>
   
 
 </body>
