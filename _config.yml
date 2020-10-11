@@ -60,7 +60,7 @@ collections:
       - 01_HTML/semantics.md
       - 01_HTML/links.md
       - 01_HTML/images.md
-      # - 01_HTML/svg.md
+      - 01_HTML/svg.md
       - 01_HTML/best-practices.md
       - 01_HTML/history.md
       - 02_CSS/basics.md
