@@ -80,7 +80,7 @@ collections:
       - 02_CSS/background-image.md
       - 02_CSS/pseudoclass.md
       - 02_CSS/transition.md
-      # - 02_CSS/transform.md
+      - 02_CSS/transform.md
       # - 02_CSS/animation.md
       # - 02_CSS/brittle-layout.md
       # - 02_CSS/floats.md
