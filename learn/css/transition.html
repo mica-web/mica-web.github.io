@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="ie=edge" http-equiv="X-UA-Compatible">
+  <meta name="author" content="Angelique Weger" />
+  <meta name="Description" content="Curriculum, schedule and resources for web design.">
+  <link href="/css/style.css" rel="stylesheet">
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+  <link rel="manifest" href="/favicons/site.webmanifest">
+  <link rel="shortcut icon" href="/favicons/favicon.ico">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-config" content="/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#9ff2c0">
+  <title>Transition | Learning Web Design</title>
+</head>
+
+
+<body>
+  <div class="site-wrapper">
+
+    <header id="top" class="site-header">
+  <h2 class="u-m0 u-clearfix heading">
+    <a href="https://mica-web.github.io/" class="u-block u-clearfix" title="Return to homepage" >
+      <span class="heading--background">Learning</span>
+      <span class="heading--foreground">Web Design</span>
+    </a>
+  </h2>
+</header>
+
+
+<div class="content-wrapper ">
+
+  
+
+  <div class="top-nav">
+    <ul class="u-list-reset breadcrumb-wrapper">
+  <li class="u-inline-block breadcrumb"><a href="https://mica-web.github.io">Home</a></li>
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+  <li class="u-inline-block breadcrumb">
+    <a href="/learn">
+      learn
+    </a>
+  </li>
+  
+
+  
+
+  
+
+  
+
+  
+  <li class="u-inline-block breadcrumb">
+    <a href="/learn/css">
+      css
+    </a>
+  </li>
+  
+
+  
+
+  
+
+  
+
+  
+  <li class="u-inline-block breadcrumb">transition</li>
+  
+
+  
+
+</ul>
+
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p class="text-faded reading-est">3 min read</p>
+
+    
+    
+  </div>
+
+  
+
+  <main>
+    
+    <h1 id="transition">Transition</h1>
+
+<p>CSS transition properties control the transition period between two states and are commonly used to improve hover states on elements.</p>
+
+<h2 id="basics">Basics</h2>
+<p><code class="language-plaintext highlighter-rouge">transition</code> is a CSS <b>shorthand property</b> and, in its simplest form, lets you set which CSS properties will be affected by the transition (<code class="language-plaintext highlighter-rouge">transition-property</code>) and how long the transition should last (<code class="language-plaintext highlighter-rouge">transition-duration</code>).</p>
+
+<p>In the example below, Example 2 has the following CSS applied:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">.box</span> <span class="p">{</span>
+  <span class="nl">transition</span><span class="p">:</span> <span class="n">all</span> <span class="m">1s</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.box</span><span class="nd">:hover</span> <span class="p">{</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="m">#F6F930</span><span class="p">;</span>
+  <span class="nl">height</span><span class="p">:</span> <span class="m">90px</span><span class="p">;</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">90px</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>The second ruleset outlines what should change when the element (in this case, a <code class="language-plaintext highlighter-rouge">div</code> with the class name “box”) is hovered on. The first ruleset says that <strong>all</strong> of those changes should transition and the transition should last for one second.</p>
+
+<p>If you hover over the boxes in the demo below, you can see the difference with and without CSS transitions:</p>
+
+<div id="demo" class="glitch-embed-wrap" style="height: 740px; width: 100%;">
+  <iframe src="https://glitch.com/embed/#!/embed/css-transition-1?path=styles.css&amp;previewSize=100&amp;sidebarCollapsed=true" title="css-transition-1 on Glitch" allow="geolocation; microphone; camera; midi; vr; encrypted-media" style="height: 100%; width: 100%; border: 0;">
+  </iframe>
+</div>
+
+<p>Example 3 swaps out the <code class="language-plaintext highlighter-rouge">all</code> keyword and replaces it with a specific CSS property: <code class="language-plaintext highlighter-rouge">background-color</code>. In that example, <em>only</em> the <code class="language-plaintext highlighter-rouge">background-color</code> value transitions; the <code class="language-plaintext highlighter-rouge">height</code> and <code class="language-plaintext highlighter-rouge">width</code> behaves normally, resulting in the box size jumping again.</p>
+
+<p>It’s also possible to target multiple CSS properties with different transitions:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.box {
+  transition: background-color 3s, height 1s, width 1s;
+}
+</code></pre></div></div>
+
+<p>This CSS would cause the box to transition in size (<code class="language-plaintext highlighter-rouge">height</code>, <code class="language-plaintext highlighter-rouge">width</code>) like Example 2, but the duration of the color change would be three times as long.</p>
+
+<p class="callout"><span class="emoji">⏲️</span> 
+You can provide <code class="language-plaintext highlighter-rouge">transition-duration</code> values in seconds, as above, or milliseconds (<code class="language-plaintext highlighter-rouge">1000ms</code>).</p>
+
+<p>You can explore the effect of <code class="language-plaintext highlighter-rouge">transition-duration</code> by clicking the <b>Duration</b> link in the <a href="#demo">demo above</a>.</p>
+
+<h2 id="timings">Timings</h2>
+<p>The <code class="language-plaintext highlighter-rouge">transition</code> shorthand can <em>also</em> modify the style or format of the transition. In the examples above, all the transitions used the default of <code class="language-plaintext highlighter-rouge">ease</code>, but other transition formats are also available, such as:</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">ease-in</code></li>
+  <li><code class="language-plaintext highlighter-rouge">ease-out</code></li>
+  <li><code class="language-plaintext highlighter-rouge">ease-in-out</code></li>
+  <li><code class="language-plaintext highlighter-rouge">linear</code></li>
+</ul>
+
+<p>You can see examples of each of these by clicking the <b>Timings</b> link in the <a href="#demo">demo above</a>.</p>
+
+<h2 id="delay">Delay</h2>
+<p>Finally, you can also add <code class="language-plaintext highlighter-rouge">transition-delay</code> to your <code class="language-plaintext highlighter-rouge">transition</code> shorthand to determine when should transition start <em>relative to</em> the trigger (which, in all examples so far has been hovering). The default for this property is zero.</p>
+
+<p>You can see examples of the effect of <code class="language-plaintext highlighter-rouge">transition-delay</code> by clicking the <b>Delay</b> link in the <a href="#demo">demo above</a>.</p>
+
+<h2 id="transition-shorthand"><code class="language-plaintext highlighter-rouge">transition</code> shorthand</h2>
+<p>As noted initially, this shorthand, in its simplest form, combines the <code class="language-plaintext highlighter-rouge">transition-property</code> and <code class="language-plaintext highlighter-rouge">transition-duration</code> and looks like this:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">.box</span> <span class="p">{</span>
+  <span class="nl">transition</span><span class="p">:</span> <span class="n">color</span> <span class="m">1s</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>If you also want to specify the <code class="language-plaintext highlighter-rouge">transition-timing-function</code> and/or <code class="language-plaintext highlighter-rouge">transition-delay</code>, your CSS would look like this:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">.box</span> <span class="p">{</span>
+  <span class="nl">transition</span><span class="p">:</span> <span class="n">color</span> <span class="m">300ms</span> <span class="n">ease-in</span> <span class="m">1s</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Let’s break that down, bit by bit; the order of properties in the shorthand is as follows:</p>
+
+<ol>
+  <li><code class="language-plaintext highlighter-rouge">transition-property</code> – required</li>
+  <li><code class="language-plaintext highlighter-rouge">transition-duration</code> – required</li>
+  <li><code class="language-plaintext highlighter-rouge">transition-timing-function</code> – this property is optional</li>
+  <li><code class="language-plaintext highlighter-rouge">transition-delay</code> – this property is optional</li>
+</ol>
+
+<p>Put another way, you could get the same effect by writing this:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">.box</span> <span class="p">{</span>
+  <span class="nl">transition-property</span><span class="p">:</span> <span class="n">color</span><span class="p">;</span>
+  <span class="nl">transition-duration</span><span class="p">:</span> <span class="m">300ms</span><span class="p">;</span>
+  <span class="py">transition-timining-function</span><span class="p">:</span> <span class="n">ease-in</span><span class="p">;</span>
+  <span class="nl">transition-delay</span><span class="p">:</span> <span class="m">1s</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="writing-transitions">Writing transitions</h2>
+<p>First off, use the shorthand property if it’s helpful to you or feel free to use the individual properties. Both are valid!</p>
+
+<p>Also, if you are copying or using someone else’s code as a starting point for your transitions, you may run into some properties with <b>vendor prefixes</b> that look like this:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">.box</span> <span class="p">{</span>
+  <span class="nl">-webkit-transition</span><span class="p">:</span> <span class="n">all</span> <span class="m">1s</span><span class="p">;</span>
+  <span class="nl">-moz-transition</span><span class="p">:</span> <span class="n">all</span> <span class="m">1s</span><span class="p">;</span>
+  <span class="nl">-o-transition</span><span class="p">:</span> <span class="n">all</span> <span class="m">1s</span><span class="p">;</span>
+  <span class="nl">transition</span><span class="p">:</span> <span class="n">all</span> <span class="m">1s</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>This is an <strong>outdated</strong> way of writing CSS transitions and is no longer necessary in <a href="https://caniuse.com/css-transitions">modern browsers</a><span class="emoji text-smaller" title="Following and reading this link is optional."><span class="u-sr-only">Following and reading this link is optional.</span>✳️</span>
+. You can and should delete any transition rules with browser prefixes (<code class="language-plaintext highlighter-rouge">-webkit-</code>, <code class="language-plaintext highlighter-rouge">-moz-</code>, <code class="language-plaintext highlighter-rouge">-o-</code>) and just use the standard CSS properties.</p>
+
+<h2 id="debugging-transitions">Debugging transitions</h2>
+<p>Transitions <em>only work</em> if you have a state change (like hover) and have applied CSS to that state. <code class="language-plaintext highlighter-rouge">transition: background-color 1s;</code> has no effect if the <code class="language-plaintext highlighter-rouge">background-color</code> value does not change.</p>
+
+<p>Additionally, <strong>not all CSS properties and values can be animated.</strong> MDN provides a <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties">list of animatable properties</a><span class="emoji text-smaller" title="Following and reading this link is optional."><span class="u-sr-only">Following and reading this link is optional.</span>✳️</span>
+ which may help you out if your transitions are not working as expected.</p>
+
+<!-- CSS Transition 1 -->
+<div class="quiz-wrapper">
+  <header class="quiz-header">
+    <h2 class="quiz-heading">Share What You've Learned</h2>
+    <div class="quiz-actions-wrapper">
+      <button type="button" class="u-button-reset u-link-reset quiz-action js-quiz-toggle" aria-controls="KWNGQ3Z"><?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 24 24" role="img" xmlns="http://www.w3.org/2000/svg">
+  <title>Collapse this content</title>
+  <path d="M23 24H1a1 1 0 01-1-1V1a1 1 0 011-1h22a1 1 0 110 2H2v20h20V5.19a1 1 0 112 0V23a1 1 0 01-1 1z" />
+  <path class="icon-line" d="M18 13H6a1 1 0 110-2h12a1 1 0 110 2z" />
+  <path class="icon-line" d="M11 18V6a1 1 0 112 0v12a1 1 0 11-2 0z" />
+</svg>
+</button>
+      <a class="u-link-reset quiz-action" href="https://www.surveymonkey.com/r/KWNGQ3Z" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img">
+  <title>Open in a new window</title>
+  <path d="M23 24H1a1 1 0 01-1-1V1a1 1 0 011-1h11.95a1 1 0 010 2H2v20h20l-.01-11.35a1 1 0 012 0L24 23a1 1 0 01-1 1z" />
+  <path d="M17.5 2c-.38 0-.62-.83-.43-1.5.09-.3.25-.5.43-.5h6c.12 0 .22.08.3.2.13.09.2.2.2.3v6c0 .38-.83.63-1.5.43-.3-.09-.5-.25-.5-.43V3.2l-7.13 7.26c-.48.5-1.37.21-1.6-.51a.91.91 0 01.2-.92L20.37 2z" />
+</svg>
+</a>
+    </div>
+  </header>
+  
+  <div id="KWNGQ3Z" class="quiz-content">
+    <iframe src="https://www.surveymonkey.com/r/KWNGQ3Z" height="600" allowtransparency="true" frameborder="0" scrolling="yes"></iframe>
+  </div>
+  
+</div>
+
+<h2 id="further-resources">Further resources</h2>
+<ul>
+  <li>
+    <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transition"><code class="language-plaintext highlighter-rouge">transition</code> shorthand property</a><span class="emoji text-smaller" title="Following and reading this link is optional."><span class="u-sr-only">Following and reading this link is optional.</span>✳️</span></p>
+  </li>
+  <li>
+    <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transition-property"><code class="language-plaintext highlighter-rouge">transition-property</code></a><span class="emoji text-smaller" title="Following and reading this link is optional."><span class="u-sr-only">Following and reading this link is optional.</span>✳️</span></p>
+  </li>
+  <li>
+    <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transition-duration"><code class="language-plaintext highlighter-rouge">transition-duration</code></a><span class="emoji text-smaller" title="Following and reading this link is optional."><span class="u-sr-only">Following and reading this link is optional.</span>✳️</span></p>
+  </li>
+  <li>
+    <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transition-timing-function"><code class="language-plaintext highlighter-rouge">transition-timining-function</code></a><span class="emoji text-smaller" title="Following and reading this link is optional."><span class="u-sr-only">Following and reading this link is optional.</span>✳️</span></p>
+  </li>
+  <li>
+    <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transition-delay"><code class="language-plaintext highlighter-rouge">transition-delay</code></a><span class="emoji text-smaller" title="Following and reading this link is optional."><span class="u-sr-only">Following and reading this link is optional.</span>✳️</span></p>
+  </li>
+</ul>
+
+
+    
+    <footer class="feedback-footer">
+  
+
+  <p><strong>Make this page better.</strong></p>
+  <p>Found something that's incorrect or confusing on this page? Broken link? I want to know! <a href="https://github.com/mica-web/mica-web.github.io/issues/new?title=Feedback+for+%2Flearn%2Fcss%2Ftransition&template=page-feedback.md" target="_blank">Open an issue on GitHub</a> to tell me what's up and help me update the page.</p>
+</footer>
+
+    
+  </main>
+
+  <footer class="site-footer">
+  <div class="rule"></div>
+  <div class="content">
+    <p>&copy; Copyright 2018&ndash;<span id="js-current-year"></span> Ang&eacute;lique Weger</p>
+    <p class="top-link-wrapper"><a href="#top">Back to top</a></p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('js-current-year').appendChild(document.createTextNode(new Date().getFullYear()))
+</script>
+
+
+</div>
+
+
+  </div>
+
+  
+  
+  
+  
+
+</body>
+<!--
+/**
+ * @license
+ * MyFonts Webfont Build ID 3700915, 2019-01-18T17:07:51-0500
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Native-Regular by Fort Foundry
+ * URL: https://www.myfonts.com/fonts/fort-foundry/native/regular/
+ * Copyright: Copyright &#x00A9; 2016 by Mattox Shuler. All rights reserved.
+ * Licensed pageviews: Unlimited
+ * 
+ * Webfont: NeueAlteGrotesk-Regular by VisualWorks
+ * URL: https://www.myfonts.com/fonts/visualworks/neue-alte-grotesk/regular/
+ * Copyright: Copyright © 2017-2018 by Krzysztof Chuc. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * Webfont: NeueAlteGrotesk-Medium by VisualWorks
+ * URL: https://www.myfonts.com/fonts/visualworks/neue-alte-grotesk/medium/
+ * Copyright: Copyright © 2017-2018 by Krzysztof Chuc. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * Webfont: NeueAlteGrotesk-SemiBold by VisualWorks
+ * URL: https://www.myfonts.com/fonts/visualworks/neue-alte-grotesk/semi-bold/
+ * Copyright: Copyright © 2017-2018 by Krzysztof Chuc. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * Webfont: NeueAlteGrotesk-Bold by VisualWorks
+ * URL: https://www.myfonts.com/fonts/visualworks/neue-alte-grotesk/bold/
+ * Copyright: Copyright © 2017-2018 by Krzysztof Chuc. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * Webfont: NeueAlteGrotesk-Heavy by VisualWorks
+ * URL: https://www.myfonts.com/fonts/visualworks/neue-alte-grotesk/heavy/
+ * Copyright: Copyright © 2017-2018 by Krzysztof Chuc. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * Webfont: NeueAlteGrotesk-Black by VisualWorks
+ * URL: https://www.myfonts.com/fonts/visualworks/neue-alte-grotesk/black/
+ * Copyright: Copyright © 2017-2018 by Krzysztof Chuc. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * 
+ * License: https://www.myfonts.com/viewlicense?type=web&buildid=3700915
+ * 
+ * © 2019 MyFonts Inc
+*/
+
+-->
+
+
+</html>
