@@ -60,4 +60,7 @@ Demonstrate your understanding of basic HTML and CSS, specifically as it pertain
 ## Rubric
 [Grading Rubric Template](https://docs.google.com/spreadsheets/d/e/2PACX-1vTwhxDx3oZco1CQLtyOhTPnaZ4aAIzSXt62AbhiQLHlvYesx649B08L1XfLbVoRkCenMPsAkfFy2MfW/pubhtml?gid=1244627885&single=true){:target="_blank"}
 
+## Student Work
+[Project 1 Collection](https://glitch.com/@mica-gd-2/project-1-poem){:target="_blank"}
+
 </aside>

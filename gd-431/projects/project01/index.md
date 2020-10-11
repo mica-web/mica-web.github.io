@@ -54,4 +54,7 @@ Use your current knowledge of HTML and CSS to markup and format your resume.
 ## Rubric
 [Google Sheet example](https://docs.google.com/spreadsheets/d/e/2PACX-1vSh5-j09DkLj0Pdjwgki14cSTAYWnLl794H4yft27Fg7ijsFyz2XbBa5Od18e_z8V1KXKfzpqj2LhOT/pubhtml?gid=1244627885&single=true){:target="_blank"}
 
+## Student Work
+[Project 1 Collection](https://glitch.com/@mica-fewd/project-1-resume){:target="_blank"}
+
 </aside>
