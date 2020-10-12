@@ -4,7 +4,7 @@ category: HTML
 level: [ intro ]
 permalink: /:collection/html/:name
 code_example: true
-quiz: false
+quiz: true
 issues: true
 ---
 

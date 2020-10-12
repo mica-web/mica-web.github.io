@@ -4,7 +4,7 @@ category: CSS
 level: [ intro, advanced ]
 permalink: /:collection/css/:name
 code_example: true
-quiz: false
+quiz: true
 issues: true
 ---
 

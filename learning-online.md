@@ -1,6 +1,7 @@
 ---
 title: Learning Online
 category: Resources
+quiz: true
 issues: true
 ---
 

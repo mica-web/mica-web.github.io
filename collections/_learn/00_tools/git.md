@@ -4,7 +4,7 @@ category: Tools
 level: [ intro, advanced ]
 permalink: /:collection/tools/:name
 code_example: false
-quiz: false
+quiz: true
 issues: true
 ---
 
