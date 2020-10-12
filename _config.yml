@@ -56,6 +56,7 @@ collections:
       - 01_HTML/basics.md
       - 01_HTML/headings.md
       - 01_HTML/text.md
+      - 01_HTML/lists.md
       - 01_HTML/block-inline.md
       - 01_HTML/semantics.md
       - 01_HTML/links.md
@@ -83,7 +84,7 @@ collections:
       - 02_CSS/transform.md
       - 02_CSS/animation.md
       # - 02_CSS/brittle-layout.md
-      # - 02_CSS/floats.md
+      # - 02_CSS/float.md
       # - 02_CSS/resets.md
       - 02_CSS/organization.md
       - 02_CSS/media-queries.md
