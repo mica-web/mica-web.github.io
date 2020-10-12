@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="ie=edge" http-equiv="X-UA-Compatible">
+  <meta name="author" content="Angelique Weger" />
+  <meta name="Description" content="Curriculum, schedule and resources for web design.">
+  <link href="/css/style.css" rel="stylesheet">
+  
+  <link href="/css/syntax.css" rel="stylesheet">
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+  <link rel="manifest" href="/favicons/site.webmanifest">
+  <link rel="shortcut icon" href="/favicons/favicon.ico">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-config" content="/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#9ff2c0">
+  <title>Animation | Learning Web Design</title>
+</head>
+
+
+<body>
+  <div class="site-wrapper">
+
+    <header id="top" class="site-header">
+  <h2 class="u-m0 u-clearfix heading">
+    <a href="https://mica-web.github.io/" class="u-block u-clearfix" title="Return to homepage" >
+      <span class="heading--background">Learning</span>
+      <span class="heading--foreground">Web Design</span>
+    </a>
+  </h2>
+</header>
+
+
+<div class="content-wrapper ">
+
+  
+
+  <div class="top-nav">
+    <ul class="u-list-reset breadcrumb-wrapper">
+  <li class="u-inline-block breadcrumb"><a href="https://mica-web.github.io">Home</a></li>
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+  <li class="u-inline-block breadcrumb">
+    <a href="/learn">
+      learn
+    </a>
+  </li>
+  
+
+  
+
+  
+
+  
+
+  
+  <li class="u-inline-block breadcrumb">
+    <a href="/learn/css">
+      css
+    </a>
+  </li>
+  
+
+  
+
+  
+
+  
+
+  
+  <li class="u-inline-block breadcrumb">animation</li>
+  
+
+  
+
+</ul>
+
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p class="text-faded reading-est">2 min read</p>
+
+    
+    
+  </div>
+
+  
+
+  <main>
+    
+    
+<h1 id="animation">Animation</h1>
+
+<p class="callout"><strong>This entire section is optional.</strong> If you are interested in learning the basics of CSS animation, feel free to dive in, but it is not required for this course or any of your projects.</p>
+
+<h2 id="basics">Basics</h2>
+<p>Using animation in CSS requires two steps:</p>
+
+<ol>
+  <li>First, you must apply a set of animation properties or the <code class="language-plaintext highlighter-rouge">animation</code> shorthand, including a name for your animation.</li>
+  <li>Then, you need to breakdown the animation sequence using CSS keyframes.</li>
+</ol>
+
+<p>Let’s look at a very basic example of a CSS animation.</p>
+
+<div class="glitch-embed-wrap" style="height: 260px; width: 100%;">
+  <iframe src="https://glitch.com/embed/#!/embed/css-animation-basics-1?path=styles.css&amp;previewSize=100&amp;sidebarCollapsed=true" title="css-animation-basics-1 on Glitch" allow="geolocation; microphone; camera; midi; vr; encrypted-media" style="height: 100%; width: 100%; border: 0;">
+  </iframe>
+</div>
+
+<p>The CSS for each step to create this animation is detailed below.</p>
+
+<h3 id="step-one">Step one</h3>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">div</span> <span class="p">{</span>
+  <span class="c">/* The basic styles for the element */</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="m">#A2F1C1</span><span class="p">;</span>
+  <span class="nl">height</span><span class="p">:</span> <span class="m">60px</span><span class="p">;</span>
+  <span class="c">/* Animation specific styles */</span>
+  <span class="nl">animation</span><span class="p">:</span> <span class="n">slideIn</span> <span class="m">4s</span> <span class="n">linear</span> <span class="n">infinite</span><span class="p">;</span>
+  <span class="nl">transform-origin</span><span class="p">:</span> <span class="nb">left</span> <span class="nb">center</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>The <code class="language-plaintext highlighter-rouge">animation</code> <b>shorthand property</b> here includes:</p>
+<ul>
+  <li>the <code class="language-plaintext highlighter-rouge">animation-name</code> of <code class="language-plaintext highlighter-rouge">slideIn</code>; this is a custom name that you create</li>
+  <li>the <code class="language-plaintext highlighter-rouge">animation-duration</code> – in this case, 4 seconds</li>
+  <li>the <code class="language-plaintext highlighter-rouge">animation-timing-function</code> of <code class="language-plaintext highlighter-rouge">linear</code></li>
+  <li>the <code class="language-plaintext highlighter-rouge">animation-iteration-count</code> of <code class="language-plaintext highlighter-rouge">infinite</code>; the default for animations is <code class="language-plaintext highlighter-rouge">1</code> unless you use this property or set this value in your shorthand</li>
+</ul>
+
+<p>Additionally, since this animation uses CSS transformations, an origin for the transformation is set using the <code class="language-plaintext highlighter-rouge">transform-origin</code> property.</p>
+
+<h3 id="step-two">Step two</h3>
+<p>The above code has no effect unless an <code class="language-plaintext highlighter-rouge">@keyframes</code> rule with a matching name exists. In this case, that code looks like this:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@keyframes</span> <span class="n">slideIn</span> <span class="p">{</span>
+  <span class="nt">from</span> <span class="p">{</span>
+    <span class="nl">transform</span><span class="p">:</span> <span class="n">scaleX</span><span class="p">(</span><span class="m">0</span><span class="p">);</span>
+  <span class="p">}</span>
+
+  <span class="nt">to</span> <span class="p">{</span>
+    <span class="nl">transform</span><span class="p">:</span> <span class="n">scaleX</span><span class="p">(</span><span class="m">1</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Two important things to note about <code class="language-plaintext highlighter-rouge">keyframes</code>:</p>
+
+<ul>
+  <li>This code is written <strong>without</strong> a selector because the <code class="language-plaintext highlighter-rouge">slideIn</code> animation could be used by multiple HTML elements.</li>
+  <li>Just like <a href="/learn/css/media-queries">media queries</a>, you want to write valid CSS inside your <code class="language-plaintext highlighter-rouge">keyframes</code>.</li>
+</ul>
+
+<h2 id="accessibility-and-animations">Accessibility and animations</h2>
+<p>Some individuals have vestibular disorders and may experience nausea or other signs of physical discomfort when web pages include animations. Users can specify in their operating system/device settings if they prefer to experience things with less/reduced motion and, since you don’t want your designs to make someone physically ill, you should always write your CSS to respect those settings.</p>
+
+<p>To do this, you can use a media query and the <code class="language-plaintext highlighter-rouge">prefers-reduced-motion</code> feature. For the demo above, it looks like this:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@media</span> <span class="p">(</span><span class="n">prefers-reduced-motion</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nt">div</span> <span class="p">{</span>
+    <span class="nl">animation</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p class="callout">For roughly the last year, browsers have been supporting this media feature; see <a href="https://caniuse.com/prefers-reduced-motion">Can I Use</a> for specific details.</p>
+
+<h2 id="more-resources">More resources</h2>
+<ul>
+  <li>Eka’s <a href="https://dev.to/ekafyi/blinking-dots-a-quick-look-at-css-animation-31gf">demo of a basic CSS animation</a></li>
+  <li>Flavio’s <a href="https://flaviocopes.com/css-animations/">CSS Animations Tutorial</a></li>
+  <li><a href="https://animate.style/">Animate.css</a> is a CSS library of specific animation styles
+    <ul>
+      <li>Note that if you want to use this in your projects, you should follow the instructions for using their CDN</li>
+    </ul>
+  </li>
+  <li>MDN docs on <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations">using CSS animations</a></li>
+</ul>
+
+    
+    <footer class="feedback-footer">
+  
+
+  <p><strong>Make this page better.</strong></p>
+  <p>Found something that's incorrect or confusing on this page? Broken link? I want to know! <a href="https://github.com/mica-web/mica-web.github.io/issues/new?title=Feedback+for+%2Flearn%2Fcss%2Fanimation&template=page-feedback.md" target="_blank">Open an issue on GitHub</a> to tell me what's up and help me update the page.</p>
+</footer>
+
+    
+  </main>
+
+  <footer class="site-footer">
+  <div class="rule"></div>
+  <div class="content">
+    <p>&copy; Copyright 2018&ndash;<span id="js-current-year"></span> Ang&eacute;lique Weger</p>
+    <p class="top-link-wrapper"><a href="#top">Back to top</a></p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('js-current-year').appendChild(document.createTextNode(new Date().getFullYear()))
+</script>
+
+
+</div>
+
+
+  </div>
+
+  
+  
+  
+  
+
+</body>
+<!--
+/**
+ * @license
+ * MyFonts Webfont Build ID 3700915, 2019-01-18T17:07:51-0500
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Native-Regular by Fort Foundry
+ * URL: https://www.myfonts.com/fonts/fort-foundry/native/regular/
+ * Copyright: Copyright &#x00A9; 2016 by Mattox Shuler. All rights reserved.
+ * Licensed pageviews: Unlimited
+ * 
+ * Webfont: NeueAlteGrotesk-Regular by VisualWorks
+ * URL: https://www.myfonts.com/fonts/visualworks/neue-alte-grotesk/regular/
+ * Copyright: Copyright © 2017-2018 by Krzysztof Chuc. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * Webfont: NeueAlteGrotesk-Medium by VisualWorks
+ * URL: https://www.myfonts.com/fonts/visualworks/neue-alte-grotesk/medium/
+ * Copyright: Copyright © 2017-2018 by Krzysztof Chuc. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * Webfont: NeueAlteGrotesk-SemiBold by VisualWorks
+ * URL: https://www.myfonts.com/fonts/visualworks/neue-alte-grotesk/semi-bold/
+ * Copyright: Copyright © 2017-2018 by Krzysztof Chuc. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * Webfont: NeueAlteGrotesk-Bold by VisualWorks
+ * URL: https://www.myfonts.com/fonts/visualworks/neue-alte-grotesk/bold/
+ * Copyright: Copyright © 2017-2018 by Krzysztof Chuc. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * Webfont: NeueAlteGrotesk-Heavy by VisualWorks
+ * URL: https://www.myfonts.com/fonts/visualworks/neue-alte-grotesk/heavy/
+ * Copyright: Copyright © 2017-2018 by Krzysztof Chuc. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * Webfont: NeueAlteGrotesk-Black by VisualWorks
+ * URL: https://www.myfonts.com/fonts/visualworks/neue-alte-grotesk/black/
+ * Copyright: Copyright © 2017-2018 by Krzysztof Chuc. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * 
+ * License: https://www.myfonts.com/viewlicense?type=web&buildid=3700915
+ * 
+ * © 2019 MyFonts Inc
+*/
+
+-->
+
+
+</html>
