@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="ie=edge" http-equiv="X-UA-Compatible">
+  <meta name="author" content="Angelique Weger" />
+  <meta name="Description" content="Curriculum, schedule and resources for web design.">
+  <link href="/css/style.css" rel="stylesheet">
+  
+  <link href="/css/syntax.css" rel="stylesheet">
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+  <link rel="manifest" href="/favicons/site.webmanifest">
+  <link rel="shortcut icon" href="/favicons/favicon.ico">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-config" content="/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#9ff2c0">
+  <title>Lists | Learning Web Design</title>
+</head>
+
+
+<body>
+  <div class="site-wrapper">
+
+    <header id="top" class="site-header">
+  <h2 class="u-m0 u-clearfix heading">
+    <a href="https://mica-web.github.io/" class="u-block u-clearfix" title="Return to homepage" >
+      <span class="heading--background">Learning</span>
+      <span class="heading--foreground">Web Design</span>
+    </a>
+  </h2>
+</header>
+
+
+<div class="content-wrapper ">
+
+  
+
+  <div class="top-nav">
+    <ul class="u-list-reset breadcrumb-wrapper">
+  <li class="u-inline-block breadcrumb"><a href="https://mica-web.github.io">Home</a></li>
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+  <li class="u-inline-block breadcrumb">
+    <a href="/learn">
+      learn
+    </a>
+  </li>
+  
+
+  
+
+  
+
+  
+
+  
+  <li class="u-inline-block breadcrumb">
+    <a href="/learn/html">
+      html
+    </a>
+  </li>
+  
+
+  
+
+  
+
+  
+
+  
+  <li class="u-inline-block breadcrumb">lists</li>
+  
+
+  
+
+</ul>
+
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p class="text-faded reading-est">2 min read</p>
+
+    
+    
+  </div>
+
+  
+
+  <main>
+    
+    <h1 id="lists">Lists</h1>
+
+<p>In HTML, you can create two different types of lists: ordered lists and unordered lists. The list is created by nesting list elements (<code class="language-plaintext highlighter-rouge">li</code>) inside a <b>parent element</b> that identifies the type of list relevant for your content.</p>
+
+<p>An <b>ordered list</b> should be used for a list of items where the order of elements is <em>meaningful</em>, like the steps of a recipe; in an ordered list, the list elements (<code class="language-plaintext highlighter-rouge">li</code>) are wrapped in an <code class="language-plaintext highlighter-rouge">ol</code> element:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;ol&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Mix sponge ingredients to a method of your choice.<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Divide between two tins.<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Bake for 25 minutes at 180° C.<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Add jam in between the layers and assemble.<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ol&gt;</span>
+</code></pre></div></div>
+
+<p>This would result in example one below:</p>
+<div class="glitch-embed-wrap" style="height: 420px; width: 100%;">
+  <iframe src="https://glitch.com/embed/#!/embed/html-lists?path=index.html&amp;previewSize=100&amp;sidebarCollapsed=true" title="html-lists on Glitch" allow="geolocation; microphone; camera; midi; vr; encrypted-media" style="height: 100%; width: 100%; border: 0;">
+  </iframe>
+</div>
+
+<p>Any list where the order is <em>not</em> relevant should be wrapped in an <b>unordered list</b> (<code class="language-plaintext highlighter-rouge">ul</code>), like example two above:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;ul&gt;</span>
+  <span class="nt">&lt;li&gt;</span>4 eggs<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>225g butter<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>225g caster sugar<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>225g self-raising flour<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>2tsp baking powder<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>450g raspberry jam<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+</code></pre></div></div>
+
+<p>As you can see, the markup is essentially the same; you only need to change the parent element to switch between an ordered (<code class="language-plaintext highlighter-rouge">ol</code>) or unordered (<code class="language-plaintext highlighter-rouge">ul</code>) list.</p>
+
+<p>In general, unordered lists are more common, but it is helpful to known and understand when an ordered list might be relevant. Common places where lists are used in web design include:</p>
+
+<ul>
+  <li>site navigation
+    <ul>
+      <li>including breadcrumbs, like the navigation at the top of this page</li>
+    </ul>
+  </li>
+  <li>lists of social media accounts</li>
+  <li>lists in your content, like this <span class="emoji">☑️</span></li>
+</ul>
+
+<p class="callout">The actual look of either type of list – including what the list markers are – can be modified by using CSS. As a result, you should <em>always</em> use the semantically appropriate list type, even if you don’t want the final result to have numbers or bullets in your design.</p>
+
+<p>Both <code class="language-plaintext highlighter-rouge">ul</code> and <code class="language-plaintext highlighter-rouge">li</code> are block level elements unless otherwise modified using CSS.</p>
+
+<h2 id="important-notes">Important notes</h2>
+<p>It is <strong>totally valid</strong> and appropriate for <code class="language-plaintext highlighter-rouge">li</code> elements to contain other nested CSS, such as links, paragraphs, images, headings, etc.</p>
+
+<p>Their parent <code class="language-plaintext highlighter-rouge">ul</code> or <code class="language-plaintext highlighter-rouge">ol</code> elements, however, should <em>only</em> contain <code class="language-plaintext highlighter-rouge">li</code> elements as direct children.</p>
+
+<p><span class="emoji">😺</span> Do this</p>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;ul&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>A valid link in a list item!<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;img</span> <span class="na">src=</span><span class="s">"#"</span> <span class="na">alt=</span><span class="s">"A valid image in a list item!"</span><span class="nt">&gt;&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+</code></pre></div></div>
+
+<p><span class="emoji">❌</span> Not this</p>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;ul&gt;</span>
+  <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"#"</span> <span class="na">alt=</span><span class="s">"This is invalid!"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;li&gt;</span>List item<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>List item<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>List item<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+</code></pre></div></div>
+
+<p>This example is <strong>invalid</strong> because the <code class="language-plaintext highlighter-rouge">img</code> element is a direct child of the <code class="language-plaintext highlighter-rouge">ul</code> and <strong>not</strong> nested inside an <code class="language-plaintext highlighter-rouge">li</code> element.</p>
+
+<!-- HTML Lists 1 -->
+<div class="quiz-wrapper">
+  <header class="quiz-header">
+    <h2 class="quiz-heading">Share What You've Learned</h2>
+    <div class="quiz-actions-wrapper">
+      <button type="button" class="u-button-reset u-link-reset quiz-action js-quiz-toggle" aria-controls="27KP57L"><?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 24 24" role="img" xmlns="http://www.w3.org/2000/svg">
+  <title>Collapse this content</title>
+  <path d="M23 24H1a1 1 0 01-1-1V1a1 1 0 011-1h22a1 1 0 110 2H2v20h20V5.19a1 1 0 112 0V23a1 1 0 01-1 1z" />
+  <path class="icon-line" d="M18 13H6a1 1 0 110-2h12a1 1 0 110 2z" />
+  <path class="icon-line" d="M11 18V6a1 1 0 112 0v12a1 1 0 11-2 0z" />
+</svg>
+</button>
+      <a class="u-link-reset quiz-action" href="https://www.surveymonkey.com/r/27KP57L" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img">
+  <title>Open in a new window</title>
+  <path d="M23 24H1a1 1 0 01-1-1V1a1 1 0 011-1h11.95a1 1 0 010 2H2v20h20l-.01-11.35a1 1 0 012 0L24 23a1 1 0 01-1 1z" />
+  <path d="M17.5 2c-.38 0-.62-.83-.43-1.5.09-.3.25-.5.43-.5h6c.12 0 .22.08.3.2.13.09.2.2.2.3v6c0 .38-.83.63-1.5.43-.3-.09-.5-.25-.5-.43V3.2l-7.13 7.26c-.48.5-1.37.21-1.6-.51a.91.91 0 01.2-.92L20.37 2z" />
+</svg>
+</a>
+    </div>
+  </header>
+  
+  <div id="27KP57L" class="quiz-content">
+    <iframe src="https://www.surveymonkey.com/r/27KP57L" height="600" allowtransparency="true" frameborder="0" scrolling="yes"></iframe>
+  </div>
+  
+</div>
+
+
+    
+    <footer class="feedback-footer">
+  
+
+  <p><strong>Make this page better.</strong></p>
+  <p>Found something that's incorrect or confusing on this page? Broken link? I want to know! <a href="https://github.com/mica-web/mica-web.github.io/issues/new?title=Feedback+for+%2Flearn%2Fhtml%2Flists&template=page-feedback.md" target="_blank">Open an issue on GitHub</a> to tell me what's up and help me update the page.</p>
+</footer>
+
+    
+  </main>
+
+  <footer class="site-footer">
+  <div class="rule"></div>
+  <div class="content">
+    <p>&copy; Copyright 2018&ndash;<span id="js-current-year"></span> Ang&eacute;lique Weger</p>
+    <p class="top-link-wrapper"><a href="#top">Back to top</a></p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('js-current-year').appendChild(document.createTextNode(new Date().getFullYear()))
+</script>
+
+
+</div>
+
+
+  </div>
+
+  
+  
+  
+  
+  <script src="/js/quizToggle.js" async defer></script>
+  
+
+</body>
+<!--
+/**
+ * @license
+ * MyFonts Webfont Build ID 3700915, 2019-01-18T17:07:51-0500
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Native-Regular by Fort Foundry
+ * URL: https://www.myfonts.com/fonts/fort-foundry/native/regular/
+ * Copyright: Copyright &#x00A9; 2016 by Mattox Shuler. All rights reserved.
+ * Licensed pageviews: Unlimited
+ * 
+ * Webfont: NeueAlteGrotesk-Regular by VisualWorks
+ * URL: https://www.myfonts.com/fonts/visualworks/neue-alte-grotesk/regular/
+ * Copyright: Copyright © 2017-2018 by Krzysztof Chuc. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * Webfont: NeueAlteGrotesk-Medium by VisualWorks
+ * URL: https://www.myfonts.com/fonts/visualworks/neue-alte-grotesk/medium/
+ * Copyright: Copyright © 2017-2018 by Krzysztof Chuc. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * Webfont: NeueAlteGrotesk-SemiBold by VisualWorks
+ * URL: https://www.myfonts.com/fonts/visualworks/neue-alte-grotesk/semi-bold/
+ * Copyright: Copyright © 2017-2018 by Krzysztof Chuc. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * Webfont: NeueAlteGrotesk-Bold by VisualWorks
+ * URL: https://www.myfonts.com/fonts/visualworks/neue-alte-grotesk/bold/
+ * Copyright: Copyright © 2017-2018 by Krzysztof Chuc. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * Webfont: NeueAlteGrotesk-Heavy by VisualWorks
+ * URL: https://www.myfonts.com/fonts/visualworks/neue-alte-grotesk/heavy/
+ * Copyright: Copyright © 2017-2018 by Krzysztof Chuc. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * Webfont: NeueAlteGrotesk-Black by VisualWorks
+ * URL: https://www.myfonts.com/fonts/visualworks/neue-alte-grotesk/black/
+ * Copyright: Copyright © 2017-2018 by Krzysztof Chuc. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * 
+ * License: https://www.myfonts.com/viewlicense?type=web&buildid=3700915
+ * 
+ * © 2019 MyFonts Inc
+*/
+
+-->
+
+
+</html>
