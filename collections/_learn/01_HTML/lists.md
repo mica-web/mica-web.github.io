@@ -8,6 +8,11 @@ quiz: true
 issues: true
 ---
 
+<style>
+  #nested-list {border: 4px solid transparent; }
+  #nested-list:target { border-color: #F6F930; }
+</style>
+
 # {{ page.topic }}
 
 In HTML, you can create two different types of lists: ordered lists and unordered lists. The list is created by nesting list elements (`li`) inside a <b>parent element</b> that identifies the type of list relevant for your content.
@@ -50,6 +55,7 @@ As you can see, the markup is essentially the same; you only need to change the 
 
 In general, unordered lists are more common, but it is helpful to known and understand when an ordered list might be relevant. Common places where lists are used in web design include:
 
+{: #nested-list }
 - site navigation
   - including breadcrumbs, like the navigation at the top of this page
 - lists of social media accounts
@@ -84,6 +90,22 @@ Their parent `ul` or `ol` elements, however, should _only_ contain `li` elements
 ```
 
 This example is **invalid** because the `img` element is a direct child of the `ul` and **not** nested inside an `li` element.
+
+You can even nest lists _inside of lists_, which is exactly what I did above when I made [a list of all the ways lists can be used](#nested-list). The HTML for that looks like this:
+
+```html
+<ul>
+  <li>site navigation
+    <ul>
+      <li>including breadcrumbs, like the navigation at the top of this page</li>
+    </ul>
+  </li>
+  <li>lists of social media accounts</li>
+  <li>lists in your content, like this</li>
+</ul>
+```
+
+Note that the `li` for "site navigation" wraps _entirely around_ that text _and_ the following list.
 
 <!-- HTML Lists 1 -->
 {% include quiz.html
