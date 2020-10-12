@@ -115,7 +115,12 @@
 
   <main>
     
-    <h1 id="lists">Lists</h1>
+    <style>
+  #nested-list {border: 4px solid transparent; }
+  #nested-list:target { border-color: #F6F930; }
+</style>
+
+<h1 id="lists">Lists</h1>
 
 <p>In HTML, you can create two different types of lists: ordered lists and unordered lists. The list is created by nesting list elements (<code class="language-plaintext highlighter-rouge">li</code>) inside a <b>parent element</b> that identifies the type of list relevant for your content.</p>
 
@@ -151,7 +156,7 @@
 
 <p>In general, unordered lists are more common, but it is helpful to known and understand when an ordered list might be relevant. Common places where lists are used in web design include:</p>
 
-<ul>
+<ul id="nested-list">
   <li>site navigation
     <ul>
       <li>including breadcrumbs, like the navigation at the top of this page</li>
@@ -187,6 +192,21 @@
 </code></pre></div></div>
 
 <p>This example is <strong>invalid</strong> because the <code class="language-plaintext highlighter-rouge">img</code> element is a direct child of the <code class="language-plaintext highlighter-rouge">ul</code> and <strong>not</strong> nested inside an <code class="language-plaintext highlighter-rouge">li</code> element.</p>
+
+<p>You can even nest lists <em>inside of lists</em>, which is exactly what I did above when I made <a href="#nested-list">a list of all the ways lists can be used</a>. The HTML for that looks like this:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;ul&gt;</span>
+  <span class="nt">&lt;li&gt;</span>site navigation
+    <span class="nt">&lt;ul&gt;</span>
+      <span class="nt">&lt;li&gt;</span>including breadcrumbs, like the navigation at the top of this page<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+  <span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>lists of social media accounts<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>lists in your content, like this<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+</code></pre></div></div>
+
+<p>Note that the <code class="language-plaintext highlighter-rouge">li</code> for “site navigation” wraps <em>entirely around</em> that text <em>and</em> the following list.</p>
 
 <!-- HTML Lists 1 -->
 <div class="quiz-wrapper">
