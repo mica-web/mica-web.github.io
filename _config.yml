@@ -53,6 +53,7 @@ collections:
       - 00_tools/git-cheatsheet.md
       # - 00_tools/internet.md
       - 00_tools/screen-readers.md
+      - 00_tools/ssg.md
       - 01_HTML/basics.md
       - 01_HTML/headings.md
       - 01_HTML/text.md
