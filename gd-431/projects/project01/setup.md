@@ -1,8 +1,8 @@
 ---
-title: Project 1 Setup
+title: Setup
 ---
 
-# {{page.title }}
+# Project 1 {{page.title }}
 
 <div class="loom-embed-wrapper" style="position: relative; padding-bottom: 62.5%; height: 0;"><iframe src="https://www.loom.com/embed/2355cd4eca6c485ebf2eefae7c9fd43b" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 

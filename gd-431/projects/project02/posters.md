@@ -1,9 +1,8 @@
 ---
-title: Poster examples
-course: gd-431
+title: Poster Examples
 ---
 
-# {{page.title }}
+# Project 2 {{page.title }}
 
 - [Globe @ MICA](http://globeatmica.com/type/posters/)
 - Swiss Poster Collection @ CMU, especially these categories:

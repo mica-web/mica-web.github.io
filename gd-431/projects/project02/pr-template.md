@@ -1,8 +1,8 @@
 ---
-title: Project 2 PR Template
+title: PR Template
 ---
 
-# {{page.title }}
+# Project 2 {{page.title }}
 
 Before submitting your PR, please update its title (it often defaults to one of your commit messages) and, in the description, include the link to your corresponding project on Glitch.
 

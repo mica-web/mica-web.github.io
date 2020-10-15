@@ -1,8 +1,8 @@
 ---
-title: Project 2 Setup
+title: Setup
 ---
 
-# {{page.title }}
+# Project 2 {{page.title }}
 
 1. Remix [this Glitch project](https://glitch.com/edit/#!/mica-sass-starter).
 1. Create a **new** GitHub repo named "project2".
