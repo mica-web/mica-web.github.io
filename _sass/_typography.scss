@@ -113,11 +113,15 @@ dt {
 
   &-push {
     &--top {
-      margin-top: $spacing-lg;
+      margin-top: $spacing-lg !important;
+
+      &--md {
+        margin-top: $spacing-md !important;
+      }
     }
 
     &--bottom {
-      margin-bottom: $spacing-lg;
+      margin-bottom: $spacing-lg !important;
     }
   }
 
