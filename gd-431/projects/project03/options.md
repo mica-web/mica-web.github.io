@@ -1,56 +1,50 @@
 ---
-title: UX Evaluation Options
+title: Evaluation Options
 course: gd-431
 ---
 
-Potential Sites to Evaluate
-===========================
+# Project 3 {{ page.title }}
 
-Nonprofits & Services
----------------------
+* TOC
+{:toc}
+
+## Nonprofits & Services
+- [Black Mental Health Alliance](https://blackmentalhealth.com/)
+- [Baltimore City 311](https://balt311.baltimorecity.gov/citizen/servicetypes)
 - [The Book Thing](http://bookthing.org/)
+- [Charm City Circulator](https://transportation.baltimorecity.gov/charm-city-circulator)
 - [Expunge Maryland](http://www.expungemaryland.org/)
 - [FORCE: Upsetting Rape Culture](http://www.upsettingrapeculture.com/)
 - [Maryland Volunteer Lawyers for the Arts](https://mdvla.org/)
+- [Mr Trashwheel](https://www.mrtrashwheel.com/)
 - [Second Chance](https://www.secondchanceinc.org/)
-- [Seven Foot Knoll Lighthouse](http://www.historicships.org/knoll-lighthouse.html)
 - [Station North Tool Library](https://www.stationnorthtoollibrary.org/)
 
-
-Museums
--------
+## Museums
 - [American Visionary Art Museum](http://www.avam.org/)
 - [Baltimore Museum of Industry](http://www.thebmi.org/)
 - [The Computer Museum](https://museum.syssrc.com/)
-- [Jewish Museum of Maryland](https://thejewishmuseum.org/)
+- [Maryland Art Place](http://www.mdartplace.org/)
 
-
-City Services
--------------
-- [Baltimore City 311](https://balt311.baltimorecity.gov/citizen/servicetypes)
-- [Charm City Circulator](http://www.charmcitycirculator.com/)
-- [Mr Trashwheel](http://baltimorewaterfront.com/healthy-harbor/water-wheel/)
-
-
-Retail/Ecommerce
-----------------
+## Retail/Ecommerce
 - [The Children's Bookstore](http://thecbstore.com/)
 - [Dollhouse Boutique](http://shopdollhouseboutique.com/)
-- [Trohv](https://www.trohvshop.com/)
+- [Greedy Reads](https://www.greedyreads.com/)
+- [Root & Ore](https://www.rootandore.com/)
 
-
-Restaurants
------------
+## Restaurants
 - [Blacksauce Kitchen](http://www.blacksaucekitchen.com/)
 - [Emma's Tea Spot](https://emmasteaspot.com/)
 - [Land of Kush](http://landofkush.com/)
-- [Lost City Diner](http://lostcitydiner.com/)
+- [Terra Cafe](https://www.terracafebmore.com/)
 - [Tortilleria Sinaloa](http://www.tortilleria-sinaloa.com/)
 
-
-Misc
-----
+## Misc
 - [Baltimore Kinetic Sculpture Race](https://kineticbaltimore.com/default.asp)
+- [Che Yoga](https://www.cheyoga.org/)
 - [Courting Art](http://courtingartbaltimore.com)
+- [Maryland Teacher Tutors](https://www.marylandteachertutors.com/)
 - [Morton Street Dance Center](https://www.mortonstreetdance.com/)
-- [Zen Happens Massage & Wellness](https://www.zenhappensincharmcity.com/)
+
+{: .text-push--top }
+[&#x21b5; back to project page]({% link gd-431/projects/project03/index.md %})
