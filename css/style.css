@@ -138,9 +138,11 @@ h3, dt { font-family: NeueAlteGrotesk-Semibold, "Lucida Grande", "Lucida Sans Un
 
 .text-larger { font-size: 180%; }
 
-.text-push--top { margin-top: 40px; }
+.text-push--top { margin-top: 40px !important; }
 
-.text-push--bottom { margin-bottom: 40px; }
+.text-push--top--md { margin-top: 16px !important; }
+
+.text-push--bottom { margin-bottom: 40px !important; }
 
 .text-faded, .citation { opacity: 0.7; }
 
