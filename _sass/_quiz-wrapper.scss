@@ -1,6 +1,5 @@
 .quiz-wrapper {
-  background-color: white;
-  border: 1px solid $color-grey;
+  border: 2px solid $color-slate;
   margin-top: $spacing-lg;
   margin-bottom: $spacing-xl;
   position: relative;
@@ -9,41 +8,57 @@
   @media (min-width: 620px) {
     margin-right: $spacing-lg;
     margin-left: $spacing-lg;
+
+    &::after {
+      border-right: 8px solid rgba($color-yellow, 0.35);
+      border-bottom: 8px solid rgba($color-yellow, 0.35);
+      content: '';
+      position: absolute;
+      pointer-events: none;
+      right: -11px;
+      bottom: -11px;
+      height: 100%;
+      width: 100%;
+    }
   }
 }
 
 .quiz-header {
-  background-image: linear-gradient(to top, transparent, white 16%);
-  padding-bottom: $spacing-lg;
-  position: absolute;
-  top: (-$spacing-xs);
-  left: $spacing-sm;
-  width: calc(100% - 24px); // $spacing-sm * 2
-  z-index: 1;
+  background-color: $color-slate;
+  padding: $spacing-sm $spacing-xs;
 
-  @media (min-width: 380px) {
+  @media (max-width: 419px) {
+    padding-bottom: $spacing-lg;
+  }
+
+  @media (min-width: 420px) {
     align-items: center;
-    background-image: linear-gradient(to top, transparent, white 35%);
     display: flex;
     justify-content: space-between;
-    top: -18px;
   }
 }
 
 .quiz-heading {
+  @include font-grotesk();
+  color: $color-grey;
+  letter-spacing: 1px;
   margin: 0;
-  padding-right: $spacing-xs;
-  padding-left: $spacing-xs;
+  position: relative;
+  text-align: center;
+
+  &::before {
+    content: '💡';
+    font-size: 150%;
+    margin-right: $spacing-xs;
+    vertical-align: middle;
+  }
 }
 
 .quiz-actions-wrapper {
-  padding-top: $spacing-xs;
-  padding-right: $spacing-xs;
-
-  @media (max-width: 379px) {
+  @media (max-width: 419px) {
     position: absolute;
-    top: $spacing-sm;
-    right: (-$spacing-xs);
+    top: $spacing-lg;
+    right: 4px;
   }
 }
 
@@ -73,18 +88,16 @@
   &:hover,
   &:focus {
     svg {
-      fill: $color-slate;
+      fill: $color-mint;
     }
   }
 }
 
 .quiz-hint {
   background-image: linear-gradient(to top, transparent, white 35%);
-  padding-right: $spacing-lg;
-  padding-left: $spacing-lg;
-  padding-bottom: $spacing-xl;
+  padding: $spacing-sm $spacing-lg $spacing-xl;
+  pointer-events: none;
   position: relative;
-  top: 40px;
   z-index: 1;
 
   &::after {
@@ -101,10 +114,11 @@
 }
 
 .quiz-content {
+
   .quiz-hint+& {
-    margin-bottom: (-$spacing-lg);
+    top: (-$spacing-xl);
+    margin-bottom: (-$spacing-xl);
     position: relative;
-    top: (-$spacing-lg);
   }
 
   iframe {

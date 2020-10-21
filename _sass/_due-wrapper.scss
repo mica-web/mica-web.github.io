@@ -1,0 +1,23 @@
+.due-wrapper {
+  background-color: white;
+  border: 2px solid $color-grey;
+  margin: $spacing-lg 0;
+  padding: $spacing-lg;
+  position: relative;
+  width: max-content;
+
+  &::after {
+    border: 2px solid $color-mint;
+    content: '';
+    pointer-events: none;
+    position: absolute;
+    top: -$spacing-md;
+    left: -$spacing-md;
+    height: 100%;
+    width: 100%;
+  }
+
+  ol {
+    margin-top: $spacing-md;
+  }
+}
