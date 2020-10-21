@@ -85,7 +85,7 @@ collections:
       - 02_CSS/transform.md
       - 02_CSS/animation.md
       # - 02_CSS/brittle-layout.md
-      # - 02_CSS/float.md
+      - 02_CSS/float.md
       # - 02_CSS/resets.md
       - 02_CSS/organization.md
       - 02_CSS/media-queries.md
