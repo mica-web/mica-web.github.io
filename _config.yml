@@ -98,7 +98,7 @@ collections:
       - 03_workflows/add-img-glitch.md
       - 03_workflows/branching.md
       - 03_workflows/pull-request.md
-      # - 03_workflows/merging.md
+      - 03_workflows/merging.md
       - 03_workflows/feedback.md
       # - 03_workflows/components.md
       - 03_workflows/style-tiles.md
