@@ -28,7 +28,7 @@ An <b>ordered list</b> should be used for a list of items where the order of ele
 </ol>
 ```
 
-This would result in example one below:
+This would result in Example 1 below:
 <div class="glitch-embed-wrap" style="height: 420px; width: 100%;">
   <iframe
     src="https://glitch.com/embed/#!/embed/html-lists?path=index.html&previewSize=100&sidebarCollapsed=true"
@@ -38,7 +38,7 @@ This would result in example one below:
   </iframe>
 </div>
 
-Any list where the order is _not_ relevant should be wrapped in an <b>unordered list</b> (`ul`), like example two above:
+Any list where the order is _not_ relevant should be wrapped in an <b>unordered list</b> (`ul`), like Example 2 above:
 
 ```html
 <ul>
