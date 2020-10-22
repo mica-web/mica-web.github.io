@@ -74,6 +74,9 @@ You will design a card component and then recreate that design using your curren
 [Google Sheet example](https://docs.google.com/spreadsheets/d/e/2PACX-1vTwhxDx3oZco1CQLtyOhTPnaZ4aAIzSXt62AbhiQLHlvYesx649B08L1XfLbVoRkCenMPsAkfFy2MfW/pubhtml?gid=738604712&single=true){:target="_blank"}
 
 ## Git Cheatsheet
-Need a reminder of [git commands?]({% link _learn/00_tools/git-cheatsheet.md %}) 
+Need a reminder of [git commands?]({% link _learn/00_tools/git-cheatsheet.md %})
+
+## Student Work
+[Project 2 Collection](https://glitch.com/@mica-gd-2/project-2-card-component){:target="_blank"}
 
 </aside>
