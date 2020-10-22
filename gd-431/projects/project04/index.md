@@ -29,9 +29,13 @@ Redesign a site based on the findings of your stakeholder's heuristic evaluation
 
 ### Research + Planning
 1. Have a [project kickoff meeting]({% link gd-431/projects/project04/kickoff.md %}) with your stakeholder
-1. Create a priority guide for your homepage
+1. Create a priority guide for your homepage using [this template](https://docs.google.com/document/d/1czcdhW7hVtAKG7SbMrCKdGvYT6LQACzP8LibrAm1f0A/copy?usp=sharing){:target="_blank"}
   - Need a refresher on priority guides? See the [week 1 reading]({% link gd-431/01/reading.md %}).
-1. Review the priority guide with your stakeholder.
+  - Due date: 10/24 by midnight EST ([see in your timezone](https://everytimezone.com/s/6615b472){:target="_blank"})
+  - Format: Google Doc
+  - File name: **Please** use your first initial and last name (for example: `aweger`)
+  - How to submit: Add your file to the **redesign-pg** folder inside our  {% include gd431-drive.md %}
+1. Share the priority guide with your stakeholder in your shared Slack channel.
 
 ### Design
 1. Based on your priority guide, create mobile and desktop comps for your homepage.
@@ -88,8 +92,10 @@ Redesign a site based on the findings of your stakeholder's heuristic evaluation
 <dd>Project introduction</dd>
 <dt>Oct 22</dt>
 <dd>Project kickoff meeting</dd>
+<dt>Oct 23</dt>
+<dd>Priority guide due</dd>
 <dt>Oct 29</dt>
-<dd>Priority guide and comps due</dd>
+<dd>Comps due</dd>
 <dd>Design review</dd>
 <dt>Nov 05</dt>
 <dd>Project setup complete</dd>
