@@ -1,0 +1,34 @@
+variables:
+  todo: &td "@TODO"
+  p3: &p3 /gd-431/projects/project03/
+  p4: &p4 /gd-431/projects/project04/
+  tools: &tools /learn/tools/
+  html: &html /learn/html/
+  css: &css /learn/css/
+  workflows: &work /learn/workflows/
+weeks:
+  w08:
+    intro: This week, you'll begin your collaboration with your stakeholder -- learning more about collaborative tools along the way -- and will create the comps for Project 4.
+    hw: 
+      - item: "Homepage priority guide for [Project 4](!link)"
+        replace_link: *p4
+        due: 10/24 midnight EST
+        etz: https://everytimezone.com/s/6615b472
+      - item: "Homepage mobile and desktop comps for [Project 4](!link)"
+        replace_link: *p4
+        due: 10/29 4pm EST
+        etz: https://everytimezone.com/s/7dad7216
+    sync: 
+      - item: Discuss teams, Slack channels and kickoff meetings
+      - item: Breakout for kickoff meetings
+      - item: "Discuss next steps for [Project 4](!link)"
+        replace_link: *p4
+        markdown: true
+    activities:
+      - item: One of two readings
+        link: /gd-431/08/reading/
+      - item: Merging Project 2
+        learn: *work
+        link: merging
+      - item: Project 4 tasks
+        link: *p4

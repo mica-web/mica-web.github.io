@@ -1,0 +1,80 @@
+variables:
+  todo: &td "@TODO"
+  p2: &p2 /gd-220/projects/project02/
+  p3: &p3 /gd-220/projects/project03/
+  p4: &p4 /gd-220/projects/project04/
+  tools: &tools /learn/tools/
+  html: &html /learn/html/
+  css: &css /learn/css/
+  workflows: &work /learn/workflows/
+weeks:
+  w07:
+    intro: This week, you'll learn more about the CSS needed to make layout changes to your markup.
+    hw:
+      - item: "Readings [listed below](#w07-activities)"
+        due: Before our 10/22 class
+      - item: "Your [Project 2](!link) styles should be started"
+        replace_link: *p2
+        due: "Before our 10/22 class"
+    sync:
+      - item: Midterm survey
+        link: https://forms.gle/WosFb3zb9oG4BroU9
+        target: _blank
+      - item: Answer questions about images and/or week 2
+      - item: Discuss screen readers/alt text
+      - item: "Answer questions about [Project 2](!link)"
+        replace_link: *p2
+        markdown: true
+    activities:
+      - item: Learn about lists in HTML
+        learn: *html
+        link: lists
+      - title: Learn about properties that help you achieve layouts in CSS
+        items:
+          - name: Position and z-index
+            learn: *css
+            link: position
+          - name: Float
+            learn: *css
+            link: float
+      - title: "You may also want to revisit some of the CSS you learned in [week 4](/gd-220/04/) in order to help you create your Project 2 layouts"
+        items:
+          - name: The box model
+            learn: *css
+            link: box-model
+          - name: CSS selectors
+            learn: *css
+            link: selectors
+          - name: Dimensions in CSS
+            learn: *css
+            link: dimensions
+          - name: Spacing in CSS
+            learn: *css
+            link: spacing
+          - name: Display property
+            learn: *css
+            link: display
+  w08:
+    intro: This week, you'll learn how to update your styles when a user interacts with an element by hovering or focusing on it. You'll apply this knowledge to Project 2 and finalize those styles before submitting your project for code review.
+    hw:
+      - item: "Readings [listed below](#w08-activities)"
+        due: Before completing Project 2
+      - item: "A pull request for your completed [Project 2](!link)"
+        replace_link: *p2
+        due: "10/30 midnight EST"
+        etz: https://everytimezone.com/s/a2745de7
+    sync:
+      - item: Questions about CSS layout
+      - item: Troubleshooting Project 2
+    activities:
+      - item: Psueodoclasses
+        learn: *css
+        link: pseudoclass
+      - title: CSS interactions
+        items:
+          - name: Transition
+            learn: *css
+            link: transition
+          - name: Transform
+            learn: *css
+            link: transform
