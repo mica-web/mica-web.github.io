@@ -13,9 +13,7 @@ issues: true
 
 # {{ page.topic }}
 
-<div class="glitch-embed-wrap">
-  <div style="position: relative; padding-bottom: 62.5%; height: 0;"><iframe src="https://www.loom.com/embed/550f5520d5fa41a78f86f10ec3a7517a" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
-</div>
+<div class="loom-embed-wrapper" style="position: relative; padding-bottom: 62.5%; height: 0;"><iframe src="https://www.loom.com/embed/550f5520d5fa41a78f86f10ec3a7517a" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 
 1. In your web browser, edit your Glitch project and open the "assets" folder.
 1. Drag the images you want to use into that folder.
