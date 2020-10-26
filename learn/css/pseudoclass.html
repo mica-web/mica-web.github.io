@@ -9,6 +9,8 @@
   <meta name="Description" content="Curriculum, schedule and resources for web design.">
   <link href="/css/style.css" rel="stylesheet">
   
+  <link href="/css/syntax.css" rel="stylesheet">
+  
   <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
@@ -115,8 +117,43 @@
     
     <h1 id="pseudoclasses">Pseudoclasses</h1>
 
-<p class="wip-wrapper"><img src="https://media.giphy.com/media/SwP1HunIXetehTvy43/giphy.gif" alt="This page is a work in progress" /></p>
+<p>CSS <b>pseudoclasses</b> refer to an existing selector’s state, including:</p>
+<ul>
+  <li>a <em>hovered</em> link or button</li>
+  <li>a <em>checked</em> checkbox</li>
+  <li>an <em>invalid</em> form input</li>
+</ul>
 
+<p>You use them by combining your selector with a colon (<code class="language-plaintext highlighter-rouge">:</code>) and the appropriate pseudoclass:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">a</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="no">red</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">a</span><span class="nd">:hover</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="no">fuchsia</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>In the above example, the link text will be red until it is hovered, in which case it turns fuchsia.</p>
+
+<p>In most cases where you have a <code class="language-plaintext highlighter-rouge">:hover</code> effect, you also want to add <code class="language-plaintext highlighter-rouge">:focus</code> – this uses your same hover styles for users navigating your site via the keyboard instead of the mouse/trackpad. So, the example above would be:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">a</span><span class="nd">:hover</span><span class="o">,</span> <span class="nt">a</span><span class="nd">:focus</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="no">fuchsia</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="styling-pseudoclasses">Styling pseudoclasses</h2>
+<p>Any CSS can be updated within your pseudoclass selector, however you should consider whether your updated CSS will affect the layout of your page.</p>
+
+<p class="callout">For example, adjusting the font size or adding borders will affect your layout.</p>
+
+<p>The following demo shows some examples of this and the alternate CSS to avoid the issue.</p>
+
+<div class="glitch-embed-wrap" style="height: 520px; width: 100%;">
+  <iframe src="https://glitch.com/embed/#!/embed/css-pseudoclass-1?path=styles.css&amp;previewSize=100&amp;sidebarCollapsed=true" title="css-pseudoclass-1 on Glitch" allow="geolocation; microphone; camera; midi; vr; encrypted-media" style="height: 100%; width: 100%; border: 0;">
+  </iframe>
+</div>
 
     
     <footer class="feedback-footer">

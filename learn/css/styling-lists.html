@@ -9,6 +9,8 @@
   <meta name="Description" content="Curriculum, schedule and resources for web design.">
   <link href="/css/style.css" rel="stylesheet">
   
+  <link href="/css/syntax.css" rel="stylesheet">
+  
   <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
@@ -17,7 +19,7 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-config" content="/favicons/browserconfig.xml">
   <meta name="theme-color" content="#9ff2c0">
-  <title>Interaction + animation | Learning Web Design</title>
+  <title>Styling Lists | Learning Web Design</title>
 </head>
 
 
@@ -34,7 +36,7 @@
 </header>
 
 
-<div class="content-wrapper week-wrapper">
+<div class="content-wrapper ">
 
   
 
@@ -53,8 +55,8 @@
 
   
   <li class="u-inline-block breadcrumb">
-    <a href="/gd-220">
-      gd 220
+    <a href="/learn">
+      learn
     </a>
   </li>
   
@@ -66,13 +68,46 @@
   
 
   
-  <li class="u-inline-block breadcrumb">week 08</li>
+  <li class="u-inline-block breadcrumb">
+    <a href="/learn/css">
+      css
+    </a>
+  </li>
+  
+
+  
+
+  
+
+  
+
+  
+  <li class="u-inline-block breadcrumb">styling lists</li>
   
 
   
 
 </ul>
 
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p class="text-faded reading-est">1 min read</p>
+
+    
     
   </div>
 
@@ -81,123 +116,113 @@
   <main>
     
     
-    <h1>08 // Interaction + animation</h1>
-    
-    
-<h2 id="w08-intro">Intro</h2>
-<p>This week, you’ll learn how to update your styles when a user interacts with an element by hovering or focusing on it. You’ll apply this knowledge to Project 2 and finalize those styles before submitting your project for code review.</p>
+<style>
+  .image-wrapper {
+    justify-content: space-around;
+  }
+  figure {
+    max-width: 45%;
+  }
+  .shrink {
+    max-width: 220px;
+  }
+</style>
 
-<div class="due-wrapper">
+<h1 id="styling-lists">Styling Lists</h1>
 
-  <h2 id="w08-whats-due">What’s Due</h2>
+<p>The following videos describe how to use CSS to change the default styles and layout for an <a href="/learn/html/lists">HTML list</a>.</p>
 
-  <p class="text-faded"><small>Please follow the links for specific details on what’s due and how to submit it. <span class="emoji">🙏🏻</span></small></p>
+<h2 id="step-1">Step 1</h2>
+<p>Removing the default bullets/numbering and spacing from an HTML list.</p>
 
-  <ol>
-    
-    <li>
-      
-      Readings <a href="#w08-activities">listed below</a>
+<div class="image-wrapper">
+  <figure class="shrink">
+    <figcaption class="text-center text-faded">
+      <p>Before</p>
+    </figcaption>
 
-      
-      
-        <div class="text-faded">
-          Before completing Project 2
+    <p><img src="/learn/02_CSS/img/list1-before.png" alt="An unordered list with default styling, including bullets." /></p>
 
-          
-        </div>
-      
-    </li>
-    
-    <li>
-      
-      A pull request for your completed <a href="/gd-220/projects/project02/">Project 2</a>
+  </figure>
 
-      
-      
-        <div class="text-faded">
-          10/30 midnight EST
+  <figure class="shrink">
+    <figcaption class="text-center text-faded">
+      <p>After</p>
+    </figcaption>
 
-          
-            (<a href="https://everytimezone.com/s/a2745de7" target="_blank">see in your timezone</a>)
-          
-        </div>
-      
-    </li>
-    
-  </ol>
+    <p><img src="/learn/02_CSS/img/list1-after1.png" alt="An unordered list without bullets." /></p>
 
+  </figure>
 </div>
 
-<h2 id="w08-sync-up">Sync Up</h2>
+<div class="loom-embed-wrapper" style="position: relative; padding-bottom: 62.5%; height: 0;">
+  <iframe src="https://www.loom.com/embed/dc510ba4ebef4a3499d8ab1f04123805" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+</div>
 
-<ol>
-  
-  <li>
-    
-    Questions about CSS layout
-    
-  </li>
-  
-  <li>
-    
-    Troubleshooting Project 2
-    
-  </li>
-  
-</ol>
+<h2 id="step-2">Step 2</h2>
+<p>Making an HTML list display horizontally.</p>
 
-<h2 id="w08-activities">Activities</h2>
+<div class="image-wrapper">
+  <figure class="shrink">
+    <figcaption class="text-center text-faded">
+      <p>Before</p>
+    </figcaption>
 
+    <p><img src="/learn/02_CSS/img/list1-after1.png" alt="An unordered list without bullets." /></p>
+
+  </figure>
+
+  <figure>
+    <figcaption class="text-center text-faded">
+      <p>After</p>
+    </figcaption>
+
+    <p><img src="/learn/02_CSS/img/list1-after2.png" alt="A horizontal list of items with dividers between them." /></p>
+
+  </figure>
+</div>
+
+<div class="loom-embed-wrapper" style="position: relative; padding-bottom: 62.5%; height: 0;">
+  <iframe src="https://www.loom.com/embed/362ffa1ca8f34ce996e4540e8a413d0e" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+</div>
+
+<h2 id="step-3">Step 3</h2>
+<p>Additional styles on a horizontal list, including hover effects for the following:</p>
 <ul>
-  
-  <li>
-    
-    <a href="https://mica-web.github.io/learn/css/pseudoclass">
-      Psueodoclasses
-    </a>
-    
-  </li>
-  
-  <li>
-    
-    CSS interactions:
-    <ul>
-      
-      <li><a href="https://mica-web.github.io/learn/css/transition">Transition</a></li>
-      
-      <li><a href="https://mica-web.github.io/learn/css/transform">Transform</a></li>
-      
-    </ul>
-
-    
-  </li>
-  
-  <li>
-    
-    <a href="https://mica-web.github.io/learn/css/styling-lists">
-      Styling Lists
-    </a>
-    
-  </li>
-  
+  <li>border styles</li>
+  <li>SVGs</li>
 </ul>
 
-<!--
-## Activities in CodePen
-- [Pseudoclasses](https://codepen.io/angeliquejw/pen/pYBjWL?editors=1100)
-- [Pseudoelements](https://codepen.io/angeliquejw/pen/vPMLYg?editors=0100)
+<div class="image-wrapper">
+  <figure class="shrink">
+    <figcaption class="text-center text-faded">
+      <p>Before</p>
+    </figcaption>
 
-## Homework
-Complete Project 2 work and PR; submit your work next week!
--->
+    <p><img src="/learn/02_CSS/img/list2-before.png" alt="An unordered list of links with default styling, including bullets." /></p>
+
+  </figure>
+
+  <figure>
+    <figcaption class="text-center text-faded">
+      <p>After</p>
+    </figcaption>
+
+    <p><img src="/learn/02_CSS/img/list2-after.gif" alt="A list with background colors, icons and hover effects." /></p>
+
+  </figure>
+</div>
+
+<div class="loom-embed-wrapper" style="position: relative; padding-bottom: 62.5%; height: 0;">
+  <iframe src="https://www.loom.com/embed/e1fdaa227d1a40038e07450f8cf8a04a" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+</div>
 
     
     <footer class="feedback-footer">
   
 
   <p><strong>Make this page better.</strong></p>
-  <p>Found something that's incorrect or confusing on this page? Broken link? I want to know! <a href="https://github.com/mica-web/mica-web.github.io/issues/new?title=Feedback+for+%2Fgd-220%2F08&template=page-feedback.md" target="_blank">Open an issue on GitHub</a> to tell me what's up and help me update the page.</p>
+  <p>Found something that's incorrect or confusing on this page? Broken link? I want to know! <a href="https://github.com/mica-web/mica-web.github.io/issues/new?title=Feedback+for+%2Flearn%2Fcss%2Fstyling-lists&template=page-feedback.md" target="_blank">Open an issue on GitHub</a> to tell me what's up and help me update the page.</p>
 </footer>
 
     
