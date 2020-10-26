@@ -78,3 +78,6 @@ weeks:
           - name: Transform
             learn: *css
             link: transform
+      - item: Styling Lists
+        learn: *css
+        link: styling-lists
