@@ -73,11 +73,26 @@ weeks:
       - title: CSS interactions
         items:
           - name: Transition
+            optional: true
             learn: *css
             link: transition
           - name: Transform
+            optional: true
             learn: *css
             link: transform
       - item: Styling Lists
         learn: *css
         link: styling-lists
+  w09:
+    intro: Break week!
+    sync:
+      - item: "Cancelled. See note in Slack #gd2 channel."
+    hw:
+      - item: "[Week 8 readings](/gd-220/08#w08-activities)"
+        due: Before completing Project 2
+      - item: "A pull request for your completed [Project 2](!link)"
+        replace_link: *p2
+        due: "11/6 midnight EST"
+        etz: https://everytimezone.com/s/4b9ab0cf
+    activities:
+      - item: No new assignments this week. Continue to work on Project 2.

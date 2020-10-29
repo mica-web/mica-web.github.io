@@ -32,3 +32,17 @@ weeks:
         link: merging
       - item: Project 4 tasks
         link: *p4
+  w09:
+    intro: Break week!
+    sync:
+      - item: "Cancelled. See note in Slack #gd431 channel."
+    hw: 
+      - item: "Homepage priority guide for [Project 4](!link)"
+        replace_link: *p4
+        due: ASAP
+      - item: "Homepage mobile and desktop comps for [Project 4](!link)"
+        replace_link: *p4
+        due: 11/5 4pm EST
+        etz: https://everytimezone.com/s/6e991635
+    activities:
+      - item: No new assignments this week. Continue to work on Project 4 designs.

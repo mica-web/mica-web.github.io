@@ -32,6 +32,7 @@
 
 ## Sync Up
 
+{% if include.sync.size > 1 %}
 <ol>
   {% for list in include.sync %}
   <li>
@@ -50,7 +51,15 @@
   {% endfor %}
 </ol>
 
+{% else %}
+
+<p> {{ include.sync.first.item }} </p>
+
+{% endif %}
+
 ## Activities
+
+{% if include.activities.size > 1 %}
 
 <ul>
   {% for activity in include.activities %}
@@ -59,7 +68,7 @@
     {{ activity.title | markdownify | replace: '<p>', '' | replace: '</p>', '' | rstrip | append: ':' }}
     <ul>
       {% for item in activity.items %}
-      <li><a href="{% if item.learn %}{{site.url}}{{item.learn}}{% endif %}{{item.link}}">{{ item.name }}</a></li>
+      <li><a href="{% if item.learn %}{{site.url}}{{item.learn}}{% endif %}{{item.link}}">{{ item.name }}</a>{% if item.optional == true %} {% include optional.html %}{% endif %}</li>
       {% endfor %}
     </ul>
 
@@ -67,7 +76,14 @@
     <a href="{% if activity.learn %}{{site.url}}{{activity.learn}}{% endif %}{{activity.link}}">
       {{ activity.item }}
     </a>
+    {% if activity.optional == true %} {% include optional.html %}{% endif %}
     {% endif %}
   </li>
   {% endfor %}
 </ul>
+
+{% else %}
+
+<p> {{ include.activities.first.item }} </p>
+
+{% endif %}
