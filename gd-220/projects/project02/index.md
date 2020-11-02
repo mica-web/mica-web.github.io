@@ -38,7 +38,7 @@ You will design a card component and then recreate that design using your curren
 ## Submission
 1. Create a [pull request]({% link _learn/03_workflows/pull-request.md %}) for code review and final submission.
   - Include [PR template questions]({% link gd-220/projects/project02/pr-template.md %}) and your responses.
-1. Send me a link to the pull request via Slack DM by midnight EST on 10/30 ([see in your timezone](https://everytimezone.com/s/a2745de7){:target="_blank"}).
+1. Send me a link to the pull request via Slack DM by midnight EST on 11/06 ([see in your timezone](https://everytimezone.com/s/55b02ee3){:target="_blank"}).
 
 ## Requirements
 - Your design can have a maximum width of 640 pixels.
