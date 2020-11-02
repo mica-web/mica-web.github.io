@@ -94,13 +94,13 @@ Redesign a site based on the findings of your stakeholder's heuristic evaluation
 <dd>Project kickoff meeting</dd>
 <dt>Oct 23</dt>
 <dd>Priority guide due</dd>
-<dt>Oct 29</dt>
+<dt>Nov 05</dt>
+<!-- Pushed back one week from 10/29 for break/time off -->
 <dd>Comps due</dd>
 <dd>Design review</dd>
-<dt>Nov 05</dt>
-<dd>Project setup complete</dd>
 <dt>Nov 12</dt>
 <dd>Initial HTML review complete</dd>
+<dd>Project setup complete</dd>
 <dt>Nov 19</dt>
 <dd>Homepage styles complete</dd>
 <dd>Design review with stakeholder</dd>

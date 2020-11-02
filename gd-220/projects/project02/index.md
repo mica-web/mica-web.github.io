@@ -65,7 +65,8 @@ You will design a card component and then recreate that design using your curren
 <dd>Share the link to your PR via DM for HTML review</dd>
 <dt>Oct 22</dt>
 <dd>Step 8 begun</dd>
-<dt>Oct 29</dt>
+<dt>Nov 05</dt>
+<!-- Pushed back one week from 10/29 for break/time off -->
 <dd>Project due date</dd>
 <dd>Steps 8 & 9 complete</dd>
 </dl>
