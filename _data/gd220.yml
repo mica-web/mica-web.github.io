@@ -96,3 +96,25 @@ weeks:
         etz: https://everytimezone.com/s/4b9ab0cf
     activities:
       - item: No new assignments this week. Continue to work on Project 2.
+  w10:
+    intro: "This week, we're wrapping up Project 2 and adding some new HTML into your repertoire, as you'll create your first web form."
+    sync:
+      - item: Troubleshooting and sharing Project 2
+      - item: Update on Project 3
+    hw:
+      - item: "A pull request for your completed [Project 2](!link)"
+        replace_link: *p2
+        due: "11/6 midnight EST"
+        etz: https://everytimezone.com/s/4b9ab0cf
+    activities:
+      - item: Reading on creating inclusive forms
+        link: /gd-220/10/reading/
+      - item: Create a basic web form
+        link: /gd-220/10/activity
+  w00:
+    intro: 
+    sync:
+      - item: ""
+    hw: 
+    activities:
+      - item: ""
