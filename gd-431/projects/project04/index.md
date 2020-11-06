@@ -8,9 +8,6 @@ type: project
 <header>
 # {{page.title }}: Collaborative Redesign
 
-{: .callout }
-This page is still a work in progress; not all the links work just yet.
-
 ## In Brief
 Redesign a site based on the findings of your stakeholder's heuristic evaluation and use your current knowledge of HTML and Sass, along with new knowledge of static site generators, to create a responsive site based on your designs.
 
@@ -46,7 +43,6 @@ Redesign a site based on the findings of your stakeholder's heuristic evaluation
 1. Present your comps to your stakeholder and professor to get initial sign off on the design.
 
 ### Develop
-1. Read an [introduction to static site generators]({% link _learn/00_tools/ssg.md %}).
 1. Follow the [setup instructions]({% link gd-431/projects/project04/setup.md %})
 1. Based on your priority guide, write semantic markup for the homepage content and create HTML partials for repeated elements in your design (e.g., header, navigation, footer).
 1. Do an initial code review with your professor.
