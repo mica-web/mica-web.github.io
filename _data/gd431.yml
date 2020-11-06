@@ -46,3 +46,26 @@ weeks:
         etz: https://everytimezone.com/s/6e991635
     activities:
       - item: No new assignments this week. Continue to work on Project 4 designs.
+  w10:
+    intro: "This week, you'll follow a tutorial to understand the capabilities of static site generators and start to transform your Project 4 designs into HTML."
+    sync:
+      - item: Share Project 4 priority guides and designs with your stakeholder
+      - item: Intro to static site generators
+    hw: 
+      - item: The reading and activity under Activities below
+      - item: Start developing Project 4
+    activities:
+      - item: Introduction to static site generators
+        learn: *tools
+        link: ssg
+      - item: Follow the Eleventy tutorial
+        link: /gd-431/10/activity
+      - item: Complete steps 1-2 under "Develop" for Project 4
+        link: *p4
+  w00:
+    intro: 
+    sync:
+      - item: ""
+    hw: 
+    activities:
+      - item: ""
