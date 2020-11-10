@@ -111,6 +111,21 @@ weeks:
         link: /gd-220/10/reading
       - item: Create a basic web form
         link: /gd-220/10/activity
+  w11:
+    intro: "This week, we'll resolve any questions from last week's web form activity, discuss new ways to think about layout and learn the basics of creating mobile-friendly layouts."
+    sync:
+      - item: Layout fixes for Project 2
+      - item: Responses to last week's reading
+      - item: Questions about web forms
+      - item: Button element
+      - item: Intro to responsive web design
+    hw: 
+      - item: Complete the web for activity
+        due: By the start of class this week (11/12)
+      - item: Complete the RWD activity
+        due: By the start of class next week (11/19)
+    activities:
+      - item: *td
   w00:
     intro: 
     sync:
