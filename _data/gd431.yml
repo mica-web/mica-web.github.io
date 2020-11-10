@@ -62,6 +62,21 @@ weeks:
         link: /gd-431/10/activity
       - item: Complete steps 1-2 under "Develop" for Project 4
         link: *p4
+  w11:
+    intro: "This week, we'll make sure your questions from the Eleventy tutorial are answered and start to learn some real-world strategies for writing CSS."
+    sync:
+      - item: Review SSGs and 11ty
+      - item: Review Sass partials
+      - item: "CSS IRL: resets, naming strategies, utility classes"
+      - item: Mobile site nav
+    hw: 
+      - item: Project 4 homepage markup review; DM Angelique the link to your Project 4 GitHub PR
+        due: ASAP 
+      - item: Project 4 homepage styles
+        due: start of class next week
+    activities:
+      - item: Complete steps 3-4 under "Develop" for Project 4
+        link: *p4
   w00:
     intro: 
     sync:
