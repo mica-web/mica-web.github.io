@@ -9,6 +9,8 @@
   <meta name="Description" content="Curriculum, schedule and resources for web design.">
   <link href="/css/style.css" rel="stylesheet">
   
+  <link href="/css/syntax.css" rel="stylesheet">
+  
   <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
@@ -17,7 +19,7 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-config" content="/favicons/browserconfig.xml">
   <meta name="theme-color" content="#9ff2c0">
-  <title>Responsive web design | Learning Web Design</title>
+  <title>Styling Buttons | Learning Web Design</title>
 </head>
 
 
@@ -34,7 +36,7 @@
 </header>
 
 
-<div class="content-wrapper week-wrapper">
+<div class="content-wrapper ">
 
   
 
@@ -53,8 +55,8 @@
 
   
   <li class="u-inline-block breadcrumb">
-    <a href="/gd-220">
-      gd 220
+    <a href="/learn">
+      learn
     </a>
   </li>
   
@@ -66,13 +68,46 @@
   
 
   
-  <li class="u-inline-block breadcrumb">week 11</li>
+  <li class="u-inline-block breadcrumb">
+    <a href="/learn/css">
+      css
+    </a>
+  </li>
+  
+
+  
+
+  
+
+  
+
+  
+  <li class="u-inline-block breadcrumb">styling buttons</li>
   
 
   
 
 </ul>
 
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p class="text-faded reading-est">1 min read</p>
+
+    
     
   </div>
 
@@ -81,119 +116,28 @@
   <main>
     
     
-    <h1>11 // Responsive web design</h1>
-    
-    
-<h2 id="w11-intro">Intro</h2>
-<p>This week, we’ll resolve any questions from last week’s web form activity, discuss new ways to think about layout and learn the basics of creating mobile-friendly layouts.</p>
+<p>As originally discussed in exploring <a href="/learn/css/browser-defaults">browser default styles</a>, the <code class="language-plaintext highlighter-rouge">button</code> element is heavily styled by browsers – more so than text elements like <code class="language-plaintext highlighter-rouge">h2</code> or <code class="language-plaintext highlighter-rouge">p</code>, where only the element’s font size, weight and spacing are styled.</p>
 
-<div class="due-wrapper">
-
-  <h2 id="w11-whats-due">What’s Due</h2>
-
-  <p class="text-faded"><small>Please follow the links for specific details on what’s due and how to submit it. <span class="emoji">🙏🏻</span></small></p>
-
-  <ol>
-    
-    <li>
-      
-      Complete the web form activity
-
-      
-      
-        <div class="text-faded">
-          By the start of class this week (11/12)
-
-          
-        </div>
-      
-    </li>
-    
-    <li>
-      
-      Complete the RWD activity
-
-      
-      
-        <div class="text-faded">
-          By the start of class next week (11/19)
-
-          
-        </div>
-      
-    </li>
-    
-  </ol>
-
-</div>
-
-<h2 id="w11-sync-up">Sync Up</h2>
+<p>In order to style buttons, I recommend a two-pronged approach:</p>
 
 <ol>
-  
-  <li>
-    
-    Layout fixes for Project 2
-    
-  </li>
-  
-  <li>
-    
-    Responses to last week's reading
-    
-  </li>
-  
-  <li>
-    
-    Questions about web forms
-    
-  </li>
-  
-  <li>
-    
-    <a href="https://mica-web.github.io/learn/css/styling-buttons">Button element</a>
-    
-  </li>
-  
-  <li>
-    
-    <a href="https://glitch.com/~mica-rwd-demo">Intro to responsive web design</a>
-    
-  </li>
-  
+  <li>Use a <code class="language-plaintext highlighter-rouge">button-reset</code> class to strip all button styles away and make your <code class="language-plaintext highlighter-rouge">button</code> element look like the rest of the text on your page.</li>
+  <li>Use a second class to apply specific styles, like a background color or borders.</li>
 </ol>
 
-<h2 id="w11-activities">Activities</h2>
+<p>You can see this process step-by-step in the following demo:</p>
 
-<ul>
-  
-  <li>
-    
-    <a href="https://mica-web.github.io/learn/css/media-queries">
-      Read more about media queries
-    </a>
-    
-    
-  </li>
-  
-  <li>
-    
-    <a href="/gd-220/11/activity">
-      RWD activity
-    </a>
-    
-    
-  </li>
-  
-</ul>
-
+<div class="glitch-embed-wrap" style="height: 540px; width: 100%;">
+  <iframe src="https://glitch.com/embed/#!/embed/styling-buttons?path=index.html&amp;previewSize=100&amp;sidebarCollapsed=true" title="styling-buttons on Glitch" allow="geolocation; microphone; camera; midi; vr; encrypted-media" style="height: 100%; width: 100%; border: 0;">
+  </iframe>
+</div>
 
     
     <footer class="feedback-footer">
   
 
   <p><strong>Make this page better.</strong></p>
-  <p>Found something that's incorrect or confusing on this page? Broken link? I want to know! <a href="https://github.com/mica-web/mica-web.github.io/issues/new?title=Feedback+for+%2Fgd-220%2F11&template=page-feedback.md" target="_blank">Open an issue on GitHub</a> to tell me what's up and help me update the page.</p>
+  <p>Found something that's incorrect or confusing on this page? Broken link? I want to know! <a href="https://github.com/mica-web/mica-web.github.io/issues/new?title=Feedback+for+%2Flearn%2Fcss%2Fstyling-buttons&template=page-feedback.md" target="_blank">Open an issue on GitHub</a> to tell me what's up and help me update the page.</p>
 </footer>
 
     
