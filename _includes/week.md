@@ -37,7 +37,7 @@
   {% for list in include.sync %}
   <li>
     {% if list.link %}
-    <a href="{{list.link}}" {% if list.target %}target="{{list.target}}" {% endif %}>{{ list.item }}</a>
+    <a href="{% if list.learn %}{{site.url}}{{list.learn}}{% endif %}{{list.link}}" {% if list.target %}target="{{list.target}}" {% endif %}>{{ list.item }}</a>
     {% elsif list.markdown == true %}
       {% if list.replace_link %}
       {{ list.item | markdownify | replace: '<p>', '' | replace: '</p>', '' | replace: '!link', list.replace_link }}

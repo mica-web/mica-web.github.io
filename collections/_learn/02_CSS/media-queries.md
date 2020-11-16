@@ -137,7 +137,8 @@ The following demo shows how to write mobile-first styles, followed by three med
   </iframe>
 </div>
 
-Click the Remix button to make your own changes to this CSS.
+Advanced (431) students: Click the Remix button to make your own changes to this CSS.
+Intro (220) students: Use [this demo](https://glitch.com/~rwd-basics-2) instead.
 
 ## Additional reading {% include optional.html %}
 The following links are **entirely optional** but provide more context, examples and opportunities to write media queries, if any of those things would be helpful to you.

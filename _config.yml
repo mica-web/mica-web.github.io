@@ -87,6 +87,7 @@ collections:
       # - 02_CSS/brittle-layout.md
       - 02_CSS/float.md
       - 02_CSS/styling-lists.md
+      - 02_CSS/styling-buttons.md
       # - 02_CSS/resets.md
       - 02_CSS/organization.md
       - 02_CSS/media-queries.md

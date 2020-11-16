@@ -118,14 +118,21 @@ weeks:
       - item: Responses to last week's reading
       - item: Questions about web forms
       - item: Button element
+        learn: *css
+        link: styling-buttons
       - item: Intro to responsive web design
+        link: "https://glitch.com/~mica-rwd-demo"
     hw: 
-      - item: Complete the web for activity
+      - item: Complete the web form activity
         due: By the start of class this week (11/12)
       - item: Complete the RWD activity
         due: By the start of class next week (11/19)
     activities:
-      - item: *td
+      - item: Read more about media queries
+        learn: *css
+        link: media-queries
+      - item: RWD activity
+        link: /gd-220/11/activity
   w00:
     intro: 
     sync:
