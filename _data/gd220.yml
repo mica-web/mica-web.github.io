@@ -2,7 +2,6 @@ variables:
   todo: &td "@TODO"
   p2: &p2 /gd-220/projects/project02/
   p3: &p3 /gd-220/projects/project03/
-  p4: &p4 /gd-220/projects/project04/
   tools: &tools /learn/tools/
   html: &html /learn/html/
   css: &css /learn/css/
@@ -133,6 +132,24 @@ weeks:
         link: media-queries
       - item: RWD activity
         link: /gd-220/11/activity
+  w12:
+    intro: "This week we'll clear up any questions about media queries and learn the basics of creating site navigation."
+    sync:
+      - item: Discuss RWD activity from week 11
+        link: /gd-220/11/activity
+      - item: Introduce project 3
+        link: *p3
+      - item: Demo site navigation
+    hw: 
+      - item: Complete the RWD activity
+        due: By the start of class (11/19)
+    activities:
+      - item: Complete process steps 1-4 for project 3.
+        link: *p3
+      - item: Begin steps 5-6.
+        link: *p3
+  w13:
+    intro: "No class this week -- Thanksgiving break. Continue to work on project 3. "
   w00:
     intro: 
     sync:
