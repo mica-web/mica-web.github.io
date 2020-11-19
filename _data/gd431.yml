@@ -77,6 +77,19 @@ weeks:
     activities:
       - item: Complete steps 3-4 under "Develop" for Project 4
         link: *p4
+  w12:
+    intro: "This week you'll get feedback from your stakeholders and continue to build your project 4 sites. We'll also establish the groundwork for the interactive components you'll be building next."
+    sync:
+      - item: Share and review current status with stakeholders
+      - item: Review markup for hamburger menus, accordions, tabs
+      - item: Discuss any issues/concerns with project 4
+    activities:
+      - item: Read about error 404 pages
+        link: "https://www.justinmind.com/blog/best-404-pages/"
+      - item: Continue to work on project 4
+        link: *p4
+  w13:
+    intro: "No class this week -- Thanksgiving break. Continue to work on project 4."
   w00:
     intro: 
     sync:
