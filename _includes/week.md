@@ -1,6 +1,9 @@
+{% if include.intro %}
 ## Intro
 {{ include.intro }}
+{% endif %}
 
+{% if include.hw %}
 {::options parse_block_html="true" /}
 <div class="due-wrapper">
 
@@ -29,7 +32,9 @@
   </ol>
 
 </div>
+{% endif %}
 
+{% if include.sync %}
 ## Sync Up
 
 {% if include.sync.size > 1 %}
@@ -57,6 +62,9 @@
 
 {% endif %}
 
+{% endif %}
+
+{% if include.activities %}
 ## Activities
 
 {% if include.activities.size > 1 %}
@@ -86,4 +94,5 @@
 
 <p> {{ include.activities.first.item }} </p>
 
+{% endif %}
 {% endif %}
