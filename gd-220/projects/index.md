@@ -9,7 +9,6 @@ Details for each project, including due dates, can be found at the following lin
 
 - [Project 01: Typography Specimen]({% link gd-220/projects/project01/index.md %})
 - [Project 02: Card Component]({% link gd-220/projects/project02/index.md %})
-- Project 03: Web Form
-- Project 04: One-page Event Site
+- [Project 03: One-page Event Site]({% link gd-220/projects/project03/index.md %})
 
 {% include_relative _rubric.md %}
