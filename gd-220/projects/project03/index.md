@@ -40,7 +40,7 @@ Use your current knowledge of HTML and CSS, respectively, to:
 
 
 ## Requirements
-- The design should be responsive, working on mobile devices as small as px wide and other devices up to 1280px wide.
+- The design should be responsive, working on mobile devices as small as 375px wide and other devices up to 1280px wide.
 - The site _must_ be a one-page site. Do **not** create individual pages for any required or additional content.
 - The design must include:
   - Event name
