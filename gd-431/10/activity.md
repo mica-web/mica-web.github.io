@@ -101,7 +101,6 @@ Want to check out the final project? You can either:
 You can also view all the tutorial videos on a [single page](https://www.loom.com/share/folder/b2c08180bdcc4fbb9153d475a1646c84). Note that the videos are in reverse order on this page. <span class="emoji">🤷🏻‍♀️</span>
 
 <script>
-  console.log("Yep");
   let triggers = document.querySelectorAll(".js-loom-trigger");
   let iframe = document.getElementById("js-loom-target");
   Array.prototype.forEach.call(triggers, (trigger, i) => {
