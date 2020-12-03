@@ -90,6 +90,25 @@ weeks:
         link: *p4
   w13:
     intro: "No class this week -- Thanksgiving break. Continue to work on project 4."
+  w14:
+    intro: This week is a deep dive into writing JavaScript, which adds interactivity to your web projects.
+    hw:
+      - item: "Reading about error pages from [Week 12](/gd-431/12)"
+        due: start of class this week
+      - item: "[Stakeholder survey](https://forms.gle/x6h1DPR8ULHRMshT6)"
+        due: ASAP; this weekend at the latest
+    sync:
+      - item: Q&A about error pages
+      - item: Stakeholder checkin
+      - item: Stakeholder survey
+      - item: JavaScript tutorial + demo review
+    activities:
+      - item: JS tutorial
+        link: /gd-431/14/js-tutorial
+      - item: JS demo project
+        link: /gd-431/14/js-demo
+      - item: Continue to work on project 4
+        link: *p4
   w00:
     intro: 
     sync:
