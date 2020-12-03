@@ -150,10 +150,29 @@ weeks:
         link: *p3
   w13:
     intro: "No class this week -- Thanksgiving break. Continue to work on project 3."
+  w14:
+    intro: "This week is mostly focused on moving forward on Project 3."
+    hw: 
+      - item: Research and design tasks for Project 3
+        due: 12/3
+      - item: Project 3 setup complete
+        due: 12/3
+      - item: Project 3 HTML review
+        due: 12/7
+      - item: Project 3 mobile styles
+        due: 12/10 (NEXT week)
+    sync:
+      - item: "[Project 3](!link) checkin: content, designs, HTML"
+        replace_link: *p3
+        markdown: true
+      - item: Project 3 next steps
+      - item: CSS variables demo
+    activities:
+      - item: Continue working on Project 3. No new readings/activities.
   w00:
     intro: 
+    hw: 
     sync:
       - item: ""
-    hw: 
     activities:
       - item: ""
