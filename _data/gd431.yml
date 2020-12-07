@@ -109,6 +109,29 @@ weeks:
         link: /gd-431/14/js-demo
       - item: Continue to work on project 4
         link: *p4
+  w15:
+    intro: "Final stretch on Project 4 🎉"
+    hw: 
+      - item: "[Week 15 Check In Survey](https://forms.gle/dizUfZNGSBWRh5v16)"
+        markdown: true
+        due: Before the start of classs on 12/10 (this week)
+      - item: MICA course evaluations 🙏🏻
+        due: Before the start of class on 12/17 (check your MICA email for the link)
+    sync:
+      - item: JavaScript Q&A
+      - item: Troubleshooting your final project
+      - item: Discussing some of the questions from the check-in survey
+    activities:
+      - item: Continue working on Project 4.
+        link: *p4
+      - item: Be prepared to present Project 4 next week in class.
+        link: *p4
+  w16:
+    intro: Final project presentations
+    sync:
+      - item: Last-minute troubleshooting
+      - item: Final presentations
+      - item: Discussing some of the questions from the check-in survey
   w00:
     intro: 
     sync:

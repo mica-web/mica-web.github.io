@@ -169,6 +169,28 @@ weeks:
       - item: CSS variables demo
     activities:
       - item: Continue working on Project 3. No new readings/activities.
+  w15:
+    intro: "Final stretch on Project 3 🎉"
+    hw: 
+      - item: "[Week 15 Check In Survey](https://forms.gle/GPEsKrSh1A3EceSE8)"
+        markdown: true
+        due: Before the start of classs on 12/10 (this week)
+      - item: MICA course evaluations 🙏🏻
+        due: Before the start of class on 12/17 (check your MICA email for the link)
+    sync:
+      - item: Troubleshooting your final project
+      - item: Discussing some of the questions from the check-in survey
+    activities:
+      - item: Continue working on Project 3.
+        link: *p3
+      - item: Be prepared to present Project 3 next week in class.
+        link: *p3
+  w16:
+    intro: Final project presentations
+    sync:
+      - item: Last-minute troubleshooting
+      - item: Final presentations
+      - item: Discussing some of the questions from the check-in survey
   w00:
     intro: 
     hw: 
