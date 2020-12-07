@@ -118,7 +118,7 @@ weeks:
       - item: MICA course evaluations 🙏🏻
         due: Before the start of class on 12/17 (check your MICA email for the link)
     sync:
-      - item: JavaScript Q&A
+      - item: JavaScript Q&A, including more detail about using JS in your projects
       - item: Troubleshooting your final project
       - item: Discussing some of the questions from the check-in survey
     activities:
