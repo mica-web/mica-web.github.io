@@ -6,8 +6,8 @@ on:
     branches:
       - master
   # Also build every Thursday morn to update things based on the current.md partial
-  schedule:
-    - cron: '30 4 * * THU'
+#   schedule:
+#     - cron: '30 4 * * THU'
 
 jobs:
   jekyll:
